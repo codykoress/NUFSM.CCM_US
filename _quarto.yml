@@ -25,25 +25,7 @@ website:
       - href: about.qmd
         text: About
       - href: credits.qmd
-        text: ---
-title: "Credits & Attribution"
----
-
-## Image sources
-
-The majority of ultrasound loops on this site are sourced from
-[The POCUS Atlas](https://www.thepocusatlas.com), used under the
-[Creative Commons BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/).
-Each loop is individually attributed to its original contributor on the
-module page where it appears.
-
-## License
-
-This curriculum is provided for educational, non-commercial use only.
-
-## Faculty contributors
-
-*Names and roles to be added.*
+        text: credits
 
 format:
   html:
@@ -52,6 +34,3 @@ format:
       - brand
     css: styles.css
     toc: true
-
-
-
