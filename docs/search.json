@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "website",
+    "title": "Cardiac POCUS for Critical Care Fellows",
     "section": "",
-    "text": "This is a Quarto website. It really is!\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This curriculum is built for critical care fellows learning point-of-care echocardiography. Six modules, organized around the clinical questions you’ll actually ask at the bedside."
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,327 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "modules/06-integration.html",
+    "href": "modules/06-integration.html",
+    "title": "Module 4 — Pericardium",
+    "section": "",
+    "text": "What clinical question does this exam answer, and how do findings change management?\n\n\n\n\n\n\nNote\n\n\n\nThe bedside decision frame goes here. For pericardium: is there an effusion, is it physiologically significant, and does this change resuscitation, hemodynamic management, or the need for emergent intervention?"
+  },
+  {
+    "objectID": "modules/04-pericardium.html",
+    "href": "modules/04-pericardium.html",
+    "title": "Module 4 — Pericardium",
+    "section": "",
+    "text": "What clinical question does this exam answer, and how do findings change management?\n\n\n\n\n\n\nNote\n\n\n\nThe bedside decision frame goes here. For pericardium: is there an effusion, is it physiologically significant, and does this change resuscitation, hemodynamic management, or the need for emergent intervention?"
+  },
+  {
+    "objectID": "modules/02-lv.html",
+    "href": "modules/02-lv.html",
+    "title": "Module 4 — Pericardium",
+    "section": "",
+    "text": "What clinical question does this exam answer, and how do findings change management?\n\n\n\n\n\n\nNote\n\n\n\nThe bedside decision frame goes here. For pericardium: is there an effusion, is it physiologically significant, and does this change resuscitation, hemodynamic management, or the need for emergent intervention?"
+  },
+  {
+    "objectID": "modules/01-windows.html",
+    "href": "modules/01-windows.html",
+    "title": "Module 1 — Windows & Acquisition",
+    "section": "",
+    "text": "What clinical question does this exam answer, and how do findings change management?\n\n\n\n\n\n\nNote\n\n\n\nThe bedside decision frame goes here. For pericardium: is there an effusion, is it physiologically significant, and does this change resuscitation, hemodynamic management, or the need for emergent intervention?"
+  },
+  {
+    "objectID": "modules/03-rv.html",
+    "href": "modules/03-rv.html",
+    "title": "Module 4 — Pericardium",
+    "section": "",
+    "text": "What clinical question does this exam answer, and how do findings change management?\n\n\n\n\n\n\nNote\n\n\n\nThe bedside decision frame goes here. For pericardium: is there an effusion, is it physiologically significant, and does this change resuscitation, hemodynamic management, or the need for emergent intervention?"
+  },
+  {
+    "objectID": "modules/05-ivc.html",
+    "href": "modules/05-ivc.html",
+    "title": "Module 4 — Pericardium",
+    "section": "",
+    "text": "What clinical question does this exam answer, and how do findings change management?\n\n\n\n\n\n\nNote\n\n\n\nThe bedside decision frame goes here. For pericardium: is there an effusion, is it physiologically significant, and does this change resuscitation, hemodynamic management, or the need for emergent intervention?"
+  },
+  {
+    "objectID": "modules/04-pericardium.html#clinical-question",
+    "href": "modules/04-pericardium.html#clinical-question",
+    "title": "Module 4 — Pericardium",
+    "section": "",
+    "text": "What clinical question does this exam answer, and how do findings change management?\n\n\n\n\n\n\nNote\n\n\n\nThe bedside decision frame goes here. For pericardium: is there an effusion, is it physiologically significant, and does this change resuscitation, hemodynamic management, or the need for emergent intervention?"
+  },
+  {
+    "objectID": "modules/04-pericardium.html#image-acquisition",
+    "href": "modules/04-pericardium.html#image-acquisition",
+    "title": "Module 4 — Pericardium",
+    "section": "2. Image acquisition",
+    "text": "2. Image acquisition\nProbe, windows, and technique for this module.\nBrief intro paragraph here. Below, embed acquisition videos one per technique.\n\nSubcostal four-chamber view\nVideo and key points coming soon.\n\n\nParasternal long axis\nVideo and key points coming soon.\n\n\nApical four-chamber\nVideo and key points coming soon."
+  },
+  {
+    "objectID": "modules/04-pericardium.html#normal-normal-variants",
+    "href": "modules/04-pericardium.html#normal-normal-variants",
+    "title": "Module 4 — Pericardium",
+    "section": "3. Normal & normal variants",
+    "text": "3. Normal & normal variants\nThe library of normal hearts and common confounders.\nFellows need to see ten or more normals before pathology makes sense. Loops will go here, organized as:\n\nNormal pericardium across body habitus\nPericardial fat pad (commonly mistaken for effusion)\nEpicardial fat\nPost-CABG appearance"
+  },
+  {
+    "objectID": "modules/04-pericardium.html#pathology-library",
+    "href": "modules/04-pericardium.html#pathology-library",
+    "title": "Module 4 — Pericardium",
+    "section": "4. Pathology library",
+    "text": "4. Pathology library\nOrganized by finding, not by diagnosis.\n\nSmall effusion\nLoops and teaching points coming soon.\n\n\nModerate to large effusion\nLoops and teaching points coming soon.\n\n\nTamponade physiology\nLoops and teaching points coming soon — RA collapse, RV diastolic collapse, plethoric IVC, respiratory variation.\n\n\nLoculated effusion\nLoops and teaching points coming soon.\n\n\nMimics & pitfalls\nPleural effusion vs pericardial, fat pad vs effusion, descending aorta vs effusion."
+  },
+  {
+    "objectID": "modules/04-pericardium.html#integration-cases",
+    "href": "modules/04-pericardium.html#integration-cases",
+    "title": "Module 4 — Pericardium",
+    "section": "5. Integration cases",
+    "text": "5. Integration cases\nCases where the finding changes management.\nThree to five short cases will go here. Each case follows the format:\n\nClinical scenario\nWhat exam would you perform?\nLoops to interpret\nWhat do you see?\nHow does this change management?\n\n\n\n\n\n\n\nTip\n\n\n\nCase format anchor: the case ends with a management decision, not just a diagnosis. The whole point is integration."
+  },
+  {
+    "objectID": "modules/04-pericardium.html#quiz",
+    "href": "modules/04-pericardium.html#quiz",
+    "title": "Module 4 — Pericardium",
+    "section": "Quiz",
+    "text": "Quiz\nAnki deck for spaced repetition: link coming soon.\nIn-page quiz items: coming soon."
+  },
+  {
+    "objectID": "modules/01-windows.html#clinical-question",
+    "href": "modules/01-windows.html#clinical-question",
+    "title": "Module 1 — Windows & Acquisition",
+    "section": "",
+    "text": "What clinical question does this exam answer, and how do findings change management?\n\n\n\n\n\n\nNote\n\n\n\nThe bedside decision frame goes here. For pericardium: is there an effusion, is it physiologically significant, and does this change resuscitation, hemodynamic management, or the need for emergent intervention?"
+  },
+  {
+    "objectID": "modules/01-windows.html#image-acquisition",
+    "href": "modules/01-windows.html#image-acquisition",
+    "title": "Module 1 — Windows & Acquisition",
+    "section": "2. Image acquisition",
+    "text": "2. Image acquisition\nProbe, windows, and technique for this module.\nBrief intro paragraph here. Below, embed acquisition videos one per technique.\n\nSubcostal four-chamber view\nVideo and key points coming soon.\n\n\nParasternal long axis\nVideo and key points coming soon.\n\n\nApical four-chamber\nVideo and key points coming soon."
+  },
+  {
+    "objectID": "modules/01-windows.html#normal-normal-variants",
+    "href": "modules/01-windows.html#normal-normal-variants",
+    "title": "Module 1 — Windows & Acquisition",
+    "section": "3. Normal & normal variants",
+    "text": "3. Normal & normal variants\nThe library of normal hearts and common confounders.\nFellows need to see ten or more normals before pathology makes sense. Loops will go here, organized as:\n\nNormal pericardium across body habitus\nPericardial fat pad (commonly mistaken for effusion)\nEpicardial fat\nPost-CABG appearance"
+  },
+  {
+    "objectID": "modules/01-windows.html#pathology-library",
+    "href": "modules/01-windows.html#pathology-library",
+    "title": "Module 1 — Windows & Acquisition",
+    "section": "4. Pathology library",
+    "text": "4. Pathology library\nOrganized by finding, not by diagnosis.\n\nSmall effusion\nLoops and teaching points coming soon.\n\n\nModerate to large effusion\nLoops and teaching points coming soon.\n\n\nTamponade physiology\nLoops and teaching points coming soon — RA collapse, RV diastolic collapse, plethoric IVC, respiratory variation.\n\n\nLoculated effusion\nLoops and teaching points coming soon.\n\n\nMimics & pitfalls\nPleural effusion vs pericardial, fat pad vs effusion, descending aorta vs effusion."
+  },
+  {
+    "objectID": "modules/01-windows.html#integration-cases",
+    "href": "modules/01-windows.html#integration-cases",
+    "title": "Module 1 — Windows & Acquisition",
+    "section": "5. Integration cases",
+    "text": "5. Integration cases\nCases where the finding changes management.\nThree to five short cases will go here. Each case follows the format:\n\nClinical scenario\nWhat exam would you perform?\nLoops to interpret\nWhat do you see?\nHow does this change management?\n\n\n\n\n\n\n\nTip\n\n\n\nCase format anchor: the case ends with a management decision, not just a diagnosis. The whole point is integration."
+  },
+  {
+    "objectID": "modules/01-windows.html#quiz",
+    "href": "modules/01-windows.html#quiz",
+    "title": "Module 1 — Windows & Acquisition",
+    "section": "Quiz",
+    "text": "Quiz\nAnki deck for spaced repetition: link coming soon.\nIn-page quiz items: coming soon."
+  },
+  {
+    "objectID": "modules/06-integration.html#clinical-question",
+    "href": "modules/06-integration.html#clinical-question",
+    "title": "Module 4 — Pericardium",
+    "section": "",
+    "text": "What clinical question does this exam answer, and how do findings change management?\n\n\n\n\n\n\nNote\n\n\n\nThe bedside decision frame goes here. For pericardium: is there an effusion, is it physiologically significant, and does this change resuscitation, hemodynamic management, or the need for emergent intervention?"
+  },
+  {
+    "objectID": "modules/06-integration.html#image-acquisition",
+    "href": "modules/06-integration.html#image-acquisition",
+    "title": "Module 4 — Pericardium",
+    "section": "2. Image acquisition",
+    "text": "2. Image acquisition\nProbe, windows, and technique for this module.\nBrief intro paragraph here. Below, embed acquisition videos one per technique.\n\nSubcostal four-chamber view\nVideo and key points coming soon.\n\n\nParasternal long axis\nVideo and key points coming soon.\n\n\nApical four-chamber\nVideo and key points coming soon."
+  },
+  {
+    "objectID": "modules/06-integration.html#normal-normal-variants",
+    "href": "modules/06-integration.html#normal-normal-variants",
+    "title": "Module 4 — Pericardium",
+    "section": "3. Normal & normal variants",
+    "text": "3. Normal & normal variants\nThe library of normal hearts and common confounders.\nFellows need to see ten or more normals before pathology makes sense. Loops will go here, organized as:\n\nNormal pericardium across body habitus\nPericardial fat pad (commonly mistaken for effusion)\nEpicardial fat\nPost-CABG appearance"
+  },
+  {
+    "objectID": "modules/06-integration.html#pathology-library",
+    "href": "modules/06-integration.html#pathology-library",
+    "title": "Module 4 — Pericardium",
+    "section": "4. Pathology library",
+    "text": "4. Pathology library\nOrganized by finding, not by diagnosis.\n\nSmall effusion\nLoops and teaching points coming soon.\n\n\nModerate to large effusion\nLoops and teaching points coming soon.\n\n\nTamponade physiology\nLoops and teaching points coming soon — RA collapse, RV diastolic collapse, plethoric IVC, respiratory variation.\n\n\nLoculated effusion\nLoops and teaching points coming soon.\n\n\nMimics & pitfalls\nPleural effusion vs pericardial, fat pad vs effusion, descending aorta vs effusion."
+  },
+  {
+    "objectID": "modules/06-integration.html#integration-cases",
+    "href": "modules/06-integration.html#integration-cases",
+    "title": "Module 4 — Pericardium",
+    "section": "5. Integration cases",
+    "text": "5. Integration cases\nCases where the finding changes management.\nThree to five short cases will go here. Each case follows the format:\n\nClinical scenario\nWhat exam would you perform?\nLoops to interpret\nWhat do you see?\nHow does this change management?\n\n\n\n\n\n\n\nTip\n\n\n\nCase format anchor: the case ends with a management decision, not just a diagnosis. The whole point is integration."
+  },
+  {
+    "objectID": "modules/06-integration.html#quiz",
+    "href": "modules/06-integration.html#quiz",
+    "title": "Module 4 — Pericardium",
+    "section": "Quiz",
+    "text": "Quiz\nAnki deck for spaced repetition: link coming soon.\nIn-page quiz items: coming soon."
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Cardiac POCUS for Critical Care Fellows",
+    "section": "",
+    "text": "This curriculum is built for critical care fellows learning point-of-care echocardiography. Six modules, organized around the clinical questions you’ll actually ask at the bedside."
+  },
+  {
+    "objectID": "index.html#how-to-use-this-site",
+    "href": "index.html#how-to-use-this-site",
+    "title": "Cardiac POCUS for Critical Care Fellows",
+    "section": "How to use this site",
+    "text": "How to use this site\nWork through the modules in order. Each module has the same five parts:\n\nClinical question — what bedside decision this exam answers\nImage acquisition — probe, windows, and technique\nNormal & normal variants — the baseline you need before pathology\nPathology library — organized by finding, not by diagnosis\nIntegration cases — where the finding changes management\n\nEach module also has a linked Anki deck for spaced-repetition review and a quiz to check your understanding."
+  },
+  {
+    "objectID": "index.html#modules",
+    "href": "index.html#modules",
+    "title": "Cardiac POCUS for Critical Care Fellows",
+    "section": "Modules",
+    "text": "Modules\n\nModule 1 — Windows & Image Acquisition\nModule 2 — Left Ventricular Function\nModule 3 — Right Ventricular Function\nModule 4 — Pericardium\nModule 5 — IVC & Volume Status\nModule 6 — Shock & Arrest Integration"
+  },
+  {
+    "objectID": "index.html#logbook-assessment",
+    "href": "index.html#logbook-assessment",
+    "title": "Cardiac POCUS for Critical Care Fellows",
+    "section": "Logbook & assessment",
+    "text": "Logbook & assessment\nScan logbook and competency assessment links coming soon."
+  },
+  {
+    "objectID": "modules/03-rv.html#clinical-question",
+    "href": "modules/03-rv.html#clinical-question",
+    "title": "Module 4 — Pericardium",
+    "section": "",
+    "text": "What clinical question does this exam answer, and how do findings change management?\n\n\n\n\n\n\nNote\n\n\n\nThe bedside decision frame goes here. For pericardium: is there an effusion, is it physiologically significant, and does this change resuscitation, hemodynamic management, or the need for emergent intervention?"
+  },
+  {
+    "objectID": "modules/03-rv.html#image-acquisition",
+    "href": "modules/03-rv.html#image-acquisition",
+    "title": "Module 4 — Pericardium",
+    "section": "2. Image acquisition",
+    "text": "2. Image acquisition\nProbe, windows, and technique for this module.\nBrief intro paragraph here. Below, embed acquisition videos one per technique.\n\nSubcostal four-chamber view\nVideo and key points coming soon.\n\n\nParasternal long axis\nVideo and key points coming soon.\n\n\nApical four-chamber\nVideo and key points coming soon."
+  },
+  {
+    "objectID": "modules/03-rv.html#normal-normal-variants",
+    "href": "modules/03-rv.html#normal-normal-variants",
+    "title": "Module 4 — Pericardium",
+    "section": "3. Normal & normal variants",
+    "text": "3. Normal & normal variants\nThe library of normal hearts and common confounders.\nFellows need to see ten or more normals before pathology makes sense. Loops will go here, organized as:\n\nNormal pericardium across body habitus\nPericardial fat pad (commonly mistaken for effusion)\nEpicardial fat\nPost-CABG appearance"
+  },
+  {
+    "objectID": "modules/03-rv.html#pathology-library",
+    "href": "modules/03-rv.html#pathology-library",
+    "title": "Module 4 — Pericardium",
+    "section": "4. Pathology library",
+    "text": "4. Pathology library\nOrganized by finding, not by diagnosis.\n\nSmall effusion\nLoops and teaching points coming soon.\n\n\nModerate to large effusion\nLoops and teaching points coming soon.\n\n\nTamponade physiology\nLoops and teaching points coming soon — RA collapse, RV diastolic collapse, plethoric IVC, respiratory variation.\n\n\nLoculated effusion\nLoops and teaching points coming soon.\n\n\nMimics & pitfalls\nPleural effusion vs pericardial, fat pad vs effusion, descending aorta vs effusion."
+  },
+  {
+    "objectID": "modules/03-rv.html#integration-cases",
+    "href": "modules/03-rv.html#integration-cases",
+    "title": "Module 4 — Pericardium",
+    "section": "5. Integration cases",
+    "text": "5. Integration cases\nCases where the finding changes management.\nThree to five short cases will go here. Each case follows the format:\n\nClinical scenario\nWhat exam would you perform?\nLoops to interpret\nWhat do you see?\nHow does this change management?\n\n\n\n\n\n\n\nTip\n\n\n\nCase format anchor: the case ends with a management decision, not just a diagnosis. The whole point is integration."
+  },
+  {
+    "objectID": "modules/03-rv.html#quiz",
+    "href": "modules/03-rv.html#quiz",
+    "title": "Module 4 — Pericardium",
+    "section": "Quiz",
+    "text": "Quiz\nAnki deck for spaced repetition: link coming soon.\nIn-page quiz items: coming soon."
+  },
+  {
+    "objectID": "modules/02-lv.html#clinical-question",
+    "href": "modules/02-lv.html#clinical-question",
+    "title": "Module 4 — Pericardium",
+    "section": "",
+    "text": "What clinical question does this exam answer, and how do findings change management?\n\n\n\n\n\n\nNote\n\n\n\nThe bedside decision frame goes here. For pericardium: is there an effusion, is it physiologically significant, and does this change resuscitation, hemodynamic management, or the need for emergent intervention?"
+  },
+  {
+    "objectID": "modules/02-lv.html#image-acquisition",
+    "href": "modules/02-lv.html#image-acquisition",
+    "title": "Module 4 — Pericardium",
+    "section": "2. Image acquisition",
+    "text": "2. Image acquisition\nProbe, windows, and technique for this module.\nBrief intro paragraph here. Below, embed acquisition videos one per technique.\n\nSubcostal four-chamber view\nVideo and key points coming soon.\n\n\nParasternal long axis\nVideo and key points coming soon.\n\n\nApical four-chamber\nVideo and key points coming soon."
+  },
+  {
+    "objectID": "modules/02-lv.html#normal-normal-variants",
+    "href": "modules/02-lv.html#normal-normal-variants",
+    "title": "Module 4 — Pericardium",
+    "section": "3. Normal & normal variants",
+    "text": "3. Normal & normal variants\nThe library of normal hearts and common confounders.\nFellows need to see ten or more normals before pathology makes sense. Loops will go here, organized as:\n\nNormal pericardium across body habitus\nPericardial fat pad (commonly mistaken for effusion)\nEpicardial fat\nPost-CABG appearance"
+  },
+  {
+    "objectID": "modules/02-lv.html#pathology-library",
+    "href": "modules/02-lv.html#pathology-library",
+    "title": "Module 4 — Pericardium",
+    "section": "4. Pathology library",
+    "text": "4. Pathology library\nOrganized by finding, not by diagnosis.\n\nSmall effusion\nLoops and teaching points coming soon.\n\n\nModerate to large effusion\nLoops and teaching points coming soon.\n\n\nTamponade physiology\nLoops and teaching points coming soon — RA collapse, RV diastolic collapse, plethoric IVC, respiratory variation.\n\n\nLoculated effusion\nLoops and teaching points coming soon.\n\n\nMimics & pitfalls\nPleural effusion vs pericardial, fat pad vs effusion, descending aorta vs effusion."
+  },
+  {
+    "objectID": "modules/02-lv.html#integration-cases",
+    "href": "modules/02-lv.html#integration-cases",
+    "title": "Module 4 — Pericardium",
+    "section": "5. Integration cases",
+    "text": "5. Integration cases\nCases where the finding changes management.\nThree to five short cases will go here. Each case follows the format:\n\nClinical scenario\nWhat exam would you perform?\nLoops to interpret\nWhat do you see?\nHow does this change management?\n\n\n\n\n\n\n\nTip\n\n\n\nCase format anchor: the case ends with a management decision, not just a diagnosis. The whole point is integration."
+  },
+  {
+    "objectID": "modules/02-lv.html#quiz",
+    "href": "modules/02-lv.html#quiz",
+    "title": "Module 4 — Pericardium",
+    "section": "Quiz",
+    "text": "Quiz\nAnki deck for spaced repetition: link coming soon.\nIn-page quiz items: coming soon."
+  },
+  {
+    "objectID": "modules/05-ivc.html#clinical-question",
+    "href": "modules/05-ivc.html#clinical-question",
+    "title": "Module 4 — Pericardium",
+    "section": "",
+    "text": "What clinical question does this exam answer, and how do findings change management?\n\n\n\n\n\n\nNote\n\n\n\nThe bedside decision frame goes here. For pericardium: is there an effusion, is it physiologically significant, and does this change resuscitation, hemodynamic management, or the need for emergent intervention?"
+  },
+  {
+    "objectID": "modules/05-ivc.html#image-acquisition",
+    "href": "modules/05-ivc.html#image-acquisition",
+    "title": "Module 4 — Pericardium",
+    "section": "2. Image acquisition",
+    "text": "2. Image acquisition\nProbe, windows, and technique for this module.\nBrief intro paragraph here. Below, embed acquisition videos one per technique.\n\nSubcostal four-chamber view\nVideo and key points coming soon.\n\n\nParasternal long axis\nVideo and key points coming soon.\n\n\nApical four-chamber\nVideo and key points coming soon."
+  },
+  {
+    "objectID": "modules/05-ivc.html#normal-normal-variants",
+    "href": "modules/05-ivc.html#normal-normal-variants",
+    "title": "Module 4 — Pericardium",
+    "section": "3. Normal & normal variants",
+    "text": "3. Normal & normal variants\nThe library of normal hearts and common confounders.\nFellows need to see ten or more normals before pathology makes sense. Loops will go here, organized as:\n\nNormal pericardium across body habitus\nPericardial fat pad (commonly mistaken for effusion)\nEpicardial fat\nPost-CABG appearance"
+  },
+  {
+    "objectID": "modules/05-ivc.html#pathology-library",
+    "href": "modules/05-ivc.html#pathology-library",
+    "title": "Module 4 — Pericardium",
+    "section": "4. Pathology library",
+    "text": "4. Pathology library\nOrganized by finding, not by diagnosis.\n\nSmall effusion\nLoops and teaching points coming soon.\n\n\nModerate to large effusion\nLoops and teaching points coming soon.\n\n\nTamponade physiology\nLoops and teaching points coming soon — RA collapse, RV diastolic collapse, plethoric IVC, respiratory variation.\n\n\nLoculated effusion\nLoops and teaching points coming soon.\n\n\nMimics & pitfalls\nPleural effusion vs pericardial, fat pad vs effusion, descending aorta vs effusion."
+  },
+  {
+    "objectID": "modules/05-ivc.html#integration-cases",
+    "href": "modules/05-ivc.html#integration-cases",
+    "title": "Module 4 — Pericardium",
+    "section": "5. Integration cases",
+    "text": "5. Integration cases\nCases where the finding changes management.\nThree to five short cases will go here. Each case follows the format:\n\nClinical scenario\nWhat exam would you perform?\nLoops to interpret\nWhat do you see?\nHow does this change management?\n\n\n\n\n\n\n\nTip\n\n\n\nCase format anchor: the case ends with a management decision, not just a diagnosis. The whole point is integration."
+  },
+  {
+    "objectID": "modules/05-ivc.html#quiz",
+    "href": "modules/05-ivc.html#quiz",
+    "title": "Module 4 — Pericardium",
+    "section": "Quiz",
+    "text": "Quiz\nAnki deck for spaced repetition: link coming soon.\nIn-page quiz items: coming soon."
   }
 ]

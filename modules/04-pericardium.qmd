@@ -1,0 +1,87 @@
+---
+title: "Module 4 — Pericardium"
+subtitle: "Effusion, tamponade, and pericardial pathology at the bedside"
+---
+
+## 1. Clinical question
+
+*What clinical question does this exam answer, and how do findings change management?*
+
+::: {.callout-note}
+**The bedside decision frame goes here.** For pericardium: is there an effusion, is it physiologically significant, and does this change resuscitation, hemodynamic management, or the need for emergent intervention?
+:::
+
+## 2. Image acquisition
+
+*Probe, windows, and technique for this module.*
+
+Brief intro paragraph here. Below, embed acquisition videos one per technique.
+
+### Subcostal four-chamber view
+
+*Video and key points coming soon.*
+
+### Parasternal long axis
+
+*Video and key points coming soon.*
+
+### Apical four-chamber
+
+*Video and key points coming soon.*
+
+## 3. Normal & normal variants
+
+*The library of normal hearts and common confounders.*
+
+Fellows need to see ten or more normals before pathology makes sense. Loops will go here, organized as:
+
+- Normal pericardium across body habitus
+- Pericardial fat pad (commonly mistaken for effusion)
+- Epicardial fat
+- Post-CABG appearance
+
+## 4. Pathology library
+
+*Organized by finding, not by diagnosis.*
+
+### Small effusion
+
+*Loops and teaching points coming soon.*
+
+### Moderate to large effusion
+
+*Loops and teaching points coming soon.*
+
+### Tamponade physiology
+
+*Loops and teaching points coming soon — RA collapse, RV diastolic collapse, plethoric IVC, respiratory variation.*
+
+### Loculated effusion
+
+*Loops and teaching points coming soon.*
+
+### Mimics & pitfalls
+
+*Pleural effusion vs pericardial, fat pad vs effusion, descending aorta vs effusion.*
+
+## 5. Integration cases
+
+*Cases where the finding changes management.*
+
+Three to five short cases will go here. Each case follows the format:
+
+1. Clinical scenario
+2. What exam would you perform?
+3. Loops to interpret
+4. What do you see?
+5. How does this change management?
+
+::: {.callout-tip}
+**Case format anchor:** the case ends with a management decision, not just a diagnosis. The whole point is integration.
+:::
+
+## Quiz
+
+Anki deck for spaced repetition: *link coming soon.*
+
+In-page quiz items: *coming soon.*

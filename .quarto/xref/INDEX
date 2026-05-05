@@ -4,5 +4,23 @@
   },
   "index.qmd": {
     "index.html": "d83563f4"
+  },
+  "modules/01-windows.qmd": {
+    "01-windows.html": "9d0d9059"
+  },
+  "modules/02-lv.qmd": {
+    "02-lv.html": "fffb73e9"
+  },
+  "modules/03-rv.qmd": {
+    "03-rv.html": "6db5a747"
+  },
+  "modules/04-pericardium.qmd": {
+    "04-pericardium.html": "de3c52d6"
+  },
+  "modules/05-ivc.qmd": {
+    "05-ivc.html": "77d2c76c"
+  },
+  "modules/06-integration.qmd": {
+    "06-integration.html": "4268e2a3"
   }
 }

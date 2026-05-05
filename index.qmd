@@ -1,7 +1,36 @@
 ---
-title: "website"
+title: "Cardiac POCUS for Critical Care Fellows"
+subtitle: "A structured curriculum for bedside echocardiography"
 ---
 
-This is a Quarto website. It really is! Can you believe it?
+## Welcome
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+This curriculum is built for critical care fellows learning point-of-care
+echocardiography. Six modules, organized around the clinical questions
+you'll actually ask at the bedside.
+
+## How to use this site
+
+Work through the modules in order. Each module has the same five parts:
+
+1. **Clinical question** — what bedside decision this exam answers
+2. **Image acquisition** — probe, windows, and technique
+3. **Normal & normal variants** — the baseline you need before pathology
+4. **Pathology library** — organized by finding, not by diagnosis
+5. **Integration cases** — where the finding changes management
+
+Each module also has a linked Anki deck for spaced-repetition review and
+a quiz to check your understanding.
+
+## Modules
+
+- [Module 1 — Windows & Image Acquisition](modules/01-windows.qmd)
+- [Module 2 — Left Ventricular Function](modules/02-lv.qmd)
+- [Module 3 — Right Ventricular Function](modules/03-rv.qmd)
+- [Module 4 — Pericardium](modules/04-pericardium.qmd)
+- [Module 5 — IVC & Volume Status](modules/05-ivc.qmd)
+- [Module 6 — Shock & Arrest Integration](modules/06-integration.qmd)
+
+## Logbook & assessment
+
+*Scan logbook and competency assessment links coming soon.*

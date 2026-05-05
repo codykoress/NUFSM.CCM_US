@@ -8,7 +8,42 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - text: Modules
+        menu:
+          - href: modules/01-windows.qmd
+            text: "1. Windows & Acquisition"
+          - href: modules/02-lv.qmd
+            text: "2. LV Function"
+          - href: modules/03-rv.qmd
+            text: "3. RV Function"
+          - href: modules/04-pericardium.qmd
+            text: "4. Pericardium"
+          - href: modules/05-ivc.qmd
+            text: "5. IVC & Volume"
+          - href: modules/06-integration.qmd
+            text: "6. Integration"
+      - href: about.qmd
+        text: About
+      - href: credits.qmd
+        text: ---
+title: "Credits & Attribution"
+---
+
+## Image sources
+
+The majority of ultrasound loops on this site are sourced from
+[The POCUS Atlas](https://www.thepocusatlas.com), used under the
+[Creative Commons BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/).
+Each loop is individually attributed to its original contributor on the
+module page where it appears.
+
+## License
+
+This curriculum is provided for educational, non-commercial use only.
+
+## Faculty contributors
+
+*Names and roles to be added.*
 
 format:
   html:
