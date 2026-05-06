@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Module 9 — Abdominal Ultrasound – website</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">website</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-modules" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Modules</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-modules">    
+        <li>
+    <a class="dropdown-item" href="../modules/01-windows.html">
+ <span class="dropdown-text">1. Windows &amp; Acquisition</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../modules/02-lv.html">
+ <span class="dropdown-text">2. LV Function</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../modules/03-rv.html">
+ <span class="dropdown-text">3. RV Function</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../modules/04-pericardium.html">
+ <span class="dropdown-text">4. Pericardium</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../modules/05-ivc.html">
+ <span class="dropdown-text">5. IVC &amp; Volume</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../modules/06-integration.html">
+ <span class="dropdown-text">6. Integration</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../credits.qmd"> 
+<span class="menu-text">credits</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#clinical-question" id="toc-clinical-question" class="nav-link active" data-scroll-target="#clinical-question">1. Clinical question</a></li>
+  <li><a href="#image-acquisition" id="toc-image-acquisition" class="nav-link" data-scroll-target="#image-acquisition">2. Image acquisition</a>
+  <ul class="collapse">
+  <li><a href="#right-upper-quadrant-morrisons-pouch" id="toc-right-upper-quadrant-morrisons-pouch" class="nav-link" data-scroll-target="#right-upper-quadrant-morrisons-pouch">Right upper quadrant — Morrison’s pouch</a></li>
+  <li><a href="#left-upper-quadrant-splenorenal-space" id="toc-left-upper-quadrant-splenorenal-space" class="nav-link" data-scroll-target="#left-upper-quadrant-splenorenal-space">Left upper quadrant — splenorenal space</a></li>
+  <li><a href="#suprapubic-pelvis" id="toc-suprapubic-pelvis" class="nav-link" data-scroll-target="#suprapubic-pelvis">Suprapubic — pelvis</a></li>
+  <li><a href="#subxiphoid-pericardium-and-cardiac" id="toc-subxiphoid-pericardium-and-cardiac" class="nav-link" data-scroll-target="#subxiphoid-pericardium-and-cardiac">Subxiphoid — pericardium and cardiac</a></li>
+  <li><a href="#bladder-transverse-and-sagittal" id="toc-bladder-transverse-and-sagittal" class="nav-link" data-scroll-target="#bladder-transverse-and-sagittal">Bladder — transverse and sagittal</a></li>
+  <li><a href="#kidneys-longitudinal" id="toc-kidneys-longitudinal" class="nav-link" data-scroll-target="#kidneys-longitudinal">Kidneys — longitudinal</a></li>
+  </ul></li>
+  <li><a href="#normal-normal-variants" id="toc-normal-normal-variants" class="nav-link" data-scroll-target="#normal-normal-variants">3. Normal &amp; normal variants</a>
+  <ul class="collapse">
+  <li><a href="#normal-fast-exam" id="toc-normal-fast-exam" class="nav-link" data-scroll-target="#normal-fast-exam">Normal FAST exam</a></li>
+  <li><a href="#normal-kidney" id="toc-normal-kidney" class="nav-link" data-scroll-target="#normal-kidney">Normal kidney</a></li>
+  <li><a href="#normal-bladder" id="toc-normal-bladder" class="nav-link" data-scroll-target="#normal-bladder">Normal bladder</a></li>
+  <li><a href="#perihepatic-fat-and-ascites-mimics" id="toc-perihepatic-fat-and-ascites-mimics" class="nav-link" data-scroll-target="#perihepatic-fat-and-ascites-mimics">Perihepatic fat and ascites mimics</a></li>
+  </ul></li>
+  <li><a href="#pathology-library" id="toc-pathology-library" class="nav-link" data-scroll-target="#pathology-library">4. Pathology library</a>
+  <ul class="collapse">
+  <li><a href="#free-fluid-traumatic-hemoperitoneum" id="toc-free-fluid-traumatic-hemoperitoneum" class="nav-link" data-scroll-target="#free-fluid-traumatic-hemoperitoneum">Free fluid — traumatic (hemoperitoneum)</a></li>
+  <li><a href="#free-fluid-non-traumatic" id="toc-free-fluid-non-traumatic" class="nav-link" data-scroll-target="#free-fluid-non-traumatic">Free fluid — non-traumatic</a></li>
+  <li><a href="#urinary-retention-and-bladder-assessment" id="toc-urinary-retention-and-bladder-assessment" class="nav-link" data-scroll-target="#urinary-retention-and-bladder-assessment">Urinary retention and bladder assessment</a></li>
+  <li><a href="#hydronephrosis" id="toc-hydronephrosis" class="nav-link" data-scroll-target="#hydronephrosis">Hydronephrosis</a></li>
+  </ul></li>
+  <li><a href="#integration-cases" id="toc-integration-cases" class="nav-link" data-scroll-target="#integration-cases">5. Integration cases</a>
+  <ul class="collapse">
+  <li><a href="#case-1-trauma-positive-fast-in-a-hypotensive-patient" id="toc-case-1-trauma-positive-fast-in-a-hypotensive-patient" class="nav-link" data-scroll-target="#case-1-trauma-positive-fast-in-a-hypotensive-patient">Case 1: Trauma — positive FAST in a hypotensive patient</a></li>
+  <li><a href="#case-2-urosepsis-with-flank-pain-is-the-system-obstructed" id="toc-case-2-urosepsis-with-flank-pain-is-the-system-obstructed" class="nav-link" data-scroll-target="#case-2-urosepsis-with-flank-pain-is-the-system-obstructed">Case 2: Urosepsis with flank pain — is the system obstructed?</a></li>
+  <li><a href="#case-3-altered-mental-status-and-agitation-is-this-retention" id="toc-case-3-altered-mental-status-and-agitation-is-this-retention" class="nav-link" data-scroll-target="#case-3-altered-mental-status-and-agitation-is-this-retention">Case 3: Altered mental status and agitation — is this retention?</a></li>
+  <li><a href="#case-4-ruptured-ectopic-pregnancy" id="toc-case-4-ruptured-ectopic-pregnancy" class="nav-link" data-scroll-target="#case-4-ruptured-ectopic-pregnancy">Case 4: Ruptured ectopic pregnancy</a></li>
+  </ul></li>
+  <li><a href="#quiz" id="toc-quiz" class="nav-link" data-scroll-target="#quiz">Quiz</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Module 9 — Abdominal Ultrasound</h1>
+<p class="subtitle lead">FAST exam, free fluid, bladder volume, and hydronephrosis</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="clinical-question" class="level2">
+<h2 class="anchored" data-anchor-id="clinical-question">1. Clinical question</h2>
+<p><em>What clinical question does this exam answer, and how do findings change management?</em></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>The bedside decision frame:</strong> Four distinct questions, each with its own clinical trigger.</p>
+<ol type="1">
+<li><strong>Is there intraperitoneal free fluid?</strong> In trauma, free fluid = blood until proven otherwise. In the non-trauma ICU patient, free fluid may represent ascites, hollow viscus perforation, or internal hemorrhage.</li>
+<li><strong>Is there a distended, obstructed bladder?</strong> Urinary retention is a common, painful, and easily treated problem — one that is frequently missed in sedated or altered patients.</li>
+<li><strong>Is there hydronephrosis?</strong> Ureteral obstruction causing hydronephrosis may explain AKI, flank pain, or urosepsis in an undrained system.</li>
+<li><strong>In the trauma patient — is there free fluid in the pericardium?</strong> The subxiphoid FAST view incorporates cardiac assessment (see Module 1).</li>
+</ol>
+</div>
+</div>
+<p>Abdominal ultrasound at the bedside is fast, non-invasive, and immediately actionable. The FAST exam (Focused Assessment with Sonography in Trauma) is the standard of care in trauma resuscitation. In non-trauma critical care, bladder and kidney assessment are high-yield applications that require minimal additional training.</p>
+<hr>
+</section>
+<section id="image-acquisition" class="level2">
+<h2 class="anchored" data-anchor-id="image-acquisition">2. Image acquisition</h2>
+<p><em>Probe, windows, and technique for this module.</em></p>
+<p>Use a <strong>curvilinear (low-frequency, 2–5 MHz) probe</strong> for all abdominal windows — the penetration depth required for the liver, spleen, kidneys, and pelvis exceeds what a linear probe provides. A phased array probe is an acceptable substitute for FAST but is less ideal for the pelvic view.</p>
+<p><strong>Machine preset:</strong> Abdominal. Adjust depth to see structures of interest with adequate margin.</p>
+<hr>
+<section id="right-upper-quadrant-morrisons-pouch" class="level3">
+<h3 class="anchored" data-anchor-id="right-upper-quadrant-morrisons-pouch">Right upper quadrant — Morrison’s pouch</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slot:</strong> RUQ acquisition — hepatorenal interface, fan through Morrison’s pouch, assess for free fluid.</p>
+</div>
+</div>
+<p><strong>Probe placement:</strong> Probe in the right mid-axillary line, 8th–11th intercostal space, indicator toward the patient’s head. Fan through the hepatorenal interface (Morrison’s pouch) — the potential space between the liver and right kidney.</p>
+<p><strong>What you are looking for:</strong> Any anechoic (black) stripe between the liver and right kidney. In a normal exam, the liver and kidney appear to be in direct contact with a thin hyperechoic stripe of Gerota’s fascia between them. Free fluid appears as a wedge or stripe of anechoic material in the dependent hepatorenal space. Also assess the inferior tip of the liver and the right paracolic gutter.</p>
+<p><strong>Pearls:</strong> Morrison’s pouch is the most dependent intraperitoneal space in the supine position and the most sensitive location for detecting free fluid. As little as 100–200 mL of free fluid may be visible here.</p>
+<hr>
+</section>
+<section id="left-upper-quadrant-splenorenal-space" class="level3">
+<h3 class="anchored" data-anchor-id="left-upper-quadrant-splenorenal-space">Left upper quadrant — splenorenal space</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slot:</strong> LUQ acquisition — splenorenal interface, subphrenic space, left paracolic gutter.</p>
+</div>
+</div>
+<p><strong>Probe placement:</strong> Left posterior axillary line, 8th–11th intercostal space, indicator toward the head. This window is more posterior than the RUQ view — a common error is imaging too anteriorly and missing the spleen.</p>
+<p><strong>What you are looking for:</strong> Free fluid between the spleen and left kidney (splenorenal space), and in the subphrenic space (between the diaphragm and spleen). A left pleural effusion appears above the diaphragm — do not confuse it with subphrenic free fluid. The diaphragm is the landmark: fluid above = pleural, fluid below = peritoneal.</p>
+<p><strong>Pearls:</strong> The LUQ is less sensitive than the RUQ because the splenorenal space is less dependent. Free fluid may not accumulate here until larger volumes are present. Assess the subphrenic and paracolic regions thoroughly.</p>
+<hr>
+</section>
+<section id="suprapubic-pelvis" class="level3">
+<h3 class="anchored" data-anchor-id="suprapubic-pelvis">Suprapubic — pelvis</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slot:</strong> Suprapubic acquisition — bladder as acoustic window, free fluid in the pouch of Douglas (female) or rectovesical space (male), transverse and sagittal planes.</p>
+</div>
+</div>
+<p><strong>Probe placement:</strong> Suprapubic, just above the symphysis pubis, indicator to the patient’s right (transverse) or head (sagittal). The bladder serves as an acoustic window to the posterior pelvic structures.</p>
+<p><strong>What you are looking for:</strong> Free fluid posterior to the bladder (pouch of Douglas in females, rectovesical space in males). In females, look for fluid in the cul-de-sac posterior to the uterus. Scan in both transverse and sagittal planes. Free fluid appears anechoic, dependent, and irregular in shape.</p>
+<p><strong>Bladder assessment:</strong> See dedicated section below.</p>
+<p><strong>Pearls:</strong> The pelvic view requires a full or at least partially full bladder to serve as an acoustic window. In patients who are oliguric or have been catheterized, the pelvic view may be limited. The pelvic space is the most dependent location in the erect position — significant fluid may accumulate here even when the upper quadrants appear negative.</p>
+<hr>
+</section>
+<section id="subxiphoid-pericardium-and-cardiac" class="level3">
+<h3 class="anchored" data-anchor-id="subxiphoid-pericardium-and-cardiac">Subxiphoid — pericardium and cardiac</h3>
+<p><em>Covered in Module 1. The subxiphoid view is the fourth standard FAST window.</em></p>
+<hr>
+</section>
+<section id="bladder-transverse-and-sagittal" class="level3">
+<h3 class="anchored" data-anchor-id="bladder-transverse-and-sagittal">Bladder — transverse and sagittal</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slot:</strong> Bladder assessment — full bladder as an anechoic structure, volume estimation, wall assessment.</p>
+</div>
+</div>
+<p><strong>Probe placement:</strong> Suprapubic, transverse then sagittal. The bladder appears as a well-defined anechoic structure posterior to the symphysis. Measure three dimensions: transverse (width), anteroposterior (depth), and craniocaudal (height). Bladder volume (mL) ≈ 0.52 × width × depth × height (in cm). Some machines calculate this automatically.</p>
+<p><strong>Significant residual volume:</strong> &gt;300 mL post-void, or a distended bladder in a patient with reduced consciousness who is not catheterized.</p>
+<hr>
+</section>
+<section id="kidneys-longitudinal" class="level3">
+<h3 class="anchored" data-anchor-id="kidneys-longitudinal">Kidneys — longitudinal</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slot:</strong> Right and left kidney — normal cortex and collecting system vs hydronephrosis grades.</p>
+</div>
+</div>
+<p><strong>Probe placement:</strong> Coronal plane, similar to FAST views but oriented to the kidneys. Right kidney: right mid-axillary line, indicator up. Left kidney: left posterior axillary line, indicator up. Obtain a longitudinal image of the entire kidney — cortex, medullary pyramids, and collecting system (renal pelvis and calyces).</p>
+<p><strong>What you are looking for:</strong> Any separation of the renal sinus (echogenic central collecting system) by anechoic fluid — indicating hydronephrosis.</p>
+<hr>
+</section>
+</section>
+<section id="normal-normal-variants" class="level2">
+<h2 class="anchored" data-anchor-id="normal-normal-variants">3. Normal &amp; normal variants</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slots:</strong> Normal FAST exam — no free fluid at each window. Normal kidney. Normal bladder.</p>
+</div>
+</div>
+<section id="normal-fast-exam" class="level3">
+<h3 class="anchored" data-anchor-id="normal-fast-exam">Normal FAST exam</h3>
+<p>No anechoic fluid in Morrison’s pouch, splenorenal space, or pelvis. The subxiphoid view shows no pericardial effusion. Organ surfaces are in direct contact with each other and with the abdominal wall.</p>
+</section>
+<section id="normal-kidney" class="level3">
+<h3 class="anchored" data-anchor-id="normal-kidney">Normal kidney</h3>
+<p>Length 9–12 cm, width 4–6 cm. The renal cortex is slightly less echogenic than the liver. The renal sinus (collecting system) appears as a central echogenic structure without internal fluid. Medullary pyramids appear as hypoechoic triangular structures pointing toward the sinus.</p>
+</section>
+<section id="normal-bladder" class="level3">
+<h3 class="anchored" data-anchor-id="normal-bladder">Normal bladder</h3>
+<p>Thin-walled, smooth, anechoic. Wall thickness &lt;3 mm when full. Urine is anechoic; debris, clots, or calculi appear as echogenic foci within the lumen.</p>
+</section>
+<section id="perihepatic-fat-and-ascites-mimics" class="level3">
+<h3 class="anchored" data-anchor-id="perihepatic-fat-and-ascites-mimics">Perihepatic fat and ascites mimics</h3>
+<p>Small amounts of fat around the liver and mesentery can mimic minimal free fluid. Fat has a characteristic echogenicity (not purely anechoic) and does not layer into dependent spaces the way free fluid does. Bowel loops with fluid should not be mistaken for free fluid — identify peristalsis and bowel wall to distinguish.</p>
+<hr>
+</section>
+</section>
+<section id="pathology-library" class="level2">
+<h2 class="anchored" data-anchor-id="pathology-library">4. Pathology library</h2>
+<p><em>Organized by finding.</em></p>
+<section id="free-fluid-traumatic-hemoperitoneum" class="level3">
+<h3 class="anchored" data-anchor-id="free-fluid-traumatic-hemoperitoneum">Free fluid — traumatic (hemoperitoneum)</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slots:</strong> - Anechoic free fluid in Morrison’s pouch - Moderate-large free fluid in the pelvis - Echogenic free fluid — acute blood</p>
+</div>
+</div>
+<p>In trauma, any free fluid is assumed to be blood. Acute hemoperitoneum may be anechoic (early, not clotted) or echogenic (clotted blood). The pattern and volume guide management.</p>
+<p><strong>Grading by volume and distribution:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Finding</th>
+<th>Estimated Volume</th>
+<th>Management Implication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Trace fluid in Morrison’s pouch only</td>
+<td>&lt;250 mL</td>
+<td>Serial exam, reassess</td>
+</tr>
+<tr class="even">
+<td>Fluid in RUQ + pelvis</td>
+<td>500–1000 mL</td>
+<td>Operative vs non-operative decision based on hemodynamics</td>
+</tr>
+<tr class="odd">
+<td>Fluid in all three windows</td>
+<td>&gt;1000 mL</td>
+<td>Likely operative in hemodynamically unstable patient</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Teaching points:</strong></p>
+<ul>
+<li>A positive FAST in a hemodynamically unstable patient = OR, not CT. Do not delay operative intervention for imaging.</li>
+<li>A negative FAST does not rule out intraperitoneal injury — solid organ injuries may be present without free fluid early.</li>
+<li>A positive FAST in a hemodynamically stable patient allows CT for better injury characterization before operative decision.</li>
+<li>Echogenic (bright) free fluid = acute blood/clot. Anechoic free fluid in trauma = blood (until proven otherwise), even if it looks like simple fluid.</li>
+</ul>
+<hr>
+</section>
+<section id="free-fluid-non-traumatic" class="level3">
+<h3 class="anchored" data-anchor-id="free-fluid-non-traumatic">Free fluid — non-traumatic</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slot:</strong> Ascites — large volume anechoic free fluid surrounding bowel loops, “floating” bowel.</p>
+</div>
+</div>
+<p>In the non-trauma ICU patient, free fluid may represent: - <strong>Ascites:</strong> Cirrhosis, malignancy, heart failure — anechoic, often massive, bowel loops appear to float - <strong>Ruptured viscus:</strong> Bowel perforation — complex, echogenic, or mixed fluid - <strong>Ruptured ectopic pregnancy:</strong> Pelvic free fluid in a woman of childbearing age = ectopic until proven otherwise - <strong>Internal hemorrhage:</strong> Post-procedural, anticoagulated, aortic aneurysm rupture</p>
+<p><strong>Teaching points:</strong></p>
+<ul>
+<li>In a non-trauma patient with hypotension and pelvic free fluid, always check a urine or serum beta-hCG before attributing fluid to another cause.</li>
+<li>Ruptured ectopic with free fluid and hemodynamic instability = emergent gynecologic surgery.</li>
+<li>Large ascites can be drained under ultrasound guidance (see Module 11).</li>
+</ul>
+<hr>
+</section>
+<section id="urinary-retention-and-bladder-assessment" class="level3">
+<h3 class="anchored" data-anchor-id="urinary-retention-and-bladder-assessment">Urinary retention and bladder assessment</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slots:</strong> - Massively distended bladder — large anechoic structure filling the pelvis - Bladder volume calculation with three-plane measurement</p>
+</div>
+</div>
+<p>A distended bladder (&gt;300 mL post-void residual) in a patient with reduced consciousness, confusion, agitation, or unexplained pain is urinary retention until proven otherwise.</p>
+<p><strong>Teaching points:</strong></p>
+<ul>
+<li>Urinary retention is common in the ICU — opioids, anticholinergics, and sedatives all reduce detrusor function.</li>
+<li>In a male patient with an enlarged prostate, any acute illness may precipitate retention.</li>
+<li>A fully distended bladder (&gt;500–800 mL) can reflexively inhibit cardiac output and worsen hemodynamics.</li>
+<li>Treatment is urethral or suprapubic catheterization. Ultrasound-guided suprapubic catheterization is appropriate when urethral access is not possible.</li>
+<li>Post-decompression diuresis can occur after relief of chronic obstruction — anticipate and replace fluids.</li>
+</ul>
+<hr>
+</section>
+<section id="hydronephrosis" class="level3">
+<h3 class="anchored" data-anchor-id="hydronephrosis">Hydronephrosis</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slots:</strong> - Grade 1 hydronephrosis — mild dilation of the renal pelvis only - Grade 2 — dilation of pelvis and calyces, preserved cortex - Grade 3 — severe dilation, thinned cortex</p>
+</div>
+</div>
+<p>Hydronephrosis is dilation of the renal collecting system from ureteral obstruction. It appears as anechoic fluid within the renal sinus, separating the echogenic collecting system walls.</p>
+<p><strong>Grading:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Grade</th>
+<th>Appearance</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 (mild)</td>
+<td>Pelvis dilated, calyces normal</td>
+</tr>
+<tr class="even">
+<td>2 (moderate)</td>
+<td>Pelvis and calyces dilated, cortex preserved</td>
+</tr>
+<tr class="odd">
+<td>3 (severe)</td>
+<td>Marked dilation, cortex thinned</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Teaching points:</strong></p>
+<ul>
+<li>Hydronephrosis in a patient with AKI = obstructive nephropathy until proven otherwise. Relieve the obstruction (Foley, ureteral stent, nephrostomy) before attributing the AKI to another cause.</li>
+<li>Bilateral hydronephrosis = bilateral obstruction or bladder outlet obstruction (BPH, mass). Check the bladder first.</li>
+<li>Hydronephrosis + fever = obstructed, infected system (pyonephrosis) — urgent drainage is required (not just antibiotics).</li>
+<li>Normal ultrasound does not rule out obstruction in early or acute cases — the collecting system may not have had time to dilate.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="integration-cases" class="level2">
+<h2 class="anchored" data-anchor-id="integration-cases">5. Integration cases</h2>
+<p><em>Cases where the finding changes management.</em></p>
+<hr>
+<section id="case-1-trauma-positive-fast-in-a-hypotensive-patient" class="level3">
+<h3 class="anchored" data-anchor-id="case-1-trauma-positive-fast-in-a-hypotensive-patient">Case 1: Trauma — positive FAST in a hypotensive patient</h3>
+<p><strong>Clinical scenario:</strong> A 25-year-old man is brought in after a motor vehicle collision at highway speed. He is hypotensive (BP 78/50) and tachycardic (HR 132) on arrival. GCS is 14. The trauma team is assembled.</p>
+<p><strong>What exam would you perform?</strong> Immediate FAST exam as part of the primary survey.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slot:</strong> Loops for interpretation.</p>
+</div>
+</div>
+<p><strong>What you see:</strong> Morrison’s pouch: free fluid, moderate volume. Splenorenal space: free fluid. Pelvis: large volume free fluid. Subxiphoid: no pericardial effusion.</p>
+<p><strong>How does this change management?</strong> Positive FAST with hemodynamic instability = operative intervention. Do not take this patient to CT. Transfuse blood products in a 1:1:1 ratio (PRBC:FFP:platelets) as a bridge to the OR. Activate massive transfusion protocol. The trauma surgeon takes over — the bedside echo has already answered the most important question.</p>
+<hr>
+</section>
+<section id="case-2-urosepsis-with-flank-pain-is-the-system-obstructed" class="level3">
+<h3 class="anchored" data-anchor-id="case-2-urosepsis-with-flank-pain-is-the-system-obstructed">Case 2: Urosepsis with flank pain — is the system obstructed?</h3>
+<p><strong>Clinical scenario:</strong> A 70-year-old man with a history of kidney stones presents with fever (39.2°C), right flank pain, and hypotension. UA shows pyuria. He is started on IV antibiotics and fluids. The team is wondering if he needs urgent urologic intervention.</p>
+<p><strong>What exam would you perform?</strong> Renal ultrasound — bilateral kidneys.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slot:</strong> Loops for interpretation.</p>
+</div>
+</div>
+<p><strong>What you see:</strong> Right kidney: grade 2–3 hydronephrosis. Echogenic material within the dilated collecting system (debris). Left kidney: normal.</p>
+<p><strong>How does this change management?</strong> Obstructed, infected right kidney — pyonephrosis. Antibiotics alone are insufficient. Emergent urology consultation for urgent drainage — either ureteral stent or percutaneous nephrostomy. Septic shock from an obstructed system will not resolve without drainage. This is a surgical emergency, not a medical one.</p>
+<hr>
+</section>
+<section id="case-3-altered-mental-status-and-agitation-is-this-retention" class="level3">
+<h3 class="anchored" data-anchor-id="case-3-altered-mental-status-and-agitation-is-this-retention">Case 3: Altered mental status and agitation — is this retention?</h3>
+<p><strong>Clinical scenario:</strong> A 77-year-old man with BPH, on post-op day 1 following a hip replacement, is increasingly agitated and confused. Vitals are stable. He received significant opioids intraoperatively. His Foley was removed 4 hours ago.</p>
+<p><strong>What exam would you perform?</strong> Bladder ultrasound.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slot:</strong> Loops for interpretation.</p>
+</div>
+</div>
+<p><strong>What you see:</strong> Distended, smooth-walled bladder. Estimated volume 680 mL.</p>
+<p><strong>How does this change management?</strong> Urinary retention causing agitation and delirium in a post-operative elderly male. Replace the urethral catheter. Agitation should resolve within minutes of bladder decompression. Avoid sedatives — they will worsen delirium without treating the cause. Monitor for post-obstructive diuresis. Address BPH pharmacologically (alpha-blocker) before the next void trial.</p>
+<hr>
+</section>
+<section id="case-4-ruptured-ectopic-pregnancy" class="level3">
+<h3 class="anchored" data-anchor-id="case-4-ruptured-ectopic-pregnancy">Case 4: Ruptured ectopic pregnancy</h3>
+<p><strong>Clinical scenario:</strong> A 28-year-old woman presents to the ED with sudden-onset lower abdominal pain and presyncope. BP 90/60, HR 118. She reports her last menstrual period was 7 weeks ago. She thought she might be pregnant but has not confirmed it.</p>
+<p><strong>What exam would you perform?</strong> FAST exam with attention to the pelvic view, and immediate beta-hCG.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slot:</strong> Loops for interpretation.</p>
+</div>
+</div>
+<p><strong>What you see:</strong> Large volume of free fluid in the pelvis and RUQ. No intrauterine pregnancy visible. Echogenic mass adjacent to the left ovary. Beta-hCG returns at 4,200 mIU/mL.</p>
+<p><strong>How does this change management?</strong> Ruptured ectopic pregnancy with hemoperitoneum. This is a surgical emergency. Call OB/GYN for emergent surgical intervention. Two large-bore IVs, blood type and crossmatch, activate the OR. Do not perform a diagnostic laparoscopy — this patient needs a therapeutic laparotomy or laparoscopy. Time is critical.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Case format reminder:</strong> The case ends with a management decision, not just a diagnosis.</p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="quiz" class="level2">
+<h2 class="anchored" data-anchor-id="quiz">Quiz</h2>
+<p>Anki deck for spaced repetition: <em>link coming soon.</em></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Q1.</strong> Where is the most sensitive location for detecting free fluid in a supine patient, and why?</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Answer</strong> Morrison’s pouch (the hepatorenal space in the right upper quadrant) is the most sensitive location because it is the most dependent intraperitoneal space in the supine patient. Fluid accumulates there preferentially due to gravity. As little as 100–200 mL of free fluid may be visible at this location before it is detectable elsewhere.</p>
+</div>
+</div>
+</div>
+<p><strong>Q2.</strong> A FAST exam is negative in a hemodynamically stable trauma patient with abdominal tenderness. What is the next step?</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Answer</strong> A negative FAST does not rule out solid organ injury or retroperitoneal injury. In a stable patient with abdominal tenderness and a mechanism concerning for injury, CT of the abdomen and pelvis with IV contrast is the next step. CT has much higher sensitivity than ultrasound for detecting solid organ lacerations that have not yet bled into the peritoneum.</p>
+</div>
+</div>
+</div>
+<p><strong>Q3.</strong> You detect hydronephrosis in a patient with new AKI. What is the next clinical question?</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Answer</strong> Is the obstruction bilateral or unilateral? Bilateral hydronephrosis (or hydronephrosis in a solitary kidney) explains AKI — the obstruction must be relieved urgently. Unilateral hydronephrosis alone does not explain AKI unless the contralateral kidney is absent or non-functional. Also ask: is there fever or signs of infection? If so, the obstructed system is infected (pyonephrosis) and requires emergent drainage, not just observation.</p>
+</div>
+</div>
+</div>
+<p><strong>Q4.</strong> A left pleural effusion appears as fluid above the diaphragm on the LUQ view. How do you distinguish it from subphrenic free fluid?</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Answer</strong> The diaphragm is the key landmark — it appears as a bright echogenic curved line. Pleural fluid is above the diaphragm (between the lung and the diaphragm). Peritoneal free fluid is below the diaphragm (in the subphrenic or splenorenal space). The “mirror artifact” — a mirror image of the spleen or liver appearing above the diaphragm — is a normal artifact in the absence of pleural fluid. The presence of a true anechoic collection above the diaphragm that does not show the mirror artifact indicates a pleural effusion.</p>
+</div>
+</div>
+</div>
+<p><strong>Q5.</strong> Why is pelvic free fluid in a woman of reproductive age a critical finding that requires immediate additional testing?</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Answer</strong> Pelvic free fluid in a reproductive-age woman must be evaluated for ruptured ectopic pregnancy — a life-threatening condition that can produce rapid exsanguination. A urine or serum beta-hCG must be obtained immediately. If beta-hCG is positive and there is no intrauterine pregnancy on ultrasound, ruptured ectopic is highly likely until proven otherwise. Hemodynamic instability with pelvic free fluid and a positive beta-hCG = emergent surgical intervention, not further imaging.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

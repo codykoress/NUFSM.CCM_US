@@ -22,5 +22,20 @@
   },
   "modules/06-integration.qmd": {
     "06-integration.html": "4268e2a3"
+  },
+  "modules/07-valves.qmd": {
+    "07-valves.html": "331b8875"
+  },
+  "modules/08-lung.qmd": {
+    "08-lung.html": "bbd1f175"
+  },
+  "modules/09-abdominal.qmd": {
+    "09-abdominal.html": "283369b4"
+  },
+  "modules/10-dvt.qmd": {
+    "10-dvt.html": "d8817742"
+  },
+  "modules/11-procedural.qmd": {
+    "11-procedural.html": "02eec0f2"
   }
 }

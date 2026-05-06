@@ -1,0 +1,282 @@
+---
+title: "Module 10 — DVT Compression Ultrasound"
+subtitle: "Deep vein thrombosis diagnosis at the bedside"
+---
+
+## 1. Clinical question
+
+*What clinical question does this exam answer, and how do findings change management?*
+
+::: {.callout-note}
+**The bedside decision frame:** One question with direct treatment implications.
+
+**Is there a proximal deep vein thrombosis?**
+
+A non-compressible deep vein = DVT until proven otherwise. In the right clinical context — unexplained hypoxia, tachycardia, submassive or massive PE — identifying a proximal DVT confirms the diagnosis of venous thromboembolism and supports anticoagulation or escalated therapy. In an ICU patient with unilateral leg swelling or a femoral catheter, DVT changes the catheter management plan and informs decisions about therapeutic anticoagulation vs prophylaxis.
+:::
+
+Bedside DVT compression ultrasound (CUS) is a point-of-care test for proximal lower extremity DVT. The principle is simple: a normal vein fully collapses under probe pressure; a thrombosed vein does not. Two-point compression (common femoral vein and popliteal vein) is the standard for bedside providers. Three-zone compression (adding the femoral vein in the thigh) increases sensitivity for thigh DVT.
+
+---
+
+## 2. Image acquisition
+
+*Probe, windows, and technique for this module.*
+
+Use a **high-frequency linear probe (7–15 MHz)** — the veins are superficial and require resolution rather than penetration. Place the machine on the **vascular preset**.
+
+**Patient positioning:**
+- Femoral vein: supine, leg slightly externally rotated and abducted ("frog leg" position)
+- Popliteal vein: patient in lateral decubitus (affected leg on top) or prone, or supine with the knee flexed over a rolled towel
+
+---
+
+### Common femoral vein
+
+::: {.callout-tip}
+**Video slot:** CFV acquisition — femoral triangle anatomy, compression technique, distinguishing vein from artery.
+:::
+
+**Probe placement:** Transverse plane, in the femoral triangle, just below the inguinal ligament. The common femoral artery and vein appear side by side. The vein is medial, larger, and more compressible. Color Doppler shows phasic venous flow in the vein.
+
+**Compression technique:** Apply firm, steady downward pressure on the probe until the vein walls touch. A normal vein fully collapses — walls coapt completely with moderate pressure. Scan from the inguinal ligament distally to the femoral bifurcation (into the superficial femoral and deep femoral veins). Compress every 1–2 cm.
+
+**Key landmark:** The saphenofemoral junction (where the great saphenous vein enters the common femoral vein) must be identified and included — isolated saphenous thrombus has different treatment implications than CFV thrombosis.
+
+---
+
+### Femoral vein (thigh)
+
+::: {.callout-tip}
+**Video slot:** Femoral vein in the thigh — superficial femoral vein (misnomer: it is a deep vein), compression at mid-thigh.
+:::
+
+**Probe placement:** Continue distally from the CFV, following the femoral (superficial femoral) vein through the thigh to Hunter's canal. This portion is sometimes called the "superficial femoral vein" — a misnomer that has caused undertreatment, because it is actually a deep vein and DVT here carries the same PE risk as proximal DVT.
+
+---
+
+### Popliteal vein
+
+::: {.callout-tip}
+**Video slot:** Popliteal fossa acquisition — popliteal vein posterior to the artery, compression technique in the knee-flexed position.
+:::
+
+**Probe placement:** Popliteal fossa, transverse plane. The popliteal artery is deep (anterior on the image) and the popliteal vein is superficial (posterior on the image). Compress from the popliteal crease proximally to where the vein bifurcates into the calf veins (tibial and peroneal). Calf DVT is not routinely assessed in basic two-point CUS.
+
+---
+
+## 3. Normal & normal variants
+
+::: {.callout-tip}
+**Video slots:** Normal two-point compression — CFV and popliteal vein fully compressing to zero diameter. Color Doppler augmentation. Spontaneous phasic venous flow.
+:::
+
+### Normal compressibility
+
+A normal vein walls coapt completely with gentle-to-moderate probe pressure. There should be no residual lumen. If the vein does not fully compress, this is abnormal until proven otherwise.
+
+### Normal venous Doppler
+
+- **Phasic flow:** Venous flow increases with expiration and decreases or stops with inspiration (opposite of arterial flow). This phasicity reflects transmitted respiratory pressure changes.
+- **Augmentation:** Distal compression of the calf (squeeze the calf) should produce a brisk increase in flow at the popliteal and femoral veins. Absent augmentation suggests obstruction between the compression point and the probe.
+- **Spontaneous flow:** Large proximal veins should show spontaneous flow on color Doppler without augmentation. Absence of spontaneous flow suggests elevated venous pressure or obstruction.
+
+### Differentiating vein from artery
+
+| Feature | Vein | Artery |
+|---|---|---|
+| Compressibility | Fully compresses | Does not compress |
+| Wall thickness | Thin | Thicker |
+| Color Doppler | Phasic, low velocity | Pulsatile, high velocity |
+| Doppler waveform | Phasic, biphasic | Arterial triphasic |
+| Size | Larger (usually) | Smaller |
+
+---
+
+## 4. Pathology library
+
+*Organized by finding.*
+
+### Non-compressible vein — acute DVT
+
+::: {.callout-tip}
+**Video slots:**
+- Non-compressible CFV — vein fails to collapse with firm probe pressure
+- Echogenic thrombus within the vein lumen
+- Anechoic (fresh) thrombus — non-compressible but nearly invisible without compression
+:::
+
+A vein that does not fully collapse under firm probe pressure contains thrombus. The diagnosis of DVT requires non-compressibility — not the visual appearance of thrombus in the lumen.
+
+**Thrombus echogenicity:**
+
+- **Anechoic (echo-free):** Fresh thrombus (hours to days old). The lumen appears nearly normal on 2D — non-compressibility is the only finding. This is a critical trap: an anechoic lumen that does not compress is still a DVT.
+- **Hypoechoic:** Subacute thrombus.
+- **Echogenic/heterogeneous:** Older, organizing thrombus. May be partially adherent to the wall.
+
+**Extent of thrombosis:**
+
+- **Proximal DVT:** CFV, femoral vein, or popliteal vein — high PE risk, requires therapeutic anticoagulation.
+- **Isolated distal (calf) DVT:** Below the popliteal trifurcation — lower PE risk. Management is debated (serial surveillance vs anticoagulation based on symptoms and risk factors). Not routinely detected on two-point CUS.
+
+**Teaching points:**
+
+- Always compress — do not rely on thrombus visualization. Fresh thrombus is anechoic and invisible on 2D imaging.
+- Proximal DVT = therapeutic anticoagulation in the absence of contraindications.
+- Catheter-associated DVT (from a femoral central venous catheter) requires catheter removal and anticoagulation — same risk as spontaneous DVT.
+- DVT in the context of unexplained hemodynamic instability should prompt cardiac echo for RV strain (see BLUE protocol, Module 8).
+
+---
+
+### Partial compressibility
+
+::: {.callout-tip}
+**Video slot:** Partial non-compressibility — vein compressed but not fully coaptated, residual lumen visible.
+:::
+
+Partial non-compressibility indicates thrombus that does not fully occlude the vein. The vein compresses but a residual lumen remains visible.
+
+**Teaching points:**
+
+- Any residual lumen on compression = positive study.
+- Do not confuse partial compression from inadequate probe pressure with partial non-compressibility from thrombus. Apply firm pressure — if in doubt, press harder.
+- Partial or non-occlusive thrombus carries the same PE risk as occlusive thrombus and requires the same anticoagulation.
+
+---
+
+### Absent augmentation
+
+::: {.callout-tip}
+**Video slot:** Absent augmentation — calf compression fails to increase flow at the femoral level.
+:::
+
+When distal compression produces no augmentation of proximal flow, there is obstruction between the compression point and the probe. This suggests DVT between the two locations.
+
+**Teaching points:**
+
+- Absent augmentation at the popliteal level with calf compression suggests popliteal or femoral DVT.
+- Absent augmentation at the CFV with thigh compression suggests femoral DVT.
+- Use augmentation to extend the reach of your assessment when visualization is limited.
+
+---
+
+### Mimics and pitfalls
+
+| Mimic | Distinguishing Feature |
+|---|---|
+| Baker's cyst | Posterior knee, anechoic cystic structure, posterior to the vein, fully compressible |
+| Lymph node | Echogenic center (hilum), oval shape, not in the vein lumen |
+| Superficial thrombophlebitis | Superficial vein (great saphenous), not the deep vein |
+| Inguinal lymphadenopathy | Adjacent to but separate from the CFV, oval, does not compress within the vein |
+| Hematoma | Adjacent, does not follow the vein, no flow on Doppler |
+| Femoral vein valve | Normal valve leaflets may appear echogenic — they move with flow and do not cause non-compressibility |
+
+---
+
+## 5. Integration cases
+
+*Cases where the finding changes management.*
+
+---
+
+### Case 1: Submassive PE — confirming the diagnosis
+
+**Clinical scenario:** A 52-year-old woman presents with 3 days of dyspnea and right-sided pleuritic chest pain. HR 108, O2 sat 93% on room air. D-dimer 8,400 ng/mL. CT is pending (60-minute wait). Bedside echo shows mild RV dilation.
+
+**What exam would you perform?**
+Two-point DVT compression ultrasound while CT is being arranged.
+
+::: {.callout-tip}
+**Video slot:** Loops for interpretation.
+:::
+
+**What you see:**
+Right CFV: non-compressible. Echogenic thrombus visible in the lumen. Right popliteal vein: fully compressible. Left: fully compressible bilaterally.
+
+**How does this change management?**
+Right proximal DVT in a patient with dyspnea, tachycardia, pleuritic chest pain, elevated D-dimer, and RV dilation on echo. This is sufficient to diagnose VTE and begin anticoagulation without waiting for CT. Start therapeutic anticoagulation now. CT, when available, will characterize the pulmonary clot burden and guide risk stratification for advanced therapy. The DVT exam has compressed the time to anticoagulation.
+
+---
+
+### Case 2: ICU patient with unilateral leg swelling
+
+**Clinical scenario:** A 68-year-old man is day 10 in the ICU following abdominal surgery for perforated diverticulitis. He develops left leg swelling and pain. He has been on DVT prophylaxis with enoxaparin 40 mg daily. He is not anticoagulated therapeutically.
+
+**What exam would you perform?**
+Left lower extremity DVT compression ultrasound.
+
+::: {.callout-tip}
+**Video slot:** Loops for interpretation.
+:::
+
+**What you see:**
+Left CFV: non-compressible, homogeneous hypoechoic thrombus. Left femoral vein: non-compressible through the thigh. Left popliteal vein: non-compressible.
+
+**How does this change management?**
+Proximal DVT extending from CFV to popliteal vein despite prophylaxis. Transition to therapeutic anticoagulation (weight-based LMWH or unfractionated heparin depending on renal function and bleeding risk). Assess the bleeding risk in the context of his recent abdominal surgery — if high risk, consider IVC filter as a bridge. Hematology or vascular surgery consultation is appropriate for extensive proximal DVT.
+
+---
+
+### Case 3: DVT evaluation after femoral catheter removal
+
+**Clinical scenario:** A 55-year-old woman had a right femoral arterial line and a right femoral venous catheter in place for 10 days. Both were removed yesterday. Today she reports right groin pain and fullness.
+
+**What exam would you perform?**
+Right femoral DVT compression ultrasound.
+
+::: {.callout-tip}
+**Video slot:** Loops for interpretation.
+:::
+
+**What you see:**
+Right CFV: partially non-compressible. Small residual lumen visible under firm compression. Echogenic thrombus along the posterior wall. No color flow in the occluded segment. Right femoral vein in thigh: fully compressible.
+
+**How does this change management?**
+Catheter-associated DVT of the right CFV. Therapeutic anticoagulation for a minimum of 3 months (or for the duration of any ongoing catheter risk factor). Remove any remaining venous access from the affected limb if possible. DVT in a catheter site that extends to the CFV carries PE risk equivalent to spontaneous DVT.
+
+::: {.callout-tip}
+**Case format reminder:** The case ends with a management decision, not just a diagnosis.
+:::
+
+---
+
+## Quiz
+
+Anki deck for spaced repetition: *link coming soon.*
+
+::: {.callout-note}
+**Q1.** The vein appears anechoic (echo-free) on 2D imaging but does not fully compress. Is this a DVT?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+Yes. Fresh (acute) thrombus is anechoic and nearly invisible on 2D imaging. Non-compressibility is the diagnostic criterion for DVT — not visual detection of thrombus in the lumen. A vein that fails to fully collapse under firm probe pressure contains thrombus, regardless of its 2D echogenicity. This is the most important concept in DVT compression ultrasound.
+:::
+
+**Q2.** The popliteal vein compresses normally but there is no augmentation of popliteal flow with calf compression. What does this suggest?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+Absent augmentation indicates obstruction between the compression point (calf) and the probe position (popliteal fossa). This suggests DVT in the calf veins (tibial or peroneal) that is not detected by compression at the popliteal level. Extended assessment of the calf veins or serial surveillance ultrasound in 5–7 days is appropriate if clinical suspicion remains high.
+:::
+
+**Q3.** The "superficial femoral vein" is non-compressible on compression ultrasound. A colleague says this is not a proximal DVT because it is "superficial." How do you respond?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+The superficial femoral vein is a deep vein despite its misleading name — it is part of the deep venous system and DVT at this level carries the same PE risk as common femoral or popliteal DVT. The term "superficial" refers to its relative position within the thigh (as opposed to the deep femoral vein), not to its anatomic classification as superficial vs deep. This misnomer has historically led to undertreatment.
+:::
+
+**Q4.** How does DVT compression ultrasound integrate with the BLUE protocol for diagnosing PE?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+In the BLUE protocol, when bilateral anterior lung zones show A-lines and lung sliding (ruling out pulmonary edema and pneumothorax), the next step is DVT compression ultrasound. The presence of DVT in this context has an 81% positive predictive value for PE as the cause of respiratory failure. A positive DVT exam + abnormal RV on cardiac echo is sufficient evidence to initiate anticoagulation for suspected PE without CT in an unstable patient.
+:::
+
+**Q5.** What is the clinical significance of a Baker's cyst in the popliteal fossa, and how do you distinguish it from popliteal DVT?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+A Baker's cyst (popliteal cyst) is a synovial fluid collection that can rupture and cause calf pain and swelling mimicking DVT. On ultrasound, it appears as an anechoic cystic structure in the popliteal fossa, medial and posterior to the joint, separate from the popliteal vein. Key distinguishing features: the Baker's cyst does not lie within the vein lumen, the popliteal vein adjacent to it is fully compressible, and there is no intraluminal thrombus. A ruptured Baker's cyst may track distally with irregular margins.
+:::
+:::

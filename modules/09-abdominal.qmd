@@ -1,0 +1,356 @@
+---
+title: "Module 9 — Abdominal Ultrasound"
+subtitle: "FAST exam, free fluid, bladder volume, and hydronephrosis"
+---
+
+## 1. Clinical question
+
+*What clinical question does this exam answer, and how do findings change management?*
+
+::: {.callout-note}
+**The bedside decision frame:** Four distinct questions, each with its own clinical trigger.
+
+1. **Is there intraperitoneal free fluid?** In trauma, free fluid = blood until proven otherwise. In the non-trauma ICU patient, free fluid may represent ascites, hollow viscus perforation, or internal hemorrhage.
+2. **Is there a distended, obstructed bladder?** Urinary retention is a common, painful, and easily treated problem — one that is frequently missed in sedated or altered patients.
+3. **Is there hydronephrosis?** Ureteral obstruction causing hydronephrosis may explain AKI, flank pain, or urosepsis in an undrained system.
+4. **In the trauma patient — is there free fluid in the pericardium?** The subxiphoid FAST view incorporates cardiac assessment (see Module 1).
+:::
+
+Abdominal ultrasound at the bedside is fast, non-invasive, and immediately actionable. The FAST exam (Focused Assessment with Sonography in Trauma) is the standard of care in trauma resuscitation. In non-trauma critical care, bladder and kidney assessment are high-yield applications that require minimal additional training.
+
+---
+
+## 2. Image acquisition
+
+*Probe, windows, and technique for this module.*
+
+Use a **curvilinear (low-frequency, 2–5 MHz) probe** for all abdominal windows — the penetration depth required for the liver, spleen, kidneys, and pelvis exceeds what a linear probe provides. A phased array probe is an acceptable substitute for FAST but is less ideal for the pelvic view.
+
+**Machine preset:** Abdominal. Adjust depth to see structures of interest with adequate margin.
+
+---
+
+### Right upper quadrant — Morrison's pouch
+
+::: {.callout-tip}
+**Video slot:** RUQ acquisition — hepatorenal interface, fan through Morrison's pouch, assess for free fluid.
+:::
+
+**Probe placement:** Probe in the right mid-axillary line, 8th–11th intercostal space, indicator toward the patient's head. Fan through the hepatorenal interface (Morrison's pouch) — the potential space between the liver and right kidney.
+
+**What you are looking for:** Any anechoic (black) stripe between the liver and right kidney. In a normal exam, the liver and kidney appear to be in direct contact with a thin hyperechoic stripe of Gerota's fascia between them. Free fluid appears as a wedge or stripe of anechoic material in the dependent hepatorenal space. Also assess the inferior tip of the liver and the right paracolic gutter.
+
+**Pearls:** Morrison's pouch is the most dependent intraperitoneal space in the supine position and the most sensitive location for detecting free fluid. As little as 100–200 mL of free fluid may be visible here.
+
+---
+
+### Left upper quadrant — splenorenal space
+
+::: {.callout-tip}
+**Video slot:** LUQ acquisition — splenorenal interface, subphrenic space, left paracolic gutter.
+:::
+
+**Probe placement:** Left posterior axillary line, 8th–11th intercostal space, indicator toward the head. This window is more posterior than the RUQ view — a common error is imaging too anteriorly and missing the spleen.
+
+**What you are looking for:** Free fluid between the spleen and left kidney (splenorenal space), and in the subphrenic space (between the diaphragm and spleen). A left pleural effusion appears above the diaphragm — do not confuse it with subphrenic free fluid. The diaphragm is the landmark: fluid above = pleural, fluid below = peritoneal.
+
+**Pearls:** The LUQ is less sensitive than the RUQ because the splenorenal space is less dependent. Free fluid may not accumulate here until larger volumes are present. Assess the subphrenic and paracolic regions thoroughly.
+
+---
+
+### Suprapubic — pelvis
+
+::: {.callout-tip}
+**Video slot:** Suprapubic acquisition — bladder as acoustic window, free fluid in the pouch of Douglas (female) or rectovesical space (male), transverse and sagittal planes.
+:::
+
+**Probe placement:** Suprapubic, just above the symphysis pubis, indicator to the patient's right (transverse) or head (sagittal). The bladder serves as an acoustic window to the posterior pelvic structures.
+
+**What you are looking for:** Free fluid posterior to the bladder (pouch of Douglas in females, rectovesical space in males). In females, look for fluid in the cul-de-sac posterior to the uterus. Scan in both transverse and sagittal planes. Free fluid appears anechoic, dependent, and irregular in shape.
+
+**Bladder assessment:** See dedicated section below.
+
+**Pearls:** The pelvic view requires a full or at least partially full bladder to serve as an acoustic window. In patients who are oliguric or have been catheterized, the pelvic view may be limited. The pelvic space is the most dependent location in the erect position — significant fluid may accumulate here even when the upper quadrants appear negative.
+
+---
+
+### Subxiphoid — pericardium and cardiac
+
+*Covered in Module 1. The subxiphoid view is the fourth standard FAST window.*
+
+---
+
+### Bladder — transverse and sagittal
+
+::: {.callout-tip}
+**Video slot:** Bladder assessment — full bladder as an anechoic structure, volume estimation, wall assessment.
+:::
+
+**Probe placement:** Suprapubic, transverse then sagittal. The bladder appears as a well-defined anechoic structure posterior to the symphysis. Measure three dimensions: transverse (width), anteroposterior (depth), and craniocaudal (height). Bladder volume (mL) ≈ 0.52 × width × depth × height (in cm). Some machines calculate this automatically.
+
+**Significant residual volume:** >300 mL post-void, or a distended bladder in a patient with reduced consciousness who is not catheterized.
+
+---
+
+### Kidneys — longitudinal
+
+::: {.callout-tip}
+**Video slot:** Right and left kidney — normal cortex and collecting system vs hydronephrosis grades.
+:::
+
+**Probe placement:** Coronal plane, similar to FAST views but oriented to the kidneys. Right kidney: right mid-axillary line, indicator up. Left kidney: left posterior axillary line, indicator up. Obtain a longitudinal image of the entire kidney — cortex, medullary pyramids, and collecting system (renal pelvis and calyces).
+
+**What you are looking for:** Any separation of the renal sinus (echogenic central collecting system) by anechoic fluid — indicating hydronephrosis.
+
+---
+
+## 3. Normal & normal variants
+
+::: {.callout-tip}
+**Video slots:** Normal FAST exam — no free fluid at each window. Normal kidney. Normal bladder.
+:::
+
+### Normal FAST exam
+
+No anechoic fluid in Morrison's pouch, splenorenal space, or pelvis. The subxiphoid view shows no pericardial effusion. Organ surfaces are in direct contact with each other and with the abdominal wall.
+
+### Normal kidney
+
+Length 9–12 cm, width 4–6 cm. The renal cortex is slightly less echogenic than the liver. The renal sinus (collecting system) appears as a central echogenic structure without internal fluid. Medullary pyramids appear as hypoechoic triangular structures pointing toward the sinus.
+
+### Normal bladder
+
+Thin-walled, smooth, anechoic. Wall thickness <3 mm when full. Urine is anechoic; debris, clots, or calculi appear as echogenic foci within the lumen.
+
+### Perihepatic fat and ascites mimics
+
+Small amounts of fat around the liver and mesentery can mimic minimal free fluid. Fat has a characteristic echogenicity (not purely anechoic) and does not layer into dependent spaces the way free fluid does. Bowel loops with fluid should not be mistaken for free fluid — identify peristalsis and bowel wall to distinguish.
+
+---
+
+## 4. Pathology library
+
+*Organized by finding.*
+
+### Free fluid — traumatic (hemoperitoneum)
+
+::: {.callout-tip}
+**Video slots:**
+- Anechoic free fluid in Morrison's pouch
+- Moderate-large free fluid in the pelvis
+- Echogenic free fluid — acute blood
+:::
+
+In trauma, any free fluid is assumed to be blood. Acute hemoperitoneum may be anechoic (early, not clotted) or echogenic (clotted blood). The pattern and volume guide management.
+
+**Grading by volume and distribution:**
+
+| Finding | Estimated Volume | Management Implication |
+|---|---|---|
+| Trace fluid in Morrison's pouch only | <250 mL | Serial exam, reassess |
+| Fluid in RUQ + pelvis | 500–1000 mL | Operative vs non-operative decision based on hemodynamics |
+| Fluid in all three windows | >1000 mL | Likely operative in hemodynamically unstable patient |
+
+**Teaching points:**
+
+- A positive FAST in a hemodynamically unstable patient = OR, not CT. Do not delay operative intervention for imaging.
+- A negative FAST does not rule out intraperitoneal injury — solid organ injuries may be present without free fluid early.
+- A positive FAST in a hemodynamically stable patient allows CT for better injury characterization before operative decision.
+- Echogenic (bright) free fluid = acute blood/clot. Anechoic free fluid in trauma = blood (until proven otherwise), even if it looks like simple fluid.
+
+---
+
+### Free fluid — non-traumatic
+
+::: {.callout-tip}
+**Video slot:** Ascites — large volume anechoic free fluid surrounding bowel loops, "floating" bowel.
+:::
+
+In the non-trauma ICU patient, free fluid may represent:
+- **Ascites:** Cirrhosis, malignancy, heart failure — anechoic, often massive, bowel loops appear to float
+- **Ruptured viscus:** Bowel perforation — complex, echogenic, or mixed fluid
+- **Ruptured ectopic pregnancy:** Pelvic free fluid in a woman of childbearing age = ectopic until proven otherwise
+- **Internal hemorrhage:** Post-procedural, anticoagulated, aortic aneurysm rupture
+
+**Teaching points:**
+
+- In a non-trauma patient with hypotension and pelvic free fluid, always check a urine or serum beta-hCG before attributing fluid to another cause.
+- Ruptured ectopic with free fluid and hemodynamic instability = emergent gynecologic surgery.
+- Large ascites can be drained under ultrasound guidance (see Module 11).
+
+---
+
+### Urinary retention and bladder assessment
+
+::: {.callout-tip}
+**Video slots:**
+- Massively distended bladder — large anechoic structure filling the pelvis
+- Bladder volume calculation with three-plane measurement
+:::
+
+A distended bladder (>300 mL post-void residual) in a patient with reduced consciousness, confusion, agitation, or unexplained pain is urinary retention until proven otherwise.
+
+**Teaching points:**
+
+- Urinary retention is common in the ICU — opioids, anticholinergics, and sedatives all reduce detrusor function.
+- In a male patient with an enlarged prostate, any acute illness may precipitate retention.
+- A fully distended bladder (>500–800 mL) can reflexively inhibit cardiac output and worsen hemodynamics.
+- Treatment is urethral or suprapubic catheterization. Ultrasound-guided suprapubic catheterization is appropriate when urethral access is not possible.
+- Post-decompression diuresis can occur after relief of chronic obstruction — anticipate and replace fluids.
+
+---
+
+### Hydronephrosis
+
+::: {.callout-tip}
+**Video slots:**
+- Grade 1 hydronephrosis — mild dilation of the renal pelvis only
+- Grade 2 — dilation of pelvis and calyces, preserved cortex
+- Grade 3 — severe dilation, thinned cortex
+:::
+
+Hydronephrosis is dilation of the renal collecting system from ureteral obstruction. It appears as anechoic fluid within the renal sinus, separating the echogenic collecting system walls.
+
+**Grading:**
+
+| Grade | Appearance |
+|---|---|
+| 1 (mild) | Pelvis dilated, calyces normal |
+| 2 (moderate) | Pelvis and calyces dilated, cortex preserved |
+| 3 (severe) | Marked dilation, cortex thinned |
+
+**Teaching points:**
+
+- Hydronephrosis in a patient with AKI = obstructive nephropathy until proven otherwise. Relieve the obstruction (Foley, ureteral stent, nephrostomy) before attributing the AKI to another cause.
+- Bilateral hydronephrosis = bilateral obstruction or bladder outlet obstruction (BPH, mass). Check the bladder first.
+- Hydronephrosis + fever = obstructed, infected system (pyonephrosis) — urgent drainage is required (not just antibiotics).
+- Normal ultrasound does not rule out obstruction in early or acute cases — the collecting system may not have had time to dilate.
+
+---
+
+## 5. Integration cases
+
+*Cases where the finding changes management.*
+
+---
+
+### Case 1: Trauma — positive FAST in a hypotensive patient
+
+**Clinical scenario:** A 25-year-old man is brought in after a motor vehicle collision at highway speed. He is hypotensive (BP 78/50) and tachycardic (HR 132) on arrival. GCS is 14. The trauma team is assembled.
+
+**What exam would you perform?**
+Immediate FAST exam as part of the primary survey.
+
+::: {.callout-tip}
+**Video slot:** Loops for interpretation.
+:::
+
+**What you see:**
+Morrison's pouch: free fluid, moderate volume. Splenorenal space: free fluid. Pelvis: large volume free fluid. Subxiphoid: no pericardial effusion.
+
+**How does this change management?**
+Positive FAST with hemodynamic instability = operative intervention. Do not take this patient to CT. Transfuse blood products in a 1:1:1 ratio (PRBC:FFP:platelets) as a bridge to the OR. Activate massive transfusion protocol. The trauma surgeon takes over — the bedside echo has already answered the most important question.
+
+---
+
+### Case 2: Urosepsis with flank pain — is the system obstructed?
+
+**Clinical scenario:** A 70-year-old man with a history of kidney stones presents with fever (39.2°C), right flank pain, and hypotension. UA shows pyuria. He is started on IV antibiotics and fluids. The team is wondering if he needs urgent urologic intervention.
+
+**What exam would you perform?**
+Renal ultrasound — bilateral kidneys.
+
+::: {.callout-tip}
+**Video slot:** Loops for interpretation.
+:::
+
+**What you see:**
+Right kidney: grade 2–3 hydronephrosis. Echogenic material within the dilated collecting system (debris). Left kidney: normal.
+
+**How does this change management?**
+Obstructed, infected right kidney — pyonephrosis. Antibiotics alone are insufficient. Emergent urology consultation for urgent drainage — either ureteral stent or percutaneous nephrostomy. Septic shock from an obstructed system will not resolve without drainage. This is a surgical emergency, not a medical one.
+
+---
+
+### Case 3: Altered mental status and agitation — is this retention?
+
+**Clinical scenario:** A 77-year-old man with BPH, on post-op day 1 following a hip replacement, is increasingly agitated and confused. Vitals are stable. He received significant opioids intraoperatively. His Foley was removed 4 hours ago.
+
+**What exam would you perform?**
+Bladder ultrasound.
+
+::: {.callout-tip}
+**Video slot:** Loops for interpretation.
+:::
+
+**What you see:**
+Distended, smooth-walled bladder. Estimated volume 680 mL.
+
+**How does this change management?**
+Urinary retention causing agitation and delirium in a post-operative elderly male. Replace the urethral catheter. Agitation should resolve within minutes of bladder decompression. Avoid sedatives — they will worsen delirium without treating the cause. Monitor for post-obstructive diuresis. Address BPH pharmacologically (alpha-blocker) before the next void trial.
+
+---
+
+### Case 4: Ruptured ectopic pregnancy
+
+**Clinical scenario:** A 28-year-old woman presents to the ED with sudden-onset lower abdominal pain and presyncope. BP 90/60, HR 118. She reports her last menstrual period was 7 weeks ago. She thought she might be pregnant but has not confirmed it.
+
+**What exam would you perform?**
+FAST exam with attention to the pelvic view, and immediate beta-hCG.
+
+::: {.callout-tip}
+**Video slot:** Loops for interpretation.
+:::
+
+**What you see:**
+Large volume of free fluid in the pelvis and RUQ. No intrauterine pregnancy visible. Echogenic mass adjacent to the left ovary. Beta-hCG returns at 4,200 mIU/mL.
+
+**How does this change management?**
+Ruptured ectopic pregnancy with hemoperitoneum. This is a surgical emergency. Call OB/GYN for emergent surgical intervention. Two large-bore IVs, blood type and crossmatch, activate the OR. Do not perform a diagnostic laparoscopy — this patient needs a therapeutic laparotomy or laparoscopy. Time is critical.
+
+::: {.callout-tip}
+**Case format reminder:** The case ends with a management decision, not just a diagnosis.
+:::
+
+---
+
+## Quiz
+
+Anki deck for spaced repetition: *link coming soon.*
+
+::: {.callout-note}
+**Q1.** Where is the most sensitive location for detecting free fluid in a supine patient, and why?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+Morrison's pouch (the hepatorenal space in the right upper quadrant) is the most sensitive location because it is the most dependent intraperitoneal space in the supine patient. Fluid accumulates there preferentially due to gravity. As little as 100–200 mL of free fluid may be visible at this location before it is detectable elsewhere.
+:::
+
+**Q2.** A FAST exam is negative in a hemodynamically stable trauma patient with abdominal tenderness. What is the next step?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+A negative FAST does not rule out solid organ injury or retroperitoneal injury. In a stable patient with abdominal tenderness and a mechanism concerning for injury, CT of the abdomen and pelvis with IV contrast is the next step. CT has much higher sensitivity than ultrasound for detecting solid organ lacerations that have not yet bled into the peritoneum.
+:::
+
+**Q3.** You detect hydronephrosis in a patient with new AKI. What is the next clinical question?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+Is the obstruction bilateral or unilateral? Bilateral hydronephrosis (or hydronephrosis in a solitary kidney) explains AKI — the obstruction must be relieved urgently. Unilateral hydronephrosis alone does not explain AKI unless the contralateral kidney is absent or non-functional. Also ask: is there fever or signs of infection? If so, the obstructed system is infected (pyonephrosis) and requires emergent drainage, not just observation.
+:::
+
+**Q4.** A left pleural effusion appears as fluid above the diaphragm on the LUQ view. How do you distinguish it from subphrenic free fluid?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+The diaphragm is the key landmark — it appears as a bright echogenic curved line. Pleural fluid is above the diaphragm (between the lung and the diaphragm). Peritoneal free fluid is below the diaphragm (in the subphrenic or splenorenal space). The "mirror artifact" — a mirror image of the spleen or liver appearing above the diaphragm — is a normal artifact in the absence of pleural fluid. The presence of a true anechoic collection above the diaphragm that does not show the mirror artifact indicates a pleural effusion.
+:::
+
+**Q5.** Why is pelvic free fluid in a woman of reproductive age a critical finding that requires immediate additional testing?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+Pelvic free fluid in a reproductive-age woman must be evaluated for ruptured ectopic pregnancy — a life-threatening condition that can produce rapid exsanguination. A urine or serum beta-hCG must be obtained immediately. If beta-hCG is positive and there is no intrauterine pregnancy on ultrasound, ruptured ectopic is highly likely until proven otherwise. Hemodynamic instability with pelvic free fluid and a positive beta-hCG = emergent surgical intervention, not further imaging.
+:::
+:::
