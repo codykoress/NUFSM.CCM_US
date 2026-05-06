@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Module 4 — Pericardium – website</title>
+<title>Module 6 — Integration – website</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -152,22 +152,18 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#clinical-question" id="toc-clinical-question" class="nav-link active" data-scroll-target="#clinical-question">1. Clinical question</a></li>
-  <li><a href="#image-acquisition" id="toc-image-acquisition" class="nav-link" data-scroll-target="#image-acquisition">2. Image acquisition</a>
+  <li><a href="#the-four-question-bedside-echo-in-shock" id="toc-the-four-question-bedside-echo-in-shock" class="nav-link" data-scroll-target="#the-four-question-bedside-echo-in-shock">2. The four-question bedside echo in shock</a></li>
+  <li><a href="#hemodynamic-phenotypes" id="toc-hemodynamic-phenotypes" class="nav-link" data-scroll-target="#hemodynamic-phenotypes">3. Hemodynamic phenotypes</a></li>
+  <li><a href="#when-findings-conflict" id="toc-when-findings-conflict" class="nav-link" data-scroll-target="#when-findings-conflict">4. When findings conflict</a></li>
+  <li><a href="#serial-exams-and-trending" id="toc-serial-exams-and-trending" class="nav-link" data-scroll-target="#serial-exams-and-trending">5. Serial exams and trending</a></li>
+  <li><a href="#integration-cases" id="toc-integration-cases" class="nav-link" data-scroll-target="#integration-cases">6. Integration cases</a>
   <ul class="collapse">
-  <li><a href="#subcostal-four-chamber-view" id="toc-subcostal-four-chamber-view" class="nav-link" data-scroll-target="#subcostal-four-chamber-view">Subcostal four-chamber view</a></li>
-  <li><a href="#parasternal-long-axis" id="toc-parasternal-long-axis" class="nav-link" data-scroll-target="#parasternal-long-axis">Parasternal long axis</a></li>
-  <li><a href="#apical-four-chamber" id="toc-apical-four-chamber" class="nav-link" data-scroll-target="#apical-four-chamber">Apical four-chamber</a></li>
+  <li><a href="#case-1-the-patient-in-undifferentiated-shock" id="toc-case-1-the-patient-in-undifferentiated-shock" class="nav-link" data-scroll-target="#case-1-the-patient-in-undifferentiated-shock">Case 1: The patient in undifferentiated shock</a></li>
+  <li><a href="#case-2-post-arrest-resuscitation-what-caused-the-arrest" id="toc-case-2-post-arrest-resuscitation-what-caused-the-arrest" class="nav-link" data-scroll-target="#case-2-post-arrest-resuscitation-what-caused-the-arrest">Case 2: Post-arrest resuscitation — what caused the arrest?</a></li>
+  <li><a href="#case-3-hypoxic-respiratory-failure-cardiac-or-pulmonary" id="toc-case-3-hypoxic-respiratory-failure-cardiac-or-pulmonary" class="nav-link" data-scroll-target="#case-3-hypoxic-respiratory-failure-cardiac-or-pulmonary">Case 3: Hypoxic respiratory failure — cardiac or pulmonary?</a></li>
+  <li><a href="#case-4-the-patient-who-isnt-responding-to-treatment" id="toc-case-4-the-patient-who-isnt-responding-to-treatment" class="nav-link" data-scroll-target="#case-4-the-patient-who-isnt-responding-to-treatment">Case 4: The patient who “isn’t responding” to treatment</a></li>
+  <li><a href="#case-5-the-post-operative-patient-who-wont-come-off-the-ventilator" id="toc-case-5-the-post-operative-patient-who-wont-come-off-the-ventilator" class="nav-link" data-scroll-target="#case-5-the-post-operative-patient-who-wont-come-off-the-ventilator">Case 5: The post-operative patient who won’t come off the ventilator</a></li>
   </ul></li>
-  <li><a href="#normal-normal-variants" id="toc-normal-normal-variants" class="nav-link" data-scroll-target="#normal-normal-variants">3. Normal &amp; normal variants</a></li>
-  <li><a href="#pathology-library" id="toc-pathology-library" class="nav-link" data-scroll-target="#pathology-library">4. Pathology library</a>
-  <ul class="collapse">
-  <li><a href="#small-effusion" id="toc-small-effusion" class="nav-link" data-scroll-target="#small-effusion">Small effusion</a></li>
-  <li><a href="#moderate-to-large-effusion" id="toc-moderate-to-large-effusion" class="nav-link" data-scroll-target="#moderate-to-large-effusion">Moderate to large effusion</a></li>
-  <li><a href="#tamponade-physiology" id="toc-tamponade-physiology" class="nav-link" data-scroll-target="#tamponade-physiology">Tamponade physiology</a></li>
-  <li><a href="#loculated-effusion" id="toc-loculated-effusion" class="nav-link" data-scroll-target="#loculated-effusion">Loculated effusion</a></li>
-  <li><a href="#mimics-pitfalls" id="toc-mimics-pitfalls" class="nav-link" data-scroll-target="#mimics-pitfalls">Mimics &amp; pitfalls</a></li>
-  </ul></li>
-  <li><a href="#integration-cases" id="toc-integration-cases" class="nav-link" data-scroll-target="#integration-cases">5. Integration cases</a></li>
   <li><a href="#quiz" id="toc-quiz" class="nav-link" data-scroll-target="#quiz">Quiz</a></li>
   </ul>
 </nav>
@@ -177,8 +173,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Module 4 — Pericardium</h1>
-<p class="subtitle lead">Effusion, tamponade, and pericardial pathology at the bedside</p>
+<h1 class="title">Module 6 — Integration</h1>
+<p class="subtitle lead">Synthesizing a complete bedside echo in the critically ill patient</p>
 </div>
 
 
@@ -208,73 +204,22 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>The bedside decision frame goes here.</strong> For pericardium: is there an effusion, is it physiologically significant, and does this change resuscitation, hemodynamic management, or the need for emergent intervention?</p>
+<p><strong>The bedside decision frame:</strong> One overarching question.</p>
+<p><strong>What is the hemodynamic phenotype of this patient, and what does that mean for the next intervention?</strong></p>
+<p>The integration module is not about learning new findings — it is about synthesizing the findings from Modules 1–5 into a coherent hemodynamic picture that drives a management decision. Bedside echo in the ICU is not a diagnostic test. It is a clinical tool for real-time hemodynamic characterization and therapeutic guidance.</p>
 </div>
 </div>
+<p>By this point in the curriculum, you can assess LV function, RV size and function, pericardial pathology, and IVC/venous pressure. The challenge is not finding the individual findings — it is interpreting them together, resolving conflicts between them, and translating a composite picture into an action. This module focuses on that skill.</p>
+<hr>
 </section>
-<section id="image-acquisition" class="level2">
-<h2 class="anchored" data-anchor-id="image-acquisition">2. Image acquisition</h2>
-<p><em>Probe, windows, and technique for this module.</em></p>
-<p>Brief intro paragraph here. Below, embed acquisition videos one per technique.</p>
-<section id="subcostal-four-chamber-view" class="level3">
-<h3 class="anchored" data-anchor-id="subcostal-four-chamber-view">Subcostal four-chamber view</h3>
-<p><em>Video and key points coming soon.</em></p>
-</section>
-<section id="parasternal-long-axis" class="level3">
-<h3 class="anchored" data-anchor-id="parasternal-long-axis">Parasternal long axis</h3>
-<p><em>Video and key points coming soon.</em></p>
-</section>
-<section id="apical-four-chamber" class="level3">
-<h3 class="anchored" data-anchor-id="apical-four-chamber">Apical four-chamber</h3>
-<p><em>Video and key points coming soon.</em></p>
-</section>
-</section>
-<section id="normal-normal-variants" class="level2">
-<h2 class="anchored" data-anchor-id="normal-normal-variants">3. Normal &amp; normal variants</h2>
-<p><em>The library of normal hearts and common confounders.</em></p>
-<p>Fellows need to see ten or more normals before pathology makes sense. Loops will go here, organized as:</p>
-<ul>
-<li>Normal pericardium across body habitus</li>
-<li>Pericardial fat pad (commonly mistaken for effusion)</li>
-<li>Epicardial fat</li>
-<li>Post-CABG appearance</li>
-</ul>
-</section>
-<section id="pathology-library" class="level2">
-<h2 class="anchored" data-anchor-id="pathology-library">4. Pathology library</h2>
-<p><em>Organized by finding, not by diagnosis.</em></p>
-<section id="small-effusion" class="level3">
-<h3 class="anchored" data-anchor-id="small-effusion">Small effusion</h3>
-<p><em>Loops and teaching points coming soon.</em></p>
-</section>
-<section id="moderate-to-large-effusion" class="level3">
-<h3 class="anchored" data-anchor-id="moderate-to-large-effusion">Moderate to large effusion</h3>
-<p><em>Loops and teaching points coming soon.</em></p>
-</section>
-<section id="tamponade-physiology" class="level3">
-<h3 class="anchored" data-anchor-id="tamponade-physiology">Tamponade physiology</h3>
-<p><em>Loops and teaching points coming soon — RA collapse, RV diastolic collapse, plethoric IVC, respiratory variation.</em></p>
-</section>
-<section id="loculated-effusion" class="level3">
-<h3 class="anchored" data-anchor-id="loculated-effusion">Loculated effusion</h3>
-<p><em>Loops and teaching points coming soon.</em></p>
-</section>
-<section id="mimics-pitfalls" class="level3">
-<h3 class="anchored" data-anchor-id="mimics-pitfalls">Mimics &amp; pitfalls</h3>
-<p><em>Pleural effusion vs pericardial, fat pad vs effusion, descending aorta vs effusion.</em></p>
-</section>
-</section>
-<section id="integration-cases" class="level2">
-<h2 class="anchored" data-anchor-id="integration-cases">5. Integration cases</h2>
-<p><em>Cases where the finding changes management.</em></p>
-<p>Three to five short cases will go here. Each case follows the format:</p>
-<ol type="1">
-<li>Clinical scenario</li>
-<li>What exam would you perform?</li>
-<li>Loops to interpret</li>
-<li>What do you see?</li>
-<li>How does this change management?</li>
-</ol>
+<section id="the-four-question-bedside-echo-in-shock" class="level2">
+<h2 class="anchored" data-anchor-id="the-four-question-bedside-echo-in-shock">2. The four-question bedside echo in shock</h2>
+<p><em>A systematic framework for the undifferentiated hemodynamically unstable patient.</em></p>
+<p>Every bedside echo in shock should answer these four questions, in this order:</p>
+<p><strong>1. Is there a pericardial effusion with tamponade physiology?</strong> If yes, stop — this is the diagnosis and the intervention is pericardiocentesis. Do not proceed with a hemodynamic workup until tamponade is excluded or treated.</p>
+<p><strong>2. What is LV systolic function?</strong> Severely reduced = cardiogenic component. Hyperdynamic = distributive or hypovolemic. Normal requires further assessment.</p>
+<p><strong>3. What is RV size and function?</strong> Dilated RV with D-sign and a normal or hyperdynamic LV = obstructive physiology (PE) or acute cor pulmonale until proven otherwise. RV dilation with reduced LV function = biventricular failure.</p>
+<p><strong>4. What is the IVC?</strong> Small and collapsible = low filling pressure, possible fluid responsiveness. Large and non-collapsing = elevated filling pressure, fluid loading is unlikely to help.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -285,14 +230,364 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Case format anchor:</strong> the case ends with a management decision, not just a diagnosis. The whole point is integration.</p>
+<p><strong>Video slot:</strong> Demonstration of a systematic 4-question exam — subcostal (pericardium + IVC), PLAX (LV + pericardium), PSAX (D-sign, LV function), apical 4-chamber (RV:LV ratio, LV wall motion).</p>
 </div>
 </div>
+<hr>
+</section>
+<section id="hemodynamic-phenotypes" class="level2">
+<h2 class="anchored" data-anchor-id="hemodynamic-phenotypes">3. Hemodynamic phenotypes</h2>
+<p><em>Recognizing the composite picture.</em></p>
+<p>The table below maps common ICU presentations to their echo phenotype. These are patterns — individual patients may not match perfectly, and mixed states are common.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Phenotype</th>
+<th>LV</th>
+<th>RV</th>
+<th>IVC</th>
+<th>Pericardium</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Distributive shock (sepsis)</td>
+<td>Hyperdynamic or normal</td>
+<td>Normal</td>
+<td>Small, collapsible</td>
+<td>Normal</td>
+</tr>
+<tr class="even">
+<td>Hypovolemia</td>
+<td>Hyperdynamic, kissing walls</td>
+<td>Normal or small</td>
+<td>Very small, collapsible</td>
+<td>Normal</td>
+</tr>
+<tr class="odd">
+<td>Cardiogenic shock</td>
+<td>Reduced EF</td>
+<td>Normal or dilated</td>
+<td>Plethoric</td>
+<td>Normal</td>
+</tr>
+<tr class="even">
+<td>Obstructive — PE</td>
+<td>Normal or hyperdynamic</td>
+<td>Dilated, D-sign</td>
+<td>Plethoric</td>
+<td>Normal</td>
+</tr>
+<tr class="odd">
+<td>Obstructive — tamponade</td>
+<td>Normal</td>
+<td>Normal or compressed</td>
+<td>Plethoric</td>
+<td>Effusion + collapse</td>
+</tr>
+<tr class="even">
+<td>Biventricular failure</td>
+<td>Reduced EF</td>
+<td>Dilated</td>
+<td>Plethoric</td>
+<td>± effusion</td>
+</tr>
+<tr class="odd">
+<td>Sepsis + cardiomyopathy</td>
+<td>Reduced EF</td>
+<td>Variable</td>
+<td>Variable</td>
+<td>Normal</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="when-findings-conflict" class="level2">
+<h2 class="anchored" data-anchor-id="when-findings-conflict">4. When findings conflict</h2>
+<p><em>The exam doesn’t always give you a clean answer.</em></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slot:</strong> Mixed shock state — reduced EF with small IVC; how to interpret and what to do.</p>
+</div>
+</div>
+<p>Common conflicting scenarios and how to reason through them:</p>
+<p><strong>Reduced EF + small IVC</strong> The LV is failing but filling pressures are low — the patient is hypovolemic relative to their baseline. A cautious fluid trial (250 mL) may improve preload and cardiac output without tipping into pulmonary edema. Monitor closely.</p>
+<p><strong>Hyperdynamic LV + plethoric IVC</strong> High-output state with elevated venous pressure. Consider: severe sepsis with right heart congestion, severe tricuspid regurgitation, hepatic disease, or a patient in compensated high-output heart failure who has been aggressively fluid-loaded.</p>
+<p><strong>Normal LV + dilated RV + plethoric IVC (no effusion)</strong> Obstructive physiology from PE or acute cor pulmonale from ARDS. Do not give more fluid. Focus on diagnosis and afterload reduction.</p>
+<p><strong>Large effusion + no tamponade physiology + plethoric IVC</strong> Consider chronic effusion (malignant, uremic) with concomitant right heart failure causing the elevated IVC — these are two separate problems. Treat both.</p>
+<hr>
+</section>
+<section id="serial-exams-and-trending" class="level2">
+<h2 class="anchored" data-anchor-id="serial-exams-and-trending">5. Serial exams and trending</h2>
+<p><em>Echo is not a one-time test.</em></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slot:</strong> Before/after comparison — echo before and after 1 L fluid bolus in a patient with septic shock.</p>
+</div>
+</div>
+<p>The true power of bedside echo in critical care is the ability to perform serial exams and track the response to interventions in real time. Key scenarios for repeat assessment:</p>
+<ul>
+<li><strong>After a fluid bolus:</strong> Did IVC diameter change? Did cardiac output improve (visual or measured)? Did venous congestion worsen?</li>
+<li><strong>After vasopressor dose change:</strong> Did LV or RV filling improve?</li>
+<li><strong>After diuresis:</strong> Is venous congestion resolving? Is IVC size decreasing?</li>
+<li><strong>After pericardiocentesis:</strong> Is tamponade physiology resolved? Is there residual constrictive physiology?</li>
+<li><strong>Trending over hours:</strong> Is RV function improving with treatment of PE or ARDS? Is EF recovering in myocarditis?</li>
+</ul>
+<p>Each exam should be compared to the prior exam, not interpreted in isolation. Document the key findings (EF category, RV:LV ratio, IVC diameter, IVC collapsibility) so that trends are visible across shifts.</p>
+<hr>
+</section>
+<section id="integration-cases" class="level2">
+<h2 class="anchored" data-anchor-id="integration-cases">6. Integration cases</h2>
+<p><em>Complex cases requiring synthesis of all modules.</em></p>
+<hr>
+<section id="case-1-the-patient-in-undifferentiated-shock" class="level3">
+<h3 class="anchored" data-anchor-id="case-1-the-patient-in-undifferentiated-shock">Case 1: The patient in undifferentiated shock</h3>
+<p><strong>Clinical scenario:</strong> A 64-year-old man with no significant cardiac history is transferred from a community hospital with “septic shock, possible PE.” He has been on norepinephrine for 6 hours and received 5 L of crystalloid. On arrival: BP 74/48, HR 128, temp 37.8°C, O2 sat 90% on 6 L NC. He is slightly confused. Chest X-ray shows bilateral infiltrates. Troponin is mildly elevated.</p>
+<p><strong>Systematic four-question exam:</strong></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slot:</strong> Loops for interpretation — complete four-window exam.</p>
+</div>
+</div>
+<p><strong>What you see:</strong> 1. No pericardial effusion. 2. LV severely reduced EF. Global hypokinesis, no RWMA. 3. RV moderately dilated. D-sign present. McConnell’s sign absent. TAPSE 14 mm. 4. IVC 2.5 cm, non-collapsing.</p>
+<p><strong>Integration:</strong> This is not simple septic shock. The severely reduced LV EF with RV dilation and a plethoric IVC suggests biventricular failure. The bilateral infiltrates could reflect pulmonary edema rather than pneumonia. The elevated troponin is consistent with cardiogenic shock. The differential includes new dilated cardiomyopathy with acute decompensation, fulminant myocarditis, or sepsis-induced biventricular dysfunction.</p>
+<p><strong>How does this change management?</strong> Stop fluids — the patient is congested. Add dobutamine for inotropic support. Get a 12-lead ECG and urgent formal echo. Consider PA catheter to characterize hemodynamics. The “sepsis” label may be wrong — treat aggressively for a primary cardiac event. If troponin is significantly elevated and ECG shows ischemic changes, activate the cath lab.</p>
+<hr>
+</section>
+<section id="case-2-post-arrest-resuscitation-what-caused-the-arrest" class="level3">
+<h3 class="anchored" data-anchor-id="case-2-post-arrest-resuscitation-what-caused-the-arrest">Case 2: Post-arrest resuscitation — what caused the arrest?</h3>
+<p><strong>Clinical scenario:</strong> A 58-year-old woman had a witnessed cardiac arrest in the hospital corridor. She was resuscitated in 8 minutes with 2 shocks and CPR. Now intubated, hemodynamically marginal on vasopressors. No prior cardiac history. The team wants to know: VF arrest from ACS, PE, or something else?</p>
+<p><strong>Systematic four-question exam:</strong></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slot:</strong> Loops for interpretation.</p>
+</div>
+</div>
+<p><strong>What you see:</strong> 1. No effusion. 2. LV: anterior and apical wall akinesis. Severely reduced EF. No global hypokinesis — the inferior and lateral walls move. 3. RV: normal size. No D-sign. Normal TAPSE. 4. IVC: 2.0 cm, 30% collapse (borderline).</p>
+<p><strong>Integration:</strong> Regional wall motion abnormality in the anterior/LAD distribution with a normal RV. This is a large anterior STEMI causing VF arrest. The RV is not dilated — this is not a PE causing the arrest. The IVC is borderline, consistent with post-resuscitation state.</p>
+<p><strong>How does this change management?</strong> Activate the cath lab immediately for emergent PCI. This is STEMI-equivalent post-arrest — coronary angiography is indicated regardless of the post-resuscitation ECG. Initiate targeted temperature management per protocol. The echo finding of an anterior RWMA pointing to the LAD is the critical finding that directs the team to the right intervention.</p>
+<hr>
+</section>
+<section id="case-3-hypoxic-respiratory-failure-cardiac-or-pulmonary" class="level3">
+<h3 class="anchored" data-anchor-id="case-3-hypoxic-respiratory-failure-cardiac-or-pulmonary">Case 3: Hypoxic respiratory failure — cardiac or pulmonary?</h3>
+<p><strong>Clinical scenario:</strong> A 71-year-old woman with COPD is admitted with progressive dyspnea over 3 days. She is hypoxic (O2 sat 84% on 10 L), hypotensive (BP 90/60), and has bilateral crackles and lower extremity edema. BNP is 1,800 pg/mL. Chest X-ray shows bilateral opacities. The team is debating whether to intubate for COPD exacerbation or initiate diuresis for decompensated heart failure.</p>
+<p><strong>Systematic four-question exam:</strong></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slot:</strong> Loops for interpretation.</p>
+</div>
+</div>
+<p><strong>What you see:</strong> 1. No effusion. 2. LV: severely reduced EF, dilated — chronic appearance. 3. RV: moderately dilated. D-sign (diastolic flattening, consistent with volume overload). 4. IVC: 2.8 cm, non-collapsing. Hepatic veins dilated.</p>
+<p><strong>Integration:</strong> Decompensated heart failure with reduced EF, biventricular volume overload, and severe congestion — not a primary COPD exacerbation. The COPD may be contributing to increased RV afterload, but the dominant pathophysiology is cardiogenic pulmonary edema.</p>
+<p><strong>How does this change management?</strong> Initiate NIV (BiPAP) to reduce preload and work of breathing. Begin aggressive diuresis. Add dobutamine if hemodynamics do not improve with afterload and preload reduction. Do not intubate for COPD management — the indication, if intubation becomes necessary, is respiratory failure from cardiogenic pulmonary edema. Treat the heart.</p>
+<hr>
+</section>
+<section id="case-4-the-patient-who-isnt-responding-to-treatment" class="level3">
+<h3 class="anchored" data-anchor-id="case-4-the-patient-who-isnt-responding-to-treatment">Case 4: The patient who “isn’t responding” to treatment</h3>
+<p><strong>Clinical scenario:</strong> A 77-year-old man with known COPD and newly diagnosed lung cancer was admitted 3 days ago for presumed COPD exacerbation. He has been on bronchodilators, steroids, and antibiotics with minimal improvement. He remains hypoxic and increasingly vasopressor-dependent. Repeat echo is requested by the ICU attending.</p>
+<p><strong>Systematic four-question exam:</strong></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slot:</strong> Loops for interpretation.</p>
+</div>
+</div>
+<p><strong>What you see:</strong> 1. Moderate pericardial effusion. No RA or RV collapse. IVC plethoric. 2. LV: normal EF. No RWMA. 3. RV: moderately dilated. D-sign present (pressure overload pattern — systolic flattening). 4. IVC: 2.4 cm, non-collapsing.</p>
+<p><strong>Integration:</strong> Two separate findings: a pericardial effusion (likely malignant) and RV pressure overload without tamponade physiology. The effusion is not causing tamponade. The RV dilation with pressure-overload D-sign in a patient with lung cancer raises the possibility of pulmonary hypertension from tumor invasion, PE, or extrinsic pulmonary vascular compression. Neither finding fits a primary COPD exacerbation.</p>
+<p><strong>How does this change management?</strong> CT pulmonary angiography to evaluate for PE and pulmonary vascular involvement by tumor. Oncology consultation for the effusion (malignant pericardial effusion likely). Reframe the clinical diagnosis — this is not a COPD exacerbation. The failure to respond to bronchodilators and steroids was a clue that the diagnosis was wrong.</p>
+<hr>
+</section>
+<section id="case-5-the-post-operative-patient-who-wont-come-off-the-ventilator" class="level3">
+<h3 class="anchored" data-anchor-id="case-5-the-post-operative-patient-who-wont-come-off-the-ventilator">Case 5: The post-operative patient who won’t come off the ventilator</h3>
+<p><strong>Clinical scenario:</strong> A 69-year-old man undergoes elective aortic valve replacement. He is extubated on post-op day 2 but reintubated 6 hours later for respiratory failure. He is now post-op day 5, sedated, and failing repeated extubation trials. An ICU team requests bedside echo to evaluate hemodynamics.</p>
+<p><strong>Systematic four-question exam:</strong></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Video slot:</strong> Loops for interpretation — post-surgical windows (often challenging).</p>
+</div>
+</div>
+<p><strong>What you see:</strong> 1. Small anterior effusion. No chamber collapse. 2. LV: EF 45% (mildly reduced, new compared to pre-op 60%). Anterior wall motion mildly reduced. 3. RV: mildly dilated. TAPSE 14 mm. 4. IVC: 2.2 cm, 20% distensibility (borderline for fluid responsiveness in a ventilated patient).</p>
+<p><strong>Integration:</strong> New mild LV dysfunction (post-operative stunned myocardium vs perioperative MI), mild RV dysfunction, and borderline volume status. The anterior wall motion abnormality raises concern for a perioperative LAD event. The ventricular dysfunction is driving respiratory failure — the patient is not failing extubation from pulmonary mechanics but from hemodynamic compromise.</p>
+<p><strong>How does this change management?</strong> Obtain an ECG and serial troponins — a perioperative MI must be ruled out. Cardiology consultation for post-surgical echo. Optimize hemodynamics: gentle diuresis to reduce preload, optimize heart rate, consider low-dose inotrope if EF remains depressed. Address the cardiac problem before the next extubation trial — the respiratory failure is a symptom, not the diagnosis.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Integration reminder:</strong> The power of the four-question exam is not in any single finding. It is in the composite picture and the management decision that follows.</p>
+</div>
+</div>
+<hr>
+</section>
 </section>
 <section id="quiz" class="level2">
 <h2 class="anchored" data-anchor-id="quiz">Quiz</h2>
 <p>Anki deck for spaced repetition: <em>link coming soon.</em></p>
-<p>In-page quiz items: <em>coming soon.</em></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Q1.</strong> A patient in shock has a hyperdynamic LV, a dilated RV with D-sign, and a plethoric IVC. No pericardial effusion. What is the most likely hemodynamic phenotype and the priority intervention?</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Answer</strong> Obstructive shock from pulmonary embolism (or acute cor pulmonale). The hyperdynamic LV is underfilled due to RV failure impairing output. The priority is reducing RV afterload — systemic anticoagulation, and in hemodynamic collapse, systemic thrombolytics or catheter-directed therapy. Do not give fluid boluses.</p>
+</div>
+</div>
+</div>
+<p><strong>Q2.</strong> You find a severely reduced EF and a small, collapsible IVC in a hypotensive patient. What does this suggest and how do you manage it?</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Answer</strong> The LV is failing but filling pressures are low — cardiogenic shock superimposed on hypovolemia (or volume depletion from prior diuresis/bleeding). A cautious fluid challenge (250 mL) may improve preload and cardiac output. Monitor closely for pulmonary edema. Add inotropic support if the EF does not improve with preload optimization.</p>
+</div>
+</div>
+</div>
+<p><strong>Q3.</strong> After performing a bedside echo, you are unsure whether the reduced EF is new or chronic. How does the LV size help you distinguish?</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Answer</strong> A dilated LV suggests a chronic process — the heart has had time to remodel. A non-dilated LV with severely reduced EF suggests an acute process (myocarditis, Takotsubo, acute MI, sepsis-induced cardiomyopathy). Acuity changes the differential and the urgency of investigation (e.g., emergent cath lab for suspected acute MI vs.&nbsp;supportive management for myocarditis).</p>
+</div>
+</div>
+</div>
+<p><strong>Q4.</strong> A patient’s echo shows: no effusion, normal LV, dilated RV with McConnell’s sign, plethoric IVC. What is the diagnosis and what is the single most important intervention?</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Answer</strong> Massive pulmonary embolism with RV failure. The single most important intervention is systemic thrombolysis (if no contraindication) — it rapidly reduces RV afterload by dissolving the clot. Anticoagulation alone is insufficient in hemodynamic collapse. Activate a PE response team or get interventional radiology and cardiac surgery on the line simultaneously.</p>
+</div>
+</div>
+</div>
+<p><strong>Q5.</strong> What is the purpose of serial bedside echo in the ICU, and what should be documented to make serial exams useful?</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Answer</strong> Serial echo tracks the response to interventions and identifies deterioration or recovery over time. A single exam is a snapshot; serial exams reveal trajectory. Document key quantitative or semi-quantitative findings at each exam: EF category (severely reduced / mildly reduced / normal / hyperdynamic), RV:LV ratio, IVC diameter and collapsibility, presence of chamber collapse or D-sign. This allows any clinician picking up the patient to immediately understand where the hemodynamics started and where they are now.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
 </section>

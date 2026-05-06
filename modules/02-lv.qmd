@@ -1,6 +1,6 @@
 ---
-title: "Module 4 — Pericardium"
-subtitle: "Effusion, tamponade, and pericardial pathology at the bedside"
+title: "Module 2 — Left Ventricular Function"
+subtitle: "Systolic dysfunction, cardiogenic shock, and regional wall motion abnormalities"
 ---
 
 ## 1. Clinical question
@@ -8,80 +8,285 @@ subtitle: "Effusion, tamponade, and pericardial pathology at the bedside"
 *What clinical question does this exam answer, and how do findings change management?*
 
 ::: {.callout-note}
-**The bedside decision frame goes here.** For pericardium: is there an effusion, is it physiologically significant, and does this change resuscitation, hemodynamic management, or the need for emergent intervention?
+**The bedside decision frame:** Two questions in order.
+
+1. **Is global LV systolic function normal, reduced, or hyperdynamic?** A visual estimate of ejection fraction — severely reduced, mildly-to-moderately reduced, normal, or hyperdynamic — is sufficient for bedside decision-making. You do not need a number.
+2. **Are there regional wall motion abnormalities?** Segmental dysfunction in a coronary distribution suggests ACS as the etiology. Global dysfunction is more consistent with cardiomyopathy, myocarditis, or sepsis-mediated depression. The distinction changes management immediately.
 :::
+
+Bedside LV assessment answers the most fundamental question in hemodynamic resuscitation: **is the pump failing?** A hypotensive patient with a hyperdynamic LV does not need inotropes — they need volume, vasopressors, or treatment of the underlying distributive state. A hypotensive patient with a severely reduced EF and dilated LV is in cardiogenic shock and needs a fundamentally different approach. Getting this wrong early leads to fluid overload in cardiogenic shock or undertreated distributive shock.
+
+---
 
 ## 2. Image acquisition
 
 *Probe, windows, and technique for this module.*
 
-Brief intro paragraph here. Below, embed acquisition videos one per technique.
+Use a **phased array (cardiac) probe** on the **cardiac preset**. LV function is assessed across multiple windows — no single view is sufficient. The goal is to visualize the LV in two orthogonal planes and assess wall motion in all segments.
 
-### Subcostal four-chamber view
-
-*Video and key points coming soon.*
+---
 
 ### Parasternal long axis
 
-*Video and key points coming soon.*
+::: {.callout-tip}
+**Video slot:** PLAX for LV assessment — M-mode placement at mitral valve tips, visual EF estimation, posterior wall and septal motion.
+:::
+
+**What you are looking for:** Global LV contractility (do the walls move vigorously inward in systole?), chamber size (a dilated LV suggests chronicity), and mitral valve excursion (reduced in low-output states). M-mode at the tips of the mitral valve leaflets allows measurement of EPSS (E-point septal separation) — a distance greater than 7 mm suggests reduced EF.
+
+---
+
+### Parasternal short axis — papillary muscle level
+
+::: {.callout-tip}
+**Video slot:** PSAX at papillary muscle level — the "donut" view, eyeball EF, D-sign assessment.
+:::
+
+**What you are looking for:** The LV should appear round in cross-section and contract concentrically and symmetrically. This is the best single view for a visual EF estimate — watch the endocardium sweep inward in systole. Also assess the interventricular septum: a flat or D-shaped LV indicates RV pressure or volume overload (see Module 3).
+
+---
 
 ### Apical four-chamber
 
-*Video and key points coming soon.*
+::: {.callout-tip}
+**Video slot:** Apical four-chamber for wall motion — septal, lateral, apical segments.
+:::
+
+**What you are looking for:** All four chambers, with attention to LV wall motion in each visible segment. The apical view is essential for identifying apical wall motion abnormalities (LAD territory) and for assessing LV size relative to the RV.
+
+---
+
+### Subcostal
+
+::: {.callout-tip}
+**Video slot:** Subcostal cardiac view — rapid global LV assessment in the undifferentiated patient.
+:::
+
+**When to use:** First-line in the unstable patient who cannot be repositioned. Provides a rapid visual impression of global LV function. Not sufficient alone for wall motion analysis.
+
+---
 
 ## 3. Normal & normal variants
 
 *The library of normal hearts and common confounders.*
 
-Fellows need to see ten or more normals before pathology makes sense. Loops will go here, organized as:
+::: {.callout-tip}
+**Video slots:** Normal LV function across body habitus — thin patient, obese patient, patient with LVH. Review before the pathology library.
+:::
 
-- Normal pericardium across body habitus
-- Pericardial fat pad (commonly mistaken for effusion)
-- Epicardial fat
-- Post-CABG appearance
+### Normal LV systolic function
+
+Normal EF is 55–70%. On visual assessment, the endocardial walls should move briskly inward in systole and the LV cavity should appear to nearly obliterate at peak contraction. The posterior wall and septum thicken in systole. A normal study looks vigorous — if you are unsure whether the function is normal, it probably is.
+
+### Hyperdynamic LV
+
+EF greater than 70%, often with near-complete cavity obliteration in systole. Common in sepsis (early), anemia, hyperthyroidism, and hypovolemia. The hyperdynamic LV in a hypotensive patient points away from cardiogenic shock as the primary etiology — though it does not rule out mixed shock states.
+
+### LV hypertrophy
+
+Increased wall thickness (septum or posterior wall >11 mm). Concentric hypertrophy (thick walls, normal cavity size) is seen in chronic hypertension and aortic stenosis. Eccentric hypertrophy (thick walls with a dilated cavity) suggests chronic volume overload. Hypertrophied ventricles are at higher risk for diastolic dysfunction and may decompensate with tachycardia or aggressive fluid loading.
+
+### "Kissing walls" in hypovolemia
+
+In severe hypovolemia, the LV cavity may appear nearly obliterated even in diastole, with the walls nearly touching. This is distinct from a true reduction in EF — function appears hyperdynamic, not depressed. Seen in hemorrhagic shock, third-spacing, and aggressive diuresis.
+
+---
 
 ## 4. Pathology library
 
 *Organized by finding, not by diagnosis.*
 
-### Small effusion
+### Severely reduced EF
 
-*Loops and teaching points coming soon.*
+::: {.callout-tip}
+**Video slot:** Severely reduced EF — dilated LV, minimal wall motion, large end-systolic volume.
+:::
 
-### Moderate to large effusion
+EF visually estimated below 30%. The LV is often dilated. Wall motion is globally reduced with minimal inward thickening in systole. The mitral valve opens sluggishly and EPSS is markedly increased.
 
-*Loops and teaching points coming soon.*
+**Teaching points:**
 
-### Tamponade physiology
+- This is cardiogenic shock physiology until proven otherwise in a hypotensive patient.
+- Causes: ischemic cardiomyopathy, dilated cardiomyopathy, myocarditis, Takotsubo, sepsis-mediated depression (usually less severe).
+- Avoid aggressive fluid loading — the failing LV cannot handle preload augmentation and you will worsen pulmonary edema.
+- Inotropes (dobutamine) and early consideration of mechanical circulatory support are the interventions.
 
-*Loops and teaching points coming soon — RA collapse, RV diastolic collapse, plethoric IVC, respiratory variation.*
+---
 
-### Loculated effusion
+### Mildly to moderately reduced EF
 
-*Loops and teaching points coming soon.*
+::: {.callout-tip}
+**Video slot:** Moderately reduced EF — reduced but present wall motion, mildly dilated LV.
+:::
 
-### Mimics & pitfalls
+EF visually estimated 30–50%. Wall motion is reduced but clearly present. The LV may or may not be dilated. This pattern is common in known heart failure with reduced EF presenting with decompensation.
 
-*Pleural effusion vs pericardial, fat pad vs effusion, descending aorta vs effusion.*
+**Teaching points:**
+
+- Does not automatically mean cardiogenic shock — assess for hemodynamic compromise and end-organ perfusion.
+- Treat the precipitant: arrhythmia, ischemia, infection, medication non-compliance, dietary indiscretion.
+- Avoid negative inotropes and large fluid boluses.
+
+---
+
+### Regional wall motion abnormalities
+
+::: {.callout-tip}
+**Video slots:**
+- Anterior RWMA (LAD territory) — apical and anterior wall hypokinesis
+- Inferior RWMA (RCA territory) — inferior and posterior wall hypokinesis
+- Lateral RWMA (LCx territory) — lateral wall hypokinesis
+:::
+
+Segmental dysfunction confined to a coronary distribution. The affected wall moves less than adjacent segments or is akinetic (no motion) or dyskinetic (paradoxical outward motion in systole).
+
+**Teaching points:**
+
+- New RWMA with hemodynamic compromise = acute coronary syndrome until proven otherwise. Activate the cath lab.
+- Assess the RV when inferior RWMA is present — RCA occlusion may cause concomitant RV infarct, which requires different management (avoid nitrates, volume-load to maintain RV preload).
+- Takotsubo (stress) cardiomyopathy: apical ballooning with preserved or hyperdynamic basal segments — does not follow a coronary distribution. History of emotional or physiologic stressor.
+
+---
+
+### Dilated LV
+
+::: {.callout-tip}
+**Video slot:** Dilated LV — increased end-diastolic dimension, loss of the normal elliptical shape.
+:::
+
+LV end-diastolic diameter greater than 5.5 cm (PLAX, M-mode) or a visually enlarged chamber. Dilation suggests chronicity — the heart has had time to remodel.
+
+**Teaching points:**
+
+- A dilated LV with severely reduced EF is a chronic dilated cardiomyopathy. This patient likely has known disease and has decompensated.
+- A non-dilated LV with reduced EF suggests an acute process (myocarditis, Takotsubo, acute MI).
+- The distinction matters for prognosis and for anticipating how the LV will respond to treatment.
+
+---
 
 ## 5. Integration cases
 
 *Cases where the finding changes management.*
 
-Three to five short cases will go here. Each case follows the format:
+---
 
-1. Clinical scenario
-2. What exam would you perform?
-3. Loops to interpret
-4. What do you see?
-5. How does this change management?
+### Case 1: Hypotension after STEMI
+
+**Clinical scenario:** A 61-year-old man with an anterior STEMI is brought to the ED. He received aspirin and heparin in the field. On arrival his BP is 78/50, HR 110, and he is cool and diaphoretic. The cath lab team is being activated.
+
+**What exam would you perform?**
+Rapid focused cardiac ultrasound before transfer to the cath lab.
 
 ::: {.callout-tip}
-**Case format anchor:** the case ends with a management decision, not just a diagnosis. The whole point is integration.
+**Video slot:** Loops for interpretation.
 :::
+
+**What you see:**
+Severely reduced EF. Anterior and apical wall akinesis. LV not markedly dilated (acute presentation). No pericardial effusion.
+
+**How does this change management?**
+This is cardiogenic shock from a large anterior MI. Start dobutamine at low dose as a bridge. Avoid aggressive fluid boluses. Notify the cath lab of cardiogenic shock — they may want an IABP or Impella placed at the time of PCI. Do not delay transfer for a prolonged echo.
+
+---
+
+### Case 2: Undifferentiated hypotension in the ICU
+
+**Clinical scenario:** A 58-year-old woman with septic shock from a urinary source has been on norepinephrine for 18 hours. She received 4 L of crystalloid. Her BP is now 72/40 despite escalating vasopressors. Lactate is rising.
+
+**What exam would you perform?**
+Bedside cardiac ultrasound — LV function, RV size, IVC.
+
+::: {.callout-tip}
+**Video slot:** Loops for interpretation.
+:::
+
+**What you see:**
+Severely reduced EF. Global hypokinesis. LV not dilated. IVC is plethoric.
+
+**How does this change management?**
+This is sepsis-mediated cardiomyopathy with cardiogenic component to the shock. Add dobutamine. Stop or slow fluid administration. Consider PA catheter or advanced hemodynamic monitoring. Avoid further escalation of vasopressors alone — you are vasoconstricting a failing heart. Reassess in 4–6 hours; sepsis-mediated depression often recovers with treatment of the underlying infection.
+
+---
+
+### Case 3: Chest pain and new ECG changes
+
+**Clinical scenario:** A 49-year-old woman presents with 2 hours of substernal chest pressure and diaphoresis. ECG shows ST depression in V4–V6. She is hemodynamically stable.
+
+**What exam would you perform?**
+Focused cardiac ultrasound to assess for RWMA.
+
+::: {.callout-tip}
+**Video slot:** Loops for interpretation.
+:::
+
+**What you see:**
+Lateral wall hypokinesis. Preserved global function. No effusion.
+
+**How does this change management?**
+Lateral RWMA in the context of ST depression and chest pain is an NSTEMI with high-risk features. Activate the cath lab urgently. Anticoagulate. The echo finding corroborates the clinical diagnosis and raises urgency — do not wait for troponin results.
+
+---
+
+### Case 4: Young patient with viral prodrome and shock
+
+**Clinical scenario:** A 28-year-old man presents with 5 days of viral URI symptoms followed by 24 hours of progressive dyspnea and now hypotension (BP 88/60). He has no cardiac history.
+
+**What exam would you perform?**
+Focused cardiac ultrasound.
+
+::: {.callout-tip}
+**Video slot:** Loops for interpretation.
+:::
+
+**What you see:**
+Severely reduced EF. Globally hypokinetic but not dilated LV. No RWMA pattern. Small pericardial effusion.
+
+**How does this change management?**
+Myocarditis with cardiogenic shock. This is not ischemic cardiomyopathy — no regional pattern, young patient, viral prodrome. Avoid NSAIDs (may worsen myocarditis). Start dobutamine. Urgent cardiology consultation for consideration of mechanical circulatory support — myocarditis-related shock can be rapidly fatal and some patients benefit from short-term MCS as a bridge to recovery. MRI is the gold standard for diagnosis but should not delay resuscitation.
+
+::: {.callout-tip}
+**Case format reminder:** The case ends with a management decision, not just a diagnosis.
+:::
+
+---
 
 ## Quiz
 
 Anki deck for spaced repetition: *link coming soon.*
 
-In-page quiz items: *coming soon.*
+::: {.callout-note}
+**Q1.** A hypotensive patient has a hyperdynamic LV on bedside echo. What does this tell you about the etiology of shock?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+Hyperdynamic LV function argues against cardiogenic shock as the primary etiology. Consider distributive shock (sepsis, anaphylaxis), hypovolemia, or obstructive shock. Mixed shock states are possible — a hyperdynamic LV does not guarantee adequate cardiac output if heart rate is severely elevated.
+:::
+
+**Q2.** What is EPSS, and what does an elevated value indicate?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+E-point septal separation — the distance between the anterior mitral leaflet at its maximum opening excursion (E-point) and the interventricular septum, measured by M-mode on PLAX. Normal is less than 7 mm. Values above 7 mm correlate with reduced EF. It is a useful single-number surrogate when visual estimation is uncertain.
+:::
+
+**Q3.** You see hypokinesis of the inferior wall and posterior wall on PSAX. What coronary territory does this implicate, and what additional structure should you assess?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+Right coronary artery (RCA) territory. Always assess the RV when inferior RWMA is present — the RCA supplies the RV free wall and an RCA occlusion can cause concomitant RV infarct. RV infarct requires volume loading and avoidance of nitrates, making it a distinct management scenario.
+:::
+
+**Q4.** A patient has a severely reduced EF with a markedly dilated LV. A second patient has a severely reduced EF with a normal-sized LV. What does the difference in LV size suggest?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+Dilation suggests a chronic process — the heart has had time to remodel (dilated cardiomyopathy, longstanding ischemic disease). A non-dilated LV with severely reduced EF suggests an acute process: myocarditis, Takotsubo, acute large MI, or acute decompensation of previously compensated disease.
+:::
+
+**Q5.** What is the Takotsubo pattern, and how does it differ from an LAD occlusion on bedside echo?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+Takotsubo (apical ballooning syndrome) shows apical and mid-ventricular hypokinesis or akinesis with preserved or hyperdynamic basal segments. An LAD occlusion causes anterior and apical dysfunction but typically includes some basal anterior involvement and follows the LAD distribution more closely. Takotsubo does not respect a single coronary territory — the basal sparing is the key distinguishing feature.
+:::
+:::
