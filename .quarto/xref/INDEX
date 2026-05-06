@@ -37,5 +37,8 @@
   },
   "modules/11-procedural.qmd": {
     "11-procedural.html": "02eec0f2"
+  },
+  "credits.qmd": {
+    "credits.html": "62f2f98c"
   }
 }
