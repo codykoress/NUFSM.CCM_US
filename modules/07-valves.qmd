@@ -68,6 +68,8 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. Color Doppler 
 
 ::: {.callout-tip}
 **Video slot:** Apical 5-chamber or APLAX with color Doppler across the aortic valve — turbulent systolic jet in AS, diastolic regurgitant jet in AR.
+
+<img src="gifs/apical+5+normal.gif" style="width:100%; border-radius:4px;" alt="Normal apical five-chamber view"/>
 :::
 
 **What you are looking for:**

@@ -30,6 +30,8 @@ Use a **phased array or curvilinear probe** from the **subcostal window**. The I
 
 ::: {.callout-tip}
 **Video slot:** IVC acquisition — probe position, long axis of the IVC, measurement technique, respiratory variation.
+
+<img src="gifs/Inferior Vena Cava Emptyting into Right Atrium.gif" style="width:100%; border-radius:4px;" alt="Normal IVC entering the right atrium"/>
 :::
 
 **Probe placement:** Subcostal, indicator to the patient's right (or toward the head depending on your convention), angled to bring the IVC into view as it enters the RA. The hepatic vein confluence should be visible entering the IVC.
@@ -90,6 +92,8 @@ Respiratory variation is reversed in mechanically ventilated patients — the IV
 
 ::: {.callout-tip}
 **Video slot:** Small IVC — diameter <1.5 cm, >50% collapse, "flat" appearance.
+
+<img src="gifs/Inferior Vena Cava in Hypovolemia (Transverse).gif" style="width:100%; border-radius:4px;" alt="Collapsed IVC in hypovolemia"/>
 :::
 
 Diameter less than 1.5 cm with greater than 50% respiratory collapse. Estimated RA pressure 0–5 mmHg.
@@ -107,6 +111,8 @@ Diameter less than 1.5 cm with greater than 50% respiratory collapse. Estimated 
 
 ::: {.callout-tip}
 **Video slot:** Plethoric IVC — diameter >2.1 cm, <50% collapse, associated with elevated RA pressure.
+
+<img src="gifs/Plethoric Inferior Vena Cava.gif" style="width:100%; border-radius:4px;" alt="Plethoric non-collapsing IVC"/>
 :::
 
 Diameter greater than 2.1 cm with less than 50% respiratory collapse. Estimated RA pressure 10–20 mmHg.

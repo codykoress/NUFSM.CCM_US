@@ -43,6 +43,8 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 
 ::: {.callout-tip}
 **Video slot:** Subcostal four-chamber acquisition — probe position, indicator orientation, fanning technique, optimization tips.
+
+<img src="gifs/normal subcostal view.gif" style="width:100%; border-radius:4px;" alt="Normal subcostal four-chamber view"/>
 :::
 
 ![Subcostal four-chamber probe placement. The probe sits subxiphoid, nearly flat against the abdomen. The red indicator dot points to the patient's left.](images/probe-subcostal.svg){fig-align="center" width="380"}
@@ -78,6 +80,8 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 
 ::: {.callout-tip}
 **Video slot:** Parasternal long axis acquisition — rib interspace selection, indicator toward the right shoulder, tilting to optimize the LV long axis.
+
+<img src="gifs/Normal Parasternal Long Axis (PLAX) View.gif" style="width:100%; border-radius:4px;" alt="Normal parasternal long axis view"/>
 :::
 
 ![Parasternal long axis probe placement. Left parasternal border, 3rd–4th ICS. The red indicator dot points toward the patient's right shoulder (~10–11 o'clock).](images/probe-plax.svg){fig-align="center" width="380"}
@@ -113,9 +117,18 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 
 ::: {.callout-tip}
 **Video slots:**
+
 - PSAX at the aortic valve level — the Mercedes-Benz sign, RVOT, pulmonary valve
+
+<img src="gifs/Normal Aortic Valve (Parasternal Short-Axis View).gif" style="width:100%; border-radius:4px;" alt="Normal aortic valve on PSAX"/>
+
 - PSAX at the mitral valve level — the fish mouth opening
+
+<img src="gifs/Normal Mitral Valve (Parasternal Short-Axis View).gif" style="width:100%; border-radius:4px;" alt="Normal mitral valve on PSAX"/>
+
 - PSAX at the papillary muscle level — the donut view, concentric LV contraction
+
+<img src="gifs/Parasternal Short Axis - Normal.gif" style="width:100%; border-radius:4px;" alt="Normal PSAX at papillary muscle level"/>
 :::
 
 ![Parasternal short axis probe placement. Starting from PLAX, rotate 90° clockwise. The indicator moves to the patient's left shoulder (~1–2 o'clock). The ghost probe (faint) shows the PLAX starting position.](images/probe-psax.svg){fig-align="center" width="380"}
@@ -169,6 +182,8 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 
 ::: {.callout-tip}
 **Video slot:** Apical four-chamber acquisition — finding the PMI, lateral decubitus positioning, depth adjustment to bring the apex to the top.
+
+<img src="gifs/apical+4+normal.gif" style="width:100%; border-radius:4px;" alt="Normal apical four-chamber view"/>
 :::
 
 ![Apical four-chamber probe placement. The green crosshair marks the PMI at the 5th ICS midclavicular line. The indicator points to the patient's left (3 o'clock).](images/probe-apical.svg){fig-align="center" width="380"}

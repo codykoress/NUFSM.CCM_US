@@ -8,9 +8,87 @@ title: "Credits"
 
 ---
 
-## Image and video contributors
+## Ultrasound clip attribution
 
-*Ultrasound loops, still images, and acquisition videos will be credited here as they are added to the curriculum.*
+All clips used in this curriculum are sourced from [The POCUS Atlas](https://www.thepocusatlas.com), an open-access point-of-care ultrasound image library. We are grateful to the contributors who submitted these cases.
+
+::: {.callout-note}
+Clips marked with an asterisk (\*) are embedded in the curriculum but do not yet have complete contributor metadata. If you are the contributor, please contact the curriculum team.
+:::
+
+### Module 1 — Windows & Acquisition
+
+| Clip | Contributor(s) | Source |
+|---|---|---|
+| Normal apical four-chamber | Hannah Kopinski MS4; Dr. Lindsay Davis, NYU/Bellevue Emergency Ultrasound; Dr. Matthew Riscinti, Kings County Emergency Medicine | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Normal aortic valve (PSAX) | Justin Bowra MBBS FACEM CCPU, RNSH, et al. | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Normal mitral valve (PSAX) | Hannah Kopinski MS4; Dr. Lindsay Davis, NYU/Bellevue Emergency Ultrasound; Dr. Matthew Riscinti, Kings County Emergency Medicine | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Normal PLAX | Nigist Taddese MBChB, Division of Hospital Medicine, John H. Stroger Hospital of Cook County | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Normal PSAX (papillary muscle level) | Dr. Felipe Urriola, Puerto Aysen Hospital Emergency Department, Chilean Patagonia | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Normal subcostal view | Shahad Al Chalaby MD, PGY-2 Internal Medicine, Highland Hospital / Alameda Health System | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+
+### Module 2 — Left Ventricular Function
+
+| Clip | Contributor(s) | Source |
+|---|---|---|
+| Biventricular failure (apical 4-chamber) | Dr. Jaclyn Walker; Dr. Matthew Riscinti, Denver Health Emergency Medicine | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Decreased EF (parasternal short axis) | Dan Dunaske DO PGY-1, Central Michigan University College of Medicine, Emergency Medicine | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| New onset cardiomyopathy with reduced EF (PLAX) | Brent Oldham MD MPH PGY-3, Central Michigan University College of Medicine, Emergency Medicine | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Reduced ejection fraction (PLAX) | Nigist Taddese MBChB | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Takotsubo cardiomyopathy (apical two-chamber) | Robert Jones DO FACEP, Director of Emergency Ultrasound, MetroHealth Medical Center; Professor, Case Western Reserve University School of Medicine | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Hyperdynamic LV (short axis) | \* | — |
+| Moderately reduced EF (short axis) | \* | — |
+| Moderately reduced EF (apical 4-chamber) | \* | — |
+| Anterior wall hypokinesia (short axis) | \* | — |
+
+### Module 3 — Right Ventricular Function
+
+| Clip | Contributor(s) | Source |
+|---|---|---|
+| RV failure | John Bowling DO, Cleveland Clinic Akron General, @BModeBowling | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| McConnell's sign with RV enlargement | Dimitri Livshits DO, Ultrasound Fellow; Jane Belyavskaya MD, Ultrasound Fellow; Chris Hanuscin MD, Ultrasound Fellowship Director — Kings County / SUNY Downstate | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Septal flattening in saddle pulmonary embolism | \* | — |
+
+### Module 4 — Pericardium
+
+| Clip | Contributor(s) | Source |
+|---|---|---|
+| Cardiac tamponade (PSAX) | Justin Bowra MBBS FACEM CCPU, RNSH, et al. (Dr. Orr) | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Cardiac tamponade (apical 4-chamber) | Nathan Kabariti MS4; Dr. Charles Murchison; Dr. John Riggins; Dr. Donald Doukas — Kings County Emergency Medicine | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Chronic pericardial effusion | Dr. Robert Jarman, UK | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Loculated pericardial effusion | Robert Jones DO FACEP | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Constrictive pericarditis | Robert Jones DO FACEP | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+
+### Module 5 — IVC & Volume Status
+
+| Clip | Contributor(s) | Source |
+|---|---|---|
+| Normal IVC entering the right atrium | Justin Bowra MBBS FACEM CCPU, RNSH, et al. | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Collapsed IVC in hypovolemia (transverse) | Justin Bowra MBBS FACEM CCPU, RNSH, et al. | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Plethoric IVC | \* | — |
+
+### Module 6 — Integration
+
+| Clip | Contributor(s) | Source |
+|---|---|---|
+| Septal dyskinesis (subcostal view) | \* | — |
+| Ventricular fibrillation | \* | — |
+
+### Module 7 — Basic Valve Assessment
+
+| Clip | Contributor(s) | Source |
+|---|---|---|
+| Normal apical five-chamber | Hannah Kopinski MS4; Dr. Lindsay Davis, NYU/Bellevue Emergency Ultrasound; Dr. Matthew Riscinti, Kings County Emergency Medicine | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+
+### Module 8 — Lung Ultrasound
+
+| Clip | Contributor(s) | Source |
+|---|---|---|
+| A-lines — normal lung | Hannah Kopinski MS4; Dr. Lindsay Davis, NYU Emergency Medicine; Dr. Matthew Riscinti, Kings County Emergency Medicine | [POCUS Atlas](https://www.thepocusatlas.com/pulmonary) |
+| Normal lung sliding | Robert Jones DO FACEP | [POCUS Atlas](https://www.thepocusatlas.com/pulmonary) |
+| B-lines — pulmonary edema | Dr. Justin Bowra et al. (Dr. D. Browne; Dr. J. Knights) | [POCUS Atlas](https://www.thepocusatlas.com/pulmonary) |
+| Air bronchograms — pneumonia | Rafael Intensivanaveia, Critical Care Physician, Hospital Israelita Albert Einstein | [POCUS Atlas](https://www.thepocusatlas.com/pulmonary) |
+| Pleural effusion | Dimitri Livshits DO, Ultrasound Fellow; Jane Belyavskaya MD, Ultrasound Fellow; Chris Hanuscin MD, Ultrasound Fellowship Director — Kings County / SUNY Downstate | [POCUS Atlas](https://www.thepocusatlas.com/pulmonary) |
 
 ---
 

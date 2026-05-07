@@ -157,6 +157,8 @@ Less than 1 cm in greatest diameter on PLAX, posterior to the LV. Visible in dia
 
 ::: {.callout-tip}
 **Video slot:** Large circumferential effusion — swinging heart, echo-free space in all windows.
+
+<img src="gifs/Chronic+Pericardial+Effusion.gif" style="width:100%; border-radius:4px;" alt="Large chronic pericardial effusion"/>
 :::
 
 Moderate: 1–2 cm; large: >2 cm on PLAX. Large effusions are typically circumferential and visible in all windows.
@@ -177,6 +179,10 @@ Moderate: 1–2 cm; large: >2 cm on PLAX. Large effusions are typically circumfe
 - RV diastolic collapse (PLAX or subcostal)
 - Plethoric, non-collapsing IVC
 - Respiratory variation on mitral inflow (M-mode or PW Doppler)
+
+<img src="gifs/Cardiac Tamponade (Parasternal Short-Axis View).gif" style="width:100%; border-radius:4px;" alt="Cardiac tamponade — PSAX view"/>
+
+<img src="gifs/Cardiac Tamponade Apical Four.gif" style="width:100%; border-radius:4px;" alt="Cardiac tamponade — apical four-chamber"/>
 :::
 
 Tamponade is elevated intrapericardial pressure exceeding intracardiac filling pressure. It is a clinical diagnosis confirmed sonographically. No single finding is pathognomonic — the diagnosis is integrative.
@@ -198,6 +204,8 @@ Tamponade is elevated intrapericardial pressure exceeding intracardiac filling p
 
 ::: {.callout-tip}
 **Video slot:** Post-operative loculated effusion — anterior, irregular, compressing a single chamber.
+
+<img src="gifs/loculated pericardial effusion.gif" style="width:100%; border-radius:4px;" alt="Loculated pericardial effusion"/>
 :::
 
 Loculated effusions do not distribute freely. They occur after cardiac surgery, trauma, or prior pericarditis with adhesions. The collection may compress only one chamber, producing atypical hemodynamic presentations that do not fit classic tamponade physiology.
@@ -289,6 +297,8 @@ Both an effusion and constrictive pericardial thickening coexist. The effusion m
 - Respiratory variation on mitral inflow (>25% E-wave decrease with inspiration)
 - Reciprocal tricuspid inflow increase with inspiration
 - Expiratory hepatic vein diastolic flow reversal
+
+<img src="gifs/constrictive pericarditis.gif" style="width:100%; border-radius:4px;" alt="Constrictive pericarditis — septal bounce and respiratory variation"/>
 :::
 
 A thickened, fibrotic, or calcified pericardium that limits diastolic filling. The great mimic of right heart failure, liver disease, and restrictive cardiomyopathy.

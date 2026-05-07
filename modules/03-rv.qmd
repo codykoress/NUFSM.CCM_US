@@ -30,6 +30,8 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. RV assessment 
 
 ::: {.callout-tip}
 **Video slot:** Apical four-chamber for RV assessment — RV:LV ratio, free wall motion, TAPSE measurement.
+
+<img src="gifs/apical+4+normal.gif" style="width:100%; border-radius:4px;" alt="Normal apical four-chamber — RV:LV comparison"/>
 :::
 
 **What you are looking for:** RV size relative to the LV. The RV free wall should move briskly inward in systole. TAPSE (tricuspid annular plane systolic excursion) is measured by M-mode at the lateral tricuspid annulus — normal is greater than 17 mm. Reduced TAPSE indicates RV systolic dysfunction regardless of the cause.
@@ -42,6 +44,8 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. RV assessment 
 
 ::: {.callout-tip}
 **Video slot:** PSAX for D-sign — normal circular LV vs pressure-overloaded D-shape.
+
+<img src="gifs/Normal Parasternal Short Axis View.gif" style="width:100%; border-radius:4px;" alt="Normal PSAX — circular LV for comparison"/>
 :::
 
 **What you are looking for:** The LV should appear round (like a donut) in cross-section throughout the cardiac cycle. When RV pressure or volume overload is present, the interventricular septum flattens or bows toward the LV, creating a D-shaped LV.
@@ -56,6 +60,8 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. RV assessment 
 
 ::: {.callout-tip}
 **Video slot:** PLAX with attention to RV — RV dilation encroaching on the LV, RVOT assessment.
+
+<img src="gifs/Normal Parasternal Long Axis (PLAX) View.gif" style="width:100%; border-radius:4px;" alt="Normal PLAX — RV free wall and RVOT reference"/>
 :::
 
 **What you are looking for:** RV free wall thickness (normal <5 mm; >5 mm suggests chronic pressure overload), RVOT dilation, and subjective assessment of RV size relative to LVOT.
@@ -66,6 +72,8 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. RV assessment 
 
 ::: {.callout-tip}
 **Video slot:** Subcostal view for RV — free wall, size assessment, RV-to-LV comparison.
+
+<img src="gifs/normal subcostal view.gif" style="width:100%; border-radius:4px;" alt="Normal subcostal view — RV free wall reference"/>
 :::
 
 **When to use:** First-line in the peri-arrest or ventilated patient. The subcostal view shows the RV nearest the probe and allows rapid assessment of RV size and free wall motion.
@@ -100,6 +108,8 @@ Free wall thickness greater than 5 mm indicates chronic pressure overload. The R
 
 ::: {.callout-tip}
 **Video slot:** Dilated RV on apical four-chamber — RV approaching or exceeding LV size.
+
+<img src="gifs/RV Failure.gif" style="width:100%; border-radius:4px;" alt="RV failure — dilated RV on apical four-chamber"/>
 :::
 
 RV:LV ratio approaching 1:1 or greater on apical four-chamber is abnormal. The RV free wall may still contract (compensated) or may be hypokinetic (decompensated).
@@ -118,6 +128,8 @@ RV:LV ratio approaching 1:1 or greater on apical four-chamber is abnormal. The R
 **Video slots:**
 - D-sign from pressure overload (systolic flattening) — PE, PHT
 - D-sign from volume overload (diastolic flattening) — TR, ASD
+
+<img src="gifs/Septal Flattening in Saddle Pulmonary Embolism.gif" style="width:100%; border-radius:4px;" alt="Septal flattening (D-sign) in massive pulmonary embolism"/>
 :::
 
 The interventricular septum flattens or bows toward the LV due to elevated RV pressure or volume. The timing within the cardiac cycle distinguishes pressure from volume overload.
@@ -134,6 +146,8 @@ The interventricular septum flattens or bows toward the LV due to elevated RV pr
 
 ::: {.callout-tip}
 **Video slot:** McConnell's sign — RV free wall hypokinesis with apical sparing (apical flicking).
+
+<img src="gifs/McConnell Sign with RV Enlargement.gif" style="width:100%; border-radius:4px;" alt="McConnell's sign — RV free wall akinesis with apical sparing"/>
 :::
 
 Regional RV dysfunction with akinesis of the mid-free wall and preserved or hyperdynamic motion at the RV apex. Originally described as specific for acute PE (specificity ~94%, sensitivity ~77%). The mechanism is thought to involve tethering of the RV apex to the contracting LV.

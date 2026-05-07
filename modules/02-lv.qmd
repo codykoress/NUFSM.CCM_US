@@ -30,6 +30,8 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. LV function is
 
 ::: {.callout-tip}
 **Video slot:** PLAX for LV assessment — M-mode placement at mitral valve tips, visual EF estimation, posterior wall and septal motion.
+
+<img src="gifs/Normal Parasternal Long Axis (PLAX) View.gif" style="width:100%; border-radius:4px;" alt="Normal PLAX for LV assessment"/>
 :::
 
 **What you are looking for:** Global LV contractility (do the walls move vigorously inward in systole?), chamber size (a dilated LV suggests chronicity), and mitral valve excursion (reduced in low-output states). M-mode at the tips of the mitral valve leaflets allows measurement of EPSS (E-point septal separation) — a distance greater than 7 mm suggests reduced EF.
@@ -40,6 +42,8 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. LV function is
 
 ::: {.callout-tip}
 **Video slot:** PSAX at papillary muscle level — the "donut" view, eyeball EF, D-sign assessment.
+
+<img src="gifs/Normal Parasternal Short Axis View.gif" style="width:100%; border-radius:4px;" alt="Normal PSAX at papillary muscle level"/>
 :::
 
 **What you are looking for:** The LV should appear round in cross-section and contract concentrically and symmetrically. This is the best single view for a visual EF estimate — watch the endocardium sweep inward in systole. Also assess the interventricular septum: a flat or D-shaped LV indicates RV pressure or volume overload (see Module 3).
@@ -50,6 +54,8 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. LV function is
 
 ::: {.callout-tip}
 **Video slot:** Apical four-chamber for wall motion — septal, lateral, apical segments.
+
+<img src="gifs/apical+4+normal.gif" style="width:100%; border-radius:4px;" alt="Normal apical four-chamber — wall motion reference"/>
 :::
 
 **What you are looking for:** All four chambers, with attention to LV wall motion in each visible segment. The apical view is essential for identifying apical wall motion abnormalities (LAD territory) and for assessing LV size relative to the RV.
@@ -60,6 +66,8 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. LV function is
 
 ::: {.callout-tip}
 **Video slot:** Subcostal cardiac view — rapid global LV assessment in the undifferentiated patient.
+
+<img src="gifs/normal subcostal view.gif" style="width:100%; border-radius:4px;" alt="Normal subcostal cardiac view"/>
 :::
 
 **When to use:** First-line in the unstable patient who cannot be repositioned. Provides a rapid visual impression of global LV function. Not sufficient alone for wall motion analysis.
@@ -72,6 +80,8 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. LV function is
 
 ::: {.callout-tip}
 **Video slots:** Normal LV function across body habitus — thin patient, obese patient, patient with LVH. Review before the pathology library.
+
+<img src="gifs/hyperdynamic short axis.gif" style="width:100%; border-radius:4px;" alt="Hyperdynamic LV on short axis — normal variant in distributive physiology"/>
 :::
 
 ### Normal LV systolic function
@@ -100,6 +110,10 @@ In severe hypovolemia, the LV cavity may appear nearly obliterated even in diast
 
 ::: {.callout-tip}
 **Video slot:** Severely reduced EF — dilated LV, minimal wall motion, large end-systolic volume.
+
+<img src="gifs/Reduced Ejection Fraction (Parasternal Long Axis View).gif" style="width:100%; border-radius:4px;" alt="Severely reduced EF on PLAX"/>
+
+<img src="gifs/Decreased EF (Parasternal Short).gif" style="width:100%; border-radius:4px;" alt="Decreased EF on parasternal short axis"/>
 :::
 
 EF visually estimated below 30%. The LV is often dilated. Wall motion is globally reduced with minimal inward thickening in systole. The mitral valve opens sluggishly and EPSS is markedly increased.
@@ -117,6 +131,10 @@ EF visually estimated below 30%. The LV is often dilated. Wall motion is globall
 
 ::: {.callout-tip}
 **Video slot:** Moderately reduced EF — reduced but present wall motion, mildly dilated LV.
+
+<img src="gifs/moderately reduced EF short axis.gif" style="width:100%; border-radius:4px;" alt="Moderately reduced EF on short axis"/>
+
+<img src="gifs/moderately reduced EF apical 4 chamber.gif" style="width:100%; border-radius:4px;" alt="Moderately reduced EF on apical four-chamber"/>
 :::
 
 EF visually estimated 30–50%. Wall motion is reduced but clearly present. The LV may or may not be dilated. This pattern is common in known heart failure with reduced EF presenting with decompensation.
@@ -136,6 +154,10 @@ EF visually estimated 30–50%. Wall motion is reduced but clearly present. The 
 - Anterior RWMA (LAD territory) — apical and anterior wall hypokinesis
 - Inferior RWMA (RCA territory) — inferior and posterior wall hypokinesis
 - Lateral RWMA (LCx territory) — lateral wall hypokinesis
+
+<img src="gifs/anterior wall hypokinesia short axis.gif" style="width:100%; border-radius:4px;" alt="Anterior wall hypokinesia on short axis — LAD territory RWMA"/>
+
+<img src="gifs/Takotsubo Cardiomyopathy on Apical Two Chamber View.gif" style="width:100%; border-radius:4px;" alt="Takotsubo cardiomyopathy — apical ballooning on two-chamber view"/>
 :::
 
 Segmental dysfunction confined to a coronary distribution. The affected wall moves less than adjacent segments or is akinetic (no motion) or dyskinetic (paradoxical outward motion in systole).
@@ -152,6 +174,10 @@ Segmental dysfunction confined to a coronary distribution. The affected wall mov
 
 ::: {.callout-tip}
 **Video slot:** Dilated LV — increased end-diastolic dimension, loss of the normal elliptical shape.
+
+<img src="gifs/New Onset Cardiomyopathy with Reduced Ejection Fraction (PLAX).gif" style="width:100%; border-radius:4px;" alt="New onset cardiomyopathy with reduced EF on PLAX"/>
+
+<img src="gifs/Biventricular Failure (apical 4 chamber).gif" style="width:100%; border-radius:4px;" alt="Biventricular failure on apical four-chamber"/>
 :::
 
 LV end-diastolic diameter greater than 5.5 cm (PLAX, M-mode) or a visually enlarged chamber. Dilation suggests chronicity — the heart has had time to remodel.
