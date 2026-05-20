@@ -126,24 +126,16 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">6. Integration</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../modules/07-valves.html">
- <span class="dropdown-text">7. Valve Assessment</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../modules/08-lung.html">
- <span class="dropdown-text">8. Lung Ultrasound</span></a>
+ <span class="dropdown-text">7. Lung Ultrasound</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../modules/09-abdominal.html">
- <span class="dropdown-text">9. Abdominal</span></a>
+ <span class="dropdown-text">8. Abdominal</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../modules/10-dvt.html">
- <span class="dropdown-text">10. DVT</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../modules/11-procedural.html">
- <span class="dropdown-text">11. Procedural Guidance</span></a>
+ <span class="dropdown-text">9. DVT</span></a>
   </li>  
     </ul>
   </li>
@@ -918,8 +910,8 @@ Caution
       if (!res.ok) throw new Error('HTTP ' + res.status);
 
       var data = await res.json();
-      var reply = (data.content && data.content[0] && data.content[0].text)
-        ? data.content[0].text
+      var reply = data.text
+        ? data.text
         : "Sorry, I couldn't get a response. Please try again.";
 
       history.push({ role: 'assistant', content: reply });

@@ -22,16 +22,12 @@ website:
             text: "5. IVC & Volume"
           - href: modules/06-integration.qmd
             text: "6. Integration"
-          - href: modules/07-valves.qmd
-            text: "7. Valve Assessment"
           - href: modules/08-lung.qmd
-            text: "8. Lung Ultrasound"
+            text: "7. Lung Ultrasound"
           - href: modules/09-abdominal.qmd
-            text: "9. Abdominal"
+            text: "8. Abdominal"
           - href: modules/10-dvt.qmd
-            text: "10. DVT"
-          - href: modules/11-procedural.qmd
-            text: "11. Procedural Guidance"
+            text: "9. DVT"
       - href: about.qmd
         text: About
       - href: credits.qmd

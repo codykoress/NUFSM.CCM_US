@@ -6,7 +6,7 @@ subtitle: "A structured curriculum for bedside echocardiography"
 ## Welcome
 
 This curriculum is built for critical care fellows learning point-of-care
-echocardiography. Eleven modules, organized around the clinical questions
+echocardiography. Nine modules, organized around the clinical questions
 you'll actually ask at the bedside.
 
 ## How to use this site
@@ -30,11 +30,9 @@ a quiz to check your understanding.
 - [Module 4 — Pericardium](modules/04-pericardium.qmd)
 - [Module 5 — IVC & Volume Status](modules/05-ivc.qmd)
 - [Module 6 — Shock & Arrest Integration](modules/06-integration.qmd)
-- [Module 7 — Basic Valve Assessment](modules/07-valves.qmd)
-- [Module 8 — Lung Ultrasound](modules/08-lung.qmd)
-- [Module 9 — Abdominal Ultrasound](modules/09-abdominal.qmd)
-- [Module 10 — DVT Compression Ultrasound](modules/10-dvt.qmd)
-- [Module 11 — Procedural Guidance](modules/11-procedural.qmd)
+- [Module 7 — Lung Ultrasound](modules/08-lung.qmd)
+- [Module 8 — Abdominal Ultrasound](modules/09-abdominal.qmd)
+- [Module 9 — DVT Compression Ultrasound](modules/10-dvt.qmd)
 
 ## Logbook & assessment
 

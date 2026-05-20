@@ -199,48 +199,6 @@ Loculated effusions do not distribute freely. They occur after cardiac surgery, 
 
 ---
 
-### Acute pericarditis with effusion
-
-::: {.callout-tip}
-**Video slot:** Small-to-moderate effusion in the context of pericarditis — preserved function, no tamponade physiology.
-:::
-
-Acute pericarditis is an inflammatory syndrome. Echo is used to characterize and track the effusion, not to make the diagnosis (which is clinical). Most effusions in acute pericarditis are small and do not require drainage.
-
-**High-risk features warranting hospitalization:**
-
-- Large effusion (>2 cm)
-- Tamponade physiology
-- Fever >38°C with subacute onset
-- Immunocompromised state
-- Anticoagulation (risk of hemopericardium)
-- Failure to respond to NSAIDs within 1 week
-
-**Teaching points:**
-
-- A normal echo does not rule out acute pericarditis.
-- Colchicine should be added to NSAIDs in all cases without contraindication — it halves the recurrence rate.
-- Serial echo at 1 week is appropriate when an effusion is present at diagnosis.
-
----
-
-### Myopericarditis
-
-::: {.callout-tip}
-**Video slot:** Pericarditis with LV dysfunction — the myopericarditis overlap syndrome.
-:::
-
-When myocardial inflammation accompanies pericarditis, LV function may be impaired — from subtle wall motion abnormality to frank cardiomyopathy.
-
-**Teaching points:**
-
-- Any patient with pericarditis and an elevated troponin should have LV function assessed by echo.
-- Regional wall motion abnormalities suggest myocardial involvement, not just pericardial.
-- Activity restriction is prolonged in myopericarditis (3–6 months vs 2–4 weeks for isolated pericarditis).
-- NSAIDs may be harmful if significant myocarditis is present — cardiology consultation is warranted.
-
----
-
 ## 5. Integration cases
 
 *Cases where the finding changes management.*

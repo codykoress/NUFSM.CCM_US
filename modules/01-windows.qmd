@@ -215,47 +215,6 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 
 ---
 
-## 3. Normal anatomy and normal variants
-
-Fellows need to review many normal studies before pathology becomes recognizable. The following describes what a normal heart looks like across the four windows and identifies common normal variants that may be mistaken for pathology.
-
-::: {.callout-tip}
-**Video slots:** Normal studies across body habitus — thin patient, obese patient, COPD, post-CABG. Aim to review at least 10 normal loops per window before moving to pathology modules.
-:::
-
-### Normal LV size and wall motion
-
-- LV internal diameter (diastole): 3.8–5.5 cm on PLAX
-- Interventricular septum thickness: 0.6–1.1 cm
-- Posterior wall thickness: 0.6–1.1 cm
-- Wall motion: symmetric, brisk inward thickening of all walls in systole
-
-### Normal RV size
-
-On apical four-chamber, the RV should occupy approximately the right one-third of the image and appear clearly smaller than the LV. A rough rule: the RV should be no larger than two-thirds the size of the LV. The RV free wall is thin and contracts vigorously.
-
-### Normal valve motion
-
-- **Aortic valve:** Three thin leaflets opening fully to the aortic walls in systole; central coaptation in diastole. On PSAX: Y-shaped (Mercedes-Benz) closure.
-- **Mitral valve:** Anterior leaflet swings widely open in diastole. Posterior leaflet moves in the opposite direction and is shorter. Both coapt in systole with no gap.
-- **Tricuspid valve:** Three thin leaflets visible in subcostal and apical views. Normal trace tricuspid regurgitation on color Doppler is a common normal variant.
-
-### Normal pericardium
-
-A thin, bright (hyperechoic) line surrounding the heart, visible in all windows. It moves with the heart. No echo-free space is present between the layers in a normal study.
-
-### Normal variants
-
-**Moderator band:** A muscular structure crossing the RV cavity from the interventricular septum to the anterior free wall, most visible on apical four-chamber. Normal structure — should not be mistaken for a mass or thrombus.
-
-**False tendons:** Thin, linear echogenic structures traversing the LV cavity, usually wall to wall. Normal variant — can be mistaken for vegetations or thrombus. They are fixed, linear, and do not move independently.
-
-**Prominent apical trabeculations:** Muscular ridges along the inner LV wall, most prominent at the apex. Normal. If extensive and affecting multiple segments, refer for formal echo to evaluate for non-compaction cardiomyopathy.
-
-**Chiari network:** A mobile, fenestrated structure in the right atrium near the inferior vena cava — a remnant of the embryologic valve of the sinus venosus. Normal; may be mistaken for a thrombus or vegetation.
-
-**Pericardial fat pad:** An echogenic (bright, not anechoic) structure anterior to the RV. Common in older and obese patients. Does not shift with repositioning. Differentiated from pathologic fluid by echogenicity — fat is bright, fluid is black. Covered further in Module 4.
-
 ---
 
 ## Quiz
