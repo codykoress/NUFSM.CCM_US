@@ -20,14 +20,14 @@ website:
             text: "4. Pericardium"
           - href: modules/05-ivc.qmd
             text: "5. IVC & Volume"
-          - href: modules/06-integration.qmd
-            text: "6. Integration"
           - href: modules/08-lung.qmd
-            text: "7. Lung Ultrasound"
+            text: "6. Lung Ultrasound"
           - href: modules/09-abdominal.qmd
-            text: "8. Abdominal"
+            text: "7. Abdominal"
           - href: modules/10-dvt.qmd
-            text: "9. DVT"
+            text: "8. DVT"
+          - href: modules/06-integration.qmd
+            text: "9. Integration"
       - href: about.qmd
         text: About
       - href: credits.qmd

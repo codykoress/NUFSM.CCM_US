@@ -1,11 +1,11 @@
-// POCUS CCM Chatbot — Cloudflare Worker (Gemini backend)
-// Proxies requests to Google's Gemini API, keeping your API key server-side.
+// POCUS CCM Chatbot — Cloudflare Worker (Claude Haiku backend)
+// Proxies requests to the Anthropic API, keeping your API key server-side.
 //
 // SETUP:
 //   1. Create a Worker at dash.cloudflare.com → Workers & Pages → Create
 //   2. Paste this file into the editor and deploy
-//   3. Add your Gemini API key: Settings → Variables and Secrets → Add Secret
-//      Name: GEMINI_API_KEY   Value: your key from aistudio.google.com
+//   3. Add your Anthropic API key: Settings → Variables and Secrets → Add Secret
+//      Name: ANTHROPIC_API_KEY   Value: your sk-ant-... key from console.anthropic.com
 //   4. Copy your Worker's URL and paste it into chatbot-widget.html
 
 const SYSTEM_PROMPT = `You are a POCUS (Point-of-Care Ultrasound) curriculum assistant for the "POCUS for CCM Fellows" website — a training resource for critical care medicine fellows learning bedside ultrasound.
@@ -88,55 +88,39 @@ async function handleRequest(request) {
     return new Response("messages array required", { status: 400 });
   }
 
-  // Convert message history to Gemini format
-  // Anthropic uses "assistant", Gemini uses "model"
-  var contents = messages.slice(-10).map(function (m) {
-    return {
-      role: m.role === "assistant" ? "model" : "user",
-      parts: [{ text: m.content }],
-    };
+  // Keep conversation history bounded (last 10 turns)
+  var trimmed = messages.slice(-10);
+
+  // ANTHROPIC_API_KEY is set as a secret in Worker Settings → Variables
+  var apiKey = typeof ANTHROPIC_API_KEY !== "undefined" ? ANTHROPIC_API_KEY : "";
+
+  var anthropicRes = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: {
+      "x-api-key": apiKey,
+      "anthropic-version": "2023-06-01",
+      "content-type": "application/json",
+    },
+    body: JSON.stringify({
+      model: "claude-haiku-4-5-20251001",
+      max_tokens: 300,
+      system: SYSTEM_PROMPT,
+      messages: trimmed,
+    }),
   });
 
-  // GEMINI_API_KEY is set as a secret in Worker Settings → Variables
-  var apiKey = typeof GEMINI_API_KEY !== "undefined" ? GEMINI_API_KEY : "";
-
-  var geminiRes = await fetch(
-    "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + apiKey,
-    {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({
-        system_instruction: {
-          parts: [{ text: SYSTEM_PROMPT }],
-        },
-        contents: contents,
-        generationConfig: {
-          maxOutputTokens: 300,
-          temperature: 0.3,
-        },
-      }),
-    }
-  );
-
-  if (!geminiRes.ok) {
-    var err = await geminiRes.text();
+  if (!anthropicRes.ok) {
+    var err = await anthropicRes.text();
     return new Response("Upstream error: " + err, {
       status: 502,
       headers: CORS_HEADERS,
     });
   }
 
-  var data = await geminiRes.json();
-
-  // Normalise to a simple { text } envelope the widget can read
-  var text =
-    data.candidates &&
-    data.candidates[0] &&
-    data.candidates[0].content &&
-    data.candidates[0].content.parts &&
-    data.candidates[0].content.parts[0]
-      ? data.candidates[0].content.parts[0].text
-      : "Sorry, I couldn't get a response. Please try again.";
+  var data = await anthropicRes.json();
+  var text = data.content && data.content[0] && data.content[0].text
+    ? data.content[0].text
+    : "Sorry, I couldn't get a response. Please try again.";
 
   return new Response(JSON.stringify({ text: text }), {
     headers: Object.assign({ "Content-Type": "application/json" }, CORS_HEADERS),

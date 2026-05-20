@@ -1,5 +1,5 @@
 ---
-title: "Cardiac POCUS for Critical Care Fellows"
+title: "POCUS for Critical Care Fellows"
 subtitle: "A structured curriculum for bedside echocardiography"
 ---
 
@@ -29,10 +29,10 @@ a quiz to check your understanding.
 - [Module 3 — Right Ventricular Function](modules/03-rv.qmd)
 - [Module 4 — Pericardium](modules/04-pericardium.qmd)
 - [Module 5 — IVC & Volume Status](modules/05-ivc.qmd)
-- [Module 6 — Shock & Arrest Integration](modules/06-integration.qmd)
-- [Module 7 — Lung Ultrasound](modules/08-lung.qmd)
-- [Module 8 — Abdominal Ultrasound](modules/09-abdominal.qmd)
-- [Module 9 — DVT Compression Ultrasound](modules/10-dvt.qmd)
+- [Module 6 — Lung Ultrasound](modules/08-lung.qmd)
+- [Module 7 — Abdominal Ultrasound](modules/09-abdominal.qmd)
+- [Module 8 — DVT Compression Ultrasound](modules/10-dvt.qmd)
+- [Module 9 — Shock & Arrest Integration](modules/06-integration.qmd)
 
 ## Logbook & assessment
 
