@@ -114,6 +114,8 @@ In severe hypovolemia, the LV cavity may appear nearly obliterated even in diast
 <img src="gifs/Reduced Ejection Fraction (Parasternal Long Axis View).gif" style="width:100%; border-radius:4px;" alt="Severely reduced EF on PLAX"/>
 
 <img src="gifs/Decreased EF (Parasternal Short).gif" style="width:100%; border-radius:4px;" alt="Decreased EF on parasternal short axis"/>
+
+<img src="gifs/sepsis-mediated cardiomyopathy.gif" style="width:100%; border-radius:4px;" alt="Sepsis-mediated cardiomyopathy — global hypokinesis, non-dilated LV"/>
 :::
 
 EF visually estimated below 30%. The LV is often dilated. Wall motion is globally reduced with minimal inward thickening in systole. The mitral valve opens sluggishly and EPSS is markedly increased.
@@ -205,6 +207,8 @@ Rapid focused cardiac ultrasound before transfer to the cath lab.
 
 ::: {.callout-tip}
 **Video slot:** Loops for interpretation.
+
+<img src="gifs/Inferior and Lateral wall kypokinesis Psx - Case 1 Hypotension after STEMI.gif" style="width:100%; border-radius:4px;" alt="Inferior and lateral wall hypokinesis on parasternal short axis — Case 1"/>
 :::
 
 **What you see:**
@@ -224,6 +228,12 @@ Bedside cardiac ultrasound — LV function, RV size, IVC.
 
 ::: {.callout-tip}
 **Video slot:** Loops for interpretation.
+
+<img src="gifs/Severe Depressed LV A4c - Case 2 Undifferentiated hypotension in the ICU.gif" style="width:100%; border-radius:4px;" alt="Severely depressed LV on apical four-chamber — Case 2"/>
+
+<img src="gifs/Severe Depressed LV Psx - Case 2 Undifferentiated hypotension in the ICU.gif" style="width:100%; border-radius:4px;" alt="Severely depressed LV on parasternal short axis — Case 2"/>
+
+<img src="gifs/plethoric IVC - Case 2 Undifferentiated hypotension in the ICU.gif" style="width:100%; border-radius:4px;" alt="Plethoric IVC — Case 2"/>
 :::
 
 **What you see:**
@@ -243,6 +253,8 @@ Focused cardiac ultrasound to assess for RWMA.
 
 ::: {.callout-tip}
 **Video slot:** Loops for interpretation.
+
+<img src="gifs/Lateral wall dyskinesia Psx - Case 3 Chest pain and new ECG changes.gif" style="width:100%; border-radius:4px;" alt="Lateral wall dyskinesia on parasternal short axis — Case 3"/>
 :::
 
 **What you see:**
@@ -262,6 +274,8 @@ Focused cardiac ultrasound.
 
 ::: {.callout-tip}
 **Video slot:** Loops for interpretation.
+
+<img src="gifs/Case 4 Young patient with viral prodrome and shock.gif" style="width:100%; border-radius:4px;" alt="Severely reduced EF with small pericardial effusion — myocarditis, Case 4"/>
 :::
 
 **What you see:**

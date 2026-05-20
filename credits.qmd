@@ -40,6 +40,13 @@ Clips marked with an asterisk (\*) are embedded in the curriculum but do not yet
 | Moderately reduced EF (short axis) | \* | — |
 | Moderately reduced EF (apical 4-chamber) | \* | — |
 | Anterior wall hypokinesia (short axis) | \* | — |
+| Sepsis-mediated cardiomyopathy | \* | — |
+| Inferior and lateral wall hypokinesis, PSX — Case 1 | \* | — |
+| Severely depressed LV, apical 4-chamber — Case 2 | \* | — |
+| Severely depressed LV, PSX — Case 2 | \* | — |
+| Plethoric IVC — Case 2 | \* | — |
+| Lateral wall dyskinesia, PSX — Case 3 | \* | — |
+| Severely reduced EF with pericardial effusion — Case 4 | \* | — |
 
 ### Module 3 — Right Ventricular Function
 
@@ -48,6 +55,8 @@ Clips marked with an asterisk (\*) are embedded in the curriculum but do not yet
 | RV failure | John Bowling DO, Cleveland Clinic Akron General, @BModeBowling | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
 | McConnell's sign with RV enlargement | Dimitri Livshits DO, Ultrasound Fellow; Jane Belyavskaya MD, Ultrasound Fellow; Chris Hanuscin MD, Ultrasound Fellowship Director — Kings County / SUNY Downstate | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
 | Septal flattening in saddle pulmonary embolism | \* | — |
+| RV dilation, apical 4-chamber — Case 2 (submassive PE) | \* | — |
+| D-sign, PSX — Case 2 (submassive PE) | \* | — |
 
 ### Module 4 — Pericardium
 
@@ -57,7 +66,10 @@ Clips marked with an asterisk (\*) are embedded in the curriculum but do not yet
 | Cardiac tamponade (apical 4-chamber) | Nathan Kabariti MS4; Dr. Charles Murchison; Dr. John Riggins; Dr. Donald Doukas — Kings County Emergency Medicine | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
 | Chronic pericardial effusion | Dr. Robert Jarman, UK | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
 | Loculated pericardial effusion | Robert Jones DO FACEP | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
-| Constrictive pericarditis | Robert Jones DO FACEP | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Pericardial effusion (PLAX) | \* | — |
+| Chronic pericardial effusion, subcostal | \* | — |
+| Loculated pericardial effusion, subcostal | \* | — |
+| Mitral inflow — pulsed wave Doppler | \* | — |
 
 ### Module 5 — IVC & Volume Status
 
@@ -79,6 +91,7 @@ Clips marked with an asterisk (\*) are embedded in the curriculum but do not yet
 | Clip | Contributor(s) | Source |
 |---|---|---|
 | Normal apical five-chamber | Hannah Kopinski MS4; Dr. Lindsay Davis, NYU/Bellevue Emergency Ultrasound; Dr. Matthew Riscinti, Kings County Emergency Medicine | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Severe aortic stenosis (PSX) | \* | — |
 
 ### Module 8 — Lung Ultrasound
 

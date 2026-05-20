@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Credits – POCUS for CCM Fellows</title>
+<title>handoff-gif-embedding – POCUS for CCM Fellows</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -152,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./credits.html" aria-current="page"> 
+    <a class="nav-link" href="./credits.html"> 
 <span class="menu-text">Credits</span></a>
   </li>  
 </ul>
@@ -171,425 +206,493 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#curriculum-development" id="toc-curriculum-development" class="nav-link active" data-scroll-target="#curriculum-development">Curriculum development</a></li>
-  <li><a href="#ultrasound-clip-attribution" id="toc-ultrasound-clip-attribution" class="nav-link" data-scroll-target="#ultrasound-clip-attribution">Ultrasound clip attribution</a>
+  <li><a href="#handoff-gif-embedding-for-nufsm-ccm-ultrasound-curriculum" id="toc-handoff-gif-embedding-for-nufsm-ccm-ultrasound-curriculum" class="nav-link active" data-scroll-target="#handoff-gif-embedding-for-nufsm-ccm-ultrasound-curriculum">Handoff — GIF Embedding for NUFSM CCM Ultrasound Curriculum</a>
   <ul class="collapse">
-  <li><a href="#module-1-windows-acquisition" id="toc-module-1-windows-acquisition" class="nav-link" data-scroll-target="#module-1-windows-acquisition">Module 1 — Windows &amp; Acquisition</a></li>
-  <li><a href="#module-2-left-ventricular-function" id="toc-module-2-left-ventricular-function" class="nav-link" data-scroll-target="#module-2-left-ventricular-function">Module 2 — Left Ventricular Function</a></li>
-  <li><a href="#module-3-right-ventricular-function" id="toc-module-3-right-ventricular-function" class="nav-link" data-scroll-target="#module-3-right-ventricular-function">Module 3 — Right Ventricular Function</a></li>
-  <li><a href="#module-4-pericardium" id="toc-module-4-pericardium" class="nav-link" data-scroll-target="#module-4-pericardium">Module 4 — Pericardium</a></li>
-  <li><a href="#module-5-ivc-volume-status" id="toc-module-5-ivc-volume-status" class="nav-link" data-scroll-target="#module-5-ivc-volume-status">Module 5 — IVC &amp; Volume Status</a></li>
-  <li><a href="#module-6-integration" id="toc-module-6-integration" class="nav-link" data-scroll-target="#module-6-integration">Module 6 — Integration</a></li>
-  <li><a href="#module-7-basic-valve-assessment" id="toc-module-7-basic-valve-assessment" class="nav-link" data-scroll-target="#module-7-basic-valve-assessment">Module 7 — Basic Valve Assessment</a></li>
-  <li><a href="#module-8-lung-ultrasound" id="toc-module-8-lung-ultrasound" class="nav-link" data-scroll-target="#module-8-lung-ultrasound">Module 8 — Lung Ultrasound</a></li>
+  <li><a href="#project-context" id="toc-project-context" class="nav-link" data-scroll-target="#project-context">Project context</a></li>
+  <li><a href="#how-gifs-are-embedded" id="toc-how-gifs-are-embedded" class="nav-link" data-scroll-target="#how-gifs-are-embedded">How GIFs are embedded</a></li>
+  <li><a href="#file-structure" id="toc-file-structure" class="nav-link" data-scroll-target="#file-structure">File structure</a></li>
+  <li><a href="#metadata-and-attribution" id="toc-metadata-and-attribution" class="nav-link" data-scroll-target="#metadata-and-attribution">Metadata and attribution</a></li>
+  <li><a href="#currently-embedded-37-clips" id="toc-currently-embedded-37-clips" class="nav-link" data-scroll-target="#currently-embedded-37-clips">Currently embedded (37 clips)</a>
+  <ul class="collapse">
+  <li><a href="#module-1-windows-acquisition-01-windows.qmd" id="toc-module-1-windows-acquisition-01-windows.qmd" class="nav-link" data-scroll-target="#module-1-windows-acquisition-01-windows.qmd">Module 1 — Windows &amp; Acquisition (<code>01-windows.qmd</code>)</a></li>
+  <li><a href="#module-2-lv-function-02-lv.qmd" id="toc-module-2-lv-function-02-lv.qmd" class="nav-link" data-scroll-target="#module-2-lv-function-02-lv.qmd">Module 2 — LV Function (<code>02-lv.qmd</code>)</a></li>
+  <li><a href="#module-3-rv-function-03-rv.qmd" id="toc-module-3-rv-function-03-rv.qmd" class="nav-link" data-scroll-target="#module-3-rv-function-03-rv.qmd">Module 3 — RV Function (<code>03-rv.qmd</code>)</a></li>
+  <li><a href="#module-4-pericardium-04-pericardium.qmd" id="toc-module-4-pericardium-04-pericardium.qmd" class="nav-link" data-scroll-target="#module-4-pericardium-04-pericardium.qmd">Module 4 — Pericardium (<code>04-pericardium.qmd</code>)</a></li>
+  <li><a href="#module-5-ivc-05-ivc.qmd" id="toc-module-5-ivc-05-ivc.qmd" class="nav-link" data-scroll-target="#module-5-ivc-05-ivc.qmd">Module 5 — IVC (<code>05-ivc.qmd</code>)</a></li>
+  <li><a href="#module-6-integration-06-integration.qmd" id="toc-module-6-integration-06-integration.qmd" class="nav-link" data-scroll-target="#module-6-integration-06-integration.qmd">Module 6 — Integration (<code>06-integration.qmd</code>)</a></li>
+  <li><a href="#module-7-valves-07-valves.qmd" id="toc-module-7-valves-07-valves.qmd" class="nav-link" data-scroll-target="#module-7-valves-07-valves.qmd">Module 7 — Valves (<code>07-valves.qmd</code>)</a></li>
+  <li><a href="#module-8-lung-ultrasound-08-lung.qmd" id="toc-module-8-lung-ultrasound-08-lung.qmd" class="nav-link" data-scroll-target="#module-8-lung-ultrasound-08-lung.qmd">Module 8 — Lung Ultrasound (<code>08-lung.qmd</code>)</a></li>
   </ul></li>
-  <li><a href="#references-and-further-reading" id="toc-references-and-further-reading" class="nav-link" data-scroll-target="#references-and-further-reading">References and further reading</a></li>
-  <li><a href="#acknowledgments" id="toc-acknowledgments" class="nav-link" data-scroll-target="#acknowledgments">Acknowledgments</a></li>
+  <li><a href="#missing-clips-what-still-needs-to-be-sourced" id="toc-missing-clips-what-still-needs-to-be-sourced" class="nav-link" data-scroll-target="#missing-clips-what-still-needs-to-be-sourced">Missing clips — what still needs to be sourced</a>
+  <ul class="collapse">
+  <li><a href="#module-1" id="toc-module-1" class="nav-link" data-scroll-target="#module-1">Module 1</a></li>
+  <li><a href="#module-3" id="toc-module-3" class="nav-link" data-scroll-target="#module-3">Module 3</a></li>
+  <li><a href="#module-4" id="toc-module-4" class="nav-link" data-scroll-target="#module-4">Module 4</a></li>
+  <li><a href="#module-5" id="toc-module-5" class="nav-link" data-scroll-target="#module-5">Module 5</a></li>
+  <li><a href="#module-6" id="toc-module-6" class="nav-link" data-scroll-target="#module-6">Module 6</a></li>
+  <li><a href="#module-7-priority-entire-pathology-layer-missing" id="toc-module-7-priority-entire-pathology-layer-missing" class="nav-link" data-scroll-target="#module-7-priority-entire-pathology-layer-missing">Module 7 — <strong>Priority: entire pathology layer missing</strong></a></li>
+  <li><a href="#module-8" id="toc-module-8" class="nav-link" data-scroll-target="#module-8">Module 8</a></li>
+  <li><a href="#modules-9-10-11" id="toc-modules-9-10-11" class="nav-link" data-scroll-target="#modules-9-10-11">Modules 9, 10, 11</a></li>
+  </ul></li>
+  <li><a href="#updating-credits.qmd-after-adding-new-clips" id="toc-updating-credits.qmd-after-adding-new-clips" class="nav-link" data-scroll-target="#updating-credits.qmd-after-adding-new-clips">Updating credits.qmd after adding new clips</a></li>
+  <li><a href="#notes-pitfalls" id="toc-notes-pitfalls" class="nav-link" data-scroll-target="#notes-pitfalls">Notes / pitfalls</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Credits</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="curriculum-development" class="level2">
-<h2 class="anchored" data-anchor-id="curriculum-development">Curriculum development</h2>
-<p><em>Content coming soon.</em></p>
+<section id="handoff-gif-embedding-for-nufsm-ccm-ultrasound-curriculum" class="level1">
+<h1>Handoff — GIF Embedding for NUFSM CCM Ultrasound Curriculum</h1>
+<p><strong>Purpose:</strong> Self-contained instructions for sourcing, adding, and crediting new ultrasound GIF clips across all 11 modules of this Quarto site.</p>
+<hr>
+<section id="project-context" class="level2">
+<h2 class="anchored" data-anchor-id="project-context">Project context</h2>
+<p>This is a Quarto static site at <code>C:\Users\codyk\Documents\GitHub\NUFSM.CCM_US\</code>. Eleven modules live in <code>modules/</code>. All GIF clips are stored flat in <code>modules/gifs/</code>. Credits and contributor metadata are tracked in a Google Sheet (link below) and rendered to <code>credits.qmd</code>.</p>
 <hr>
 </section>
-<section id="ultrasound-clip-attribution" class="level2">
-<h2 class="anchored" data-anchor-id="ultrasound-clip-attribution">Ultrasound clip attribution</h2>
-<p>All clips used in this curriculum are sourced from <a href="https://www.thepocusatlas.com">The POCUS Atlas</a>, an open-access point-of-care ultrasound image library. We are grateful to the contributors who submitted these cases.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Clips marked with an asterisk (*) are embedded in the curriculum but do not yet have complete contributor metadata. If you are the contributor, please contact the curriculum team.</p>
-</div>
-</div>
-<section id="module-1-windows-acquisition" class="level3">
-<h3 class="anchored" data-anchor-id="module-1-windows-acquisition">Module 1 — Windows &amp; Acquisition</h3>
+<section id="how-gifs-are-embedded" class="level2">
+<h2 class="anchored" data-anchor-id="how-gifs-are-embedded">How GIFs are embedded</h2>
+<p>GIFs are embedded as raw HTML <code>&lt;img&gt;</code> tags directly inside Quarto callout blocks. Do <strong>not</strong> use Quarto’s <code>![]()</code> markdown image syntax — filenames contain spaces and special characters that cause path-encoding issues with pandoc.</p>
+<p><strong>Standard embed pattern:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"gifs/filename.gif"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"width:100%; border-radius:4px;"</span><span class="ot"> alt</span><span class="op">=</span><span class="st">"Descriptive alt text"</span><span class="dt">/&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Where to place it:</strong> Inside the relevant <code>::: {.callout-tip}</code> block, after the descriptive text and before the closing <code>:::</code>.</p>
+<p><strong>Example — before:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>**Video slot:** Subcostal four-chamber acquisition — probe position, indicator orientation, fanning technique.</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Example — after:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>**Video slot:** Subcostal four-chamber acquisition — probe position, indicator orientation, fanning technique.</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"gifs/normal subcostal view.gif"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"width:100%; border-radius:4px;"</span><span class="ot"> alt</span><span class="op">=</span><span class="st">"Normal subcostal four-chamber view"</span><span class="dt">/&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="file-structure" class="level2">
+<h2 class="anchored" data-anchor-id="file-structure">File structure</h2>
+<pre><code>modules/
+  gifs/                        ← all GIF files, flat (no subfolders)
+  images/                      ← SVG probe placement diagrams (Module 1 only)
+  01-windows.qmd
+  02-lv.qmd
+  ...
+credits.qmd                    ← attribution table — update whenever new clips are added
+roadmap.md                     ← overall project status
+handoff-gif-embedding.md       ← this file</code></pre>
+<hr>
+</section>
+<section id="metadata-and-attribution" class="level2">
+<h2 class="anchored" data-anchor-id="metadata-and-attribution">Metadata and attribution</h2>
+<p><strong>Google Sheet (contributor metadata):</strong> https://docs.google.com/spreadsheets/d/1ZGzjWniVL3xUzrFG72n1JV0aBqk3O3MiPBpPk6hh4AE/edit?usp=sharing</p>
+<p><strong>All clips currently sourced from:</strong> <a href="https://www.thepocusatlas.com">The POCUS Atlas</a> - Echocardiography clips: https://www.thepocusatlas.com/echocardiography-2 - Lung clips: https://www.thepocusatlas.com/pulmonary</p>
+<p><strong>Workflow for each new clip:</strong> 1. Save the GIF to <code>modules/gifs/</code> — keep the original filename 2. Add a row to the Google Sheet: Module | Title (filename without .gif) | Contributors | URL 3. Embed the clip in the correct module QMD using the <code>&lt;img&gt;</code> pattern above 4. Update <code>credits.qmd</code> — add a row to the correct module table</p>
+<hr>
+</section>
+<section id="currently-embedded-37-clips" class="level2">
+<h2 class="anchored" data-anchor-id="currently-embedded-37-clips">Currently embedded (37 clips)</h2>
+<section id="module-1-windows-acquisition-01-windows.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="module-1-windows-acquisition-01-windows.qmd">Module 1 — Windows &amp; Acquisition (<code>01-windows.qmd</code>)</h3>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Clip</th>
-<th>Contributor(s)</th>
-<th>Source</th>
+<th>Filename</th>
+<th>Location in file</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Normal apical four-chamber</td>
-<td>Hannah Kopinski MS4; Dr.&nbsp;Lindsay Davis, NYU/Bellevue Emergency Ultrasound; Dr.&nbsp;Matthew Riscinti, Kings County Emergency Medicine</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>normal subcostal view.gif</code></td>
+<td>Subcostal callout</td>
 </tr>
 <tr class="even">
-<td>Normal aortic valve (PSAX)</td>
-<td>Justin Bowra MBBS FACEM CCPU, RNSH, et al.</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>Normal Parasternal Long Axis (PLAX) View.gif</code></td>
+<td>PLAX callout</td>
 </tr>
 <tr class="odd">
-<td>Normal mitral valve (PSAX)</td>
-<td>Hannah Kopinski MS4; Dr.&nbsp;Lindsay Davis, NYU/Bellevue Emergency Ultrasound; Dr.&nbsp;Matthew Riscinti, Kings County Emergency Medicine</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>Normal Aortic Valve (Parasternal Short-Axis View).gif</code></td>
+<td>PSAX callout — AV level</td>
 </tr>
 <tr class="even">
-<td>Normal PLAX</td>
-<td>Nigist Taddese MBChB, Division of Hospital Medicine, John H. Stroger Hospital of Cook County</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>Normal Mitral Valve (Parasternal Short-Axis View).gif</code></td>
+<td>PSAX callout — MV level</td>
 </tr>
 <tr class="odd">
-<td>Normal PSAX (papillary muscle level)</td>
-<td>Dr.&nbsp;Felipe Urriola, Puerto Aysen Hospital Emergency Department, Chilean Patagonia</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>Parasternal Short Axis - Normal.gif</code></td>
+<td>PSAX callout — papillary muscle level</td>
 </tr>
 <tr class="even">
-<td>Normal subcostal view</td>
-<td>Shahad Al Chalaby MD, PGY-2 Internal Medicine, Highland Hospital / Alameda Health System</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>apical+4+normal.gif</code></td>
+<td>Apical callout</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="module-2-left-ventricular-function" class="level3">
-<h3 class="anchored" data-anchor-id="module-2-left-ventricular-function">Module 2 — Left Ventricular Function</h3>
+<section id="module-2-lv-function-02-lv.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="module-2-lv-function-02-lv.qmd">Module 2 — LV Function (<code>02-lv.qmd</code>)</h3>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Clip</th>
-<th>Contributor(s)</th>
-<th>Source</th>
+<th>Filename</th>
+<th>Location in file</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Biventricular failure (apical 4-chamber)</td>
-<td>Dr.&nbsp;Jaclyn Walker; Dr.&nbsp;Matthew Riscinti, Denver Health Emergency Medicine</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>Normal Parasternal Long Axis (PLAX) View.gif</code></td>
+<td>Image acquisition — PLAX callout</td>
 </tr>
 <tr class="even">
-<td>Decreased EF (parasternal short axis)</td>
-<td>Dan Dunaske DO PGY-1, Central Michigan University College of Medicine, Emergency Medicine</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>Normal Parasternal Short Axis View.gif</code></td>
+<td>Image acquisition — PSAX callout</td>
 </tr>
 <tr class="odd">
-<td>New onset cardiomyopathy with reduced EF (PLAX)</td>
-<td>Brent Oldham MD MPH PGY-3, Central Michigan University College of Medicine, Emergency Medicine</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>apical+4+normal.gif</code></td>
+<td>Image acquisition — apical callout</td>
 </tr>
 <tr class="even">
-<td>Reduced ejection fraction (PLAX)</td>
-<td>Nigist Taddese MBChB</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>normal subcostal view.gif</code></td>
+<td>Image acquisition — subcostal callout</td>
 </tr>
 <tr class="odd">
-<td>Takotsubo cardiomyopathy (apical two-chamber)</td>
-<td>Robert Jones DO FACEP, Director of Emergency Ultrasound, MetroHealth Medical Center; Professor, Case Western Reserve University School of Medicine</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>hyperdynamic short axis.gif</code></td>
+<td>Normal section callout</td>
 </tr>
 <tr class="even">
-<td>Hyperdynamic LV (short axis)</td>
-<td>*</td>
-<td>—</td>
+<td><code>Reduced Ejection Fraction (Parasternal Long Axis View).gif</code></td>
+<td>Pathology — severely reduced EF callout</td>
 </tr>
 <tr class="odd">
-<td>Moderately reduced EF (short axis)</td>
-<td>*</td>
-<td>—</td>
+<td><code>Decreased EF (Parasternal Short).gif</code></td>
+<td>Pathology — severely reduced EF callout</td>
 </tr>
 <tr class="even">
-<td>Moderately reduced EF (apical 4-chamber)</td>
-<td>*</td>
-<td>—</td>
+<td><code>moderately reduced EF short axis.gif</code></td>
+<td>Pathology — mildly/mod reduced EF callout</td>
 </tr>
 <tr class="odd">
-<td>Anterior wall hypokinesia (short axis)</td>
-<td>*</td>
-<td>—</td>
+<td><code>moderately reduced EF apical 4 chamber.gif</code></td>
+<td>Pathology — mildly/mod reduced EF callout</td>
 </tr>
 <tr class="even">
-<td>Sepsis-mediated cardiomyopathy</td>
-<td>*</td>
-<td>—</td>
+<td><code>anterior wall hypokinesia short axis.gif</code></td>
+<td>Pathology — RWMA callout</td>
 </tr>
 <tr class="odd">
-<td>Inferior and lateral wall hypokinesis, PSX — Case 1</td>
-<td>*</td>
-<td>—</td>
+<td><code>Takotsubo Cardiomyopathy on Apical Two Chamber View.gif</code></td>
+<td>Pathology — RWMA callout</td>
 </tr>
 <tr class="even">
-<td>Severely depressed LV, apical 4-chamber — Case 2</td>
-<td>*</td>
-<td>—</td>
+<td><code>New Onset Cardiomyopathy with Reduced Ejection Fraction (PLAX).gif</code></td>
+<td>Pathology — dilated LV callout</td>
 </tr>
 <tr class="odd">
-<td>Severely depressed LV, PSX — Case 2</td>
-<td>*</td>
-<td>—</td>
-</tr>
-<tr class="even">
-<td>Plethoric IVC — Case 2</td>
-<td>*</td>
-<td>—</td>
-</tr>
-<tr class="odd">
-<td>Lateral wall dyskinesia, PSX — Case 3</td>
-<td>*</td>
-<td>—</td>
-</tr>
-<tr class="even">
-<td>Severely reduced EF with pericardial effusion — Case 4</td>
-<td>*</td>
-<td>—</td>
+<td><code>Biventricular Failure (apical 4 chamber).gif</code></td>
+<td>Pathology — dilated LV callout</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="module-3-right-ventricular-function" class="level3">
-<h3 class="anchored" data-anchor-id="module-3-right-ventricular-function">Module 3 — Right Ventricular Function</h3>
+<section id="module-3-rv-function-03-rv.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="module-3-rv-function-03-rv.qmd">Module 3 — RV Function (<code>03-rv.qmd</code>)</h3>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Clip</th>
-<th>Contributor(s)</th>
-<th>Source</th>
+<th>Filename</th>
+<th>Location in file</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>RV failure</td>
-<td>John Bowling DO, Cleveland Clinic Akron General, <span class="citation" data-cites="BModeBowling">@BModeBowling</span></td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>apical+4+normal.gif</code></td>
+<td>Image acquisition — A4C callout</td>
 </tr>
 <tr class="even">
-<td>McConnell’s sign with RV enlargement</td>
-<td>Dimitri Livshits DO, Ultrasound Fellow; Jane Belyavskaya MD, Ultrasound Fellow; Chris Hanuscin MD, Ultrasound Fellowship Director — Kings County / SUNY Downstate</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>Normal Parasternal Short Axis View.gif</code></td>
+<td>Image acquisition — PSAX callout</td>
 </tr>
 <tr class="odd">
-<td>Septal flattening in saddle pulmonary embolism</td>
-<td>*</td>
-<td>—</td>
+<td><code>Normal Parasternal Long Axis (PLAX) View.gif</code></td>
+<td>Image acquisition — PLAX callout</td>
 </tr>
 <tr class="even">
-<td>RV dilation, apical 4-chamber — Case 2 (submassive PE)</td>
-<td>*</td>
-<td>—</td>
+<td><code>normal subcostal view.gif</code></td>
+<td>Image acquisition — subcostal callout</td>
 </tr>
 <tr class="odd">
-<td>D-sign, PSX — Case 2 (submassive PE)</td>
-<td>*</td>
-<td>—</td>
+<td><code>RV Failure.gif</code></td>
+<td>Pathology — RV dilation callout</td>
+</tr>
+<tr class="even">
+<td><code>Septal Flattening in Saddle Pulmonary Embolism.gif</code></td>
+<td>Pathology — D-sign callout</td>
+</tr>
+<tr class="odd">
+<td><code>McConnell Sign with RV Enlargement.gif</code></td>
+<td>Pathology — McConnell’s callout</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="module-4-pericardium" class="level3">
-<h3 class="anchored" data-anchor-id="module-4-pericardium">Module 4 — Pericardium</h3>
+<section id="module-4-pericardium-04-pericardium.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="module-4-pericardium-04-pericardium.qmd">Module 4 — Pericardium (<code>04-pericardium.qmd</code>)</h3>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Clip</th>
-<th>Contributor(s)</th>
-<th>Source</th>
+<th>Filename</th>
+<th>Location in file</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Cardiac tamponade (PSAX)</td>
-<td>Justin Bowra MBBS FACEM CCPU, RNSH, et al.&nbsp;(Dr.&nbsp;Orr)</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>Chronic+Pericardial+Effusion.gif</code></td>
+<td>Pathology — moderate/large effusion callout</td>
 </tr>
 <tr class="even">
-<td>Cardiac tamponade (apical 4-chamber)</td>
-<td>Nathan Kabariti MS4; Dr.&nbsp;Charles Murchison; Dr.&nbsp;John Riggins; Dr.&nbsp;Donald Doukas — Kings County Emergency Medicine</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>Cardiac Tamponade (Parasternal Short-Axis View).gif</code></td>
+<td>Pathology — tamponade callout</td>
 </tr>
 <tr class="odd">
-<td>Chronic pericardial effusion</td>
-<td>Dr.&nbsp;Robert Jarman, UK</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>Cardiac Tamponade Apical Four.gif</code></td>
+<td>Pathology — tamponade callout</td>
 </tr>
 <tr class="even">
-<td>Loculated pericardial effusion</td>
-<td>Robert Jones DO FACEP</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>loculated pericardial effusion.gif</code></td>
+<td>Pathology — loculated effusion callout</td>
 </tr>
 <tr class="odd">
-<td>Pericardial effusion (PLAX)</td>
-<td>*</td>
-<td>—</td>
-</tr>
-<tr class="even">
-<td>Chronic pericardial effusion, subcostal</td>
-<td>*</td>
-<td>—</td>
-</tr>
-<tr class="odd">
-<td>Loculated pericardial effusion, subcostal</td>
-<td>*</td>
-<td>—</td>
-</tr>
-<tr class="even">
-<td>Mitral inflow — pulsed wave Doppler</td>
-<td>*</td>
-<td>—</td>
+<td><code>constrictive pericarditis.gif</code></td>
+<td>Pathology — constrictive pericarditis callout</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="module-5-ivc-volume-status" class="level3">
-<h3 class="anchored" data-anchor-id="module-5-ivc-volume-status">Module 5 — IVC &amp; Volume Status</h3>
+<section id="module-5-ivc-05-ivc.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="module-5-ivc-05-ivc.qmd">Module 5 — IVC (<code>05-ivc.qmd</code>)</h3>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Clip</th>
-<th>Contributor(s)</th>
-<th>Source</th>
+<th>Filename</th>
+<th>Location in file</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Normal IVC entering the right atrium</td>
-<td>Justin Bowra MBBS FACEM CCPU, RNSH, et al.</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>Inferior Vena Cava Emptyting into Right Atrium.gif</code></td>
+<td>Image acquisition — IVC callout</td>
 </tr>
 <tr class="even">
-<td>Collapsed IVC in hypovolemia (transverse)</td>
-<td>Justin Bowra MBBS FACEM CCPU, RNSH, et al.</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
+<td><code>Inferior Vena Cava in Hypovolemia (Transverse).gif</code></td>
+<td>Pathology — small collapsible IVC callout</td>
 </tr>
 <tr class="odd">
-<td>Plethoric IVC</td>
-<td>*</td>
-<td>—</td>
+<td><code>Plethoric Inferior Vena Cava.gif</code></td>
+<td>Pathology — plethoric IVC callout</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="module-6-integration" class="level3">
-<h3 class="anchored" data-anchor-id="module-6-integration">Module 6 — Integration</h3>
+<section id="module-6-integration-06-integration.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="module-6-integration-06-integration.qmd">Module 6 — Integration (<code>06-integration.qmd</code>)</h3>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Clip</th>
-<th>Contributor(s)</th>
-<th>Source</th>
+<th>Filename</th>
+<th>Location in file</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Septal dyskinesis (subcostal view)</td>
-<td>*</td>
-<td>—</td>
+<td><code>Septal Dyskinesis (Subcostal View).gif</code></td>
+<td>4-question framework callout</td>
 </tr>
 <tr class="even">
-<td>Ventricular fibrillation</td>
-<td>*</td>
-<td>—</td>
+<td><code>Ventricular Fibrillation.gif</code></td>
+<td>Integration Case 2 callout (post-arrest)</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="module-7-basic-valve-assessment" class="level3">
-<h3 class="anchored" data-anchor-id="module-7-basic-valve-assessment">Module 7 — Basic Valve Assessment</h3>
+<section id="module-7-valves-07-valves.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="module-7-valves-07-valves.qmd">Module 7 — Valves (<code>07-valves.qmd</code>)</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Clip</th>
-<th>Contributor(s)</th>
-<th>Source</th>
+<th>Filename</th>
+<th>Location in file</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Normal apical five-chamber</td>
-<td>Hannah Kopinski MS4; Dr.&nbsp;Lindsay Davis, NYU/Bellevue Emergency Ultrasound; Dr.&nbsp;Matthew Riscinti, Kings County Emergency Medicine</td>
-<td><a href="https://www.thepocusatlas.com/echocardiography-2">POCUS Atlas</a></td>
-</tr>
-<tr class="even">
-<td>Severe aortic stenosis (PSX)</td>
-<td>*</td>
-<td>—</td>
+<td><code>apical+5+normal.gif</code></td>
+<td>Image acquisition — apical 5C callout</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="module-8-lung-ultrasound" class="level3">
-<h3 class="anchored" data-anchor-id="module-8-lung-ultrasound">Module 8 — Lung Ultrasound</h3>
+<section id="module-8-lung-ultrasound-08-lung.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="module-8-lung-ultrasound-08-lung.qmd">Module 8 — Lung Ultrasound (<code>08-lung.qmd</code>)</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Clip</th>
-<th>Contributor(s)</th>
-<th>Source</th>
+<th>Filename</th>
+<th>Location in file</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>A-lines — normal lung</td>
-<td>Hannah Kopinski MS4; Dr.&nbsp;Lindsay Davis, NYU Emergency Medicine; Dr.&nbsp;Matthew Riscinti, Kings County Emergency Medicine</td>
-<td><a href="https://www.thepocusatlas.com/pulmonary">POCUS Atlas</a></td>
+<td><code>Normal Lung Sliding.gif</code></td>
+<td>Normal section callout</td>
 </tr>
 <tr class="even">
-<td>Normal lung sliding</td>
-<td>Robert Jones DO FACEP</td>
-<td><a href="https://www.thepocusatlas.com/pulmonary">POCUS Atlas</a></td>
+<td><code>A - Lines - Normal Lung.gif</code></td>
+<td>Normal section callout</td>
 </tr>
 <tr class="odd">
-<td>B-lines — pulmonary edema</td>
-<td>Dr.&nbsp;Justin Bowra et al.&nbsp;(Dr.&nbsp;D. Browne; Dr.&nbsp;J. Knights)</td>
-<td><a href="https://www.thepocusatlas.com/pulmonary">POCUS Atlas</a></td>
+<td><code>B-Lines - Pulmonary Edema.gif</code></td>
+<td>Pathology — B-lines callout</td>
 </tr>
 <tr class="even">
-<td>Air bronchograms — pneumonia</td>
-<td>Rafael Intensivanaveia, Critical Care Physician, Hospital Israelita Albert Einstein</td>
-<td><a href="https://www.thepocusatlas.com/pulmonary">POCUS Atlas</a></td>
+<td><code>pleural effusion.gif</code></td>
+<td>Pathology — pleural effusion callout</td>
 </tr>
 <tr class="odd">
-<td>Pleural effusion</td>
-<td>Dimitri Livshits DO, Ultrasound Fellow; Jane Belyavskaya MD, Ultrasound Fellow; Chris Hanuscin MD, Ultrasound Fellowship Director — Kings County / SUNY Downstate</td>
-<td><a href="https://www.thepocusatlas.com/pulmonary">POCUS Atlas</a></td>
+<td><code>air bronchograms pneumonia.gif</code></td>
+<td>Pathology — consolidation callout</td>
 </tr>
 </tbody>
 </table>
 <hr>
 </section>
 </section>
-<section id="references-and-further-reading" class="level2">
-<h2 class="anchored" data-anchor-id="references-and-further-reading">References and further reading</h2>
-<p><em>Module-specific references and recommended reading lists coming soon.</em></p>
+<section id="missing-clips-what-still-needs-to-be-sourced" class="level2">
+<h2 class="anchored" data-anchor-id="missing-clips-what-still-needs-to-be-sourced">Missing clips — what still needs to be sourced</h2>
+<p>Search the POCUS Atlas first. If not available there, note the alternative source and update the Google Sheet accordingly.</p>
+<section id="module-1" class="level3">
+<h3 class="anchored" data-anchor-id="module-1">Module 1</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Normal studies across body habitus (obese patient, COPD, post-CABG) → Place in: normal variants section callout (<code>**Video slots:** Normal studies across body habitus...</code>)</label></li>
+</ul>
+</section>
+<section id="module-3" class="level3">
+<h3 class="anchored" data-anchor-id="module-3">Module 3</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Normal RV on apical 4C — thin free wall, RV clearly smaller than LV → Place in: normal section callout (<code>**Video slots:** Normal RV in apical four-chamber...</code>)</label></li>
+<li><label><input type="checkbox">TAPSE M-mode measurement — normal (&gt;17 mm) vs reduced → Place in: pathology — reduced TAPSE callout (<code>**Video slot:** TAPSE measurement by M-mode...</code>)</label></li>
+</ul>
+</section>
+<section id="module-4" class="level3">
+<h3 class="anchored" data-anchor-id="module-4">Module 4</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Small posterior effusion (PLAX) — thin stripe, no chamber collapse → Place in: pathology — small effusion callout (<code>**Video slot:** Small posterior effusion on PLAX...</code>)</label></li>
+<li><label><input type="checkbox">Normal pericardium — each window (subcostal, PLAX, A4C) → Place in: normal section callout (<code>**Video slots:** Normal pericardium in each window...</code>)</label></li>
+<li><label><input type="checkbox">Mitral inflow PW Doppler — normal E/A; &gt;25% respiratory variation in constriction → Place in: image acquisition — mitral inflow callout</label></li>
+<li><label><input type="checkbox">Tricuspid inflow PW Doppler — reciprocal E-wave variation in constriction → Place in: image acquisition — tricuspid inflow callout</label></li>
+<li><label><input type="checkbox">Hepatic vein PW Doppler — expiratory diastolic flow reversal in constriction → Place in: image acquisition — hepatic vein callout (Module 4) and Module 5 hepatic vein callout</label></li>
+<li><label><input type="checkbox">Acute pericarditis — small/moderate effusion, no tamponade physiology → Place in: pathology — acute pericarditis callout</label></li>
+<li><label><input type="checkbox">Myopericarditis — pericarditis + wall motion abnormality → Place in: pathology — myopericarditis callout</label></li>
+<li><label><input type="checkbox">Effusive-constrictive pericarditis — persistent constrictive physiology after drainage → Place in: pathology — effusive-constrictive callout</label></li>
+<li><label><input type="checkbox"><em>Pericardial Effusion vs Fat Pad</em> — already in Google Sheet, file not yet in <code>modules/gifs/</code></label></li>
+<li><label><input type="checkbox"><em>Pericardial Tamponade</em> — already in Google Sheet, file not yet in <code>modules/gifs/</code></label></li>
+</ul>
+</section>
+<section id="module-5" class="level3">
+<h3 class="anchored" data-anchor-id="module-5">Module 5</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Hepatic vein PW Doppler — normal flow vs diastolic reversal in venous congestion → Place in: image acquisition — hepatic vein callout (<code>**Video slot:** Hepatic vein PW Doppler...</code>)</label></li>
+<li><label><input type="checkbox">Portal vein PW Doppler — monophasic normal vs pulsatile in severe congestion → Place in: image acquisition — portal vein callout</label></li>
+</ul>
+</section>
+<section id="module-6" class="level3">
+<h3 class="anchored" data-anchor-id="module-6">Module 6</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Scenario-matched loops for all 5 integration cases (currently text-only except Case 2) → Place in: each case’s <code>**Video slot:** Loops for interpretation.</code> callout</label></li>
+<li><label><input type="checkbox">Before/after serial exam comparison (fluid bolus response) → Place in: serial exams section callout (<code>**Video slot:** Before/after comparison...</code>)</label></li>
+<li><label><input type="checkbox">Mixed shock state clip (reduced EF with small IVC) → Place in: “When findings conflict” callout</label></li>
+</ul>
+</section>
+<section id="module-7-priority-entire-pathology-layer-missing" class="level3">
+<h3 class="anchored" data-anchor-id="module-7-priority-entire-pathology-layer-missing">Module 7 — <strong>Priority: entire pathology layer missing</strong></h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Calcific aortic stenosis — dense leaflet calcification, reduced opening (PLAX + PSAX)</label></li>
+<li><label><input type="checkbox">Color Doppler turbulent jet in systole across aortic valve</label></li>
+<li><label><input type="checkbox">Reduced aortic valve orifice area on PSAX</label></li>
+<li><label><input type="checkbox">Acute AR — diastolic jet, hyperdynamic LV, premature MV closure</label></li>
+<li><label><input type="checkbox">Chronic AR — dilated LV, large AR jet (apical 5C or APLAX)</label></li>
+<li><label><input type="checkbox">Acute MR — eccentric/wall-hugging jet, hyperdynamic LV (flail leaflet)</label></li>
+<li><label><input type="checkbox">Chronic MR — large central jet, dilated LA</label></li>
+<li><label><input type="checkbox">Ischemic MR — inferior RWMA with posteriorly directed jet</label></li>
+<li><label><input type="checkbox">Mitral stenosis — hockey-stick anterior leaflet deformity (PLAX)</label></li>
+<li><label><input type="checkbox">MS commissural fusion on PSAX — reduced orifice area</label></li>
+<li><label><input type="checkbox">TR jet on color Doppler (A4C)</label></li>
+<li><label><input type="checkbox">CW Doppler through TR jet — peak velocity for RVSP calculation</label></li>
+<li><label><input type="checkbox">Normal aortic, mitral, tricuspid valve 2D + color Doppler (normal variants section) → All valve clips: place in respective pathology callouts in <code>07-valves.qmd</code></label></li>
+</ul>
+</section>
+<section id="module-8" class="level3">
+<h3 class="anchored" data-anchor-id="module-8">Module 8</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Absent lung sliding — barcode/stratosphere sign on M-mode</label></li>
+<li><label><input type="checkbox">Lung point — transition from absent to present sliding (pneumothorax confirmed) → Place in: pneumothorax callout (<code>**Video slots:** Absent lung sliding...</code>)</label></li>
+</ul>
+</section>
+<section id="modules-9-10-11" class="level3">
+<h3 class="anchored" data-anchor-id="modules-9-10-11">Modules 9, 10, 11</h3>
+<p>No clips embedded yet. Entire visual layer needs sourcing.</p>
+<p><strong>Module 9 — Abdominal (<code>09-abdominal.qmd</code>)</strong> - [ ] FAST — RUQ (Morison’s pouch), LUQ, suprapubic, subxiphoid views - [ ] Free fluid grading (trace, moderate, large) - [ ] Bladder volume assessment - [ ] Hydronephrosis (mild, moderate, severe) - [ ] Ruptured ectopic pregnancy — free fluid + adnexal mass</p>
+<p><strong>Module 10 — DVT (<code>10-dvt.qmd</code>)</strong> - [ ] Two-point compression — compressible vein (normal) vs non-compressible (DVT) - [ ] Augmentation with calf squeeze - [ ] Catheter-associated upper extremity DVT - [ ] Fresh (anechoic) thrombus — the “empty vein” pitfall</p>
+<p><strong>Module 11 — Procedural (<code>11-procedural.qmd</code>)</strong> - [ ] IJ cannulation — short-axis and long-axis approaches - [ ] Needle tip visualization in short-axis - [ ] Thoracentesis — pleural fluid targeting - [ ] Paracentesis — ascites targeting, bowel avoidance - [ ] Pericardiocentesis — needle trajectory on subcostal view - [ ] Agitated saline bubble study — confirming pericardial vs pleural entry</p>
 <hr>
 </section>
-<section id="acknowledgments" class="level2">
-<h2 class="anchored" data-anchor-id="acknowledgments">Acknowledgments</h2>
-<p><em>Coming soon.</em></p>
+</section>
+<section id="updating-credits.qmd-after-adding-new-clips" class="level2">
+<h2 class="anchored" data-anchor-id="updating-credits.qmd-after-adding-new-clips">Updating credits.qmd after adding new clips</h2>
+<p><code>credits.qmd</code> has one table per module. Add a new row for each clip embedded:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Clip description <span class="pp">|</span> Contributor name, role, institution <span class="pp">|</span> <span class="co">[</span><span class="ot">POCUS Atlas</span><span class="co">](URL)</span> <span class="pp">|</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If contributor metadata is unknown at time of embedding, use <code>\*</code> in the contributor cell and flag it for follow-up. Do not leave the row out entirely — an asterisk in the table is easier to find and resolve than a missing entry.</p>
+<hr>
+</section>
+<section id="notes-pitfalls" class="level2">
+<h2 class="anchored" data-anchor-id="notes-pitfalls">Notes / pitfalls</h2>
+<ul>
+<li><strong>Filenames with <code>+</code> signs</strong> (e.g., <code>apical+4+normal.gif</code>, <code>Chronic+Pericardial+Effusion.gif</code>) — use the filename exactly as-is in the <code>src</code> attribute. The <code>+</code> is a valid character in HTML src paths.</li>
+<li><strong>Filenames with spaces</strong> — HTML <code>&lt;img src="..."&gt;</code> handles spaces in quoted attributes fine. Do not URL-encode them.</li>
+<li><strong>Parentheses in filenames</strong> (e.g., <code>Normal Aortic Valve (Parasternal Short-Axis View).gif</code>) — fine in HTML src.</li>
+<li><strong>Do not rename existing GIF files</strong> — existing <code>&lt;img&gt;</code> tags in the modules reference the current filenames. Renaming a file without updating every reference will break that clip silently.</li>
+<li><strong>One GIF folder, flat</strong> — do not create subfolders inside <code>modules/gifs/</code>. All QMD files reference <code>gifs/filename.gif</code> and would need updating if a subfolder is introduced.</li>
+<li><strong>Integration case clips</strong> — only embed a clip in a case’s “Loops for interpretation” slot if it matches the case scenario. A mismatched clip is more confusing than no clip. Leave the text-only placeholder until a scenario-appropriate clip is available.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

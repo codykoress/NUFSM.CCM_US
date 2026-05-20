@@ -48,6 +48,8 @@ The RV free wall is nearest the probe, making the subcostal view the best window
 
 ::: {.callout-tip}
 **Video slot:** PLAX for pericardial assessment — posterior effusion, descending aorta landmark, effusion sizing.
+
+<img src="gifs/PSLX pericardial effusion.gif" style="width:100%; border-radius:4px;" alt="Pericardial effusion on parasternal long axis — descending aorta landmark"/>
 :::
 
 Effusion on PLAX appears as an echo-free stripe posterior to the LV. **Key landmark:** the descending thoracic aorta in cross-section at the far left of the image. Fluid anterior to the aorta is pericardial; fluid posterior to the aorta is pleural.
@@ -64,42 +66,12 @@ The apical view is useful for identifying loculated effusions and for PW Doppler
 
 ---
 
-### Mitral inflow — pulsed wave Doppler (constrictive physiology)
-
-::: {.callout-tip}
-**Video slot:** PW Doppler at mitral valve tips — E/A ratio, >25% respiratory variation in constriction vs normal.
-:::
-
-**Probe:** Phased array, apical four-chamber. Sample volume at the tips of the mitral valve leaflets.
-
-**What you are looking for:** In constrictive pericarditis, mitral E-wave velocity decreases by more than 25% with inspiration. This is the Doppler equivalent of pulsus paradoxus and reflects exaggerated interventricular dependence due to the rigid pericardial shell. Normal respiratory variation is less than 25%.
-
----
-
-### Tricuspid inflow — pulsed wave Doppler (constrictive physiology)
-
-::: {.callout-tip}
-**Video slot:** PW Doppler at tricuspid valve tips — reciprocal increase in tricuspid E-wave with inspiration in constriction.
-:::
-
-**What you are looking for:** In constriction, as the mitral E-wave falls with inspiration, the tricuspid E-wave rises reciprocally. This exaggerated, reciprocal respiratory variation across both AV valves is the hallmark of constrictive physiology.
-
----
-
-### Hepatic vein flow — pulsed wave Doppler (constrictive physiology)
-
-::: {.callout-tip}
-**Video slot:** Hepatic vein PW Doppler — expiratory diastolic flow reversal in constriction.
-:::
-
-**What you are looking for:** In constriction, prominent diastolic flow reversal in the hepatic veins occurs with expiration — the opposite of restrictive cardiomyopathy, where reversal is with inspiration. Combined with the AV valve pattern, this is highly specific for constrictive pericarditis.
-
----
-
 ## 3. Normal & normal variants
 
 ::: {.callout-tip}
 **Video slots:** Normal pericardium in each window. Normal mitral inflow Doppler. Normal hepatic vein flow.
+
+<img src="gifs/Mitral inflow — pulsed wave Doppler.avif" style="width:100%; border-radius:4px;" alt="Normal mitral inflow — pulsed wave Doppler"/>
 :::
 
 ### Normal pericardium
@@ -122,13 +94,6 @@ Sits between the myocardium and the visceral pericardium. Visible as a thin echo
 
 After cardiac surgery, the pericardium is often left open or partially closed, creating atypical appearances with adhesions and thickening. Post-operative effusions are frequently anterior and loculated. Subcostal view may be normal — always check all windows in post-surgical patients with new hemodynamic instability.
 
-### Normal mitral inflow Doppler
-
-E/A ratio 0.8–1.5 in normal adults. Mild respiratory variation (<25%) is normal. The E-wave represents early passive filling; the A-wave represents atrial contraction.
-
-### Normal hepatic vein flow
-
-Predominantly anterograde systolic and diastolic flow toward the heart. Minor physiologic reversal at end-systole is normal. Marked diastolic flow reversal is not.
 
 ---
 
@@ -159,6 +124,8 @@ Less than 1 cm in greatest diameter on PLAX, posterior to the LV. Visible in dia
 **Video slot:** Large circumferential effusion — swinging heart, echo-free space in all windows.
 
 <img src="gifs/Chronic+Pericardial+Effusion.gif" style="width:100%; border-radius:4px;" alt="Large chronic pericardial effusion"/>
+
+<img src="gifs/Chronic+Pericardial+Effusion subcostal.gif" style="width:100%; border-radius:4px;" alt="Large chronic pericardial effusion — subcostal view"/>
 :::
 
 Moderate: 1–2 cm; large: >2 cm on PLAX. Large effusions are typically circumferential and visible in all windows.
@@ -206,6 +173,8 @@ Tamponade is elevated intrapericardial pressure exceeding intracardiac filling p
 **Video slot:** Post-operative loculated effusion — anterior, irregular, compressing a single chamber.
 
 <img src="gifs/loculated pericardial effusion.gif" style="width:100%; border-radius:4px;" alt="Loculated pericardial effusion"/>
+
+<img src="gifs/loculated pericardial effusion subcostal.gif" style="width:100%; border-radius:4px;" alt="Loculated pericardial effusion — subcostal view"/>
 :::
 
 Loculated effusions do not distribute freely. They occur after cardiac surgery, trauma, or prior pericarditis with adhesions. The collection may compress only one chamber, producing atypical hemodynamic presentations that do not fit classic tamponade physiology.
@@ -269,69 +238,6 @@ When myocardial inflammation accompanies pericarditis, LV function may be impair
 - Regional wall motion abnormalities suggest myocardial involvement, not just pericardial.
 - Activity restriction is prolonged in myopericarditis (3–6 months vs 2–4 weeks for isolated pericarditis).
 - NSAIDs may be harmful if significant myocarditis is present — cardiology consultation is warranted.
-
----
-
-### Effusive-constrictive pericarditis
-
-::: {.callout-tip}
-**Video slot:** Effusion with persistent constrictive physiology after pericardiocentesis.
-:::
-
-Both an effusion and constrictive pericardial thickening coexist. The effusion may be the dominant finding initially, but after drainage, elevated filling pressures and constrictive Doppler features persist.
-
-**Teaching points:**
-
-- Suspect when a patient fails to improve hemodynamically after pericardiocentesis.
-- Common causes: tuberculosis, radiation-induced pericardial disease, malignancy.
-- Requires Doppler assessment after drainage to identify residual constriction.
-- May ultimately require pericardiectomy.
-
----
-
-### Constrictive pericarditis
-
-::: {.callout-tip}
-**Video slots:**
-- Septal bounce on M-mode or 2D
-- Respiratory variation on mitral inflow (>25% E-wave decrease with inspiration)
-- Reciprocal tricuspid inflow increase with inspiration
-- Expiratory hepatic vein diastolic flow reversal
-
-<img src="gifs/constrictive pericarditis.gif" style="width:100%; border-radius:4px;" alt="Constrictive pericarditis — septal bounce and respiratory variation"/>
-:::
-
-A thickened, fibrotic, or calcified pericardium that limits diastolic filling. The great mimic of right heart failure, liver disease, and restrictive cardiomyopathy.
-
-**Key 2D features:**
-
-- Pericardial thickening or calcification (may not be visible on echo; CT is more sensitive)
-- Septal bounce — abrupt early diastolic shift of the interventricular septum
-- Normal or near-normal RVSP (unlike restrictive CMP, where PA pressures are often markedly elevated)
-- Dilated IVC and hepatic veins
-
-**Key Doppler features:**
-
-- Mitral E-wave decrease >25% with inspiration
-- Reciprocal tricuspid E-wave increase with inspiration
-- Expiratory diastolic flow reversal in hepatic veins
-
-**Distinguishing constriction from restriction:**
-
-| Feature | Constriction | Restriction |
-|---|---|---|
-| Pericardium | Thickened/calcified | Normal |
-| Septal bounce | Present | Absent |
-| Respiratory variation | Exaggerated (>25%) | Minimal |
-| Tissue Doppler e' | Normal or elevated | Reduced |
-| PA pressure | Near-normal | Often elevated |
-| Hepatic vein flow reversal | Expiratory | Inspiratory |
-
-**Teaching points:**
-
-- Constriction is surgically curable — pericardiectomy — but carries significant operative risk. Early referral matters.
-- Bedside echo raises suspicion; formal echo with comprehensive Doppler is required to confirm.
-- Diuresis provides temporary symptomatic relief but does not treat the underlying physiology.
 
 ---
 
@@ -453,44 +359,6 @@ Small posterior effusion. No tamponade physiology. Normal LV function.
 **How does this change management?**
 Recurrent pericarditis with small effusion — no high-risk features. Restart NSAIDs and colchicine. If not already on colchicine, prescribe it now. Cardiology consultation for a second or third recurrence — consider IL-1 inhibitor therapy (anakinra, rilonacept).
 
----
-
-### Case 7: Progressive dyspnea after radiation therapy
-
-**Clinical scenario:** A 58-year-old woman with mediastinal radiation for Hodgkin lymphoma 15 years ago presents with progressive exertional dyspnea, lower extremity edema, and ascites. JVD present. Prior echo 2 years ago: "normal function."
-
-**What exam would you perform?**
-Comprehensive focused cardiac ultrasound including Doppler of mitral and tricuspid inflows and hepatic veins.
-
-::: {.callout-tip}
-**Video slot:** Loops for interpretation.
-:::
-
-**What you see:**
-Normal LV size and function. RV mildly dilated. Septal bounce visible. Plethoric IVC and hepatic veins. Mitral E-wave decreases >30% with inspiration. Expiratory diastolic flow reversal in hepatic veins.
-
-**How does this change management?**
-Constrictive pericarditis from radiation-induced pericardial disease — surgically curable. Refer to cardiothoracic surgery for pericardiectomy evaluation. Formal echo and right heart catheterization (to confirm equalization of diastolic pressures) are required. Diuresis as a bridge. This diagnosis has been present for years; the prior echo would have supported it if Doppler had been obtained.
-
----
-
-### Case 8: Post-pericardiocentesis hemodynamic instability
-
-**Clinical scenario:** A 64-year-old man with TB-associated pericardial effusion underwent pericardiocentesis yesterday, draining 700 mL. Today he remains hypotensive (BP 86/58) with persistent JVD and edema.
-
-**What exam would you perform?**
-Repeat focused cardiac ultrasound with Doppler.
-
-::: {.callout-tip}
-**Video slot:** Loops for interpretation.
-:::
-
-**What you see:**
-Residual small effusion. Persistent plethoric IVC. Septal bounce. Mitral E-wave respiratory variation >25%.
-
-**How does this change management?**
-Effusive-constrictive pericarditis — the effusion was not the only problem. Constrictive physiology from TB-related pericardial fibrosis persists after drainage. Cardiothoracic surgery consultation for pericardiectomy evaluation. Continue anti-tubercular therapy. This patient will not normalize with drainage alone.
-
 ::: {.callout-tip}
 **Case format reminder:** The case ends with a management decision, not just a diagnosis.
 :::
@@ -537,21 +405,7 @@ No. Absence of tamponade physiology at this moment does not mean discharge is sa
 Large effusion (>2 cm), tamponade physiology, fever >38°C with subacute onset, immunocompromised state, anticoagulation therapy, failure to respond to NSAIDs within 1 week, and evidence of myocardial involvement (elevated troponin, wall motion abnormality).
 :::
 
-**Q6.** What is the septal bounce, and what does it indicate?
-
-::: {.callout-caution collapse="true"}
-**Answer**
-An abrupt early diastolic shift of the interventricular septum visible on 2D or M-mode. It reflects exaggerated ventricular interdependence from a rigid pericardial shell — as the ventricles compete for a fixed intrapericardial volume, the septum shifts abruptly with respiration and filling. It is a key 2D sign of constrictive pericarditis.
-:::
-
-**Q7.** How does the mitral inflow respiratory variation in constrictive pericarditis differ from normal?
-
-::: {.callout-caution collapse="true"}
-**Answer**
-In normal physiology, mitral E-wave velocity varies less than 25% with respiration. In constrictive pericarditis, the E-wave decreases by more than 25% with inspiration, while the tricuspid E-wave rises reciprocally. This exaggerated, reciprocal variation reflects the rigid pericardium forcing the ventricles to compete for a fixed filling volume — when one fills more, the other fills less.
-:::
-
-**Q8.** In a trauma patient with tamponade physiology, why is pericardiocentesis alone often insufficient?
+**Q6.** In a trauma patient with tamponade physiology, why is pericardiocentesis alone often insufficient?
 
 ::: {.callout-caution collapse="true"}
 **Answer**

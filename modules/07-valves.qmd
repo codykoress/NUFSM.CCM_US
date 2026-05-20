@@ -60,7 +60,7 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. Color Doppler 
 
 **What you are looking for:**
 - MR jet: color Doppler in systole, jet directed from LV into LA. A jet occupying >50% of the LA area suggests severe MR (qualitative).
-- TR jet: color Doppler in systole, jet from RV into RA. Large TR jets allow RVSP estimation (4v² + RAP, where v is the peak TR velocity by CW Doppler).
+- TR jet: color Doppler in systole, jet from RV into RA.
 
 ---
 
@@ -113,6 +113,8 @@ Trace MR, trace TR, and trace pulmonary regurgitation are all common normal vari
 - Calcific AS — dense leaflet calcification, reduced opening on PLAX and PSAX
 - Color Doppler turbulent jet in systole
 - Severely reduced aortic valve opening area on PSAX
+
+<img src="gifs/severe aortic stenosis PSX.gif" style="width:100%; border-radius:4px;" alt="Severe aortic stenosis — reduced valve opening area on parasternal short axis"/>
 :::
 
 Calcific aortic stenosis is the most common valvular disease in adults over 65. The leaflets are thickened, echogenic, and immobile. The orifice area on PSAX is visually reduced.
@@ -212,29 +214,6 @@ MS causes obstruction to diastolic LV filling. Almost always rheumatic in etiolo
 
 ---
 
-### Tricuspid regurgitation and RVSP estimation
-
-::: {.callout-tip}
-**Video slots:**
-- TR jet on color Doppler — A4C view
-- CW Doppler through TR jet — peak velocity for RVSP calculation
-:::
-
-TR is most often functional (secondary to RV dilation) rather than primary leaflet disease. RVSP estimation from the peak TR velocity is one of the most useful quantitative measurements available at the bedside.
-
-**RVSP = 4 × (peak TR velocity)² + estimated RAP**
-
-Estimated RAP from IVC (see Module 5): 5 mmHg (small, collapsible), 10 mmHg (intermediate), 15–20 mmHg (large, non-collapsing).
-
-**Teaching points:**
-
-- RVSP >35 mmHg = pulmonary hypertension. RVSP >60 mmHg = severe pulmonary hypertension.
-- Accurate measurement requires CW Doppler aligned parallel to the TR jet — off-axis measurements underestimate velocity.
-- Severe TR can reduce the gradient (low peak velocity) even with severe RV failure, because the RA pressure rises to meet the RV pressure.
-- Flail tricuspid leaflet from pacemaker lead injury, endocarditis, or trauma — large eccentric TR jet, RV dilation, systemic venous congestion.
-
----
-
 ## 5. Integration cases
 
 *Cases where the finding changes management.*
@@ -277,25 +256,6 @@ Inferior and posterior wall motion abnormality (known from prior). Posterior mit
 **How does this change management?**
 Acute severe MR from posterior papillary muscle rupture — a mechanical complication of inferior MI. This is a surgical emergency. The non-dilated LA with acute, massive MR means LA pressure is rising rapidly — the patient is heading toward cardiogenic shock. Call CT surgery immediately. Nitroprusside to reduce afterload as a bridge. IABP to augment forward flow. Do not delay for catheterization — go to the OR.
 
----
-
-### Case 3: Right heart failure with elevated RVSP
-
-**Clinical scenario:** A 55-year-old woman with systemic sclerosis presents with progressive exertional dyspnea and lower extremity edema. JVD is present. She has a soft systolic murmur at the left lower sternal border.
-
-**What exam would you perform?**
-Focused cardiac ultrasound with TR jet interrogation.
-
-::: {.callout-tip}
-**Video slot:** Loops for interpretation.
-:::
-
-**What you see:**
-Dilated RA and RV. TR jet on color Doppler. CW Doppler peak TR velocity 4.2 m/s. IVC 2.3 cm, non-collapsing (estimated RAP 15 mmHg). RVSP = 4(4.2)² + 15 = 71 + 15 = 86 mmHg.
-
-**How does this change management?**
-Severe pulmonary hypertension (RVSP 86 mmHg). In a patient with systemic sclerosis, pulmonary arterial hypertension is a known complication and a major cause of mortality. Refer urgently to a pulmonary hypertension center. Right heart catheterization is required to confirm diagnosis and guide therapy. Begin PAH-targeted therapy (phosphodiesterase inhibitor or endothelin receptor antagonist) in consultation with a specialist.
-
 ::: {.callout-tip}
 **Case format reminder:** The case ends with a management decision, not just a diagnosis.
 :::
@@ -314,28 +274,21 @@ Anki deck for spaced repetition: *link coming soon.*
 Mitral stenosis. The hockey stick deformity results from rheumatic commissural fusion — the leaflet body is pliable but the tip is tethered. The hemodynamic consequence is obstruction to diastolic LV filling, causing elevated LA pressure, LA dilation, pulmonary hypertension, and reduced cardiac output. Atrial fibrillation and tachycardia are particularly poorly tolerated because they reduce diastolic filling time.
 :::
 
-**Q2.** How do you estimate RVSP from tricuspid regurgitation, and what are the limitations?
-
-::: {.callout-caution collapse="true"}
-**Answer**
-RVSP = 4 × (peak TR velocity in m/s)² + estimated RAP. RAP is estimated from IVC size and collapsibility. Limitations: requires a well-aligned CW Doppler beam parallel to the TR jet (off-axis measurements underestimate velocity); in severe TR with elevated RA pressure, the RV-RA gradient may be low (low TR velocity) despite severe RV failure; requires a measurable TR jet (not all patients have one).
-:::
-
-**Q3.** A patient with acute aortic regurgitation has premature mitral valve closure on M-mode. What does this finding mean physiologically?
+**Q2.** A patient with acute aortic regurgitation has premature mitral valve closure on M-mode. What does this finding mean physiologically?
 
 ::: {.callout-caution collapse="true"}
 **Answer**
 Premature mitral valve closure means the diastolic LV pressure has risen above LA pressure before atrial contraction — the LV is so volume-loaded that it closes the mitral valve early. This indicates critically elevated LVEDP, impending hemodynamic collapse, and the urgent need for surgical intervention. It is one of the most ominous signs in acute AR.
 :::
 
-**Q4.** Why is color Doppler alone unreliable for grading the severity of an eccentric MR jet?
+**Q3.** Why is color Doppler alone unreliable for grading the severity of an eccentric MR jet?
 
 ::: {.callout-caution collapse="true"}
 **Answer**
 Eccentric jets (Coanda effect) hug the atrial wall, constrained by the wall's boundary layer, and appear smaller than they are on color Doppler. A wall-hugging jet may be severe despite a small apparent color area. Other clues to severe MR — pulmonary edema out of proportion to LV function, hyperdynamic LV, non-dilated LA in acute presentation, or a clearly visible flail segment — should raise suspicion even when the jet appears small.
 :::
 
-**Q5.** Why are vasodilators dangerous in severe aortic stenosis?
+**Q4.** Why are vasodilators dangerous in severe aortic stenosis?
 
 ::: {.callout-caution collapse="true"}
 **Answer**

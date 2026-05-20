@@ -222,6 +222,10 @@ Focused cardiac ultrasound to assess RV function and guide risk stratification.
 
 ::: {.callout-tip}
 **Video slot:** Loops for interpretation.
+
+<img src="gifs/A4C - Case 2 Submassive PE — how sick is this RV.gif" style="width:100%; border-radius:4px;" alt="RV dilation on apical four-chamber — submassive PE, Case 2"/>
+
+<img src="gifs/PSX D sign - Case 2 Submassive PE — how sick is this RV.gif" style="width:100%; border-radius:4px;" alt="D-sign on parasternal short axis — submassive PE, Case 2"/>
 :::
 
 **What you see:**
