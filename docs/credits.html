@@ -70,6 +70,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&amp;family=Public+Sans:ital,wght@0,300..800;1,300..800&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -804,9 +807,18 @@ Note
 
   var BASE = getSiteBase();
 
+  function escapeHtml(str) {
+    return str
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
   function renderBot(text) {
+    var escaped = escapeHtml(text);
     // Convert [Label](MODULE:XX) to anchor tags
-    var html = text.replace(
+    var html = escaped.replace(
       /\[([^\]]+)\]\(MODULE:(\d{2})\)/g,
       function (_, label, num) {
         var path = MODULE_PATHS[num];
@@ -902,6 +914,191 @@ Note
 
     sendBtn.disabled = false;
     input.focus();
+  }
+}());
+</script>
+<!-- POCUS Quiz Widget — injects open-answer forms into each quiz question callout -->
+<!-- Injected into every page via _quarto.yml include-after-body -->
+<style>
+  .quiz-answer-form {
+    margin: 10px 0 12px 0;
+  }
+
+  .quiz-textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 13.5px;
+    font-family: inherit;
+    line-height: 1.5;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.15s;
+    color: #1a1a2e;
+    background: #fff;
+  }
+  .quiz-textarea:focus { border-color: #2780e3; }
+
+  .quiz-form-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 7px;
+  }
+
+  .quiz-submit-btn {
+    background: #2780e3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 16px;
+    font-size: 13.5px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.15s;
+    white-space: nowrap;
+  }
+  .quiz-submit-btn:hover:not(:disabled) { background: #1a68c8; }
+  .quiz-submit-btn:disabled { background: #9ca3af; cursor: not-allowed; }
+
+  .quiz-typing {
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+    padding: 4px 0;
+  }
+  .quiz-typing span {
+    width: 6px;
+    height: 6px;
+    background: #9ca3af;
+    border-radius: 50%;
+    display: inline-block;
+    animation: quiz-bounce 1.1s infinite;
+  }
+  .quiz-typing span:nth-child(2) { animation-delay: 0.18s; }
+  .quiz-typing span:nth-child(3) { animation-delay: 0.36s; }
+  @keyframes quiz-bounce {
+    0%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-5px); }
+  }
+
+  .quiz-feedback {
+    margin-top: 10px;
+    padding: 11px 14px;
+    border-radius: 8px;
+    background: #f0faf4;
+    border: 1px solid #86efac;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #14532d;
+  }
+
+  .quiz-feedback strong { color: #166534; }
+</style>
+
+<script>
+(function () {
+  var WORKER_URL = 'https://ultrasoundguru.codykoress.workers.dev/quiz';
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Each quiz question lives inside a .callout-note body as alternating
+    // <p> (question text) and .callout-caution (answer) siblings.
+    var noteBodies = document.querySelectorAll(
+      '.callout-note .callout-body-container.callout-body'
+    );
+
+    noteBodies.forEach(function (body) {
+      var children = Array.from(body.children);
+
+      children.forEach(function (child, i) {
+        var next = children[i + 1];
+        if (
+          child.tagName === 'P' &&
+          next &&
+          next.classList.contains('callout-caution')
+        ) {
+          injectForm(child, next);
+        }
+      });
+    });
+  });
+
+  function injectForm(questionEl, answerCallout) {
+    var questionText = questionEl.textContent.trim();
+    var answerBodyEl = answerCallout.querySelector('.callout-body-container');
+    if (!answerBodyEl) return;
+
+    // Rename the default "Caution" title to "Reveal answer"
+    var titleEl = answerCallout.querySelector('.callout-title-container');
+    if (titleEl) titleEl.textContent = 'Reveal answer';
+
+    // Strip leading "Answer" label that Quarto renders as bold text
+    var answerText = answerBodyEl.textContent.trim().replace(/^Answer\s*/i, '');
+
+    var formDiv = document.createElement('div');
+    formDiv.className = 'quiz-answer-form';
+    formDiv.innerHTML =
+      '<textarea class="quiz-textarea" placeholder="Type your answer…" rows="3"></textarea>' +
+      '<div class="quiz-form-row">' +
+        '<button class="quiz-submit-btn" type="button">Get Feedback</button>' +
+        '<span class="quiz-typing-slot"></span>' +
+      '</div>' +
+      '<div class="quiz-feedback" style="display:none;"></div>';
+
+    // Insert between the question <p> and the answer callout
+    questionEl.after(formDiv);
+
+    var textarea    = formDiv.querySelector('.quiz-textarea');
+    var btn         = formDiv.querySelector('.quiz-submit-btn');
+    var typingSlot  = formDiv.querySelector('.quiz-typing-slot');
+    var feedbackDiv = formDiv.querySelector('.quiz-feedback');
+
+    btn.addEventListener('click', function () {
+      var userAnswer = textarea.value.trim();
+      if (!userAnswer) { textarea.focus(); return; }
+
+      btn.disabled = true;
+      feedbackDiv.style.display = 'none';
+      typingSlot.innerHTML =
+        '<span class="quiz-typing">' +
+          '<span></span><span></span><span></span>' +
+        '</span>';
+
+      fetch(WORKER_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          question: questionText,
+          correctAnswer: answerText,
+          userAnswer: userAnswer,
+        }),
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          return res.json();
+        })
+        .then(function (data) {
+          typingSlot.innerHTML = '';
+          var feedback = data.feedback || 'No feedback received.';
+          feedbackDiv.innerHTML = feedback
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\n/g, '<br>');
+          feedbackDiv.style.display = 'block';
+        })
+        .catch(function () {
+          typingSlot.innerHTML = '';
+          feedbackDiv.textContent = 'Could not get feedback. Please check your connection and try again.';
+          feedbackDiv.style.display = 'block';
+        })
+        .finally(function () {
+          btn.disabled = false;
+        });
+    });
   }
 }());
 </script>

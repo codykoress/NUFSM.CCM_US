@@ -70,6 +70,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&amp;family=Public+Sans:ital,wght@0,300..800;1,300..800&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -175,6 +178,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#clips-still-needed" id="toc-clips-still-needed" class="nav-link" data-scroll-target="#clips-still-needed">Clips — still needed</a></li>
   <li><a href="#metadata-credits-page" id="toc-metadata-credits-page" class="nav-link" data-scroll-target="#metadata-credits-page">Metadata — credits page</a></li>
+  <li><a href="#unused-files" id="toc-unused-files" class="nav-link" data-scroll-target="#unused-files">Unused files</a></li>
   <li><a href="#per-module-content-gaps" id="toc-per-module-content-gaps" class="nav-link" data-scroll-target="#per-module-content-gaps">Per-module content gaps</a></li>
   <li><a href="#site-infrastructure" id="toc-site-infrastructure" class="nav-link" data-scroll-target="#site-infrastructure">Site / infrastructure</a></li>
   </ul></li>
@@ -198,33 +202,39 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="site-structure">Site structure</h3>
 <ul class="task-list">
 <li><label><input type="checkbox" checked="">Quarto project initialized with <code>_quarto.yml</code> navbar</label></li>
-<li><label><input type="checkbox" checked=""><code>index.qmd</code> — home page with links to all 9 modules</label></li>
+<li><label><input type="checkbox" checked=""><code>index.qmd</code> — home page with links to all 11 modules</label></li>
 <li><label><input type="checkbox" checked=""><code>credits.qmd</code> — attribution table organized by module, sourced from Google Sheets metadata</label></li>
-<li><label><input type="checkbox" checked="">All 9 modules linked in navbar and home page</label></li>
-<li><label><input type="checkbox" checked="">Module order finalized: cardiac (1–5) → lung/abdominal/DVT (6–8) → integration (9)</label></li>
+<li><label><input type="checkbox" checked="">All 11 modules linked in navbar and home page</label></li>
 </ul>
 </section>
 <section id="module-content-written" class="level3">
 <h3 class="anchored" data-anchor-id="module-content-written">Module content (written)</h3>
 <ul class="task-list">
-<li><label><input type="checkbox" checked=""><strong>Module 1</strong> — Windows &amp; Acquisition: four windows, machine setup, 8-question quiz <em>(normal anatomy/variants section removed — covered in module-specific normal sections)</em></label></li>
+<li><label><input type="checkbox" checked=""><strong>Module 1</strong> — Windows &amp; Acquisition: four windows, machine setup, normal anatomy, normal variants, 8-question quiz</label></li>
 <li><label><input type="checkbox" checked=""><strong>Module 2</strong> — Left Ventricular Function: systolic dysfunction, RWMA, Takotsubo, cardiogenic shock, 5-question quiz</label></li>
 <li><label><input type="checkbox" checked=""><strong>Module 3</strong> — Right Ventricular Function: RV strain, D-sign, McConnell’s sign, TAPSE, PE, ARDS cor pulmonale, 5-question quiz</label></li>
-<li><label><input type="checkbox" checked=""><strong>Module 4</strong> — Pericardium: effusion sizing, tamponade physiology, loculated effusion, mimics &amp; pitfalls, 6-question quiz <em>(scope narrowed to effusion/tamponade; pericarditis, myopericarditis, effusive-constrictive, and constrictive content removed)</em></label></li>
-<li><label><input type="checkbox" checked=""><strong>Module 5</strong> — IVC &amp; Volume Status: fluid responsiveness, distensibility index, VExUS/venous congestion framework, 5-question quiz</label></li>
-<li><label><input type="checkbox" checked=""><strong>Module 6</strong> — Lung Ultrasound: B-lines, effusion, pneumothorax, consolidation, BLUE protocol, 5-question quiz</label></li>
-<li><label><input type="checkbox" checked=""><strong>Module 7</strong> — Abdominal Ultrasound: FAST, free fluid grading, bladder volume, hydronephrosis, ruptured ectopic, 5-question quiz</label></li>
-<li><label><input type="checkbox" checked=""><strong>Module 8</strong> — DVT Compression Ultrasound: two-point compression, augmentation, catheter-associated DVT, 5-question quiz</label></li>
-<li><label><input type="checkbox" checked=""><strong>Module 9</strong> — Shock &amp; Arrest Integration: 4-question framework, hemodynamic phenotypes table, 5 complex integration cases, 5-question quiz</label></li>
+<li><label><input type="checkbox" checked=""><strong>Module 4</strong> — Pericardium: effusion sizing, tamponade, pericarditis (constrictive disease scoped out), Doppler assessment, 6-question quiz</label></li>
+<li><label><input type="checkbox" checked=""><strong>Module 5</strong> — IVC &amp; Volume Status: fluid responsiveness, distensibility index, VExUS/venous congestion, 5-question quiz</label></li>
+<li><label><input type="checkbox" checked=""><strong>Module 6</strong> — Shock &amp; Arrest Integration: 4-question framework, hemodynamic phenotypes table, 5 complex integration cases, 5-question quiz</label></li>
+<li><label><input type="checkbox" checked=""><strong>Module 7</strong> — Basic Valve Assessment: AS, AR, MR (including flail/Coanda), MS, TR/RVSP estimation, 5-question quiz</label></li>
+<li><label><input type="checkbox" checked=""><strong>Module 8</strong> — Lung Ultrasound: B-lines, effusion, pneumothorax, consolidation, BLUE protocol, 5-question quiz</label></li>
+<li><label><input type="checkbox" checked=""><strong>Module 9</strong> — Abdominal Ultrasound: FAST, free fluid grading, bladder volume, hydronephrosis, ruptured ectopic, 5-question quiz</label></li>
+<li><label><input type="checkbox" checked=""><strong>Module 10</strong> — DVT Compression Ultrasound: two-point compression, augmentation, catheter-associated DVT, 5-question quiz</label></li>
+<li><label><input type="checkbox" checked=""><strong>Module 11</strong> — Procedural Guidance: IJ/subclavian/femoral CVC, thoracentesis, paracentesis, pericardiocentesis, 5-question quiz</label></li>
 </ul>
 </section>
 <section id="visual-assets" class="level3">
 <h3 class="anchored" data-anchor-id="visual-assets">Visual assets</h3>
 <ul class="task-list">
 <li><label><input type="checkbox" checked="">Probe placement SVG diagrams (×4) for Module 1: subcostal, PLAX, PSAX (with rotation arrow), apical 4C</label></li>
-<li><label><input type="checkbox" checked="">37 GIF clips embedded across Modules 1–8 using <code>&lt;img&gt;</code> tags (autoplay, loop, no controls)</label></li>
+<li><label><input type="checkbox" checked=""><strong>55 image clips (54 GIF + 1 AVIF) embedded across Modules 1–8</strong>, distributed as: M1=6, M2=20, M3=9, M4=8, M5=3, M6=2, M7=2, M8=5</label></li>
+<li><label><input type="checkbox" checked="">Normal acquisition clips intentionally duplicated across Modules 1, 2, 3 for module self-containment — learner can study each module standalone</label></li>
 <li><label><input type="checkbox" checked="">GIF source metadata tracked in Google Sheets; credits page populated with contributor names and POCUS Atlas links</label></li>
-<li><label><input type="checkbox" checked="">9 clips embedded but flagged <code>*</code> (missing contributor metadata — to be resolved)</label></li>
+<li><label><input type="checkbox" checked="">Module 2 integration cases (1–4) — all loops embedded</label></li>
+<li><label><input type="checkbox" checked="">Module 3 Case 2 (submassive PE) — loops embedded</label></li>
+<li><label><input type="checkbox" checked="">Module 4 PLAX/subcostal effusion variants and normal mitral inflow Doppler (AVIF) — embedded</label></li>
+<li><label><input type="checkbox" checked="">Module 7 severe AS on PSX — embedded</label></li>
+<li><label><input type="checkbox">22 clips embedded but flagged <code>*</code> (missing contributor metadata — to be resolved)</label></li>
 </ul>
 <hr>
 </section>
@@ -246,42 +256,65 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
+<td>1</td>
+<td>Normal studies across body habitus (obese, COPD, post-CABG)</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Normal LV in obese patient / patient with LVH (body habitus variants)</td>
+</tr>
+<tr class="odd">
 <td>3</td>
-<td>Normal RV (thin free wall, brisk TAPSE); TAPSE M-mode measurement (normal vs reduced)</td>
+<td>Normal RV in A4C (thin free wall, brisk TAPSE); TAPSE M-mode (normal vs reduced); Case 1 (massive PE), Case 3 (ARDS cor pulmonale), Case 4 (RV infarct) loops</td>
 </tr>
 <tr class="even">
 <td>4</td>
-<td>Small posterior effusion; normal pericardium (all windows)</td>
+<td>Subcostal &amp; A4C acquisition for pericardial assessment; normal pericardium in each window; normal hepatic vein flow; small posterior PLAX effusion; acute pericarditis with effusion; myopericarditis; all 6 integration case loops</td>
 </tr>
 <tr class="odd">
 <td>5</td>
-<td>Hepatic vein PW Doppler (normal + congestion); portal vein pulsatility</td>
+<td>Normal IVC + athlete variant; hepatic vein PW Doppler (normal vs congestion); portal vein PW Doppler (monophasic vs pulsatile); venous congestion pattern; all 4 integration case loops</td>
 </tr>
 <tr class="even">
 <td>6</td>
-<td>Absent lung sliding / barcode sign (M-mode); lung point</td>
+<td>Mixed shock state (reduced EF + small IVC); before/after fluid bolus serial exam; Cases 1, 3, 4, 5 loops</td>
 </tr>
 <tr class="odd">
 <td>7</td>
-<td>No clips yet — entire visual layer for abdominal module</td>
+<td>All acquisition slots (PLAX/PSAX/A4C with color Doppler); normal valves library; calcific AS on PLAX + color Doppler turbulent jet; acute AR + chronic AR; acute MR (flail + eccentric) + chronic MR + ischemic MR; MS hockey stick + commissural fusion; TR color jet + CW Doppler for RVSP; Cases 1 and 2 loops</td>
 </tr>
 <tr class="even">
 <td>8</td>
-<td>No clips yet — entire visual layer for DVT module</td>
+<td>BLUE zone anatomy diagram clip; absent lung sliding / barcode sign (M-mode); lung point; BLUE protocol walkthrough; all 4 integration case loops</td>
 </tr>
 <tr class="odd">
 <td>9</td>
-<td>Scenario-specific loops for all integration cases (most currently text-only); before/after serial exam comparison clip</td>
+<td>Entire visual layer — RUQ/LUQ/suprapubic acquisition, bladder volume, normal kidney, FAST findings (positive vs negative), ascites, urinary retention, hydronephrosis grades 1–3, all 4 case loops</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>Entire visual layer — CFV/femoral/popliteal acquisition, normal compression + augmentation, non-compressible CFV (echogenic &amp; anechoic thrombus), partial compressibility, absent augmentation, all 3 case loops</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>Entire visual layer — IJ access (transverse, short-axis, long-axis, wire confirmation), infraclavicular, femoral; pre-procedural + real-time thoracentesis, paracentesis, pericardiocentesis with agitated saline; all 3 case loops</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Rough total still needed:</strong> ~90 clips. Tiered by priority: high (M3, M4, M6, M7 — partially filled, ~35 clips) → low (M1, M2, M5, M8 — single missing slots, ~16 clips) → medium effort but bulk (M9, M10, M11 — entirely empty, ~39 clips).</p>
 </section>
 <section id="metadata-credits-page" class="level3">
 <h3 class="anchored" data-anchor-id="metadata-credits-page">Metadata — credits page</h3>
 <ul class="task-list">
-<li><label><input type="checkbox">Resolve the 9 clips marked <code>*</code> (hyperdynamic LV, mod reduced EF ×2, anterior wall hypokinesia, septal flattening in PE, plethoric IVC, septal dyskinesis, ventricular fibrillation)</label></li>
-<li><label><input type="checkbox">Add two clips in the Google Sheet not yet embedded: <em>Pericardial Effusion vs Fat Pad</em> and <em>Pericardial Tamponade</em> (Module 4)</label></li>
+<li><label><input type="checkbox">Resolve the 22 clips marked <code>*</code> (newly-added Module 2 integration case clips, Module 3 Case 2 clips, Module 4 PLAX/subcostal/Doppler additions, Module 7 severe AS, plus the original 8 unresolved placeholders)</label></li>
+<li><label><input type="checkbox">Add two clips in the Google Sheet not yet sourced or embedded: <em>Pericardial Effusion vs Fat Pad</em> and <em>Pericardial Tamponade</em> (Module 4)</label></li>
 <li><label><input type="checkbox">Add metadata for all future clips to Google Sheet before embedding</label></li>
+</ul>
+</section>
+<section id="unused-files" class="level3">
+<h3 class="anchored" data-anchor-id="unused-files">Unused files</h3>
+<ul class="task-list">
+<li><label><input type="checkbox"><code>constrictive pericarditis.gif</code> and <code>constrictive pericarditis subcostal.gif</code> are in <code>modules/gifs/</code> but no longer referenced (constrictive section dropped from Module 4) — safe to delete</label></li>
 </ul>
 </section>
 <section id="per-module-content-gaps" class="level3">
@@ -289,7 +322,9 @@ ul.task-list li input[type="checkbox"] {
 <ul class="task-list">
 <li><label><input type="checkbox">All modules: Anki deck links (referenced as “link coming soon” throughout)</label></li>
 <li><label><input type="checkbox">All modules: References &amp; further reading sections</label></li>
-<li><label><input type="checkbox">Integration case video slots: replace “Loops for interpretation” with actual clips as they are sourced</label></li>
+<li><label><input type="checkbox">Integration case video slots: replace “Loops for interpretation” with actual clips as they are sourced (see Clips table above)</label></li>
+<li><label><input type="checkbox">Module 6: “Before/after” serial exam comparison clip</label></li>
+<li><label><input type="checkbox">Credits page: Curriculum development section and Acknowledgments</label></li>
 </ul>
 </section>
 <section id="site-infrastructure" class="level3">
@@ -320,8 +355,8 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td><strong>Clip format</strong></td>
-<td>GIF (not MP4)</td>
-<td>Files sourced as GIFs from POCUS Atlas; GIFs autoplay and loop without controls using a plain <code>&lt;img&gt;</code> tag — no conversion step needed</td>
+<td>GIF primary; AVIF accepted</td>
+<td>Files sourced as GIFs from POCUS Atlas; GIFs autoplay and loop without controls using a plain <code>&lt;img&gt;</code> tag. AVIF works identically in modern browsers and is accepted when source material is only available in that format (e.g., mitral inflow PW Doppler clip).</td>
 </tr>
 <tr class="even">
 <td><strong>Clip embedding</strong></td>
@@ -339,29 +374,19 @@ ul.task-list li input[type="checkbox"] {
 <td>Metadata maintained in a shared sheet; credits page generated manually from that sheet and organized by module</td>
 </tr>
 <tr class="odd">
-<td><strong>Curriculum scope</strong></td>
-<td>9 modules, focused basic POCUS only</td>
-<td>Removed Module 7 (valve assessment) and Module 11 (procedural guidance) as beyond the scope of focused basic ultrasound; content trimmed throughout to match</td>
+<td><strong>Normal acquisition clips</strong></td>
+<td>Intentionally duplicated across Modules 1, 2, and 3 acquisition sections</td>
+<td>Each module is designed to be self-contained — a learner reviewing only Module 2 (LV) or Module 3 (RV) should still see the normal reference clips without having to navigate back to Module 1. The few KB cost of duplicate <code>&lt;img&gt;</code> references is worth the pedagogical benefit.</td>
 </tr>
 <tr class="even">
-<td><strong>Module order</strong></td>
-<td>Cardiac (1–5) → Lung/Abdominal/DVT (6–8) → Integration (9)</td>
-<td>Integration placed last so fellows synthesize all prior modules before the capstone cases</td>
-</tr>
-<tr class="odd">
 <td><strong>Module 1 scope</strong></td>
-<td>Acquisition only — normal anatomy section removed</td>
-<td>Normal anatomy is covered within each subsequent module’s normal &amp; variants section; a standalone section in Module 1 duplicated content and added scope</td>
-</tr>
-<tr class="even">
-<td><strong>Module 4 scope</strong></td>
-<td>Effusion and tamponade only</td>
-<td>Constrictive pericarditis, effusive-constrictive, acute pericarditis, and myopericarditis removed — these require advanced Doppler or are primarily clinical/non-echo diagnoses; bedside echo role is limited</td>
+<td>Acquisition + anatomy only — no pathology</td>
+<td>Pericardial content fully moved to Module 4; Module 1 quiz focuses on window/structure identification</td>
 </tr>
 <tr class="odd">
-<td><strong>Module 5 scope</strong></td>
-<td>IVC + VExUS venous congestion framework retained</td>
-<td>VExUS (IVC, hepatic vein, portal vein) kept as it directly changes management decisions around fluid administration and decongestion in the ICU</td>
+<td><strong>Module 4 scope</strong></td>
+<td>Effusion, tamponade, acute pericarditis, myopericarditis — constrictive pericarditis dropped</td>
+<td>Subtitle and intro still reference constrictive disease but no pathology section was written; decision made to scope it out rather than build the section. Two existing <code>constrictive pericarditis*.gif</code> files in <code>modules/gifs/</code> are now orphaned.</td>
 </tr>
 <tr class="even">
 <td><strong>Probe placement diagrams</strong></td>
@@ -376,7 +401,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td><strong>Integration case clips</strong></td>
 <td>Text-only until scenario-matched clips are sourced</td>
-<td>Using a mismatched clip is pedagogically worse than no clip; placeholder callouts preserved so slots are easy to fill</td>
+<td>Using a mismatched clip is pedagogically worse than no clip; placeholder callouts preserved so slots are easy to fill. M2 cases 1–4 and M3 Case 2 now have scenario-matched clips embedded.</td>
 </tr>
 <tr class="odd">
 <td><strong>Git LFS</strong></td>
@@ -610,9 +635,18 @@ ul.task-list li input[type="checkbox"] {
 
   var BASE = getSiteBase();
 
+  function escapeHtml(str) {
+    return str
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
   function renderBot(text) {
+    var escaped = escapeHtml(text);
     // Convert [Label](MODULE:XX) to anchor tags
-    var html = text.replace(
+    var html = escaped.replace(
       /\[([^\]]+)\]\(MODULE:(\d{2})\)/g,
       function (_, label, num) {
         var path = MODULE_PATHS[num];
@@ -708,6 +742,191 @@ ul.task-list li input[type="checkbox"] {
 
     sendBtn.disabled = false;
     input.focus();
+  }
+}());
+</script>
+<!-- POCUS Quiz Widget — injects open-answer forms into each quiz question callout -->
+<!-- Injected into every page via _quarto.yml include-after-body -->
+<style>
+  .quiz-answer-form {
+    margin: 10px 0 12px 0;
+  }
+
+  .quiz-textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 13.5px;
+    font-family: inherit;
+    line-height: 1.5;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.15s;
+    color: #1a1a2e;
+    background: #fff;
+  }
+  .quiz-textarea:focus { border-color: #2780e3; }
+
+  .quiz-form-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 7px;
+  }
+
+  .quiz-submit-btn {
+    background: #2780e3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 16px;
+    font-size: 13.5px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.15s;
+    white-space: nowrap;
+  }
+  .quiz-submit-btn:hover:not(:disabled) { background: #1a68c8; }
+  .quiz-submit-btn:disabled { background: #9ca3af; cursor: not-allowed; }
+
+  .quiz-typing {
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+    padding: 4px 0;
+  }
+  .quiz-typing span {
+    width: 6px;
+    height: 6px;
+    background: #9ca3af;
+    border-radius: 50%;
+    display: inline-block;
+    animation: quiz-bounce 1.1s infinite;
+  }
+  .quiz-typing span:nth-child(2) { animation-delay: 0.18s; }
+  .quiz-typing span:nth-child(3) { animation-delay: 0.36s; }
+  @keyframes quiz-bounce {
+    0%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-5px); }
+  }
+
+  .quiz-feedback {
+    margin-top: 10px;
+    padding: 11px 14px;
+    border-radius: 8px;
+    background: #f0faf4;
+    border: 1px solid #86efac;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #14532d;
+  }
+
+  .quiz-feedback strong { color: #166534; }
+</style>
+
+<script>
+(function () {
+  var WORKER_URL = 'https://ultrasoundguru.codykoress.workers.dev/quiz';
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Each quiz question lives inside a .callout-note body as alternating
+    // <p> (question text) and .callout-caution (answer) siblings.
+    var noteBodies = document.querySelectorAll(
+      '.callout-note .callout-body-container.callout-body'
+    );
+
+    noteBodies.forEach(function (body) {
+      var children = Array.from(body.children);
+
+      children.forEach(function (child, i) {
+        var next = children[i + 1];
+        if (
+          child.tagName === 'P' &&
+          next &&
+          next.classList.contains('callout-caution')
+        ) {
+          injectForm(child, next);
+        }
+      });
+    });
+  });
+
+  function injectForm(questionEl, answerCallout) {
+    var questionText = questionEl.textContent.trim();
+    var answerBodyEl = answerCallout.querySelector('.callout-body-container');
+    if (!answerBodyEl) return;
+
+    // Rename the default "Caution" title to "Reveal answer"
+    var titleEl = answerCallout.querySelector('.callout-title-container');
+    if (titleEl) titleEl.textContent = 'Reveal answer';
+
+    // Strip leading "Answer" label that Quarto renders as bold text
+    var answerText = answerBodyEl.textContent.trim().replace(/^Answer\s*/i, '');
+
+    var formDiv = document.createElement('div');
+    formDiv.className = 'quiz-answer-form';
+    formDiv.innerHTML =
+      '<textarea class="quiz-textarea" placeholder="Type your answer…" rows="3"></textarea>' +
+      '<div class="quiz-form-row">' +
+        '<button class="quiz-submit-btn" type="button">Get Feedback</button>' +
+        '<span class="quiz-typing-slot"></span>' +
+      '</div>' +
+      '<div class="quiz-feedback" style="display:none;"></div>';
+
+    // Insert between the question <p> and the answer callout
+    questionEl.after(formDiv);
+
+    var textarea    = formDiv.querySelector('.quiz-textarea');
+    var btn         = formDiv.querySelector('.quiz-submit-btn');
+    var typingSlot  = formDiv.querySelector('.quiz-typing-slot');
+    var feedbackDiv = formDiv.querySelector('.quiz-feedback');
+
+    btn.addEventListener('click', function () {
+      var userAnswer = textarea.value.trim();
+      if (!userAnswer) { textarea.focus(); return; }
+
+      btn.disabled = true;
+      feedbackDiv.style.display = 'none';
+      typingSlot.innerHTML =
+        '<span class="quiz-typing">' +
+          '<span></span><span></span><span></span>' +
+        '</span>';
+
+      fetch(WORKER_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          question: questionText,
+          correctAnswer: answerText,
+          userAnswer: userAnswer,
+        }),
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          return res.json();
+        })
+        .then(function (data) {
+          typingSlot.innerHTML = '';
+          var feedback = data.feedback || 'No feedback received.';
+          feedbackDiv.innerHTML = feedback
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\n/g, '<br>');
+          feedbackDiv.style.display = 'block';
+        })
+        .catch(function () {
+          typingSlot.innerHTML = '';
+          feedbackDiv.textContent = 'Could not get feedback. Please check your connection and try again.';
+          feedbackDiv.style.display = 'block';
+        })
+        .finally(function () {
+          btn.disabled = false;
+        });
+    });
   }
 }());
 </script>

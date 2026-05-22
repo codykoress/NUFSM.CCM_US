@@ -6,7 +6,25 @@
 //   2. Paste this file into the editor and deploy
 //   3. Add your Anthropic API key: Settings → Variables and Secrets → Add Secret
 //      Name: ANTHROPIC_API_KEY   Value: your sk-ant-... key from console.anthropic.com
-//   4. Copy your Worker's URL and paste it into chatbot-widget.html
+//   4. Add your site's URL: Settings → Variables and Secrets → Add Variable
+//      Name: ALLOWED_ORIGIN   Value: https://your-site-url.com  (no trailing slash)
+//      This restricts the worker to requests from your site only.
+//   5. (Recommended) Add rate limiting: dash.cloudflare.com → Security → WAF → Rate Limiting
+//      Suggested rule: ≤ 20 requests/minute per IP on the worker route.
+//   6. Copy your Worker's URL and paste it into chatbot-widget.html
+//
+// ROUTES:
+//   POST /       — chatbot (conversation history)
+//   POST /quiz   — open-answer quiz grader
+
+const QUIZ_GRADING_PROMPT = `You are a POCUS quiz grader for critical care medicine fellows. You will receive a question, the model answer, and a fellow's typed response.
+
+Your feedback must:
+1. Acknowledge what they got right (be specific)
+2. Identify key concepts that were missed or incomplete
+3. Close with one clinical teaching point
+
+Rules: Be direct and concise — 3–5 sentences total. Do not restate the question. Do not use headers or bullet points. Write in plain prose.`;
 
 const SYSTEM_PROMPT = `You are a POCUS (Point-of-Care Ultrasound) curriculum assistant for the "POCUS for CCM Fellows" website — a training resource for critical care medicine fellows learning bedside ultrasound.
 
@@ -57,30 +75,58 @@ RESPONSE RULES:
 EXAMPLE RESPONSE:
 "Tamponade is covered in [Module 04 — Pericardium](MODULE:04). Look for RV diastolic collapse, RA systolic collapse, and IVC plethora. [Module 06 — Integration](MODULE:06) covers how tamponade fits into the undifferentiated shock framework."`;
 
-const CORS_HEADERS = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "POST, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type",
-};
+// Max request body size — prevents oversized payload abuse
+const MAX_BODY_BYTES = 32 * 1024; // 32 KB
+
+// Returns CORS headers locked to ALLOWED_ORIGIN env var, or "*" if not set.
+// Set ALLOWED_ORIGIN in Worker Settings → Variables to your deployed site URL.
+function corsHeaders(requestOrigin) {
+  var allowed = (typeof ALLOWED_ORIGIN !== "undefined" && ALLOWED_ORIGIN) ? ALLOWED_ORIGIN : "*";
+  var effectiveOrigin = (allowed === "*" || requestOrigin === allowed) ? allowed : null;
+  if (!effectiveOrigin) return {};
+  return {
+    "Access-Control-Allow-Origin": effectiveOrigin === "*" ? "*" : requestOrigin,
+    "Access-Control-Allow-Methods": "POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Vary": "Origin",
+  };
+}
 
 addEventListener("fetch", function (event) {
   event.respondWith(handleRequest(event.request));
 });
 
 async function handleRequest(request) {
+  var origin = request.headers.get("Origin") || "";
+  var cors = corsHeaders(origin);
+
   if (request.method === "OPTIONS") {
-    return new Response(null, { headers: CORS_HEADERS });
+    return new Response(null, { headers: cors });
   }
 
   if (request.method !== "POST") {
     return new Response("Method not allowed", { status: 405 });
   }
 
+  var contentLength = parseInt(request.headers.get("Content-Length") || "0", 10);
+  if (contentLength > MAX_BODY_BYTES) {
+    return new Response("Payload too large", { status: 413, headers: cors });
+  }
+
+  var url = new URL(request.url);
+  if (url.pathname === "/quiz") {
+    return handleQuiz(request, cors);
+  }
+
   let body;
   try {
-    body = await request.json();
+    var raw = await request.text();
+    if (raw.length > MAX_BODY_BYTES) {
+      return new Response("Payload too large", { status: 413, headers: cors });
+    }
+    body = JSON.parse(raw);
   } catch (e) {
-    return new Response("Invalid JSON", { status: 400 });
+    return new Response("Invalid JSON", { status: 400, headers: cors });
   }
 
   const messages = body.messages;
@@ -113,7 +159,7 @@ async function handleRequest(request) {
     var err = await anthropicRes.text();
     return new Response("Upstream error: " + err, {
       status: 502,
-      headers: CORS_HEADERS,
+      headers: cors,
     });
   }
 
@@ -123,6 +169,69 @@ async function handleRequest(request) {
     : "Sorry, I couldn't get a response. Please try again.";
 
   return new Response(JSON.stringify({ text: text }), {
-    headers: Object.assign({ "Content-Type": "application/json" }, CORS_HEADERS),
+    headers: Object.assign({ "Content-Type": "application/json" }, cors),
+  });
+}
+
+async function handleQuiz(request, cors) {
+  let body;
+  try {
+    var raw = await request.text();
+    if (raw.length > MAX_BODY_BYTES) {
+      return new Response("Payload too large", { status: 413, headers: cors });
+    }
+    body = JSON.parse(raw);
+  } catch (e) {
+    return new Response("Invalid JSON", { status: 400, headers: cors });
+  }
+
+  var question = body.question;
+  var correctAnswer = body.correctAnswer;
+  var userAnswer = body.userAnswer;
+
+  if (!question || !correctAnswer || !userAnswer) {
+    return new Response("question, correctAnswer, and userAnswer are required", {
+      status: 400,
+      headers: cors,
+    });
+  }
+
+  var apiKey = typeof ANTHROPIC_API_KEY !== "undefined" ? ANTHROPIC_API_KEY : "";
+
+  var anthropicRes = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: {
+      "x-api-key": apiKey,
+      "anthropic-version": "2023-06-01",
+      "content-type": "application/json",
+    },
+    body: JSON.stringify({
+      model: "claude-haiku-4-5-20251001",
+      max_tokens: 400,
+      system: QUIZ_GRADING_PROMPT,
+      messages: [
+        {
+          role: "user",
+          content: "Question: " + question + "\n\nModel answer: " + correctAnswer + "\n\nFellow's response: " + userAnswer,
+        },
+      ],
+    }),
+  });
+
+  if (!anthropicRes.ok) {
+    var err = await anthropicRes.text();
+    return new Response("Upstream error: " + err, {
+      status: 502,
+      headers: cors,
+    });
+  }
+
+  var data = await anthropicRes.json();
+  var feedback = data.content && data.content[0] && data.content[0].text
+    ? data.content[0].text
+    : "Unable to generate feedback. Please try again.";
+
+  return new Response(JSON.stringify({ feedback: feedback }), {
+    headers: Object.assign({ "Content-Type": "application/json" }, cors),
   });
 }

@@ -1,6 +1,6 @@
 ---
 title: "POCUS for Critical Care Fellows"
-subtitle: "A structured curriculum for bedside echocardiography"
+subtitle: "A structured curriculum for bedside echocardiography."
 ---
 
 ## Welcome
@@ -24,15 +24,55 @@ a quiz to check your understanding.
 
 ## Modules
 
-- [Module 1 — Windows & Image Acquisition](modules/01-windows.qmd)
-- [Module 2 — Left Ventricular Function](modules/02-lv.qmd)
-- [Module 3 — Right Ventricular Function](modules/03-rv.qmd)
-- [Module 4 — Pericardium](modules/04-pericardium.qmd)
-- [Module 5 — IVC & Volume Status](modules/05-ivc.qmd)
-- [Module 6 — Lung Ultrasound](modules/08-lung.qmd)
-- [Module 7 — Abdominal Ultrasound](modules/09-abdominal.qmd)
-- [Module 8 — DVT Compression Ultrasound](modules/10-dvt.qmd)
-- [Module 9 — Shock & Arrest Integration](modules/06-integration.qmd)
+```{=html}
+<div class="module-grid">
+  <a href="modules/01-windows.html" class="module-card">
+    <span class="module-num">Module 01</span>
+    <span class="module-name">Windows &amp; Image Acquisition</span>
+    <span class="module-q">How do I obtain a complete cardiac study at the bedside?</span>
+  </a>
+  <a href="modules/02-lv.html" class="module-card">
+    <span class="module-num">Module 02</span>
+    <span class="module-name">Left Ventricular Function</span>
+    <span class="module-q">Is the LV strong enough to maintain perfusion?</span>
+  </a>
+  <a href="modules/03-rv.html" class="module-card">
+    <span class="module-num">Module 03</span>
+    <span class="module-name">Right Ventricular Function</span>
+    <span class="module-q">Is the RV failing, and why?</span>
+  </a>
+  <a href="modules/04-pericardium.html" class="module-card">
+    <span class="module-num">Module 04</span>
+    <span class="module-name">Pericardium</span>
+    <span class="module-q">Is there fluid? Does it matter hemodynamically?</span>
+  </a>
+  <a href="modules/05-ivc.html" class="module-card">
+    <span class="module-num">Module 05</span>
+    <span class="module-name">IVC &amp; Volume Status</span>
+    <span class="module-q">Is the patient volume responsive?</span>
+  </a>
+  <a href="modules/08-lung.html" class="module-card">
+    <span class="module-num">Module 06</span>
+    <span class="module-name">Lung Ultrasound</span>
+    <span class="module-q">Pneumothorax, edema, or consolidation?</span>
+  </a>
+  <a href="modules/09-abdominal.html" class="module-card">
+    <span class="module-num">Module 07</span>
+    <span class="module-name">Abdominal Ultrasound</span>
+    <span class="module-q">Free fluid? Where — and from what source?</span>
+  </a>
+  <a href="modules/10-dvt.html" class="module-card">
+    <span class="module-num">Module 08</span>
+    <span class="module-name">DVT Compression Ultrasound</span>
+    <span class="module-q">Is there a DVT in this leg?</span>
+  </a>
+  <a href="modules/06-integration.html" class="module-card">
+    <span class="module-num">Module 09</span>
+    <span class="module-name">Shock &amp; Arrest Integration</span>
+    <span class="module-q">Why is this patient in shock — and what do I do next?</span>
+  </a>
+</div>
+```
 
 ## Logbook & assessment
 

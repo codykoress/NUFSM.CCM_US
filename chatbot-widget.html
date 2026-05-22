@@ -217,9 +217,18 @@
 
   var BASE = getSiteBase();
 
+  function escapeHtml(str) {
+    return str
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
   function renderBot(text) {
+    var escaped = escapeHtml(text);
     // Convert [Label](MODULE:XX) to anchor tags
-    var html = text.replace(
+    var html = escaped.replace(
       /\[([^\]]+)\]\(MODULE:(\d{2})\)/g,
       function (_, label, num) {
         var path = MODULE_PATHS[num];
