@@ -11,7 +11,7 @@
 - [x] All 11 modules linked in navbar and home page
 
 ### Module content (written)
-- [x] **Module 1** — Windows & Acquisition: four windows, machine setup, normal anatomy, normal variants, 8-question quiz
+- [x] **Module 1** — Windows & Acquisition: four windows, machine setup, normal anatomy, normal variants, 7-question quiz
 - [x] **Module 2** — Left Ventricular Function: systolic dysfunction, RWMA, Takotsubo, cardiogenic shock, 5-question quiz
 - [x] **Module 3** — Right Ventricular Function: RV strain, D-sign, McConnell's sign, TAPSE, PE, ARDS cor pulmonale, 5-question quiz
 - [x] **Module 4** — Pericardium: effusion sizing, tamponade, pericarditis (constrictive disease scoped out), Doppler assessment, 6-question quiz
@@ -24,7 +24,7 @@
 - [x] **Module 11** — Procedural Guidance: IJ/subclavian/femoral CVC, thoracentesis, paracentesis, pericardiocentesis, 5-question quiz
 
 ### Visual assets
-- [x] Probe placement SVG diagrams (×4) for Module 1: subcostal, PLAX, PSAX (with rotation arrow), apical 4C
+- [x] Probe placement SVG diagrams (×4) for Module 1: subcostal, PLAX, PSAX (with rotation arrow), apical 4C — chest wall redrawn with life-like shading (skin gradients, pec contours, clavicle ridges, nipples on MCL, umbilicus)
 - [x] **55 image clips (54 GIF + 1 AVIF) embedded across Modules 1–8**, distributed as: M1=6, M2=20, M3=9, M4=8, M5=3, M6=2, M7=2, M8=5
 - [x] Normal acquisition clips intentionally duplicated across Modules 1, 2, 3 for module self-containment — learner can study each module standalone
 - [x] GIF source metadata tracked in Google Sheets; credits page populated with contributor names and POCUS Atlas links
@@ -72,7 +72,8 @@
 - [ ] Credits page: Curriculum development section and Acknowledgments
 
 ### Site / infrastructure
-- [ ] Scan logbook and competency assessment tool (referenced on home page — "coming soon")
+- [x] Competency assessment tool — `competency-dashboard.html` (POCUS Competency Registry: fellows × competencies matrix per ACCP/SRLF + LUCC + ACGME 2024; localStorage with JSON/CSV export and GitHub-sync to a private data repo; linked from home page)
+- [ ] Scan logbook for fellows (referenced on home page — "coming soon")
 - [ ] Decide on hosting platform and deploy (GitHub Pages, Quarto Pub, institutional server)
 - [ ] Add `.gitignore` entry for large GIF files if repo size becomes an issue; consider Git LFS
 

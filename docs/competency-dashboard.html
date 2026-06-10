@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POCUS Competency Registry — NUFSM CCM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FAF7F1;
+    --paper-deep: #F2EDE3;
+    --ink: #211B2E;
+    --ink-soft: #5C5470;
+    --rule: #D8D0C2;
+    --nu: #4E2A84;          /* Northwestern purple */
+    --nu-bright: #7C5CBF;
+    --lvl1: #EAE3F4;
+    --lvl2: #CDBBE8;
+    --lvl3: #8A63C4;
+    --lvl4: #4E2A84;
+    --ok: #2E7D5B;
+    --warn: #B3661A;
+    --serif: "Fraunces", Georgia, serif;
+    --sans: "Archivo", "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink);
+    background-image: radial-gradient(circle at 1px 1px, rgba(78,42,132,0.05) 1px, transparent 0);
+    background-size: 26px 26px;
+    min-height: 100vh;
+  }
+
+  /* ---------- header ---------- */
+  header {
+    border-bottom: 3px solid var(--ink);
+    background: var(--paper);
+    padding: 2.2rem 2.5rem 1.4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  header::after {
+    content: "";
+    position: absolute; right: -60px; top: -60px;
+    width: 230px; height: 230px; border-radius: 50%;
+    border: 26px solid var(--nu); opacity: .08; pointer-events: none;
+  }
+  .kicker {
+    font-family: var(--mono); font-size: .72rem; letter-spacing: .22em;
+    text-transform: uppercase; color: var(--nu); font-weight: 600;
+  }
+  h1 {
+    font-family: var(--serif); font-weight: 700; font-size: clamp(1.9rem, 4vw, 3rem);
+    line-height: 1.05; margin: .35rem 0 .5rem; letter-spacing: -.01em;
+  }
+  h1 em { font-style: italic; color: var(--nu); }
+  .subtitle { color: var(--ink-soft); font-size: .92rem; max-width: 62ch; }
+
+  .toolbar {
+    display: flex; gap: .5rem; flex-wrap: wrap; margin-top: 1.2rem; align-items: center;
+  }
+  button, .btn {
+    font-family: var(--sans); font-weight: 600; font-size: .8rem;
+    border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink);
+    padding: .45rem .9rem; cursor: pointer; border-radius: 2px;
+    box-shadow: 2.5px 2.5px 0 var(--ink);
+    transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+  }
+  button:hover { transform: translate(-1px,-1px); box-shadow: 3.5px 3.5px 0 var(--ink); }
+  button:active { transform: translate(1.5px,1.5px); box-shadow: 1px 1px 0 var(--ink); }
+  button.primary { background: var(--nu); color: #fff; border-color: var(--nu); box-shadow: 2.5px 2.5px 0 rgba(33,27,46,.85); }
+  button.ghost { box-shadow: none; border-style: dashed; }
+  .toolbar .spacer { flex: 1; }
+  .savenote { font-family: var(--mono); font-size: .68rem; color: var(--ink-soft); }
+
+  /* ---------- layout ---------- */
+  main { padding: 1.8rem 2.5rem 4rem; max-width: 1500px; margin: 0 auto; }
+  section { margin-bottom: 2.6rem; }
+  h2 {
+    font-family: var(--serif); font-size: 1.35rem; font-weight: 600;
+    display: flex; align-items: baseline; gap: .6rem; margin-bottom: .9rem;
+  }
+  h2 .index { font-family: var(--mono); font-size: .7rem; color: var(--nu); letter-spacing: .15em; }
+
+  /* ---------- stat strip ---------- */
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px,1fr)); gap: 1px; background: var(--ink); border: 1.5px solid var(--ink); }
+  .stat { background: var(--paper); padding: .9rem 1.1rem; }
+  .stat .num { font-family: var(--serif); font-size: 2rem; font-weight: 700; color: var(--nu); line-height: 1; }
+  .stat .lbl { font-family: var(--mono); font-size: .64rem; text-transform: uppercase; letter-spacing: .14em; color: var(--ink-soft); margin-top: .35rem; }
+
+  /* ---------- legend ---------- */
+  .legend { display: flex; flex-wrap: wrap; gap: .9rem 1.4rem; font-size: .76rem; margin: .8rem 0 1rem; color: var(--ink-soft); align-items: center; }
+  .legend .chip { display: inline-flex; align-items: center; gap: .4rem; }
+  .swatch { width: 17px; height: 17px; border: 1.5px solid var(--ink); display: inline-block; border-radius: 2px; }
+  .sw0 { background: repeating-linear-gradient(45deg, transparent, transparent 3px, var(--rule) 3px, var(--rule) 4.5px); }
+  .sw1 { background: var(--lvl1); } .sw2 { background: var(--lvl2); }
+  .sw3 { background: var(--lvl3); } .sw4 { background: var(--lvl4); }
+  .legend .hint { font-family: var(--mono); font-size: .66rem; }
+
+  /* ---------- matrix ---------- */
+  .matrix-wrap { overflow-x: auto; border: 1.5px solid var(--ink); background: var(--paper); box-shadow: 5px 5px 0 rgba(33,27,46,.12); }
+  table.matrix { border-collapse: collapse; width: 100%; font-size: .8rem; }
+  .matrix th, .matrix td { border: 1px solid var(--rule); padding: .4rem .55rem; }
+  .matrix thead th {
+    background: var(--ink); color: var(--paper); font-weight: 600; font-size: .74rem;
+    position: sticky; top: 0; z-index: 2; text-align: center; min-width: 86px;
+  }
+  .matrix thead th:first-child { text-align: left; min-width: 280px; background: var(--ink); }
+  .matrix thead th .yr { display:block; font-family: var(--mono); font-size: .6rem; font-weight: 400; opacity: .75; letter-spacing: .1em; }
+  .matrix thead th button.del {
+    margin-top: .25rem; font-size: .58rem; padding: .05rem .35rem; box-shadow: none;
+    background: transparent; color: var(--paper); border: 1px solid rgba(250,247,241,.4);
+  }
+  .matrix thead th button.del:hover { background: rgba(250,247,241,.15); transform: none; }
+  .domain-row td {
+    background: var(--nu); color: #fff; font-family: var(--serif); font-weight: 600;
+    font-size: .92rem; padding: .5rem .7rem; letter-spacing: .015em;
+  }
+  .domain-row .ref { font-family: var(--mono); font-size: .6rem; font-weight: 400; opacity: .8; margin-left: .6rem; letter-spacing: .05em; }
+  .comp-label { color: var(--ink); }
+  .comp-label .cat { font-family: var(--mono); font-size: .58rem; color: var(--nu); text-transform: uppercase; letter-spacing: .12em; display: block; }
+  td.cell {
+    text-align: center; cursor: pointer; user-select: none; font-family: var(--mono);
+    font-weight: 600; font-size: .78rem; transition: outline .08s ease; outline: 2px solid transparent; outline-offset: -2px;
+  }
+  td.cell:hover { outline-color: var(--nu-bright); }
+  td.l0 { background: repeating-linear-gradient(45deg, transparent, transparent 4px, #E4DDCE 4px, #E4DDCE 6px); color: #B7AE9C; }
+  td.l1 { background: var(--lvl1); color: var(--nu); }
+  td.l2 { background: var(--lvl2); color: var(--nu); }
+  td.l3 { background: var(--lvl3); color: #fff; }
+  td.l4 { background: var(--lvl4); color: #fff; }
+  tr.scan-row td { background: var(--paper-deep); }
+  tr.scan-row td:first-child { font-family: var(--mono); font-size: .68rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: .1em; }
+  td.scan-cell { text-align: center; padding: .25rem; }
+  td.scan-cell input {
+    width: 52px; font-family: var(--mono); font-size: .78rem; text-align: center;
+    border: 1px solid var(--rule); background: #fff; padding: .2rem .1rem; border-radius: 2px;
+  }
+  td.scan-cell .target { display: block; font-family: var(--mono); font-size: .58rem; color: var(--ink-soft); margin-top: .15rem; }
+  td.scan-cell.met input { border-color: var(--ok); background: #EAF4EE; color: var(--ok); font-weight: 600; }
+
+  /* ---------- milestones ---------- */
+  .miles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px,1fr)); gap: 1rem; }
+  .fellow-card { border: 1.5px solid var(--ink); background: var(--paper); box-shadow: 4px 4px 0 rgba(33,27,46,.12); }
+  .fellow-card h3 {
+    font-family: var(--serif); font-size: 1.05rem; padding: .65rem .9rem;
+    border-bottom: 1.5px solid var(--ink); display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .fellow-card h3 .yr { font-family: var(--mono); font-size: .62rem; color: var(--nu); letter-spacing: .12em; }
+  .fellow-card ul { list-style: none; padding: .6rem .9rem .8rem; }
+  .fellow-card li { display: flex; align-items: center; gap: .55rem; padding: .28rem 0; font-size: .8rem; }
+  .fellow-card input[type=checkbox] { width: 15px; height: 15px; accent-color: var(--nu); cursor: pointer; }
+  .fellow-card li.done { color: var(--ok); }
+  .fellow-card textarea {
+    width: calc(100% - 1.8rem); margin: 0 .9rem .9rem; font-family: var(--sans); font-size: .76rem;
+    border: 1px dashed var(--rule); background: transparent; padding: .45rem; min-height: 52px; resize: vertical; border-radius: 2px;
+  }
+  .empty {
+    border: 1.5px dashed var(--nu); padding: 2.2rem; text-align: center; color: var(--ink-soft);
+    font-size: .9rem; background: rgba(78,42,132,.03);
+  }
+  .empty .big { font-family: var(--serif); font-size: 1.3rem; color: var(--ink); display: block; margin-bottom: .4rem; }
+
+  /* ---------- framework footnote ---------- */
+  .framework { font-size: .78rem; color: var(--ink-soft); border-left: 3px solid var(--nu); padding: .8rem 1.1rem; background: rgba(78,42,132,.04); max-width: 880px; }
+  .framework strong { color: var(--ink); }
+  .framework p + p { margin-top: .5rem; }
+
+  /* ---------- dialog ---------- */
+  dialog {
+    border: 2px solid var(--ink); background: var(--paper); padding: 1.6rem 1.8rem;
+    box-shadow: 7px 7px 0 rgba(33,27,46,.25); max-width: 420px; width: 90%;
+    margin: auto; border-radius: 3px;
+  }
+  dialog::backdrop { background: rgba(33,27,46,.45); backdrop-filter: blur(2px); }
+  dialog h3 { font-family: var(--serif); font-size: 1.25rem; margin-bottom: 1rem; }
+  dialog label { display: block; font-size: .74rem; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; margin: .8rem 0 .25rem; color: var(--ink-soft); }
+  dialog input, dialog select {
+    width: 100%; font-family: var(--sans); font-size: .9rem; padding: .45rem .55rem;
+    border: 1.5px solid var(--ink); background: #fff; border-radius: 2px;
+  }
+  dialog .row { display: flex; gap: .6rem; justify-content: flex-end; margin-top: 1.3rem; }
+  .synchelp { font-size: .76rem; color: var(--ink-soft); line-height: 1.5; border-left: 3px solid var(--nu); padding: .5rem .8rem; background: rgba(78,42,132,.05); }
+
+  .toast {
+    position: fixed; bottom: 1.4rem; right: 1.4rem; background: var(--ink); color: var(--paper);
+    font-family: var(--mono); font-size: .74rem; padding: .6rem 1rem; border-radius: 2px;
+    opacity: 0; transform: translateY(8px); transition: all .25s ease; pointer-events: none; z-index: 50;
+  }
+  .toast.show { opacity: 1; transform: translateY(0); }
+
+  @media print {
+    .toolbar, .matrix thead th button.del, .toast { display: none !important; }
+    body { background: #fff; }
+    .matrix-wrap, .fellow-card { box-shadow: none; }
+    header::after { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="kicker">NUFSM &middot; Critical Care Medicine Fellowship</div>
+  <h1>POCUS Competency <em>Registry</em></h1>
+  <p class="subtitle">Longitudinal tracking of fellow image-acquisition and interpretation competence across the five core critical care ultrasound domains, per ACGME 2024 requirements and published consensus standards.</p>
+  <div class="toolbar">
+    <button class="primary" id="btnAddFellow">+ Add Fellow</button>
+    <button id="btnExportCsv">Export CSV</button>
+    <button id="btnExportJson">Backup JSON</button>
+    <button id="btnImportJson">Restore JSON</button>
+    <button id="btnPull">&#8675; Pull</button>
+    <button id="btnPush">&#8673; Push</button>
+    <button class="ghost" id="btnSyncCfg">Sync setup</button>
+    <button class="ghost" onclick="window.print()">Print</button>
+    <span class="spacer"></span>
+    <span class="savenote" id="saveNote">autosaves to this browser</span>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="stats" id="statStrip"></div>
+  </section>
+
+  <section>
+    <h2><span class="index">01</span> Competency Matrix</h2>
+    <div class="legend">
+      <span class="chip"><span class="swatch sw0"></span> 0 — Not assessed</span>
+      <span class="chip"><span class="swatch sw1"></span> 1 — Novice (direct supervision)</span>
+      <span class="chip"><span class="swatch sw2"></span> 2 — Advancing (needs prompting)</span>
+      <span class="chip"><span class="swatch sw3"></span> 3 — Competent (independent)</span>
+      <span class="chip"><span class="swatch sw4"></span> 4 — Entrustable (can teach)</span>
+      <span class="hint">click cell = advance &middot; shift-click = step back</span>
+    </div>
+    <div id="matrixHost"></div>
+  </section>
+
+  <section>
+    <h2><span class="index">02</span> Program Milestones &amp; Notes</h2>
+    <div id="milesHost"></div>
+  </section>
+
+  <section>
+    <h2><span class="index">03</span> Framework Provenance</h2>
+    <div class="framework">
+      <p><strong>Domains</strong> follow the five-module structure of the 2009 ACCP/SRLF consensus statement on competence in critical care ultrasonography (basic echocardiography, lung, pleural, abdominal, vascular), which ACGME program requirements effective July 2024 now mandate for CCM and PCCM fellows, plus procedural guidance.</p>
+      <p><strong>Echo items and gates</strong> follow the LUCC Delphi consensus (CHEST 2022): five standard 2-D windows, qualitative interpretation targets, a minimum of ~30 mentored scans, and a longitudinal arc of introductory training &rarr; mentored formative portfolio &rarr; summative acquisition assessment &rarr; final cognitive assessment. Scan-count targets for the other domains (25 proctored exams each) follow common practice in published fellowship curricula (ATS Scholar 2024 best-practices statement).</p>
+      <p><strong>Scale</strong> is an entrustment scale: a fellow is signed off on a domain when all its items reach &ge;3 and the scan target is met.</p>
+    </div>
+  </section>
+</main>
+
+<dialog id="dlgFellow">
+  <h3>Add Fellow</h3>
+  <form method="dialog">
+    <label for="fName">Name</label>
+    <input id="fName" type="text" placeholder="e.g., J. Rivera" required>
+    <label for="fYear">Cohort</label>
+    <select id="fYear">
+      <option>CCM-1</option><option>CCM-2</option>
+      <option>PCCM-1</option><option>PCCM-2</option><option>PCCM-3</option>
+    </select>
+    <div class="row">
+      <button value="cancel" type="button" onclick="dlgFellow.close()">Cancel</button>
+      <button class="primary" id="fSave" value="default">Save</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="dlgSync">
+  <h3>GitHub Sync</h3>
+  <form method="dialog">
+    <p class="synchelp">Stores the registry as a JSON file in a GitHub repo so you can pull/push it from any browser. Use a <strong>private</strong> repo — the file contains fellow evaluations. Create a fine-grained personal access token scoped to <em>only</em> that repo with <em>Contents: read &amp; write</em>. The token is kept in this browser only.</p>
+    <label for="sRepo">Repository (owner/name)</label>
+    <input id="sRepo" type="text" placeholder="codykoress/pocus-registry-data">
+    <label for="sBranch">Branch</label>
+    <input id="sBranch" type="text" value="main">
+    <label for="sPath">File path</label>
+    <input id="sPath" type="text" value="registry.json">
+    <label for="sToken">Fine-grained personal access token</label>
+    <input id="sToken" type="password" placeholder="github_pat_&hellip;">
+    <div class="row">
+      <button value="cancel" type="button" onclick="dlgSync.close()">Cancel</button>
+      <button class="primary" value="default">Save settings</button>
+    </div>
+  </form>
+</dialog>
+
+<input type="file" id="fileImport" accept=".json" style="display:none">
+<div class="toast" id="toast"></div>
+
+<script>
+/* ================= competency framework ================= */
+const FRAMEWORK = [
+  {
+    id: "echo", name: "Basic Critical Care Echocardiography", ref: "LUCC Delphi · ACCP/SRLF", scanTarget: 30,
+    items: [
+      { id: "plax",  cat: "Acquisition",    label: "Parasternal long-axis (PLAX)" },
+      { id: "psax",  cat: "Acquisition",    label: "Parasternal short-axis, mid-papillary (PSAX)" },
+      { id: "a4c",   cat: "Acquisition",    label: "Apical 4-chamber (A4C)" },
+      { id: "sc4c",  cat: "Acquisition",    label: "Subcostal 4-chamber" },
+      { id: "ivcax", cat: "Acquisition",    label: "IVC long-axis" },
+      { id: "lvfn",  cat: "Interpretation", label: "Qualitative LV systolic function (hyperdynamic → severely reduced)" },
+      { id: "rvfn",  cat: "Interpretation", label: "RV dilation / acute cor pulmonale (RV:LV, septal flattening)" },
+      { id: "peri",  cat: "Interpretation", label: "Pericardial effusion & tamponade physiology" },
+      { id: "ivcin", cat: "Interpretation", label: "IVC size & respiratory variation (preload assessment)" },
+      { id: "valv",  cat: "Interpretation", label: "Gross valvular pathology — recognize & refer for formal echo" },
+      { id: "shock", cat: "Integration",    label: "Shock categorization & integration with clinical data" }
+    ]
+  },
+  {
+    id: "lung", name: "Lung & Pleural Ultrasound", ref: "ACCP/SRLF modules 1–2", scanTarget: 25,
+    items: [
+      { id: "zones", cat: "Acquisition",    label: "Systematic multi-zone exam (anterior / lateral / posterolateral)" },
+      { id: "ptx",   cat: "Interpretation", label: "Lung sliding, lung point, M-mode — pneumothorax" },
+      { id: "blines",cat: "Interpretation", label: "A-line vs B-line profiles / interstitial syndrome" },
+      { id: "effus", cat: "Interpretation", label: "Pleural effusion — identification & quantification" },
+      { id: "consol",cat: "Interpretation", label: "Consolidation vs atelectasis" }
+    ]
+  },
+  {
+    id: "abd", name: "Abdominal Ultrasound", ref: "ACCP/SRLF module 3", scanTarget: 25,
+    items: [
+      { id: "fluid", cat: "Interpretation", label: "Free fluid exam (RUQ / LUQ / pelvis)" },
+      { id: "bladder", cat: "Interpretation", label: "Bladder volume / urinary retention assessment" },
+      { id: "hydro", cat: "Interpretation", label: "Hydronephrosis screen" }
+    ]
+  },
+  {
+    id: "vasc", name: "Vascular Diagnostic Ultrasound", ref: "ACCP/SRLF module 4", scanTarget: 25,
+    items: [
+      { id: "dvtfem", cat: "Acquisition",    label: "Compression DVT exam — common femoral region" },
+      { id: "dvtpop", cat: "Acquisition",    label: "Compression DVT exam — popliteal region" },
+      { id: "preccann", cat: "Interpretation", label: "Pre-cannulation vessel assessment (patency, anatomy)" }
+    ]
+  },
+  {
+    id: "proc", name: "Procedural Guidance", ref: "ACGME 2024 · program requirement", scanTarget: 10,
+    items: [
+      { id: "cvcij",  cat: "Procedure", label: "Real-time US-guided CVC — internal jugular" },
+      { id: "cvcfem", cat: "Procedure", label: "Real-time US-guided CVC — femoral" },
+      { id: "art",    cat: "Procedure", label: "US-guided arterial line" },
+      { id: "piv",    cat: "Procedure", label: "US-guided peripheral IV" },
+      { id: "marking",cat: "Procedure", label: "Thoracentesis / paracentesis site marking" }
+    ]
+  }
+];
+
+const MILESTONES = [
+  { id: "intro",     label: "Introductory course completed" },
+  { id: "formative", label: "Mentored formative portfolio complete" },
+  { id: "summative", label: "Summative acquisition assessment passed" },
+  { id: "cognitive", label: "Final cognitive assessment passed" }
+];
+
+const LS_KEY = "nufsm-pocus-registry-v1";
+
+/* ================= state ================= */
+let state = load();
+function load() {
+  try { const raw = localStorage.getItem(LS_KEY); if (raw) return JSON.parse(raw); } catch (e) {}
+  return { fellows: [] };
+}
+function save() {
+  localStorage.setItem(LS_KEY, JSON.stringify(state));
+  const n = document.getElementById("saveNote");
+  n.textContent = "saved " + new Date().toLocaleTimeString();
+}
+function newFellow(name, year) {
+  return { id: "f" + Date.now(), name, year, levels: {}, scans: {}, milestones: {}, notes: "" };
+}
+
+/* ================= rendering ================= */
+const matrixHost = document.getElementById("matrixHost");
+const milesHost  = document.getElementById("milesHost");
+
+function render() { renderStats(); renderMatrix(); renderMilestones(); }
+
+function renderStats() {
+  const totalItems = FRAMEWORK.reduce((s,d) => s + d.items.length, 0);
+  const fl = state.fellows;
+  let competentCells = 0, totalCells = fl.length * totalItems, scansLogged = 0, signedOff = 0;
+  fl.forEach(f => {
+    FRAMEWORK.forEach(d => {
+      const domainDone = d.items.every(it => (f.levels[d.id + "." + it.id] || 0) >= 3) && (f.scans[d.id] || 0) >= d.scanTarget;
+      if (domainDone) signedOff++;
+      d.items.forEach(it => { if ((f.levels[d.id + "." + it.id] || 0) >= 3) competentCells++; });
+      scansLogged += f.scans[d.id] || 0;
+    });
+  });
+  const pct = totalCells ? Math.round(100 * competentCells / totalCells) : 0;
+  document.getElementById("statStrip").innerHTML = `
+    <div class="stat"><div class="num">${fl.length}</div><div class="lbl">Fellows tracked</div></div>
+    <div class="stat"><div class="num">${pct}%</div><div class="lbl">Items at competent (≥3)</div></div>
+    <div class="stat"><div class="num">${scansLogged}</div><div class="lbl">Proctored scans logged</div></div>
+    <div class="stat"><div class="num">${signedOff}<span style="font-size:1rem;color:var(--ink-soft)">/${fl.length * FRAMEWORK.length || 0}</span></div><div class="lbl">Domain sign-offs complete</div></div>`;
+}
+
+function renderMatrix() {
+  if (!state.fellows.length) {
+    matrixHost.innerHTML = `<div class="empty"><span class="big">No fellows yet.</span>Add your first fellow to start the registry — each gets a column in the matrix and a milestone card below.</div>`;
+    return;
+  }
+  let html = `<div class="matrix-wrap"><table class="matrix"><thead><tr><th>Competency</th>`;
+  state.fellows.forEach(f => {
+    html += `<th>${esc(f.name)}<span class="yr">${esc(f.year)}</span><button class="del" data-del="${f.id}">remove</button></th>`;
+  });
+  html += `</tr></thead><tbody>`;
+  FRAMEWORK.forEach(d => {
+    html += `<tr class="domain-row"><td colspan="${state.fellows.length + 1}">${d.name}<span class="ref">${d.ref}</span></td></tr>`;
+    d.items.forEach(it => {
+      html += `<tr><td class="comp-label"><span class="cat">${it.cat}</span>${it.label}</td>`;
+      state.fellows.forEach(f => {
+        const key = d.id + "." + it.id;
+        const lvl = f.levels[key] || 0;
+        html += `<td class="cell l${lvl}" data-f="${f.id}" data-k="${key}" title="${esc(f.name)} — ${it.label}">${lvl || "·"}</td>`;
+      });
+      html += `</tr>`;
+    });
+    html += `<tr class="scan-row"><td>Proctored scans — target ${d.scanTarget}</td>`;
+    state.fellows.forEach(f => {
+      const n = f.scans[d.id] || 0;
+      html += `<td class="scan-cell ${n >= d.scanTarget ? "met" : ""}"><input type="number" min="0" value="${n}" data-f="${f.id}" data-d="${d.id}"><span class="target">${n >= d.scanTarget ? "✓ target met" : "of " + d.scanTarget}</span></td>`;
+    });
+    html += `</tr>`;
+  });
+  html += `</tbody></table></div>`;
+  matrixHost.innerHTML = html;
+
+  matrixHost.querySelectorAll("td.cell").forEach(td => {
+    td.addEventListener("click", e => {
+      const f = state.fellows.find(x => x.id === td.dataset.f);
+      const cur = f.levels[td.dataset.k] || 0;
+      f.levels[td.dataset.k] = e.shiftKey ? Math.max(0, cur - 1) : Math.min(4, cur + 1);
+      save(); render();
+    });
+  });
+  matrixHost.querySelectorAll("td.scan-cell input").forEach(inp => {
+    inp.addEventListener("change", () => {
+      const f = state.fellows.find(x => x.id === inp.dataset.f);
+      f.scans[inp.dataset.d] = Math.max(0, parseInt(inp.value || "0", 10));
+      save(); render();
+    });
+  });
+  matrixHost.querySelectorAll("button.del").forEach(b => {
+    b.addEventListener("click", () => {
+      const f = state.fellows.find(x => x.id === b.dataset.del);
+      if (confirm(`Remove ${f.name} and all their records?`)) {
+        state.fellows = state.fellows.filter(x => x.id !== f.id);
+        save(); render(); toast("Fellow removed");
+      }
+    });
+  });
+}
+
+function renderMilestones() {
+  if (!state.fellows.length) { milesHost.innerHTML = ""; return; }
+  let html = `<div class="miles-grid">`;
+  state.fellows.forEach(f => {
+    html += `<div class="fellow-card"><h3>${esc(f.name)}<span class="yr">${esc(f.year)}</span></h3><ul>`;
+    MILESTONES.forEach(m => {
+      const done = !!f.milestones[m.id];
+      html += `<li class="${done ? "done" : ""}"><input type="checkbox" ${done ? "checked" : ""} data-f="${f.id}" data-m="${m.id}">${m.label}</li>`;
+    });
+    html += `</ul><textarea placeholder="Notes — remediation plans, assessment dates…" data-f="${f.id}">${esc(f.notes)}</textarea></div>`;
+  });
+  html += `</div>`;
+  milesHost.innerHTML = html;
+
+  milesHost.querySelectorAll("input[type=checkbox]").forEach(cb => {
+    cb.addEventListener("change", () => {
+      const f = state.fellows.find(x => x.id === cb.dataset.f);
+      f.milestones[cb.dataset.m] = cb.checked;
+      save(); renderMilestones(); renderStats();
+    });
+  });
+  milesHost.querySelectorAll("textarea").forEach(ta => {
+    ta.addEventListener("change", () => {
+      const f = state.fellows.find(x => x.id === ta.dataset.f);
+      f.notes = ta.value; save();
+    });
+  });
+}
+
+/* ================= add fellow ================= */
+const dlg = document.getElementById("dlgFellow");
+document.getElementById("btnAddFellow").addEventListener("click", () => {
+  document.getElementById("fName").value = "";
+  dlg.showModal();
+});
+dlg.addEventListener("close", () => {
+  if (dlg.returnValue !== "default") return;
+  const name = document.getElementById("fName").value.trim();
+  if (!name) return;
+  state.fellows.push(newFellow(name, document.getElementById("fYear").value));
+  save(); render(); toast("Fellow added");
+});
+
+/* ================= export / import ================= */
+document.getElementById("btnExportJson").addEventListener("click", () => {
+  download("nufsm-pocus-registry-" + today() + ".json", JSON.stringify(state, null, 2), "application/json");
+  toast("JSON backup downloaded");
+});
+document.getElementById("btnImportJson").addEventListener("click", () => document.getElementById("fileImport").click());
+document.getElementById("fileImport").addEventListener("change", e => {
+  const file = e.target.files[0]; if (!file) return;
+  const r = new FileReader();
+  r.onload = () => {
+    try {
+      const data = JSON.parse(r.result);
+      if (!Array.isArray(data.fellows)) throw new Error("bad shape");
+      state = data; save(); render(); toast("Registry restored");
+    } catch (err) { toast("Import failed — not a valid backup"); }
+  };
+  r.readAsText(file);
+  e.target.value = "";
+});
+document.getElementById("btnExportCsv").addEventListener("click", () => {
+  const rows = [["Fellow","Cohort","Domain","Category","Competency","Level (0–4)"]];
+  state.fellows.forEach(f => FRAMEWORK.forEach(d => {
+    d.items.forEach(it => rows.push([f.name, f.year, d.name, it.cat, it.label, f.levels[d.id + "." + it.id] || 0]));
+    rows.push([f.name, f.year, d.name, "Scans", "Proctored scan count (target " + d.scanTarget + ")", f.scans[d.id] || 0]);
+    MILESTONES.forEach(m => rows.push([f.name, f.year, "Program milestones", "Milestone", m.label, f.milestones[m.id] ? 1 : 0]));
+  }));
+  const csv = rows.map(r => r.map(c => `"${String(c).replace(/"/g, '""')}"`).join(",")).join("\r\n");
+  download("nufsm-pocus-registry-" + today() + ".csv", csv, "text/csv");
+  toast("CSV downloaded");
+});
+
+/* ================= GitHub sync ================= */
+const SYNC_KEY = "nufsm-pocus-sync-v1";
+let syncCfg = (() => { try { return JSON.parse(localStorage.getItem(SYNC_KEY)) || {}; } catch (e) { return {}; } })();
+
+const dlgSync = document.getElementById("dlgSync");
+document.getElementById("btnSyncCfg").addEventListener("click", () => {
+  document.getElementById("sRepo").value = syncCfg.repo || "";
+  document.getElementById("sBranch").value = syncCfg.branch || "main";
+  document.getElementById("sPath").value = syncCfg.path || "registry.json";
+  document.getElementById("sToken").value = syncCfg.token || "";
+  dlgSync.showModal();
+});
+dlgSync.addEventListener("close", () => {
+  if (dlgSync.returnValue !== "default") return;
+  syncCfg = {
+    repo: document.getElementById("sRepo").value.trim(),
+    branch: document.getElementById("sBranch").value.trim() || "main",
+    path: document.getElementById("sPath").value.trim() || "registry.json",
+    token: document.getElementById("sToken").value.trim()
+  };
+  localStorage.setItem(SYNC_KEY, JSON.stringify(syncCfg));
+  toast("Sync settings saved");
+});
+
+function syncReady() {
+  if (syncCfg.repo && syncCfg.token) return true;
+  toast("Set up GitHub sync first");
+  document.getElementById("btnSyncCfg").click();
+  return false;
+}
+function ghContentsUrl(withRef) {
+  const path = syncCfg.path.split("/").map(encodeURIComponent).join("/");
+  return `https://api.github.com/repos/${syncCfg.repo}/contents/${path}` + (withRef ? `?ref=${encodeURIComponent(syncCfg.branch)}` : "");
+}
+function ghHeaders() {
+  return { "Authorization": "Bearer " + syncCfg.token, "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" };
+}
+
+document.getElementById("btnPush").addEventListener("click", async () => {
+  if (!syncReady()) return;
+  try {
+    toast("Pushing…");
+    let sha;
+    const probe = await fetch(ghContentsUrl(true), { headers: ghHeaders() });
+    if (probe.ok) sha = (await probe.json()).sha;
+    else if (probe.status !== 404) throw new Error("GitHub " + probe.status + " — check repo name and token");
+    const body = {
+      message: "POCUS registry update " + new Date().toISOString().slice(0, 16).replace("T", " "),
+      content: b64encode(JSON.stringify(state, null, 2)),
+      branch: syncCfg.branch
+    };
+    if (sha) body.sha = sha;
+    const put = await fetch(ghContentsUrl(false), { method: "PUT", headers: ghHeaders(), body: JSON.stringify(body) });
+    if (!put.ok) throw new Error("GitHub " + put.status + " — check branch and token scope (Contents: read & write)");
+    document.getElementById("saveNote").textContent = "pushed to GitHub " + new Date().toLocaleTimeString();
+    toast("Pushed to GitHub ✓");
+  } catch (err) { toast("Push failed: " + err.message); }
+});
+
+document.getElementById("btnPull").addEventListener("click", async () => {
+  if (!syncReady()) return;
+  try {
+    toast("Pulling…");
+    const res = await fetch(ghContentsUrl(true), { headers: ghHeaders() });
+    if (res.status === 404) { toast("No registry file in that repo yet — Push first"); return; }
+    if (!res.ok) throw new Error("GitHub " + res.status + " — check repo name and token");
+    const data = JSON.parse(b64decode((await res.json()).content));
+    if (!Array.isArray(data.fellows)) throw new Error("file is not a registry backup");
+    if (state.fellows.length && !confirm("Replace the data in this browser with the GitHub copy?")) return;
+    state = data; save(); render();
+    toast("Pulled from GitHub ✓");
+  } catch (err) { toast("Pull failed: " + err.message); }
+});
+
+function b64encode(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = ""; bytes.forEach(b => bin += String.fromCharCode(b));
+  return btoa(bin);
+}
+function b64decode(b64) {
+  const bin = atob(b64.replace(/\s/g, ""));
+  return new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0)));
+}
+
+/* ================= utils ================= */
+function esc(s) { return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function today() { return new Date().toISOString().slice(0, 10); }
+function download(name, content, type) {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([content], { type }));
+  a.download = name; a.click(); URL.revokeObjectURL(a.href);
+}
+let toastTimer;
+function toast(msg) {
+  const t = document.getElementById("toast");
+  t.textContent = msg; t.classList.add("show");
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove("show"), 2200);
+}
+
+render();
+</script>
+</body>
+</html>

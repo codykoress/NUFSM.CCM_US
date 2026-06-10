@@ -76,4 +76,6 @@ a quiz to check your understanding.
 
 ## Logbook & assessment
 
-*Scan logbook and competency assessment links coming soon.*
+[**POCUS Competency Registry**](competency-dashboard.html) — faculty tool for tracking each fellow's competency levels, proctored scan counts, and program milestones across the five core critical care ultrasound domains (per the 2009 ACCP/SRLF consensus, the LUCC Delphi statement, and ACGME 2024 requirements).
+
+*Scan logbook for fellows coming soon.*

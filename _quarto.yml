@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - competency-dashboard.html
 
 website:
   title: "POCUS for CCM Fellows"

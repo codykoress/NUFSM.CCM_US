@@ -76,7 +76,7 @@ See `roadmap.md` for the full breakdown. Top priorities:
 - **~90 clips still needed** — tiered: M3/M4/M6/M7 high priority (~35), M9/M10/M11 bulk (~39), M1/M2/M5/M8 low (~16)
 - Resolve 22 clips marked `*` in credits
 - Add Anki deck links and References sections to all modules
-- Scan logbook and competency tool (referenced on home page as "coming soon")
+- Scan logbook for fellows (competency tool done — `competency-dashboard.html`, linked from home page; data syncs to a private GitHub repo, never commit registry data here)
 - Decide hosting platform (GitHub Pages, Quarto Pub, or institutional server)
 
 ---
