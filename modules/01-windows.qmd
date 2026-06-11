@@ -42,7 +42,7 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 ### Subcostal four-chamber view
 
 ::: {.callout-tip}
-**Video slot:** Subcostal four-chamber acquisition — probe position, indicator orientation, fanning technique, optimization tips.
+Subcostal four-chamber acquisition — probe position, indicator orientation, fanning technique, optimization tips.
 
 <img src="gifs/normal subcostal view.gif" style="width:100%; border-radius:4px;" alt="Normal subcostal four-chamber view"/>
 :::
@@ -79,7 +79,7 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 ### Parasternal long axis
 
 ::: {.callout-tip}
-**Video slot:** Parasternal long axis acquisition — rib interspace selection, indicator toward the right shoulder, tilting to optimize the LV long axis.
+Parasternal long axis acquisition — rib interspace selection, indicator toward the right shoulder, tilting to optimize the LV long axis.
 
 <img src="gifs/Normal Parasternal Long Axis (PLAX) View.gif" style="width:100%; border-radius:4px;" alt="Normal parasternal long axis view"/>
 :::
@@ -116,7 +116,6 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 ### Parasternal short axis
 
 ::: {.callout-tip}
-**Video slots:**
 
 - PSAX at the aortic valve level — the Mercedes-Benz sign, RVOT, pulmonary valve
 
@@ -181,7 +180,7 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 ### Apical four-chamber
 
 ::: {.callout-tip}
-**Video slot:** Apical four-chamber acquisition — finding the PMI, lateral decubitus positioning, depth adjustment to bring the apex to the top.
+Apical four-chamber acquisition — finding the PMI, lateral decubitus positioning, depth adjustment to bring the apex to the top.
 
 <img src="gifs/apical+4+normal.gif" style="width:100%; border-radius:4px;" alt="Normal apical four-chamber view"/>
 :::

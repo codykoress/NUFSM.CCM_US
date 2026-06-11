@@ -36,7 +36,7 @@ Lung ultrasound is more accurate than chest X-ray for detecting pneumothorax, pl
 ### Probe placement — the BLUE zones
 
 ::: {.callout-tip}
-**Video slot:** BLUE zone anatomy — upper BLUE point, lower BLUE point, PLAPS point on a supine patient.
+BLUE zone anatomy — upper BLUE point, lower BLUE point, PLAPS point on a supine patient.
 :::
 
 **Upper BLUE point:** Upper third of the anterior chest, between the clavicle and the nipple line, midclavicular.
@@ -56,7 +56,7 @@ Place the probe perpendicular to the ribs with the indicator toward the patient'
 ## 3. Normal & normal variants
 
 ::: {.callout-tip}
-**Video slots:** Normal lung sliding — the "seashore sign" on M-mode; A-lines; the bat sign.
+Normal lung sliding — the "seashore sign" on M-mode; A-lines; the bat sign.
 
 <img src="gifs/Normal Lung Sliding.gif" style="width:100%; border-radius:4px;" alt="Normal lung sliding"/>
 
@@ -86,7 +86,6 @@ In the apneic or intubated patient, cardiac pulsations transmitted through the l
 ### B-lines (interstitial syndrome)
 
 ::: {.callout-tip}
-**Video slots:**
 - Single B-line vs multiple confluent B-lines
 - Bilateral anterior B-lines — cardiogenic pulmonary edema pattern
 - Focal unilateral B-lines — pneumonia or contusion pattern
@@ -125,7 +124,6 @@ B-lines are vertical, laser-like artifacts that:
 ### Pleural effusion
 
 ::: {.callout-tip}
-**Video slots:**
 - Anechoic effusion at the PLAPS point — "quad sign"
 - Sinusoid sign on M-mode
 - Echogenic effusion (exudate, hemothorax)
@@ -161,7 +159,6 @@ Pleural effusion appears as an anechoic (or hypoechoic) space between the viscer
 ### Pneumothorax
 
 ::: {.callout-tip}
-**Video slots:**
 - Absent lung sliding — the "stratosphere" or "barcode" sign on M-mode
 - Lung point — the transition from absent to present sliding
 - Normal sliding for comparison
@@ -192,7 +189,6 @@ Pneumothorax separates the pleural layers with air, eliminating lung sliding.
 ### Consolidation
 
 ::: {.callout-tip}
-**Video slots:**
 - Hepatization — tissue-like echogenicity replacing aerated lung
 - Dynamic air bronchograms — moving bright foci within consolidation
 - Static air bronchograms — fixed bright foci
@@ -230,7 +226,7 @@ When lung loses air, it becomes echogenic and tissue-like ("hepatization" — lo
 *A structured diagnostic algorithm for acute respiratory failure.*
 
 ::: {.callout-tip}
-**Video slot:** BLUE protocol in action — anterior upper and lower zones, PLAPS point, systematic assessment.
+BLUE protocol in action — anterior upper and lower zones, PLAPS point, systematic assessment.
 :::
 
 The BLUE protocol (Lichtenstein & Mezière, 2008) uses lung ultrasound findings to identify the cause of acute respiratory failure with >90% accuracy.
@@ -287,7 +283,7 @@ The BLUE protocol (Lichtenstein & Mezière, 2008) uses lung ultrasound findings 
 Lung ultrasound — anterior and lateral zones bilaterally, plus cardiac echo.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**
@@ -306,7 +302,7 @@ Bilateral homogeneous anterior B-lines + reduced EF + hypertension = hypertensiv
 Immediate lung ultrasound — bilateral anterior chest.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**
@@ -325,7 +321,7 @@ Mainstem intubation vs left pneumothorax. The clinical context (just intubated, 
 Extended FAST (eFAST) — bilateral anterior lung assessment.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**
@@ -344,7 +340,7 @@ Right pneumothorax confirmed by lung point. The hemodynamically stable patient w
 Lung ultrasound — all zones bilaterally, PLAPS point.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**

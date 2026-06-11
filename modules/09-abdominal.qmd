@@ -33,7 +33,7 @@ Use a **curvilinear (low-frequency, 2–5 MHz) probe** for all abdominal windows
 ### Right upper quadrant — Morrison's pouch
 
 ::: {.callout-tip}
-**Video slot:** RUQ acquisition — hepatorenal interface, fan through Morrison's pouch, assess for free fluid.
+RUQ acquisition — hepatorenal interface, fan through Morrison's pouch, assess for free fluid.
 :::
 
 **Probe placement:** Probe in the right mid-axillary line, 8th–11th intercostal space, indicator toward the patient's head. Fan through the hepatorenal interface (Morrison's pouch) — the potential space between the liver and right kidney.
@@ -47,7 +47,7 @@ Use a **curvilinear (low-frequency, 2–5 MHz) probe** for all abdominal windows
 ### Left upper quadrant — splenorenal space
 
 ::: {.callout-tip}
-**Video slot:** LUQ acquisition — splenorenal interface, subphrenic space, left paracolic gutter.
+LUQ acquisition — splenorenal interface, subphrenic space, left paracolic gutter.
 :::
 
 **Probe placement:** Left posterior axillary line, 8th–11th intercostal space, indicator toward the head. This window is more posterior than the RUQ view — a common error is imaging too anteriorly and missing the spleen.
@@ -61,7 +61,7 @@ Use a **curvilinear (low-frequency, 2–5 MHz) probe** for all abdominal windows
 ### Suprapubic — pelvis
 
 ::: {.callout-tip}
-**Video slot:** Suprapubic acquisition — bladder as acoustic window, free fluid in the pouch of Douglas (female) or rectovesical space (male), transverse and sagittal planes.
+Suprapubic acquisition — bladder as acoustic window, free fluid in the pouch of Douglas (female) or rectovesical space (male), transverse and sagittal planes.
 :::
 
 **Probe placement:** Suprapubic, just above the symphysis pubis, indicator to the patient's right (transverse) or head (sagittal). The bladder serves as an acoustic window to the posterior pelvic structures.
@@ -83,7 +83,7 @@ Use a **curvilinear (low-frequency, 2–5 MHz) probe** for all abdominal windows
 ### Bladder — transverse and sagittal
 
 ::: {.callout-tip}
-**Video slot:** Bladder assessment — full bladder as an anechoic structure, volume estimation, wall assessment.
+Bladder assessment — full bladder as an anechoic structure, volume estimation, wall assessment.
 :::
 
 **Probe placement:** Suprapubic, transverse then sagittal. The bladder appears as a well-defined anechoic structure posterior to the symphysis. Measure three dimensions: transverse (width), anteroposterior (depth), and craniocaudal (height). Bladder volume (mL) ≈ 0.52 × width × depth × height (in cm). Some machines calculate this automatically.
@@ -95,7 +95,7 @@ Use a **curvilinear (low-frequency, 2–5 MHz) probe** for all abdominal windows
 ### Kidneys — longitudinal
 
 ::: {.callout-tip}
-**Video slot:** Right and left kidney — normal cortex and collecting system vs hydronephrosis grades.
+Right and left kidney — normal cortex and collecting system vs hydronephrosis grades.
 :::
 
 **Probe placement:** Coronal plane, similar to FAST views but oriented to the kidneys. Right kidney: right mid-axillary line, indicator up. Left kidney: left posterior axillary line, indicator up. Obtain a longitudinal image of the entire kidney — cortex, medullary pyramids, and collecting system (renal pelvis and calyces).
@@ -107,7 +107,7 @@ Use a **curvilinear (low-frequency, 2–5 MHz) probe** for all abdominal windows
 ## 3. Normal & normal variants
 
 ::: {.callout-tip}
-**Video slots:** Normal FAST exam — no free fluid at each window. Normal kidney. Normal bladder.
+Normal FAST exam — no free fluid at each window. Normal kidney. Normal bladder.
 :::
 
 ### Normal FAST exam
@@ -135,7 +135,6 @@ Small amounts of fat around the liver and mesentery can mimic minimal free fluid
 ### Free fluid — traumatic (hemoperitoneum)
 
 ::: {.callout-tip}
-**Video slots:**
 - Anechoic free fluid in Morrison's pouch
 - Moderate-large free fluid in the pelvis
 - Echogenic free fluid — acute blood
@@ -163,7 +162,7 @@ In trauma, any free fluid is assumed to be blood. Acute hemoperitoneum may be an
 ### Free fluid — non-traumatic
 
 ::: {.callout-tip}
-**Video slot:** Ascites — large volume anechoic free fluid surrounding bowel loops, "floating" bowel.
+Ascites — large volume anechoic free fluid surrounding bowel loops, "floating" bowel.
 :::
 
 In the non-trauma ICU patient, free fluid may represent:
@@ -183,7 +182,6 @@ In the non-trauma ICU patient, free fluid may represent:
 ### Urinary retention and bladder assessment
 
 ::: {.callout-tip}
-**Video slots:**
 - Massively distended bladder — large anechoic structure filling the pelvis
 - Bladder volume calculation with three-plane measurement
 :::
@@ -203,7 +201,6 @@ A distended bladder (>300 mL post-void residual) in a patient with reduced consc
 ### Hydronephrosis
 
 ::: {.callout-tip}
-**Video slots:**
 - Grade 1 hydronephrosis — mild dilation of the renal pelvis only
 - Grade 2 — dilation of pelvis and calyces, preserved cortex
 - Grade 3 — severe dilation, thinned cortex
@@ -242,7 +239,7 @@ Hydronephrosis is dilation of the renal collecting system from ureteral obstruct
 Immediate FAST exam as part of the primary survey.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**
@@ -261,7 +258,7 @@ Positive FAST with hemodynamic instability = operative intervention. Do not take
 Renal ultrasound — bilateral kidneys.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**
@@ -280,7 +277,7 @@ Obstructed, infected right kidney — pyonephrosis. Antibiotics alone are insuff
 Bladder ultrasound.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**
@@ -299,7 +296,7 @@ Urinary retention causing agitation and delirium in a post-operative elderly mal
 FAST exam with attention to the pelvic view, and immediate beta-hCG.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**

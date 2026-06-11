@@ -29,7 +29,7 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. RV assessment 
 ### Apical four-chamber — standard and RV-focused
 
 ::: {.callout-tip}
-**Video slot:** Apical four-chamber for RV assessment — RV:LV ratio, free wall motion, TAPSE measurement.
+Apical four-chamber for RV assessment — RV:LV ratio, free wall motion, TAPSE measurement.
 
 <img src="gifs/apical+4+normal.gif" style="width:100%; border-radius:4px;" alt="Normal apical four-chamber — RV:LV comparison"/>
 :::
@@ -48,7 +48,7 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. RV assessment 
 ### Parasternal short axis — mid-ventricular level
 
 ::: {.callout-tip}
-**Video slot:** PSAX for D-sign — normal circular LV vs pressure-overloaded D-shape.
+PSAX for D-sign — normal circular LV vs pressure-overloaded D-shape.
 
 <img src="gifs/Normal Parasternal Short Axis View.gif" style="width:100%; border-radius:4px;" alt="Normal PSAX — circular LV for comparison"/>
 :::
@@ -64,7 +64,7 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. RV assessment 
 ### Parasternal long axis — RV outflow
 
 ::: {.callout-tip}
-**Video slot:** PLAX with attention to RV — RV dilation encroaching on the LV, RVOT assessment.
+PLAX with attention to RV — RV dilation encroaching on the LV, RVOT assessment.
 
 <img src="gifs/Normal Parasternal Long Axis (PLAX) View.gif" style="width:100%; border-radius:4px;" alt="Normal PLAX — RV free wall and RVOT reference"/>
 :::
@@ -76,7 +76,7 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. RV assessment 
 ### Subcostal
 
 ::: {.callout-tip}
-**Video slot:** Subcostal view for RV — free wall, size assessment, RV-to-LV comparison.
+Subcostal view for RV — free wall, size assessment, RV-to-LV comparison.
 
 <img src="gifs/normal subcostal view.gif" style="width:100%; border-radius:4px;" alt="Normal subcostal view — RV free wall reference"/>
 :::
@@ -88,7 +88,7 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. RV assessment 
 ## 3. Normal & normal variants
 
 ::: {.callout-tip}
-**Video slots:** Normal RV in apical four-chamber — thin free wall, RV smaller than LV, brisk TAPSE. Compare with RV in an athletic heart (mild physiologic enlargement).
+Normal RV in apical four-chamber — thin free wall, RV smaller than LV, brisk TAPSE. Compare with RV in an athletic heart (mild physiologic enlargement).
 :::
 
 ### Normal RV size and function
@@ -112,7 +112,7 @@ Free wall thickness greater than 5 mm indicates chronic pressure overload. The R
 ### RV dilation
 
 ::: {.callout-tip}
-**Video slot:** Dilated RV on apical four-chamber — RV approaching or exceeding LV size.
+Dilated RV on apical four-chamber — RV approaching or exceeding LV size.
 
 <img src="gifs/RV Failure.gif" style="width:100%; border-radius:4px;" alt="RV failure — dilated RV on apical four-chamber"/>
 :::
@@ -130,7 +130,6 @@ RV:LV ratio approaching 1:1 or greater on apical four-chamber is abnormal. The R
 ### D-sign (septal flattening)
 
 ::: {.callout-tip}
-**Video slots:**
 - D-sign from pressure overload (systolic flattening) — PE, PHT
 - D-sign from volume overload (diastolic flattening) — TR, ASD
 
@@ -150,7 +149,7 @@ The interventricular septum flattens or bows toward the LV due to elevated RV pr
 ### McConnell's sign
 
 ::: {.callout-tip}
-**Video slot:** McConnell's sign — RV free wall hypokinesis with apical sparing (apical flicking).
+McConnell's sign — RV free wall hypokinesis with apical sparing (apical flicking).
 
 <img src="gifs/McConnell Sign with RV Enlargement.gif" style="width:100%; border-radius:4px;" alt="McConnell's sign — RV free wall akinesis with apical sparing"/>
 :::
@@ -168,7 +167,7 @@ Regional RV dysfunction with akinesis of the mid-free wall and preserved or hype
 ### Reduced TAPSE
 
 ::: {.callout-tip}
-**Video slot:** TAPSE measurement by M-mode — normal vs reduced.
+TAPSE measurement by M-mode — normal vs reduced.
 :::
 
 TAPSE below 17 mm indicates RV systolic dysfunction. It reflects longitudinal RV function and correlates with prognosis across multiple conditions including PE, pulmonary hypertension, and right heart failure.
@@ -207,7 +206,7 @@ TAPSE below 17 mm indicates RV systolic dysfunction. It reflects longitudinal RV
 Immediate subcostal cardiac view and IVC.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**
@@ -226,7 +225,7 @@ This is massive PE with obstructive shock. The echo is sufficient to act — do 
 Focused cardiac ultrasound to assess RV function and guide risk stratification.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 
 <img src="gifs/A4C - Case 2 Submassive PE — how sick is this RV.gif" style="width:100%; border-radius:4px;" alt="RV dilation on apical four-chamber — submassive PE, Case 2"/>
 
@@ -249,7 +248,7 @@ This is submassive (intermediate-high risk) PE with echo evidence of RV dysfunct
 Bedside cardiac ultrasound to assess for ventilator-induced cor pulmonale.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**
@@ -268,7 +267,7 @@ Acute cor pulmonale from ARDS. High PEEP increases RV afterload; hypercapnia cau
 Rapid focused cardiac echo before transfer.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**

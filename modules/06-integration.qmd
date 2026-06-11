@@ -38,7 +38,7 @@ Dilated RV with D-sign and a normal or hyperdynamic LV = obstructive physiology 
 Small and collapsible = low filling pressure, possible fluid responsiveness. Large and non-collapsing = elevated filling pressure, fluid loading is unlikely to help.
 
 ::: {.callout-tip}
-**Video slot:** Demonstration of a systematic 4-question exam — subcostal (pericardium + IVC), PLAX (LV + pericardium), PSAX (D-sign, LV function), apical 4-chamber (RV:LV ratio, LV wall motion).
+Demonstration of a systematic 4-question exam — subcostal (pericardium + IVC), PLAX (LV + pericardium), PSAX (D-sign, LV function), apical 4-chamber (RV:LV ratio, LV wall motion).
 
 <img src="gifs/Septal Dyskinesis (Subcostal View).gif" style="width:100%; border-radius:4px;" alt="Septal dyskinesis on subcostal view — example of RV/LV interaction"/>
 :::
@@ -68,7 +68,7 @@ The table below maps common ICU presentations to their echo phenotype. These are
 *The exam doesn't always give you a clean answer.*
 
 ::: {.callout-tip}
-**Video slot:** Mixed shock state — reduced EF with small IVC; how to interpret and what to do.
+Mixed shock state — reduced EF with small IVC; how to interpret and what to do.
 :::
 
 Common conflicting scenarios and how to reason through them:
@@ -92,7 +92,7 @@ Consider chronic effusion (malignant, uremic) with concomitant right heart failu
 *Echo is not a one-time test.*
 
 ::: {.callout-tip}
-**Video slot:** Before/after comparison — echo before and after 1 L fluid bolus in a patient with septic shock.
+Before/after comparison — echo before and after 1 L fluid bolus in a patient with septic shock.
 :::
 
 The true power of bedside echo in critical care is the ability to perform serial exams and track the response to interventions in real time. Key scenarios for repeat assessment:
@@ -120,7 +120,7 @@ Each exam should be compared to the prior exam, not interpreted in isolation. Do
 **Systematic four-question exam:**
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation — complete four-window exam.
+Loops for interpretation — complete four-window exam.
 :::
 
 **What you see:**
@@ -143,7 +143,7 @@ Stop fluids — the patient is congested. Add dobutamine for inotropic support. 
 **Systematic four-question exam:**
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 
 <img src="gifs/Ventricular Fibrillation.gif" style="width:100%; border-radius:4px;" alt="Ventricular fibrillation — chaotic cardiac motion"/>
 :::
@@ -168,7 +168,7 @@ Activate the cath lab immediately for emergent PCI. This is STEMI-equivalent pos
 **Systematic four-question exam:**
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**
@@ -191,7 +191,7 @@ Initiate NIV (BiPAP) to reduce preload and work of breathing. Begin aggressive d
 **Systematic four-question exam:**
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**
@@ -214,7 +214,7 @@ CT pulmonary angiography to evaluate for PE and pulmonary vascular involvement b
 **Systematic four-question exam:**
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation — post-surgical windows (often challenging).
+Loops for interpretation — post-surgical windows (often challenging).
 :::
 
 **What you see:**

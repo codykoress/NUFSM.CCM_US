@@ -29,7 +29,7 @@ Use a **phased array or curvilinear probe** from the **subcostal window**. The I
 ### Subcostal IVC view
 
 ::: {.callout-tip}
-**Video slot:** IVC acquisition — probe position, long axis of the IVC, measurement technique, respiratory variation.
+IVC acquisition — probe position, long axis of the IVC, measurement technique, respiratory variation.
 
 <img src="gifs/Inferior Vena Cava Emptyting into Right Atrium.gif" style="width:100%; border-radius:4px;" alt="Normal IVC entering the right atrium"/>
 :::
@@ -45,7 +45,7 @@ Use a **phased array or curvilinear probe** from the **subcostal window**. The I
 ### Hepatic vein assessment
 
 ::: {.callout-tip}
-**Video slot:** Hepatic vein PW Doppler — normal anterograde flow vs diastolic flow reversal in venous congestion.
+Hepatic vein PW Doppler — normal anterograde flow vs diastolic flow reversal in venous congestion.
 :::
 
 **Probe placement:** Same subcostal window, angle to bring the hepatic veins into view entering the IVC. Sample volume placed in the hepatic vein 1–2 cm from the IVC junction.
@@ -57,7 +57,7 @@ Use a **phased array or curvilinear probe** from the **subcostal window**. The I
 ### Portal vein pulsatility
 
 ::: {.callout-tip}
-**Video slot:** Portal vein PW Doppler — normally monophasic flow vs pulsatile flow in severe venous congestion.
+Portal vein PW Doppler — normally monophasic flow vs pulsatile flow in severe venous congestion.
 :::
 
 **What you are looking for:** The portal vein normally has continuous, mildly pulsatile anterograde flow. When systemic venous pressure is severely elevated, this flow becomes markedly pulsatile or even reverses — a sign of severe venous congestion transmitted to the portal system. Portal vein pulsatility fraction >50% is associated with worse outcomes in ICU patients and in those with right heart failure.
@@ -67,7 +67,7 @@ Use a **phased array or curvilinear probe** from the **subcostal window**. The I
 ## 3. Normal & normal variants
 
 ::: {.callout-tip}
-**Video slots:** Normal IVC — diameter 1.5–2.1 cm, >50% collapsibility with sniff. IVC in an athlete (mildly enlarged but still collapsible).
+Normal IVC — diameter 1.5–2.1 cm, >50% collapsibility with sniff. IVC in an athlete (mildly enlarged but still collapsible).
 :::
 
 ### Normal IVC
@@ -91,7 +91,7 @@ Respiratory variation is reversed in mechanically ventilated patients — the IV
 ### Small, collapsible IVC
 
 ::: {.callout-tip}
-**Video slot:** Small IVC — diameter <1.5 cm, >50% collapse, "flat" appearance.
+Small IVC — diameter <1.5 cm, >50% collapse, "flat" appearance.
 
 <img src="gifs/Inferior Vena Cava in Hypovolemia (Transverse).gif" style="width:100%; border-radius:4px;" alt="Collapsed IVC in hypovolemia"/>
 :::
@@ -110,7 +110,7 @@ Diameter less than 1.5 cm with greater than 50% respiratory collapse. Estimated 
 ### Plethoric, non-collapsing IVC
 
 ::: {.callout-tip}
-**Video slot:** Plethoric IVC — diameter >2.1 cm, <50% collapse, associated with elevated RA pressure.
+Plethoric IVC — diameter >2.1 cm, <50% collapse, associated with elevated RA pressure.
 
 <img src="gifs/Plethoric Inferior Vena Cava.gif" style="width:100%; border-radius:4px;" alt="Plethoric non-collapsing IVC"/>
 :::
@@ -129,7 +129,6 @@ Diameter greater than 2.1 cm with less than 50% respiratory collapse. Estimated 
 ### Venous congestion pattern
 
 ::: {.callout-tip}
-**Video slots:**
 - Plethoric IVC with diastolic hepatic vein flow reversal
 - Pulsatile portal vein flow
 :::
@@ -170,7 +169,7 @@ Diameter 1.5–2.1 cm with variable collapse. Estimated RA pressure 5–10 mmHg.
 Focused cardiac ultrasound with IVC assessment.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**
@@ -189,7 +188,7 @@ Small, collapsible IVC with hyperdynamic LV — consistent with distributive phy
 Focused cardiac ultrasound with IVC and hepatic vein assessment.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**
@@ -208,7 +207,7 @@ Stop fluids immediately — this patient is severely congested and has cardiogen
 Focused cardiac ultrasound with IVC distensibility assessment (mechanically ventilated).
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**
@@ -227,7 +226,7 @@ Not fluid responsive by distensibility criteria. The patient received significan
 Focused cardiac ultrasound — LV, RV, IVC.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**

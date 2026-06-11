@@ -34,7 +34,7 @@ Use a **high-frequency linear probe (7–15 MHz)** — the veins are superficial
 ### Common femoral vein
 
 ::: {.callout-tip}
-**Video slot:** CFV acquisition — femoral triangle anatomy, compression technique, distinguishing vein from artery.
+CFV acquisition — femoral triangle anatomy, compression technique, distinguishing vein from artery.
 :::
 
 **Probe placement:** Transverse plane, in the femoral triangle, just below the inguinal ligament. The common femoral artery and vein appear side by side. The vein is medial, larger, and more compressible. Color Doppler shows phasic venous flow in the vein.
@@ -48,7 +48,7 @@ Use a **high-frequency linear probe (7–15 MHz)** — the veins are superficial
 ### Femoral vein (thigh)
 
 ::: {.callout-tip}
-**Video slot:** Femoral vein in the thigh — superficial femoral vein (misnomer: it is a deep vein), compression at mid-thigh.
+Femoral vein in the thigh — superficial femoral vein (misnomer: it is a deep vein), compression at mid-thigh.
 :::
 
 **Probe placement:** Continue distally from the CFV, following the femoral (superficial femoral) vein through the thigh to Hunter's canal. This portion is sometimes called the "superficial femoral vein" — a misnomer that has caused undertreatment, because it is actually a deep vein and DVT here carries the same PE risk as proximal DVT.
@@ -58,7 +58,7 @@ Use a **high-frequency linear probe (7–15 MHz)** — the veins are superficial
 ### Popliteal vein
 
 ::: {.callout-tip}
-**Video slot:** Popliteal fossa acquisition — popliteal vein posterior to the artery, compression technique in the knee-flexed position.
+Popliteal fossa acquisition — popliteal vein posterior to the artery, compression technique in the knee-flexed position.
 :::
 
 **Probe placement:** Popliteal fossa, transverse plane. The popliteal artery is deep (anterior on the image) and the popliteal vein is superficial (posterior on the image). Compress from the popliteal crease proximally to where the vein bifurcates into the calf veins (tibial and peroneal). Calf DVT is not routinely assessed in basic two-point CUS.
@@ -68,7 +68,7 @@ Use a **high-frequency linear probe (7–15 MHz)** — the veins are superficial
 ## 3. Normal & normal variants
 
 ::: {.callout-tip}
-**Video slots:** Normal two-point compression — CFV and popliteal vein fully compressing to zero diameter. Color Doppler augmentation. Spontaneous phasic venous flow.
+Normal two-point compression — CFV and popliteal vein fully compressing to zero diameter. Color Doppler augmentation. Spontaneous phasic venous flow.
 :::
 
 ### Normal compressibility
@@ -100,7 +100,6 @@ A normal vein walls coapt completely with gentle-to-moderate probe pressure. The
 ### Non-compressible vein — acute DVT
 
 ::: {.callout-tip}
-**Video slots:**
 - Non-compressible CFV — vein fails to collapse with firm probe pressure
 - Echogenic thrombus within the vein lumen
 - Anechoic (fresh) thrombus — non-compressible but nearly invisible without compression
@@ -131,7 +130,7 @@ A vein that does not fully collapse under firm probe pressure contains thrombus.
 ### Partial compressibility
 
 ::: {.callout-tip}
-**Video slot:** Partial non-compressibility — vein compressed but not fully coaptated, residual lumen visible.
+Partial non-compressibility — vein compressed but not fully coaptated, residual lumen visible.
 :::
 
 Partial non-compressibility indicates thrombus that does not fully occlude the vein. The vein compresses but a residual lumen remains visible.
@@ -147,7 +146,7 @@ Partial non-compressibility indicates thrombus that does not fully occlude the v
 ### Absent augmentation
 
 ::: {.callout-tip}
-**Video slot:** Absent augmentation — calf compression fails to increase flow at the femoral level.
+Absent augmentation — calf compression fails to increase flow at the femoral level.
 :::
 
 When distal compression produces no augmentation of proximal flow, there is obstruction between the compression point and the probe. This suggests DVT between the two locations.
@@ -187,7 +186,7 @@ When distal compression produces no augmentation of proximal flow, there is obst
 Two-point DVT compression ultrasound while CT is being arranged.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**
@@ -206,7 +205,7 @@ Right proximal DVT in a patient with dyspnea, tachycardia, pleuritic chest pain,
 Left lower extremity DVT compression ultrasound.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**
@@ -225,7 +224,7 @@ Proximal DVT extending from CFV to popliteal vein despite prophylaxis. Transitio
 Right femoral DVT compression ultrasound.
 
 ::: {.callout-tip}
-**Video slot:** Loops for interpretation.
+Loops for interpretation.
 :::
 
 **What you see:**
