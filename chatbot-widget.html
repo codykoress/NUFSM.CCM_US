@@ -1,4 +1,4 @@
-<!-- POCUS Chatbot Widget — injected into every page via _quarto.yml include-after-body -->
+﻿<!-- POCUS Chatbot Widget â€” injected into every page via _quarto.yml include-after-body -->
 <!-- After deploying cloudflare-worker/worker.js, replace YOUR_WORKER_URL_HERE below -->
 <style>
   #pocus-chat-btn {
@@ -8,7 +8,7 @@
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background: #2780e3;
+    background: #4E2A84;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -19,7 +19,7 @@
     justify-content: center;
     transition: background 0.15s, transform 0.15s;
   }
-  #pocus-chat-btn:hover { background: #1a68c8; transform: scale(1.06); }
+  #pocus-chat-btn:hover { background: #3A1F63; transform: scale(1.06); }
 
   #pocus-chat-panel {
     position: fixed;
@@ -43,7 +43,7 @@
   }
 
   .pocus-header {
-    background: #2780e3;
+    background: #4E2A84;
     color: #fff;
     padding: 13px 16px;
     font-weight: 600;
@@ -83,19 +83,19 @@
     word-break: break-word;
   }
   .pocus-msg.pocus-bot {
-    background: #f0f4fb;
+    background: #EAE3F4;
     align-self: flex-start;
     border-bottom-left-radius: 3px;
     color: #1a1a2e;
   }
   .pocus-msg.pocus-user {
-    background: #2780e3;
+    background: #4E2A84;
     color: #fff;
     align-self: flex-end;
     border-bottom-right-radius: 3px;
   }
   .pocus-msg.pocus-bot a {
-    color: #2780e3;
+    color: #4E2A84;
     font-weight: 500;
     text-decoration: underline;
   }
@@ -105,7 +105,7 @@
     gap: 4px;
     align-items: center;
     padding: 10px 12px;
-    background: #f0f4fb;
+    background: #EAE3F4;
     border-radius: 10px;
     border-bottom-left-radius: 3px;
     align-self: flex-start;
@@ -141,9 +141,9 @@
     outline: none;
     font-family: inherit;
   }
-  .pocus-input-row input:focus { border-color: #2780e3; }
+  .pocus-input-row input:focus { border-color: #4E2A84; }
   .pocus-input-row button {
-    background: #2780e3;
+    background: #4E2A84;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -186,9 +186,9 @@
 
 <script>
 (function () {
-  // ── CONFIG ──────────────────────────────────────────────────────────────
+  // â”€â”€ CONFIG â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   var WORKER_URL = 'https://ultrasoundguru.codykoress.workers.dev/';
-  // ────────────────────────────────────────────────────────────────────────
+  // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
   var MODULE_PATHS = {
     '01': 'modules/01-windows.html',

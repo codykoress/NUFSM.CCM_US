@@ -1,4 +1,4 @@
-<!-- POCUS Quiz Widget — injects open-answer forms into each quiz question callout -->
+﻿<!-- POCUS Quiz Widget â€” injects open-answer forms into each quiz question callout -->
 <!-- Injected into every page via _quarto.yml include-after-body -->
 <style>
   .quiz-answer-form {
@@ -20,7 +20,7 @@
     color: #1a1a2e;
     background: #fff;
   }
-  .quiz-textarea:focus { border-color: #2780e3; }
+  .quiz-textarea:focus { border-color: #4E2A84; }
 
   .quiz-form-row {
     display: flex;
@@ -30,7 +30,7 @@
   }
 
   .quiz-submit-btn {
-    background: #2780e3;
+    background: #4E2A84;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -41,7 +41,7 @@
     transition: background 0.15s;
     white-space: nowrap;
   }
-  .quiz-submit-btn:hover:not(:disabled) { background: #1a68c8; }
+  .quiz-submit-btn:hover:not(:disabled) { background: #3A1F63; }
   .quiz-submit-btn:disabled { background: #9ca3af; cursor: not-allowed; }
 
   .quiz-typing {
@@ -121,7 +121,7 @@
     var formDiv = document.createElement('div');
     formDiv.className = 'quiz-answer-form';
     formDiv.innerHTML =
-      '<textarea class="quiz-textarea" placeholder="Type your answer…" rows="3"></textarea>' +
+      '<textarea class="quiz-textarea" placeholder="Type your answerâ€¦" rows="3"></textarea>' +
       '<div class="quiz-form-row">' +
         '<button class="quiz-submit-btn" type="button">Get Feedback</button>' +
         '<span class="quiz-typing-slot"></span>' +
