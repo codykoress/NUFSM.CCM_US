@@ -26,7 +26,7 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. RV assessment 
 
 ---
 
-### Apical four-chamber
+### Apical four-chamber — standard and RV-focused
 
 ::: {.callout-tip}
 **Video slot:** Apical four-chamber for RV assessment — RV:LV ratio, free wall motion, TAPSE measurement.
@@ -34,9 +34,14 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. RV assessment 
 <img src="gifs/apical+4+normal.gif" style="width:100%; border-radius:4px;" alt="Normal apical four-chamber — RV:LV comparison"/>
 :::
 
-**What you are looking for:** RV size relative to the LV. The RV free wall should move briskly inward in systole. TAPSE (tricuspid annular plane systolic excursion) is measured by M-mode at the lateral tricuspid annulus — normal is greater than 17 mm. Reduced TAPSE indicates RV systolic dysfunction regardless of the cause.
+**Two related acquisitions:**
 
-**Avoid the pitfall:** The apical view can foreshorten the LV and artificially make the RV appear larger. If the RV appears large, confirm in a second window.
+- **Standard A4C** — LV is centered in the sector. Useful for an initial RV:LV size comparison only if the LV is not foreshortened. The RV sits at the edge of the sector and is often clipped, which makes RV size and TAPSE alignment unreliable.
+- **RV-focused A4C** — from the standard A4C, slide laterally and rotate slightly so the **RV is centered** in the sector and the full RV free wall from base to apex is in view. ASE guidelines specify the RV-focused view for measuring RV linear dimensions, RV area, and TAPSE. Acquire this view explicitly whenever you intend to quantify RV size or function.
+
+**What you are looking for:** RV size relative to the LV. The RV free wall should move briskly inward in systole. TAPSE (tricuspid annular plane systolic excursion) is measured by M-mode on the **RV-focused view**, with the cursor aligned along the RV free wall as perpendicular to (and through) the lateral tricuspid annulus as possible — normal is greater than 17 mm. Reduced TAPSE indicates RV systolic dysfunction regardless of the cause.
+
+**Avoid the pitfall:** The standard (LV-centered) apical view can foreshorten the LV and artificially make the RV appear larger; conversely, a non-RV-focused acquisition clips the RV and underestimates its size. If RV size or TAPSE matters to the decision, acquire the RV-focused view and confirm in a second window.
 
 ---
 

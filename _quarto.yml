@@ -34,6 +34,9 @@ website:
         text: About
       - href: credits.qmd
         text: Credits
+    right:
+      - href: competency-dashboard.html
+        text: Competency Registry
 
 format:
   html:

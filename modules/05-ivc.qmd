@@ -36,7 +36,7 @@ Use a **phased array or curvilinear probe** from the **subcostal window**. The I
 
 **Probe placement:** Subcostal, indicator to the patient's right (or toward the head depending on your convention), angled to bring the IVC into view as it enters the RA. The hepatic vein confluence should be visible entering the IVC.
 
-**Measurement:** IVC diameter is measured 2 cm from the RA-IVC junction. Measure at end-expiration for the resting diameter, then assess collapse with a sniff (spontaneous breathing) or the distensibility index (mechanical ventilation).
+**Measurement:** IVC diameter is measured **1.5–2.0 cm distal to the RA–IVC junction** (typically just proximal to the hepatic vein confluence), per ASE convention. Measure at end-expiration for the resting diameter, then assess collapse with a sniff (spontaneous breathing) or the distensibility index (mechanical ventilation).
 
 **Common error:** Imaging the aorta instead of the IVC. The IVC is to the patient's right of midline, collapses with inspiration, and enters the RA. The aorta is to the left, pulsatile, and does not collapse.
 

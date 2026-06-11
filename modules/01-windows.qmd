@@ -186,9 +186,9 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 <img src="gifs/apical+4+normal.gif" style="width:100%; border-radius:4px;" alt="Normal apical four-chamber view"/>
 :::
 
-![Apical four-chamber probe placement. The green crosshair marks the PMI at the 5th ICS midclavicular line. The indicator points to the patient's left (3 o'clock).](images/probe-apical.svg){fig-align="center" width="380"}
+![Apical four-chamber probe placement. The green crosshair marks the PMI at the 5th ICS midclavicular line. The indicator points toward the patient's left and slightly inferior (4–5 o'clock).](images/probe-apical.svg){fig-align="center" width="380"}
 
-**Probe placement:** Point of maximal impulse (PMI), typically **5th intercostal space, midclavicular line**. Indicator points to the patient's **left** (3 o'clock). The imaging plane cuts the heart from apex to base, showing all four chambers simultaneously.
+**Probe placement:** Point of maximal impulse (PMI), typically **5th intercostal space, midclavicular line**. Indicator points toward the patient's **left and slightly inferior (4–5 o'clock)** — i.e., toward the left hip, not straight lateral. This inferolateral rotation aligns the imaging plane through the long axis of the LV from apex to base and is the orientation specified by ASE guidelines. A pure 3 o'clock orientation tends to foreshorten the apex. The imaging plane shows all four chambers simultaneously.
 
 **How to optimize:**
 
@@ -257,24 +257,14 @@ The Mercedes-Benz sign. It confirms a normal tricuspid aortic valve with three c
 The tricuspid valve inserts slightly more apically on the interventricular septum than the mitral valve — this apical offset is the key distinguishing feature. The tricuspid is on the right side of the image (associated with the RV and RA); the mitral is on the left (associated with the LV and LA).
 :::
 
-**Q6.** What is the correct indicator orientation for each of the four standard windows?
-
-::: {.callout-caution collapse="true"}
-**Answer**
-- **Subcostal four-chamber:** Indicator to the patient's left
-- **Parasternal long axis:** Indicator toward the patient's right shoulder (~10–11 o'clock)
-- **Parasternal short axis:** Indicator toward the patient's left shoulder (~1–2 o'clock)
-- **Apical four-chamber:** Indicator to the patient's left (3 o'clock)
-:::
-
-**Q7.** At the papillary muscle level on PSAX, you see two echogenic nodular structures on the LV wall. What are they, and where are they located?
+**Q6.** At the papillary muscle level on PSAX, you see two echogenic nodular structures on the LV wall. What are they, and where are they located?
 
 ::: {.callout-caution collapse="true"}
 **Answer**
 The anterolateral and posteromedial papillary muscles. The anterolateral papillary muscle is on the lateral wall; the posteromedial papillary muscle is on the inferior wall. They are the attachment points for the chordae tendineae that tether the mitral valve leaflets.
 :::
 
-**Q8.** You see a thin, linear echogenic structure crossing the LV cavity from wall to wall on apical four-chamber. It does not move independently. What is it, and is it pathologic?
+**Q7.** You see a thin, linear echogenic structure crossing the LV cavity from wall to wall on apical four-chamber. It does not move independently. What is it, and is it pathologic?
 
 ::: {.callout-caution collapse="true"}
 **Answer**
