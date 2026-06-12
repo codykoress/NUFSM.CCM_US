@@ -18,6 +18,10 @@
 //   4. Replace the worker code with this file and deploy.
 //      NOTE: this file uses module syntax (export default). If the dashboard
 //      editor complains, make sure you replaced the ENTIRE previous file.
+//   5. (Recommended) Rate limiting: Settings → Bindings → Add binding →
+//      Rate limit → Variable name: RATE_LIMITER → 30 requests per 60 seconds.
+//      Limits each visitor IP to 30 requests/min across all routes. The
+//      worker runs fine without this binding — it just skips the check.
 //
 // AUTH MODEL:
 //   Every /api request carries "Authorization: Bearer <code>".
@@ -115,6 +119,18 @@ export default {
 
     if (request.method === "OPTIONS") {
       return new Response(null, { headers: cors });
+    }
+
+    // per-IP rate limit (only if the RATE_LIMITER binding is configured)
+    if (env.RATE_LIMITER) {
+      var ip = request.headers.get("CF-Connecting-IP") || "unknown";
+      var rl = await env.RATE_LIMITER.limit({ key: ip });
+      if (!rl.success) {
+        return new Response(JSON.stringify({ error: "too many requests — wait a minute and try again" }), {
+          status: 429,
+          headers: Object.assign({ "Content-Type": "application/json" }, cors),
+        });
+      }
     }
 
     var url = new URL(request.url);
