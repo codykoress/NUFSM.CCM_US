@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POCUS Case Logbook — NUFSM CCM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FAF7F1;
+    --paper-deep: #F2EDE3;
+    --ink: #211B2E;
+    --ink-soft: #5C5470;
+    --rule: #D8D0C2;
+    --nu: #4E2A84;          /* Northwestern purple */
+    --nu-bright: #7C5CBF;
+    --lvl1: #EAE3F4;
+    --lvl2: #CDBBE8;
+    --lvl3: #8A63C4;
+    --lvl4: #4E2A84;
+    --ok: #2E7D5B;
+    --warn: #B3661A;
+    --serif: "Fraunces", Georgia, serif;
+    --sans: "Archivo", "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink);
+    background-image: radial-gradient(circle at 1px 1px, rgba(78,42,132,0.05) 1px, transparent 0);
+    background-size: 26px 26px;
+    min-height: 100vh;
+  }
+
+  /* ---------- header ---------- */
+  header {
+    border-bottom: 3px solid var(--ink);
+    background: var(--paper);
+    padding: 2.2rem 2.5rem 1.4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  header::after {
+    content: "";
+    position: absolute; right: -60px; top: -60px;
+    width: 230px; height: 230px; border-radius: 50%;
+    border: 26px solid var(--nu); opacity: .08; pointer-events: none;
+  }
+  .kicker {
+    font-family: var(--mono); font-size: .72rem; letter-spacing: .22em;
+    text-transform: uppercase; color: var(--nu); font-weight: 600;
+  }
+  h1 {
+    font-family: var(--serif); font-weight: 700; font-size: clamp(1.9rem, 4vw, 3rem);
+    line-height: 1.05; margin: .35rem 0 .5rem; letter-spacing: -.01em;
+  }
+  h1 em { font-style: italic; color: var(--nu); }
+  .subtitle { color: var(--ink-soft); font-size: .92rem; max-width: 62ch; }
+
+  .toolbar {
+    display: flex; gap: .5rem; flex-wrap: wrap; margin-top: 1.2rem; align-items: center;
+  }
+  button, .btn {
+    font-family: var(--sans); font-weight: 600; font-size: .8rem;
+    border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink);
+    padding: .45rem .9rem; cursor: pointer; border-radius: 2px;
+    box-shadow: 2.5px 2.5px 0 var(--ink);
+    transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+  }
+  button:hover { transform: translate(-1px,-1px); box-shadow: 3.5px 3.5px 0 var(--ink); }
+  button:active { transform: translate(1.5px,1.5px); box-shadow: 1px 1px 0 var(--ink); }
+  button.primary { background: var(--nu); color: #fff; border-color: var(--nu); box-shadow: 2.5px 2.5px 0 rgba(33,27,46,.85); }
+  button.ghost { box-shadow: none; border-style: dashed; }
+  .toolbar .spacer { flex: 1; }
+  .savenote { font-family: var(--mono); font-size: .68rem; color: var(--ink-soft); }
+  .savenote.pending { color: var(--warn); font-weight: 600; }
+
+  /* ---------- layout ---------- */
+  main { padding: 1.8rem 2.5rem 4rem; max-width: 1280px; margin: 0 auto; }
+  section { margin-bottom: 2.6rem; }
+  h2 {
+    font-family: var(--serif); font-size: 1.35rem; font-weight: 600;
+    display: flex; align-items: baseline; gap: .6rem; margin-bottom: .9rem;
+  }
+  h2 .index { font-family: var(--mono); font-size: .7rem; color: var(--nu); letter-spacing: .15em; }
+
+  /* ---------- stat strip ---------- */
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px,1fr)); gap: 1px; background: var(--ink); border: 1.5px solid var(--ink); }
+  .stat { background: var(--paper); padding: .9rem 1.1rem; }
+  .stat .num { font-family: var(--serif); font-size: 2rem; font-weight: 700; color: var(--nu); line-height: 1; }
+  .stat .lbl { font-family: var(--mono); font-size: .64rem; text-transform: uppercase; letter-spacing: .14em; color: var(--ink-soft); margin-top: .35rem; }
+
+  /* ---------- PHI banner ---------- */
+  .phi {
+    border: 1.5px solid var(--warn); background: rgba(179,102,26,.07);
+    padding: .6rem .9rem; font-size: .78rem; color: var(--ink);
+    margin-top: 1rem; border-radius: 2px;
+  }
+  .phi strong { color: var(--warn); }
+
+  /* ---------- progress bars ---------- */
+  .progress-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 1rem; }
+  .domain-card { border: 1.5px solid var(--ink); background: var(--paper); box-shadow: 4px 4px 0 rgba(33,27,46,.12); padding: .8rem .95rem; }
+  .domain-card .dname { font-family: var(--serif); font-weight: 600; font-size: .95rem; line-height: 1.2; }
+  .domain-card .dcount { font-family: var(--mono); font-size: .72rem; color: var(--ink-soft); margin: .4rem 0 .35rem; }
+  .domain-card .dcount b { color: var(--nu); font-size: .95rem; }
+  .bar { height: 12px; border: 1.5px solid var(--ink); background: var(--paper-deep); border-radius: 2px; overflow: hidden; }
+  .bar .fill { height: 100%; background: var(--lvl3); transition: width .3s ease; }
+  .domain-card.met .bar .fill { background: var(--ok); }
+  .domain-card.met .badge { color: var(--ok); }
+  .domain-card .badge { font-family: var(--mono); font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; margin-top: .35rem; display: block; color: var(--ink-soft); }
+
+  /* ---------- form ---------- */
+  .form-card { border: 1.5px solid var(--ink); background: var(--paper); box-shadow: 5px 5px 0 rgba(33,27,46,.12); padding: 1.3rem 1.5rem 1.5rem; }
+  .form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px,1fr)); gap: .9rem 1.3rem; }
+  .field label { display: block; font-size: .7rem; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; margin-bottom: .3rem; color: var(--ink-soft); }
+  .field input[type=text], .field input[type=date], .field select, .field textarea {
+    width: 100%; font-family: var(--sans); font-size: .88rem; padding: .45rem .55rem;
+    border: 1.5px solid var(--ink); background: #fff; border-radius: 2px;
+  }
+  .field textarea { min-height: 64px; resize: vertical; }
+  .field.wide { grid-column: 1 / -1; }
+  .views { display: flex; flex-wrap: wrap; gap: .35rem; }
+  .views label.chk {
+    display: inline-flex; align-items: center; gap: .35rem; font-size: .76rem; font-weight: 500;
+    text-transform: none; letter-spacing: 0; color: var(--ink); cursor: pointer;
+    border: 1px solid var(--rule); padding: .25rem .55rem; border-radius: 2px; background: #fff; margin: 0;
+  }
+  .views label.chk:has(input:checked) { border-color: var(--nu); background: var(--lvl1); color: var(--nu); font-weight: 600; }
+  .views input[type=checkbox] { accent-color: var(--nu); width: 13px; height: 13px; }
+  .proctor-row { display: flex; align-items: center; gap: .55rem; padding-top: 1.45rem; }
+  .proctor-row input[type=checkbox] { width: 16px; height: 16px; accent-color: var(--nu); cursor: pointer; }
+  .proctor-row span { font-size: .82rem; font-weight: 600; }
+  .form-actions { display: flex; gap: .6rem; margin-top: 1.1rem; align-items: center; }
+  .form-actions .editnote { font-family: var(--mono); font-size: .68rem; color: var(--warn); }
+
+  /* ---------- log table ---------- */
+  .filterbar { display: flex; gap: .7rem; flex-wrap: wrap; align-items: center; margin-bottom: .8rem; font-size: .78rem; }
+  .filterbar select { font-family: var(--sans); font-size: .8rem; padding: .3rem .45rem; border: 1.5px solid var(--ink); background: #fff; border-radius: 2px; }
+  .filterbar .count { font-family: var(--mono); font-size: .68rem; color: var(--ink-soft); margin-left: auto; }
+  .log-wrap { overflow-x: auto; border: 1.5px solid var(--ink); background: var(--paper); box-shadow: 5px 5px 0 rgba(33,27,46,.12); }
+  table.log { border-collapse: collapse; width: 100%; font-size: .8rem; }
+  .log th, .log td { border: 1px solid var(--rule); padding: .45rem .6rem; text-align: left; vertical-align: top; }
+  .log thead th { background: var(--ink); color: var(--paper); font-weight: 600; font-size: .72rem; position: sticky; top: 0; }
+  .log td.date { font-family: var(--mono); font-size: .72rem; white-space: nowrap; }
+  .log td.dom { white-space: nowrap; }
+  .dompill { display: inline-block; font-family: var(--mono); font-size: .62rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: .15rem .45rem; border-radius: 2px; border: 1px solid var(--nu); color: var(--nu); background: var(--lvl1); }
+  .log td.views-cell { font-size: .72rem; color: var(--ink-soft); max-width: 220px; }
+  .log td .proc { font-family: var(--mono); font-size: .66rem; color: var(--ok); font-weight: 600; }
+  .log td .unproc { font-family: var(--mono); font-size: .66rem; color: var(--ink-soft); }
+  .log td .queued { font-family: var(--mono); font-size: .62rem; color: var(--warn); font-weight: 600; display: block; margin-top: .2rem; }
+  .log td.actions { white-space: nowrap; }
+  .log td.actions button { font-size: .64rem; padding: .15rem .5rem; box-shadow: none; }
+  .empty {
+    border: 1.5px dashed var(--nu); padding: 2.2rem; text-align: center; color: var(--ink-soft);
+    font-size: .9rem; background: rgba(78,42,132,.03);
+  }
+  .empty .big { font-family: var(--serif); font-size: 1.3rem; color: var(--ink); display: block; margin-bottom: .4rem; }
+
+  /* ---------- dialog ---------- */
+  dialog {
+    border: 2px solid var(--ink); background: var(--paper); padding: 1.6rem 1.8rem;
+    box-shadow: 7px 7px 0 rgba(33,27,46,.25); max-width: 440px; width: 90%;
+    margin: auto; border-radius: 3px;
+  }
+  dialog::backdrop { background: rgba(33,27,46,.45); backdrop-filter: blur(2px); }
+  dialog h3 { font-family: var(--serif); font-size: 1.25rem; margin-bottom: 1rem; }
+  dialog label { display: block; font-size: .74rem; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; margin: .8rem 0 .25rem; color: var(--ink-soft); }
+  dialog input {
+    width: 100%; font-family: var(--mono); font-size: .95rem; padding: .5rem .6rem;
+    border: 1.5px solid var(--ink); background: #fff; border-radius: 2px; letter-spacing: .04em;
+  }
+  dialog .row { display: flex; gap: .6rem; justify-content: flex-end; margin-top: 1.3rem; }
+  .synchelp { font-size: .76rem; color: var(--ink-soft); line-height: 1.5; border-left: 3px solid var(--nu); padding: .5rem .8rem; background: rgba(78,42,132,.05); }
+  .signin-err { font-family: var(--mono); font-size: .72rem; color: #B3261E; margin-top: .6rem; min-height: 1em; }
+
+  .toast {
+    position: fixed; bottom: 1.4rem; right: 1.4rem; background: var(--ink); color: var(--paper);
+    font-family: var(--mono); font-size: .74rem; padding: .6rem 1rem; border-radius: 2px;
+    opacity: 0; transform: translateY(8px); transition: all .25s ease; pointer-events: none; z-index: 50;
+  }
+  .toast.show { opacity: 1; transform: translateY(0); }
+
+  @media print {
+    .toolbar, .form-card, .filterbar, .log td.actions, .log th.actions-h, .toast, .phi { display: none !important; }
+    body { background: #fff; }
+    .log-wrap, .domain-card { box-shadow: none; }
+    header::after { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="kicker">NUFSM &middot; Critical Care Medicine Fellowship</div>
+  <h1>POCUS Case <em>Logbook</em></h1>
+  <p class="subtitle">Log every scan you perform — cases save automatically to the program database, and your proctored scans count live in the Competency Registry.</p>
+  <div class="toolbar">
+    <button class="primary" id="btnWho">Sign in</button>
+    <button id="btnExportCsv">Export CSV</button>
+    <button id="btnExportJson">Backup JSON</button>
+    <button class="ghost" id="btnImportLegacy">Import old logbook</button>
+    <button class="ghost" id="btnRetry" style="display:none">Retry sync</button>
+    <button class="ghost" onclick="window.print()">Print</button>
+    <span class="spacer"></span>
+    <span class="savenote" id="saveNote"></span>
+  </div>
+  <div class="phi"><strong>No PHI.</strong> Never enter patient names, MRNs, dates of birth, or other identifiers. Describe cases clinically only (e.g., "septic shock, hyperdynamic LV, small IVC").</div>
+</header>
+
+<main>
+  <section>
+    <div class="stats" id="statStrip"></div>
+  </section>
+
+  <section id="secProgress">
+    <h2><span class="index">01</span> My Progress Toward Targets</h2>
+    <div class="progress-grid" id="progressHost"></div>
+  </section>
+
+  <section id="secForm">
+    <h2><span class="index">02</span> Log a Case</h2>
+    <div class="form-card">
+      <div class="form-grid">
+        <div class="field">
+          <label for="eDate">Date of scan</label>
+          <input type="date" id="eDate">
+        </div>
+        <div class="field">
+          <label for="eDomain">Domain</label>
+          <select id="eDomain"></select>
+        </div>
+        <div class="field">
+          <label for="eSetting">Clinical setting / indication</label>
+          <input type="text" id="eSetting" placeholder="e.g., undifferentiated shock, MICU">
+        </div>
+        <div class="field wide">
+          <label>Views / components obtained</label>
+          <div class="views" id="eViews"></div>
+        </div>
+        <div class="field wide">
+          <label for="eFindings">Key findings &amp; interpretation</label>
+          <textarea id="eFindings" placeholder="e.g., severely reduced LV function, no effusion, IVC plethoric — cardiogenic physiology"></textarea>
+        </div>
+        <div class="field">
+          <label for="eSupervisor">Reviewed / proctored by</label>
+          <input type="text" id="eSupervisor" placeholder="attending name (if supervised)">
+        </div>
+        <div class="proctor-row">
+          <input type="checkbox" id="eProctored">
+          <span>Proctored scan <small style="font-weight:400;color:var(--ink-soft)">(counts toward sign-off target)</small></span>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button class="primary" id="btnSaveEntry">Save case</button>
+        <button class="ghost" id="btnCancelEdit" style="display:none">Cancel edit</button>
+        <span class="editnote" id="editNote"></span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="index">03</span> Case Log</h2>
+    <div class="filterbar">
+      <label id="fFellowWrap" style="display:none">Fellow
+        <select id="fFellow"><option value="">All fellows</option></select>
+      </label>
+      <label>Domain
+        <select id="fDomain"><option value="">All domains</option></select>
+      </label>
+      <label>
+        <select id="fProc">
+          <option value="">Proctored + independent</option>
+          <option value="1">Proctored only</option>
+          <option value="0">Independent only</option>
+        </select>
+      </label>
+      <span class="count" id="logCount"></span>
+    </div>
+    <div id="logHost"></div>
+  </section>
+</main>
+
+<dialog id="dlgSignin">
+  <h3>Sign in</h3>
+  <form method="dialog" id="fmSignin">
+    <p class="synchelp">Enter the access code your program director gave you. It identifies you — no username or password needed. Lost it? Ask your PD to read it back or regenerate it from the Competency Registry.</p>
+    <label for="inCode">Access code</label>
+    <input id="inCode" type="text" placeholder="NU-XXXX-XXXX-XXXX" autocomplete="off" spellcheck="false">
+    <div class="signin-err" id="signinErr"></div>
+    <div class="row">
+      <button class="primary" value="default">Sign in</button>
+    </div>
+  </form>
+</dialog>
+
+<input type="file" id="fileLegacy" accept=".json" style="display:none">
+<div class="toast" id="toast"></div>
+
+<script>
+/* ================= config ================= */
+const API_BASE = localStorage.getItem("nufsm-api-url") || "https://ultrasoundguru.codykoress.workers.dev/api";
+
+/* domains — must mirror competency-dashboard.html FRAMEWORK */
+const DOMAINS = [
+  { id: "echo", name: "Basic Critical Care Echocardiography", scanTarget: 30,
+    views: ["PLAX", "PSAX", "Apical 4C", "Subcostal 4C", "IVC long-axis"] },
+  { id: "lung", name: "Lung & Pleural Ultrasound", scanTarget: 25,
+    views: ["Anterior zones", "Lateral zones", "Posterolateral (PLAPS)", "M-mode"] },
+  { id: "abd", name: "Abdominal Ultrasound", scanTarget: 25,
+    views: ["RUQ", "LUQ", "Pelvis / bladder", "Kidneys"] },
+  { id: "vasc", name: "Vascular Diagnostic Ultrasound", scanTarget: 25,
+    views: ["Common femoral compression", "Popliteal compression", "Pre-cannulation survey"] },
+  { id: "proc", name: "Procedural Guidance", scanTarget: 10,
+    views: ["CVC — IJ", "CVC — femoral", "Arterial line", "Peripheral IV", "Thora/para site marking"] }
+];
+function domainById(id) { return DOMAINS.find(d => d.id === id); }
+
+const CODE_KEY = "nufsm-access-code";
+const ME_KEY = "nufsm-lb-me-v2";         // cached identity for offline starts
+const CACHE_KEY = "nufsm-lb-cache-v2";   // last server copy of my cases
+const QUEUE_KEY = "nufsm-lb-queue-v2";   // ops waiting to reach the server
+
+/* ================= state ================= */
+let accessCode = localStorage.getItem(CODE_KEY) || "";
+let me = loadJson(ME_KEY, null);  // { role: "fellow", fellow: {id,name,cohort} } or { role: "faculty" }
+let serverCases = loadJson(CACHE_KEY, []);
+let queue = loadJson(QUEUE_KEY, []);
+let editingId = null;
+let offline = false;
+
+function loadJson(key, fallback) {
+  try { const v = JSON.parse(localStorage.getItem(key)); return v == null ? fallback : v; } catch (e) { return fallback; }
+}
+function saveCache() { localStorage.setItem(CACHE_KEY, JSON.stringify(serverCases)); }
+function saveQueue() { localStorage.setItem(QUEUE_KEY, JSON.stringify(queue)); }
+
+/* the cases the user sees = server copy + queued edits applied on top */
+function visibleCases() {
+  const byId = new Map(serverCases.map(c => [c.id, c]));
+  queue.forEach(op => {
+    if (op.type === "upsert") byId.set(op.entry.id, op.entry);
+    if (op.type === "delete") byId.delete(op.id);
+  });
+  return Array.from(byId.values());
+}
+function isQueued(id) { return queue.some(op => op.type === "upsert" && op.entry.id === id); }
+
+/* ================= api ================= */
+async function api(path, opts) {
+  opts = opts || {};
+  const res = await fetch(API_BASE + path, {
+    method: opts.method || "GET",
+    headers: Object.assign({ "Authorization": "Bearer " + accessCode }, opts.body ? { "Content-Type": "application/json" } : {}),
+    body: opts.body ? JSON.stringify(opts.body) : undefined
+  });
+  if (res.status === 401) { const e = new Error("auth"); e.auth = true; throw e; }
+  if (!res.ok) {
+    let msg = "HTTP " + res.status;
+    try { msg = (await res.json()).error || msg; } catch (x) {}
+    const e = new Error(msg); e.status = res.status; throw e;
+  }
+  return res.json();
+}
+
+async function flushQueue() {
+  while (queue.length) {
+    const op = queue[0];
+    try {
+      if (op.type === "upsert") await api("/cases", { method: "POST", body: op.entry });
+      else if (op.type === "delete") await api("/cases/" + encodeURIComponent(op.id), { method: "DELETE" });
+      queue.shift(); saveQueue();
+    } catch (err) {
+      if (err.auth) throw err;
+      if (err.status && err.status >= 400 && err.status < 500) {
+        // server rejected this op — drop it rather than blocking everything behind it
+        queue.shift(); saveQueue();
+        toast("One queued case was rejected: " + err.message);
+      } else {
+        throw err; // network/server down — keep the queue, try again later
+      }
+    }
+  }
+}
+
+async function refreshFromServer() {
+  const data = await api("/cases");
+  serverCases = data.cases || [];
+  saveCache();
+}
+
+/* try to sync everything; falls back to cached view if unreachable */
+async function sync(showToast) {
+  try {
+    await flushQueue();
+    await refreshFromServer();
+    offline = false;
+    if (showToast) toast("Synced ✓");
+  } catch (err) {
+    if (err.auth) { signOutLocal(); openSignin("That access code no longer works — ask your PD for a new one."); return; }
+    offline = true;
+    if (showToast) toast("Can't reach the server — working offline");
+  }
+  render(); updateStatus();
+}
+
+/* ================= status line ================= */
+function updateStatus() {
+  const n = document.getElementById("saveNote");
+  const retry = document.getElementById("btnRetry");
+  if (!me) { n.textContent = ""; retry.style.display = "none"; return; }
+  if (queue.length) {
+    n.textContent = queue.length + " case" + (queue.length === 1 ? "" : "s") + " waiting to sync";
+    n.classList.add("pending");
+    retry.style.display = "";
+  } else {
+    n.textContent = (offline ? "offline — showing last synced copy" : "all changes saved to cloud " + new Date().toLocaleTimeString());
+    n.classList.toggle("pending", offline);
+    retry.style.display = offline ? "" : "none";
+  }
+}
+document.getElementById("btnRetry").addEventListener("click", () => sync(true));
+
+/* ================= rendering ================= */
+function isFellow() { return me && me.role === "fellow"; }
+
+function render() { renderStats(); renderProgress(); renderLog(); renderChrome(); }
+
+function renderChrome() {
+  document.getElementById("secProgress").style.display = isFellow() ? "" : "none";
+  document.getElementById("secForm").style.display = isFellow() ? "" : "none";
+  document.getElementById("fFellowWrap").style.display = me && me.role === "faculty" ? "" : "none";
+  document.getElementById("btnImportLegacy").style.display = isFellow() ? "" : "none";
+  const b = document.getElementById("btnWho");
+  if (!me) b.textContent = "Sign in";
+  else if (isFellow()) b.textContent = me.fellow.name + " · " + me.fellow.cohort + " — sign out";
+  else b.textContent = "Faculty view — sign out";
+}
+
+function renderStats() {
+  const cases = visibleCases();
+  const mine = cases;
+  const proct = mine.filter(e => e.proctored).length;
+  const host = document.getElementById("statStrip");
+  if (!me) { host.innerHTML = ""; return; }
+  if (me.role === "faculty") {
+    const fellows = new Set(cases.map(c => c.fellowId)).size;
+    host.innerHTML = `
+      <div class="stat"><div class="num">${cases.length}</div><div class="lbl">Cases logged (all fellows)</div></div>
+      <div class="stat"><div class="num">${proct}</div><div class="lbl">Proctored scans</div></div>
+      <div class="stat"><div class="num">${fellows}</div><div class="lbl">Fellows logging</div></div>`;
+    return;
+  }
+  const met = DOMAINS.filter(d => mine.filter(e => e.domain === d.id && e.proctored).length >= d.scanTarget).length;
+  const last = mine.length ? mine.map(e => e.date).sort().pop() : null;
+  host.innerHTML = `
+    <div class="stat"><div class="num">${mine.length}</div><div class="lbl">My cases logged</div></div>
+    <div class="stat"><div class="num">${proct}</div><div class="lbl">Proctored scans</div></div>
+    <div class="stat"><div class="num">${met}<span style="font-size:1rem;color:var(--ink-soft)">/${DOMAINS.length}</span></div><div class="lbl">Domain targets met</div></div>
+    <div class="stat"><div class="num" style="font-size:1.25rem;padding-top:.4rem">${last || "—"}</div><div class="lbl">Most recent scan</div></div>`;
+}
+
+function renderProgress() {
+  if (!isFellow()) return;
+  const mine = visibleCases();
+  let html = "";
+  DOMAINS.forEach(d => {
+    const n = mine.filter(e => e.domain === d.id && e.proctored).length;
+    const indep = mine.filter(e => e.domain === d.id && !e.proctored).length;
+    const pct = Math.min(100, Math.round(100 * n / d.scanTarget));
+    const met = n >= d.scanTarget;
+    html += `<div class="domain-card ${met ? "met" : ""}">
+      <div class="dname">${d.name}</div>
+      <div class="dcount"><b>${n}</b> / ${d.scanTarget} proctored${indep ? ` &middot; +${indep} independent` : ""}</div>
+      <div class="bar"><div class="fill" style="width:${pct}%"></div></div>
+      <span class="badge">${met ? "✓ target met" : pct + "% of target"}</span>
+    </div>`;
+  });
+  document.getElementById("progressHost").innerHTML = html;
+}
+
+function renderLog() {
+  const host = document.getElementById("logHost");
+  if (!me) {
+    host.innerHTML = `<div class="empty"><span class="big">Sign in to see your logbook.</span>Enter the access code from your program director.</div>`;
+    document.getElementById("logCount").textContent = "";
+    return;
+  }
+  const dom = document.getElementById("fDomain").value;
+  const proc = document.getElementById("fProc").value;
+  const fellowFilter = document.getElementById("fFellow").value;
+  let rows = visibleCases();
+  if (dom) rows = rows.filter(e => e.domain === dom);
+  if (proc !== "") rows = rows.filter(e => String(e.proctored ? 1 : 0) === proc);
+  if (me.role === "faculty" && fellowFilter) rows = rows.filter(e => e.fellowId === fellowFilter);
+  rows.sort((x, y) => (y.date || "").localeCompare(x.date || "") || (y.ts || 0) - (x.ts || 0));
+
+  document.getElementById("logCount").textContent = rows.length + " case" + (rows.length === 1 ? "" : "s");
+
+  if (me.role === "faculty") {
+    const sel = document.getElementById("fFellow");
+    const seen = new Map();
+    visibleCases().forEach(c => { if (c.fellowId && !seen.has(c.fellowId)) seen.set(c.fellowId, c.fellow || c.fellowId); });
+    const current = sel.value;
+    sel.innerHTML = `<option value="">All fellows</option>` + Array.from(seen.entries()).map(([id, nm]) => `<option value="${esc(id)}">${esc(nm)}</option>`).join("");
+    sel.value = current;
+  }
+
+  if (!rows.length) {
+    host.innerHTML = `<div class="empty"><span class="big">${visibleCases().length ? "No cases match these filters." : "No cases yet."}</span>${visibleCases().length || me.role === "faculty" ? "" : "Log your first scan above — it takes about 30 seconds."}</div>`;
+    return;
+  }
+  const showFellowCol = me.role === "faculty";
+  let html = `<div class="log-wrap"><table class="log"><thead><tr>
+    <th>Date</th>${showFellowCol ? "<th>Fellow</th>" : ""}<th>Domain</th><th>Views</th><th>Setting</th><th>Findings &amp; interpretation</th><th>Status</th><th class="actions-h"></th>
+  </tr></thead><tbody>`;
+  rows.forEach(e => {
+    const d = domainById(e.domain);
+    html += `<tr>
+      <td class="date">${esc(e.date)}</td>
+      ${showFellowCol ? `<td>${esc(e.fellow || "")}${e.cohort ? ` <span style="font-family:var(--mono);font-size:.62rem;color:var(--ink-soft)">${esc(e.cohort)}</span>` : ""}</td>` : ""}
+      <td class="dom"><span class="dompill">${d ? esc(d.name.split(" ")[0] === "Basic" ? "Echo" : d.name.split(" ")[0]) : esc(e.domain)}</span></td>
+      <td class="views-cell">${(e.views || []).map(esc).join(", ") || "—"}</td>
+      <td class="views-cell">${esc(e.setting) || "—"}</td>
+      <td>${esc(e.findings) || "—"}</td>
+      <td>${e.proctored ? `<span class="proc">✓ proctored${e.supervisor ? "<br>" + esc(e.supervisor) : ""}</span>` : `<span class="unproc">independent</span>`}${isQueued(e.id) ? `<span class="queued">⟳ not yet synced</span>` : ""}</td>
+      <td class="actions">${isFellow() ? `<button data-edit="${e.id}">edit</button> <button data-del="${e.id}">delete</button>` : ""}</td>
+    </tr>`;
+  });
+  html += `</tbody></table></div>`;
+  host.innerHTML = html;
+
+  host.querySelectorAll("button[data-del]").forEach(b => {
+    b.addEventListener("click", () => {
+      const e = visibleCases().find(x => x.id === b.dataset.del);
+      if (e && confirm("Delete this case from " + e.date + "?")) {
+        queue = queue.filter(op => !(op.type === "upsert" && op.entry.id === e.id));
+        queue.push({ type: "delete", id: e.id });
+        serverCases = serverCases.filter(x => x.id !== e.id);
+        saveQueue(); saveCache();
+        render(); updateStatus();
+        sync(false);
+        toast("Case deleted");
+      }
+    });
+  });
+  host.querySelectorAll("button[data-edit]").forEach(b => {
+    b.addEventListener("click", () => startEdit(b.dataset.edit));
+  });
+}
+
+/* ================= entry form ================= */
+const eDomain = document.getElementById("eDomain");
+const fDomain = document.getElementById("fDomain");
+DOMAINS.forEach(d => {
+  const o = document.createElement("option");
+  o.value = d.id; o.textContent = d.name;
+  eDomain.appendChild(o);
+  const o2 = o.cloneNode(true);
+  fDomain.appendChild(o2);
+});
+
+function renderViews(domainId, checked) {
+  const d = domainById(domainId);
+  const host = document.getElementById("eViews");
+  host.innerHTML = "";
+  (d ? d.views : []).forEach(v => {
+    const lab = document.createElement("label");
+    lab.className = "chk";
+    const cb = document.createElement("input");
+    cb.type = "checkbox"; cb.value = v;
+    if (checked && checked.includes(v)) cb.checked = true;
+    lab.appendChild(cb); lab.appendChild(document.createTextNode(v));
+    host.appendChild(lab);
+  });
+}
+eDomain.addEventListener("change", () => renderViews(eDomain.value));
+
+function resetForm() {
+  editingId = null;
+  document.getElementById("eDate").value = today();
+  eDomain.value = DOMAINS[0].id;
+  renderViews(DOMAINS[0].id);
+  document.getElementById("eSetting").value = "";
+  document.getElementById("eFindings").value = "";
+  document.getElementById("eSupervisor").value = "";
+  document.getElementById("eProctored").checked = false;
+  document.getElementById("btnCancelEdit").style.display = "none";
+  document.getElementById("editNote").textContent = "";
+  document.getElementById("btnSaveEntry").textContent = "Save case";
+}
+
+function startEdit(id) {
+  const e = visibleCases().find(x => x.id === id);
+  if (!e) return;
+  editingId = id;
+  document.getElementById("eDate").value = e.date;
+  eDomain.value = e.domain;
+  renderViews(e.domain, e.views || []);
+  document.getElementById("eSetting").value = e.setting || "";
+  document.getElementById("eFindings").value = e.findings || "";
+  document.getElementById("eSupervisor").value = e.supervisor || "";
+  document.getElementById("eProctored").checked = !!e.proctored;
+  document.getElementById("btnCancelEdit").style.display = "";
+  document.getElementById("editNote").textContent = "editing case from " + e.date;
+  document.getElementById("btnSaveEntry").textContent = "Update case";
+  window.scrollTo({ top: document.querySelector(".form-card").offsetTop - 80, behavior: "smooth" });
+}
+
+document.getElementById("btnCancelEdit").addEventListener("click", () => { resetForm(); });
+
+document.getElementById("btnSaveEntry").addEventListener("click", () => {
+  if (!isFellow()) { openSignin(); return; }
+  const date = document.getElementById("eDate").value;
+  if (!date) { toast("Pick the scan date"); return; }
+  const proctored = document.getElementById("eProctored").checked;
+  const supervisor = document.getElementById("eSupervisor").value.trim();
+  if (proctored && !supervisor) { toast("Proctored scans need a supervisor name"); return; }
+  const views = Array.from(document.querySelectorAll("#eViews input:checked")).map(c => c.value);
+  const entry = {
+    id: editingId || ("c" + Date.now() + Math.random().toString(36).slice(2, 7)),
+    date, domain: eDomain.value, views,
+    setting: document.getElementById("eSetting").value.trim(),
+    findings: document.getElementById("eFindings").value.trim(),
+    supervisor, proctored,
+    ts: Date.now()
+  };
+  queue = queue.filter(op => !(op.type === "upsert" && op.entry.id === entry.id));
+  queue.push({ type: "upsert", entry });
+  saveQueue();
+  toast(editingId ? "Case updated" : "Case logged ✓");
+  resetForm(); render(); updateStatus();
+  sync(false);
+});
+
+/* ================= sign in / out ================= */
+const dlgSignin = document.getElementById("dlgSignin");
+function openSignin(errMsg) {
+  document.getElementById("inCode").value = "";
+  document.getElementById("signinErr").textContent = errMsg || "";
+  if (!dlgSignin.open) dlgSignin.showModal();
+}
+document.getElementById("fmSignin").addEventListener("submit", async () => {
+  const code = document.getElementById("inCode").value.trim();
+  if (!code) return;
+  accessCode = code;
+  try {
+    me = await api("/me");
+    localStorage.setItem(CODE_KEY, accessCode);
+    localStorage.setItem(ME_KEY, JSON.stringify(me));
+    toast(me.role === "faculty" ? "Signed in — faculty view" : "Welcome, " + me.fellow.name);
+    await sync(false);
+  } catch (err) {
+    accessCode = ""; me = null;
+    openSignin(err.auth ? "Code not recognized — check it and try again." : "Can't reach the server: " + err.message);
+  }
+  render(); updateStatus();
+});
+
+function signOutLocal() {
+  accessCode = ""; me = null;
+  serverCases = []; queue = [];
+  localStorage.removeItem(CODE_KEY);
+  localStorage.removeItem(ME_KEY);
+  localStorage.removeItem(CACHE_KEY);
+  localStorage.removeItem(QUEUE_KEY);
+}
+
+document.getElementById("btnWho").addEventListener("click", () => {
+  if (!me) { openSignin(); return; }
+  if (queue.length && !confirm(queue.length + " case(s) haven't synced yet and will be lost if you sign out. Sign out anyway?")) return;
+  if (!queue.length && !confirm("Sign out on this device?")) return;
+  signOutLocal(); render(); updateStatus(); toast("Signed out");
+});
+
+/* ================= export / legacy import ================= */
+document.getElementById("btnExportJson").addEventListener("click", () => {
+  download("nufsm-pocus-logbook-" + today() + ".json", JSON.stringify({ entries: visibleCases() }, null, 2), "application/json");
+  toast("JSON backup downloaded");
+});
+document.getElementById("btnExportCsv").addEventListener("click", () => {
+  const rows = [["Date","Fellow","Cohort","Domain","Views","Setting","Findings","Proctored","Supervisor"]];
+  visibleCases().slice().sort((x,y) => (x.date||"").localeCompare(y.date||"")).forEach(e => {
+    const d = domainById(e.domain);
+    rows.push([e.date, e.fellow || (isFellow() ? me.fellow.name : ""), e.cohort || (isFellow() ? me.fellow.cohort : ""), d ? d.name : e.domain, (e.views||[]).join("; "), e.setting || "", e.findings || "", e.proctored ? 1 : 0, e.supervisor || ""]);
+  });
+  const csv = rows.map(r => r.map(c => `"${String(c).replace(/"/g, '""')}"`).join(",")).join("\r\n");
+  download("nufsm-pocus-logbook-" + today() + ".csv", csv, "text/csv");
+  toast("CSV downloaded");
+});
+
+/* one-time migration from the old GitHub-synced logbook format */
+document.getElementById("btnImportLegacy").addEventListener("click", () => {
+  if (!isFellow()) { openSignin(); return; }
+  document.getElementById("fileLegacy").click();
+});
+document.getElementById("fileLegacy").addEventListener("change", e => {
+  const file = e.target.files[0]; if (!file) return;
+  const r = new FileReader();
+  r.onload = () => {
+    try {
+      const data = JSON.parse(r.result);
+      if (!Array.isArray(data.entries)) throw new Error("bad shape");
+      const norm = s => String(s || "").trim().toLowerCase();
+      const mineName = norm(me.fellow.name);
+      const existing = new Set(visibleCases().map(c => c.id));
+      let added = 0, skippedOther = 0;
+      data.entries.forEach(en => {
+        if (!en || !en.id || !en.date || !en.domain) return;
+        if (en.fellow && norm(en.fellow) !== mineName) { skippedOther++; return; }
+        if (existing.has(en.id)) return;
+        queue.push({ type: "upsert", entry: {
+          id: en.id, date: en.date, domain: en.domain, views: en.views || [],
+          setting: en.setting || "", findings: en.findings || "",
+          supervisor: en.supervisor || "", proctored: !!en.proctored, ts: en.ts || Date.now()
+        }});
+        added++;
+      });
+      saveQueue(); render(); updateStatus();
+      toast(`Imported ${added} case${added === 1 ? "" : "s"}` + (skippedOther ? ` (skipped ${skippedOther} belonging to other fellows)` : ""));
+      sync(false);
+    } catch (err) { toast("Import failed — not a valid logbook backup"); }
+  };
+  r.readAsText(file);
+  e.target.value = "";
+});
+
+/* ================= filters ================= */
+["fDomain", "fProc", "fFellow"].forEach(id => document.getElementById(id).addEventListener("change", renderLog));
+
+/* ================= utils ================= */
+function esc(s) { return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function today() { return new Date().toISOString().slice(0, 10); }
+function download(name, content, type) {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([content], { type }));
+  a.download = name; a.click(); URL.revokeObjectURL(a.href);
+}
+let toastTimer;
+function toast(msg) {
+  const t = document.getElementById("toast");
+  t.textContent = msg; t.classList.add("show");
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove("show"), 2600);
+}
+
+/* ================= init ================= */
+resetForm();
+(async () => {
+  if (!accessCode) { render(); updateStatus(); openSignin(); return; }
+  try {
+    me = await api("/me");
+    localStorage.setItem(ME_KEY, JSON.stringify(me));
+    await sync(false);
+  } catch (err) {
+    if (err.auth) { signOutLocal(); openSignin("That access code no longer works — ask your PD for a new one."); }
+    else { offline = true; toast("Can't reach the server — showing last synced copy"); }
+  }
+  render(); updateStatus();
+})();
+</script>
+</body>
+</html>

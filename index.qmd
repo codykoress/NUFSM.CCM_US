@@ -78,4 +78,4 @@ a quiz to check your understanding.
 
 [**POCUS Competency Registry**](competency-dashboard.html) — faculty tool for tracking each fellow's competency levels, proctored scan counts, and program milestones across the five core critical care ultrasound domains (per the 2009 ACCP/SRLF consensus, the LUCC Delphi statement, and ACGME 2024 requirements).
 
-*Scan logbook for fellows coming soon.*
+[**POCUS Case Logbook**](case-logbook.html) — fellow tool for logging every scan you perform: views obtained, findings, and whether the scan was proctored. Sign in once with the access code from your program director; cases save automatically from any device, track your progress toward each domain's sign-off target, and count live in the Competency Registry. No patient identifiers, ever.

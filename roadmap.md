@@ -72,8 +72,9 @@
 - [ ] Credits page: Curriculum development section and Acknowledgments
 
 ### Site / infrastructure
-- [x] Competency assessment tool — `competency-dashboard.html` (POCUS Competency Registry: fellows × competencies matrix per ACCP/SRLF + LUCC + ACGME 2024; localStorage with JSON/CSV export and GitHub-sync to a private data repo; linked from home page)
-- [ ] Scan logbook for fellows (referenced on home page — "coming soon")
+- [x] Competency assessment tool — `competency-dashboard.html` (POCUS Competency Registry: fellows × competencies matrix per ACCP/SRLF + LUCC + ACGME 2024; faculty sign in with `FACULTY_CODE`; data lives in Cloudflare D1 via the worker `/api`; edits autosave (debounced); proctored scan counts update live from fellows' logged cases — manual raise allowed, never lowered below the logbook count; roster section manages fellows and their access codes; CSV/JSON export; "Import legacy registry" migrates an old GitHub/localStorage backup)
+- [x] Scan logbook for fellows — `case-logbook.html` (fellow-facing case entry: date, domain, views, findings, proctored flag + supervisor; per-domain progress bars vs sign-off targets; fellows sign in once with a PD-issued access code; cases save straight to D1 with an offline queue + retry when the worker is unreachable; faculty code opens a read-only all-fellows view; "Import old logbook" migrates a pre-API JSON backup; linked from navbar and home page)
+- [x] Backend — `cloudflare-worker/worker.js` extended with `/api` (cases + fellows + access-code auth) on Cloudflare D1; `schema.sql` for the one-time database setup; `mock-api.py` for local testing. **Deployment steps pending** (create D1 `pocus-logbook`, run schema, bind as `DB`, set `FACULTY_CODE` secret, paste new worker.js) — see worker.js header. Worker migrated from service-worker to ES-module syntax (required for D1); chatbot + quiz routes unchanged.
 - [ ] Decide on hosting platform and deploy (GitHub Pages, Quarto Pub, institutional server)
 - [ ] Add `.gitignore` entry for large GIF files if repo size becomes an issue; consider Git LFS
 

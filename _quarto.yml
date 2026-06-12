@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources:
     - competency-dashboard.html
+    - case-logbook.html
 
 website:
   title: "POCUS for CCM Fellows"
@@ -35,6 +36,8 @@ website:
       - href: credits.qmd
         text: Credits
     right:
+      - href: case-logbook.html
+        text: Case Logbook
       - href: competency-dashboard.html
         text: Competency Registry
 

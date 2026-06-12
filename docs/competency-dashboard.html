@@ -78,6 +78,7 @@
   button.ghost { box-shadow: none; border-style: dashed; }
   .toolbar .spacer { flex: 1; }
   .savenote { font-family: var(--mono); font-size: .68rem; color: var(--ink-soft); }
+  .savenote.pending { color: var(--warn); font-weight: 600; }
 
   /* ---------- layout ---------- */
   main { padding: 1.8rem 2.5rem 4rem; max-width: 1500px; margin: 0 auto; }
@@ -113,11 +114,6 @@
   }
   .matrix thead th:first-child { text-align: left; min-width: 280px; background: var(--ink); }
   .matrix thead th .yr { display:block; font-family: var(--mono); font-size: .6rem; font-weight: 400; opacity: .75; letter-spacing: .1em; }
-  .matrix thead th button.del {
-    margin-top: .25rem; font-size: .58rem; padding: .05rem .35rem; box-shadow: none;
-    background: transparent; color: var(--paper); border: 1px solid rgba(250,247,241,.4);
-  }
-  .matrix thead th button.del:hover { background: rgba(250,247,241,.15); transform: none; }
   .domain-row td {
     background: var(--nu); color: #fff; font-family: var(--serif); font-weight: 600;
     font-size: .92rem; padding: .5rem .7rem; letter-spacing: .015em;
@@ -143,6 +139,7 @@
     border: 1px solid var(--rule); background: #fff; padding: .2rem .1rem; border-radius: 2px;
   }
   td.scan-cell .target { display: block; font-family: var(--mono); font-size: .58rem; color: var(--ink-soft); margin-top: .15rem; }
+  td.scan-cell .fromlog { display: block; font-family: var(--mono); font-size: .56rem; color: var(--nu); margin-top: .1rem; }
   td.scan-cell.met input { border-color: var(--ok); background: #EAF4EE; color: var(--ok); font-weight: 600; }
 
   /* ---------- milestones ---------- */
@@ -167,6 +164,15 @@
   }
   .empty .big { font-family: var(--serif); font-size: 1.3rem; color: var(--ink); display: block; margin-bottom: .4rem; }
 
+  /* ---------- roster ---------- */
+  .roster-wrap { overflow-x: auto; border: 1.5px solid var(--ink); background: var(--paper); box-shadow: 5px 5px 0 rgba(33,27,46,.12); }
+  table.roster { border-collapse: collapse; width: 100%; font-size: .8rem; }
+  .roster th, .roster td { border: 1px solid var(--rule); padding: .5rem .7rem; text-align: left; vertical-align: middle; }
+  .roster thead th { background: var(--ink); color: var(--paper); font-weight: 600; font-size: .72rem; }
+  .roster .codecell { font-family: var(--mono); font-size: .76rem; letter-spacing: .03em; white-space: nowrap; }
+  .roster td button { font-size: .64rem; padding: .2rem .55rem; box-shadow: none; margin-right: .3rem; }
+  .roster-note { font-size: .76rem; color: var(--ink-soft); margin-bottom: .7rem; max-width: 80ch; }
+
   /* ---------- framework footnote ---------- */
   .framework { font-size: .78rem; color: var(--ink-soft); border-left: 3px solid var(--nu); padding: .8rem 1.1rem; background: rgba(78,42,132,.04); max-width: 880px; }
   .framework strong { color: var(--ink); }
@@ -175,7 +181,7 @@
   /* ---------- dialog ---------- */
   dialog {
     border: 2px solid var(--ink); background: var(--paper); padding: 1.6rem 1.8rem;
-    box-shadow: 7px 7px 0 rgba(33,27,46,.25); max-width: 420px; width: 90%;
+    box-shadow: 7px 7px 0 rgba(33,27,46,.25); max-width: 440px; width: 90%;
     margin: auto; border-radius: 3px;
   }
   dialog::backdrop { background: rgba(33,27,46,.45); backdrop-filter: blur(2px); }
@@ -185,8 +191,15 @@
     width: 100%; font-family: var(--sans); font-size: .9rem; padding: .45rem .55rem;
     border: 1.5px solid var(--ink); background: #fff; border-radius: 2px;
   }
+  dialog input.mono { font-family: var(--mono); letter-spacing: .04em; }
   dialog .row { display: flex; gap: .6rem; justify-content: flex-end; margin-top: 1.3rem; }
   .synchelp { font-size: .76rem; color: var(--ink-soft); line-height: 1.5; border-left: 3px solid var(--nu); padding: .5rem .8rem; background: rgba(78,42,132,.05); }
+  .signin-err { font-family: var(--mono); font-size: .72rem; color: #B3261E; margin-top: .6rem; min-height: 1em; }
+  .codebox {
+    font-family: var(--mono); font-size: 1.05rem; letter-spacing: .06em; text-align: center;
+    border: 2px dashed var(--nu); background: var(--lvl1); color: var(--nu);
+    padding: .8rem; border-radius: 2px; margin: .8rem 0; user-select: all;
+  }
 
   .toast {
     position: fixed; bottom: 1.4rem; right: 1.4rem; background: var(--ink); color: var(--paper);
@@ -196,9 +209,9 @@
   .toast.show { opacity: 1; transform: translateY(0); }
 
   @media print {
-    .toolbar, .matrix thead th button.del, .toast { display: none !important; }
+    .toolbar, .toast, .roster td button { display: none !important; }
     body { background: #fff; }
-    .matrix-wrap, .fellow-card { box-shadow: none; }
+    .matrix-wrap, .fellow-card, .roster-wrap { box-shadow: none; }
     header::after { display: none; }
   }
 </style>
@@ -208,18 +221,17 @@
 <header>
   <div class="kicker">NUFSM &middot; Critical Care Medicine Fellowship</div>
   <h1>POCUS Competency <em>Registry</em></h1>
-  <p class="subtitle">Longitudinal tracking of fellow image-acquisition and interpretation competence across the five core critical care ultrasound domains, per ACGME 2024 requirements and published consensus standards.</p>
+  <p class="subtitle">Longitudinal tracking of fellow image-acquisition and interpretation competence across the five core critical care ultrasound domains, per ACGME 2024 requirements and published consensus standards. Proctored scan counts update live from the fellows' case logbook.</p>
   <div class="toolbar">
     <button class="primary" id="btnAddFellow">+ Add Fellow</button>
+    <button id="btnRefresh">&#10227; Refresh</button>
     <button id="btnExportCsv">Export CSV</button>
     <button id="btnExportJson">Backup JSON</button>
-    <button id="btnImportJson">Restore JSON</button>
-    <button id="btnPull">&#8675; Pull</button>
-    <button id="btnPush">&#8673; Push</button>
-    <button class="ghost" id="btnSyncCfg">Sync setup</button>
+    <button class="ghost" id="btnImportLegacy">Import legacy registry</button>
     <button class="ghost" onclick="window.print()">Print</button>
+    <button class="ghost" id="btnSignout">Sign out</button>
     <span class="spacer"></span>
-    <span class="savenote" id="saveNote">autosaves to this browser</span>
+    <span class="savenote" id="saveNote"></span>
   </div>
 </header>
 
@@ -236,7 +248,7 @@
       <span class="chip"><span class="swatch sw2"></span> 2 — Advancing (needs prompting)</span>
       <span class="chip"><span class="swatch sw3"></span> 3 — Competent (independent)</span>
       <span class="chip"><span class="swatch sw4"></span> 4 — Entrustable (can teach)</span>
-      <span class="hint">click cell = advance &middot; shift-click = step back</span>
+      <span class="hint">click cell = advance &middot; shift-click = step back &middot; scan counts come from the logbook (editable upward)</span>
     </div>
     <div id="matrixHost"></div>
   </section>
@@ -247,7 +259,13 @@
   </section>
 
   <section>
-    <h2><span class="index">03</span> Framework Provenance</h2>
+    <h2><span class="index">03</span> Fellow Roster &amp; Access Codes</h2>
+    <p class="roster-note">Each fellow signs in to the Case Logbook with their access code — hand it to them once and they stay signed in on their devices. If a code leaks or is lost, regenerate it (the old one stops working immediately; give the fellow the new one).</p>
+    <div id="rosterHost"></div>
+  </section>
+
+  <section>
+    <h2><span class="index">04</span> Framework Provenance</h2>
     <div class="framework">
       <p><strong>Domains</strong> follow the five-module structure of the 2009 ACCP/SRLF consensus statement on competence in critical care ultrasonography (basic echocardiography, lung, pleural, abdominal, vascular), which ACGME program requirements effective July 2024 now mandate for CCM and PCCM fellows, plus procedural guidance.</p>
       <p><strong>Echo items and gates</strong> follow the LUCC Delphi consensus (CHEST 2022): five standard 2-D windows, qualitative interpretation targets, a minimum of ~30 mentored scans, and a longitudinal arc of introductory training &rarr; mentored formative portfolio &rarr; summative acquisition assessment &rarr; final cognitive assessment. Scan-count targets for the other domains (25 proctored exams each) follow common practice in published fellowship curricula (ATS Scholar 2024 best-practices statement).</p>
@@ -256,9 +274,22 @@
   </section>
 </main>
 
+<dialog id="dlgSignin">
+  <h3>Faculty sign-in</h3>
+  <form method="dialog" id="fmSignin">
+    <p class="synchelp">Enter the faculty access code (the <strong>FACULTY_CODE</strong> configured on the program's Cloudflare Worker). Fellows can't open the registry — their codes only work in the Case Logbook.</p>
+    <label for="inCode">Faculty code</label>
+    <input id="inCode" type="password" class="mono" autocomplete="off">
+    <div class="signin-err" id="signinErr"></div>
+    <div class="row">
+      <button class="primary" value="default">Sign in</button>
+    </div>
+  </form>
+</dialog>
+
 <dialog id="dlgFellow">
   <h3>Add Fellow</h3>
-  <form method="dialog">
+  <form method="dialog" id="fmFellow">
     <label for="fName">Name</label>
     <input id="fName" type="text" placeholder="e.g., J. Rivera" required>
     <label for="fYear">Cohort</label>
@@ -273,29 +304,24 @@
   </form>
 </dialog>
 
-<dialog id="dlgSync">
-  <h3>GitHub Sync</h3>
-  <form method="dialog">
-    <p class="synchelp">Stores the registry as a JSON file in a GitHub repo so you can pull/push it from any browser. Use a <strong>private</strong> repo — the file contains fellow evaluations. Create a fine-grained personal access token scoped to <em>only</em> that repo with <em>Contents: read &amp; write</em>. The token is kept in this browser only.</p>
-    <label for="sRepo">Repository (owner/name)</label>
-    <input id="sRepo" type="text" placeholder="codykoress/pocus-registry-data">
-    <label for="sBranch">Branch</label>
-    <input id="sBranch" type="text" value="main">
-    <label for="sPath">File path</label>
-    <input id="sPath" type="text" value="registry.json">
-    <label for="sToken">Fine-grained personal access token</label>
-    <input id="sToken" type="password" placeholder="github_pat_&hellip;">
-    <div class="row">
-      <button value="cancel" type="button" onclick="dlgSync.close()">Cancel</button>
-      <button class="primary" value="default">Save settings</button>
-    </div>
-  </form>
+<dialog id="dlgCode">
+  <h3>Access code</h3>
+  <p class="synchelp" id="codeWho"></p>
+  <div class="codebox" id="codeBox"></div>
+  <div class="row">
+    <button id="btnCopyCode">Copy</button>
+    <button class="primary" onclick="dlgCode.close()">Done</button>
+  </div>
 </dialog>
 
-<input type="file" id="fileImport" accept=".json" style="display:none">
+<input type="file" id="fileLegacy" accept=".json" style="display:none">
 <div class="toast" id="toast"></div>
 
 <script>
+/* ================= config ================= */
+const API_BASE = localStorage.getItem("nufsm-api-url") || "https://ultrasoundguru.codykoress.workers.dev/api";
+const CODE_KEY = "nufsm-faculty-code";
+
 /* ================= competency framework ================= */
 const FRAMEWORK = [
   {
@@ -359,64 +385,119 @@ const MILESTONES = [
   { id: "cognitive", label: "Final cognitive assessment passed" }
 ];
 
-const LS_KEY = "nufsm-pocus-registry-v1";
-
 /* ================= state ================= */
-let state = load();
-function load() {
-  try { const raw = localStorage.getItem(LS_KEY); if (raw) return JSON.parse(raw); } catch (e) {}
-  return { fellows: [] };
+let accessCode = localStorage.getItem(CODE_KEY) || "";
+let fellows = [];        // [{id, name, cohort, code, levels, scans, milestones, notes, logCounts}]
+let signedIn = false;
+const pendingSaves = new Map();   // fellowId → debounce timer
+
+/* effective proctored count = manual entry or live logbook count, whichever is higher */
+function effScans(f, domainId) {
+  return Math.max(f.scans[domainId] || 0, f.logCounts[domainId] || 0);
 }
-function save() {
-  localStorage.setItem(LS_KEY, JSON.stringify(state));
+
+/* ================= api ================= */
+async function api(path, opts) {
+  opts = opts || {};
+  const res = await fetch(API_BASE + path, {
+    method: opts.method || "GET",
+    headers: Object.assign({ "Authorization": "Bearer " + accessCode }, opts.body ? { "Content-Type": "application/json" } : {}),
+    body: opts.body ? JSON.stringify(opts.body) : undefined
+  });
+  if (res.status === 401 || res.status === 403) { const e = new Error("auth"); e.auth = true; throw e; }
+  if (!res.ok) {
+    let msg = "HTTP " + res.status;
+    try { msg = (await res.json()).error || msg; } catch (x) {}
+    throw new Error(msg);
+  }
+  return res.json();
+}
+
+function fromServer(sf) {
+  return {
+    id: sf.id, name: sf.name, cohort: sf.cohort, code: sf.code,
+    levels: sf.assessment.levels || {}, scans: sf.assessment.scans || {},
+    milestones: sf.assessment.milestones || {}, notes: sf.assessment.notes || "",
+    logCounts: sf.logCounts || {}
+  };
+}
+
+async function loadAll(showToast) {
+  const data = await api("/fellows");
+  fellows = (data.fellows || []).map(fromServer);
+  render();
+  setStatus("up to date " + new Date().toLocaleTimeString());
+  if (showToast) toast("Refreshed ✓");
+}
+
+/* debounced save of one fellow's assessment */
+function scheduleSave(f) {
+  setStatus("saving…", true);
+  clearTimeout(pendingSaves.get(f.id));
+  pendingSaves.set(f.id, setTimeout(async () => {
+    pendingSaves.delete(f.id);
+    try {
+      await api("/fellows/" + encodeURIComponent(f.id), { method: "PUT", body: {
+        assessment: { levels: f.levels, scans: f.scans, milestones: f.milestones, notes: f.notes }
+      }});
+      if (!pendingSaves.size) setStatus("all changes saved to cloud " + new Date().toLocaleTimeString());
+    } catch (err) {
+      setStatus("save failed — " + err.message + " (retry by clicking Refresh, then redo the change)", true);
+      toast("Save failed: " + err.message);
+    }
+  }, 600));
+}
+
+function setStatus(text, pending) {
   const n = document.getElementById("saveNote");
-  n.textContent = "saved " + new Date().toLocaleTimeString();
-}
-function newFellow(name, year) {
-  return { id: "f" + Date.now(), name, year, levels: {}, scans: {}, milestones: {}, notes: "" };
+  n.textContent = text;
+  n.classList.toggle("pending", !!pending);
 }
 
 /* ================= rendering ================= */
 const matrixHost = document.getElementById("matrixHost");
 const milesHost  = document.getElementById("milesHost");
 
-function render() { renderStats(); renderMatrix(); renderMilestones(); }
+function render() { renderStats(); renderMatrix(); renderMilestones(); renderRoster(); }
 
 function renderStats() {
   const totalItems = FRAMEWORK.reduce((s,d) => s + d.items.length, 0);
-  const fl = state.fellows;
-  let competentCells = 0, totalCells = fl.length * totalItems, scansLogged = 0, signedOff = 0;
-  fl.forEach(f => {
+  let competentCells = 0, totalCells = fellows.length * totalItems, scansLogged = 0, signedOff = 0;
+  fellows.forEach(f => {
     FRAMEWORK.forEach(d => {
-      const domainDone = d.items.every(it => (f.levels[d.id + "." + it.id] || 0) >= 3) && (f.scans[d.id] || 0) >= d.scanTarget;
+      const domainDone = d.items.every(it => (f.levels[d.id + "." + it.id] || 0) >= 3) && effScans(f, d.id) >= d.scanTarget;
       if (domainDone) signedOff++;
       d.items.forEach(it => { if ((f.levels[d.id + "." + it.id] || 0) >= 3) competentCells++; });
-      scansLogged += f.scans[d.id] || 0;
+      scansLogged += effScans(f, d.id);
     });
   });
   const pct = totalCells ? Math.round(100 * competentCells / totalCells) : 0;
   document.getElementById("statStrip").innerHTML = `
-    <div class="stat"><div class="num">${fl.length}</div><div class="lbl">Fellows tracked</div></div>
+    <div class="stat"><div class="num">${fellows.length}</div><div class="lbl">Fellows tracked</div></div>
     <div class="stat"><div class="num">${pct}%</div><div class="lbl">Items at competent (≥3)</div></div>
     <div class="stat"><div class="num">${scansLogged}</div><div class="lbl">Proctored scans logged</div></div>
-    <div class="stat"><div class="num">${signedOff}<span style="font-size:1rem;color:var(--ink-soft)">/${fl.length * FRAMEWORK.length || 0}</span></div><div class="lbl">Domain sign-offs complete</div></div>`;
+    <div class="stat"><div class="num">${signedOff}<span style="font-size:1rem;color:var(--ink-soft)">/${fellows.length * FRAMEWORK.length || 0}</span></div><div class="lbl">Domain sign-offs complete</div></div>`;
 }
 
 function renderMatrix() {
-  if (!state.fellows.length) {
-    matrixHost.innerHTML = `<div class="empty"><span class="big">No fellows yet.</span>Add your first fellow to start the registry — each gets a column in the matrix and a milestone card below.</div>`;
+  if (!signedIn) {
+    matrixHost.innerHTML = `<div class="empty"><span class="big">Sign in to open the registry.</span></div>`;
+    return;
+  }
+  if (!fellows.length) {
+    matrixHost.innerHTML = `<div class="empty"><span class="big">No fellows yet.</span>Add your first fellow — each gets a column in the matrix, a milestone card, and an access code for the Case Logbook.</div>`;
     return;
   }
   let html = `<div class="matrix-wrap"><table class="matrix"><thead><tr><th>Competency</th>`;
-  state.fellows.forEach(f => {
-    html += `<th>${esc(f.name)}<span class="yr">${esc(f.year)}</span><button class="del" data-del="${f.id}">remove</button></th>`;
+  fellows.forEach(f => {
+    html += `<th>${esc(f.name)}<span class="yr">${esc(f.cohort)}</span></th>`;
   });
   html += `</tr></thead><tbody>`;
   FRAMEWORK.forEach(d => {
-    html += `<tr class="domain-row"><td colspan="${state.fellows.length + 1}">${d.name}<span class="ref">${d.ref}</span></td></tr>`;
+    html += `<tr class="domain-row"><td colspan="${fellows.length + 1}">${d.name}<span class="ref">${d.ref}</span></td></tr>`;
     d.items.forEach(it => {
       html += `<tr><td class="comp-label"><span class="cat">${it.cat}</span>${it.label}</td>`;
-      state.fellows.forEach(f => {
+      fellows.forEach(f => {
         const key = d.id + "." + it.id;
         const lvl = f.levels[key] || 0;
         html += `<td class="cell l${lvl}" data-f="${f.id}" data-k="${key}" title="${esc(f.name)} — ${it.label}">${lvl || "·"}</td>`;
@@ -424,9 +505,10 @@ function renderMatrix() {
       html += `</tr>`;
     });
     html += `<tr class="scan-row"><td>Proctored scans — target ${d.scanTarget}</td>`;
-    state.fellows.forEach(f => {
-      const n = f.scans[d.id] || 0;
-      html += `<td class="scan-cell ${n >= d.scanTarget ? "met" : ""}"><input type="number" min="0" value="${n}" data-f="${f.id}" data-d="${d.id}"><span class="target">${n >= d.scanTarget ? "✓ target met" : "of " + d.scanTarget}</span></td>`;
+    fellows.forEach(f => {
+      const n = effScans(f, d.id);
+      const fromLog = f.logCounts[d.id] || 0;
+      html += `<td class="scan-cell ${n >= d.scanTarget ? "met" : ""}"><input type="number" min="0" value="${n}" data-f="${f.id}" data-d="${d.id}" title="${fromLog} from the case logbook${(f.scans[d.id] || 0) > fromLog ? " · manually raised to " + f.scans[d.id] : ""}"><span class="target">${n >= d.scanTarget ? "✓ target met" : "of " + d.scanTarget}</span>${fromLog ? `<span class="fromlog">${fromLog} from logbook</span>` : ""}</td>`;
     });
     html += `</tr>`;
   });
@@ -435,35 +517,31 @@ function renderMatrix() {
 
   matrixHost.querySelectorAll("td.cell").forEach(td => {
     td.addEventListener("click", e => {
-      const f = state.fellows.find(x => x.id === td.dataset.f);
+      const f = fellows.find(x => x.id === td.dataset.f);
       const cur = f.levels[td.dataset.k] || 0;
       f.levels[td.dataset.k] = e.shiftKey ? Math.max(0, cur - 1) : Math.min(4, cur + 1);
-      save(); render();
+      scheduleSave(f); render();
     });
   });
   matrixHost.querySelectorAll("td.scan-cell input").forEach(inp => {
     inp.addEventListener("change", () => {
-      const f = state.fellows.find(x => x.id === inp.dataset.f);
-      f.scans[inp.dataset.d] = Math.max(0, parseInt(inp.value || "0", 10));
-      save(); render();
-    });
-  });
-  matrixHost.querySelectorAll("button.del").forEach(b => {
-    b.addEventListener("click", () => {
-      const f = state.fellows.find(x => x.id === b.dataset.del);
-      if (confirm(`Remove ${f.name} and all their records?`)) {
-        state.fellows = state.fellows.filter(x => x.id !== f.id);
-        save(); render(); toast("Fellow removed");
+      const f = fellows.find(x => x.id === inp.dataset.f);
+      const v = Math.max(0, parseInt(inp.value || "0", 10));
+      const fromLog = f.logCounts[inp.dataset.d] || 0;
+      if (v < fromLog) {
+        toast(fromLog + " of these come from the fellow's logbook — edit or delete those cases there instead");
       }
+      f.scans[inp.dataset.d] = v;
+      scheduleSave(f); render();
     });
   });
 }
 
 function renderMilestones() {
-  if (!state.fellows.length) { milesHost.innerHTML = ""; return; }
+  if (!signedIn || !fellows.length) { milesHost.innerHTML = ""; return; }
   let html = `<div class="miles-grid">`;
-  state.fellows.forEach(f => {
-    html += `<div class="fellow-card"><h3>${esc(f.name)}<span class="yr">${esc(f.year)}</span></h3><ul>`;
+  fellows.forEach(f => {
+    html += `<div class="fellow-card"><h3>${esc(f.name)}<span class="yr">${esc(f.cohort)}</span></h3><ul>`;
     MILESTONES.forEach(m => {
       const done = !!f.milestones[m.id];
       html += `<li class="${done ? "done" : ""}"><input type="checkbox" ${done ? "checked" : ""} data-f="${f.id}" data-m="${m.id}">${m.label}</li>`;
@@ -475,147 +553,189 @@ function renderMilestones() {
 
   milesHost.querySelectorAll("input[type=checkbox]").forEach(cb => {
     cb.addEventListener("change", () => {
-      const f = state.fellows.find(x => x.id === cb.dataset.f);
+      const f = fellows.find(x => x.id === cb.dataset.f);
       f.milestones[cb.dataset.m] = cb.checked;
-      save(); renderMilestones(); renderStats();
+      scheduleSave(f); renderMilestones(); renderStats();
     });
   });
   milesHost.querySelectorAll("textarea").forEach(ta => {
     ta.addEventListener("change", () => {
-      const f = state.fellows.find(x => x.id === ta.dataset.f);
-      f.notes = ta.value; save();
+      const f = fellows.find(x => x.id === ta.dataset.f);
+      f.notes = ta.value; scheduleSave(f);
     });
   });
 }
 
-/* ================= add fellow ================= */
-const dlg = document.getElementById("dlgFellow");
-document.getElementById("btnAddFellow").addEventListener("click", () => {
-  document.getElementById("fName").value = "";
-  dlg.showModal();
-});
-dlg.addEventListener("close", () => {
-  if (dlg.returnValue !== "default") return;
-  const name = document.getElementById("fName").value.trim();
-  if (!name) return;
-  state.fellows.push(newFellow(name, document.getElementById("fYear").value));
-  save(); render(); toast("Fellow added");
+function renderRoster() {
+  const host = document.getElementById("rosterHost");
+  if (!signedIn || !fellows.length) { host.innerHTML = signedIn ? `<div class="empty">Fellows you add will appear here with their access codes.</div>` : ""; return; }
+  let html = `<div class="roster-wrap"><table class="roster"><thead><tr><th>Fellow</th><th>Cohort</th><th>Access code</th><th>Cases in logbook</th><th></th></tr></thead><tbody>`;
+  fellows.forEach(f => {
+    const totalLog = Object.values(f.logCounts).reduce((a, b) => a + b, 0);
+    html += `<tr>
+      <td>${esc(f.name)}</td>
+      <td>${esc(f.cohort)}</td>
+      <td class="codecell">${esc(f.code)}</td>
+      <td>${totalLog} proctored</td>
+      <td>
+        <button data-show="${f.id}">show / copy</button>
+        <button data-regen="${f.id}">regenerate code</button>
+        <button data-remove="${f.id}">remove</button>
+      </td>
+    </tr>`;
+  });
+  html += `</tbody></table></div>`;
+  host.innerHTML = html;
+
+  host.querySelectorAll("button[data-show]").forEach(b => b.addEventListener("click", () => {
+    const f = fellows.find(x => x.id === b.dataset.show);
+    showCode(f.name, f.code);
+  }));
+  host.querySelectorAll("button[data-regen]").forEach(b => b.addEventListener("click", async () => {
+    const f = fellows.find(x => x.id === b.dataset.regen);
+    if (!confirm("Regenerate " + f.name + "'s access code? Their old code stops working immediately and they'll be signed out of the logbook.")) return;
+    try {
+      const r = await api("/fellows/" + encodeURIComponent(f.id), { method: "PUT", body: { regenerateCode: true } });
+      f.code = r.fellow.code;
+      render(); showCode(f.name, f.code);
+    } catch (err) { toast("Failed: " + err.message); }
+  }));
+  host.querySelectorAll("button[data-remove]").forEach(b => b.addEventListener("click", async () => {
+    const f = fellows.find(x => x.id === b.dataset.remove);
+    if (!confirm("Remove " + f.name + "? This permanently deletes their assessment AND all their logged cases.")) return;
+    try {
+      await api("/fellows/" + encodeURIComponent(f.id), { method: "DELETE" });
+      fellows = fellows.filter(x => x.id !== f.id);
+      render(); toast("Fellow removed");
+    } catch (err) { toast("Failed: " + err.message); }
+  }));
+}
+
+/* ================= access code dialog ================= */
+const dlgCode = document.getElementById("dlgCode");
+let shownCode = "";
+function showCode(name, code) {
+  shownCode = code;
+  document.getElementById("codeWho").innerHTML = `Give this code to <strong>${esc(name)}</strong>. They enter it once on the <strong>Case Logbook</strong> page and stay signed in on that device.`;
+  document.getElementById("codeBox").textContent = code;
+  dlgCode.showModal();
+}
+document.getElementById("btnCopyCode").addEventListener("click", async () => {
+  try { await navigator.clipboard.writeText(shownCode); toast("Copied"); }
+  catch (e) { toast("Copy failed — select the code and copy manually"); }
 });
 
-/* ================= export / import ================= */
-document.getElementById("btnExportJson").addEventListener("click", () => {
-  download("nufsm-pocus-registry-" + today() + ".json", JSON.stringify(state, null, 2), "application/json");
-  toast("JSON backup downloaded");
+/* ================= add fellow ================= */
+const dlgFellow = document.getElementById("dlgFellow");
+document.getElementById("btnAddFellow").addEventListener("click", () => {
+  if (!signedIn) { openSignin(); return; }
+  document.getElementById("fName").value = "";
+  dlgFellow.showModal();
 });
-document.getElementById("btnImportJson").addEventListener("click", () => document.getElementById("fileImport").click());
-document.getElementById("fileImport").addEventListener("change", e => {
-  const file = e.target.files[0]; if (!file) return;
-  const r = new FileReader();
-  r.onload = () => {
-    try {
-      const data = JSON.parse(r.result);
-      if (!Array.isArray(data.fellows)) throw new Error("bad shape");
-      state = data; save(); render(); toast("Registry restored");
-    } catch (err) { toast("Import failed — not a valid backup"); }
-  };
-  r.readAsText(file);
-  e.target.value = "";
+document.getElementById("fmFellow").addEventListener("submit", async () => {
+  const name = document.getElementById("fName").value.trim();
+  if (!name) return;
+  try {
+    const r = await api("/fellows", { method: "POST", body: { name, cohort: document.getElementById("fYear").value } });
+    fellows.push(fromServer(r.fellow));
+    render(); toast("Fellow added");
+    showCode(r.fellow.name, r.fellow.code);
+  } catch (err) { toast("Failed: " + err.message); }
 });
+
+/* ================= sign in / out ================= */
+const dlgSignin = document.getElementById("dlgSignin");
+function openSignin(errMsg) {
+  document.getElementById("inCode").value = "";
+  document.getElementById("signinErr").textContent = errMsg || "";
+  if (!dlgSignin.open) dlgSignin.showModal();
+}
+document.getElementById("fmSignin").addEventListener("submit", async () => {
+  const code = document.getElementById("inCode").value.trim();
+  if (!code) return;
+  accessCode = code;
+  try {
+    const m = await api("/me");
+    if (m.role !== "faculty") {
+      accessCode = "";
+      openSignin("That's a fellow code — it works on the Case Logbook page, not here.");
+      return;
+    }
+    localStorage.setItem(CODE_KEY, accessCode);
+    signedIn = true;
+    await loadAll(false);
+    toast("Signed in ✓");
+  } catch (err) {
+    accessCode = "";
+    openSignin(err.auth ? "Code not recognized." : "Can't reach the server: " + err.message);
+  }
+});
+document.getElementById("btnSignout").addEventListener("click", () => {
+  if (!confirm("Sign out of the registry on this device?")) return;
+  accessCode = ""; signedIn = false; fellows = [];
+  localStorage.removeItem(CODE_KEY);
+  render(); setStatus("");
+  openSignin();
+});
+document.getElementById("btnRefresh").addEventListener("click", async () => {
+  if (!signedIn) { openSignin(); return; }
+  try { await loadAll(true); } catch (err) { toast("Refresh failed: " + err.message); }
+});
+
+/* ================= export ================= */
 document.getElementById("btnExportCsv").addEventListener("click", () => {
   const rows = [["Fellow","Cohort","Domain","Category","Competency","Level (0–4)"]];
-  state.fellows.forEach(f => FRAMEWORK.forEach(d => {
-    d.items.forEach(it => rows.push([f.name, f.year, d.name, it.cat, it.label, f.levels[d.id + "." + it.id] || 0]));
-    rows.push([f.name, f.year, d.name, "Scans", "Proctored scan count (target " + d.scanTarget + ")", f.scans[d.id] || 0]);
-    MILESTONES.forEach(m => rows.push([f.name, f.year, "Program milestones", "Milestone", m.label, f.milestones[m.id] ? 1 : 0]));
+  fellows.forEach(f => FRAMEWORK.forEach(d => {
+    d.items.forEach(it => rows.push([f.name, f.cohort, d.name, it.cat, it.label, f.levels[d.id + "." + it.id] || 0]));
+    rows.push([f.name, f.cohort, d.name, "Scans", "Proctored scan count (target " + d.scanTarget + ")", effScans(f, d.id)]);
+    MILESTONES.forEach(m => rows.push([f.name, f.cohort, "Program milestones", "Milestone", m.label, f.milestones[m.id] ? 1 : 0]));
   }));
   const csv = rows.map(r => r.map(c => `"${String(c).replace(/"/g, '""')}"`).join(",")).join("\r\n");
   download("nufsm-pocus-registry-" + today() + ".csv", csv, "text/csv");
   toast("CSV downloaded");
 });
-
-/* ================= GitHub sync ================= */
-const SYNC_KEY = "nufsm-pocus-sync-v1";
-let syncCfg = (() => { try { return JSON.parse(localStorage.getItem(SYNC_KEY)) || {}; } catch (e) { return {}; } })();
-
-const dlgSync = document.getElementById("dlgSync");
-document.getElementById("btnSyncCfg").addEventListener("click", () => {
-  document.getElementById("sRepo").value = syncCfg.repo || "";
-  document.getElementById("sBranch").value = syncCfg.branch || "main";
-  document.getElementById("sPath").value = syncCfg.path || "registry.json";
-  document.getElementById("sToken").value = syncCfg.token || "";
-  dlgSync.showModal();
+document.getElementById("btnExportJson").addEventListener("click", () => {
+  const data = { fellows: fellows.map(f => ({ id: f.id, name: f.name, year: f.cohort, levels: f.levels, scans: f.scans, milestones: f.milestones, notes: f.notes, logCounts: f.logCounts })) };
+  download("nufsm-pocus-registry-" + today() + ".json", JSON.stringify(data, null, 2), "application/json");
+  toast("JSON backup downloaded");
 });
-dlgSync.addEventListener("close", () => {
-  if (dlgSync.returnValue !== "default") return;
-  syncCfg = {
-    repo: document.getElementById("sRepo").value.trim(),
-    branch: document.getElementById("sBranch").value.trim() || "main",
-    path: document.getElementById("sPath").value.trim() || "registry.json",
-    token: document.getElementById("sToken").value.trim()
+
+/* ================= legacy import =================
+   One-time migration from the old localStorage/GitHub registry backup
+   ({ fellows: [{name, year, levels, scans, milestones, notes}] }).
+   Creates each fellow on the server (generating an access code) unless a
+   fellow with the same name already exists. */
+document.getElementById("btnImportLegacy").addEventListener("click", () => {
+  if (!signedIn) { openSignin(); return; }
+  document.getElementById("fileLegacy").click();
+});
+document.getElementById("fileLegacy").addEventListener("change", e => {
+  const file = e.target.files[0]; if (!file) return;
+  const r = new FileReader();
+  r.onload = async () => {
+    try {
+      const data = JSON.parse(r.result);
+      if (!Array.isArray(data.fellows)) throw new Error("not a registry backup");
+      const norm = s => String(s || "").trim().toLowerCase();
+      const existing = new Set(fellows.map(f => norm(f.name)));
+      let added = 0, skipped = 0;
+      for (const lf of data.fellows) {
+        if (!lf.name) continue;
+        if (existing.has(norm(lf.name))) { skipped++; continue; }
+        const res = await api("/fellows", { method: "POST", body: {
+          name: lf.name, cohort: lf.year || lf.cohort || "CCM-1",
+          assessment: { levels: lf.levels || {}, scans: lf.scans || {}, milestones: lf.milestones || {}, notes: lf.notes || "" }
+        }});
+        fellows.push(fromServer(res.fellow));
+        added++;
+      }
+      render();
+      toast(`Imported ${added} fellow${added === 1 ? "" : "s"}` + (skipped ? ` (${skipped} already existed — skipped)` : "") + ". Access codes are in the roster.");
+    } catch (err) { toast("Import failed: " + err.message); }
   };
-  localStorage.setItem(SYNC_KEY, JSON.stringify(syncCfg));
-  toast("Sync settings saved");
+  r.readAsText(file);
+  e.target.value = "";
 });
-
-function syncReady() {
-  if (syncCfg.repo && syncCfg.token) return true;
-  toast("Set up GitHub sync first");
-  document.getElementById("btnSyncCfg").click();
-  return false;
-}
-function ghContentsUrl(withRef) {
-  const path = syncCfg.path.split("/").map(encodeURIComponent).join("/");
-  return `https://api.github.com/repos/${syncCfg.repo}/contents/${path}` + (withRef ? `?ref=${encodeURIComponent(syncCfg.branch)}` : "");
-}
-function ghHeaders() {
-  return { "Authorization": "Bearer " + syncCfg.token, "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" };
-}
-
-document.getElementById("btnPush").addEventListener("click", async () => {
-  if (!syncReady()) return;
-  try {
-    toast("Pushing…");
-    let sha;
-    const probe = await fetch(ghContentsUrl(true), { headers: ghHeaders() });
-    if (probe.ok) sha = (await probe.json()).sha;
-    else if (probe.status !== 404) throw new Error("GitHub " + probe.status + " — check repo name and token");
-    const body = {
-      message: "POCUS registry update " + new Date().toISOString().slice(0, 16).replace("T", " "),
-      content: b64encode(JSON.stringify(state, null, 2)),
-      branch: syncCfg.branch
-    };
-    if (sha) body.sha = sha;
-    const put = await fetch(ghContentsUrl(false), { method: "PUT", headers: ghHeaders(), body: JSON.stringify(body) });
-    if (!put.ok) throw new Error("GitHub " + put.status + " — check branch and token scope (Contents: read & write)");
-    document.getElementById("saveNote").textContent = "pushed to GitHub " + new Date().toLocaleTimeString();
-    toast("Pushed to GitHub ✓");
-  } catch (err) { toast("Push failed: " + err.message); }
-});
-
-document.getElementById("btnPull").addEventListener("click", async () => {
-  if (!syncReady()) return;
-  try {
-    toast("Pulling…");
-    const res = await fetch(ghContentsUrl(true), { headers: ghHeaders() });
-    if (res.status === 404) { toast("No registry file in that repo yet — Push first"); return; }
-    if (!res.ok) throw new Error("GitHub " + res.status + " — check repo name and token");
-    const data = JSON.parse(b64decode((await res.json()).content));
-    if (!Array.isArray(data.fellows)) throw new Error("file is not a registry backup");
-    if (state.fellows.length && !confirm("Replace the data in this browser with the GitHub copy?")) return;
-    state = data; save(); render();
-    toast("Pulled from GitHub ✓");
-  } catch (err) { toast("Pull failed: " + err.message); }
-});
-
-function b64encode(str) {
-  const bytes = new TextEncoder().encode(str);
-  let bin = ""; bytes.forEach(b => bin += String.fromCharCode(b));
-  return btoa(bin);
-}
-function b64decode(b64) {
-  const bin = atob(b64.replace(/\s/g, ""));
-  return new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0)));
-}
 
 /* ================= utils ================= */
 function esc(s) { return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
@@ -629,10 +749,23 @@ let toastTimer;
 function toast(msg) {
   const t = document.getElementById("toast");
   t.textContent = msg; t.classList.add("show");
-  clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove("show"), 2200);
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove("show"), 2600);
 }
 
-render();
+/* ================= init ================= */
+(async () => {
+  render();
+  if (!accessCode) { openSignin(); return; }
+  try {
+    const m = await api("/me");
+    if (m.role !== "faculty") throw Object.assign(new Error("auth"), { auth: true });
+    signedIn = true;
+    await loadAll(false);
+  } catch (err) {
+    accessCode = ""; localStorage.removeItem(CODE_KEY);
+    openSignin(err.auth ? "Your saved code no longer works — sign in again." : "Can't reach the server: " + err.message);
+  }
+})();
 </script>
 </body>
 </html>
