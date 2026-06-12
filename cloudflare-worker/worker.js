@@ -437,7 +437,17 @@ async function handleApi(request, env, url, cors) {
       if (!f) return json({ error: "fellow not found" }, 404, cors);
       var newName = ub.name !== undefined ? clip(ub.name, 120).trim() || f.name : f.name;
       var newCohort = ub.cohort !== undefined ? clip(ub.cohort, 40) || f.cohort : f.cohort;
-      var newCode = ub.regenerateCode ? genCode() : f.code;
+      var newCode = f.code;
+      if (ub.regenerateCode) {
+        newCode = genCode();
+      } else if (ub.code !== undefined) {
+        var custom = clip(ub.code, 80).trim();
+        if (custom.length < 12) return json({ error: "custom code must be at least 12 characters" }, 400, cors);
+        if (env.FACULTY_CODE && custom === env.FACULTY_CODE) return json({ error: "that code is reserved" }, 400, cors);
+        var dup = await env.DB.prepare("SELECT id FROM fellows WHERE code = ?1 AND id != ?2").bind(custom, resourceId).first();
+        if (dup) return json({ error: "that code is already assigned to another fellow" }, 409, cors);
+        newCode = custom;
+      }
       var newAssessment = ub.assessment !== undefined && typeof ub.assessment === "object"
         ? JSON.stringify(ub.assessment) : f.assessment;
       await env.DB.prepare(

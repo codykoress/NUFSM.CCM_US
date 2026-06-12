@@ -162,6 +162,15 @@ class Handler(BaseHTTPRequestHandler):
                     f["cohort"] = str(b["cohort"])[:40]
                 if b.get("regenerateCode"):
                     f["code"] = gen_code()
+                elif "code" in b:
+                    custom = str(b["code"]).strip()[:80]
+                    if len(custom) < 12:
+                        return self._send({"error": "custom code must be at least 12 characters"}, 400)
+                    if custom == FACULTY_CODE:
+                        return self._send({"error": "that code is reserved"}, 400)
+                    if any(x["code"] == custom for x in FELLOWS.values() if x["id"] != rid):
+                        return self._send({"error": "that code is already assigned to another fellow"}, 409)
+                    f["code"] = custom
                 if isinstance(b.get("assessment"), dict):
                     f["assessment"] = b["assessment"]
                 return self._send({"fellow": f})

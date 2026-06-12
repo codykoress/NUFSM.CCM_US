@@ -304,6 +304,20 @@
   </form>
 </dialog>
 
+<dialog id="dlgEditCode">
+  <h3>Edit access code</h3>
+  <form method="dialog" id="fmEditCode">
+    <p class="synchelp" id="editCodeWho"></p>
+    <label for="ecCode">New code (12+ characters)</label>
+    <input id="ecCode" type="text" class="mono" autocomplete="off" spellcheck="false" placeholder="e.g., RIVERA-POCUS-2026">
+    <div class="signin-err" id="editCodeErr"></div>
+    <div class="row">
+      <button value="cancel" type="button" onclick="dlgEditCode.close()">Cancel</button>
+      <button class="primary" value="default">Save code</button>
+    </div>
+  </form>
+</dialog>
+
 <dialog id="dlgCode">
   <h3>Access code</h3>
   <p class="synchelp" id="codeWho"></p>
@@ -579,6 +593,7 @@ function renderRoster() {
       <td>${totalLog} proctored</td>
       <td>
         <button data-show="${f.id}">show / copy</button>
+        <button data-editcode="${f.id}">edit code</button>
         <button data-regen="${f.id}">regenerate code</button>
         <button data-remove="${f.id}">remove</button>
       </td>
@@ -590,6 +605,10 @@ function renderRoster() {
   host.querySelectorAll("button[data-show]").forEach(b => b.addEventListener("click", () => {
     const f = fellows.find(x => x.id === b.dataset.show);
     showCode(f.name, f.code);
+  }));
+  host.querySelectorAll("button[data-editcode]").forEach(b => b.addEventListener("click", () => {
+    const f = fellows.find(x => x.id === b.dataset.editcode);
+    openEditCode(f);
   }));
   host.querySelectorAll("button[data-regen]").forEach(b => b.addEventListener("click", async () => {
     const f = fellows.find(x => x.id === b.dataset.regen);
@@ -623,6 +642,32 @@ function showCode(name, code) {
 document.getElementById("btnCopyCode").addEventListener("click", async () => {
   try { await navigator.clipboard.writeText(shownCode); toast("Copied"); }
   catch (e) { toast("Copy failed — select the code and copy manually"); }
+});
+
+/* ================= edit access code ================= */
+const dlgEditCode = document.getElementById("dlgEditCode");
+let editCodeFellowId = null;
+function openEditCode(f) {
+  editCodeFellowId = f.id;
+  document.getElementById("editCodeWho").innerHTML = `Set a custom code for <strong>${esc(f.name)}</strong>. Their current code stops working the moment you save — give them the new one. Longer is safer: this code is their entire login.`;
+  document.getElementById("ecCode").value = "";
+  document.getElementById("editCodeErr").textContent = "";
+  dlgEditCode.showModal();
+}
+document.getElementById("fmEditCode").addEventListener("submit", async e => {
+  const f = fellows.find(x => x.id === editCodeFellowId);
+  const code = document.getElementById("ecCode").value.trim();
+  if (!f) return;
+  const reopen = msg => { dlgEditCode.showModal(); document.getElementById("editCodeErr").textContent = msg; };
+  if (code.length < 12) { setTimeout(() => reopen("Too short — use at least 12 characters."), 0); return; }
+  try {
+    const r = await api("/fellows/" + encodeURIComponent(f.id), { method: "PUT", body: { code } });
+    f.code = r.fellow.code;
+    render(); toast("Code updated for " + f.name);
+    showCode(f.name, f.code);
+  } catch (err) {
+    setTimeout(() => reopen(err.auth ? "Sign-in expired — refresh and try again." : err.message), 0);
+  }
 });
 
 /* ================= add fellow ================= */
