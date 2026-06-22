@@ -291,8 +291,6 @@ Myocarditis with cardiogenic shock. This is not ischemic cardiomyopathy — no r
 
 ## Quiz
 
-Anki deck for spaced repetition: *link coming soon.*
-
 ::: {.callout-note}
 **Q1.** A hypotensive patient has a hyperdynamic LV on bedside echo. What does this tell you about the etiology of shock?
 

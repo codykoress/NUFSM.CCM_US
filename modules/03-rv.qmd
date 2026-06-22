@@ -284,8 +284,6 @@ RV infarct complicating inferior STEMI. Nitroglycerin is contraindicated — it 
 
 ## Quiz
 
-Anki deck for spaced repetition: *link coming soon.*
-
 ::: {.callout-note}
 **Q1.** On apical four-chamber, the RV appears as large as the LV. What is your next step before concluding RV dilation is present?
 

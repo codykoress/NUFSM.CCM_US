@@ -241,8 +241,6 @@ Catheter-associated DVT of the right CFV. Therapeutic anticoagulation for a mini
 
 ## Quiz
 
-Anki deck for spaced repetition: *link coming soon.*
-
 ::: {.callout-note}
 **Q1.** The vein appears anechoic (echo-free) on 2D imaging but does not fully compress. Is this a DVT?
 

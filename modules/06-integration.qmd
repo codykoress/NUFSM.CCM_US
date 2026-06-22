@@ -236,8 +236,6 @@ Obtain an ECG and serial troponins — a perioperative MI must be ruled out. Car
 
 ## Quiz
 
-Anki deck for spaced repetition: *link coming soon.*
-
 ::: {.callout-note}
 **Q1.** A patient in shock has a hyperdynamic LV, a dilated RV with D-sign, and a plethoric IVC. No pericardial effusion. What is the most likely hemodynamic phenotype and the priority intervention?
 

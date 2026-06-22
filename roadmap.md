@@ -11,7 +11,7 @@
 - [x] All 11 modules linked in navbar and home page
 
 ### Module content (written)
-- [x] **Module 1** — Windows & Acquisition: four windows, machine setup, normal anatomy, normal variants, 7-question quiz
+- [x] **Module 1** — Windows & Acquisition: four windows (apical 5-chamber, PLAX RV inflow, and subcostal IVC sub-views), machine setup, normal anatomy, normal variants, 7-question quiz
 - [x] **Module 2** — Left Ventricular Function: systolic dysfunction, RWMA, Takotsubo, cardiogenic shock, 5-question quiz
 - [x] **Module 3** — Right Ventricular Function: RV strain, D-sign, McConnell's sign, TAPSE, PE, ARDS cor pulmonale, 5-question quiz
 - [x] **Module 4** — Pericardium: effusion sizing, tamponade, pericarditis (constrictive disease scoped out), Doppler assessment, 6-question quiz
@@ -42,7 +42,7 @@
 
 | Module | Missing clips |
 |---|---|
-| 1 | Normal studies across body habitus (obese, COPD, post-CABG) |
+| 1 | Apical 5-chamber, PLAX RV inflow, and subcostal IVC acquisition clips; normal studies across body habitus (obese, COPD, post-CABG) |
 | 2 | Normal LV in obese patient / patient with LVH (body habitus variants) |
 | 3 | Normal RV in A4C (thin free wall, brisk TAPSE); TAPSE M-mode (normal vs reduced); Case 1 (massive PE), Case 3 (ARDS cor pulmonale), Case 4 (RV infarct) loops |
 | 4 | Subcostal & A4C acquisition for pericardial assessment; normal pericardium in each window; normal hepatic vein flow; small posterior PLAX effusion; acute pericarditis with effusion; myopericarditis; all 6 integration case loops |
@@ -65,7 +65,6 @@
 - [ ] `constrictive pericarditis.gif` and `constrictive pericarditis subcostal.gif` are in `modules/gifs/` but no longer referenced (constrictive section dropped from Module 4) — safe to delete
 
 ### Per-module content gaps
-- [ ] All modules: Anki deck links (referenced as "link coming soon" throughout)
 - [ ] All modules: References & further reading sections
 - [ ] Integration case video slots: replace "Loops for interpretation" with actual clips as they are sourced (see Clips table above)
 - [ ] Module 6: "Before/after" serial exam comparison clip

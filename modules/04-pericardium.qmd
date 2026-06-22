@@ -324,8 +324,6 @@ Recurrent pericarditis with small effusion — no high-risk features. Restart NS
 
 ## Quiz
 
-Anki deck for spaced repetition: *link coming soon.*
-
 ::: {.callout-note}
 **Q1.** On PLAX, you see an echo-free space posterior to the LV. How do you determine whether it is pericardial or pleural?
 

@@ -357,8 +357,6 @@ Right lower lobe consolidation with static air bronchograms — likely right low
 
 ## Quiz
 
-Anki deck for spaced repetition: *link coming soon.*
-
 ::: {.callout-note}
 **Q1.** What is a B-line, and how many are required per zone to indicate pathology?
 

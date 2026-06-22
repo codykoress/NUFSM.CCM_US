@@ -243,8 +243,6 @@ This is not septic shock with a responsive ventricle — it is cardiogenic shock
 
 ## Quiz
 
-Anki deck for spaced repetition: *link coming soon.*
-
 ::: {.callout-note}
 **Q1.** A patient has an IVC of 1.8 cm with 40% collapse. What does this tell you about fluid responsiveness?
 

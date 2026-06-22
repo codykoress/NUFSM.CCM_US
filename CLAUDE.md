@@ -75,7 +75,7 @@ See `roadmap.md` for the full breakdown. Top priorities:
 
 - **~90 clips still needed** — tiered: M3/M4/M6/M7 high priority (~35), M9/M10/M11 bulk (~39), M1/M2/M5/M8 low (~16)
 - Resolve 22 clips marked `*` in credits
-- Add Anki deck links and References sections to all modules
+- Add References sections to all modules
 - ~~Scan logbook for fellows~~ done — `case-logbook.html` + `competency-dashboard.html` are backed by the Cloudflare Worker's `/api` (D1 database `pocus-logbook`). Fellows sign in with PD-issued access codes (generated in the registry roster); faculty signs in with the `FACULTY_CODE` worker secret. Proctored counts flow live from logbook to registry. One-time deployment steps are in `cloudflare-worker/worker.js` header; `mock-api.py` mocks the API locally for testing. Fellow data lives only in D1 — never commit it here.
 - Decide hosting platform (GitHub Pages, Quarto Pub, or institutional server)
 
