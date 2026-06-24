@@ -29,8 +29,6 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. LV function is
 ### Parasternal long axis
 
 ::: {.callout-tip}
-PLAX for LV assessment — M-mode placement at mitral valve tips, visual EF estimation, posterior wall and septal motion.
-
 <img src="gifs/Normal Parasternal Long Axis (PLAX) View.gif" style="width:100%; border-radius:4px;" alt="Normal PLAX for LV assessment"/>
 :::
 
@@ -41,8 +39,6 @@ PLAX for LV assessment — M-mode placement at mitral valve tips, visual EF esti
 ### Parasternal short axis — papillary muscle level
 
 ::: {.callout-tip}
-PSAX at papillary muscle level — the "donut" view, eyeball EF, D-sign assessment.
-
 <img src="gifs/Normal Parasternal Short Axis View.gif" style="width:100%; border-radius:4px;" alt="Normal PSAX at papillary muscle level"/>
 :::
 
@@ -53,8 +49,6 @@ PSAX at papillary muscle level — the "donut" view, eyeball EF, D-sign assessme
 ### Apical four-chamber
 
 ::: {.callout-tip}
-Apical four-chamber for wall motion — septal, lateral, apical segments.
-
 <img src="gifs/apical+4+normal.gif" style="width:100%; border-radius:4px;" alt="Normal apical four-chamber — wall motion reference"/>
 :::
 
@@ -65,8 +59,6 @@ Apical four-chamber for wall motion — septal, lateral, apical segments.
 ### Subcostal
 
 ::: {.callout-tip}
-Subcostal cardiac view — rapid global LV assessment in the undifferentiated patient.
-
 <img src="gifs/normal subcostal view.gif" style="width:100%; border-radius:4px;" alt="Normal subcostal cardiac view"/>
 :::
 
@@ -79,8 +71,6 @@ Subcostal cardiac view — rapid global LV assessment in the undifferentiated pa
 *The library of normal hearts and common confounders.*
 
 ::: {.callout-tip}
-Normal LV function across body habitus — thin patient, obese patient, patient with LVH. Review before the pathology library.
-
 <img src="gifs/hyperdynamic short axis.gif" style="width:100%; border-radius:4px;" alt="Hyperdynamic LV on short axis — normal variant in distributive physiology"/>
 :::
 
@@ -109,8 +99,6 @@ In severe hypovolemia, the LV cavity may appear nearly obliterated even in diast
 ### Severely reduced EF
 
 ::: {.callout-tip}
-Severely reduced EF — dilated LV, minimal wall motion, large end-systolic volume.
-
 <img src="gifs/Reduced Ejection Fraction (Parasternal Long Axis View).gif" style="width:100%; border-radius:4px;" alt="Severely reduced EF on PLAX"/>
 
 <img src="gifs/Decreased EF (Parasternal Short).gif" style="width:100%; border-radius:4px;" alt="Decreased EF on parasternal short axis"/>
@@ -132,8 +120,6 @@ EF visually estimated below 30%. The LV is often dilated. Wall motion is globall
 ### Mildly to moderately reduced EF
 
 ::: {.callout-tip}
-Moderately reduced EF — reduced but present wall motion, mildly dilated LV.
-
 <img src="gifs/moderately reduced EF short axis.gif" style="width:100%; border-radius:4px;" alt="Moderately reduced EF on short axis"/>
 
 <img src="gifs/moderately reduced EF apical 4 chamber.gif" style="width:100%; border-radius:4px;" alt="Moderately reduced EF on apical four-chamber"/>
@@ -174,8 +160,6 @@ Segmental dysfunction confined to a coronary distribution. The affected wall mov
 ### Dilated LV
 
 ::: {.callout-tip}
-Dilated LV — increased end-diastolic dimension, loss of the normal elliptical shape.
-
 <img src="gifs/New Onset Cardiomyopathy with Reduced Ejection Fraction (PLAX).gif" style="width:100%; border-radius:4px;" alt="New onset cardiomyopathy with reduced EF on PLAX"/>
 
 <img src="gifs/Biventricular Failure (apical 4 chamber).gif" style="width:100%; border-radius:4px;" alt="Biventricular failure on apical four-chamber"/>
@@ -205,8 +189,6 @@ LV end-diastolic diameter greater than 5.5 cm (PLAX, M-mode) or a visually enlar
 Rapid focused cardiac ultrasound before transfer to the cath lab.
 
 ::: {.callout-tip}
-Loops for interpretation.
-
 <img src="gifs/Inferior and Lateral wall kypokinesis Psx - Case 1 Hypotension after STEMI.gif" style="width:100%; border-radius:4px;" alt="Inferior and lateral wall hypokinesis on parasternal short axis — Case 1"/>
 :::
 
@@ -226,8 +208,6 @@ This is cardiogenic shock from a large anterior MI. Start dobutamine at low dose
 Bedside cardiac ultrasound — LV function, RV size, IVC.
 
 ::: {.callout-tip}
-Loops for interpretation.
-
 <img src="gifs/Severe Depressed LV A4c - Case 2 Undifferentiated hypotension in the ICU.gif" style="width:100%; border-radius:4px;" alt="Severely depressed LV on apical four-chamber — Case 2"/>
 
 <img src="gifs/Severe Depressed LV Psx - Case 2 Undifferentiated hypotension in the ICU.gif" style="width:100%; border-radius:4px;" alt="Severely depressed LV on parasternal short axis — Case 2"/>
@@ -251,8 +231,6 @@ This is sepsis-mediated cardiomyopathy with cardiogenic component to the shock. 
 Focused cardiac ultrasound to assess for RWMA.
 
 ::: {.callout-tip}
-Loops for interpretation.
-
 <img src="gifs/Lateral wall dyskinesia Psx - Case 3 Chest pain and new ECG changes.gif" style="width:100%; border-radius:4px;" alt="Lateral wall dyskinesia on parasternal short axis — Case 3"/>
 :::
 
@@ -272,8 +250,6 @@ Lateral RWMA in the context of ST depression and chest pain is an NSTEMI with hi
 Focused cardiac ultrasound.
 
 ::: {.callout-tip}
-Loops for interpretation.
-
 <img src="gifs/Case 4 Young patient with viral prodrome and shock.gif" style="width:100%; border-radius:4px;" alt="Severely reduced EF with small pericardial effusion — myocarditis, Case 4"/>
 :::
 

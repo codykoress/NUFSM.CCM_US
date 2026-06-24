@@ -38,8 +38,6 @@ Dilated RV with D-sign and a normal or hyperdynamic LV = obstructive physiology 
 Small and collapsible = low filling pressure, possible fluid responsiveness. Large and non-collapsing = elevated filling pressure, fluid loading is unlikely to help.
 
 ::: {.callout-tip}
-Demonstration of a systematic 4-question exam — subcostal (pericardium + IVC), PLAX (LV + pericardium), PSAX (D-sign, LV function), apical 4-chamber (RV:LV ratio, LV wall motion).
-
 <img src="gifs/Septal Dyskinesis (Subcostal View).gif" style="width:100%; border-radius:4px;" alt="Septal dyskinesis on subcostal view — example of RV/LV interaction"/>
 :::
 
@@ -143,8 +141,6 @@ Stop fluids — the patient is congested. Add dobutamine for inotropic support. 
 **Systematic four-question exam:**
 
 ::: {.callout-tip}
-Loops for interpretation.
-
 <img src="gifs/Ventricular Fibrillation.gif" style="width:100%; border-radius:4px;" alt="Ventricular fibrillation — chaotic cardiac motion"/>
 :::
 

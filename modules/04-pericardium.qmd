@@ -47,8 +47,6 @@ The RV free wall is nearest the probe, making the subcostal view the best window
 ### Parasternal long axis — pericardial assessment
 
 ::: {.callout-tip}
-PLAX for pericardial assessment — posterior effusion, descending aorta landmark, effusion sizing.
-
 <img src="gifs/PSLX pericardial effusion.gif" style="width:100%; border-radius:4px;" alt="Pericardial effusion on parasternal long axis — descending aorta landmark"/>
 :::
 
@@ -69,8 +67,6 @@ The apical view is useful for identifying loculated effusions and for PW Doppler
 ## 3. Normal & normal variants
 
 ::: {.callout-tip}
-Normal pericardium in each window. Normal mitral inflow Doppler. Normal hepatic vein flow.
-
 <img src="gifs/Mitral inflow — pulsed wave Doppler.avif" style="width:100%; border-radius:4px;" alt="Normal mitral inflow — pulsed wave Doppler"/>
 :::
 
@@ -121,8 +117,6 @@ Less than 1 cm in greatest diameter on PLAX, posterior to the LV. Visible in dia
 ### Moderate to large effusion
 
 ::: {.callout-tip}
-Large circumferential effusion — swinging heart, echo-free space in all windows.
-
 <img src="gifs/Chronic+Pericardial+Effusion.gif" style="width:100%; border-radius:4px;" alt="Large chronic pericardial effusion"/>
 
 <img src="gifs/Chronic+Pericardial+Effusion subcostal.gif" style="width:100%; border-radius:4px;" alt="Large chronic pericardial effusion — subcostal view"/>
@@ -169,8 +163,6 @@ Tamponade is elevated intrapericardial pressure exceeding intracardiac filling p
 ### Loculated effusion
 
 ::: {.callout-tip}
-Post-operative loculated effusion — anterior, irregular, compressing a single chamber.
-
 <img src="gifs/loculated pericardial effusion.gif" style="width:100%; border-radius:4px;" alt="Loculated pericardial effusion"/>
 
 <img src="gifs/loculated pericardial effusion subcostal.gif" style="width:100%; border-radius:4px;" alt="Loculated pericardial effusion — subcostal view"/>

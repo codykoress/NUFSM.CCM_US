@@ -29,8 +29,6 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. RV assessment 
 ### Apical four-chamber — standard and RV-focused
 
 ::: {.callout-tip}
-Apical four-chamber for RV assessment — RV:LV ratio, free wall motion, TAPSE measurement.
-
 <img src="gifs/apical+4+normal.gif" style="width:100%; border-radius:4px;" alt="Normal apical four-chamber — RV:LV comparison"/>
 :::
 
@@ -48,8 +46,6 @@ Apical four-chamber for RV assessment — RV:LV ratio, free wall motion, TAPSE m
 ### Parasternal short axis — mid-ventricular level
 
 ::: {.callout-tip}
-PSAX for D-sign — normal circular LV vs pressure-overloaded D-shape.
-
 <img src="gifs/Normal Parasternal Short Axis View.gif" style="width:100%; border-radius:4px;" alt="Normal PSAX — circular LV for comparison"/>
 :::
 
@@ -64,8 +60,6 @@ PSAX for D-sign — normal circular LV vs pressure-overloaded D-shape.
 ### Parasternal long axis — RV outflow
 
 ::: {.callout-tip}
-PLAX with attention to RV — RV dilation encroaching on the LV, RVOT assessment.
-
 <img src="gifs/Normal Parasternal Long Axis (PLAX) View.gif" style="width:100%; border-radius:4px;" alt="Normal PLAX — RV free wall and RVOT reference"/>
 :::
 
@@ -76,8 +70,6 @@ PLAX with attention to RV — RV dilation encroaching on the LV, RVOT assessment
 ### Subcostal
 
 ::: {.callout-tip}
-Subcostal view for RV — free wall, size assessment, RV-to-LV comparison.
-
 <img src="gifs/normal subcostal view.gif" style="width:100%; border-radius:4px;" alt="Normal subcostal view — RV free wall reference"/>
 :::
 
@@ -112,8 +104,6 @@ Free wall thickness greater than 5 mm indicates chronic pressure overload. The R
 ### RV dilation
 
 ::: {.callout-tip}
-Dilated RV on apical four-chamber — RV approaching or exceeding LV size.
-
 <img src="gifs/RV Failure.gif" style="width:100%; border-radius:4px;" alt="RV failure — dilated RV on apical four-chamber"/>
 :::
 
@@ -149,8 +139,6 @@ The interventricular septum flattens or bows toward the LV due to elevated RV pr
 ### McConnell's sign
 
 ::: {.callout-tip}
-McConnell's sign — RV free wall hypokinesis with apical sparing (apical flicking).
-
 <img src="gifs/McConnell Sign with RV Enlargement.gif" style="width:100%; border-radius:4px;" alt="McConnell's sign — RV free wall akinesis with apical sparing"/>
 :::
 
@@ -225,8 +213,6 @@ This is massive PE with obstructive shock. The echo is sufficient to act — do 
 Focused cardiac ultrasound to assess RV function and guide risk stratification.
 
 ::: {.callout-tip}
-Loops for interpretation.
-
 <img src="gifs/A4C - Case 2 Submassive PE — how sick is this RV.gif" style="width:100%; border-radius:4px;" alt="RV dilation on apical four-chamber — submassive PE, Case 2"/>
 
 <img src="gifs/PSX D sign - Case 2 Submassive PE — how sick is this RV.gif" style="width:100%; border-radius:4px;" alt="D-sign on parasternal short axis — submassive PE, Case 2"/>

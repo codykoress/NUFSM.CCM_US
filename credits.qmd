@@ -26,6 +26,7 @@ Clips marked with an asterisk (\*) are embedded in the curriculum but do not yet
 | Normal PLAX | Nigist Taddese MBChB, Division of Hospital Medicine, John H. Stroger Hospital of Cook County | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
 | Normal PSAX (papillary muscle level) | Dr. Felipe Urriola, Puerto Aysen Hospital Emergency Department, Chilean Patagonia | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
 | Normal subcostal view | Shahad Al Chalaby MD, PGY-2 Internal Medicine, Highland Hospital / Alameda Health System | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| IVC emptying into the right atrium (subcostal) | Justin Bowra MBBS FACEM CCPU, RNSH, et al. | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
 
 ### Module 2 — Left Ventricular Function
 

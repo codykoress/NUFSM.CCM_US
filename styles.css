@@ -291,16 +291,18 @@ main li { margin-bottom: 0.4rem; max-width: 68ch; }
 }
 
 /* ============================================================
-   CALLOUT-TIP — dark ink panel for GIFs
+   CALLOUT-TIP — registry card frame for GIFs
+   Matches the Competency Registry card/dialog: cream paper,
+   ink border, hard offset shadow, rounded corners.
    ============================================================ */
 
 .callout-tip {
-  background: var(--monitor) !important;
-  border: none !important;
+  background: var(--paper) !important;
+  border: 1.5px solid var(--ink) !important;
   border-radius: 3px !important;
   padding: 0 !important;
   margin: 1.75rem 0 !important;
-  box-shadow: none;
+  box-shadow: 5px 5px 0 rgba(33, 27, 46, 0.15);
   overflow: hidden;
 }
 
@@ -311,29 +313,39 @@ main li { margin-bottom: 0.4rem; max-width: 68ch; }
 .callout-tip .callout-body-container,
 .callout-tip .callout-body {
   background: transparent !important;
-  color: var(--monitor-text) !important;
-  padding: 1.1rem 1.25rem 1.25rem !important;
+  color: var(--ink-soft) !important;
+  padding: 0.6rem 0.6rem 0.65rem !important;
 }
 
 .callout-tip p {
-  color: var(--monitor-text);
-  font-size: 0.92rem;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
   line-height: 1.55;
 }
 
 .callout-tip strong {
-  color: #ffffff;
+  color: var(--ink);
   font-weight: 600;
 }
 
 .callout-tip img {
+  display: block;
+  width: 100%;
   border-radius: 2px;
-  margin: 0.5rem 0 0;
+  margin: 0;
 }
 
+/* stacked clips within a single card */
+.callout-tip img + img { margin-top: 0.6rem; }
+
+/* bullet-list teaching content kept inside some clip cards */
+.callout-tip ul,
+.callout-tip ol { margin: 0.15rem 0 0.75rem; padding-left: 1.1rem; }
+.callout-tip li { color: var(--ink-soft); margin-bottom: 0.25rem; }
+
 .callout-tip a {
-  color: #C3AEE8;
-  border-bottom-color: rgba(195, 174, 232, 0.4);
+  color: var(--nu);
+  border-bottom-color: rgba(78, 42, 132, 0.3);
 }
 
 /* ============================================================

@@ -74,6 +74,11 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 
 #### Subcostal IVC
 
+::: {.callout-tip}
+
+<img src="gifs/Inferior Vena Cava Emptyting into Right Atrium.gif" style="width:100%; border-radius:4px;" alt="IVC emptying into the right atrium (subcostal view)"/>
+:::
+
 **Acquisition:** From the subcostal four-chamber view, rotate the probe to a sagittal plane (indicator toward the patient's head) and aim slightly toward the patient's right to bring the inferior vena cava into long axis as it drains into the right atrium. The liver serves as the acoustic window.
 
 **How to optimize:**
@@ -100,8 +105,6 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 ### Parasternal long axis
 
 ::: {.callout-tip}
-Parasternal long axis acquisition — rib interspace selection, indicator toward the right shoulder, tilting to optimize the LV long axis.
-
 <img src="gifs/Normal Parasternal Long Axis (PLAX) View.gif" style="width:100%; border-radius:4px;" alt="Normal parasternal long axis view"/>
 :::
 
@@ -134,6 +137,10 @@ Parasternal long axis acquisition — rib interspace selection, indicator toward
 
 #### PLAX RV inflow
 
+::: {.callout-tip}
+<img src="gifs/RV-inflow-good.gif" style="width:100%; border-radius:4px;" alt="Normal PLAX RV inflow view"/>
+:::
+
 **Acquisition:** From the standard parasternal long axis, angle (rock) the probe inferomedially — tilting the beam toward the patient's right hip — to drop out the left ventricle and bring the right ventricular inflow tract into view. This opens up the right atrium, tricuspid valve, and RV body.
 
 **Normal anatomy visible:**
@@ -155,16 +162,12 @@ Parasternal long axis acquisition — rib interspace selection, indicator toward
 ### Parasternal short axis
 
 ::: {.callout-tip}
-PSAX at the aortic valve level — the Mercedes-Benz sign, RVOT, pulmonary valve
-
 <img src="gifs/Normal Aortic Valve (Parasternal Short-Axis View).gif" style="width:100%; border-radius:4px;" alt="Normal aortic valve on PSAX"/>
 
-- PSAX at the mitral valve level — the fish mouth opening
-
+- PSAX at the mitral valve level
 <img src="gifs/Normal Mitral Valve (Parasternal Short-Axis View).gif" style="width:100%; border-radius:4px;" alt="Normal mitral valve on PSAX"/>
 
-- PSAX at the papillary muscle level — the donut view, concentric LV contraction
-
+- PSAX at the papillary muscle level
 <img src="gifs/Parasternal Short Axis - Normal.gif" style="width:100%; border-radius:4px;" alt="Normal PSAX at papillary muscle level"/>
 :::
 
@@ -222,8 +225,6 @@ PSAX at the aortic valve level — the Mercedes-Benz sign, RVOT, pulmonary valve
 ### Apical four-chamber
 
 ::: {.callout-tip}
-Apical four-chamber acquisition — finding the PMI, lateral decubitus positioning, depth adjustment to bring the apex to the top.
-
 <img src="gifs/apical+4+normal.gif" style="width:100%; border-radius:4px;" alt="Normal apical four-chamber view"/>
 :::
 
@@ -256,6 +257,10 @@ Apical four-chamber acquisition — finding the PMI, lateral decubitus positioni
 
 #### Apical five-chamber
 
+::: {.callout-tip}
+<img src="gifs/apical+5+normal.gif" style="width:100%; border-radius:4px;" alt="Normal apical five-chamber view"/>
+:::
+
 **Acquisition:** Obtained from a well-centered apical four-chamber view by tilting the probe face slightly anteriorly (angling the beam toward the patient's sternum). This rotates the imaging plane forward to bring the left ventricular outflow tract (LVOT) and aortic valve into view — the "fifth chamber" that appears in the center of the image, between the two ventricles.
 
 **How to optimize:**
@@ -285,8 +290,6 @@ Apical four-chamber acquisition — finding the PMI, lateral decubitus positioni
 ---
 
 ## Quiz
-
-Anki deck for spaced repetition: *link coming soon.*
 
 ::: {.callout-note}
 **Q1.** You place the probe at the left parasternal border with the indicator pointing toward the right shoulder. Which window are you in? Name four structures you expect to see.
@@ -324,27 +327,10 @@ The Mercedes-Benz sign. It confirms a normal tricuspid aortic valve with three c
 The tricuspid valve inserts slightly more apically on the interventricular septum than the mitral valve — this apical offset is the key distinguishing feature. The tricuspid is on the right side of the image (associated with the RV and RA); the mitral is on the left (associated with the LV and LA).
 :::
 
-**Q6.** What is the correct indicator orientation for each of the four standard windows?
-
-::: {.callout-caution collapse="true"}
-**Answer**
-- **Subcostal four-chamber:** Indicator to the patient's left
-- **Parasternal long axis:** Indicator toward the patient's right shoulder (~10–11 o'clock)
-- **Parasternal short axis:** Indicator toward the patient's left shoulder (~1–2 o'clock)
-- **Apical four-chamber:** Indicator toward the patient's left and slightly inferior (4–5 o'clock) — inferolateral rotation aligns the plane through the LV long axis and avoids foreshortening
-:::
-
-**Q7.** At the papillary muscle level on PSAX, you see two echogenic nodular structures on the LV wall. What are they?
+**Q6.** At the papillary muscle level on PSAX, you see two echogenic nodular structures on the LV wall. What are they?
 
 ::: {.callout-caution collapse="true"}
 **Answer**
 The anterolateral and posteromedial papillary muscles. The anterolateral papillary muscle is on the lateral wall; the posteromedial papillary muscle is on the inferior wall. They are the attachment points for the chordae tendineae that tether the mitral valve leaflets.
-:::
-
-**Q8.** You see a thin, linear echogenic structure crossing the LV cavity from wall to wall on apical four-chamber. It does not move independently. What is it, and is it pathologic?
-
-::: {.callout-caution collapse="true"}
-**Answer**
-A false tendon (aberrant chordae tendineae). This is a normal variant — a fixed, linear structure without hemodynamic significance. It should not be mistaken for a vegetation (which is irregular and attached to a valve leaflet) or intracardiac thrombus (which is typically at the apex and has a different morphology).
 :::
 :::
