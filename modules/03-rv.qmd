@@ -306,3 +306,13 @@ The RV is already severely distended. Additional volume causes further RV dilati
 In chronic PHT, a TAPSE of 10 mm may represent stable (if severely impaired) chronic RV dysfunction. In a previously normal patient, TAPSE of 10 mm represents acute, severe RV failure — the RV has not had time to compensate and the patient is at immediate risk of hemodynamic collapse. Acute RV failure is a medical emergency; chronic RV dysfunction requires optimization but is not immediately life-threatening in the same way.
 :::
 :::
+
+---
+
+## Video lectures
+
+Full-length teaching lectures from the University of Utah's [Echocardiography & Perioperative Ultrasound](https://echo.anesthesia.med.utah.edu/tee/focus-content/) FoCUS program. Each opens on the Utah ECHO site in a new tab.
+
+<div class="lecture-list">
+<a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/focus-for-the-rv/" target="_blank" rel="noopener"><span class="lecture-play">&#9654;</span><span><span class="lecture-title">FoCUS for the RV</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a>
+</div>

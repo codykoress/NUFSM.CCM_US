@@ -11,50 +11,67 @@
 - [x] All 11 modules linked in navbar and home page
 
 ### Module content (written)
-- [x] **Module 1** — Windows & Acquisition: four windows (apical 5-chamber, PLAX RV inflow, and subcostal IVC sub-views), machine setup, normal anatomy, normal variants, 7-question quiz
-- [x] **Module 2** — Left Ventricular Function: systolic dysfunction, RWMA, Takotsubo, cardiogenic shock, 5-question quiz
-- [x] **Module 3** — Right Ventricular Function: RV strain, D-sign, McConnell's sign, TAPSE, PE, ARDS cor pulmonale, 5-question quiz
-- [x] **Module 4** — Pericardium: effusion sizing, tamponade, pericarditis (constrictive disease scoped out), Doppler assessment, 6-question quiz
-- [x] **Module 5** — IVC & Volume Status: fluid responsiveness, distensibility index, VExUS/venous congestion, 5-question quiz
-- [x] **Module 6** — Shock & Arrest Integration: 4-question framework, hemodynamic phenotypes table, 5 complex integration cases, 5-question quiz
-- [x] **Module 7** — Basic Valve Assessment: AS, AR, MR (including flail/Coanda), MS, TR/RVSP estimation, 5-question quiz
-- [x] **Module 8** — Lung Ultrasound: B-lines, effusion, pneumothorax, consolidation, BLUE protocol, 5-question quiz
-- [x] **Module 9** — Abdominal Ultrasound: FAST, free fluid grading, bladder volume, hydronephrosis, ruptured ectopic, 5-question quiz
-- [x] **Module 10** — DVT Compression Ultrasound: two-point compression, augmentation, catheter-associated DVT, 5-question quiz
-- [x] **Module 11** — Procedural Guidance: IJ/subclavian/femoral CVC, thoracentesis, paracentesis, pericardiocentesis, 5-question quiz
+
+> **Restructured to 9 modules.** The site now ships **9 modules** (display numbers 01–09). The earlier *Basic Valve Assessment* and *Procedural Guidance* modules (from the old "modules 7–11" build) were dropped/consolidated. Display numbers no longer match the source filenames — the mapping is below.
+
+| Display | Title | Source file |
+|---|---|---|
+| Module 01 | Windows & Image Acquisition | `modules/01-windows.qmd` |
+| Module 02 | Left Ventricular Function | `modules/02-lv.qmd` |
+| Module 03 | Right Ventricular Function | `modules/03-rv.qmd` |
+| Module 04 | Pericardium | `modules/04-pericardium.qmd` |
+| Module 05 | IVC & Volume Status | `modules/05-ivc.qmd` |
+| Module 06 | Lung Ultrasound | `modules/08-lung.qmd` |
+| Module 07 | Abdominal Ultrasound | `modules/09-abdominal.qmd` |
+| Module 08 | Vascular / DVT | `modules/10-dvt.qmd` |
+| Module 09 | Shock & Arrest Integration | `modules/06-integration.qmd` |
+
+- [x] **01 Windows & Acquisition** — four windows, machine setup, normal anatomy, normal variants, quiz
+- [x] **02 Left Ventricular Function** — systolic dysfunction, RWMA, Takotsubo, cardiogenic shock, quiz
+- [x] **03 Right Ventricular Function** — RV strain, D-sign, McConnell's sign, TAPSE, PE, ARDS cor pulmonale, quiz
+- [x] **04 Pericardium** — effusion sizing, tamponade, pericarditis (constrictive scoped out), Doppler assessment, quiz
+- [x] **05 IVC & Volume Status** — fluid responsiveness, distensibility index, VExUS/venous congestion, quiz
+- [x] **06 Lung Ultrasound** — B-lines, effusion, pneumothorax, consolidation, BLUE protocol, quiz
+- [x] **07 Abdominal Ultrasound** — FAST, free fluid grading, bladder volume, hydronephrosis, ruptured ectopic, quiz
+- [x] **08 Vascular / DVT** — two-point compression, augmentation, catheter-associated DVT, quiz
+- [x] **09 Shock & Arrest Integration** — 4-question framework, hemodynamic phenotypes, complex integration cases, quiz
 
 ### Visual assets
-- [x] Probe placement SVG diagrams (×4) for Module 1: subcostal, PLAX, PSAX (with rotation arrow), apical 4C — chest wall redrawn with life-like shading (skin gradients, pec contours, clavicle ridges, nipples on MCL, umbilicus)
-- [x] **55 image clips (54 GIF + 1 AVIF) embedded across Modules 1–8**, distributed as: M1=6, M2=20, M3=9, M4=8, M5=3, M6=2, M7=2, M8=5
-- [x] Normal acquisition clips intentionally duplicated across Modules 1, 2, 3 for module self-containment — learner can study each module standalone
+- [x] Probe placement SVG diagrams (×4) for Module 01: subcostal, PLAX, PSAX (with rotation arrow), apical 4C — chest wall redrawn with life-like shading (skin gradients, pec contours, clavicle ridges, nipples on MCL, umbilicus)
+- [x] **56 image clips (55 GIF + 1 AVIF) currently embedded**, by display module: 01=9, 02=20, 03=9, 04=8, 05=3, 06 Lung=5, 09 Integration=2. Modules **07 Abdominal** and **08 DVT** have **no clips yet** (all case slots are placeholders).
+- [x] Normal acquisition clips intentionally duplicated across Modules 01, 02, 03 for module self-containment — learner can study each module standalone
 - [x] GIF source metadata tracked in Google Sheets; credits page populated with contributor names and POCUS Atlas links
-- [x] Module 2 integration cases (1–4) — all loops embedded
-- [x] Module 3 Case 2 (submassive PE) — loops embedded
-- [x] Module 4 PLAX/subcostal effusion variants and normal mitral inflow Doppler (AVIF) — embedded
-- [x] Module 7 severe AS on PSX — embedded
+- [x] Module 02 integration cases (1–4) — all loops embedded
+- [x] Module 03 Case 2 (submassive PE) — loops embedded
+- [x] Module 04 PLAX/subcostal effusion variants and normal mitral inflow Doppler (AVIF) — embedded
 - [ ] 22 clips embedded but flagged `*` (missing contributor metadata — to be resolved)
+
+### Video lectures
+- [x] **15 external lecture link-out cards** added in a "Video lectures" section at the end of Modules 1, 2, 3, 6, 7, 8, 9 — full-length lectures from the University of Utah Echo & Perioperative Ultrasound FoCUS program (`echo.anesthesia.med.utah.edu`). Styled via new `.lecture-card` class in `styles.css`; linked out (not embedded/hosted) to keep traffic and rights on the source site. Attribution added to `credits.qmd`.
+- [ ] No matching Utah lecture for Module 4 (Pericardium) or Module 5 (IVC) — none added
+- [ ] Utah has a `FoCUS for Valve Disease` lecture with no corresponding module — add if a valve module is created
 
 ---
 
 ## 2. Outstanding
 
-### Clips — still needed
+### Clips — integration case slots still needed
 
-| Module | Missing clips |
-|---|---|
-| 1 | Apical 5-chamber, PLAX RV inflow, and subcostal IVC acquisition clips; normal studies across body habitus (obese, COPD, post-CABG) |
-| 2 | Normal LV in obese patient / patient with LVH (body habitus variants) |
-| 3 | Normal RV in A4C (thin free wall, brisk TAPSE); TAPSE M-mode (normal vs reduced); Case 1 (massive PE), Case 3 (ARDS cor pulmonale), Case 4 (RV infarct) loops |
-| 4 | Subcostal & A4C acquisition for pericardial assessment; normal pericardium in each window; normal hepatic vein flow; small posterior PLAX effusion; acute pericarditis with effusion; myopericarditis; all 6 integration case loops |
-| 5 | Normal IVC + athlete variant; hepatic vein PW Doppler (normal vs congestion); portal vein PW Doppler (monophasic vs pulsatile); venous congestion pattern; all 4 integration case loops |
-| 6 | Mixed shock state (reduced EF + small IVC); before/after fluid bolus serial exam; Cases 1, 3, 4, 5 loops |
-| 7 | All acquisition slots (PLAX/PSAX/A4C with color Doppler); normal valves library; calcific AS on PLAX + color Doppler turbulent jet; acute AR + chronic AR; acute MR (flail + eccentric) + chronic MR + ischemic MR; MS hockey stick + commissural fusion; TR color jet + CW Doppler for RVSP; Cases 1 and 2 loops |
-| 8 | BLUE zone anatomy diagram clip; absent lung sliding / barcode sign (M-mode); lung point; BLUE protocol walkthrough; all 4 integration case loops |
-| 9 | Entire visual layer — RUQ/LUQ/suprapubic acquisition, bladder volume, normal kidney, FAST findings (positive vs negative), ascites, urinary retention, hydronephrosis grades 1–3, all 4 case loops |
-| 10 | Entire visual layer — CFV/femoral/popliteal acquisition, normal compression + augmentation, non-compressible CFV (echogenic & anechoic thrombus), partial compressibility, absent augmentation, all 3 case loops |
-| 11 | Entire visual layer — IJ access (transverse, short-axis, long-axis, wire confirmation), infraclavicular, femoral; pre-procedural + real-time thoracentesis, paracentesis, pericardiocentesis with agitated saline; all 3 case loops |
+The remaining video gaps are **28 `Loops for interpretation.` placeholders** in the integration-case sections. Every one is mapped to a scenario-matched POCUS Atlas clip, with drop-in `<img>` embed blocks, in **`clip-embed-worksheet.md`** (repo root).
 
-**Rough total still needed:** ~90 clips. Tiered by priority: high (M3, M4, M6, M7 — partially filled, ~35 clips) → low (M1, M2, M5, M8 — single missing slots, ~16 clips) → medium effort but bulk (M9, M10, M11 — entirely empty, ~39 clips).
+| Display module | Source file | Empty case slots |
+|---|---|---|
+| 03 RV | `03-rv.qmd` | 3 — Cases 1, 3, 4 |
+| 04 Pericardium | `04-pericardium.qmd` | 6 — Cases 1–6 |
+| 05 IVC | `05-ivc.qmd` | 4 — Cases 1–4 |
+| 06 Lung | `08-lung.qmd` | 4 — Cases 1–4 |
+| 07 Abdominal | `09-abdominal.qmd` | 4 — Cases 1–4 |
+| 08 Vascular / DVT | `10-dvt.qmd` | 3 — Cases 1–3 |
+| 09 Integration | `06-integration.qmd` | 4 — Cases 1, 3, 4, 5 (Case 2 already embedded) |
+
+**Total still needed: 28 clips.** Workflow per clip: download from The POCUS Atlas → save into `modules/gifs/` with the worksheet filename → log metadata in the Google Sheet → paste the embed block → tick off here.
+
+Soft gaps needing a non-Atlas source: M05 Case 2 (hepatic-vein/portal Doppler waveforms), M06 Case 4 (static air bronchograms), M08 Case 3 (labeled catheter-associated DVT), M09 Case 5 (post-surgical windows — lowest priority). See worksheet.
 
 ### Metadata — credits page
 - [ ] Resolve the 22 clips marked `*` (newly-added Module 2 integration case clips, Module 3 Case 2 clips, Module 4 PLAX/subcostal/Doppler additions, Module 7 severe AS, plus the original 8 unresolved placeholders)

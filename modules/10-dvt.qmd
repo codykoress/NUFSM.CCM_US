@@ -277,3 +277,13 @@ In the BLUE protocol, when bilateral anterior lung zones show A-lines and lung s
 A Baker's cyst (popliteal cyst) is a synovial fluid collection that can rupture and cause calf pain and swelling mimicking DVT. On ultrasound, it appears as an anechoic cystic structure in the popliteal fossa, medial and posterior to the joint, separate from the popliteal vein. Key distinguishing features: the Baker's cyst does not lie within the vein lumen, the popliteal vein adjacent to it is fully compressible, and there is no intraluminal thrombus. A ruptured Baker's cyst may track distally with irregular margins.
 :::
 :::
+
+---
+
+## Video lectures
+
+Full-length teaching lectures from the University of Utah's [Echocardiography & Perioperative Ultrasound](https://echo.anesthesia.med.utah.edu/tee/focus-content/) FoCUS program. Each opens on the Utah ECHO site in a new tab.
+
+<div class="lecture-list">
+<a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/dvt-ultrasound/" target="_blank" rel="noopener"><span class="lecture-play">&#9654;</span><span><span class="lecture-title">DVT Ultrasound</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a>
+</div>

@@ -349,3 +349,15 @@ The diaphragm is the key landmark — it appears as a bright echogenic curved li
 Pelvic free fluid in a reproductive-age woman must be evaluated for ruptured ectopic pregnancy — a life-threatening condition that can produce rapid exsanguination. A urine or serum beta-hCG must be obtained immediately. If beta-hCG is positive and there is no intrauterine pregnancy on ultrasound, ruptured ectopic is highly likely until proven otherwise. Hemodynamic instability with pelvic free fluid and a positive beta-hCG = emergent surgical intervention, not further imaging.
 :::
 :::
+
+---
+
+## Video lectures
+
+Full-length teaching lectures from the University of Utah's [Echocardiography & Perioperative Ultrasound](https://echo.anesthesia.med.utah.edu/tee/focus-content/) FoCUS program. Each opens on the Utah ECHO site in a new tab.
+
+<div class="lecture-list">
+<a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/abdominal-ultrasound-2/" target="_blank" rel="noopener"><span class="lecture-play">&#9654;</span><span><span class="lecture-title">Abdominal Ultrasound</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a>
+<a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/fast-for-anesthesiologists/" target="_blank" rel="noopener"><span class="lecture-play">&#9654;</span><span><span class="lecture-title">FAST for Anesthesiologists</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a>
+<a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/gastric-ultrasound/" target="_blank" rel="noopener"><span class="lecture-play">&#9654;</span><span><span class="lecture-title">Gastric Ultrasound</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a>
+</div>

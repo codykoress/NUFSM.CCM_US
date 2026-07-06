@@ -8,6 +8,22 @@ title: "Credits"
 
 ---
 
+## Video lecture attribution
+
+The **Video lectures** section at the end of several modules links out to full-length teaching lectures from the University of Utah's [Echocardiography & Perioperative Ultrasound](https://echo.anesthesia.med.utah.edu/tee/focus-content/) FoCUS program. These lectures are hosted on and remain the property of the University of Utah; this curriculum links to them and does not host or reproduce the video content.
+
+| Module | Lecture(s) |
+|---|---|
+| 1 — Windows & Acquisition | What is FoCUS?; Basic Anatomy for the Echocardiographer; Basic Ultrasound Concepts; How to Perform the FoCUS Exam |
+| 2 — LV Function | FoCUS on the Left; FoCUS for LV Ischemia |
+| 3 — RV Function | FoCUS for the RV |
+| 6 — Lung Ultrasound | Lung Ultrasound 101; Point-of-Care Lung Ultrasound Part 2 |
+| 7 — Abdominal | Abdominal Ultrasound; FAST for Anesthesiologists; Gastric Ultrasound |
+| 8 — DVT | DVT Ultrasound |
+| 9 — Integration | FoCUS to the Rescue!; Cognitive Bias and Errors in Imaging |
+
+---
+
 ## Ultrasound clip attribution
 
 All clips used in this curriculum are sourced from [The POCUS Atlas](https://www.thepocusatlas.com), an open-access point-of-care ultrasound image library. We are grateful to the contributors who submitted these cases.

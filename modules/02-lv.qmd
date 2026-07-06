@@ -303,3 +303,14 @@ Dilation suggests a chronic process — the heart has had time to remodel (dilat
 Takotsubo (apical ballooning syndrome) shows apical and mid-ventricular hypokinesis or akinesis with preserved or hyperdynamic basal segments. An LAD occlusion causes anterior and apical dysfunction but typically includes some basal anterior involvement and follows the LAD distribution more closely. Takotsubo does not respect a single coronary territory — the basal sparing is the key distinguishing feature.
 :::
 :::
+
+---
+
+## Video lectures
+
+Full-length teaching lectures from the University of Utah's [Echocardiography & Perioperative Ultrasound](https://echo.anesthesia.med.utah.edu/tee/focus-content/) FoCUS program. Each opens on the Utah ECHO site in a new tab.
+
+<div class="lecture-list">
+<a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/focus-on-the-left/" target="_blank" rel="noopener"><span class="lecture-play">&#9654;</span><span><span class="lecture-title">FoCUS on the Left</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a>
+<a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/focus-for-lv-ischemia/" target="_blank" rel="noopener"><span class="lecture-play">&#9654;</span><span><span class="lecture-title">FoCUS for LV Ischemia</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a>
+</div>

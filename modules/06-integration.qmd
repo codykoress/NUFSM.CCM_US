@@ -268,3 +268,14 @@ Massive pulmonary embolism with RV failure. The single most important interventi
 Serial echo tracks the response to interventions and identifies deterioration or recovery over time. A single exam is a snapshot; serial exams reveal trajectory. Document key quantitative or semi-quantitative findings at each exam: EF category (severely reduced / mildly reduced / normal / hyperdynamic), RV:LV ratio, IVC diameter and collapsibility, presence of chamber collapse or D-sign. This allows any clinician picking up the patient to immediately understand where the hemodynamics started and where they are now.
 :::
 :::
+
+---
+
+## Video lectures
+
+Full-length teaching lectures from the University of Utah's [Echocardiography & Perioperative Ultrasound](https://echo.anesthesia.med.utah.edu/tee/focus-content/) FoCUS program. Each opens on the Utah ECHO site in a new tab.
+
+<div class="lecture-list">
+<a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/focus-to-the-rescue/" target="_blank" rel="noopener"><span class="lecture-play">&#9654;</span><span><span class="lecture-title">FoCUS to the Rescue!</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a>
+<a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/cognitive-bias-and-errors-in-imaging/" target="_blank" rel="noopener"><span class="lecture-play">&#9654;</span><span><span class="lecture-title">Cognitive Bias and Errors in Imaging</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a>
+</div>

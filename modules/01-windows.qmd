@@ -334,3 +334,16 @@ The tricuspid valve inserts slightly more apically on the interventricular septu
 The anterolateral and posteromedial papillary muscles. The anterolateral papillary muscle is on the lateral wall; the posteromedial papillary muscle is on the inferior wall. They are the attachment points for the chordae tendineae that tether the mitral valve leaflets.
 :::
 :::
+
+---
+
+## Video lectures
+
+Full-length teaching lectures from the University of Utah's [Echocardiography & Perioperative Ultrasound](https://echo.anesthesia.med.utah.edu/tee/focus-content/) FoCUS program. Each opens on the Utah ECHO site in a new tab.
+
+<div class="lecture-list">
+<a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/what-is-focus/" target="_blank" rel="noopener"><span class="lecture-play">&#9654;</span><span><span class="lecture-title">What is FoCUS?</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a>
+<a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/basic-anatomy/" target="_blank" rel="noopener"><span class="lecture-play">&#9654;</span><span><span class="lecture-title">Basic Anatomy for the Echocardiographer</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a>
+<a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/basic-ultrasound-concepts/" target="_blank" rel="noopener"><span class="lecture-play">&#9654;</span><span><span class="lecture-title">Basic Ultrasound Concepts</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a>
+<a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/focus-how-to/" target="_blank" rel="noopener"><span class="lecture-play">&#9654;</span><span><span class="lecture-title">How to Perform the FoCUS Exam (Studio &amp; Live)</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a>
+</div>

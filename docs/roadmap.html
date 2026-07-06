@@ -183,10 +183,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#site-structure" id="toc-site-structure" class="nav-link" data-scroll-target="#site-structure">Site structure</a></li>
   <li><a href="#module-content-written" id="toc-module-content-written" class="nav-link" data-scroll-target="#module-content-written">Module content (written)</a></li>
   <li><a href="#visual-assets" id="toc-visual-assets" class="nav-link" data-scroll-target="#visual-assets">Visual assets</a></li>
+  <li><a href="#video-lectures" id="toc-video-lectures" class="nav-link" data-scroll-target="#video-lectures">Video lectures</a></li>
   </ul></li>
   <li><a href="#outstanding" id="toc-outstanding" class="nav-link" data-scroll-target="#outstanding">2. Outstanding</a>
   <ul class="collapse">
-  <li><a href="#clips-still-needed" id="toc-clips-still-needed" class="nav-link" data-scroll-target="#clips-still-needed">Clips — still needed</a></li>
+  <li><a href="#clips-integration-case-slots-still-needed" id="toc-clips-integration-case-slots-still-needed" class="nav-link" data-scroll-target="#clips-integration-case-slots-still-needed">Clips — integration case slots still needed</a></li>
   <li><a href="#metadata-credits-page" id="toc-metadata-credits-page" class="nav-link" data-scroll-target="#metadata-credits-page">Metadata — credits page</a></li>
   <li><a href="#unused-files" id="toc-unused-files" class="nav-link" data-scroll-target="#unused-files">Unused files</a></li>
   <li><a href="#per-module-content-gaps" id="toc-per-module-content-gaps" class="nav-link" data-scroll-target="#per-module-content-gaps">Per-module content gaps</a></li>
@@ -219,99 +220,163 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="module-content-written" class="level3">
 <h3 class="anchored" data-anchor-id="module-content-written">Module content (written)</h3>
+<blockquote class="blockquote">
+<p><strong>Restructured to 9 modules.</strong> The site now ships <strong>9 modules</strong> (display numbers 01–09). The earlier <em>Basic Valve Assessment</em> and <em>Procedural Guidance</em> modules (from the old “modules 7–11” build) were dropped/consolidated. Display numbers no longer match the source filenames — the mapping is below.</p>
+</blockquote>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Display</th>
+<th>Title</th>
+<th>Source file</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Module 01</td>
+<td>Windows &amp; Image Acquisition</td>
+<td><code>modules/01-windows.qmd</code></td>
+</tr>
+<tr class="even">
+<td>Module 02</td>
+<td>Left Ventricular Function</td>
+<td><code>modules/02-lv.qmd</code></td>
+</tr>
+<tr class="odd">
+<td>Module 03</td>
+<td>Right Ventricular Function</td>
+<td><code>modules/03-rv.qmd</code></td>
+</tr>
+<tr class="even">
+<td>Module 04</td>
+<td>Pericardium</td>
+<td><code>modules/04-pericardium.qmd</code></td>
+</tr>
+<tr class="odd">
+<td>Module 05</td>
+<td>IVC &amp; Volume Status</td>
+<td><code>modules/05-ivc.qmd</code></td>
+</tr>
+<tr class="even">
+<td>Module 06</td>
+<td>Lung Ultrasound</td>
+<td><code>modules/08-lung.qmd</code></td>
+</tr>
+<tr class="odd">
+<td>Module 07</td>
+<td>Abdominal Ultrasound</td>
+<td><code>modules/09-abdominal.qmd</code></td>
+</tr>
+<tr class="even">
+<td>Module 08</td>
+<td>Vascular / DVT</td>
+<td><code>modules/10-dvt.qmd</code></td>
+</tr>
+<tr class="odd">
+<td>Module 09</td>
+<td>Shock &amp; Arrest Integration</td>
+<td><code>modules/06-integration.qmd</code></td>
+</tr>
+</tbody>
+</table>
 <ul class="task-list">
-<li><label><input type="checkbox" checked=""><strong>Module 1</strong> — Windows &amp; Acquisition: four windows (apical 5-chamber, PLAX RV inflow, and subcostal IVC sub-views), machine setup, normal anatomy, normal variants, 7-question quiz</label></li>
-<li><label><input type="checkbox" checked=""><strong>Module 2</strong> — Left Ventricular Function: systolic dysfunction, RWMA, Takotsubo, cardiogenic shock, 5-question quiz</label></li>
-<li><label><input type="checkbox" checked=""><strong>Module 3</strong> — Right Ventricular Function: RV strain, D-sign, McConnell’s sign, TAPSE, PE, ARDS cor pulmonale, 5-question quiz</label></li>
-<li><label><input type="checkbox" checked=""><strong>Module 4</strong> — Pericardium: effusion sizing, tamponade, pericarditis (constrictive disease scoped out), Doppler assessment, 6-question quiz</label></li>
-<li><label><input type="checkbox" checked=""><strong>Module 5</strong> — IVC &amp; Volume Status: fluid responsiveness, distensibility index, VExUS/venous congestion, 5-question quiz</label></li>
-<li><label><input type="checkbox" checked=""><strong>Module 6</strong> — Shock &amp; Arrest Integration: 4-question framework, hemodynamic phenotypes table, 5 complex integration cases, 5-question quiz</label></li>
-<li><label><input type="checkbox" checked=""><strong>Module 7</strong> — Basic Valve Assessment: AS, AR, MR (including flail/Coanda), MS, TR/RVSP estimation, 5-question quiz</label></li>
-<li><label><input type="checkbox" checked=""><strong>Module 8</strong> — Lung Ultrasound: B-lines, effusion, pneumothorax, consolidation, BLUE protocol, 5-question quiz</label></li>
-<li><label><input type="checkbox" checked=""><strong>Module 9</strong> — Abdominal Ultrasound: FAST, free fluid grading, bladder volume, hydronephrosis, ruptured ectopic, 5-question quiz</label></li>
-<li><label><input type="checkbox" checked=""><strong>Module 10</strong> — DVT Compression Ultrasound: two-point compression, augmentation, catheter-associated DVT, 5-question quiz</label></li>
-<li><label><input type="checkbox" checked=""><strong>Module 11</strong> — Procedural Guidance: IJ/subclavian/femoral CVC, thoracentesis, paracentesis, pericardiocentesis, 5-question quiz</label></li>
+<li><label><input type="checkbox" checked=""><strong>01 Windows &amp; Acquisition</strong> — four windows, machine setup, normal anatomy, normal variants, quiz</label></li>
+<li><label><input type="checkbox" checked=""><strong>02 Left Ventricular Function</strong> — systolic dysfunction, RWMA, Takotsubo, cardiogenic shock, quiz</label></li>
+<li><label><input type="checkbox" checked=""><strong>03 Right Ventricular Function</strong> — RV strain, D-sign, McConnell’s sign, TAPSE, PE, ARDS cor pulmonale, quiz</label></li>
+<li><label><input type="checkbox" checked=""><strong>04 Pericardium</strong> — effusion sizing, tamponade, pericarditis (constrictive scoped out), Doppler assessment, quiz</label></li>
+<li><label><input type="checkbox" checked=""><strong>05 IVC &amp; Volume Status</strong> — fluid responsiveness, distensibility index, VExUS/venous congestion, quiz</label></li>
+<li><label><input type="checkbox" checked=""><strong>06 Lung Ultrasound</strong> — B-lines, effusion, pneumothorax, consolidation, BLUE protocol, quiz</label></li>
+<li><label><input type="checkbox" checked=""><strong>07 Abdominal Ultrasound</strong> — FAST, free fluid grading, bladder volume, hydronephrosis, ruptured ectopic, quiz</label></li>
+<li><label><input type="checkbox" checked=""><strong>08 Vascular / DVT</strong> — two-point compression, augmentation, catheter-associated DVT, quiz</label></li>
+<li><label><input type="checkbox" checked=""><strong>09 Shock &amp; Arrest Integration</strong> — 4-question framework, hemodynamic phenotypes, complex integration cases, quiz</label></li>
 </ul>
 </section>
 <section id="visual-assets" class="level3">
 <h3 class="anchored" data-anchor-id="visual-assets">Visual assets</h3>
 <ul class="task-list">
-<li><label><input type="checkbox" checked="">Probe placement SVG diagrams (×4) for Module 1: subcostal, PLAX, PSAX (with rotation arrow), apical 4C — chest wall redrawn with life-like shading (skin gradients, pec contours, clavicle ridges, nipples on MCL, umbilicus)</label></li>
-<li><label><input type="checkbox" checked=""><strong>55 image clips (54 GIF + 1 AVIF) embedded across Modules 1–8</strong>, distributed as: M1=6, M2=20, M3=9, M4=8, M5=3, M6=2, M7=2, M8=5</label></li>
-<li><label><input type="checkbox" checked="">Normal acquisition clips intentionally duplicated across Modules 1, 2, 3 for module self-containment — learner can study each module standalone</label></li>
+<li><label><input type="checkbox" checked="">Probe placement SVG diagrams (×4) for Module 01: subcostal, PLAX, PSAX (with rotation arrow), apical 4C — chest wall redrawn with life-like shading (skin gradients, pec contours, clavicle ridges, nipples on MCL, umbilicus)</label></li>
+<li><label><input type="checkbox" checked=""><strong>56 image clips (55 GIF + 1 AVIF) currently embedded</strong>, by display module: 01=9, 02=20, 03=9, 04=8, 05=3, 06 Lung=5, 09 Integration=2. Modules <strong>07 Abdominal</strong> and <strong>08 DVT</strong> have <strong>no clips yet</strong> (all case slots are placeholders).</label></li>
+<li><label><input type="checkbox" checked="">Normal acquisition clips intentionally duplicated across Modules 01, 02, 03 for module self-containment — learner can study each module standalone</label></li>
 <li><label><input type="checkbox" checked="">GIF source metadata tracked in Google Sheets; credits page populated with contributor names and POCUS Atlas links</label></li>
-<li><label><input type="checkbox" checked="">Module 2 integration cases (1–4) — all loops embedded</label></li>
-<li><label><input type="checkbox" checked="">Module 3 Case 2 (submassive PE) — loops embedded</label></li>
-<li><label><input type="checkbox" checked="">Module 4 PLAX/subcostal effusion variants and normal mitral inflow Doppler (AVIF) — embedded</label></li>
-<li><label><input type="checkbox" checked="">Module 7 severe AS on PSX — embedded</label></li>
+<li><label><input type="checkbox" checked="">Module 02 integration cases (1–4) — all loops embedded</label></li>
+<li><label><input type="checkbox" checked="">Module 03 Case 2 (submassive PE) — loops embedded</label></li>
+<li><label><input type="checkbox" checked="">Module 04 PLAX/subcostal effusion variants and normal mitral inflow Doppler (AVIF) — embedded</label></li>
 <li><label><input type="checkbox">22 clips embedded but flagged <code>*</code> (missing contributor metadata — to be resolved)</label></li>
+</ul>
+</section>
+<section id="video-lectures" class="level3">
+<h3 class="anchored" data-anchor-id="video-lectures">Video lectures</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" checked=""><strong>15 external lecture link-out cards</strong> added in a “Video lectures” section at the end of Modules 1, 2, 3, 6, 7, 8, 9 — full-length lectures from the University of Utah Echo &amp; Perioperative Ultrasound FoCUS program (<code>echo.anesthesia.med.utah.edu</code>). Styled via new <code>.lecture-card</code> class in <code>styles.css</code>; linked out (not embedded/hosted) to keep traffic and rights on the source site. Attribution added to <code>credits.qmd</code>.</label></li>
+<li><label><input type="checkbox">No matching Utah lecture for Module 4 (Pericardium) or Module 5 (IVC) — none added</label></li>
+<li><label><input type="checkbox">Utah has a <code>FoCUS for Valve Disease</code> lecture with no corresponding module — add if a valve module is created</label></li>
 </ul>
 <hr>
 </section>
 </section>
 <section id="outstanding" class="level2">
 <h2 class="anchored" data-anchor-id="outstanding">2. Outstanding</h2>
-<section id="clips-still-needed" class="level3">
-<h3 class="anchored" data-anchor-id="clips-still-needed">Clips — still needed</h3>
+<section id="clips-integration-case-slots-still-needed" class="level3">
+<h3 class="anchored" data-anchor-id="clips-integration-case-slots-still-needed">Clips — integration case slots still needed</h3>
+<p>The remaining video gaps are <strong>28 <code>Loops for interpretation.</code> placeholders</strong> in the integration-case sections. Every one is mapped to a scenario-matched POCUS Atlas clip, with drop-in <code>&lt;img&gt;</code> embed blocks, in <strong><code>clip-embed-worksheet.md</code></strong> (repo root).</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Module</th>
-<th>Missing clips</th>
+<th>Display module</th>
+<th>Source file</th>
+<th>Empty case slots</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
-<td>Apical 5-chamber, PLAX RV inflow, and subcostal IVC acquisition clips; normal studies across body habitus (obese, COPD, post-CABG)</td>
+<td>03 RV</td>
+<td><code>03-rv.qmd</code></td>
+<td>3 — Cases 1, 3, 4</td>
 </tr>
 <tr class="even">
-<td>2</td>
-<td>Normal LV in obese patient / patient with LVH (body habitus variants)</td>
+<td>04 Pericardium</td>
+<td><code>04-pericardium.qmd</code></td>
+<td>6 — Cases 1–6</td>
 </tr>
 <tr class="odd">
-<td>3</td>
-<td>Normal RV in A4C (thin free wall, brisk TAPSE); TAPSE M-mode (normal vs reduced); Case 1 (massive PE), Case 3 (ARDS cor pulmonale), Case 4 (RV infarct) loops</td>
+<td>05 IVC</td>
+<td><code>05-ivc.qmd</code></td>
+<td>4 — Cases 1–4</td>
 </tr>
 <tr class="even">
-<td>4</td>
-<td>Subcostal &amp; A4C acquisition for pericardial assessment; normal pericardium in each window; normal hepatic vein flow; small posterior PLAX effusion; acute pericarditis with effusion; myopericarditis; all 6 integration case loops</td>
+<td>06 Lung</td>
+<td><code>08-lung.qmd</code></td>
+<td>4 — Cases 1–4</td>
 </tr>
 <tr class="odd">
-<td>5</td>
-<td>Normal IVC + athlete variant; hepatic vein PW Doppler (normal vs congestion); portal vein PW Doppler (monophasic vs pulsatile); venous congestion pattern; all 4 integration case loops</td>
+<td>07 Abdominal</td>
+<td><code>09-abdominal.qmd</code></td>
+<td>4 — Cases 1–4</td>
 </tr>
 <tr class="even">
-<td>6</td>
-<td>Mixed shock state (reduced EF + small IVC); before/after fluid bolus serial exam; Cases 1, 3, 4, 5 loops</td>
+<td>08 Vascular / DVT</td>
+<td><code>10-dvt.qmd</code></td>
+<td>3 — Cases 1–3</td>
 </tr>
 <tr class="odd">
-<td>7</td>
-<td>All acquisition slots (PLAX/PSAX/A4C with color Doppler); normal valves library; calcific AS on PLAX + color Doppler turbulent jet; acute AR + chronic AR; acute MR (flail + eccentric) + chronic MR + ischemic MR; MS hockey stick + commissural fusion; TR color jet + CW Doppler for RVSP; Cases 1 and 2 loops</td>
-</tr>
-<tr class="even">
-<td>8</td>
-<td>BLUE zone anatomy diagram clip; absent lung sliding / barcode sign (M-mode); lung point; BLUE protocol walkthrough; all 4 integration case loops</td>
-</tr>
-<tr class="odd">
-<td>9</td>
-<td>Entire visual layer — RUQ/LUQ/suprapubic acquisition, bladder volume, normal kidney, FAST findings (positive vs negative), ascites, urinary retention, hydronephrosis grades 1–3, all 4 case loops</td>
-</tr>
-<tr class="even">
-<td>10</td>
-<td>Entire visual layer — CFV/femoral/popliteal acquisition, normal compression + augmentation, non-compressible CFV (echogenic &amp; anechoic thrombus), partial compressibility, absent augmentation, all 3 case loops</td>
-</tr>
-<tr class="odd">
-<td>11</td>
-<td>Entire visual layer — IJ access (transverse, short-axis, long-axis, wire confirmation), infraclavicular, femoral; pre-procedural + real-time thoracentesis, paracentesis, pericardiocentesis with agitated saline; all 3 case loops</td>
+<td>09 Integration</td>
+<td><code>06-integration.qmd</code></td>
+<td>4 — Cases 1, 3, 4, 5 (Case 2 already embedded)</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Rough total still needed:</strong> ~90 clips. Tiered by priority: high (M3, M4, M6, M7 — partially filled, ~35 clips) → low (M1, M2, M5, M8 — single missing slots, ~16 clips) → medium effort but bulk (M9, M10, M11 — entirely empty, ~39 clips).</p>
+<p><strong>Total still needed: 28 clips.</strong> Workflow per clip: download from The POCUS Atlas → save into <code>modules/gifs/</code> with the worksheet filename → log metadata in the Google Sheet → paste the embed block → tick off here.</p>
+<p>Soft gaps needing a non-Atlas source: M05 Case 2 (hepatic-vein/portal Doppler waveforms), M06 Case 4 (static air bronchograms), M08 Case 3 (labeled catheter-associated DVT), M09 Case 5 (post-surgical windows — lowest priority). See worksheet.</p>
 </section>
 <section id="metadata-credits-page" class="level3">
 <h3 class="anchored" data-anchor-id="metadata-credits-page">Metadata — credits page</h3>

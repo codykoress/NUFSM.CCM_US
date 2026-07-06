@@ -391,3 +391,14 @@ Dynamic air bronchograms (moving with respiration) indicate that the consolidate
 Bilateral anterior A-lines with lung sliding means the anterior lung fields are normally aerated — ruling out cardiogenic pulmonary edema (which would show B-lines) and pneumothorax (which would show absent sliding). In the BLUE protocol, this pattern combined with DVT on compression ultrasound has an 81% positive predictive value for pulmonary embolism as the cause of respiratory failure — the lung fields are clear because the problem is vascular, not alveolar.
 :::
 :::
+
+---
+
+## Video lectures
+
+Full-length teaching lectures from the University of Utah's [Echocardiography & Perioperative Ultrasound](https://echo.anesthesia.med.utah.edu/tee/focus-content/) FoCUS program. Each opens on the Utah ECHO site in a new tab.
+
+<div class="lecture-list">
+<a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/lung-ultrasound-101-introduction-pneumothorax/" target="_blank" rel="noopener"><span class="lecture-play">&#9654;</span><span><span class="lecture-title">Lung Ultrasound 101 — Introduction &amp; Pneumothorax</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a>
+<a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/point-care-lung-ultrasound-part-2-water-effusion-edema/" target="_blank" rel="noopener"><span class="lecture-play">&#9654;</span><span><span class="lecture-title">Point-of-Care Lung Ultrasound Part 2 — Fluid (Effusion &amp; Edema)</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a>
+</div>
