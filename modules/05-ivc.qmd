@@ -163,7 +163,7 @@ Diameter 1.5–2.1 cm with variable collapse. Estimated RA pressure 5–10 mmHg.
 Focused cardiac ultrasound with IVC assessment.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M5 Case 1 Small collapsible IVC — hypovolemia.gif" style="width:100%; border-radius:4px;" alt="Subcostal IVC: small diameter with greater-than-70-percent inspiratory collapse"/>
 :::
 
 **What you see:**
@@ -182,7 +182,7 @@ Small, collapsible IVC with hyperdynamic LV — consistent with distributive phy
 Focused cardiac ultrasound with IVC and hepatic vein assessment.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M5 Case 2 Plethoric IVC — venous congestion.gif" style="width:100%; border-radius:4px;" alt="Subcostal IVC: dilated and non-collapsing — venous congestion"/>
 :::
 
 **What you see:**
@@ -201,7 +201,7 @@ Stop fluids immediately — this patient is severely congested and has cardiogen
 Focused cardiac ultrasound with IVC distensibility assessment (mechanically ventilated).
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M5 Case 3 Enlarged IVC — low distensibility ventilated.gif" style="width:100%; border-radius:4px;" alt="Subcostal IVC: enlarged with minimal distensibility in a mechanically ventilated patient"/>
 :::
 
 **What you see:**
@@ -220,7 +220,9 @@ Not fluid responsive by distensibility criteria. The patient received significan
 Focused cardiac ultrasound — LV, RV, IVC.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M5 Case 4 Plethoric IVC — cardiogenic shock.gif" style="width:100%; border-radius:4px;" alt="Subcostal IVC: dilated, non-collapsing — cardiogenic shock"/>
+
+<img src="gifs/Case 4 Young patient with viral prodrome and shock.gif" style="width:100%; border-radius:4px;" alt="Globally hypokinetic left ventricle with severely reduced ejection fraction"/>
 :::
 
 **What you see:**

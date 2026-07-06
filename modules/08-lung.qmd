@@ -281,7 +281,7 @@ The BLUE protocol (Lichtenstein & Mezière, 2008) uses lung ultrasound findings 
 Lung ultrasound — anterior and lateral zones bilaterally, plus cardiac echo.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M6 Case 1 Bilateral confluent B-lines — pulmonary edema.gif" style="width:100%; border-radius:4px;" alt="Anterior chest: bilateral confluent B-lines — cardiogenic pulmonary edema"/>
 :::
 
 **What you see:**
@@ -300,7 +300,7 @@ Bilateral homogeneous anterior B-lines + reduced EF + hypertension = hypertensiv
 Immediate lung ultrasound — bilateral anterior chest.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M6 Case 2 Absent lung sliding — barcode sign M-mode.gif" style="width:100%; border-radius:4px;" alt="M-mode: barcode sign with absent lung sliding on the left"/>
 :::
 
 **What you see:**
@@ -319,7 +319,7 @@ Mainstem intubation vs left pneumothorax. The clinical context (just intubated, 
 Extended FAST (eFAST) — bilateral anterior lung assessment.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M6 Case 3 Lung point — pneumothorax.gif" style="width:100%; border-radius:4px;" alt="Lung point at the mid-axillary line — pathognomonic for pneumothorax"/>
 :::
 
 **What you see:**
@@ -338,7 +338,7 @@ Right pneumothorax confirmed by lung point. The hemodynamically stable patient w
 Lung ultrasound — all zones bilaterally, PLAPS point.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M6 Case 4 Consolidation with air bronchograms — PLAPS.gif" style="width:100%; border-radius:4px;" alt="Right PLAPS: consolidation with air bronchograms and a small adjacent effusion"/>
 :::
 
 **What you see:**

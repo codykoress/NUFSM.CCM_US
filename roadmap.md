@@ -38,13 +38,13 @@
 
 ### Visual assets
 - [x] Probe placement SVG diagrams (×4) for Module 01: subcostal, PLAX, PSAX (with rotation arrow), apical 4C — chest wall redrawn with life-like shading (skin gradients, pec contours, clavicle ridges, nipples on MCL, umbilicus)
-- [x] **56 image clips (55 GIF + 1 AVIF) currently embedded**, by display module: 01=9, 02=20, 03=9, 04=8, 05=3, 06 Lung=5, 09 Integration=2. Modules **07 Abdominal** and **08 DVT** have **no clips yet** (all case slots are placeholders).
+- [x] **88 image clips (87 GIF + 1 AVIF) currently embedded** (2026-07-06), by display module: 01=9, 02=20, 03=13, 04=14, 05=7, 06 Lung=9, 07 Abdominal=7, 08 DVT=4, 09 Integration=5. Every module now has case clips.
 - [x] Normal acquisition clips intentionally duplicated across Modules 01, 02, 03 for module self-containment — learner can study each module standalone
 - [x] GIF source metadata tracked in Google Sheets; credits page populated with contributor names and POCUS Atlas links
 - [x] Module 02 integration cases (1–4) — all loops embedded
 - [x] Module 03 Case 2 (submassive PE) — loops embedded
 - [x] Module 04 PLAX/subcostal effusion variants and normal mitral inflow Doppler (AVIF) — embedded
-- [ ] 22 clips embedded but flagged `*` (missing contributor metadata — to be resolved)
+- [ ] ~54 clips embedded but flagged `*` (missing individual contributor metadata — to be resolved). Includes the 32 integration-case clips added 2026-07-06, credited to their POCUS Atlas galleries but without per-clip contributor names yet.
 
 ### Video lectures
 - [x] **15 external lecture link-out cards** added in a "Video lectures" section at the end of Modules 1, 2, 3, 6, 7, 8, 9 — full-length lectures from the University of Utah Echo & Perioperative Ultrasound FoCUS program (`echo.anesthesia.med.utah.edu`). Styled via new `.lecture-card` class in `styles.css`; linked out (not embedded/hosted) to keep traffic and rights on the source site. Attribution added to `credits.qmd`.
@@ -55,23 +55,22 @@
 
 ## 2. Outstanding
 
-### Clips — integration case slots still needed
+### Clips — integration case slots
 
-The remaining video gaps are **28 `Loops for interpretation.` placeholders** in the integration-case sections. Every one is mapped to a scenario-matched POCUS Atlas clip, with drop-in `<img>` embed blocks, in **`clip-embed-worksheet.md`** (repo root).
+**27 of the 28 integration-case slots are now embedded** (2026-07-06). All clips sourced from The POCUS Atlas per `clip-embed-worksheet.md`; credited in `credits.qmd` (contributors still flagged `*`).
 
-| Display module | Source file | Empty case slots |
-|---|---|---|
-| 03 RV | `03-rv.qmd` | 3 — Cases 1, 3, 4 |
-| 04 Pericardium | `04-pericardium.qmd` | 6 — Cases 1–6 |
-| 05 IVC | `05-ivc.qmd` | 4 — Cases 1–4 |
-| 06 Lung | `08-lung.qmd` | 4 — Cases 1–4 |
-| 07 Abdominal | `09-abdominal.qmd` | 4 — Cases 1–4 |
-| 08 Vascular / DVT | `10-dvt.qmd` | 3 — Cases 1–3 |
-| 09 Integration | `06-integration.qmd` | 4 — Cases 1, 3, 4, 5 (Case 2 already embedded) |
+- [x] 03 RV (`03-rv.qmd`) — Cases 1, 3, 4
+- [x] 04 Pericardium (`04-pericardium.qmd`) — Cases 1–6
+- [x] 05 IVC (`05-ivc.qmd`) — Cases 1–4 *(Case 4 reuses the Module 2 myocarditis clip for the reduced-EF LV)*
+- [x] 06 Lung (`08-lung.qmd`) — Cases 1–4
+- [x] 07 Abdominal (`09-abdominal.qmd`) — Cases 1–4
+- [x] 08 Vascular / DVT (`10-dvt.qmd`) — Cases 1–3
+- [x] 09 Integration (`06-integration.qmd`) — Cases 1, 3, 4
 
-**Total still needed: 28 clips.** Workflow per clip: download from The POCUS Atlas → save into `modules/gifs/` with the worksheet filename → log metadata in the Google Sheet → paste the embed block → tick off here.
+**Still open (1 clip):**
+- [ ] **M09 Case 5** — post-surgical windows; clip not yet sourced (lowest priority, placeholder left in place)
 
-Soft gaps needing a non-Atlas source: M05 Case 2 (hepatic-vein/portal Doppler waveforms), M06 Case 4 (static air bronchograms), M08 Case 3 (labeled catheter-associated DVT), M09 Case 5 (post-surgical windows — lowest priority). See worksheet.
+Soft gaps for later refinement (a clip is embedded but a better match exists): M05 Case 2 (add hepatic-vein/portal Doppler waveforms), M06 Case 4 (static vs dynamic air bronchograms), M08 Case 3 (explicitly-labeled catheter-associated DVT). See worksheet.
 
 ### Metadata — credits page
 - [ ] Resolve the 22 clips marked `*` (newly-added Module 2 integration case clips, Module 3 Case 2 clips, Module 4 PLAX/subcostal/Doppler additions, Module 7 severe AS, plus the original 8 unresolved placeholders)

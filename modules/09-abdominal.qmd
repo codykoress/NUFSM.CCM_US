@@ -239,7 +239,11 @@ Hydronephrosis is dilation of the renal collecting system from ureteral obstruct
 Immediate FAST exam as part of the primary survey.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M7 Case 1 Positive FAST — Morison pouch.gif" style="width:100%; border-radius:4px;" alt="RUQ: free fluid in Morison's pouch"/>
+
+<img src="gifs/M7 Case 1 Positive FAST — splenorenal.gif" style="width:100%; border-radius:4px;" alt="LUQ: free fluid in the splenorenal space"/>
+
+<img src="gifs/M7 Case 1 Positive FAST — pelvis.gif" style="width:100%; border-radius:4px;" alt="Suprapubic: large volume of free fluid in the pelvis"/>
 :::
 
 **What you see:**
@@ -258,7 +262,7 @@ Positive FAST with hemodynamic instability = operative intervention. Do not take
 Renal ultrasound — bilateral kidneys.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M7 Case 2 Pyonephrosis — hydronephrosis with debris.gif" style="width:100%; border-radius:4px;" alt="Right kidney: grade 2–3 hydronephrosis with internal echoes (pyonephrosis)"/>
 :::
 
 **What you see:**
@@ -277,7 +281,7 @@ Obstructed, infected right kidney — pyonephrosis. Antibiotics alone are insuff
 Bladder ultrasound.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M7 Case 3 Distended bladder — urinary retention.gif" style="width:100%; border-radius:4px;" alt="Suprapubic: markedly distended bladder — urinary retention"/>
 :::
 
 **What you see:**
@@ -296,7 +300,9 @@ Urinary retention causing agitation and delirium in a post-operative elderly mal
 FAST exam with attention to the pelvic view, and immediate beta-hCG.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M7 Case 4 Ruptured ectopic — pelvic free fluid.gif" style="width:100%; border-radius:4px;" alt="Pelvis: large free fluid with no intrauterine pregnancy — ruptured ectopic"/>
+
+<img src="gifs/M7 Case 4 Ruptured ectopic — RUQ free fluid.gif" style="width:100%; border-radius:4px;" alt="RUQ: free fluid extending to Morison's pouch — hemoperitoneum"/>
 :::
 
 **What you see:**

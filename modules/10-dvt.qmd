@@ -186,7 +186,7 @@ When distal compression produces no augmentation of proximal flow, there is obst
 Two-point DVT compression ultrasound while CT is being arranged.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M8 Case 1 Non-compressible CFV — echogenic thrombus.gif" style="width:100%; border-radius:4px;" alt="Common femoral vein: non-compressible with echogenic intraluminal thrombus"/>
 :::
 
 **What you see:**
@@ -205,7 +205,9 @@ Right proximal DVT in a patient with dyspnea, tachycardia, pleuritic chest pain,
 Left lower extremity DVT compression ultrasound.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M8 Case 2 Non-compressible CFV — proximal DVT.gif" style="width:100%; border-radius:4px;" alt="Common femoral vein: non-compressible hypoechoic thrombus"/>
+
+<img src="gifs/M8 Case 2 Non-compressible popliteal — occlusive DVT.gif" style="width:100%; border-radius:4px;" alt="Popliteal vein: non-compressible, occlusive thrombus"/>
 :::
 
 **What you see:**
@@ -224,7 +226,7 @@ Proximal DVT extending from CFV to popliteal vein despite prophylaxis. Transitio
 Right femoral DVT compression ultrasound.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M8 Case 3 Partially compressible CFV — catheter-associated DVT.gif" style="width:100%; border-radius:4px;" alt="Common femoral vein: partially compressible with posterior-wall thrombus — catheter-associated DVT"/>
 :::
 
 **What you see:**

@@ -37,6 +37,7 @@ Clips marked with an asterisk (\*) are embedded in the curriculum but do not yet
 | Clip | Contributor(s) | Source |
 |---|---|---|
 | Normal apical four-chamber | Hannah Kopinski MS4; Dr. Lindsay Davis, NYU/Bellevue Emergency Ultrasound; Dr. Matthew Riscinti, Kings County Emergency Medicine | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Normal apical five-chamber | Hannah Kopinski MS4; Dr. Lindsay Davis, NYU/Bellevue Emergency Ultrasound; Dr. Matthew Riscinti, Kings County Emergency Medicine | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
 | Normal aortic valve (PSAX) | Justin Bowra MBBS FACEM CCPU, RNSH, et al. | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
 | Normal mitral valve (PSAX) | Hannah Kopinski MS4; Dr. Lindsay Davis, NYU/Bellevue Emergency Ultrasound; Dr. Matthew Riscinti, Kings County Emergency Medicine | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
 | Normal PLAX | Nigist Taddese MBChB, Division of Hospital Medicine, John H. Stroger Hospital of Cook County | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
@@ -74,6 +75,10 @@ Clips marked with an asterisk (\*) are embedded in the curriculum but do not yet
 | Septal flattening in saddle pulmonary embolism | \* | — |
 | RV dilation, apical 4-chamber — Case 2 (submassive PE) | \* | — |
 | D-sign, PSX — Case 2 (submassive PE) | \* | — |
+| Massive PE — McConnell's sign & clot in transit (A4C) — Case 1 | \* | [POCUS Atlas](https://www.thepocusatlas.com/right-ventricular-dysfunction) |
+| Massive PE — D-sign, right heart strain (PSAX) — Case 1 | \* | [POCUS Atlas](https://www.thepocusatlas.com/right-ventricular-dysfunction) |
+| Acute cor pulmonale in ARDS — D-sign (PSAX) — Case 3 | \* | [POCUS Atlas](https://www.thepocusatlas.com/right-ventricular-dysfunction) |
+| RV infarct — free wall hypokinesis (A4C) — Case 4 | \* | [POCUS Atlas](https://www.thepocusatlas.com/right-ventricular-dysfunction) |
 
 ### Module 4 — Pericardium
 
@@ -87,6 +92,12 @@ Clips marked with an asterisk (\*) are embedded in the curriculum but do not yet
 | Chronic pericardial effusion, subcostal | \* | — |
 | Loculated pericardial effusion, subcostal | \* | — |
 | Mitral inflow — pulsed wave Doppler | \* | — |
+| Tamponade — RV diastolic & RA systolic collapse (subcostal) — Case 1 | \* | [POCUS Atlas](https://www.thepocusatlas.com/pericardial-disease) |
+| Very large effusion — swinging heart — Case 2 | \* | [POCUS Atlas](https://www.thepocusatlas.com/pericardial-disease) |
+| Moderate effusion — right chamber collapse (subcostal) — Case 3 | \* | [POCUS Atlas](https://www.thepocusatlas.com/pericardial-disease) |
+| Small–moderate posterior effusion — no tamponade (subcostal) — Case 4 | \* | [POCUS Atlas](https://www.thepocusatlas.com/pericardial-disease) |
+| Traumatic hemopericardium — RV collapse (subcostal) — Case 5 | \* | [POCUS Atlas](https://www.thepocusatlas.com/pericardial-disease) |
+| Small posterior effusion — normal LV — Case 6 | \* | [POCUS Atlas](https://www.thepocusatlas.com/pericardial-disease) |
 
 ### Module 5 — IVC & Volume Status
 
@@ -95,22 +106,13 @@ Clips marked with an asterisk (\*) are embedded in the curriculum but do not yet
 | Normal IVC entering the right atrium | Justin Bowra MBBS FACEM CCPU, RNSH, et al. | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
 | Collapsed IVC in hypovolemia (transverse) | Justin Bowra MBBS FACEM CCPU, RNSH, et al. | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
 | Plethoric IVC | \* | — |
+| Small collapsible IVC — hypovolemia — Case 1 | \* | [POCUS Atlas](https://www.thepocusatlas.com/ivc-abnormal-venous-waveforms) |
+| Plethoric IVC — venous congestion — Case 2 | \* | [POCUS Atlas](https://www.thepocusatlas.com/ivc-abnormal-venous-waveforms) |
+| Enlarged IVC — low distensibility, ventilated — Case 3 | \* | [POCUS Atlas](https://www.thepocusatlas.com/ivc-abnormal-venous-waveforms) |
+| Plethoric IVC — cardiogenic shock — Case 4 | \* | [POCUS Atlas](https://www.thepocusatlas.com/ivc-abnormal-venous-waveforms) |
+| Globally hypokinetic LV, severely reduced EF — Case 4 *(myocarditis clip reused from Module 2)* | \* | — |
 
-### Module 6 — Integration
-
-| Clip | Contributor(s) | Source |
-|---|---|---|
-| Septal dyskinesis (subcostal view) | \* | — |
-| Ventricular fibrillation | \* | — |
-
-### Module 7 — Basic Valve Assessment
-
-| Clip | Contributor(s) | Source |
-|---|---|---|
-| Normal apical five-chamber | Hannah Kopinski MS4; Dr. Lindsay Davis, NYU/Bellevue Emergency Ultrasound; Dr. Matthew Riscinti, Kings County Emergency Medicine | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
-| Severe aortic stenosis (PSX) | \* | — |
-
-### Module 8 — Lung Ultrasound
+### Module 6 — Lung Ultrasound
 
 | Clip | Contributor(s) | Source |
 |---|---|---|
@@ -119,6 +121,45 @@ Clips marked with an asterisk (\*) are embedded in the curriculum but do not yet
 | B-lines — pulmonary edema | Dr. Justin Bowra et al. (Dr. D. Browne; Dr. J. Knights) | [POCUS Atlas](https://www.thepocusatlas.com/pulmonary) |
 | Air bronchograms — pneumonia | Rafael Intensivanaveia, Critical Care Physician, Hospital Israelita Albert Einstein | [POCUS Atlas](https://www.thepocusatlas.com/pulmonary) |
 | Pleural effusion | Dimitri Livshits DO, Ultrasound Fellow; Jane Belyavskaya MD, Ultrasound Fellow; Chris Hanuscin MD, Ultrasound Fellowship Director — Kings County / SUNY Downstate | [POCUS Atlas](https://www.thepocusatlas.com/pulmonary) |
+| Bilateral confluent B-lines — pulmonary edema — Case 1 | \* | [POCUS Atlas](https://www.thepocusatlas.com/lung) |
+| Absent lung sliding — barcode sign (M-mode) — Case 2 | \* | [POCUS Atlas](https://www.thepocusatlas.com/lung) |
+| Lung point — pneumothorax — Case 3 | \* | [POCUS Atlas](https://www.thepocusatlas.com/lung) |
+| Consolidation with air bronchograms (PLAPS) — Case 4 | \* | [POCUS Atlas](https://www.thepocusatlas.com/lung) |
+
+### Module 7 — Abdominal Ultrasound
+
+| Clip | Contributor(s) | Source |
+|---|---|---|
+| Positive FAST — free fluid in Morison's pouch — Case 1 | \* | [POCUS Atlas](https://www.thepocusatlas.com/trauma) |
+| Positive FAST — splenorenal free fluid — Case 1 | \* | [POCUS Atlas](https://www.thepocusatlas.com/trauma) |
+| Positive FAST — pelvic free fluid — Case 1 | \* | [POCUS Atlas](https://www.thepocusatlas.com/trauma) |
+| Pyonephrosis — hydronephrosis with debris — Case 2 | \* | [POCUS Atlas](https://www.thepocusatlas.com/renal) |
+| Distended bladder — urinary retention — Case 3 | \* | [POCUS Atlas](https://www.thepocusatlas.com/renal) |
+| Ruptured ectopic — pelvic free fluid — Case 4 | \* | [POCUS Atlas](https://www.thepocusatlas.com/trauma) |
+| Ruptured ectopic — RUQ free fluid — Case 4 | \* | [POCUS Atlas](https://www.thepocusatlas.com/trauma) |
+
+### Module 8 — Vascular / DVT
+
+| Clip | Contributor(s) | Source |
+|---|---|---|
+| Non-compressible CFV — echogenic thrombus — Case 1 | \* | [POCUS Atlas](https://www.thepocusatlas.com/dvt) |
+| Non-compressible CFV — proximal DVT — Case 2 | \* | [POCUS Atlas](https://www.thepocusatlas.com/dvt) |
+| Non-compressible popliteal — occlusive DVT — Case 2 | \* | [POCUS Atlas](https://www.thepocusatlas.com/dvt) |
+| Partially compressible CFV — catheter-associated DVT — Case 3 | \* | [POCUS Atlas](https://www.thepocusatlas.com/dvt) |
+
+### Module 9 — Shock & Arrest Integration
+
+| Clip | Contributor(s) | Source |
+|---|---|---|
+| Septal dyskinesis (subcostal view) | \* | — |
+| Ventricular fibrillation | \* | — |
+| Biventricular failure — plethoric IVC — Case 1 | \* | [POCUS Atlas](https://www.thepocusatlas.com/shock) |
+| Decompensated HF — dilated LV & RV — Case 3 | \* | [POCUS Atlas](https://www.thepocusatlas.com/shock) |
+| Pericardial effusion with RV pressure overload — Case 4 | \* | [POCUS Atlas](https://www.thepocusatlas.com/shock) |
+
+::: {.callout-note}
+**Orphaned clip:** `severe aortic stenosis PSX.gif` remains in `modules/gifs/` from the retired Valve module and is no longer embedded in any module. Retain it if a valve module is added later, or delete it.
+:::
 
 ---
 

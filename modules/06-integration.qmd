@@ -118,7 +118,7 @@ Each exam should be compared to the prior exam, not interpreted in isolation. Do
 **Systematic four-question exam:**
 
 ::: {.callout-tip}
-Loops for interpretation — complete four-window exam.
+<img src="gifs/M9 Case 1 Biventricular failure — plethoric IVC.gif" style="width:100%; border-radius:4px;" alt="Biventricular failure: reduced-EF LV, dilated RV with D-sign, plethoric IVC"/>
 :::
 
 **What you see:**
@@ -164,7 +164,7 @@ Activate the cath lab immediately for emergent PCI. This is STEMI-equivalent pos
 **Systematic four-question exam:**
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M9 Case 3 Decompensated HF — dilated LV and RV.gif" style="width:100%; border-radius:4px;" alt="Decompensated heart failure: dilated reduced-EF LV, RV volume overload, plethoric IVC"/>
 :::
 
 **What you see:**
@@ -187,7 +187,7 @@ Initiate NIV (BiPAP) to reduce preload and work of breathing. Begin aggressive d
 **Systematic four-question exam:**
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M9 Case 4 Pericardial effusion with RV pressure overload.gif" style="width:100%; border-radius:4px;" alt="Moderate pericardial effusion without tamponade plus RV pressure-overload D-sign"/>
 :::
 
 **What you see:**

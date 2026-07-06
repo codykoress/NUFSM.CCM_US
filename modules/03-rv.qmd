@@ -194,7 +194,9 @@ TAPSE below 17 mm indicates RV systolic dysfunction. It reflects longitudinal RV
 Immediate subcostal cardiac view and IVC.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/A4C - M3 Case 1 Massive PE — McConnell sign and clot in transit.gif" style="width:100%; border-radius:4px;" alt="Apical four-chamber: severe RV dilation, McConnell's sign, clot in transit — massive PE"/>
+
+<img src="gifs/PSX - M3 Case 1 Massive PE — D-sign right heart strain.gif" style="width:100%; border-radius:4px;" alt="Parasternal short axis: D-sign from RV pressure overload — massive PE"/>
 :::
 
 **What you see:**
@@ -234,7 +236,7 @@ This is submassive (intermediate-high risk) PE with echo evidence of RV dysfunct
 Bedside cardiac ultrasound to assess for ventilator-induced cor pulmonale.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/PSX - M3 Case 3 ARDS acute cor pulmonale — D-sign.gif" style="width:100%; border-radius:4px;" alt="Parasternal short axis: dilated RV with D-sign throughout the cycle — acute cor pulmonale in ARDS"/>
 :::
 
 **What you see:**
@@ -253,7 +255,7 @@ Acute cor pulmonale from ARDS. High PEEP increases RV afterload; hypercapnia cau
 Rapid focused cardiac echo before transfer.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/A4C - M3 Case 4 RV infarct — free wall hypokinesis.gif" style="width:100%; border-radius:4px;" alt="Apical four-chamber: RV free wall hypokinesis with inferior LV involvement — RV infarct"/>
 :::
 
 **What you see:**

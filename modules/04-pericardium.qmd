@@ -204,7 +204,7 @@ Loculated effusions do not distribute freely. They occur after cardiac surgery, 
 Focused cardiac ultrasound, subcostal view first.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/Subcostal - M4 Case 1 Tamponade — RV diastolic and RA systolic collapse.gif" style="width:100%; border-radius:4px;" alt="Subcostal: large circumferential effusion with RV diastolic and RA systolic collapse — tamponade"/>
 :::
 
 **What you see:**
@@ -223,7 +223,7 @@ Stop fluids — they will not correct tamponade. Call interventional cardiology 
 Focused cardiac ultrasound — subcostal and PLAX minimum.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M4 Case 2 Very large effusion — swinging heart.gif" style="width:100%; border-radius:4px;" alt="Very large circumferential pericardial effusion with swinging heart motion"/>
 :::
 
 **What you see:**
@@ -242,7 +242,7 @@ Large effusion without tamponade physiology at this moment — but high risk. On
 Immediate subcostal cardiac view as part of the resuscitation.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/Subcostal - M4 Case 3 Moderate effusion — right chamber collapse.gif" style="width:100%; border-radius:4px;" alt="Subcostal: moderate pericardial effusion with right atrial collapse"/>
 :::
 
 **What you see:**
@@ -261,7 +261,7 @@ Activate the pericardiocentesis team. Limit IV fluids to one bolus as a bridge. 
 Focused cardiac ultrasound to assess for effusion and tamponade physiology.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/Subcostal - M4 Case 4 Small-moderate posterior effusion — no tamponade.gif" style="width:100%; border-radius:4px;" alt="Subcostal: small-to-moderate posterior effusion without chamber collapse — uremic pericarditis"/>
 :::
 
 **What you see:**
@@ -280,7 +280,7 @@ Uremic pericarditis with a small effusion. Arrange urgent dialysis — this is t
 FAST exam with focused cardiac view as the first priority.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/Subcostal - M4 Case 5 Traumatic hemopericardium — RV collapse.gif" style="width:100%; border-radius:4px;" alt="Subcostal: echo-free stripe anterior to the RV with diastolic collapse — traumatic hemopericardium"/>
 :::
 
 **What you see:**
@@ -299,7 +299,7 @@ Hemopericardium with tamponade physiology. Emergent cardiothoracic surgery consu
 Focused cardiac ultrasound to assess for recurrent effusion and LV function.
 
 ::: {.callout-tip}
-Loops for interpretation.
+<img src="gifs/M4 Case 6 Small posterior effusion — normal LV.gif" style="width:100%; border-radius:4px;" alt="Small posterior pericardial effusion with normal LV function — recurrent pericarditis"/>
 :::
 
 **What you see:**
