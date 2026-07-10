@@ -57,7 +57,7 @@
 
 ### Clips — integration case slots
 
-**27 of the 28 integration-case slots are now embedded** (2026-07-06). All clips sourced from The POCUS Atlas per `clip-embed-worksheet.md`; credited in `credits.qmd` (contributors still flagged `*`).
+**27 of the 28 integration-case slots are now embedded** (2026-07-06). All clips sourced from The POCUS Atlas; credited in `credits.qmd` (contributors still flagged `*`). *(The step-by-step `clip-embed-worksheet.md` was retired 2026-07-09 — its remaining tasks now live in `CLAUDE.md` → Outstanding work.)*
 
 - [x] 03 RV (`03-rv.qmd`) — Cases 1, 3, 4
 - [x] 04 Pericardium (`04-pericardium.qmd`) — Cases 1–6
@@ -68,9 +68,9 @@
 - [x] 09 Integration (`06-integration.qmd`) — Cases 1, 3, 4
 
 **Still open (1 clip):**
-- [ ] **M09 Case 5** — post-surgical windows; clip not yet sourced (lowest priority, placeholder left in place)
+- [ ] **M09 Case 5** — post-surgical windows; clip not yet sourced (lowest priority, placeholder left in place; target filename + embed snippet in `CLAUDE.md` → Outstanding work)
 
-Soft gaps for later refinement (a clip is embedded but a better match exists): M05 Case 2 (add hepatic-vein/portal Doppler waveforms), M06 Case 4 (static vs dynamic air bronchograms), M08 Case 3 (explicitly-labeled catheter-associated DVT). See worksheet.
+Soft gaps for later refinement (a clip is embedded but a better match exists): M04 Case 2 (very large effusion without collapse), M05 Case 2 (add hepatic-vein/portal Doppler waveforms), M06 Case 4 (static vs dynamic air bronchograms), M08 Case 3 (explicitly-labeled catheter-associated DVT). Details in `CLAUDE.md` → Outstanding work.
 
 ### Metadata — credits page
 - [ ] Resolve the 22 clips marked `*` (newly-added Module 2 integration case clips, Module 3 Case 2 clips, Module 4 PLAX/subcostal/Doppler additions, Module 7 severe AS, plus the original 8 unresolved placeholders)
@@ -78,7 +78,8 @@ Soft gaps for later refinement (a clip is embedded but a better match exists): M
 - [ ] Add metadata for all future clips to Google Sheet before embedding
 
 ### Unused files
-- [ ] `constrictive pericarditis.gif` and `constrictive pericarditis subcostal.gif` are in `modules/gifs/` but no longer referenced (constrictive section dropped from Module 4) — safe to delete
+- [x] Repo cleanup 2026-07-09 — deleted five orphaned GIFs (`constrictive pericarditis.gif`, `constrictive pericarditis subcostal.gif`, `severe aortic stenosis PSX.gif`, and the duplicate normals `Normal PLAX.gif`, `parasternal+long+axis+normal.gif`), the stale `_site/` render (superseded by `docs/`), and `debug.log`; `_site/` and `*.log` now gitignored
+- [ ] `credits.qmd` still has rows for two clips no module embeds (`Normal PLAX`, `severe aortic stenosis`) — decide whether to drop the rows or keep them for future re-use
 
 ### Per-module content gaps
 - [ ] All modules: References & further reading sections

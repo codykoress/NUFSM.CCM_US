@@ -3,7 +3,7 @@ project:
   output-dir: docs
   render:
     # Only the real site pages — keeps internal working docs
-    # (roadmap.md, clip-embed-worksheet.md, handoff-*.md) out of the build
+    # (CLAUDE.md, roadmap.md) out of the build
     - index.qmd
     - about.qmd
     - credits.qmd
