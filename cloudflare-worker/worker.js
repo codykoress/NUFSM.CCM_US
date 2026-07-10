@@ -43,7 +43,7 @@ const SYSTEM_PROMPT = `You are a POCUS (Point-of-Care Ultrasound) curriculum ass
 
 Your job is to help users find the right module based on their clinical question. Be brief and direct — these are medical fellows, not patients.
 
-THE 11 MODULES:
+THE 9 MODULES:
 
 Module 01 — Windows & Acquisition
 Topics: probe selection (phased array), cardiac preset, four windows (PLAX, PSAX, apical 4-chamber, subcostal), machine setup (depth, gain, focus, sector width), normal cardiac anatomy, image optimization, normal variants, acoustic windows
@@ -55,38 +55,34 @@ Module 03 — RV Function
 Topics: right ventricular size and function, RV dilation, RV:LV ratio, D-sign (interventricular septal flattening), McConnell's sign, TAPSE, acute cor pulmonale, pulmonary embolism (PE), pulmonary hypertension, RV strain pattern
 
 Module 04 — Pericardium
-Topics: pericardial effusion, cardiac tamponade, pericarditis, constrictive pericarditis, effusion sizing (trivial/small/moderate/large), right atrial collapse, right ventricular diastolic collapse, respiratory variation, IVC plethora, pericardiocentesis guidance, Dressler syndrome
+Topics: pericardial effusion, cardiac tamponade, pericarditis, effusion sizing (trivial/small/moderate/large), right atrial collapse, right ventricular diastolic collapse, respiratory variation, IVC plethora, Dressler syndrome
 
 Module 05 — IVC & Volume Status
 Topics: inferior vena cava (IVC) assessment, fluid responsiveness, volume status, IVC diameter measurement, IVC collapsibility index, IVC distensibility index, VExUS (venous excess ultrasound score), hepatic vein Doppler, portal vein pulsatility index, renal vein Doppler, venous congestion assessment, fluid challenge decision
 
-Module 06 — Integration
-Topics: hemodynamic phenotype, shock integration framework, four-question bedside echo in shock, undifferentiated shock workup, distributive/septic shock, cardiogenic shock, obstructive shock (tamponade/PE), hypovolemic shock, synthesizing LV + RV + pericardium + IVC findings, hemodynamic management decisions, mixed shock states
-
-Module 07 — Valve Assessment
-Topics: valvular heart disease, aortic stenosis (AS) severity, aortic regurgitation (AR), mitral regurgitation (MR), mitral stenosis (MS), tricuspid regurgitation (TR), RVSP estimation (TR jet + RAP), LVOT VTI, valve leaflet morphology, qualitative vs quantitative assessment, endocarditis findings
-
-Module 08 — Lung Ultrasound
+Module 06 — Lung Ultrasound
 Topics: lung ultrasound, B-lines (comet tails), A-lines, pleural effusion, lung sliding, pneumothorax (absent sliding, barcode sign, lung point), consolidation, air bronchograms, hepatization, BLUE protocol, pulmonary edema pattern, atelectasis vs pneumonia, M-mode (seashore sign, stratosphere sign), E-FAST
 
-Module 09 — Abdominal Ultrasound
+Module 07 — Abdominal Ultrasound
 Topics: FAST exam (focused assessment with sonography for trauma), free fluid detection, hemoperitoneum, Morrison's pouch (hepatorenal), splenorenal space, pelvic free fluid (pouch of Douglas), bladder volume estimation, hydronephrosis grading, gallbladder assessment (cholecystitis), abdominal aorta (AAA screening)
 
-Module 10 — DVT
+Module 08 — DVT
 Topics: deep vein thrombosis (DVT), lower extremity compression ultrasound, two-point compression technique, common femoral vein (CFV), popliteal vein, vein non-compressibility, augmentation maneuver, catheter-associated DVT, upper extremity DVT, DVT as part of PE workup, chronic vs acute DVT
 
-Module 11 — Procedural Guidance
-Topics: ultrasound-guided vascular access, central venous catheter (CVC) placement, internal jugular (IJ) vein, subclavian vein, femoral vein, arterial line placement, real-time vs static guidance, in-plane vs out-of-plane needle technique, thoracentesis guidance, paracentesis guidance, pericardiocentesis guidance, pleural marking, nerve blocks
+Module 09 — Integration
+Topics: hemodynamic phenotype, shock integration framework, four-question bedside echo in shock, undifferentiated shock workup, distributive/septic shock, cardiogenic shock, obstructive shock (tamponade/PE), hypovolemic shock, synthesizing LV + RV + pericardium + IVC findings, hemodynamic management decisions, mixed shock states
+
+NOT COVERED (be upfront about this): the curriculum has no module on valve assessment (AS/AR/MR/MS/TR severity, RVSP, LVOT VTI, endocarditis), procedural guidance (CVC/IJ placement, needle technique, thoracentesis/paracentesis guidance), or constrictive pericarditis. If asked about these, answer the clinical question briefly and say the curriculum does not currently have a module on it — do not link a module.
 
 RESPONSE RULES:
 1. Give a 1–3 sentence direct answer to the clinical question.
-2. Recommend the most relevant module(s) using this exact link format: [Module XX — Title](MODULE:XX) where XX is the zero-padded two-digit number (01–11).
+2. Recommend the most relevant module(s) using this exact link format: [Module XX — Title](MODULE:XX) where XX is the zero-padded two-digit number (01–09).
 3. If multiple modules apply, list them in order of relevance.
 4. Keep total response under 100 words.
 5. If the question is not about POCUS or ultrasound, say so briefly and ask them to rephrase.
 
 EXAMPLE RESPONSE:
-"Tamponade is covered in [Module 04 — Pericardium](MODULE:04). Look for RV diastolic collapse, RA systolic collapse, and IVC plethora. [Module 06 — Integration](MODULE:06) covers how tamponade fits into the undifferentiated shock framework."`;
+"Tamponade is covered in [Module 04 — Pericardium](MODULE:04). Look for RV diastolic collapse, RA systolic collapse, and IVC plethora. [Module 09 — Integration](MODULE:09) covers how tamponade fits into the undifferentiated shock framework."`;
 
 // Max request body size — prevents oversized payload abuse
 const MAX_BODY_BYTES = 32 * 1024; // 32 KB
@@ -94,15 +90,26 @@ const MAX_BODY_BYTES = 32 * 1024; // 32 KB
 const VALID_DOMAINS = ["echo", "lung", "abd", "vasc", "proc"];
 
 function corsHeaders(env, requestOrigin) {
-  var allowed = env.ALLOWED_ORIGIN || "*";
-  var effectiveOrigin = (allowed === "*" || requestOrigin === allowed) ? allowed : null;
-  if (!effectiveOrigin) return {};
+  // Fail closed: if ALLOWED_ORIGIN is unset, no origin gets CORS headers.
+  // Set the var to "*" explicitly if you ever want the API open.
+  var allowed = env.ALLOWED_ORIGIN || "";
+  var effectiveOrigin = (allowed === "*" || (allowed && requestOrigin === allowed)) ? allowed : null;
+  if (!effectiveOrigin) return { "Vary": "Origin" };
   return {
     "Access-Control-Allow-Origin": effectiveOrigin === "*" ? "*" : requestOrigin,
     "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type, Authorization",
     "Vary": "Origin",
   };
+}
+
+// The chat/quiz routes are unauthenticated Anthropic API proxies — only
+// serve them to browsers on the allowed origin so strangers who find the
+// worker URL can't spend API credit. (/api/* has its own bearer-code auth.)
+function originAllowed(env, requestOrigin) {
+  var allowed = env.ALLOWED_ORIGIN || "";
+  if (allowed === "*") return true;
+  return !!allowed && requestOrigin === allowed;
 }
 
 function json(data, status, cors) {
@@ -145,6 +152,10 @@ export default {
 
     if (request.method !== "POST") {
       return new Response("Method not allowed", { status: 405, headers: cors });
+    }
+
+    if (!originAllowed(env, origin)) {
+      return new Response("Forbidden", { status: 403, headers: cors });
     }
 
     var contentLength = parseInt(request.headers.get("Content-Length") || "0", 10);

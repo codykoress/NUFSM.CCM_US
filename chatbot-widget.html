@@ -190,18 +190,18 @@
   var WORKER_URL = 'https://ultrasoundguru.codykoress.workers.dev/';
   // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
+  // Display module number → source file (display numbers ≠ filenames
+  // after the 9-module restructure; keep in sync with worker SYSTEM_PROMPT)
   var MODULE_PATHS = {
     '01': 'modules/01-windows.html',
     '02': 'modules/02-lv.html',
     '03': 'modules/03-rv.html',
     '04': 'modules/04-pericardium.html',
     '05': 'modules/05-ivc.html',
-    '06': 'modules/06-integration.html',
-    '07': 'modules/07-valves.html',
-    '08': 'modules/08-lung.html',
-    '09': 'modules/09-abdominal.html',
-    '10': 'modules/10-dvt.html',
-    '11': 'modules/11-procedural.html',
+    '06': 'modules/08-lung.html',
+    '07': 'modules/09-abdominal.html',
+    '08': 'modules/10-dvt.html',
+    '09': 'modules/06-integration.html',
   };
 
   // Derive site base URL from Quarto's site_libs path so links work on any host
