@@ -29,7 +29,9 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. RV assessment 
 ### Apical four-chamber — standard and RV-focused
 
 ::: {.callout-tip}
-<img src="gifs/apical+4+normal.gif" style="width:100%; border-radius:4px;" alt="Normal apical four-chamber — RV:LV comparison"/>
+<img src="gifs/apical+4+normal.gif" style="width:100%; border-radius:4px;" alt="Normal apical four-chamber — standard, LV-centered"/>
+
+<img src="gifs/RV-focused A4C normal.gif" style="width:100%; border-radius:4px;" alt="Normal RV-focused apical four-chamber — RV centered in sector"/>
 :::
 
 **Two related acquisitions:**
@@ -77,62 +79,46 @@ Use a **phased array (cardiac) probe** on the **cardiac preset**. RV assessment 
 
 ---
 
-## 3. Normal & normal variants
+## 3. Visual global assessment
 
-::: {.callout-tip}
-Normal RV in apical four-chamber — thin free wall, RV smaller than LV, brisk TAPSE. Compare with RV in an athletic heart (mild physiologic enlargement).
-:::
-
-### Normal RV size and function
-
-On apical four-chamber, the RV should occupy roughly the right one-third of the image and appear clearly smaller than the LV. The RV free wall is thin and moves vigorously. TAPSE is greater than 17 mm. Normal RV wall thickness on subcostal is less than 5 mm.
-
-### Physiologic RV enlargement
-
-Highly trained athletes may have mildly enlarged RVs — a normal variant without functional impairment. TAPSE and free wall motion remain normal. Clinical context distinguishes this from pathologic enlargement.
-
-### RV hypertrophy
-
-Free wall thickness greater than 5 mm indicates chronic pressure overload. The RV has remodeled over time. Seen in chronic pulmonary hypertension, severe COPD, and longstanding left heart disease. A hypertrophied RV tolerates acute pressure increases somewhat better than a normal-thickness RV, which is why patients with chronic PHT may tolerate elevated PA pressures that would immediately cause acute cor pulmonale in a previously healthy patient.
+*Train your eye by comparing normal RV dimensions and function against progressively dilated and depressed RVs. Use the normal clip as your reference.*
 
 ---
 
-## 4. Pathology library
-
-*Organized by finding, not by diagnosis.*
-
-### RV dilation
+### Normal RV dimensions and function
 
 ::: {.callout-tip}
-<img src="gifs/RV Failure.gif" style="width:100%; border-radius:4px;" alt="RV failure — dilated RV on apical four-chamber"/>
+<img src="gifs/RV-focused A4C normal.gif" style="width:100%; border-radius:4px;" alt="Normal RV on RV-focused apical four-chamber"/>
 :::
 
-RV:LV ratio approaching 1:1 or greater on apical four-chamber is abnormal. The RV free wall may still contract (compensated) or may be hypokinetic (decompensated).
+RV internal diameter is less than two-thirds the size of the LV. The RV does not extend more than two-thirds to the apex. The interventricular septum is round (not flattened). Free wall motion is brisk and TAPSE is greater than 17 mm.
 
-**Teaching points:**
+---
+
+### Dilated and depressed RV
+
+::: {.callout-tip}
+<img src="gifs/RV Failure.gif" style="width:100%; border-radius:4px;" alt="Dilated and depressed RV — RV larger than LV on apical four-chamber"/>
+
+<img src="gifs/A4C - Case 2 Submassive PE — how sick is this RV.gif" style="width:100%; border-radius:4px;" alt="Dilated and depressed RV — submassive PE"/>
+:::
+
+RV:LV ratio approaching 1:1 or greater. The RV free wall is hypokinetic. On diastole, the septum may be pushed toward the LV indicating volume overload; on both systole and diastole indicates combined pressure and volume overload. The RA may be enlarged.
 
 - Acute dilation without free wall hypertrophy = acute process (PE, acute cor pulmonale from ARDS, RV infarct).
 - Dilation with free wall hypertrophy = chronic process (pulmonary hypertension, COPD).
-- The acuity of onset changes the differential and the urgency of intervention.
 
 ---
 
 ### D-sign (septal flattening)
 
 ::: {.callout-tip}
-- D-sign from pressure overload (systolic flattening) — PE, PHT
-- D-sign from volume overload (diastolic flattening) — TR, ASD
-
 <img src="gifs/Septal Flattening in Saddle Pulmonary Embolism.gif" style="width:100%; border-radius:4px;" alt="Septal flattening (D-sign) in massive pulmonary embolism"/>
+
+<img src="gifs/PSX - M3 Case 3 ARDS acute cor pulmonale — D-sign.gif" style="width:100%; border-radius:4px;" alt="D-sign in acute cor pulmonale from ARDS"/>
 :::
 
-The interventricular septum flattens or bows toward the LV due to elevated RV pressure or volume. The timing within the cardiac cycle distinguishes pressure from volume overload.
-
-**Teaching points:**
-
-- Septal shift impairs LV filling (ventricular interdependence) and can cause hypotension even with a structurally normal LV.
-- The D-sign is most reliably assessed on PSAX.
-- In mechanical ventilation, the D-sign may be accentuated by high PEEP and should be interpreted in clinical context.
+The interventricular septum flattens or bows toward the LV due to elevated RV pressure or volume. Best assessed on PSAX. Pressure overload causes systolic flattening; volume overload causes diastolic flattening. Septal shift impairs LV filling (ventricular interdependence) and can cause hypotension even with a structurally normal LV. In mechanical ventilation, the D-sign may be accentuated by high PEEP.
 
 ---
 
@@ -140,47 +126,25 @@ The interventricular septum flattens or bows toward the LV due to elevated RV pr
 
 ::: {.callout-tip}
 <img src="gifs/McConnell Sign with RV Enlargement.gif" style="width:100%; border-radius:4px;" alt="McConnell's sign — RV free wall akinesis with apical sparing"/>
+
+<img src="gifs/A4C - M3 Case 1 Massive PE — McConnell sign and clot in transit.gif" style="width:100%; border-radius:4px;" alt="McConnell's sign with clot in transit — massive PE"/>
 :::
 
-Regional RV dysfunction with akinesis of the mid-free wall and preserved or hyperdynamic motion at the RV apex. Originally described as specific for acute PE (specificity ~94%, sensitivity ~77%). The mechanism is thought to involve tethering of the RV apex to the contracting LV.
-
-**Teaching points:**
-
-- Highly specific for acute PE when present, but absence does not rule out PE.
-- Can be seen in other conditions causing acute RV pressure overload.
-- In the right clinical context (tachycardia, hypoxia, plethoric IVC), McConnell's sign is enough to initiate PE workup and consider empiric thrombolytics in an unstable patient.
+RV free wall akinesis with preserved or hyperdynamic apical motion. Highly specific for acute PE (specificity ~94%). The mechanism involves tethering of the RV apex to the contracting LV. In the right clinical context (tachycardia, hypoxia, plethoric IVC), McConnell's sign is enough to initiate PE workup and consider empiric thrombolytics in an unstable patient.
 
 ---
 
-### Reduced TAPSE
+### TAPSE
 
 ::: {.callout-tip}
-TAPSE measurement by M-mode — normal vs reduced.
+<img src="gifs/TAPSE cursor alignment A4C.gif" style="width:100%; border-radius:4px;" alt="TAPSE cursor alignment — M-mode cursor along the lateral tricuspid annulus on RV-focused A4C"/>
 :::
 
-TAPSE below 17 mm indicates RV systolic dysfunction. It reflects longitudinal RV function and correlates with prognosis across multiple conditions including PE, pulmonary hypertension, and right heart failure.
-
-**Teaching points:**
-
-- TAPSE is load-dependent — it can be reduced in hypovolemia and improved with volume loading.
-- A TAPSE of 10 mm in a patient who was normal yesterday represents a severe acute event.
-- Serial TAPSE measurement tracks RV recovery in response to treatment.
+TAPSE (tricuspid annular plane systolic excursion) below 17 mm indicates RV systolic dysfunction. Measured by M-mode on the RV-focused A4C with the cursor aligned through the lateral tricuspid annulus. It reflects longitudinal RV function and correlates with prognosis across PE, pulmonary hypertension, and right heart failure. TAPSE is load-dependent — serial measurements track RV recovery in response to treatment.
 
 ---
 
-### Mimics & pitfalls
-
-| Pitfall | Explanation |
-|---|---|
-| Foreshortened apical view | Makes RV appear artificially large; confirm in a second window |
-| Anterior MI with RV involvement | RV dilation from infarct, not PE — ECG and clinical context distinguish |
-| Athletic heart | Mild RV enlargement without functional impairment |
-| High PEEP | Can cause RV dilation and D-sign independent of intrinsic RV pathology |
-| RBBB | Can cause apparent septal dyskinesis on echo unrelated to pressure overload |
-
----
-
-## 5. Integration cases
+## 4. Integration cases
 
 *Cases where the finding changes management.*
 
@@ -191,12 +155,12 @@ TAPSE below 17 mm indicates RV systolic dysfunction. It reflects longitudinal RV
 **Clinical scenario:** A 55-year-old man on a long-haul flight arrives at a connecting airport and collapses in the terminal. He is brought to the ED with BP 70/40, HR 130, O2 saturation 84% on non-rebreather. ECG shows sinus tachycardia with right heart strain pattern (S1Q3T3).
 
 **What exam would you perform?**
-Immediate subcostal cardiac view and IVC.
+FAST exam.
 
 ::: {.callout-tip}
 <img src="gifs/A4C - M3 Case 1 Massive PE — McConnell sign and clot in transit.gif" style="width:100%; border-radius:4px;" alt="Apical four-chamber: severe RV dilation, McConnell's sign, clot in transit — massive PE"/>
 
-<img src="gifs/PSX - M3 Case 1 Massive PE — D-sign right heart strain.gif" style="width:100%; border-radius:4px;" alt="Parasternal short axis: D-sign from RV pressure overload — massive PE"/>
+<img src="gifs/RV volume overload PSX.gif" style="width:100%; border-radius:4px;" alt="Parasternal short axis: D-sign with RV pressure and volume overload — massive PE"/>
 :::
 
 **What you see:**
@@ -221,7 +185,7 @@ Focused cardiac ultrasound to assess RV function and guide risk stratification.
 :::
 
 **What you see:**
-Mildly to moderately dilated RV. RV free wall hypokinesis present. No McConnell's sign. TAPSE 12 mm. D-sign on PSAX. LV filling appears reduced.
+Moderately to severely dilated RV. RV free wall hypokinesis present. No McConnell's sign. TAPSE 12 mm. D-sign on PSAX. LV filling appears reduced.
 
 **How does this change management?**
 This is submassive (intermediate-high risk) PE with echo evidence of RV dysfunction and myocardial injury (elevated troponin). Anticoagulate immediately. The RV dysfunction on echo upgrades risk and supports consideration of early catheter-directed therapy rather than anticoagulation alone. Admit to a monitored setting. Serial echo is appropriate to track RV recovery.
@@ -236,7 +200,11 @@ This is submassive (intermediate-high risk) PE with echo evidence of RV dysfunct
 Bedside cardiac ultrasound to assess for ventilator-induced cor pulmonale.
 
 ::: {.callout-tip}
+<img src="gifs/RV volume overload PSX.gif" style="width:100%; border-radius:4px;" alt="Parasternal short axis: D-sign with RV pressure and volume overload — acute cor pulmonale"/>
+
 <img src="gifs/PSX - M3 Case 3 ARDS acute cor pulmonale — D-sign.gif" style="width:100%; border-radius:4px;" alt="Parasternal short axis: dilated RV with D-sign throughout the cycle — acute cor pulmonale in ARDS"/>
+
+<img src="gifs/M5 Case 2 Plethoric IVC — venous congestion.gif" style="width:100%; border-radius:4px;" alt="Plethoric IVC — non-collapsing, consistent with elevated right-sided pressures"/>
 :::
 
 **What you see:**
@@ -255,14 +223,20 @@ Acute cor pulmonale from ARDS. High PEEP increases RV afterload; hypercapnia cau
 Rapid focused cardiac echo before transfer.
 
 ::: {.callout-tip}
-<img src="gifs/A4C - M3 Case 4 RV infarct — free wall hypokinesis.gif" style="width:100%; border-radius:4px;" alt="Apical four-chamber: RV free wall hypokinesis with inferior LV involvement — RV infarct"/>
+<img src="gifs/A4C McConnell sign RV infarct.gif" style="width:100%; border-radius:4px;" alt="Apical four-chamber: McConnell's sign — RV free wall hypokinesis with apical sparing in RV infarct"/>
 :::
 
 **What you see:**
-Inferior and posterior wall hypokinesis (LV). RV free wall hypokinesis. RV mildly dilated. LV function otherwise preserved.
+Hypokinetic RV with apical sparing. LV function otherwise preserved.
 
 **How does this change management?**
-RV infarct complicating inferior STEMI. Nitroglycerin is contraindicated — it reduces preload and the failing RV is entirely preload-dependent. Administer IV fluid bolus (500 mL) to maintain RV filling pressure. Avoid diuretics. Maintain AV synchrony — loss of atrial kick is poorly tolerated. Expedite PCI — reperfusion of the RCA is the treatment.
+RV infarct complicating inferior STEMI. RV dysfunction in STEMI carries independent prognostic weight beyond LV function alone — it correlates with higher rates of heart failure, arrhythmias (especially from RCA involvement of the AV nodal artery), cardiogenic shock, and mechanical complications including severe mitral regurgitation.
+
+- **Cautious fluid loading** to maintain RV preload — unlike LV infarction, where fluid restriction may be necessary.
+- **Avoid nitrates and diuretics** — both reduce preload and can precipitate hemodynamic collapse in isolated RV infarction.
+- **Inotropic support** may be required if severe RV dysfunction produces low cardiac output.
+- **Maintain AV synchrony** — loss of atrial kick is poorly tolerated by the failing RV; arrhythmias are common due to RCA territory involvement.
+- **Expedite PCI** — reperfusion of the RCA is the definitive treatment. Early identification of RV dysfunction guides monitoring intensity, mechanical support decisions, and post-discharge care.
 
 ::: {.callout-tip}
 **Case format reminder:** The case ends with a management decision, not just a diagnosis.

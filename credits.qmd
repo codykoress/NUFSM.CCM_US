@@ -54,6 +54,8 @@ Clips marked with an asterisk (\*) are embedded in the curriculum but do not yet
 | New onset cardiomyopathy with reduced EF (PLAX) | Brent Oldham MD MPH PGY-3, Central Michigan University College of Medicine, Emergency Medicine | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
 | Reduced ejection fraction (PLAX) | Nigist Taddese MBChB | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
 | Takotsubo cardiomyopathy (apical two-chamber) | Robert Jones DO FACEP, Director of Emergency Ultrasound, MetroHealth Medical Center; Professor, Case Western Reserve University School of Medicine | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| Abnormal EPSS M-mode | \* | [Show Me The POCUS](https://www.showmethepocus.com/ejection-fraction-left) |
+| Severely depressed LV (A4C) | \* | [Show Me The POCUS](https://www.showmethepocus.com/ejection-fraction-left) |
 | Hyperdynamic LV (short axis) | \* | — |
 | Moderately reduced EF (short axis) | \* | — |
 | Moderately reduced EF (apical 4-chamber) | \* | — |
@@ -72,13 +74,15 @@ Clips marked with an asterisk (\*) are embedded in the curriculum but do not yet
 |---|---|---|
 | RV failure | John Bowling DO, Cleveland Clinic Akron General, @BModeBowling | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
 | McConnell's sign with RV enlargement | Dimitri Livshits DO, Ultrasound Fellow; Jane Belyavskaya MD, Ultrasound Fellow; Chris Hanuscin MD, Ultrasound Fellowship Director — Kings County / SUNY Downstate | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
+| RV-focused A4C normal | \* | [Show Me The POCUS](https://www.showmethepocus.com/right-ventricle) |
+| TAPSE cursor alignment A4C | \* | [Show Me The POCUS](https://www.showmethepocus.com/right-ventricle) |
+| RV volume overload PSX — Cases 1 & 3 | \* | [Show Me The POCUS](https://www.showmethepocus.com/right-ventricle) |
 | Septal flattening in saddle pulmonary embolism | \* | — |
 | RV dilation, apical 4-chamber — Case 2 (submassive PE) | \* | — |
 | D-sign, PSX — Case 2 (submassive PE) | \* | — |
 | Massive PE — McConnell's sign & clot in transit (A4C) — Case 1 | \* | [POCUS Atlas](https://www.thepocusatlas.com/right-ventricular-dysfunction) |
-| Massive PE — D-sign, right heart strain (PSAX) — Case 1 | \* | [POCUS Atlas](https://www.thepocusatlas.com/right-ventricular-dysfunction) |
 | Acute cor pulmonale in ARDS — D-sign (PSAX) — Case 3 | \* | [POCUS Atlas](https://www.thepocusatlas.com/right-ventricular-dysfunction) |
-| RV infarct — free wall hypokinesis (A4C) — Case 4 | \* | [POCUS Atlas](https://www.thepocusatlas.com/right-ventricular-dysfunction) |
+| McConnell's sign — RV infarct (A4C) — Case 4 | Dr. Meghan Kelly Herbst, UCONN Emergency Medicine | [GrepMed](https://www.grepmed.com/images/14778/a4c-pocus-cardiology-mcconnells-clinical) |
 
 ### Module 4 — Pericardium
 

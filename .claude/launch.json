@@ -13,5 +13,11 @@
       "runtimeArgs": ["-m", "http.server", "8743", "--directory", "docs"],
       "port": 8743
     }
+    ,{
+      "name": "quarto-preview",
+      "runtimeExecutable": "quarto",
+      "runtimeArgs": ["preview", "--port", "8744", "--no-browser"],
+      "port": 8744
+    }
   ]
 }
