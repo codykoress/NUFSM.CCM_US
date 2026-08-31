@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -39,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -179,24 +182,23 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#clinical-question" id="toc-clinical-question" class="nav-link active" data-scroll-target="#clinical-question">1. Clinical question</a></li>
   <li><a href="#image-acquisition" id="toc-image-acquisition" class="nav-link" data-scroll-target="#image-acquisition">2. Image acquisition</a>
   <ul class="collapse">
-  <li><a href="#subcostal-four-chamber-pericardial-assessment" id="toc-subcostal-four-chamber-pericardial-assessment" class="nav-link" data-scroll-target="#subcostal-four-chamber-pericardial-assessment">Subcostal four-chamber — pericardial assessment</a></li>
-  <li><a href="#parasternal-long-axis-pericardial-assessment" id="toc-parasternal-long-axis-pericardial-assessment" class="nav-link" data-scroll-target="#parasternal-long-axis-pericardial-assessment">Parasternal long axis — pericardial assessment</a></li>
-  <li><a href="#apical-four-chamber-pericardial-assessment" id="toc-apical-four-chamber-pericardial-assessment" class="nav-link" data-scroll-target="#apical-four-chamber-pericardial-assessment">Apical four-chamber — pericardial assessment</a></li>
+  <li><a href="#subcostal-four-chamber" id="toc-subcostal-four-chamber" class="nav-link" data-scroll-target="#subcostal-four-chamber">Subcostal four-chamber</a></li>
+  <li><a href="#parasternal-long-axis" id="toc-parasternal-long-axis" class="nav-link" data-scroll-target="#parasternal-long-axis">Parasternal long axis</a></li>
+  <li><a href="#apical-four-chamber" id="toc-apical-four-chamber" class="nav-link" data-scroll-target="#apical-four-chamber">Apical four-chamber</a></li>
   </ul></li>
-  <li><a href="#normal-normal-variants" id="toc-normal-normal-variants" class="nav-link" data-scroll-target="#normal-normal-variants">3. Normal &amp; normal variants</a>
+  <li><a href="#recognizing-effusion-and-common-mimics" id="toc-recognizing-effusion-and-common-mimics" class="nav-link" data-scroll-target="#recognizing-effusion-and-common-mimics">3. Recognizing effusion and common mimics</a>
   <ul class="collapse">
   <li><a href="#normal-pericardium" id="toc-normal-pericardium" class="nav-link" data-scroll-target="#normal-pericardium">Normal pericardium</a></li>
-  <li><a href="#pericardial-fat-pad" id="toc-pericardial-fat-pad" class="nav-link" data-scroll-target="#pericardial-fat-pad">Pericardial fat pad</a></li>
-  <li><a href="#epicardial-fat" id="toc-epicardial-fat" class="nav-link" data-scroll-target="#epicardial-fat">Epicardial fat</a></li>
-  <li><a href="#post-cabg-appearance" id="toc-post-cabg-appearance" class="nav-link" data-scroll-target="#post-cabg-appearance">Post-CABG appearance</a></li>
-  </ul></li>
-  <li><a href="#pathology-library" id="toc-pathology-library" class="nav-link" data-scroll-target="#pathology-library">4. Pathology library</a>
-  <ul class="collapse">
+  <li><a href="#pericardial-and-epicardial-fat" id="toc-pericardial-and-epicardial-fat" class="nav-link" data-scroll-target="#pericardial-and-epicardial-fat">Pericardial and epicardial fat</a></li>
   <li><a href="#small-effusion" id="toc-small-effusion" class="nav-link" data-scroll-target="#small-effusion">Small effusion</a></li>
   <li><a href="#moderate-to-large-effusion" id="toc-moderate-to-large-effusion" class="nav-link" data-scroll-target="#moderate-to-large-effusion">Moderate to large effusion</a></li>
-  <li><a href="#tamponade-physiology" id="toc-tamponade-physiology" class="nav-link" data-scroll-target="#tamponade-physiology">Tamponade physiology</a></li>
   <li><a href="#loculated-effusion" id="toc-loculated-effusion" class="nav-link" data-scroll-target="#loculated-effusion">Loculated effusion</a></li>
-  <li><a href="#mimics-pitfalls" id="toc-mimics-pitfalls" class="nav-link" data-scroll-target="#mimics-pitfalls">Mimics &amp; pitfalls</a></li>
+  <li><a href="#post-operative-appearance" id="toc-post-operative-appearance" class="nav-link" data-scroll-target="#post-operative-appearance">Post-operative appearance</a></li>
+  <li><a href="#mimics-and-pitfalls" id="toc-mimics-and-pitfalls" class="nav-link" data-scroll-target="#mimics-and-pitfalls">Mimics and pitfalls</a></li>
+  </ul></li>
+  <li><a href="#tamponade-physiology" id="toc-tamponade-physiology" class="nav-link" data-scroll-target="#tamponade-physiology">4. Tamponade physiology</a>
+  <ul class="collapse">
+  <li><a href="#tamponade-physiology-1" id="toc-tamponade-physiology-1" class="nav-link" data-scroll-target="#tamponade-physiology-1">Tamponade physiology</a></li>
   </ul></li>
   <li><a href="#integration-cases" id="toc-integration-cases" class="nav-link" data-scroll-target="#integration-cases">5. Integration cases</a>
   <ul class="collapse">
@@ -204,10 +206,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#case-2-dyspnea-in-a-cancer-patient" id="toc-case-2-dyspnea-in-a-cancer-patient" class="nav-link" data-scroll-target="#case-2-dyspnea-in-a-cancer-patient">Case 2: Dyspnea in a cancer patient</a></li>
   <li><a href="#case-3-undifferentiated-shock-in-the-ed" id="toc-case-3-undifferentiated-shock-in-the-ed" class="nav-link" data-scroll-target="#case-3-undifferentiated-shock-in-the-ed">Case 3: Undifferentiated shock in the ED</a></li>
   <li><a href="#case-4-dialysis-patient-with-chest-pain" id="toc-case-4-dialysis-patient-with-chest-pain" class="nav-link" data-scroll-target="#case-4-dialysis-patient-with-chest-pain">Case 4: Dialysis patient with chest pain</a></li>
-  <li><a href="#case-5-trauma-thoracic-injury" id="toc-case-5-trauma-thoracic-injury" class="nav-link" data-scroll-target="#case-5-trauma-thoracic-injury">Case 5: Trauma — thoracic injury</a></li>
+  <li><a href="#case-5-thoracic-trauma" id="toc-case-5-thoracic-trauma" class="nav-link" data-scroll-target="#case-5-thoracic-trauma">Case 5: Thoracic trauma</a></li>
   <li><a href="#case-6-recurrent-chest-pain-after-pericarditis" id="toc-case-6-recurrent-chest-pain-after-pericarditis" class="nav-link" data-scroll-target="#case-6-recurrent-chest-pain-after-pericarditis">Case 6: Recurrent chest pain after pericarditis</a></li>
   </ul></li>
   <li><a href="#quiz" id="toc-quiz" class="nav-link" data-scroll-target="#quiz">Quiz</a></li>
+  <li><a href="#video-resources" id="toc-video-resources" class="nav-link" data-scroll-target="#video-resources">Video resources</a></li>
+  <li><a href="#references-further-reading" id="toc-references-further-reading" class="nav-link" data-scroll-target="#references-further-reading">References &amp; further reading</a></li>
   </ul>
 </nav>
     </div>
@@ -217,7 +221,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Module 4 — Pericardium</h1>
-<p class="subtitle lead">Effusion, tamponade, pericarditis, and constrictive disease</p>
+<p class="subtitle lead">Effusion and tamponade physiology</p>
 </div>
 
 
@@ -247,30 +251,26 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>The bedside decision frame:</strong> Three questions in order.</p>
+<p><strong>The bedside decision frame:</strong> Answer three questions in order.</p>
 <ol type="1">
-<li><strong>Is there a pericardial effusion?</strong> An echo-free space surrounding the heart — confirmed in at least two views before acting on it.</li>
-<li><strong>Is it physiologically significant?</strong> Size alone does not determine significance. Look for chamber collapse, plethoric IVC, and respiratory variation — the hallmarks of elevated intrapericardial pressure.</li>
-<li><strong>Does this change what you do right now?</strong> Tamponade is a clinical and sonographic diagnosis. A large effusion in a hemodynamically stable patient may warrant monitoring and urgent cardiology consultation. The same effusion in a hypotensive patient with RA collapse is a needle emergency.</li>
-</ol>
-<p>Two further questions apply in the non-acute setting:</p>
-<ol start="4" type="1">
-<li><strong>Is this pericarditis, and does it require intervention?</strong> Echo defines the effusion, tracks its size, and identifies patients at highest risk.</li>
-<li><strong>Is this constrictive pericarditis?</strong> Constriction is the great mimic of right heart failure and the one pericardial diagnosis that requires surgical intervention.</li>
+<li><strong>Is there a pericardial effusion?</strong> Confirm an echo-free space in at least two views and distinguish it from pleural fluid, fat, and ascites.</li>
+<li><strong>Is cardiac filling impaired?</strong> Size alone does not determine significance. Integrate right-sided chamber collapse, IVC plethora, Doppler respiratory variation, and the patient’s hemodynamics.</li>
+<li><strong>What needs to happen now?</strong> An unstable patient with an effusion and tamponade physiology needs immediate specialist activation for drainage. A stable patient may need comprehensive echocardiography, monitoring, and treatment of the cause instead.</li>
 </ol>
 </div>
 </div>
-<p>Pericardial ultrasound answers a binary, time-sensitive question at the bedside: <strong>does this patient need pericardiocentesis now?</strong> It also identifies effusions that will influence resuscitation strategy — for example, recognizing that aggressive fluid loading in tamponade provides only a brief bridge, and that vasopressors are a temporizing measure, not a solution. In the subacute setting, recognizing pericarditis and constriction prevents missed diagnoses that carry significant long-term consequences.</p>
+<p>POCUS rapidly detects pericardial fluid and signs of hemodynamic effect. It does <strong>not</strong> diagnose tamponade from effusion size alone, exclude a loculated post-operative collection after one normal window, or establish acute pericarditis by itself. The final interpretation is the combination of ultrasound, physiology, and clinical context.</p>
 <hr>
 </section>
 <section id="image-acquisition" class="level2">
 <h2 class="anchored" data-anchor-id="image-acquisition">2. Image acquisition</h2>
 <p><em>Probe, windows, and technique for this module.</em></p>
-<p>Use a <strong>phased array (cardiac) probe</strong> on the <strong>cardiac preset</strong>. The four standard windows are covered in Module 1. For pericardial assessment, the subcostal view is obtained first in an unstable patient; PLAX and apical four-chamber provide complementary information. This module adds Doppler assessment for constrictive physiology.</p>
-<p><strong>Depth:</strong> Ensure the posterior pericardium is fully visible with a small margin beyond it. A common error is insufficient depth that clips the posterior effusion.</p>
+<p>Use a <strong>phased array (cardiac) probe</strong> on the <strong>cardiac preset</strong>. Start with the window that is fastest and clearest in the patient in front of you; the subcostal view is often first in an unstable supine patient. PLAX, PSAX, and apical views provide complementary information.</p>
+<p><strong>Depth and gain:</strong> Keep the entire cardiac silhouette and posterior pericardium on screen with a small margin beyond it. Too little depth can clip a posterior effusion; excessive gain can make simple fluid look echogenic.</p>
+<p><strong>Measurement:</strong> Describe location and distribution, then measure the largest echo-free separation at end-diastole. The traditional semiquantitative categories are small (&lt;10 mm), moderate (10–20 mm), and large (&gt;20 mm). Record the view and site of measurement rather than treating one number as an estimate of volume.</p>
 <hr>
-<section id="subcostal-four-chamber-pericardial-assessment" class="level3">
-<h3 class="anchored" data-anchor-id="subcostal-four-chamber-pericardial-assessment">Subcostal four-chamber — pericardial assessment</h3>
+<section id="subcostal-four-chamber" class="level3">
+<h3 class="anchored" data-anchor-id="subcostal-four-chamber">Subcostal four-chamber</h3>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -281,14 +281,14 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Subcostal view for pericardial assessment — effusion, RA free wall collapse, RV diastolic collapse.</p>
+<p><img src="gifs/Subcostal - M4 Case 1 Tamponade — RV diastolic and RA systolic collapse.gif" style="width:100%; border-radius:4px;" alt="Subcostal view: circumferential effusion with right atrial systolic and right ventricular diastolic collapse"></p>
 </div>
 </div>
-<p>The RV free wall is nearest the probe, making the subcostal view the best window for detecting RA and RV chamber collapse in tamponade. The entire pericardium can be surveyed by fanning through the cardiac silhouette.</p>
+<p>The RV free wall is nearest the probe. Fan through the entire cardiac silhouette, watching the RA free wall through systole and the RV free wall at the start of diastole. Extend the same window inferiorly to assess the IVC.</p>
 <hr>
 </section>
-<section id="parasternal-long-axis-pericardial-assessment" class="level3">
-<h3 class="anchored" data-anchor-id="parasternal-long-axis-pericardial-assessment">Parasternal long axis — pericardial assessment</h3>
+<section id="parasternal-long-axis" class="level3">
+<h3 class="anchored" data-anchor-id="parasternal-long-axis">Parasternal long axis</h3>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -299,14 +299,14 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><img src="gifs/PSLX pericardial effusion.gif" style="width:100%; border-radius:4px;" alt="Pericardial effusion on parasternal long axis — descending aorta landmark"></p>
+<p><img src="gifs/PSLX pericardial effusion.gif" style="width:100%; border-radius:4px;" alt="Pericardial effusion on parasternal long axis with the descending aorta as a landmark"></p>
 </div>
 </div>
-<p>Effusion on PLAX appears as an echo-free stripe posterior to the LV. <strong>Key landmark:</strong> the descending thoracic aorta in cross-section at the far left of the image. Fluid anterior to the aorta is pericardial; fluid posterior to the aorta is pleural.</p>
+<p>Effusion on PLAX commonly appears as an echo-free stripe posterior to the LV. <strong>Key landmark:</strong> the descending thoracic aorta in cross-section near the left atrium. Pericardial fluid remains anterior to the descending aorta; left pleural fluid extends posterior to it.</p>
 <hr>
 </section>
-<section id="apical-four-chamber-pericardial-assessment" class="level3">
-<h3 class="anchored" data-anchor-id="apical-four-chamber-pericardial-assessment">Apical four-chamber — pericardial assessment</h3>
+<section id="apical-four-chamber" class="level3">
+<h3 class="anchored" data-anchor-id="apical-four-chamber">Apical four-chamber</h3>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -317,54 +317,56 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Apical four-chamber for pericardial assessment — circumferential effusion, RA collapse, respiratory variation on mitral inflow.</p>
+<p><img src="gifs/Cardiac Tamponade Apical Four.gif" style="width:100%; border-radius:4px;" alt="Apical four-chamber view of a large pericardial effusion with tamponade physiology"></p>
 </div>
 </div>
-<p>The apical view is useful for identifying loculated effusions and for PW Doppler assessment of respiratory variation across the mitral valve in suspected tamponade.</p>
+<p>The apical view helps define circumferential or loculated fluid and shows RA free-wall motion well. Avoid an off-axis view that foreshortens the ventricles or mistakes pleural fluid for pericardial fluid.</p>
 <hr>
 </section>
 </section>
-<section id="normal-normal-variants" class="level2">
-<h2 class="anchored" data-anchor-id="normal-normal-variants">3. Normal &amp; normal variants</h2>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><img src="gifs/Mitral inflow — pulsed wave Doppler.avif" style="width:100%; border-radius:4px;" alt="Normal mitral inflow — pulsed wave Doppler"></p>
-</div>
-</div>
+<section id="recognizing-effusion-and-common-mimics" class="level2">
+<h2 class="anchored" data-anchor-id="recognizing-effusion-and-common-mimics">3. Recognizing effusion and common mimics</h2>
 <section id="normal-pericardium" class="level3">
 <h3 class="anchored" data-anchor-id="normal-pericardium">Normal pericardium</h3>
-<p>A thin, bright (hyperechoic) line surrounding the heart that moves with it. No echo-free space between the visceral and parietal layers. A physiologic trace of fluid (up to 50 mL) may appear as a very thin stripe posteriorly on PLAX — this does not warrant intervention.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><img src="gifs/Normal Parasternal Long Axis (PLAX) View.gif" style="width:100%; border-radius:4px;" alt="Normal parasternal long-axis view with no pericardial effusion"></p>
+</div>
+</div>
+<p>A thin, bright (hyperechoic) line surrounds the heart and moves with it. A physiologic trace of fluid can appear as a very thin posterior stripe on PLAX. Do not call a pathologic effusion from one equivocal view.</p>
 </section>
-<section id="pericardial-fat-pad" class="level3">
-<h3 class="anchored" data-anchor-id="pericardial-fat-pad">Pericardial fat pad</h3>
-<p>The most common mimic of pericardial effusion. Pericardial fat is <strong>echogenic</strong> (bright, not black), most prominent anteriorly, and does not shift with patient repositioning. Key distinguishing features:</p>
+<section id="pericardial-and-epicardial-fat" class="level3">
+<h3 class="anchored" data-anchor-id="pericardial-and-epicardial-fat">Pericardial and epicardial fat</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><img src="images/epicardial-fat-pad-plax.jpg" style="width:100%; border-radius:4px;" alt="Side-by-side unlabeled and labeled PLAX views showing an epicardial fat pad anterior to the right ventricle"></p>
+</div>
+</div>
+<p><em>Annotated PLAX example: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11049036/#diagnostics-14-00818-f002">Bronshteyn et al., Diagnostics 2024</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>).</em></p>
+<p>Fat is the most common mimic of pericardial fluid. It is usually <strong>echogenic or speckled</strong>, most prominent anteriorly, and not a uniformly anechoic collection.</p>
 <ul>
-<li>Fat is echogenic; effusion is anechoic.</li>
-<li>Fat does not change with the cardiac cycle; effusion may show swirling.</li>
-<li>Fat is anterior; hemodynamically significant effusions tend to be circumferential and posterior.</li>
+<li>A superficial pericardial fat pad is relatively fixed.</li>
+<li>Epicardial fat moves with the heart and sits between myocardium and visceral pericardium.</li>
+<li>Free-flowing effusion changes distribution with gravity; a loculated effusion may not.</li>
 </ul>
-</section>
-<section id="epicardial-fat" class="level3">
-<h3 class="anchored" data-anchor-id="epicardial-fat">Epicardial fat</h3>
-<p>Sits between the myocardium and the visceral pericardium. Visible as a thin echogenic layer over the RV free wall and in the AV groove. Moves with the heart (unlike pericardial fat pad, which is relatively fixed). Differentiated from a small effusion by echogenicity and motion pattern.</p>
-</section>
-<section id="post-cabg-appearance" class="level3">
-<h3 class="anchored" data-anchor-id="post-cabg-appearance">Post-CABG appearance</h3>
-<p>After cardiac surgery, the pericardium is often left open or partially closed, creating atypical appearances with adhesions and thickening. Post-operative effusions are frequently anterior and loculated. Subcostal view may be normal — always check all windows in post-surgical patients with new hemodynamic instability.</p>
 <hr>
 </section>
-</section>
-<section id="pathology-library" class="level2">
-<h2 class="anchored" data-anchor-id="pathology-library">4. Pathology library</h2>
-<p><em>Organized by finding, not by diagnosis.</em></p>
 <section id="small-effusion" class="level3">
 <h3 class="anchored" data-anchor-id="small-effusion">Small effusion</h3>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -377,16 +379,15 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Small posterior effusion on PLAX — thin echo-free stripe, preserved chamber function.</p>
+<p><img src="gifs/M4 Case 6 Small posterior effusion — normal LV.gif" style="width:100%; border-radius:4px;" alt="Small posterior pericardial effusion with preserved chamber function"></p>
 </div>
 </div>
-<p>Less than 1 cm in greatest diameter on PLAX, posterior to the LV. Visible in diastole; may thin or disappear in systole.</p>
+<p>Less than 10 mm in maximal end-diastolic separation. A small effusion may be visible only posteriorly or in one dependent region.</p>
 <p><strong>Teaching points:</strong></p>
 <ul>
-<li>Accumulates posteriorly first — the most dependent space in the supine patient.</li>
-<li>Does not produce chamber collapse.</li>
-<li>Causes: pericarditis, viral illness, malignancy, uremia, post-procedure.</li>
-<li>In the right clinical context (pleuritic chest pain, friction rub), a small effusion supports acute pericarditis and warrants NSAIDs and follow-up imaging — not drainage.</li>
+<li>Usually does not produce chamber collapse, but a rapidly accumulating or loculated collection can be important despite a small measured width.</li>
+<li>Common causes include pericarditis, malignancy, uremia, trauma, and recent procedures.</li>
+<li>In a patient with pleuritic chest pain, a new effusion supports acute pericarditis but does not establish the diagnosis on its own.</li>
 </ul>
 <hr>
 </section>
@@ -403,79 +404,15 @@ Tip
 </div>
 <div class="callout-body-container callout-body">
 <p><img src="gifs/Chronic+Pericardial+Effusion.gif" style="width:100%; border-radius:4px;" alt="Large chronic pericardial effusion"></p>
-<p><img src="gifs/Chronic+Pericardial+Effusion subcostal.gif" style="width:100%; border-radius:4px;" alt="Large chronic pericardial effusion — subcostal view"></p>
 </div>
 </div>
-<p>Moderate: 1–2 cm; large: &gt;2 cm on PLAX. Large effusions are typically circumferential and visible in all windows.</p>
+<p>Moderate: 10–20 mm; large: &gt;20 mm at end-diastole. Large free-flowing effusions are often circumferential and visible in several windows.</p>
 <p><strong>Teaching points:</strong></p>
 <ul>
-<li>The “swinging heart” — pendular cardiac motion within the effusion — is a marker of significant hemodynamic risk.</li>
-<li>Size does not equal tamponade. A large chronic effusion (e.g., malignant) may be tolerated because the pericardium has had time to stretch. An acute effusion of even 200 mL (e.g., post-procedure, trauma) can cause tamponade because the pericardium has not had time to accommodate.</li>
-<li>Always assess chamber collapse and IVC when a large effusion is present.</li>
+<li>A “swinging heart” is a clue to a very large effusion, but chamber collapse and clinical physiology determine urgency.</li>
+<li>Size does not equal tamponade. A large chronic effusion may be tolerated because the pericardium has stretched. A rapidly accumulating effusion can cause tamponade at a much smaller volume.</li>
+<li>Always assess chamber collapse, IVC, respiratory interaction, and blood pressure when an effusion is present.</li>
 </ul>
-<hr>
-</section>
-<section id="tamponade-physiology" class="level3">
-<h3 class="anchored" data-anchor-id="tamponade-physiology">Tamponade physiology</h3>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>RA free wall collapse in systole (subcostal or apical)</li>
-<li>RV diastolic collapse (PLAX or subcostal)</li>
-<li>Plethoric, non-collapsing IVC</li>
-<li>Respiratory variation on mitral inflow (M-mode or PW Doppler)</li>
-</ul>
-<p><img src="gifs/Cardiac Tamponade (Parasternal Short-Axis View).gif" style="width:100%; border-radius:4px;" alt="Cardiac tamponade — PSAX view"></p>
-<p><img src="gifs/Cardiac Tamponade Apical Four.gif" style="width:100%; border-radius:4px;" alt="Cardiac tamponade — apical four-chamber"></p>
-</div>
-</div>
-<p>Tamponade is elevated intrapericardial pressure exceeding intracardiac filling pressure. It is a clinical diagnosis confirmed sonographically. No single finding is pathognomonic — the diagnosis is integrative.</p>
-<p><strong>Sonographic findings, in order of sensitivity:</strong></p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Finding</th>
-<th>View</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>RA free wall collapse (systole)</td>
-<td>Subcostal, apical</td>
-<td>Earliest sign; sensitive but not specific</td>
-</tr>
-<tr class="even">
-<td>RV diastolic collapse</td>
-<td>PLAX, subcostal</td>
-<td>More specific; correlates with pressure equalization</td>
-</tr>
-<tr class="odd">
-<td>Plethoric IVC (&gt;2.1 cm, &lt;50% collapse)</td>
-<td>Subcostal IVC view</td>
-<td>Reflects elevated right-sided filling pressures</td>
-</tr>
-<tr class="even">
-<td>Respiratory variation on mitral inflow &gt;25%</td>
-<td>Apical, PW Doppler</td>
-<td>Sonographic equivalent of pulsus paradoxus</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Management implication:</strong> When tamponade physiology is present in a hemodynamically unstable patient, the exam is over. Call for pericardiocentesis or emergent cardiothoracic surgery depending on the clinical context. Do not delay for formal echo.</p>
 <hr>
 </section>
 <section id="loculated-effusion" class="level3">
@@ -491,20 +428,24 @@ Tip
 </div>
 <div class="callout-body-container callout-body">
 <p><img src="gifs/loculated pericardial effusion.gif" style="width:100%; border-radius:4px;" alt="Loculated pericardial effusion"></p>
-<p><img src="gifs/loculated pericardial effusion subcostal.gif" style="width:100%; border-radius:4px;" alt="Loculated pericardial effusion — subcostal view"></p>
 </div>
 </div>
-<p>Loculated effusions do not distribute freely. They occur after cardiac surgery, trauma, or prior pericarditis with adhesions. The collection may compress only one chamber, producing atypical hemodynamic presentations that do not fit classic tamponade physiology.</p>
+<p>Loculated effusions do not distribute freely. They occur after cardiac surgery, trauma, or prior pericarditis with adhesions. The collection may compress only one chamber and produce regional tamponade without the classic pattern.</p>
 <p><strong>Teaching points:</strong></p>
 <ul>
-<li>Subcostal view may appear normal; always check all windows.</li>
-<li>Echogenic or heterogeneous fluid suggests blood, clot, or exudate.</li>
-<li>Requires formal echo and cardiac surgery consultation — bedside pericardiocentesis is often not safe or effective.</li>
+<li>A normal subcostal view does not exclude a loculated collection; check all windows.</li>
+<li>Echogenic or heterogeneous fluid suggests blood, clot, debris, or exudate.</li>
+<li>Obtain urgent comprehensive imaging and specialist input. A loculated collection may require a different drainage route or surgery.</li>
 </ul>
 <hr>
 </section>
-<section id="mimics-pitfalls" class="level3">
-<h3 class="anchored" data-anchor-id="mimics-pitfalls">Mimics &amp; pitfalls</h3>
+<section id="post-operative-appearance" class="level3">
+<h3 class="anchored" data-anchor-id="post-operative-appearance">Post-operative appearance</h3>
+<p>After cardiac surgery, adhesions can produce anterior, loculated, or regional collections. Classic findings may be absent, and TTE windows may be limited. New post-operative hemodynamic instability with an equivocal bedside exam warrants urgent comprehensive echo—often TEE—and surgical evaluation.</p>
+<hr>
+</section>
+<section id="mimics-and-pitfalls" class="level3">
+<h3 class="anchored" data-anchor-id="mimics-and-pitfalls">Mimics and pitfalls</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -518,28 +459,122 @@ Tip
 </thead>
 <tbody>
 <tr class="odd">
-<td>Pleural effusion (left)</td>
-<td>Posterior to descending aorta on PLAX</td>
+<td>Left pleural effusion</td>
+<td>Extends posterior to the descending aorta on PLAX</td>
 </tr>
 <tr class="even">
-<td>Pericardial fat pad</td>
-<td>Echogenic, anterior, does not shift with repositioning</td>
+<td>Pericardial or epicardial fat</td>
+<td>Echogenic or speckled rather than uniformly anechoic; often anterior</td>
 </tr>
 <tr class="odd">
-<td>Epicardial fat</td>
-<td>Thin, moves with heart, between myocardium and visceral pericardium</td>
-</tr>
-<tr class="even">
 <td>Ascites</td>
-<td>In subcostal view, does not surround the heart</td>
+<td>Lies below the diaphragm and does not surround the heart</td>
+</tr>
+<tr class="even">
+<td>Right pleural effusion</td>
+<td>Lateral to the RA/RV on subcostal imaging; does not wrap around the heart</td>
 </tr>
 <tr class="odd">
-<td>Right-sided pleural effusion</td>
-<td>Visible lateral to RA/RV on subcostal; does not wrap posteriorly</td>
+<td>Severely dilated coronary sinus</td>
+<td>Tubular structure in the posterior AV groove; confirm in orthogonal views and with Doppler</td>
 </tr>
 </tbody>
 </table>
 <hr>
+</section>
+</section>
+<section id="tamponade-physiology" class="level2">
+<h2 class="anchored" data-anchor-id="tamponade-physiology">4. Tamponade physiology</h2>
+<section id="tamponade-physiology-1" class="level3">
+<h3 class="anchored" data-anchor-id="tamponade-physiology-1">Tamponade physiology</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><img src="gifs/Cardiac Tamponade (Parasternal Short-Axis View).gif" style="width:100%; border-radius:4px;" alt="Cardiac tamponade on parasternal short-axis view"></p>
+</div>
+</div>
+<p>Tamponade occurs when pericardial pressure impairs cardiac filling and reduces stroke volume. It is a <strong>clinical-hemodynamic diagnosis supported by ultrasound</strong>. No single finding is diagnostic in isolation.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Finding</th>
+<th>Best view</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pericardial effusion</td>
+<td>Any two cardiac views</td>
+<td>Required for effusive tamponade; size alone does not define severity</td>
+</tr>
+<tr class="even">
+<td>RA free-wall collapse</td>
+<td>Subcostal or apical</td>
+<td>Often the earliest finding; longer collapse is more specific</td>
+</tr>
+<tr class="odd">
+<td>RV free-wall collapse in early diastole</td>
+<td>PLAX, PSAX, or subcostal</td>
+<td>More specific sign of elevated pericardial pressure</td>
+</tr>
+<tr class="even">
+<td>Plethoric IVC with reduced inspiratory collapse</td>
+<td>Subcostal IVC</td>
+<td>Sensitive for elevated RA pressure but nonspecific</td>
+</tr>
+<tr class="odd">
+<td>Exaggerated respiratory ventricular interaction</td>
+<td>PSAX and apical Doppler</td>
+<td>&gt;25% mitral E-wave decrease and &gt;40% tricuspid E-wave increase during inspiration in spontaneous breathing</td>
+</tr>
+</tbody>
+</table>
+<section id="doppler-respiratory-variation" class="level4">
+<h4 class="anchored" data-anchor-id="doppler-respiratory-variation">Doppler respiratory variation</h4>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><img src="gifs/Mitral inflow — pulsed wave Doppler.avif" style="width:100%; border-radius:4px;" alt="Mitral inflow sampled with pulsed-wave Doppler"></p>
+</div>
+</div>
+<p>From the apical four-chamber view, place the PW Doppler sample at the mitral leaflet tips and record several respiratory cycles at a slow sweep speed. In spontaneous breathing, tamponade can produce a <strong>&gt;25% inspiratory fall in mitral E-wave velocity</strong> and a reciprocal <strong>&gt;40% inspiratory rise in tricuspid E-wave velocity</strong>.</p>
+<p>These thresholds are supportive, not standalone diagnostic tests. Atrial fibrillation, tachypnea, high respiratory effort, and positive-pressure ventilation make interpretation less reliable; during positive-pressure ventilation the expected pattern can be blunted or reversed.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Context can hide classic signs.</strong> Pulmonary hypertension or severe RV hypertrophy can prevent right-sided collapse. Hypovolemia can produce low-pressure tamponade without a plethoric IVC. Positive-pressure ventilation alters Doppler respiratory variation. Loculated or post-operative collections may compress only one chamber.</p>
+</div>
+</div>
+<p><strong>Management implication:</strong> In a hemodynamically unstable patient with a compatible effusion and tamponade physiology, activate the team capable of definitive drainage immediately. Pericardiocentesis, surgical drainage, or operative repair depends on cause, location, and local expertise. Use cautious volume or vasopressor support only as a bridge when needed; neither relieves the obstruction. Comprehensive echo is valuable when it can be obtained without delaying source control.</p>
+<hr>
+</section>
 </section>
 </section>
 <section id="integration-cases" class="level2">
@@ -548,7 +583,7 @@ Tip
 <hr>
 <section id="case-1-post-procedure-hypotension" class="level3">
 <h3 class="anchored" data-anchor-id="case-1-post-procedure-hypotension">Case 1: Post-procedure hypotension</h3>
-<p><strong>Clinical scenario:</strong> A 68-year-old man undergoes a right heart catheterization for pulmonary hypertension workup. Thirty minutes after the procedure he is hypotensive (BP 82/50), tachycardic (HR 118), and mildly diaphoretic. The team is considering IV fluids and a vasopressor.</p>
+<p><strong>Clinical scenario:</strong> A 68-year-old man undergoes right heart catheterization for pulmonary hypertension workup. Thirty minutes later he is hypotensive (BP 82/50), tachycardic (HR 118), and diaphoretic.</p>
 <p><strong>What exam would you perform?</strong> Focused cardiac ultrasound, subcostal view first.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -560,17 +595,17 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><img src="gifs/Subcostal - M4 Case 1 Tamponade — RV diastolic and RA systolic collapse.gif" style="width:100%; border-radius:4px;" alt="Subcostal: large circumferential effusion with RV diastolic and RA systolic collapse — tamponade"></p>
+<p><img src="gifs/Subcostal - M4 Case 1 Tamponade — RV diastolic and RA systolic collapse.gif" style="width:100%; border-radius:4px;" alt="Subcostal view: large circumferential effusion with RV diastolic and RA systolic collapse"></p>
 </div>
 </div>
-<p><strong>What you see:</strong> Large circumferential effusion. RA free wall collapses in systole. RV diastolic collapse present on subcostal and PLAX. IVC 2.4 cm, non-collapsing.</p>
-<p><strong>How does this change management?</strong> Stop fluids — they will not correct tamponade. Call interventional cardiology and cardiac surgery simultaneously. Prepare for emergent pericardiocentesis. Do not start a vasopressor as the primary intervention; it temporizes without fixing the problem.</p>
+<p><strong>What you see:</strong> Large circumferential effusion. RA free wall collapses in systole. RV collapse begins in early diastole. IVC is 2.4 cm with minimal inspiratory collapse.</p>
+<p><strong>How does this change management?</strong> Activate interventional cardiology and cardiac surgery immediately and prepare for definitive drainage. Avoid repeated empiric fluid boluses; a cautious bolus or vasopressor may support preload and perfusion only while the drainage team mobilizes. Neither is definitive therapy.</p>
 <hr>
 </section>
 <section id="case-2-dyspnea-in-a-cancer-patient" class="level3">
 <h3 class="anchored" data-anchor-id="case-2-dyspnea-in-a-cancer-patient">Case 2: Dyspnea in a cancer patient</h3>
-<p><strong>Clinical scenario:</strong> A 54-year-old woman with metastatic lung adenocarcinoma presents with two weeks of worsening exertional dyspnea and fullness in her chest. BP 104/72, HR 102, RR 20. JVD present. CXR shows enlarged cardiac silhouette.</p>
-<p><strong>What exam would you perform?</strong> Focused cardiac ultrasound — subcostal and PLAX minimum.</p>
+<p><strong>Clinical scenario:</strong> A 54-year-old woman with metastatic lung adenocarcinoma presents with two weeks of worsening exertional dyspnea and chest fullness. BP 104/72, HR 102. JVD is present, and CXR shows an enlarged cardiac silhouette.</p>
+<p><strong>What exam would you perform?</strong> Focused cardiac ultrasound using subcostal and PLAX views at minimum.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -581,17 +616,17 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><img src="gifs/M4 Case 2 Very large effusion — swinging heart.gif" style="width:100%; border-radius:4px;" alt="Very large circumferential pericardial effusion with swinging heart motion"></p>
+<p><img src="gifs/M4 Case 2 Large effusion without tamponade.gif" style="width:100%; border-radius:4px;" alt="PLAX view of a large pericardial effusion without visible right ventricular free-wall collapse"></p>
 </div>
 </div>
-<p><strong>What you see:</strong> Very large circumferential effusion with swinging heart motion. No chamber collapse. IVC 2.2 cm with minimal respiratory variation.</p>
-<p><strong>How does this change management?</strong> Large effusion without tamponade physiology at this moment — but high risk. Oncology and cardiology consultation for semi-elective pericardiocentesis or pericardial window. Admit for monitoring. Do not discharge based on the absence of tamponade physiology now — large malignant effusions can decompensate rapidly.</p>
+<p><strong>What you see:</strong> Large pericardial effusion in PLAX without visible RV free-wall collapse in this loop. Effusion size alone does not establish tamponade; integrate right-sided chamber behavior in multiple views, IVC findings, Doppler, and the clinical examination.</p>
+<p><strong>How does this change management?</strong> This very large, symptomatic malignant effusion needs urgent comprehensive echocardiography, monitored admission, and oncology/cardiology consultation. The absence of chamber collapse lowers the likelihood of overt tamponade at this moment but does not make discharge safe. The team should define a drainage plan and reassess promptly if physiology changes.</p>
 <hr>
 </section>
 <section id="case-3-undifferentiated-shock-in-the-ed" class="level3">
 <h3 class="anchored" data-anchor-id="case-3-undifferentiated-shock-in-the-ed">Case 3: Undifferentiated shock in the ED</h3>
-<p><strong>Clinical scenario:</strong> A 44-year-old man arrives by EMS after being found unresponsive. BP 70/40, HR 124, GCS 10. No history available. Cool, mottled, distended neck veins.</p>
-<p><strong>What exam would you perform?</strong> Immediate subcostal cardiac view as part of the resuscitation.</p>
+<p><strong>Clinical scenario:</strong> A 44-year-old man arrives after being found unresponsive. BP 70/40, HR 124, GCS 10. He is cool and mottled with distended neck veins.</p>
+<p><strong>What exam would you perform?</strong> Immediate focused cardiac ultrasound as part of resuscitation.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -602,16 +637,16 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><img src="gifs/Subcostal - M4 Case 3 Moderate effusion — right chamber collapse.gif" style="width:100%; border-radius:4px;" alt="Subcostal: moderate pericardial effusion with right atrial collapse"></p>
+<p><img src="gifs/Subcostal - M4 Case 3 Moderate effusion — right chamber collapse.gif" style="width:100%; border-radius:4px;" alt="Subcostal view: moderate pericardial effusion with right atrial collapse"></p>
 </div>
 </div>
-<p><strong>What you see:</strong> Moderate effusion. RA collapse in systole. No obvious RV collapse (limited image quality).</p>
-<p><strong>How does this change management?</strong> Activate the pericardiocentesis team. Limit IV fluids to one bolus as a bridge. Avoid deep sedation if intubation is needed — it can precipitate cardiac arrest in tamponade by eliminating sympathetic tone. If the patient arrests, perform pericardiocentesis before standard ACLS measures; defibrillation will not work if the heart cannot fill.</p>
+<p><strong>What you see:</strong> Moderate effusion. RA collapse is present; RV collapse is not clear because image quality is limited.</p>
+<p><strong>How does this change management?</strong> Activate the drainage team and treat this as obstructive shock. Avoid unnecessary deep sedation and positive-pressure ventilation because both can reduce venous return and precipitate collapse. If cardiac arrest occurs, continue high-quality resuscitation while the team rapidly relieves tamponade; treat a shockable rhythm when present and address the reversible cause without delay.</p>
 <hr>
 </section>
 <section id="case-4-dialysis-patient-with-chest-pain" class="level3">
 <h3 class="anchored" data-anchor-id="case-4-dialysis-patient-with-chest-pain">Case 4: Dialysis patient with chest pain</h3>
-<p><strong>Clinical scenario:</strong> A 62-year-old man on hemodialysis three times weekly presents with sharp chest pain worse lying flat. He missed his last two dialysis sessions. Vitals stable. ECG shows diffuse ST elevation with PR depression.</p>
+<p><strong>Clinical scenario:</strong> A 62-year-old man on hemodialysis presents with sharp chest pain worse when lying flat after missing two sessions. Vitals are stable. ECG shows diffuse ST elevation with PR depression.</p>
 <p><strong>What exam would you perform?</strong> Focused cardiac ultrasound to assess for effusion and tamponade physiology.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -623,17 +658,17 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><img src="gifs/Subcostal - M4 Case 4 Small-moderate posterior effusion — no tamponade.gif" style="width:100%; border-radius:4px;" alt="Subcostal: small-to-moderate posterior effusion without chamber collapse — uremic pericarditis"></p>
+<p><img src="gifs/Subcostal - M4 Case 4 Small-moderate posterior effusion — no tamponade.gif" style="width:100%; border-radius:4px;" alt="Subcostal view: small-to-moderate posterior effusion without chamber collapse"></p>
 </div>
 </div>
-<p><strong>What you see:</strong> Small-to-moderate posterior effusion. No chamber collapse. IVC 2.5 cm (consistent with volume overload from missed dialysis).</p>
-<p><strong>How does this change management?</strong> Uremic pericarditis with a small effusion. Arrange urgent dialysis — this is the treatment. NSAIDs are relatively contraindicated in ESRD. Admit for monitoring and repeat ultrasound after dialysis. Uremic effusions can enlarge rapidly if dialysis is delayed.</p>
+<p><strong>What you see:</strong> Small-to-moderate posterior effusion. No chamber collapse. IVC is 2.5 cm, consistent with elevated right atrial pressure in this clinical context.</p>
+<p><strong>How does this change management?</strong> Suspect uremic pericarditis with a small-to-moderate effusion and no current tamponade. Coordinate urgent nephrology and cardiology evaluation; intensified dialysis is usually first-line when there is no tamponade. Admit for monitoring and repeat imaging. Drainage is required if tamponade develops or the effusion enlarges despite treatment.</p>
 <hr>
 </section>
-<section id="case-5-trauma-thoracic-injury" class="level3">
-<h3 class="anchored" data-anchor-id="case-5-trauma-thoracic-injury">Case 5: Trauma — thoracic injury</h3>
-<p><strong>Clinical scenario:</strong> A 29-year-old woman is intubated in the field after a high-speed MVC. BP 88/60 on two vasopressors, HR 135. Bilateral breath sounds. No obvious external thoracic trauma.</p>
-<p><strong>What exam would you perform?</strong> FAST exam with focused cardiac view as the first priority.</p>
+<section id="case-5-thoracic-trauma" class="level3">
+<h3 class="anchored" data-anchor-id="case-5-thoracic-trauma">Case 5: Thoracic trauma</h3>
+<p><strong>Clinical scenario:</strong> A 29-year-old woman is intubated after a high-speed MVC. BP 88/60 on vasopressors, HR 135. Bilateral breath sounds are present.</p>
+<p><strong>What exam would you perform?</strong> eFAST with the focused cardiac view prioritized during the resuscitation.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -644,17 +679,17 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><img src="gifs/Subcostal - M4 Case 5 Traumatic hemopericardium — RV collapse.gif" style="width:100%; border-radius:4px;" alt="Subcostal: echo-free stripe anterior to the RV with diastolic collapse — traumatic hemopericardium"></p>
+<p><img src="gifs/Subcostal - M4 Case 5 Traumatic hemopericardium — RV collapse.gif" style="width:100%; border-radius:4px;" alt="Subcostal view: traumatic hemopericardium with RV diastolic collapse"></p>
 </div>
 </div>
-<p><strong>What you see:</strong> Echo-free stripe anterior to the RV on subcostal view. RV diastolic collapse present. No obvious pleural effusions.</p>
-<p><strong>How does this change management?</strong> Hemopericardium with tamponade physiology. Emergent cardiothoracic surgery consultation. Pericardiocentesis alone is a bridge — the underlying injury requires operative repair. If the patient arrests, ED thoracotomy with pericardiotomy is indicated per ATLS protocol. Do not spend time on CT imaging.</p>
+<p><strong>What you see:</strong> Pericardial fluid anterior to the RV with RV diastolic collapse. No pleural fluid is seen.</p>
+<p><strong>How does this change management?</strong> Hemopericardium with tamponade physiology in an unstable trauma patient requires immediate trauma and cardiothoracic surgical activation; do not delay source control for CT. Pericardiocentesis may be an imperfect bridge when surgical access is delayed because clotted blood may not drain. If arrest occurs, resuscitative thoracotomy is selected according to injury mechanism, signs of life, arrest duration, local protocol, and team capability—not from the ultrasound finding alone.</p>
 <hr>
 </section>
 <section id="case-6-recurrent-chest-pain-after-pericarditis" class="level3">
 <h3 class="anchored" data-anchor-id="case-6-recurrent-chest-pain-after-pericarditis">Case 6: Recurrent chest pain after pericarditis</h3>
-<p><strong>Clinical scenario:</strong> A 35-year-old man treated for acute pericarditis 3 months ago returns with recurrent pleuritic chest pain and low-grade fever. His prior echo showed a small effusion that resolved at 4-week follow-up.</p>
-<p><strong>What exam would you perform?</strong> Focused cardiac ultrasound to assess for recurrent effusion and LV function.</p>
+<p><strong>Clinical scenario:</strong> A 35-year-old man treated for acute pericarditis three months ago returns with recurrent pleuritic chest pain and low-grade fever. His prior small effusion resolved on follow-up.</p>
+<p><strong>What exam would you perform?</strong> Focused cardiac ultrasound to assess for recurrent effusion, tamponade physiology, and LV function.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -665,11 +700,11 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><img src="gifs/M4 Case 6 Small posterior effusion — normal LV.gif" style="width:100%; border-radius:4px;" alt="Small posterior pericardial effusion with normal LV function — recurrent pericarditis"></p>
+<p><img src="gifs/M4 Case 6 Small posterior effusion — normal LV.gif" style="width:100%; border-radius:4px;" alt="Small posterior pericardial effusion with normal LV function"></p>
 </div>
 </div>
 <p><strong>What you see:</strong> Small posterior effusion. No tamponade physiology. Normal LV function.</p>
-<p><strong>How does this change management?</strong> Recurrent pericarditis with small effusion — no high-risk features. Restart NSAIDs and colchicine. If not already on colchicine, prescribe it now. Cardiology consultation for a second or third recurrence — consider IL-1 inhibitor therapy (anakinra, rilonacept).</p>
+<p><strong>How does this change management?</strong> Recurrent pericarditis is likely, with a small effusion and no tamponade physiology. Obtain ECG, inflammatory markers, and troponin; review renal, bleeding, and medication risks; and start guideline-directed anti-inflammatory therapy with cardiology follow-up. Recurrent or refractory disease may require advanced imaging or targeted therapy.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -700,57 +735,6 @@ Note
 <div class="callout-body-container callout-body">
 <p><strong>Q1.</strong> On PLAX, you see an echo-free space posterior to the LV. How do you determine whether it is pericardial or pleural?</p>
 <div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Caution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-17" class="callout-17-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><strong>Answer</strong> Locate the descending thoracic aorta in cross-section at the far left of the PLAX image. Fluid <strong>anterior</strong> to the aorta is pericardial. Fluid <strong>posterior</strong> to the aorta is pleural.</p>
-</div>
-</div>
-</div>
-<p><strong>Q2.</strong> A patient has a large effusion and is hypotensive. RV diastolic collapse is not clearly visible (poor image quality). What other findings support tamponade physiology?</p>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Caution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-18" class="callout-18-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><strong>Answer</strong> RA free wall collapse in systole (more sensitive, less specific), plethoric non-collapsing IVC (&gt;2.1 cm, &lt;50% inspiratory collapse), and respiratory variation on mitral inflow &gt;25% by PW Doppler. No single finding is required — the diagnosis is integrative.</p>
-</div>
-</div>
-</div>
-<p><strong>Q3.</strong> You see an echogenic structure anterior to the RV that does not move with the cardiac cycle. What is the most likely diagnosis, and how do you confirm it?</p>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Caution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-19" class="callout-19-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><strong>Answer</strong> Pericardial fat pad. Confirm by noting echogenicity (not anechoic), anterior location, and absence of positional shift. Reposition the patient — a true effusion will layer dependently; fat will not.</p>
-</div>
-</div>
-</div>
-<p><strong>Q4.</strong> A patient with known metastatic cancer has a large effusion but no chamber collapse. Is this patient safe for discharge?</p>
-<div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -762,11 +746,11 @@ Caution
 </div>
 <div id="callout-20" class="callout-20-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Answer</strong> No.&nbsp;Absence of tamponade physiology at this moment does not mean discharge is safe. Large malignant effusions can decompensate rapidly. This patient needs admission, oncology and cardiology consultation, and a plan for drainage or a pericardial window.</p>
+<p><strong>Answer</strong> Locate the descending thoracic aorta in cross-section near the left atrium. Pericardial fluid remains <strong>anterior</strong> to the descending aorta; left pleural fluid extends <strong>posterior</strong> to it.</p>
 </div>
 </div>
 </div>
-<p><strong>Q5.</strong> What are the high-risk features in acute pericarditis that warrant hospitalization?</p>
+<p><strong>Q2.</strong> A patient has a large effusion and is hypotensive. RV diastolic collapse is not clearly visible. What other findings support tamponade physiology?</p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -779,11 +763,11 @@ Caution
 </div>
 <div id="callout-21" class="callout-21-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Answer</strong> Large effusion (&gt;2 cm), tamponade physiology, fever &gt;38°C with subacute onset, immunocompromised state, anticoagulation therapy, failure to respond to NSAIDs within 1 week, and evidence of myocardial involvement (elevated troponin, wall motion abnormality).</p>
+<p><strong>Answer</strong> RA free-wall collapse, a plethoric IVC with reduced inspiratory collapse, exaggerated ventricular interdependence, a &gt;25% inspiratory fall in mitral E-wave velocity, and a &gt;40% inspiratory rise in tricuspid E-wave velocity support tamponade in spontaneous breathing. No single finding is required, and positive-pressure ventilation can alter the pattern.</p>
 </div>
 </div>
 </div>
-<p><strong>Q6.</strong> In a trauma patient with tamponade physiology, why is pericardiocentesis alone often insufficient?</p>
+<p><strong>Q3.</strong> You see an echogenic structure anterior to the RV. What is the most likely mimic, and how do you confirm it?</p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -796,12 +780,82 @@ Caution
 </div>
 <div id="callout-22" class="callout-22-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Answer</strong> Traumatic hemopericardium usually indicates cardiac or great vessel injury. Pericardiocentesis may temporarily relieve pressure, but the underlying structural injury requires operative repair. Definitive management is in the operating room.</p>
+<p><strong>Answer</strong> Pericardial or epicardial fat. Confirm the speckled echogenic texture, anterior location, and motion with the heart. Compare multiple views and reduce gain. Free-flowing fluid may redistribute with position, but a loculated effusion may not.</p>
+</div>
+</div>
+</div>
+<p><strong>Q4.</strong> A patient with metastatic cancer has a large effusion but no definite chamber collapse. Is discharge safe?</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-23" class="callout-23-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Answer</strong> No.&nbsp;A very large symptomatic malignant effusion needs urgent comprehensive echocardiography, monitored evaluation, and a specialist drainage plan. Chamber collapse can be absent early or masked by elevated right-sided pressure.</p>
+</div>
+</div>
+</div>
+<p><strong>Q5.</strong> Which features in acute pericarditis favor hospital evaluation?</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-24" class="callout-24-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Answer</strong> Fever &gt;38°C, subacute course, large effusion (&gt;20 mm), tamponade, failure of initial anti-inflammatory therapy, myocardial involvement, immunosuppression, trauma, and oral anticoagulant therapy favor hospital evaluation.</p>
+</div>
+</div>
+</div>
+<p><strong>Q6.</strong> In traumatic tamponade, why is pericardiocentesis often insufficient?</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-25" class="callout-25-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Answer</strong> Traumatic hemopericardium may represent cardiac or great-vessel injury and can contain clot that will not drain through a needle or catheter. Pericardiocentesis may be only a bridge when surgery is not immediately available; definitive hemorrhage control usually requires operative repair.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
+<hr>
+</section>
+<section id="video-resources" class="level2">
+<h2 class="anchored" data-anchor-id="video-resources">Video resources</h2>
+<p>These external teaching resources reinforce effusion recognition and the integrated assessment of tamponade physiology. Each opens on the publisher’s site in a new tab.</p>
+<div class="lecture-list">
+<p><a class="lecture-card" href="https://medicine.yale.edu/media-player/focus/" target="_blank" rel="noopener"><span class="lecture-play">▶</span><span><span class="lecture-title">Focused Cardiac Ultrasound</span><span class="lecture-src">Yale School of Medicine</span></span></a> <a class="lecture-card" href="https://www.acep.org/emultrasound/newsroom/may-2024/cardiac-tamponade" target="_blank" rel="noopener"><span class="lecture-play">▶</span><span><span class="lecture-title">Cardiac Tamponade</span><span class="lecture-src">American College of Emergency Physicians</span></span></a></p>
+</div>
+<hr>
+</section>
+<section id="references-further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="references-further-reading">References &amp; further reading</h2>
+<ul>
+<li>Schulz-Menger J, et al.&nbsp;<a href="https://doi.org/10.1093/eurheartj/ehaf192">2025 ESC Guidelines for the management of myocarditis and pericarditis</a>. <em>European Heart Journal</em>. 2025.</li>
+<li>Wang TKM, et al.&nbsp;<a href="https://doi.org/10.1016/j.jacc.2025.05.023">2025 Concise Clinical Guidance: An ACC Expert Consensus Statement on the Diagnosis and Management of Pericarditis</a>. <em>Journal of the American College of Cardiology</em>. 2025.</li>
+<li>Klein AL, et al.&nbsp;<a href="https://www.asecho.org/guideline/pericardial-disease/">American Society of Echocardiography Clinical Recommendations for Multimodality Cardiovascular Imaging of Patients with Pericardial Disease</a>. <em>Journal of the American Society of Echocardiography</em>. 2013.</li>
+<li>American Heart Association. <a href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation">2025 Guidelines for CPR and ECC: Adult and Pediatric Special Circumstances of Resuscitation</a>. 2025.</li>
+<li>Eastern Association for the Surgery of Trauma. <a href="https://www.east.org/education-resources/practice-management-guidelines/details/emergency-department-thoracotomy">Emergency Department Thoracotomy Practice Management Guideline</a>. 2015.</li>
+</ul>
 
 
 </section>
@@ -1259,7 +1313,7 @@ Caution
     var formDiv = document.createElement('div');
     formDiv.className = 'quiz-answer-form';
     formDiv.innerHTML =
-      '<textarea class="quiz-textarea" placeholder="Type your answerâ€¦" rows="3"></textarea>' +
+      '<textarea class="quiz-textarea" placeholder="Type your answer…" rows="3"></textarea>' +
       '<div class="quiz-form-row">' +
         '<button class="quiz-submit-btn" type="button">Get Feedback</button>' +
         '<span class="quiz-typing-slot"></span>' +

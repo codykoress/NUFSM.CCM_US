@@ -8,15 +8,16 @@ title: "Credits"
 
 ---
 
-## Video lecture attribution
+## Video resource attribution
 
-The **Video lectures** section at the end of several modules links out to full-length teaching lectures from the University of Utah's [Echocardiography & Perioperative Ultrasound](https://echo.anesthesia.med.utah.edu/tee/focus-content/) FoCUS program. These lectures are hosted on and remain the property of the University of Utah; this curriculum links to them and does not host or reproduce the video content.
+The **Video lectures** and **Video resources** sections link to teaching materials hosted by their original publishers. This curriculum links to those resources and does not host or reproduce their video content. Most full-length lectures come from the University of Utah's [Echocardiography & Perioperative Ultrasound](https://echo.anesthesia.med.utah.edu/tee/focus-content/) FoCUS program.
 
 | Module | Lecture(s) |
 |---|---|
 | 1 — Windows & Acquisition | What is FoCUS?; Basic Anatomy for the Echocardiographer; Basic Ultrasound Concepts; How to Perform the FoCUS Exam |
 | 2 — LV Function | FoCUS on the Left; FoCUS for LV Ischemia |
 | 3 — RV Function | FoCUS for the RV |
+| 4 — Pericardium | [Focused Cardiac Ultrasound](https://medicine.yale.edu/media-player/focus/) — Yale School of Medicine; [Cardiac Tamponade](https://www.acep.org/emultrasound/newsroom/may-2024/cardiac-tamponade) — American College of Emergency Physicians |
 | 6 — Lung Ultrasound | Lung Ultrasound 101; Point-of-Care Lung Ultrasound Part 2 |
 | 7 — Abdominal | Abdominal Ultrasound; FAST for Anesthesiologists; Gastric Ultrasound |
 | 8 — DVT | DVT Ultrasound |
@@ -24,12 +25,12 @@ The **Video lectures** section at the end of several modules links out to full-l
 
 ---
 
-## Ultrasound clip attribution
+## Ultrasound media attribution
 
-All clips used in this curriculum are sourced from [The POCUS Atlas](https://www.thepocusatlas.com), an open-access point-of-care ultrasound image library. We are grateful to the contributors who submitted these cases.
+Media used in this curriculum come from credited open-access collections, publications, and contributor-authorized sources. Each table below records the contributor or author and links to the source when available. [The POCUS Atlas](https://www.thepocusatlas.com) remains the primary source for ultrasound clips.
 
 ::: {.callout-note}
-Clips marked with an asterisk (\*) are embedded in the curriculum but do not yet have complete contributor metadata. If you are the contributor, please contact the curriculum team.
+Items marked with an asterisk (\*) are embedded in the curriculum but do not yet have complete contributor metadata. If you are the contributor, please contact the curriculum team.
 :::
 
 ### Module 1 — Windows & Acquisition
@@ -93,11 +94,10 @@ Clips marked with an asterisk (\*) are embedded in the curriculum but do not yet
 | Chronic pericardial effusion | Dr. Robert Jarman, UK | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
 | Loculated pericardial effusion | Robert Jones DO FACEP | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
 | Pericardial effusion (PLAX) | \* | — |
-| Chronic pericardial effusion, subcostal | \* | — |
-| Loculated pericardial effusion, subcostal | \* | — |
 | Mitral inflow — pulsed wave Doppler | \* | — |
+| Epicardial fat pad, annotated PLAX still | Yuriy S Bronshteyn; Nazish Hashmi; Jamie R Privratsky; Atilio Barbeito | [Diagnostics 2024 — CC BY 4.0](https://pmc.ncbi.nlm.nih.gov/articles/PMC11049036/#diagnostics-14-00818-f002) |
 | Tamponade — RV diastolic & RA systolic collapse (subcostal) — Case 1 | \* | [POCUS Atlas](https://www.thepocusatlas.com/pericardial-disease) |
-| Very large effusion — swinging heart — Case 2 | \* | [POCUS Atlas](https://www.thepocusatlas.com/pericardial-disease) |
+| Large pericardial effusion without tamponade — Case 2 | Jeffrey Wilkinson; Amer M. Johri | [POCUS Journal 2016 — CC BY 4.0](https://ojs.library.queensu.ca/index.php/pocus/article/view/13258) |
 | Moderate effusion — right chamber collapse (subcostal) — Case 3 | \* | [POCUS Atlas](https://www.thepocusatlas.com/pericardial-disease) |
 | Small–moderate posterior effusion — no tamponade (subcostal) — Case 4 | \* | [POCUS Atlas](https://www.thepocusatlas.com/pericardial-disease) |
 | Traumatic hemopericardium — RV collapse (subcostal) — Case 5 | \* | [POCUS Atlas](https://www.thepocusatlas.com/pericardial-disease) |

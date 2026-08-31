@@ -7,7 +7,7 @@
 ### Site structure
 - [x] Quarto project initialized with `_quarto.yml` navbar
 - [x] `index.qmd` — home page with links to all 11 modules
-- [x] `credits.qmd` — attribution table organized by module, sourced from Google Sheets metadata
+- [x] `credits.qmd` — canonical attribution table organized by module
 - [x] All 11 modules linked in navbar and home page
 
 ### Module content (written)
@@ -29,7 +29,7 @@
 - [x] **01 Windows & Acquisition** — four windows, machine setup, normal anatomy, normal variants, quiz
 - [x] **02 Left Ventricular Function** — systolic dysfunction, RWMA, Takotsubo, cardiogenic shock, quiz
 - [x] **03 Right Ventricular Function** — RV strain, D-sign, McConnell's sign, TAPSE, PE, ARDS cor pulmonale, quiz
-- [x] **04 Pericardium** — effusion sizing, tamponade, pericarditis (constrictive scoped out), Doppler assessment, quiz
+- [x] **04 Pericardium** — completed 2026-08-31: acquisition clips filled, effusion sizing and mimics tightened, tamponade/Doppler caveats expanded, cases and quiz updated to current guidance, constriction explicitly scoped out, references added
 - [x] **05 IVC & Volume Status** — fluid responsiveness, distensibility index, VExUS/venous congestion, quiz
 - [x] **06 Lung Ultrasound** — B-lines, effusion, pneumothorax, consolidation, BLUE protocol, quiz
 - [x] **07 Abdominal Ultrasound** — FAST, free fluid grading, bladder volume, hydronephrosis, ruptured ectopic, quiz
@@ -40,15 +40,18 @@
 - [x] Probe placement SVG diagrams (×4) for Module 01: subcostal, PLAX, PSAX (with rotation arrow), apical 4C — chest wall redrawn with life-like shading (skin gradients, pec contours, clavicle ridges, nipples on MCL, umbilicus)
 - [x] **88 image clips (87 GIF + 1 AVIF) currently embedded** (2026-07-06), by display module: 01=9, 02=20, 03=13, 04=14, 05=7, 06 Lung=9, 07 Abdominal=7, 08 DVT=4, 09 Integration=5. Every module now has case clips.
 - [x] Normal acquisition clips intentionally duplicated across Modules 01, 02, 03 for module self-containment — learner can study each module standalone
-- [x] GIF source metadata tracked in Google Sheets; credits page populated with contributor names and POCUS Atlas links
+- [x] Media attribution maintained directly in `credits.qmd`, with contributor names, source links, and license notes where available
 - [x] Module 02 integration cases (1–4) — all loops embedded
 - [x] Module 03 Case 2 (submassive PE) — loops embedded
 - [x] Module 04 PLAX/subcostal effusion variants and normal mitral inflow Doppler (AVIF) — embedded
+- [x] Module 04 annotated epicardial fat-pad PLAX still — embedded from Bronshteyn et al. under CC BY 4.0 (2026-08-31)
+- [x] Module 04 duplicate chronic and loculated effusion GIF embeds and redundant files removed (2026-08-31)
+- [x] Module 04 Case 2 large effusion without visible chamber collapse — replaced the swinging-heart clip with a CC BY 4.0 POCUS Journal PLAX loop and added its attribution to `credits.qmd` (2026-08-31)
 - [ ] ~54 clips embedded but flagged `*` (missing individual contributor metadata — to be resolved). Includes the 32 integration-case clips added 2026-07-06, credited to their POCUS Atlas galleries but without per-clip contributor names yet.
 
-### Video lectures
-- [x] **15 external lecture link-out cards** added in a "Video lectures" section at the end of Modules 1, 2, 3, 6, 7, 8, 9 — full-length lectures from the University of Utah Echo & Perioperative Ultrasound FoCUS program (`echo.anesthesia.med.utah.edu`). Styled via new `.lecture-card` class in `styles.css`; linked out (not embedded/hosted) to keep traffic and rights on the source site. Attribution added to `credits.qmd`.
-- [ ] No matching Utah lecture for Module 4 (Pericardium) or Module 5 (IVC) — none added
+### Video resources
+- [x] **17 external video link-out cards** across Modules 1, 2, 3, 4, 6, 7, 8, and 9. Most are full-length lectures from the University of Utah Echo & Perioperative Ultrasound FoCUS program; Module 4 adds focused resources from Yale School of Medicine and ACEP. Styled via `.lecture-card` in `styles.css` and linked out rather than hosted. Attribution is maintained in `credits.qmd`.
+- [ ] No matching Utah lecture or equivalent focused resource selected for Module 5 (IVC)
 - [ ] Utah has a `FoCUS for Valve Disease` lecture with no corresponding module — add if a valve module is created
 
 ---
@@ -70,19 +73,19 @@
 **Still open (1 clip):**
 - [ ] **M09 Case 5** — post-surgical windows; clip not yet sourced (lowest priority, placeholder left in place; target filename + embed snippet in `CLAUDE.md` → Outstanding work)
 
-Soft gaps for later refinement (a clip is embedded but a better match exists): M04 Case 2 (very large effusion without collapse), M05 Case 2 (add hepatic-vein/portal Doppler waveforms), M06 Case 4 (static vs dynamic air bronchograms), M08 Case 3 (explicitly-labeled catheter-associated DVT). Details in `CLAUDE.md` → Outstanding work.
+Soft gaps for later refinement (a clip is embedded but a better match exists): M05 Case 2 (add hepatic-vein/portal Doppler waveforms), M06 Case 4 (static vs dynamic air bronchograms), M08 Case 3 (explicitly-labeled catheter-associated DVT). Details in `CLAUDE.md` → Outstanding work.
 
 ### Metadata — credits page
 - [ ] Resolve the 22 clips marked `*` (newly-added Module 2 integration case clips, Module 3 Case 2 clips, Module 4 PLAX/subcostal/Doppler additions, Module 7 severe AS, plus the original 8 unresolved placeholders)
-- [ ] Add two clips in the Google Sheet not yet sourced or embedded: *Pericardial Effusion vs Fat Pad* and *Pericardial Tamponade* (Module 4)
-- [ ] Add metadata for all future clips to Google Sheet before embedding
+- [ ] Evaluate two previously identified Module 4 candidates not yet sourced or embedded: *Pericardial Effusion vs Fat Pad* and *Pericardial Tamponade*
+- [x] Use `credits.qmd` as the sole attribution source for all future media; no external tracking sheet required (2026-08-31)
 
 ### Unused files
 - [x] Repo cleanup 2026-07-09 — deleted five orphaned GIFs (`constrictive pericarditis.gif`, `constrictive pericarditis subcostal.gif`, `severe aortic stenosis PSX.gif`, and the duplicate normals `Normal PLAX.gif`, `parasternal+long+axis+normal.gif`), the stale `_site/` render (superseded by `docs/`), and `debug.log`; `_site/` and `*.log` now gitignored
 - [ ] `credits.qmd` still has rows for two clips no module embeds (`Normal PLAX`, `severe aortic stenosis`) — decide whether to drop the rows or keep them for future re-use
 
 ### Per-module content gaps
-- [ ] All modules: References & further reading sections
+- [ ] References & further reading sections — Module 04 complete; Modules 01–03 and 05–09 remaining
 - [ ] Integration case video slots: replace "Loops for interpretation" with actual clips as they are sourced (see Clips table above)
 - [ ] Module 6: "Before/after" serial exam comparison clip
 - [ ] Credits page: Curriculum development section and Acknowledgments
@@ -104,10 +107,10 @@ Soft gaps for later refinement (a clip is embedded but a better match exists): M
 | **Clip format** | GIF primary; AVIF accepted | Files sourced as GIFs from POCUS Atlas; GIFs autoplay and loop without controls using a plain `<img>` tag. AVIF works identically in modern browsers and is accepted when source material is only available in that format (e.g., mitral inflow PW Doppler clip). |
 | **Clip embedding** | Raw HTML `<img>` inside callout-tip blocks | Avoids pandoc path-encoding issues with spaces in filenames; renders identically to Quarto image syntax |
 | **Clip storage** | `modules/gifs/` flat folder | Simple relative path (`gifs/filename.gif`) from all module QMD files; no subfolders needed |
-| **Clip attribution** | Google Sheets → credits.qmd | Metadata maintained in a shared sheet; credits page generated manually from that sheet and organized by module |
+| **Media attribution** | `credits.qmd` only | Contributor, source, and license or permission details are maintained directly beside the curriculum in the module-organized credits page. |
 | **Normal acquisition clips** | Intentionally duplicated across Modules 1, 2, and 3 acquisition sections | Each module is designed to be self-contained — a learner reviewing only Module 2 (LV) or Module 3 (RV) should still see the normal reference clips without having to navigate back to Module 1. The few KB cost of duplicate `<img>` references is worth the pedagogical benefit. |
 | **Module 1 scope** | Acquisition + anatomy only — no pathology | Pericardial content fully moved to Module 4; Module 1 quiz focuses on window/structure identification |
-| **Module 4 scope** | Effusion, tamponade, acute pericarditis, myopericarditis — constrictive pericarditis dropped | Subtitle and intro still reference constrictive disease but no pathology section was written; decision made to scope it out rather than build the section. Two existing `constrictive pericarditis*.gif` files in `modules/gifs/` are now orphaned. |
+| **Module 4 scope** | Effusion and tamponade physiology | Constrictive pericarditis remains out of scope; the dedicated acute pericarditis/myopericarditis subsection was removed 2026-08-31. |
 | **Probe placement diagrams** | Custom SVGs (not GIFs or photos) | Allows precise anatomical annotation, indicator arrows, and rotation cues that no single photograph can convey; SVGs scale perfectly at any resolution |
 | **PSAX SVG** | Ghost probe + blue rotation arrow | Shows the PLAX-to-PSAX transition explicitly — the 90° CW rotation is the most common technique error |
 | **Integration case clips** | Text-only until scenario-matched clips are sourced | Using a mismatched clip is pedagogically worse than no clip; placeholder callouts preserved so slots are easy to fill. M2 cases 1–4 and M3 Case 2 now have scenario-matched clips embedded. |

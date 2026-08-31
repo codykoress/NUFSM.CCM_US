@@ -13,7 +13,7 @@ Quarto-based point-of-care ultrasound (POCUS) curriculum for critical care medic
 ```
 _quarto.yml          # navbar, project config
 index.qmd            # home page — links to all 9 modules
-credits.qmd          # attribution table by module (sourced from Google Sheets)
+credits.qmd          # canonical attribution table, organized by module
 modules/
   01-windows.qmd     # display Module 01 — Windows & Image Acquisition
   02-lv.qmd          # display Module 02 — LV Function
@@ -49,15 +49,15 @@ Always use raw HTML `<img>` inside a `callout-tip` block — never Quarto image 
 
 ---
 
-## Clip attribution workflow
+## Media attribution workflow
 
-1. Add metadata to the **Google Sheets** tracking file **before** embedding any new clip:
-   https://docs.google.com/spreadsheets/d/1ZGzjWniVL3xUzrFG72n1JV0aBqk3O3MiPBpPk6hh4AE/edit?usp=sharing
-   (columns: Module | Title (filename without extension) | Contributors | URL)
-2. Then embed in the module QMD
-3. Then regenerate the credits section in `credits.qmd`
+`credits.qmd` is the sole source of truth for media attribution. No external tracking sheet is required.
 
-Clips without confirmed metadata are flagged `*` in the credits page (see `roadmap.md` for the current unresolved count) — resolve existing flags before adding more.
+1. Confirm the media title, contributor or author, source URL, and license or permission status.
+2. Add or update the corresponding row under the correct module in `credits.qmd`.
+3. Embed the media in the module QMD and verify the rendered credits page.
+
+Existing clips without confirmed metadata are flagged `*` in the credits page (see `roadmap.md` for the current unresolved count). New media should have a complete credits row when embedded.
 
 Primary clip source: [The POCUS Atlas](https://www.thepocusatlas.com).
 
@@ -97,7 +97,7 @@ See `roadmap.md` for the full breakdown. Top priorities:
 Source: a post-surgical loop with a small effusion and mildly weak LV — hard to find cleanly on The POCUS Atlas; OK to leave the text placeholder until a good match turns up. When sourced:
 
 1. Save as `M9 Case 5 Post-surgical — small effusion mild LV dysfunction.gif` in `modules/gifs/`
-2. Log it in the Google Sheet
+2. Add its contributor, source URL, and license or permission status to the Module 9 table in `credits.qmd`
 3. In `modules/06-integration.qmd`, replace the `Loops for interpretation. — post-surgical windows` callout under Case 5 with:
 
 ```markdown
@@ -133,4 +133,4 @@ Always update `roadmap.md` to reflect what was done:
 - Change the flat `modules/gifs/` structure — relative paths in all module QMDs depend on it
 - Use Quarto image syntax (`![](gifs/foo.gif)`) for clips — use raw `<img>` tags
 - Embed integration case clips without a scenario-matched source
-- Add clips to a module without first logging metadata in Google Sheets
+- Add media to a module without adding or updating its attribution row in `credits.qmd`
