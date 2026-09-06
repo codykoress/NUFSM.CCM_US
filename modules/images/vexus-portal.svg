@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 340" role="img" aria-labelledby="title desc">
+<title id='title'>Portal vein: VExUS waveform comparison</title><desc id='desc'>Forward flow toward the liver is shown above zero. Pulsatility = (Vmax - Vmin) / Vmax x 100%. Original schematic illustrations, not patient recordings.</desc>
+<rect width="1050" height="340" rx="16" fill="#f5f6fa"/><g font-family="Arial, sans-serif" fill="#25243b"><text x="24" y="32" font-size="23" font-weight="700">Portal vein</text><text x="24" y="57" font-size="14">Forward flow toward the liver is shown above zero. Pulsatility = (Vmax - Vmin) / Vmax x 100%.</text>
+<g transform='translate(18,0)'><rect x='0' y='75' width='326' height='242' rx='10' fill='white' stroke='#dedee8'/><text x='16' y='102' font-size='19' font-weight='700' fill='#197364'>Normal: &lt;30%</text>
+<line x1='30' y1='240' x2='310' y2='240' stroke='#9694a5' stroke-dasharray='5 5'/><text x='13' y='245' font-size='13' fill='#656273'>0</text>
+<path transform='translate(20,0) scale(1.2,1)' d='M 20 118 Q 46 106 72 118 Q 98 130 125 118' fill='none' stroke='#197364' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/>
+<path transform='translate(146,0) scale(1.2,1)' d='M 20 118 Q 46 106 72 118 Q 98 130 125 118' fill='none' stroke='#197364' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/>
+<text x='16' y='287' font-size='15'>Example: 40 to 36 cm/s → 10%</text><text x='16' y='306' font-size='12' fill='#656273'>Time → · two schematic cardiac cycles</text></g>
+<g transform='translate(362,0)'><rect x='0' y='75' width='326' height='242' rx='10' fill='white' stroke='#dedee8'/><text x='16' y='102' font-size='19' font-weight='700' fill='#96600a'>Mild: 30 to &lt;50%</text>
+<line x1='30' y1='240' x2='310' y2='240' stroke='#9694a5' stroke-dasharray='5 5'/><text x='13' y='245' font-size='13' fill='#656273'>0</text>
+<path transform='translate(20,0) scale(1.2,1)' d='M 20 136 Q 46 88 72 136 Q 98 184 125 136' fill='none' stroke='#96600a' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/>
+<path transform='translate(146,0) scale(1.2,1)' d='M 20 136 Q 46 88 72 136 Q 98 184 125 136' fill='none' stroke='#96600a' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/>
+<text x='16' y='287' font-size='15'>Example: 40 to 24 cm/s → 40%</text><text x='16' y='306' font-size='12' fill='#656273'>Time → · two schematic cardiac cycles</text></g>
+<g transform='translate(706,0)'><rect x='0' y='75' width='326' height='242' rx='10' fill='white' stroke='#dedee8'/><text x='16' y='102' font-size='19' font-weight='700' fill='#b23e52'>Severe: ≥50%</text>
+<line x1='30' y1='240' x2='310' y2='240' stroke='#9694a5' stroke-dasharray='5 5'/><text x='13' y='245' font-size='13' fill='#656273'>0</text>
+<path transform='translate(20,0) scale(1.2,1)' d='M 20 158 Q 46 66 72 158 Q 98 250 125 158' fill='none' stroke='#b23e52' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/>
+<path transform='translate(146,0) scale(1.2,1)' d='M 20 158 Q 46 66 72 158 Q 98 250 125 158' fill='none' stroke='#b23e52' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/>
+<text x='16' y='287' font-size='15'>Example: 40 to 12 cm/s → 70%</text><text x='16' y='306' font-size='12' fill='#656273'>Time → · two schematic cardiac cycles</text></g>
+</g></svg>
+

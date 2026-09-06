@@ -116,6 +116,11 @@ Items marked with an asterisk (\*) are embedded in the curriculum but do not yet
 | Plethoric IVC — cardiogenic shock — Case 4 | \* | [POCUS Atlas](https://www.thepocusatlas.com/ivc-abnormal-venous-waveforms) |
 | Globally hypokinetic LV, severely reduced EF — Case 4 *(myocarditis clip reused from Module 2)* | \* | — |
 
+| Resource | Author | Source and reuse status |
+|---|---|---|
+| VExUS acquisition videos and waveform examples (external tutorial) | Vi Dinh, POCUS 101 | [VExUS tutorial](https://www.pocus101.com/vexus-ultrasound-score-fluid-overload-and-venous-congestion-assessment/). Linked on the publisher's site; no third-party media copied or rehosted. |
+| Hepatic, portal, and intrarenal VExUS waveform illustrations | Original curriculum schematics, created with Codex | Vector artwork created for this curriculum from the clinical patterns described in [POCUS 101](https://www.pocus101.com/vexus-ultrasound-score-fluid-overload-and-venous-congestion-assessment/); not copied source artwork or patient recordings. |
+
 ### Module 6 — Lung Ultrasound
 
 | Clip | Contributor(s) | Source |

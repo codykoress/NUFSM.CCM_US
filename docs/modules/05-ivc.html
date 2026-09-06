@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -39,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -179,31 +182,31 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#clinical-question" id="toc-clinical-question" class="nav-link active" data-scroll-target="#clinical-question">1. Clinical question</a></li>
   <li><a href="#image-acquisition" id="toc-image-acquisition" class="nav-link" data-scroll-target="#image-acquisition">2. Image acquisition</a>
   <ul class="collapse">
-  <li><a href="#subcostal-ivc-view" id="toc-subcostal-ivc-view" class="nav-link" data-scroll-target="#subcostal-ivc-view">Subcostal IVC view</a></li>
-  <li><a href="#hepatic-vein-assessment" id="toc-hepatic-vein-assessment" class="nav-link" data-scroll-target="#hepatic-vein-assessment">Hepatic vein assessment</a></li>
-  <li><a href="#portal-vein-pulsatility" id="toc-portal-vein-pulsatility" class="nav-link" data-scroll-target="#portal-vein-pulsatility">Portal vein pulsatility</a></li>
+  <li><a href="#ivc-identify-before-measuring" id="toc-ivc-identify-before-measuring" class="nav-link" data-scroll-target="#ivc-identify-before-measuring">IVC: identify before measuring</a></li>
+  <li><a href="#complete-the-four-vessel-examination" id="toc-complete-the-four-vessel-examination" class="nav-link" data-scroll-target="#complete-the-four-vessel-examination">Complete the four-vessel examination</a></li>
   </ul></li>
   <li><a href="#normal-normal-variants" id="toc-normal-normal-variants" class="nav-link" data-scroll-target="#normal-normal-variants">3. Normal &amp; normal variants</a>
   <ul class="collapse">
-  <li><a href="#normal-ivc" id="toc-normal-ivc" class="nav-link" data-scroll-target="#normal-ivc">Normal IVC</a></li>
-  <li><a href="#the-athletes-ivc" id="toc-the-athletes-ivc" class="nav-link" data-scroll-target="#the-athletes-ivc">The athlete’s IVC</a></li>
-  <li><a href="#ivc-in-mechanically-ventilated-patients" id="toc-ivc-in-mechanically-ventilated-patients" class="nav-link" data-scroll-target="#ivc-in-mechanically-ventilated-patients">IVC in mechanically ventilated patients</a></li>
+  <li><a href="#ivc-and-estimated-ra-pressure" id="toc-ivc-and-estimated-ra-pressure" class="nav-link" data-scroll-target="#ivc-and-estimated-ra-pressure">IVC and estimated RA pressure</a></li>
+  <li><a href="#venous-waveform-reference" id="toc-venous-waveform-reference" class="nav-link" data-scroll-target="#venous-waveform-reference">Venous waveform reference</a></li>
+  <li><a href="#illustrated-waveform-comparison" id="toc-illustrated-waveform-comparison" class="nav-link" data-scroll-target="#illustrated-waveform-comparison">Illustrated waveform comparison</a></li>
   </ul></li>
   <li><a href="#pathology-library" id="toc-pathology-library" class="nav-link" data-scroll-target="#pathology-library">4. Pathology library</a>
   <ul class="collapse">
   <li><a href="#small-collapsible-ivc" id="toc-small-collapsible-ivc" class="nav-link" data-scroll-target="#small-collapsible-ivc">Small, collapsible IVC</a></li>
-  <li><a href="#plethoric-non-collapsing-ivc" id="toc-plethoric-non-collapsing-ivc" class="nav-link" data-scroll-target="#plethoric-non-collapsing-ivc">Plethoric, non-collapsing IVC</a></li>
-  <li><a href="#venous-congestion-pattern" id="toc-venous-congestion-pattern" class="nav-link" data-scroll-target="#venous-congestion-pattern">Venous congestion pattern</a></li>
-  <li><a href="#intermediate-ivc" id="toc-intermediate-ivc" class="nav-link" data-scroll-target="#intermediate-ivc">Intermediate IVC</a></li>
+  <li><a href="#plethoric-ivc" id="toc-plethoric-ivc" class="nav-link" data-scroll-target="#plethoric-ivc">Plethoric IVC</a></li>
+  <li><a href="#assigning-vexus-c-grade" id="toc-assigning-vexus-c-grade" class="nav-link" data-scroll-target="#assigning-vexus-c-grade">Assigning VExUS C grade</a></li>
+  <li><a href="#from-findings-to-a-decision" id="toc-from-findings-to-a-decision" class="nav-link" data-scroll-target="#from-findings-to-a-decision">From findings to a decision</a></li>
   </ul></li>
   <li><a href="#integration-cases" id="toc-integration-cases" class="nav-link" data-scroll-target="#integration-cases">5. Integration cases</a>
   <ul class="collapse">
-  <li><a href="#case-1-septic-shock-is-this-patient-fluid-responsive" id="toc-case-1-septic-shock-is-this-patient-fluid-responsive" class="nav-link" data-scroll-target="#case-1-septic-shock-is-this-patient-fluid-responsive">Case 1: Septic shock — is this patient fluid responsive?</a></li>
-  <li><a href="#case-2-the-patient-who-wont-respond-to-fluids" id="toc-case-2-the-patient-who-wont-respond-to-fluids" class="nav-link" data-scroll-target="#case-2-the-patient-who-wont-respond-to-fluids">Case 2: The patient who won’t respond to fluids</a></li>
-  <li><a href="#case-3-post-resuscitation-how-much-fluid-did-this-patient-get" id="toc-case-3-post-resuscitation-how-much-fluid-did-this-patient-get" class="nav-link" data-scroll-target="#case-3-post-resuscitation-how-much-fluid-did-this-patient-get">Case 3: Post-resuscitation — how much fluid did this patient get?</a></li>
-  <li><a href="#case-4-distinguishing-cardiogenic-from-septic-shock-with-the-ivc" id="toc-case-4-distinguishing-cardiogenic-from-septic-shock-with-the-ivc" class="nav-link" data-scroll-target="#case-4-distinguishing-cardiogenic-from-septic-shock-with-the-ivc">Case 4: Distinguishing cardiogenic from septic shock with the IVC</a></li>
+  <li><a href="#case-1-septic-shock-another-bolus" id="toc-case-1-septic-shock-another-bolus" class="nav-link" data-scroll-target="#case-1-septic-shock-another-bolus">Case 1: Septic shock — another bolus?</a></li>
+  <li><a href="#case-2-chf-pneumonia-and-rising-creatinine" id="toc-case-2-chf-pneumonia-and-rising-creatinine" class="nav-link" data-scroll-target="#case-2-chf-pneumonia-and-rising-creatinine">Case 2: CHF, pneumonia, and rising creatinine</a></li>
+  <li><a href="#case-3-ventilated-after-resuscitation" id="toc-case-3-ventilated-after-resuscitation" class="nav-link" data-scroll-target="#case-3-ventilated-after-resuscitation">Case 3: Ventilated after resuscitation</a></li>
+  <li><a href="#case-4-fever-shock-and-depressed-lv-function" id="toc-case-4-fever-shock-and-depressed-lv-function" class="nav-link" data-scroll-target="#case-4-fever-shock-and-depressed-lv-function">Case 4: Fever, shock, and depressed LV function</a></li>
   </ul></li>
   <li><a href="#quiz" id="toc-quiz" class="nav-link" data-scroll-target="#quiz">Quiz</a></li>
+  <li><a href="#references-further-reading" id="toc-references-further-reading" class="nav-link" data-scroll-target="#references-further-reading">References &amp; further reading</a></li>
   </ul>
 </nav>
     </div>
@@ -213,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Module 5 — IVC &amp; Volume Status</h1>
-<p class="subtitle lead">Preload assessment, fluid responsiveness, and venous congestion</p>
+<p class="subtitle lead">Right-sided filling pressure, fluid responsiveness, and VExUS</p>
 </div>
 
 
@@ -232,7 +235,6 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="clinical-question" class="level2">
 <h2 class="anchored" data-anchor-id="clinical-question">1. Clinical question</h2>
-<p><em>What clinical question does this exam answer, and how do findings change management?</em></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -243,23 +245,22 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>The bedside decision frame:</strong> Two questions in order.</p>
+<p><strong>The bedside decision frame</strong></p>
 <ol type="1">
-<li><strong>Is this patient likely to respond to a fluid bolus?</strong> A collapsible, small IVC in a spontaneously breathing patient suggests low right-sided filling pressure and likely fluid responsiveness. A plethoric, non-collapsing IVC suggests elevated venous pressure — giving fluid will not help and may cause harm.</li>
-<li><strong>Is there venous congestion?</strong> An elevated IVC diameter with loss of respiratory variation, combined with hepatic vein dilation and portal vein pulsatility, indicates systemic venous hypertension. This pattern shifts the frame from “give fluid” to “treat the cause of congestion.”</li>
+<li>Does the patient have ongoing hypoperfusion?</li>
+<li>Would increasing preload improve stroke volume?</li>
+<li>Is venous congestion increasing the risk of additional fluid?</li>
 </ol>
+<p>Answer these separately before choosing an intervention.</p>
 </div>
 </div>
-<p>The IVC is the most accessible venous structure for bedside hemodynamic assessment. It is also the most misused. A collapsible IVC does not guarantee that a fluid bolus will improve cardiac output — it indicates that the right atrial pressure is low, which is one of several conditions necessary for fluid responsiveness. Equally important, a plethoric IVC is not always tamponade — it can reflect right heart failure, PE, severe tricuspid regurgitation, or aggressive fluid resuscitation. The IVC is one data point in a hemodynamic assessment, not a standalone decision-maker.</p>
-<hr>
+<p>IVC ultrasound contributes to right atrial pressure assessment; VExUS assesses systemic venous congestion. Neither measures circulating blood volume or establishes fluid responsiveness. Use dynamic testing, cardiac and lung ultrasound, and serial perfusion assessment together. The <a href="https://www.esicm.org/wp-content/uploads/2025/10/Visual-abstract-final.pdf">2025 ESICM shock guidance</a> favors dynamic predictors over static preload markers.</p>
+<p><strong>Learning objectives:</strong> Acquire the IVC and three venous Doppler signals, distinguish normal from abnormal waveforms, assign a VExUS grade, and explain how the findings affect a fluid decision.</p>
 </section>
 <section id="image-acquisition" class="level2">
 <h2 class="anchored" data-anchor-id="image-acquisition">2. Image acquisition</h2>
-<p><em>Probe, windows, and technique for this module.</em></p>
-<p>Use a <strong>phased array or curvilinear probe</strong> from the <strong>subcostal window</strong>. The IVC enters the right atrium from below. The image plane is optimized to show the IVC in its long axis as it traverses the liver toward the RA.</p>
-<hr>
-<section id="subcostal-ivc-view" class="level3">
-<h3 class="anchored" data-anchor-id="subcostal-ivc-view">Subcostal IVC view</h3>
+<section id="ivc-identify-before-measuring" class="level3">
+<h3 class="anchored" data-anchor-id="ivc-identify-before-measuring">IVC: identify before measuring</h3>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -270,54 +271,121 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><img src="gifs/Inferior Vena Cava Emptyting into Right Atrium.gif" style="width:100%; border-radius:4px;" alt="Normal IVC entering the right atrium"></p>
+<p><img src="gifs/Inferior Vena Cava Emptyting into Right Atrium.gif" style="width:100%; border-radius:4px;" alt="IVC entering the right atrium"></p>
 </div>
 </div>
-<p><strong>Probe placement:</strong> Subcostal, indicator to the patient’s right (or toward the head depending on your convention), angled to bring the IVC into view as it enters the RA. The hepatic vein confluence should be visible entering the IVC.</p>
-<p><strong>Measurement:</strong> IVC diameter is measured <strong>1.5–2.0 cm distal to the RA–IVC junction</strong> (typically just proximal to the hepatic vein confluence), per ASE convention. Measure at end-expiration for the resting diameter, then assess collapse with a sniff (spontaneous breathing) or the distensibility index (mechanical ventilation).</p>
-<p><strong>Common error:</strong> Imaging the aorta instead of the IVC. The IVC is to the patient’s right of midline, collapses with inspiration, and enters the RA. The aorta is to the left, pulsatile, and does not collapse.</p>
-<hr>
+<p>Use a subcostal long-axis view and trace the vessel into the RA. Confirm that the structure is the IVC rather than the aorta. Avoid an oblique diameter and follow the vessel through respiration rather than mistaking translation for collapse.</p>
+<p>For RA pressure estimation, measure at end-expiration, approximately 0.5–3 cm from the RA ostium, and assess inspiratory collapse. For VExUS, record the <strong>maximum diameter during respiration</strong>. Keep the measurement site consistent on repeat examinations. These are different assessment conventions; the VExUS threshold is <strong>2.0 cm</strong>, whereas the RA pressure algorithm uses <strong>2.1 cm</strong>. See <a href="https://www.asecho.org/wp-content/uploads/2025/03/PIIS0894731725000379.pdf">ASE guidance</a> and the <a href="https://doi.org/10.1186/s13089-020-00163-w">original VExUS study</a>.</p>
 </section>
-<section id="hepatic-vein-assessment" class="level3">
-<h3 class="anchored" data-anchor-id="hepatic-vein-assessment">Hepatic vein assessment</h3>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Hepatic vein PW Doppler — normal anterograde flow vs diastolic flow reversal in venous congestion.</p>
-</div>
-</div>
-<p><strong>Probe placement:</strong> Same subcostal window, angle to bring the hepatic veins into view entering the IVC. Sample volume placed in the hepatic vein 1–2 cm from the IVC junction.</p>
-<p><strong>What you are looking for:</strong> Normal hepatic vein flow is predominantly anterograde (systolic and diastolic waves toward the RA) with small physiologic reversals. Diastolic flow reversal prominent with expiration suggests elevated right-sided filling pressure (constrictive physiology). Systolic flow reversal suggests severe tricuspid regurgitation.</p>
-<hr>
-</section>
-<section id="portal-vein-pulsatility" class="level3">
-<h3 class="anchored" data-anchor-id="portal-vein-pulsatility">Portal vein pulsatility</h3>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Portal vein PW Doppler — normally monophasic flow vs pulsatile flow in severe venous congestion.</p>
-</div>
-</div>
-<p><strong>What you are looking for:</strong> The portal vein normally has continuous, mildly pulsatile anterograde flow. When systemic venous pressure is severely elevated, this flow becomes markedly pulsatile or even reverses — a sign of severe venous congestion transmitted to the portal system. Portal vein pulsatility fraction &gt;50% is associated with worse outcomes in ICU patients and in those with right heart failure.</p>
-<hr>
+<section id="complete-the-four-vessel-examination" class="level3">
+<h3 class="anchored" data-anchor-id="complete-the-four-vessel-examination">Complete the four-vessel examination</h3>
+<p>Use a curvilinear or phased array probe, color Doppler, and pulsed-wave Doppler with the patient supine when tolerated.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Vessel</th>
+<th>Acquisition target</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hepatic</td>
+<td>Identify a hepatic vein joining the IVC; sample within the vein before the junction.</td>
+</tr>
+<tr class="even">
+<td>Portal</td>
+<td>Use a right lateral liver window; identify the portal vein and sample its lumen.</td>
+</tr>
+<tr class="odd">
+<td>Intrarenal</td>
+<td>Find renal interlobar vessels; optimize low-flow color and PW settings and isolate the venous signal.</td>
+</tr>
+</tbody>
+</table>
+<p>Use ECG timing when available to distinguish systole from diastole. Color and spectral display direction depend on probe orientation and settings; interpret anatomy and timing rather than color alone.</p>
+<p><strong>Guided practice:</strong> Open the <a href="https://www.pocus101.com/vexus-ultrasound-score-fluid-overload-and-venous-congestion-assessment/">POCUS 101 VExUS tutorial</a> and work through its hepatic, portal, and intrarenal acquisition videos and waveform examples alongside this module.</p>
 </section>
 </section>
 <section id="normal-normal-variants" class="level2">
 <h2 class="anchored" data-anchor-id="normal-normal-variants">3. Normal &amp; normal variants</h2>
+<section id="ivc-and-estimated-ra-pressure" class="level3">
+<h3 class="anchored" data-anchor-id="ivc-and-estimated-ra-pressure">IVC and estimated RA pressure</h3>
+<p>In spontaneously breathing adults:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>IVC diameter and sniff response</th>
+<th>Estimated RA pressure</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>≤2.1 cm and ≥50% collapse</td>
+<td>3 mmHg (range 0–5)</td>
+</tr>
+<tr class="even">
+<td>&gt;2.1 cm and &lt;50% collapse</td>
+<td>15 mmHg (range 10–20)</td>
+</tr>
+<tr class="odd">
+<td>Discordant findings</td>
+<td>8 mmHg (range 5–10); integrate additional signs</td>
+</tr>
+</tbody>
+</table>
+<p>Athletes can have a large IVC without pathologic pressure elevation. Positive-pressure ventilation limits this algorithm’s reliability. Diameter alone does not define an intermediate pressure. <a href="https://www.asecho.org/wp-content/uploads/2025/03/PIIS0894731725000379.pdf">ASE, 2025</a>.</p>
+</section>
+<section id="venous-waveform-reference" class="level3">
+<h3 class="anchored" data-anchor-id="venous-waveform-reference">Venous waveform reference</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Doppler</th>
+<th>Normal</th>
+<th>Mild abnormality</th>
+<th>Severe abnormality</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hepatic</td>
+<td>Forward S &gt; D</td>
+<td>Forward S &lt; D</td>
+<td>Systolic reversal</td>
+</tr>
+<tr class="even">
+<td>Portal</td>
+<td>Pulsatility &lt;30%</td>
+<td>30 to &lt;50%</td>
+<td>≥50%</td>
+</tr>
+<tr class="odd">
+<td>Intrarenal</td>
+<td>Continuous</td>
+<td>Interrupted S and D phases</td>
+<td>Interrupted, diastolic-only flow</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Portal pulsatility fraction (%) = (Vmax − Vmin) / Vmax × 100.</strong></p>
+<p>S = systole; D = diastole. In the hepatic vein, forward flow is toward the RA. In the portal vein, forward flow is toward the liver. A renal waveform described only as “monophasic” is ambiguous: distinguish continuous flow from interrupted diastolic-only flow. <a href="https://www.pocus101.com/vexus-ultrasound-score-fluid-overload-and-venous-congestion-assessment/">POCUS 101</a>.</p>
+</section>
+<section id="illustrated-waveform-comparison" class="level3">
+<h3 class="anchored" data-anchor-id="illustrated-waveform-comparison">Illustrated waveform comparison</h3>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -328,26 +396,14 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Normal IVC — diameter 1.5–2.1 cm, &gt;50% collapsibility with sniff. IVC in an athlete (mildly enlarged but still collapsible).</p>
+<p><img src="images/vexus-hepatic.svg" style="width:100%;" alt="Hepatic Doppler schematics: normal forward S greater than D, mild forward S smaller than D, and severe systolic reversal above zero."> <img src="images/vexus-portal.svg" style="width:100%; margin-top:16px;" alt="Portal Doppler schematics: increasing pulsatility, with examples of 10 percent, 40 percent, and 70 percent pulsatility."> <img src="images/vexus-intrarenal.svg" style="width:100%; margin-top:16px;" alt="Intrarenal venous Doppler schematics: continuous flow, interrupted systolic and diastolic flow, and interrupted diastolic-only flow."></p>
+<p><strong>How to read these illustrations:</strong> Dashed lines mark zero velocity; time runs left to right. These original teaching schematics show two cycles and are not patient recordings or calibrated spectral traces. Display polarity can be inverted on the ultrasound machine. Column labels describe individual waveform abnormalities, not the final VExUS grade. Compare with the <a href="https://www.pocus101.com/vexus-ultrasound-score-fluid-overload-and-venous-congestion-assessment/">POCUS 101 examples</a>.</p>
 </div>
 </div>
-<section id="normal-ivc" class="level3">
-<h3 class="anchored" data-anchor-id="normal-ivc">Normal IVC</h3>
-<p>Diameter 1.5–2.1 cm at end-expiration, with greater than 50% collapsibility with a maximal sniff or inspiration. This corresponds to an estimated RA pressure of 0–5 mmHg.</p>
-</section>
-<section id="the-athletes-ivc" class="level3">
-<h3 class="anchored" data-anchor-id="the-athletes-ivc">The athlete’s IVC</h3>
-<p>Well-trained athletes may have mildly enlarged IVCs (up to 2.5 cm) at rest due to increased plasma volume and vagal tone, with preserved or even exaggerated collapsibility. Clinical context is essential — a large IVC in a healthy, euvolemic runner is not the same as a large IVC in a patient with right heart failure.</p>
-</section>
-<section id="ivc-in-mechanically-ventilated-patients" class="level3">
-<h3 class="anchored" data-anchor-id="ivc-in-mechanically-ventilated-patients">IVC in mechanically ventilated patients</h3>
-<p>Respiratory variation is reversed in mechanically ventilated patients — the IVC distends with positive pressure insufflation (during inspiration) and collapses with expiration. Use the <strong>distensibility index</strong> rather than collapsibility: (IVC max − IVC min) / IVC min × 100%. A distensibility index greater than 18% predicts fluid responsiveness in passively ventilated patients without spontaneous breathing efforts. This rule does not apply if the patient is triggering the ventilator, has high PEEP, or has low tidal volumes (&lt;8 mL/kg).</p>
-<hr>
 </section>
 </section>
 <section id="pathology-library" class="level2">
 <h2 class="anchored" data-anchor-id="pathology-library">4. Pathology library</h2>
-<p><em>Organized by finding, not by diagnosis.</em></p>
 <section id="small-collapsible-ivc" class="level3">
 <h3 class="anchored" data-anchor-id="small-collapsible-ivc">Small, collapsible IVC</h3>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -360,21 +416,13 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><img src="gifs/Inferior Vena Cava in Hypovolemia (Transverse).gif" style="width:100%; border-radius:4px;" alt="Collapsed IVC in hypovolemia"></p>
+<p><img src="gifs/Inferior Vena Cava in Hypovolemia (Transverse).gif" style="width:100%; border-radius:4px;" alt="Small IVC in a transverse view"></p>
 </div>
 </div>
-<p>Diameter less than 1.5 cm with greater than 50% respiratory collapse. Estimated RA pressure 0–5 mmHg.</p>
-<p><strong>Teaching points:</strong></p>
-<ul>
-<li>Consistent with hypovolemia, distributive shock, or effective diuresis.</li>
-<li>In a hypotensive patient, a small collapsible IVC suggests volume responsiveness and supports a cautious fluid trial.</li>
-<li>Does not guarantee that fluid will improve cardiac output — also requires adequate LV and RV function to translate preload into stroke volume.</li>
-<li>Serial assessment after a fluid bolus (did the IVC change? did cardiac output improve?) is more informative than a single measurement.</li>
-</ul>
-<hr>
+<p>This appearance can accompany low right-sided filling pressure. It does not answer whether another bolus will increase cardiac output. Strong inspiratory effort can exaggerate collapse.</p>
 </section>
-<section id="plethoric-non-collapsing-ivc" class="level3">
-<h3 class="anchored" data-anchor-id="plethoric-non-collapsing-ivc">Plethoric, non-collapsing IVC</h3>
+<section id="plethoric-ivc" class="level3">
+<h3 class="anchored" data-anchor-id="plethoric-ivc">Plethoric IVC</h3>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -385,66 +433,77 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><img src="gifs/Plethoric Inferior Vena Cava.gif" style="width:100%; border-radius:4px;" alt="Plethoric non-collapsing IVC"></p>
+<p><img src="gifs/Plethoric Inferior Vena Cava.gif" style="width:100%; border-radius:4px;" alt="Dilated IVC with little visible respiratory variation"></p>
 </div>
 </div>
-<p>Diameter greater than 2.1 cm with less than 50% respiratory collapse. Estimated RA pressure 10–20 mmHg.</p>
-<p><strong>Teaching points:</strong></p>
-<ul>
-<li>Does not equal tamponade — this is one finding among several. Always assess for chamber collapse and clinical context.</li>
-<li>Causes: right heart failure, massive PE, cardiac tamponade, constrictive pericarditis, severe TR, aggressive fluid resuscitation, high PEEP.</li>
-<li>In this setting, additional fluid boluses are unlikely to be beneficial and may worsen venous congestion.</li>
-<li>The priority is identifying and treating the cause of elevated RA pressure.</li>
-</ul>
-<hr>
+<p>Consider RV dysfunction, pulmonary hypertension, tricuspid regurgitation, tamponade, and ventilator effects in addition to fluid accumulation. Review the <a href="../modules/03-rv.html">RV module</a> and <a href="../modules/04-pericardium.html">pericardium module</a> when those findings are present.</p>
 </section>
-<section id="venous-congestion-pattern" class="level3">
-<h3 class="anchored" data-anchor-id="venous-congestion-pattern">Venous congestion pattern</h3>
-<div class="callout callout-style-default callout-tip callout-titled">
+<section id="assigning-vexus-c-grade" class="level3">
+<h3 class="anchored" data-anchor-id="assigning-vexus-c-grade">Assigning VExUS C grade</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Maximum IVC diameter</th>
+<th>Number of severely abnormal venous Doppler patterns</th>
+<th>Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>&lt;2.0 cm</td>
+<td>Not required by the algorithm</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>≥2.0 cm</td>
+<td>None</td>
+<td>1 — mild</td>
+</tr>
+<tr class="odd">
+<td>≥2.0 cm</td>
+<td>One</td>
+<td>2 — moderate</td>
+</tr>
+<tr class="even">
+<td>≥2.0 cm</td>
+<td>Two or three</td>
+<td>3 — severe</td>
+</tr>
+</tbody>
+</table>
+<p>Count severe patterns across the hepatic, portal, and intrarenal veins; do not add waveform scores. Grade 0 does not exclude all congestion or establish a need for fluid. The original single-center study involved 145 cardiac-surgery patients; its association with AKI does not prove that treating a score improves outcomes. <a href="https://doi.org/10.1186/s13089-020-00163-w">Beaubien-Souligny et al., 2020</a>.</p>
+<div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Caution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>Plethoric IVC with diastolic hepatic vein flow reversal</li>
-<li>Pulsatile portal vein flow</li>
-</ul>
+<p><strong>Interpretation limits</strong></p>
+<p>Tricuspid regurgitation can alter hepatic flow; portal abnormalities may be confounded by liver disease. Intrarenal signals may be technically inadequate. Record missing or uninterpretable vessels explicitly rather than assigning a normal pattern. Two severe patterns with an enlarged IVC already establish grade 3; fewer observed abnormalities with missing vessels may leave the final grade uncertain.</p>
 </div>
 </div>
-<p>A syndrome of IVC dilation, hepatic vein abnormalities, and portal vein pulsatility reflecting severe systemic venous hypertension. Associated with worse outcomes in patients with right heart failure, cardiogenic shock, and septic shock.</p>
-<p><strong>Teaching points:</strong></p>
-<ul>
-<li>Venous congestion causes end-organ dysfunction — congested kidneys, a congested liver, and a congested gut are not simply “full,” they are physiologically impaired.</li>
-<li>Recognition of venous congestion should prompt de-escalation of fluid administration and active decongestion (diuresis, ultrafiltration) even in patients who appear to need more fluid for other reasons.</li>
-<li>The RVSP-VExUS framework (combining IVC, hepatic vein, and portal vein findings) grades congestion severity and has prognostic implications.</li>
-</ul>
-<hr>
 </section>
-<section id="intermediate-ivc" class="level3">
-<h3 class="anchored" data-anchor-id="intermediate-ivc">Intermediate IVC</h3>
-<p>Diameter 1.5–2.1 cm with variable collapse. Estimated RA pressure 5–10 mmHg. This is the most common and least definitive finding — the IVC alone cannot reliably predict fluid responsiveness in this range.</p>
-<p><strong>Teaching points:</strong></p>
-<ul>
-<li>Use dynamic assessments instead: passive leg raise (PLR) with cardiac output monitoring, or a mini-fluid challenge with serial stroke volume measurement.</li>
-<li>A PLR that transiently increases stroke volume (or pulse pressure) by &gt;10% predicts fluid responsiveness with high sensitivity and specificity, regardless of IVC status.</li>
-<li>Do not make a high-stakes fluid decision based on an intermediate IVC in isolation.</li>
-</ul>
-<hr>
+<section id="from-findings-to-a-decision" class="level3">
+<h3 class="anchored" data-anchor-id="from-findings-to-a-decision">From findings to a decision</h3>
+<p>Use a passive leg raise with real-time stroke-volume/cardiac-output measurement when appropriate. Blood pressure alone is not an equivalent readout. IVC distensibility—(maximum − minimum) / minimum × 100—is affected by ventilator settings and patient effort; a universal 18% threshold should not drive ICU fluid decisions.</p>
+<p>Congestion increases concern about fluid harm but does not select a drug or mandate fluid removal during unstable shock. Reassess perfusion, cardiac function, respiratory status, and response to treatment. <a href="https://www.esicm.org/wp-content/uploads/2025/10/Visual-abstract-final.pdf">ESICM, 2025</a>.</p>
 </section>
 </section>
 <section id="integration-cases" class="level2">
 <h2 class="anchored" data-anchor-id="integration-cases">5. Integration cases</h2>
-<p><em>Cases where the finding changes management.</em></p>
-<hr>
-<section id="case-1-septic-shock-is-this-patient-fluid-responsive" class="level3">
-<h3 class="anchored" data-anchor-id="case-1-septic-shock-is-this-patient-fluid-responsive">Case 1: Septic shock — is this patient fluid responsive?</h3>
-<p><strong>Clinical scenario:</strong> A 72-year-old woman with urosepsis has received 3 L of crystalloid and is on norepinephrine 0.2 mcg/kg/min. BP is 84/52, HR 112. Lactate is 4.1 mmol/L and trending up slightly. The team is debating another fluid bolus.</p>
-<p><strong>What exam would you perform?</strong> Focused cardiac ultrasound with IVC assessment.</p>
+<p><em>The clips illustrate the named view. Additional measurements below are supplied teaching-case data, not findings demonstrated by an IVC clip.</em></p>
+<section id="case-1-septic-shock-another-bolus" class="level3">
+<h3 class="anchored" data-anchor-id="case-1-septic-shock-another-bolus">Case 1: Septic shock — another bolus?</h3>
+<p>A 72-year-old woman with urosepsis remains hypotensive after 3 L of crystalloid and norepinephrine.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -455,17 +514,15 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><img src="gifs/M5 Case 1 Small collapsible IVC — hypovolemia.gif" style="width:100%; border-radius:4px;" alt="Subcostal IVC: small diameter with greater-than-70-percent inspiratory collapse"></p>
+<p><img src="gifs/M5 Case 1 Small collapsible IVC — hypovolemia.gif" style="width:100%; border-radius:4px;" alt="Small IVC with respiratory collapse"></p>
 </div>
 </div>
-<p><strong>What you see:</strong> IVC 1.4 cm with &gt;70% collapse on sniff. LV hyperdynamic. RV normal size. No effusion.</p>
-<p><strong>How does this change management?</strong> Small, collapsible IVC with hyperdynamic LV — consistent with distributive physiology and likely fluid responsiveness. Administer a cautious fluid bolus (250–500 mL) and reassess. If lactate clears and hemodynamics improve, the fluid was beneficial. If not, escalate vasopressor therapy rather than continuing to fluid load. The hyperdynamic LV argues against a cardiogenic component.</p>
-<hr>
+<p><strong>Supplied findings:</strong> IVC 1.4 cm with marked collapse, hyperdynamic LV, normal-sized RV, no effusion.</p>
+<p><strong>Decision:</strong> Do not equate this appearance with a positive fluid-responsiveness test. Assess the stroke-volume response to PLR and fluid tolerance before another bolus. Reassess promptly after any intervention. A hyperdynamic EF alone does not establish adequate output.</p>
 </section>
-<section id="case-2-the-patient-who-wont-respond-to-fluids" class="level3">
-<h3 class="anchored" data-anchor-id="case-2-the-patient-who-wont-respond-to-fluids">Case 2: The patient who won’t respond to fluids</h3>
-<p><strong>Clinical scenario:</strong> An 80-year-old man with CHF (EF 25%) and pneumonia is admitted with hypotension. He has received 2 L of saline. BP remains 86/54. Creatinine is rising. He has bilateral crackles.</p>
-<p><strong>What exam would you perform?</strong> Focused cardiac ultrasound with IVC and hepatic vein assessment.</p>
+<section id="case-2-chf-pneumonia-and-rising-creatinine" class="level3">
+<h3 class="anchored" data-anchor-id="case-2-chf-pneumonia-and-rising-creatinine">Case 2: CHF, pneumonia, and rising creatinine</h3>
+<p>An 80-year-old man with EF 25% remains hypotensive after 2 L of saline and has bilateral crackles.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -476,17 +533,16 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><img src="gifs/M5 Case 2 Plethoric IVC — venous congestion.gif" style="width:100%; border-radius:4px;" alt="Subcostal IVC: dilated and non-collapsing — venous congestion"></p>
+<p><img src="gifs/M5 Case 2 Plethoric IVC — venous congestion.gif" style="width:100%; border-radius:4px;" alt="Plethoric IVC; venous Doppler is not shown in this clip"></p>
 </div>
 </div>
-<p><strong>What you see:</strong> IVC 2.6 cm, non-collapsing. Plethoric hepatic veins with diastolic flow reversal. Pulsatile portal vein. Severely reduced EF. Bilateral pleural effusions.</p>
-<p><strong>How does this change management?</strong> Stop fluids immediately — this patient is severely congested and has cardiogenic shock. The rising creatinine is from renal venous congestion, not from hypovolemia. Additional fluid will worsen pulmonary edema and organ congestion further. Initiate dobutamine for inotropic support. Cautious diuresis to reduce venous congestion. Consider early nephrology involvement if oliguria persists despite decongestion.</p>
-<hr>
+<p><strong>Supplied findings:</strong> IVC 2.6 cm; hepatic systolic reversal; portal Vmax 40 and Vmin 16 cm/s; interrupted diastolic-only intrarenal flow.</p>
+<p><strong>Interpretation:</strong> Portal pulsatility is 60%; three severe patterns give VExUS grade 3. Compare the supplied patterns with the <a href="https://www.pocus101.com/vexus-ultrasound-score-fluid-overload-and-venous-congestion-assessment/">tutorial’s waveform examples</a>.</p>
+<p><strong>Decision:</strong> Pause empiric fluid loading and evaluate mixed shock. Congestion may contribute to AKI, but does not establish its sole cause. Select circulatory support and any decongestion plan according to perfusion and the full cardiac assessment, rather than automatically starting dobutamine.</p>
 </section>
-<section id="case-3-post-resuscitation-how-much-fluid-did-this-patient-get" class="level3">
-<h3 class="anchored" data-anchor-id="case-3-post-resuscitation-how-much-fluid-did-this-patient-get">Case 3: Post-resuscitation — how much fluid did this patient get?</h3>
-<p><strong>Clinical scenario:</strong> A 55-year-old man is post-arrest, now intubated and sedated. He received 4 L during the resuscitation. BP on norepinephrine is 92/60. The ICU team is reviewing hemodynamic targets.</p>
-<p><strong>What exam would you perform?</strong> Focused cardiac ultrasound with IVC distensibility assessment (mechanically ventilated).</p>
+<section id="case-3-ventilated-after-resuscitation" class="level3">
+<h3 class="anchored" data-anchor-id="case-3-ventilated-after-resuscitation">Case 3: Ventilated after resuscitation</h3>
+<p>A 55-year-old man received 4 L during arrest resuscitation and remains on norepinephrine.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -497,17 +553,15 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><img src="gifs/M5 Case 3 Enlarged IVC — low distensibility ventilated.gif" style="width:100%; border-radius:4px;" alt="Subcostal IVC: enlarged with minimal distensibility in a mechanically ventilated patient"></p>
+<p><img src="gifs/M5 Case 3 Enlarged IVC — low distensibility ventilated.gif" style="width:100%; border-radius:4px;" alt="Enlarged IVC with little respiratory variation"></p>
 </div>
 </div>
-<p><strong>What you see:</strong> IVC 2.3 cm. Distensibility index 10% (below the 18% threshold). Normal LV function. RV mildly enlarged.</p>
-<p><strong>How does this change management?</strong> Not fluid responsive by distensibility criteria. The patient received significant resuscitation volume and the RV is mildly enlarged. Avoid additional fluid boluses. Hold further resuscitation fluid. Focus on optimizing vasopressor titration and monitoring end-organ recovery. Reassess in 4–6 hours.</p>
-<hr>
+<p><strong>Supplied findings:</strong> IVC 2.3 cm; distensibility 10%; preserved LV systolic function; mildly enlarged RV.</p>
+<p><strong>Decision:</strong> Review ventilation and RV loading before interpreting variation. The 10% value alone cannot settle the fluid question. Obtain a suitable dynamic assessment if further fluid is being considered; evaluate venous Doppler when congestion is suspected.</p>
 </section>
-<section id="case-4-distinguishing-cardiogenic-from-septic-shock-with-the-ivc" class="level3">
-<h3 class="anchored" data-anchor-id="case-4-distinguishing-cardiogenic-from-septic-shock-with-the-ivc">Case 4: Distinguishing cardiogenic from septic shock with the IVC</h3>
-<p><strong>Clinical scenario:</strong> A 68-year-old man with no known cardiac history is brought in with BP 76/44, HR 118, and altered mental status. Temp 38.9°C. Lactate 5.2 mmol/L. The team is debating whether to give fluid or start inotropes.</p>
-<p><strong>What exam would you perform?</strong> Focused cardiac ultrasound — LV, RV, IVC.</p>
+<section id="case-4-fever-shock-and-depressed-lv-function" class="level3">
+<h3 class="anchored" data-anchor-id="case-4-fever-shock-and-depressed-lv-function">Case 4: Fever, shock, and depressed LV function</h3>
+<p>A 68-year-old man presents with fever, altered mental status, and BP 76/44.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -518,26 +572,11 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><img src="gifs/M5 Case 4 Plethoric IVC — cardiogenic shock.gif" style="width:100%; border-radius:4px;" alt="Subcostal IVC: dilated, non-collapsing — cardiogenic shock"></p>
-<p><img src="gifs/Case 4 Young patient with viral prodrome and shock.gif" style="width:100%; border-radius:4px;" alt="Globally hypokinetic left ventricle with severely reduced ejection fraction"></p>
+<p><img src="gifs/M5 Case 4 Plethoric IVC — cardiogenic shock.gif" style="width:100%; border-radius:4px;" alt="Dilated IVC with little visible collapse"> <img src="gifs/Case 4 Young patient with viral prodrome and shock.gif" style="width:100%; border-radius:4px;" alt="Illustrative globally hypokinetic LV with severely reduced systolic function"></p>
 </div>
 </div>
-<p><strong>What you see:</strong> Severely reduced EF. Globally hypokinetic LV, not dilated. IVC 2.4 cm, non-collapsing. No effusion. Mild RV dilation.</p>
-<p><strong>How does this change management?</strong> This is not septic shock with a responsive ventricle — it is cardiogenic shock (or mixed shock with a dominant cardiogenic component), likely sepsis-induced cardiomyopathy or a new ischemic event. The plethoric IVC confirms elevated filling pressures. Start dobutamine. Limit fluids to what is required for medication delivery. Obtain an ECG and troponin. Investigate the cause of the cardiomyopathy — myocarditis, ischemia, and sepsis-induced depression are all in the differential.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Case format reminder:</strong> The case ends with a management decision, not just a diagnosis.</p>
-</div>
-</div>
-<hr>
+<p><strong>Supplied findings:</strong> Markedly depressed LV function, IVC 2.4 cm, mild RV dilation, no effusion.</p>
+<p><strong>Decision:</strong> Evaluate a cardiac contribution alongside infection. These findings do not exclude distributive shock or identify the cause of myocardial dysfunction. Obtain comprehensive hemodynamic assessment and investigate ischemia or other causes while treating the presenting illness.</p>
 </section>
 </section>
 <section id="quiz" class="level2">
@@ -552,7 +591,58 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Q1.</strong> A patient has an IVC of 1.8 cm with 40% collapse. What does this tell you about fluid responsiveness?</p>
+<p><strong>Q1.</strong> IVC diameter is 1.8 cm with 40% collapse. Is the patient fluid responsive?</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Answer</strong> The finding cannot establish responsiveness. Use an appropriate dynamic test with a stroke-volume or cardiac-output readout.</p>
+</div>
+</div>
+</div>
+<p><strong>Q2.</strong> Which hepatic abnormality counts as severe in VExUS?</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Answer</strong> Systolic reversal. Diastolic reversal is not the severe VExUS criterion.</p>
+</div>
+</div>
+</div>
+<p><strong>Q3.</strong> Portal Vmax is 30 and Vmin is 15 cm/s. Classify it.</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Answer</strong> (30 − 15) / 30 × 100 = 50%: severe abnormality.</p>
+</div>
+</div>
+</div>
+<p><strong>Q4.</strong> IVC is exactly 2.0 cm with two severe Doppler patterns. What grade?</p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -565,11 +655,11 @@ Caution
 </div>
 <div id="callout-14" class="callout-14-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Answer</strong> An intermediate IVC (1.5–2.1 cm) with intermediate collapse is not reliably predictive of fluid responsiveness in either direction. Do not make a high-stakes fluid decision based on this alone. Use a dynamic test instead — passive leg raise with cardiac output monitoring, or a mini-fluid challenge (100–250 mL) with serial stroke volume or pulse pressure assessment.</p>
+<p><strong>Answer</strong> Grade 3. Both the 2.0 cm boundary and two severe patterns meet the criteria.</p>
 </div>
 </div>
 </div>
-<p><strong>Q2.</strong> How does the IVC behave differently in a mechanically ventilated patient compared to a spontaneously breathing patient?</p>
+<p><strong>Q5.</strong> IVC is 2.5 cm; hepatic and portal patterns are mildly abnormal; renal Doppler is unreadable. Can you assign grade 1?</p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -582,11 +672,11 @@ Caution
 </div>
 <div id="callout-15" class="callout-15-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Answer</strong> In spontaneous breathing, the IVC collapses with inspiration (negative intrathoracic pressure increases venous return). In mechanical ventilation, the IVC distends with insufflation (positive pressure reduces venous return). Use the distensibility index in ventilated patients: (IVC max − IVC min) / IVC min &gt;18% predicts responsiveness. This only applies to passive ventilation without spontaneous efforts and at tidal volumes ≥8 mL/kg.</p>
+<p><strong>Answer</strong> No definitive grade: an unobserved severe renal pattern could make this grade 2. Document the incomplete study and seek a better signal.</p>
 </div>
 </div>
 </div>
-<p><strong>Q3.</strong> What is the clinical significance of a pulsatile portal vein on Doppler?</p>
+<p><strong>Q6.</strong> Does a high VExUS grade automatically mandate diuresis in hypotensive shock?</p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -599,46 +689,24 @@ Caution
 </div>
 <div id="callout-16" class="callout-16-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Answer</strong> Marked portal vein pulsatility (pulsatility fraction &gt;50%) indicates severe systemic venous hypertension transmitted to the portal circulation. It is associated with end-organ congestion (renal, hepatic), worse clinical outcomes, and suggests that further fluid administration is likely harmful. It is a key component of the VExUS congestion assessment framework.</p>
-</div>
-</div>
-</div>
-<p><strong>Q4.</strong> A patient in septic shock has a plethoric IVC. A colleague suggests giving another fluid bolus because “the lactate is still elevated.” How do you respond?</p>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Caution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-17" class="callout-17-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><strong>Answer</strong> A plethoric, non-collapsing IVC indicates elevated right atrial pressure — the patient is not preload-deficient. Giving more fluid is unlikely to improve cardiac output and may worsen venous congestion, impairing organ perfusion. Elevated lactate in this context may reflect impaired hepatic lactate clearance from congestion, not ongoing tissue hypoperfusion from inadequate preload. Focus on treating the cause of the elevated filling pressure and optimize vasopressor or inotropic support.</p>
-</div>
-</div>
-</div>
-<p><strong>Q5.</strong> You image the IVC and find a large, pulsatile structure to the left of the spine. What did you image, and how do you correct it?</p>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Caution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-18" class="callout-18-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><strong>Answer</strong> You imaged the descending aorta, not the IVC. The aorta is to the left of midline, is pulsatile (arterial waveform on Doppler), and does not communicate with the right atrium. To correct: move slightly to the right of midline, angle toward the right atrium, and look for the structure that enters the RA from below with a venous waveform on Doppler.</p>
+<p><strong>Answer</strong> No.&nbsp;Identify the hemodynamic mechanism and integrate perfusion, cardiac function, and treatment response.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
+</section>
+<section id="references-further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="references-further-reading">References &amp; further reading</h2>
+<div class="lecture-list">
+<p><a class="lecture-card" href="https://www.pocus101.com/vexus-ultrasound-score-fluid-overload-and-venous-congestion-assessment/" target="_blank" rel="noopener"><span class="lecture-play">▶</span><span><span class="lecture-title">VExUS: acquisition videos and waveform examples</span><span class="lecture-src">Vi Dinh · POCUS 101 · External tutorial</span></span></a></p>
+</div>
+<ul>
+<li>Dinh V. <a href="https://www.pocus101.com/vexus-ultrasound-score-fluid-overload-and-venous-congestion-assessment/">VExUS Ultrasound Score — Fluid Overload and Venous Congestion Assessment</a>. Primary learning resource for this module; accessed September 4, 2026.</li>
+<li>Beaubien-Souligny W, et al.&nbsp;<a href="https://doi.org/10.1186/s13089-020-00163-w">Quantifying systemic congestion with Point-Of-Care ultrasound: development of the venous excess ultrasound grading system</a>. <em>The Ultrasound Journal</em>. 2020;12:16. Use the VExUS C algorithm; grade 3 requires at least two severe patterns.</li>
+<li>Mukherjee M, et al.&nbsp;<a href="https://www.asecho.org/wp-content/uploads/2025/03/PIIS0894731725000379.pdf">ASE Guidelines for the Echocardiographic Assessment of the Right Heart in Adults and Special Considerations in Pulmonary Hypertension</a>. 2025.</li>
+<li>Monnet X, et al.&nbsp;<a href="https://doi.org/10.1007/s00134-025-08137-z">ESICM guidelines on circulatory shock and hemodynamic monitoring</a>. 2025.</li>
+</ul>
 
 
 </section>
@@ -1096,7 +1164,7 @@ Caution
     var formDiv = document.createElement('div');
     formDiv.className = 'quiz-answer-form';
     formDiv.innerHTML =
-      '<textarea class="quiz-textarea" placeholder="Type your answerâ€¦" rows="3"></textarea>' +
+      '<textarea class="quiz-textarea" placeholder="Type your answer…" rows="3"></textarea>' +
       '<div class="quiz-form-row">' +
         '<button class="quiz-submit-btn" type="button">Get Feedback</button>' +
         '<span class="quiz-typing-slot"></span>' +

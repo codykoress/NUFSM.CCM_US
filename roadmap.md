@@ -30,13 +30,14 @@
 - [x] **02 Left Ventricular Function** — systolic dysfunction, RWMA, Takotsubo, cardiogenic shock, quiz
 - [x] **03 Right Ventricular Function** — RV strain, D-sign, McConnell's sign, TAPSE, PE, ARDS cor pulmonale, quiz
 - [x] **04 Pericardium** — completed 2026-08-31: acquisition clips filled, effusion sizing and mimics tightened, tamponade/Doppler caveats expanded, cases and quiz updated to current guidance, constriction explicitly scoped out, references added
-- [x] **05 IVC & Volume Status** — fluid responsiveness, distensibility index, VExUS/venous congestion, quiz
+- [x] **05 IVC & Volume Status** — completed 2026-09-04: four-vessel VExUS acquisition and grading, corrected hepatic systolic reversal and fluid-responsiveness claims, updated four cases and six-question quiz, references and POCUS 101 guided-practice links
 - [x] **06 Lung Ultrasound** — B-lines, effusion, pneumothorax, consolidation, BLUE protocol, quiz
 - [x] **07 Abdominal Ultrasound** — FAST, free fluid grading, bladder volume, hydronephrosis, ruptured ectopic, quiz
 - [x] **08 Vascular / DVT** — two-point compression, augmentation, catheter-associated DVT, quiz
 - [x] **09 Shock & Arrest Integration** — 4-question framework, hemodynamic phenotypes, complex integration cases, quiz
 
 ### Visual assets
+- [x] Module 05: three original SVG waveform illustrations comparing normal, mild, and severe hepatic, portal, and intrarenal venous patterns; added captions and credits (2026-09-04).
 - [x] Probe placement SVG diagrams (×4) for Module 01: subcostal, PLAX, PSAX (with rotation arrow), apical 4C — chest wall redrawn with life-like shading (skin gradients, pec contours, clavicle ridges, nipples on MCL, umbilicus)
 - [x] **88 image clips (87 GIF + 1 AVIF) currently embedded** (2026-07-06), by display module: 01=9, 02=20, 03=13, 04=14, 05=7, 06 Lung=9, 07 Abdominal=7, 08 DVT=4, 09 Integration=5. Every module now has case clips.
 - [x] Normal acquisition clips intentionally duplicated across Modules 01, 02, 03 for module self-containment — learner can study each module standalone
@@ -50,8 +51,8 @@
 - [ ] ~54 clips embedded but flagged `*` (missing individual contributor metadata — to be resolved). Includes the 32 integration-case clips added 2026-07-06, credited to their POCUS Atlas galleries but without per-clip contributor names yet.
 
 ### Video resources
-- [x] **17 external video link-out cards** across Modules 1, 2, 3, 4, 6, 7, 8, and 9. Most are full-length lectures from the University of Utah Echo & Perioperative Ultrasound FoCUS program; Module 4 adds focused resources from Yale School of Medicine and ACEP. Styled via `.lecture-card` in `styles.css` and linked out rather than hosted. Attribution is maintained in `credits.qmd`.
-- [ ] No matching Utah lecture or equivalent focused resource selected for Module 5 (IVC)
+- [x] **18 external teaching resource link-out cards** across all nine modules. Most are full-length lectures from the University of Utah Echo & Perioperative Ultrasound FoCUS program; Module 4 adds focused resources from Yale School of Medicine and ACEP. Styled via `.lecture-card` in `styles.css` and linked out rather than hosted. Attribution is maintained in `credits.qmd`.
+- [x] Module 5: POCUS 101 VExUS tutorial selected for acquisition videos and waveform examples; external resource card and attribution added (2026-09-04).
 - [ ] Utah has a `FoCUS for Valve Disease` lecture with no corresponding module — add if a valve module is created
 
 ---
@@ -73,7 +74,7 @@
 **Still open (1 clip):**
 - [ ] **M09 Case 5** — post-surgical windows; clip not yet sourced (lowest priority, placeholder left in place; target filename + embed snippet in `CLAUDE.md` → Outstanding work)
 
-Soft gaps for later refinement (a clip is embedded but a better match exists): M05 Case 2 (add hepatic-vein/portal Doppler waveforms), M06 Case 4 (static vs dynamic air bronchograms), M08 Case 3 (explicitly-labeled catheter-associated DVT). Details in `CLAUDE.md` → Outstanding work.
+Soft gaps for later refinement (a clip is embedded but a better match exists): M05 Case 2 (optional future local Doppler clips; supplied waveform data and POCUS 101 examples now linked), M06 Case 4 (static vs dynamic air bronchograms), M08 Case 3 (explicitly-labeled catheter-associated DVT). Details in `CLAUDE.md` → Outstanding work.
 
 ### Metadata — credits page
 - [ ] Resolve the 22 clips marked `*` (newly-added Module 2 integration case clips, Module 3 Case 2 clips, Module 4 PLAX/subcostal/Doppler additions, Module 7 severe AS, plus the original 8 unresolved placeholders)
@@ -85,7 +86,7 @@ Soft gaps for later refinement (a clip is embedded but a better match exists): M
 - [ ] `credits.qmd` still has rows for two clips no module embeds (`Normal PLAX`, `severe aortic stenosis`) — decide whether to drop the rows or keep them for future re-use
 
 ### Per-module content gaps
-- [ ] References & further reading sections — Module 04 complete; Modules 01–03 and 05–09 remaining
+- [ ] References & further reading sections — Modules 04–05 complete; Modules 01–03 and 06–09 remaining
 - [ ] Integration case video slots: replace "Loops for interpretation" with actual clips as they are sourced (see Clips table above)
 - [ ] Module 6: "Before/after" serial exam comparison clip
 - [ ] Credits page: Curriculum development section and Acknowledgments
