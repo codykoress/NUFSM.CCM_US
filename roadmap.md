@@ -12,6 +12,8 @@
 
 ### Module content (written)
 
+- [x] Module 05 quiz revised to six case-based reasoning questions covering fluid responsiveness versus tolerance, congestive AKI, discordant Doppler trends, incomplete studies, and ventilator effects; explanatory answers added (2026-09-06).
+
 > **Restructured to 9 modules.** The site now ships **9 modules** (display numbers 01–09). The earlier *Basic Valve Assessment* and *Procedural Guidance* modules (from the old "modules 7–11" build) were dropped/consolidated. Display numbers no longer match the source filenames — the mapping is below.
 
 | Display | Title | Source file |

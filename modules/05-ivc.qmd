@@ -179,49 +179,64 @@ A 68-year-old man presents with fever, altered mental status, and BP 76/44.
 
 ## Quiz
 
+*For each case, explain your interpretation, choose a next step, and name a finding that would change your plan. Use the waveform reference as needed; focus on reasoning rather than memorizing cutoffs.*
+
 ::: {.callout-note}
-**Q1.** IVC diameter is 1.8 cm with 40% collapse. Is the patient fluid responsive?
+**Q1.** A woman with pneumonia remains hypotensive after initial resuscitation. She is breathing rapidly, her IVC is small and collapses markedly, and her LV appears hyperdynamic. Your intern says, “She is clearly dry; give another liter.” What can you infer from these images, what remains unknown, and how would you decide whether more fluid will help?
 
 ::: {.callout-caution collapse="true"}
 **Answer**
-The finding cannot establish responsiveness. Use an appropriate dynamic test with a stroke-volume or cardiac-output readout.
+The images are compatible with low right-sided filling pressure, but vigorous inspiration can exaggerate IVC collapse. A hyperdynamic EF does not establish adequate cardiac output. The missing information is whether additional preload improves stroke volume and whether the patient can tolerate fluid.
+
+If feasible, perform PLR with a real-time stroke-volume or cardiac-output measurement and assess lung findings and perfusion. A reproducible increase supports responsiveness; absent improvement or worsening respiratory congestion argues against further empiric fluid. Explain how you would reassess after any intervention rather than treating the IVC appearance as the endpoint.
 :::
 
-**Q2.** Which hepatic abnormality counts as severe in VExUS?
+**Q2.** A patient with heart failure and infection has persistent hypotension, rising creatinine, a dilated IVC, markedly pulsatile portal flow, and interrupted intrarenal venous flow. A colleague proposes fluid “to improve renal perfusion.” Explain how congestion could contribute to the kidney injury. What else must you assess before choosing between further fluid, circulatory support, and decongestion?
 
 ::: {.callout-caution collapse="true"}
 **Answer**
-Systolic reversal. Diastolic reversal is not the severe VExUS criterion.
+Renal perfusion depends on the pressure gradient across the kidney. Elevated venous pressure can reduce that gradient even when the circulation contains substantial fluid. The findings support a congestive contribution, but AKI can also reflect low forward flow, sepsis, obstruction, or other injury.
+
+Assess perfusion, LV/RV function, respiratory status, and the trajectory after prior treatment. Pause reflexive fluid loading while clarifying the hemodynamics. Neither rising creatinine nor an abnormal VExUS examination selects a treatment on its own; worsening hypoperfusion would make an unqualified “diurese now” answer inadequate as well.
 :::
 
-**Q3.** Portal Vmax is 30 and Vmin is 15 cm/s. Classify it.
+**Q3.** During a technically adequate PLR, a patient's measured stroke volume rises reproducibly. However, the patient also has increasing oxygen requirements, diffuse B-lines, and severe venous Doppler abnormalities. The team concludes, “The test is positive, so we should give fluid.” Do you agree? Explain the distinction that matters and how you would make the decision.
 
 ::: {.callout-caution collapse="true"}
 **Answer**
-(30 − 15) / 30 × 100 = 50%: severe abnormality.
+A positive PLR demonstrates preload responsiveness; it does not establish that fluid is necessary or that its benefits exceed its risks. This patient may increase stroke volume with fluid while also developing worse pulmonary or systemic congestion.
+
+Establish whether ongoing hypoperfusion requires an increase in flow, then weigh that potential benefit against the respiratory and venous findings. Consider the underlying shock mechanism and alternatives to fluid. A defensible answer acknowledges both responsiveness and poor tolerance and specifies what response or deterioration would prompt reassessment.
 :::
 
-**Q4.** IVC is exactly 2.0 cm with two severe Doppler patterns. What grade?
+**Q4.** A patient with severe tricuspid regurgitation is being treated for congestion. Over the next day, breathing and edema improve, portal pulsatility decreases, and intrarenal flow becomes more continuous. Hepatic systolic reversal persists. A resident wants to intensify fluid removal until every waveform is normal. How would you interpret the discordant findings and respond?
 
 ::: {.callout-caution collapse="true"}
 **Answer**
-Grade 3. Both the 2.0 cm boundary and two severe patterns meet the criteria.
+Severe TR can sustain hepatic systolic reversal despite improvement in congestion. The other Doppler changes and the clinical trajectory support improvement; the persistent hepatic finding alone does not establish treatment failure.
+
+Use serial findings across vessels together with perfusion, renal function, and symptoms to judge the remaining need for decongestion. Do not pursue normalization of a valve-related waveform as an isolated treatment target. This limitation is illustrated in the [POCUS Journal case discussion](https://pocusjournal.com/article/19348/).
 :::
 
-**Q5.** IVC is 2.5 cm; hepatic and portal patterns are mildly abnormal; renal Doppler is unreadable. Can you assign grade 1?
-
-::: {.callout-caution collapse="true"}
-**Answer**
-No definitive grade: an unobserved severe renal pattern could make this grade 2. Document the incomplete study and seek a better signal.
-:::
-
-**Q6.** Does a high VExUS grade automatically mandate diuresis in hypotensive shock?
+**Q5.** A hypotensive patient has an enlarged IVC. Hepatic and portal signals look only mildly abnormal, but you cannot obtain interpretable renal Doppler. The handoff says, “VExUS is mild, so further fluid is safe.” Identify the two reasoning errors. How would you communicate your findings and decide what to do next?
 
 ::: {.callout-caution collapse="true"}
 **Answer**
-No. Identify the hemodynamic mechanism and integrate perfusion, cardiac function, and treatment response.
+First, an unreadable vessel is missing information, not a normal result; a severe renal pattern could change the grade. Second, even a complete low-grade examination would not demonstrate responsiveness or guarantee fluid tolerance.
+
+Report the observed patterns and the technical limitation explicitly. Seek a better renal signal or experienced review when useful, while using the patient's perfusion, cardiac/lung findings, and a suitable dynamic assessment to guide the immediate decision. Uncertainty should be visible in the handoff rather than hidden behind a reassuring score.
+:::
+
+**Q6.** Shortly after intubation and an increase in PEEP, a patient's IVC becomes larger and shows little respiratory variation. Blood pressure falls. A colleague interprets this as new fluid overload and recommends diuresis. Why is the timing important, and what would you reassess before acting?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+Positive-pressure ventilation changes intrathoracic pressure, venous return, and RV loading. An abrupt IVC change after a ventilator adjustment need not represent newly accumulated fluid. Reduced respiratory variation also cannot be interpreted using the spontaneous-breathing RA pressure algorithm.
+
+Urgently reassess the patient, ventilator settings, RV/LV function, lung findings, and other causes of post-intubation hypotension. Compare the examination with the pre-intubation findings. The decision should address the mechanism of deterioration rather than treating a larger IVC as an automatic indication for fluid removal.
 :::
 :::
+
 
 ## References & further reading
 
