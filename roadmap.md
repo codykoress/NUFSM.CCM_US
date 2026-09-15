@@ -6,12 +6,14 @@
 
 ### Site structure
 - [x] Quarto project initialized with `_quarto.yml` navbar
-- [x] `index.qmd` — home page with links to all 11 modules
+- [x] `index.qmd` — home page with links to all 9 modules
 - [x] `credits.qmd` — canonical attribution table organized by module
-- [x] All 11 modules linked in navbar and home page
+- [x] All 9 modules linked in navbar and home page
 
 ### Module content (written)
 
+- [x] Modules 01–05: all 17 adversarial-review findings remediated across teaching text, cases, quizzes, references, and the new PLAX landmark schematic; related Integration statements synchronized. See `reviews/modules-01-05-content-review-2026-09-14.md` (2026-09-14).
+- [x] Module 06 lung ultrasound: all 12 adversarial-review findings remediated; BLUE profiles, acquisition, cases, quiz, references, and the related DVT/Integration statements were rebuilt or synchronized. The unverified Case 4 cine was withdrawn in favor of an explicit text case pending a faculty-verified static-bronchogram loop. See `reviews/lung-ultrasound-content-review-2026-09-14.md` (2026-09-14).
 - [x] Module 05 quiz revised to six case-based reasoning questions covering fluid responsiveness versus tolerance, congestive AKI, discordant Doppler trends, incomplete studies, and ventilator effects; explanatory answers added (2026-09-06).
 
 > **Restructured to 9 modules.** The site now ships **9 modules** (display numbers 01–09). The earlier *Basic Valve Assessment* and *Procedural Guidance* modules (from the old "modules 7–11" build) were dropped/consolidated. Display numbers no longer match the source filenames — the mapping is below.
@@ -41,7 +43,8 @@
 ### Visual assets
 - [x] Module 05: three original SVG waveform illustrations comparing normal, mild, and severe hepatic, portal, and intrarenal venous patterns; added captions and credits (2026-09-04).
 - [x] Probe placement SVG diagrams (×4) for Module 01: subcostal, PLAX, PSAX (with rotation arrow), apical 4C — chest wall redrawn with life-like shading (skin gradients, pec contours, clavicle ridges, nipples on MCL, umbilicus)
-- [x] **88 image clips (87 GIF + 1 AVIF) currently embedded** (2026-07-06), by display module: 01=9, 02=20, 03=13, 04=14, 05=7, 06 Lung=9, 07 Abdominal=7, 08 DVT=4, 09 Integration=5. Every module now has case clips.
+- [x] **100 clip references (99 GIF + 1 AVIF; 77 unique assets) currently embedded** (2026-09-14), by display module: 01=9, 02=23, 03=21, 04=15, 05=8, 06 Lung=8, 07 Abdominal=7, 08 DVT=4, 09 Integration=5. Module 06 Case 4 intentionally uses a text placeholder until a verified static-bronchogram cine is sourced.
+- [x] Original PLAX-landmark and lung-survey SVG teaching diagrams added, credited, rendered, and checked at desktop/mobile widths (2026-09-14).
 - [x] Normal acquisition clips intentionally duplicated across Modules 01, 02, 03 for module self-containment — learner can study each module standalone
 - [x] Media attribution maintained directly in `credits.qmd`, with contributor names, source links, and license notes where available
 - [x] Module 02 integration cases (1–4) — all loops embedded
@@ -63,20 +66,21 @@
 
 ### Clips — integration case slots
 
-**27 of the 28 integration-case slots are now embedded** (2026-07-06). All clips sourced from The POCUS Atlas; credited in `credits.qmd` (contributors still flagged `*`). *(The step-by-step `clip-embed-worksheet.md` was retired 2026-07-09 — its remaining tasks now live in `CLAUDE.md` → Outstanding work.)*
+**26 of the 28 integration-case slots are embedded.** Module 06 Case 4 intentionally reverted to a text-based case on 2026-09-14 because its prior loop was not verified to show the decisive static bronchograms. Embedded clips are credited in `credits.qmd` (some contributors remain flagged `*`).
 
 - [x] 03 RV (`03-rv.qmd`) — Cases 1, 3, 4
 - [x] 04 Pericardium (`04-pericardium.qmd`) — Cases 1–6
 - [x] 05 IVC (`05-ivc.qmd`) — Cases 1–4 *(Case 4 reuses the Module 2 myocarditis clip for the reduced-EF LV)*
-- [x] 06 Lung (`08-lung.qmd`) — Cases 1–4
+- [x] 06 Lung (`08-lung.qmd`) — Cases 1–3; Case 4 is an explicit text case pending a verified matching cine
 - [x] 07 Abdominal (`09-abdominal.qmd`) — Cases 1–4
 - [x] 08 Vascular / DVT (`10-dvt.qmd`) — Cases 1–3
 - [x] 09 Integration (`06-integration.qmd`) — Cases 1, 3, 4
 
-**Still open (1 clip):**
+**Still open (2 clips):**
+- [ ] **M06 Case 4** — faculty-verified consolidation cine with static bronchograms; the text-based case is clinically complete and should remain until a scenario-matched loop is confirmed
 - [ ] **M09 Case 5** — post-surgical windows; clip not yet sourced (lowest priority, placeholder left in place; target filename + embed snippet in `CLAUDE.md` → Outstanding work)
 
-Soft gaps for later refinement (a clip is embedded but a better match exists): M05 Case 2 (optional future local Doppler clips; supplied waveform data and POCUS 101 examples now linked), M06 Case 4 (static vs dynamic air bronchograms), M08 Case 3 (explicitly-labeled catheter-associated DVT). Details in `CLAUDE.md` → Outstanding work.
+Soft gaps for later refinement (a clip is embedded but a better match exists): M05 Case 2 (optional future local Doppler clips; supplied waveform data and POCUS 101 examples now linked) and M08 Case 3 (explicitly labeled catheter-associated DVT). Details in `CLAUDE.md` → Outstanding work.
 
 ### Metadata — credits page
 - [ ] Resolve the 22 clips marked `*` (newly-added Module 2 integration case clips, Module 3 Case 2 clips, Module 4 PLAX/subcostal/Doppler additions, Module 7 severe AS, plus the original 8 unresolved placeholders)
@@ -88,7 +92,9 @@ Soft gaps for later refinement (a clip is embedded but a better match exists): M
 - [ ] `credits.qmd` still has rows for two clips no module embeds (`Normal PLAX`, `severe aortic stenosis`) — decide whether to drop the rows or keep them for future re-use
 
 ### Per-module content gaps
-- [ ] References & further reading sections — Modules 04–05 complete; Modules 01–03 and 06–09 remaining
+- [x] Modules 01–05: resolved all 17 findings in `reviews/modules-01-05-content-review-2026-09-14.md`; synchronized anatomy, cases, quizzes, references, and related Integration statements (2026-09-14).
+- [x] Module 06 lung ultrasound: resolved all 12 findings in `reviews/lung-ultrasound-content-review-2026-09-14.md`; synchronized cases, quiz, media policy, DVT and Integration statements (2026-09-14).
+- [ ] References & further reading sections — display Modules 01–06 and 09 complete; Modules 07–08 remaining
 - [ ] Integration case video slots: replace "Loops for interpretation" with actual clips as they are sourced (see Clips table above)
 - [ ] Module 6: "Before/after" serial exam comparison clip
 - [ ] Credits page: Curriculum development section and Acknowledgments

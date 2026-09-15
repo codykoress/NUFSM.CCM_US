@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="650" viewBox="0 0 1120 650" role="img" aria-labelledby="title desc">
+<title id="title">Lung ultrasound coverage map</title>
+<desc id="desc">Unrolled map of one hemithorax showing upper and lower anterior, lateral, and posterior regions. Repeat on the other side. Anterior and lateral regions comprise the eight-zone bilateral B-line survey; posterior regions extend coverage. BLUE and PLAPS landmarks are summarized below.</desc>
+<defs><style>text{font-family:Arial,sans-serif;fill:#17394b}.title{font-size:27px;font-weight:700}.h{font-size:23px;font-weight:700}.t{font-size:19px}.small{font-size:17px}.zone{fill:#e3f1f7;stroke:#779caf;stroke-width:2}.posterior{fill:#edf0f4;stroke:#94a5b6;stroke-width:2}</style></defs>
+<rect width="1120" height="650" rx="18" fill="#f8fafc"/>
+<text x="32" y="44" class="title">Scan both sides · record the regions you actually obtain</text>
+<text x="32" y="76" class="t">One hemithorax, unrolled from sternum to spine. Repeat the same map on the other side.</text>
+<text x="77" y="122" class="h">Anterior</text><text x="423" y="122" class="h">Lateral</text><text x="775" y="122" class="h">Posterior</text>
+<rect x="52" y="146" width="316" height="113" rx="10" class="zone"/><rect x="52" y="268" width="316" height="113" rx="10" class="zone"/>
+<rect x="395" y="146" width="316" height="113" rx="10" class="zone"/><rect x="395" y="268" width="316" height="113" rx="10" class="zone"/>
+<rect x="738" y="146" width="330" height="113" rx="10" class="posterior"/><rect x="738" y="268" width="330" height="113" rx="10" class="posterior"/>
+<text x="86" y="200" class="h">Upper anterior</text><text x="86" y="322" class="h">Lower anterior</text>
+<text x="429" y="200" class="h">Upper lateral</text><text x="429" y="322" class="h">Lower lateral</text>
+<text x="774" y="200" class="h">Upper posterior</text><text x="774" y="322" class="h">Lower posterior</text>
+<text x="86" y="233" class="small">Sternum → anterior axillary line</text><text x="425" y="233" class="small">Anterior → posterior axillary line</text><text x="770" y="233" class="small">Posterior axillary line → spine</text>
+<text x="86" y="355" class="small">Core B-line survey</text><text x="429" y="355" class="small">Core B-line survey</text><text x="774" y="355" class="small">Extend coverage when safe</text>
+<text x="53" y="413" class="t">Use a consistent upper/lower boundary and confirm the diaphragm at the lung base.</text>
+<rect x="32" y="443" width="1056" height="170" rx="12" fill="#e8f0e9"/>
+<text x="53" y="477" class="h">Rapid BLUE points are starting sites, not complete coverage</text>
+<text x="53" y="510" class="t">Upper: roots of middle/ring fingers of the upper BLUE hand, just beneath the clavicle.</text>
+<text x="53" y="540" class="t">Lower: center of the lower palm. Hands are stacked, fingertips toward the sternum.</text>
+<text x="53" y="570" class="t">PLAPS: at the lower-point level, as posterior as accessible around the posterior axillary line.</text>
+<text x="32" y="637" class="small" style="fill:#60788a">Schematic coverage map · mark inaccessible regions as “not assessed” · document sampled interspaces for trends</text>
+</svg>

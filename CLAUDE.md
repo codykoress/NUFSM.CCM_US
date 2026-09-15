@@ -4,7 +4,7 @@
 
 Quarto-based point-of-care ultrasound (POCUS) curriculum for critical care medicine fellows. 9 standalone modules (display numbers 01–09) covering cardiac windows through shock/arrest integration, each with embedded GIF/AVIF clips, integration cases, and a quiz. Display numbers do **not** match source filenames — see the mapping table in `roadmap.md`.
 
-**Root:** `C:\Users\codyk\Documents\GitHub\NUFSM.CCM_US`
+**Root:** `C:\Users\codyk\GitHub\NUFSM.CCM_US`
 
 ---
 
@@ -88,11 +88,15 @@ Each module ends with a quiz. Format is consistent across all modules — match 
 
 See `roadmap.md` for the full breakdown. Top priorities:
 
-- **1 integration-case clip still open** — M09 Case 5 (lowest priority; details below). 88 clips are embedded as of 2026-07-06.
+- **2 integration cases intentionally use text placeholders** — M09 Case 5 and M06 Case 4. The latter avoids an unverified static/dynamic bronchogram claim (2026-09-14).
 - Resolve the ~54 clips marked `*` in credits (missing per-clip contributor metadata)
-- Add References sections to all modules
+- Clinical references are present in display Modules 01–06 and 09; finish the remaining standalone reference sections.
 
-### Last open clip — M09 Case 5 (post-surgical, won't wean)
+### Open case clips
+
+**M06 Case 4 (fever, hypoxemia, and static bronchograms):** The previous PLAPS loop was withdrawn on 2026-09-14 because it was not verified to demonstrate static bronchograms. Keep the complete text-based case until a faculty-reviewed, scenario-matched static-bronchogram cine is sourced, credited, and embedded.
+
+**M09 Case 5 (post-surgical, won't wean):**
 
 Source: a post-surgical loop with a small effusion and mildly weak LV — hard to find cleanly on The POCUS Atlas; OK to leave the text placeholder until a good match turns up. When sourced:
 
@@ -110,9 +114,9 @@ Source: a post-surgical loop with a small effusion and mildly weak LV — hard t
 
 | Where | Embedded now | Ideal replacement/addition |
 |---|---|---|
-| M04 Case 2 (very large malignant effusion) | Swinging-heart clip that also shows chamber collapse | Very large effusion *without* collapse |
+| M04 Case 2 (cancer-associated effusion) | Large effusion without visible RV collapse; replaced 2026-08-31 | Current clip retained; suspected malignant involvement is not a confirmed fluid diagnosis |
 | M05 Case 2 (congested CHF) | Plethoric IVC only | Add hepatic-vein/portal-vein PW Doppler waveform clips (not on the Atlas IVC page) |
-| M06 Case 4 (ICU fever/hypoxia) | PLAPS consolidation with *dynamic* air bronchograms | *Static* air bronchograms |
+| M06 Case 4 (ICU fever/hypoxia) | Text-based case with supplied static-bronchogram findings; unverified clip withdrawn 2026-09-14 | Faculty-verified *static* air-bronchogram cine; retain the text case until sourced |
 | M08 Case 3 (catheter-associated DVT) | Generic partially-compressible CFV clip | Explicitly-labeled catheter-associated DVT |
 - ~~Scan logbook for fellows~~ done — `case-logbook.html` + `competency-dashboard.html` are backed by the Cloudflare Worker's `/api` (D1 database `pocus-logbook`). Fellows sign in with PD-issued access codes (generated in the registry roster); faculty signs in with the `FACULTY_CODE` worker secret. Proctored counts flow live from logbook to registry. One-time deployment steps are in `cloudflare-worker/worker.js` header; `mock-api.py` mocks the API locally for testing. Fellow data lives only in D1 — never commit it here.
 - ~~Decide hosting platform~~ done — GitHub Pages serving `docs/` at https://codykoress.github.io/NUFSM.CCM_US/ (deployed 2026-06-12)

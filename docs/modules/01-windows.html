@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -39,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -187,6 +190,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#quiz" id="toc-quiz" class="nav-link" data-scroll-target="#quiz">Quiz</a></li>
   <li><a href="#video-lectures" id="toc-video-lectures" class="nav-link" data-scroll-target="#video-lectures">Video lectures</a></li>
+  <li><a href="#references-and-further-reading" id="toc-references-and-further-reading" class="nav-link" data-scroll-target="#references-and-further-reading">References and further reading</a></li>
   </ul>
 </nav>
     </div>
@@ -227,10 +231,10 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="machine-setup" class="level2">
 <h2 class="anchored" data-anchor-id="machine-setup">1. Machine setup</h2>
-<p><strong>Probe:</strong> Phased array (cardiac) probe. The small footprint fits between ribs; the sector beam provides the wide near-field needed to visualize the full heart.</p>
+<p><strong>Probe:</strong> Phased array (cardiac) probe. Its small footprint fits between ribs; the sector widens with depth to include deeper cardiac structures.</p>
 <p><strong>Preset:</strong> Select the <strong>cardiac preset</strong>. This does two important things:</p>
 <ol type="1">
-<li>Inverts the depth convention so the apex appears at the top of the screen in apical views (cardiac orientation).</li>
+<li>Uses cardiac imaging settings and usually places the display indicator on screen right; confirm the actual indicator position on your machine. This is a horizontal display convention, not a reversal of depth.</li>
 <li>Optimizes gain, frequency, and frame rate for cardiac imaging.</li>
 </ol>
 <p><strong>Depth:</strong> Adjust so the far wall of the structure of interest is visible with a small margin beyond it. Too little depth clips posterior structures; too much depth makes cardiac structures appear small and reduces resolution.</p>
@@ -321,7 +325,7 @@ Tip
 </tr>
 </tbody>
 </table>
-<p><strong>Why this window first:</strong> In undifferentiated shock or cardiac arrest, the subcostal view is the fastest to obtain and does not require repositioning the patient. It is the window most likely to be achievable in a supine, ventilated patient.</p>
+<p><strong>Choosing the first window:</strong> Subcostal imaging is often accessible in a supine patient. Use the best available window rather than persisting with a poor one. During cardiac arrest, prepare the probe before a scheduled rhythm check and do not prolong interruptions in chest compressions to obtain an image.</p>
 <section id="subcostal-ivc" class="level4">
 <h4 class="anchored" data-anchor-id="subcostal-ivc">Subcostal IVC</h4>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -384,7 +388,7 @@ Tip
 </tr>
 </tbody>
 </table>
-<p><strong>Why this view matters:</strong> The subcostal IVC view is the basis for assessing volume status and fluid responsiveness — IVC diameter and its respiratory variation (collapsibility/distensibility). These measurements and their interpretation are developed in Module 5.</p>
+<p><strong>Why this view matters:</strong> IVC imaging contributes to right atrial pressure and venous congestion assessment. Diameter and respiratory variation do not independently measure circulating volume or predict benefit from fluid. <a href="../modules/05-ivc.html">Module 5</a> explains the limitations and dynamic assessment of fluid responsiveness.</p>
 <hr>
 </section>
 </section>
@@ -408,9 +412,15 @@ Tip
 <p><img src="images/probe-plax.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="380"></p>
 </figure>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PLAX.svg" class="img-fluid figure-img" width="500"></p>
+<figcaption>Parasternal long-axis view — cardiac anatomy.</figcaption>
+</figure>
+</div>
 <p><strong>How to optimize:</strong></p>
 <ul>
-<li>Move up or down one rib space if the LV appears foreshortened or the apex is cut off.</li>
+<li>Move up or down one interspace to maximize true LV long-axis alignment. The true apex is usually outside standard PLAX; do not rotate into an oblique plane simply to display an apparent apex.</li>
 <li>Tilt the probe slightly medially or laterally to bring the aortic root and LV into the same plane.</li>
 <li>The aortic valve should appear central and open symmetrically in systole.</li>
 <li>The LV walls should appear equal in thickness and the chamber should not appear foreshortened.</li>
@@ -418,11 +428,15 @@ Tip
 <p><strong>Normal anatomy visible:</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/PLAX.svg" class="img-fluid figure-img" width="500"></p>
-<figcaption>Parasternal long axis view — normal cardiac anatomy.</figcaption>
+<p><img src="images/plax-landmarks.svg" class="img-fluid figure-img" width="500"></p>
+<figcaption>PLAX schematic — two aortic cusps, the LA and posterior descending aorta; the true apex is outside the plane.</figcaption>
 </figure>
 </div>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Structure</th>
@@ -456,7 +470,7 @@ Tip
 </tr>
 <tr class="odd">
 <td>Aortic valve</td>
-<td>Right side of image — three thin leaflets</td>
+<td>Screen right — usually two cusps in this long-axis plane</td>
 </tr>
 <tr class="even">
 <td>Aortic root / LVOT</td>
@@ -464,11 +478,11 @@ Tip
 </tr>
 <tr class="odd">
 <td>Descending thoracic aorta</td>
-<td>Far left — round cross-section</td>
+<td>Round cross-section posterior to the LA when included at sufficient depth</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Key landmark:</strong> The descending thoracic aorta appears in cross-section at the far left of the PLAX image. This is an important orientation landmark used in pathology assessment (covered in Module 4).</p>
+<p><strong>Key landmark:</strong> Identify the descending thoracic aorta posterior to the LA. This anatomical relationship helps distinguish pleural from pericardial fluid in <a href="../modules/04-pericardium.html">Module 4</a>. The aorta may require additional depth to include.</p>
 <section id="plax-rv-inflow" class="level4">
 <h4 class="anchored" data-anchor-id="plax-rv-inflow">PLAX RV inflow</h4>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -526,7 +540,7 @@ Tip
 </tr>
 </tbody>
 </table>
-<p><strong>Why this view matters:</strong> The RV inflow view gives a dedicated look at the tricuspid valve and is the preferred window for aligning continuous-wave Doppler with a tricuspid regurgitation jet to estimate right ventricular systolic pressure (RVSP). Tricuspid pathology and RVSP estimation are developed in later modules.</p>
+<p><strong>Why this view matters:</strong> The RV inflow view gives a dedicated look at the tricuspid valve and may align well with a tricuspid regurgitation jet. For velocity measurement, compare available windows and use the best parallel alignment and complete Doppler envelope; no single window is preferred in every patient.</p>
 <hr>
 </section>
 </section>
@@ -590,15 +604,15 @@ Tip
 </tr>
 <tr class="odd">
 <td>Pulmonary valve</td>
-<td>Anterior left</td>
+<td>Anterior, toward screen right</td>
 </tr>
 <tr class="even">
 <td>Tricuspid valve</td>
-<td>Right</td>
+<td>Toward screen left</td>
 </tr>
 <tr class="odd">
 <td>Right atrium</td>
-<td>Right</td>
+<td>Screen left</td>
 </tr>
 <tr class="even">
 <td>Left atrium</td>
@@ -706,7 +720,7 @@ Tip
 <p><strong>How to optimize:</strong></p>
 <ul>
 <li>Left lateral decubitus positioning brings the heart toward the chest wall and significantly improves image quality — use it whenever possible.</li>
-<li>In the cardiac preset, the apex should appear at the <strong>top</strong> of the screen. Reduce depth so the apex sits at the top with a small margin.</li>
+<li>The apex is in the near field, near the top of the image. Set depth to include both atria with a small margin; changing depth does not correct apical foreshortening.</li>
 <li>In obese patients or those with COPD, the PMI may be displaced — palpate rather than assuming position.</li>
 <li>If the view is suboptimal, try moving one interspace lateral or inferior.</li>
 </ul>
@@ -735,27 +749,27 @@ Tip
 </tr>
 <tr class="even">
 <td>Left ventricle</td>
-<td>Left side of image</td>
+<td>Screen right</td>
 </tr>
 <tr class="odd">
 <td>Right ventricle</td>
-<td>Right side of image (smaller than LV)</td>
+<td>Screen left (normally smaller than LV)</td>
 </tr>
 <tr class="even">
 <td>Mitral valve</td>
-<td>Left AV valve — opens widely in diastole</td>
+<td>Screen-right AV valve — opens widely in diastole</td>
 </tr>
 <tr class="odd">
 <td>Tricuspid valve</td>
-<td>Right AV valve — inserts slightly more apically than mitral</td>
+<td>Screen-left AV valve — inserts slightly more apically than mitral</td>
 </tr>
 <tr class="even">
 <td>Left atrium</td>
-<td>Bottom left</td>
+<td>Bottom right</td>
 </tr>
 <tr class="odd">
 <td>Right atrium</td>
-<td>Bottom right</td>
+<td>Bottom left</td>
 </tr>
 <tr class="even">
 <td>Interventricular septum</td>
@@ -810,11 +824,11 @@ Tip
 <tbody>
 <tr class="odd">
 <td>Left ventricle</td>
-<td>Left side of image</td>
+<td>Screen right</td>
 </tr>
 <tr class="even">
 <td>Right ventricle</td>
-<td>Right side of image</td>
+<td>Screen left</td>
 </tr>
 <tr class="odd">
 <td>LV outflow tract (LVOT)</td>
@@ -834,19 +848,19 @@ Tip
 </tr>
 <tr class="odd">
 <td>Mitral valve</td>
-<td>Left AV valve</td>
+<td>Screen-right AV valve</td>
 </tr>
 <tr class="even">
 <td>Tricuspid valve</td>
-<td>Right AV valve</td>
+<td>Screen-left AV valve</td>
 </tr>
 <tr class="odd">
 <td>Left atrium</td>
-<td>Bottom left (may be partially out of plane)</td>
+<td>Bottom right (may be partially out of plane)</td>
 </tr>
 <tr class="even">
 <td>Right atrium</td>
-<td>Bottom right</td>
+<td>Bottom left</td>
 </tr>
 </tbody>
 </table>
@@ -880,7 +894,7 @@ Caution
 </div>
 <div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Answer</strong> Parasternal long axis (PLAX). Expected structures include: right ventricle (near-field), interventricular septum, left ventricle, anterior and posterior mitral valve leaflets, left atrium, aortic valve, aortic root/LVOT, and the descending thoracic aorta in cross-section at the far left.</p>
+<p><strong>Answer</strong> Parasternal long axis (PLAX). Expected structures include: right ventricle (near-field), interventricular septum, left ventricle, anterior and posterior mitral valve leaflets, left atrium, aortic valve, aortic root/LVOT, and the descending thoracic aorta in cross-section posterior to the LA when included at sufficient depth.</p>
 </div>
 </div>
 </div>
@@ -948,7 +962,7 @@ Caution
 </div>
 <div id="callout-12" class="callout-12-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Answer</strong> The tricuspid valve inserts slightly more apically on the interventricular septum than the mitral valve — this apical offset is the key distinguishing feature. The tricuspid is on the right side of the image (associated with the RV and RA); the mitral is on the left (associated with the LV and LA).</p>
+<p><strong>Answer</strong> The tricuspid valve inserts slightly more apically on the septum than the mitral valve. With the cardiac display convention taught here, the tricuspid valve/RV/RA are on screen left and the mitral valve/LV/LA are on screen right. Confirm the display indicator and use anatomy rather than screen side alone.</p>
 </div>
 </div>
 </div>
@@ -979,6 +993,15 @@ Caution
 <div class="lecture-list">
 <p><a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/what-is-focus/" target="_blank" rel="noopener"><span class="lecture-play">▶</span><span><span class="lecture-title">What is FoCUS?</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a> <a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/basic-anatomy/" target="_blank" rel="noopener"><span class="lecture-play">▶</span><span><span class="lecture-title">Basic Anatomy for the Echocardiographer</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a> <a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/basic-ultrasound-concepts/" target="_blank" rel="noopener"><span class="lecture-play">▶</span><span><span class="lecture-title">Basic Ultrasound Concepts</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a> <a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/focus-how-to/" target="_blank" rel="noopener"><span class="lecture-play">▶</span><span><span class="lecture-title">How to Perform the FoCUS Exam (Studio &amp; Live)</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a></p>
 </div>
+<hr>
+</section>
+<section id="references-and-further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="references-and-further-reading">References and further reading</h2>
+<ul>
+<li><a href="https://www.asecho.org/wp-content/uploads/2019/01/2019_Comprehensive-TTE.pdf">ASE comprehensive transthoracic echocardiography guideline, 2019</a>: acquisition, orientation, PLAX and apical anatomy.</li>
+<li><a href="https://www.asecho.org/wp-content/uploads/2025/03/PIIS0894731725000379.pdf">ASE right-heart guideline, 2025</a>: RV views, Doppler alignment, and IVC interpretation.</li>
+<li><a href="https://www.asecho.org/wp-content/uploads/2014/01/FCU.pdf">ASE focused cardiac ultrasound recommendations</a>: scope, limitations, and documentation.</li>
+</ul>
 
 
 </section>
@@ -1436,7 +1459,7 @@ Caution
     var formDiv = document.createElement('div');
     formDiv.className = 'quiz-answer-form';
     formDiv.innerHTML =
-      '<textarea class="quiz-textarea" placeholder="Type your answerâ€¦" rows="3"></textarea>' +
+      '<textarea class="quiz-textarea" placeholder="Type your answer…" rows="3"></textarea>' +
       '<div class="quiz-form-row">' +
         '<button class="quiz-submit-btn" type="button">Get Feedback</button>' +
         '<span class="quiz-typing-slot"></span>' +

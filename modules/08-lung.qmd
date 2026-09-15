@@ -1,396 +1,264 @@
 ---
-title: "Module 8 — Lung Ultrasound"
-subtitle: "B-lines, pleural effusion, pneumothorax, consolidation, and the BLUE protocol"
+title: "Module 6 — Lung Ultrasound"
+subtitle: "Acquisition, artifacts, pleural disease, consolidation, and the BLUE framework"
 ---
 
 ## 1. Clinical question
 
-*What clinical question does this exam answer, and how do findings change management?*
+Lung ultrasound helps assess pleural apposition, fluid, loss of aeration, and peripheral consolidation in dyspnea, hypoxemia, and shock. Interpret each finding alongside the clinical trajectory and other bedside data.
 
 ::: {.callout-note}
-**The bedside decision frame:** In a patient with dyspnea or hypoxia, four questions in order.
+**Four questions to guide the examination**
 
-1. **Is there a pneumothorax?** Absent lung sliding with a barcode sign and a lung point = pneumothorax until proven otherwise. This is the first question because it is immediately life-threatening and immediately treatable.
-2. **Is there a pleural effusion?** An anechoic, layering collection with a sinusoid sign points to pleural fluid and may explain hypoxia or guide drainage.
-3. **Are there bilateral B-lines?** Diffuse bilateral B-lines indicate interstitial edema — either cardiogenic (flash pulmonary edema) or inflammatory (ARDS, pneumonitis).
-4. **Is there consolidation?** Hepatization of lung tissue with air or fluid bronchograms points to pneumonia, atelectasis, or lobar collapse.
+1. **Could pneumothorax explain deterioration?** Sliding, a true B-line, or lung pulse excludes pneumothorax at the examined location. Absent sliding is nonspecific; an absent lung point does not exclude pneumothorax. Treat clinically suspected tension physiology without waiting for a confirmatory sign.
+2. **Is there pleural fluid?** Establish its location and relationship to the diaphragm, then assess symptoms and cause. Appearance alone does not select drainage.
+3. **What is the B-line burden and distribution?** Bilateral B-lines may accompany cardiogenic or inflammatory edema, fibrosis, and other interstitial processes. A count does not establish etiology.
+4. **Is there peripheral consolidation?** Consider pneumonia, atelectasis, contusion, and other causes. A negative or incomplete scan cannot exclude pneumonia.
 :::
 
-Lung ultrasound is more accurate than chest X-ray for detecting pneumothorax, pleural effusion, and consolidation at the bedside. It is real-time, radiation-free, and available immediately. The BLUE protocol (Bedside Lung Ultrasound in Emergency) provides a structured framework that yields a diagnosis in the majority of patients with acute respiratory failure within minutes.
-
----
+The BLUE framework organizes findings in acute respiratory failure. It supports a working diagnosis; it does not replace evaluation of competing or coexisting causes. Cardiac ultrasound, ECG, laboratory testing, and other imaging may change the interpretation.
 
 ## 2. Image acquisition
 
-*Probe, windows, and technique for this module.*
+### Probe, position, and settings
 
-**Probe selection depends on the target:**
-- **Pneumothorax:** High-frequency **linear** probe (7–15 MHz) — superior resolution of the pleural line.
-- **B-lines, effusion, consolidation:** **Phased array or curvilinear** probe (3–5 MHz) — greater depth penetration.
-- In practice, a single curvilinear or phased array probe is adequate for a complete lung exam if a linear probe is not available.
+- A high-frequency linear probe gives detailed pleural imaging. A curvilinear or phased-array probe provides depth for B-lines, fluid, and consolidation. Choose adequate penetration for the patient and target.
+- Start supine or semirecumbent as tolerated. Examine posterior regions by sitting, turning, or carefully accessing the posterolateral chest when safe. Record regions that cannot be obtained.
+- Use a lung preset if available, but inspect its settings. For artifact assessment, turn off tissue harmonics and spatial compounding when they suppress or alter artifacts; place the focus near the pleura and set depth to show artifacts extending into the far field. Adjust gain to preserve visible pleura, artifacts, and tissue interfaces. Use comparable probe/settings for serial counts. [International LUS consensus](https://onlinelibrary.wiley.com/doi/10.1002/jum.16088), [primary settings study](https://pmc.ncbi.nlm.nih.gov/articles/PMC8518047/).
 
-**Patient positioning:** Supine for trauma/ICU. Lateral decubitus or sitting forward improves posterior basal views. The posterior lateral alveolar and/or pleural (PLAPS) point is the single highest-yield location for effusion and consolidation in a supine patient.
+### Identify the pleura before interpreting artifacts
 
----
+Begin longitudinally, indicator toward the head, with two adjacent ribs and their shadows framing an interspace. The pleural interface is normally deeper than the rib surfaces—often about 0.5 cm deeper in adults—not a fixed distance below the skin. Chest-wall thickness varies. Superficial fascia is not the pleural line. [Anatomical landmark](https://pubmed.ncbi.nlm.nih.gov/24401163/).
 
-### Probe placement — the BLUE zones
+At the bases, identify the diaphragm and liver or spleen before labeling fluid or tissue as thoracic. Sweep through accessible interspaces, observe several respiratory cycles, and distinguish local artifact/bronchogram motion from movement of the whole image.
 
-::: {.callout-tip}
-BLUE zone anatomy — upper BLUE point, lower BLUE point, PLAPS point on a supine patient.
-:::
+### Rapid BLUE points and an expanded survey
 
-**Upper BLUE point:** Upper third of the anterior chest, between the clavicle and the nipple line, midclavicular.
+For each hemithorax, the original BLUE landmarks use two hands scaled to the patient's size: place the upper hand with its little finger just beneath the clavicle and fingertips at the sternum; place the second hand directly below, excluding thumbs. The **upper BLUE point** is near the roots of the middle/ring fingers of the upper hand; the **lower BLUE point** is at the center of the lower palm. The **PLAPS point** lies at the same horizontal level as the lower point, as posterior as accessible around the posterior axillary line in the supine patient. Confirm the diaphragm rather than assuming a fixed basal depth. [Original BLUE-point description](https://d-nb.info/1199925225/34).
 
-**Lower BLUE point:** Lower third of the anterior chest, same column.
+Rapid points do not cover the entire lung. Expand to anterior, lateral, and posterior regions on both sides when looking for focal disease, heterogeneous injury, or the extent of an abnormality. Consolidation can occur outside dependent regions.
 
-**PLAPS point:** Posterior lateral alveolar and/or pleural syndrome point — lateral chest wall, at the level of the lower BLUE point, continued posteriorly. This is the dependent zone in a supine patient and the most sensitive location for both effusion and consolidation.
+![Lung survey map: anterior, lateral, and posterior upper/lower regions on each side.](images/lung-survey.svg){fig-align="center" width="900"}
 
----
+For the **eight-zone anterolateral B-line survey used here**, examine upper and lower anterior and lateral regions on each side: anterior lies between sternum and anterior axillary line; lateral lies between anterior and posterior axillary lines. Use a consistent horizontal boundary, such as the fourth interspace, between upper and lower regions, and confirm the diaphragm at the inferior boundary. Record the exact sampled interspace in each zone and use it again for trends. Sweep the rest of the zone for focal abnormalities; report them separately rather than adding counts from multiple interspaces as though they came from one window. Add upper/lower posterior regions when accessible for a broader examination.
 
-### Scanning technique
+**Document:** indication; patient position; oxygen/ventilator support; probe and relevant settings; zones and sampled interspaces; sliding/pulse, A-lines/B-lines, pleural appearance, consolidation and bronchogram motion, fluid; inaccessible regions; working interpretation and next action. Save representative loops. An inaccessible zone is **not assessed**, not normal.
 
-Place the probe perpendicular to the ribs with the indicator toward the patient's head. Two adjacent rib shadows ("bat sign") frame the pleural line, which appears as a bright horizontal echogenic line approximately 0.5 cm below the skin surface. All artifacts (A-lines, B-lines) originate from the pleural line.
-
----
-
-## 3. Normal & normal variants
+## 3. Normal findings and limits
 
 ::: {.callout-tip}
-<img src="gifs/Normal Lung Sliding.gif" style="width:100%; border-radius:4px;" alt="Normal lung sliding"/>
-
-<img src="gifs/A - Lines - Normal Lung.gif" style="width:100%; border-radius:4px;" alt="A-lines — normal aerated lung"/>
+<img src="gifs/Normal Lung Sliding.gif" style="width:100%; border-radius:4px;" alt="Lung sliding at the pleural interface"/>
+<img src="gifs/A - Lines - Normal Lung.gif" style="width:100%; border-radius:4px;" alt="Horizontal A-line reverberation artifacts"/>
 :::
 
-### Lung sliding
+**Lung sliding:** respiratory motion at the pleural interface. M-mode may show the seashore pattern. Sliding establishes pleural apposition at that location.
 
-The visceral and parietal pleura glide against each other with each breath — this appears as a shimmering, dynamic motion at the pleural line. On M-mode, the resulting pattern is the **seashore sign**: a granular "sandy beach" pattern below the pleural line (moving lung) and horizontal lines above (static chest wall).
+**A-lines:** horizontal reverberations separated by the skin-to-pleura distance. With sliding, they indicate aerated lung beneath the sampled pleura. They do not establish that the entire lung is normal or exclude PE, focal pneumonia, or every presentation of edema.
 
-**Lung sliding = visceral and parietal pleura are in contact.** Its presence rules out pneumothorax at that probe position.
-
-### A-lines
-
-Horizontal, equidistant reverberation artifacts below the pleural line, occurring at multiples of the skin-to-pleural distance. A-lines are a normal finding — they arise from reverberation of the ultrasound beam off the air-filled lung surface. A-lines + lung sliding = normal aerated lung.
-
-### Lung pulse
-
-In the apneic or intubated patient, cardiac pulsations transmitted through the lung may substitute for respiratory lung sliding as a way to confirm pleural apposition. The lung pulse = no pneumothorax at that point.
-
----
+**Lung pulse:** pleural motion transmitted from the heart, sometimes evident when ventilation is absent. A true lung pulse supports pleural apposition at that location; its absence is not independently diagnostic.
 
 ## 4. Pathology library
 
-*Organized by finding.*
-
-### B-lines (interstitial syndrome)
+### B-lines and interstitial patterns
 
 ::: {.callout-tip}
-- Single B-line vs multiple confluent B-lines
-- Bilateral anterior B-lines — cardiogenic pulmonary edema pattern
-- Focal unilateral B-lines — pneumonia or contusion pattern
-
-<img src="gifs/B-Lines - Pulmonary Edema.gif" style="width:100%; border-radius:4px;" alt="B-lines in pulmonary edema"/>
+<img src="gifs/B-Lines - Pulmonary Edema.gif" style="width:100%; border-radius:4px;" alt="Example of multiple B-line artifacts"/>
 :::
 
-B-lines are vertical, laser-like artifacts that:
-- Arise from the pleural line
-- Extend to the bottom of the screen without fading
-- Move with lung sliding
-- Erase A-lines
+B-lines arise from the pleural interface, extend to the far field without fading, and obscure intersected A-lines. They move with pleural sliding when sliding is present; absent sliding does not prevent a B-line pattern.
 
-**Grading:**
-- 0–2 B-lines per zone: normal
-- 3 or more B-lines per zone: interstitial syndrome (thickened interlobular septa, subpleural edema)
-- Confluent ("white lung"): severe alveolar edema
+**Counting in the specified survey:** Record discrete B-lines in the selected interspace of each zone; mark confluent artifacts as confluent rather than inventing an exact count. At least three B-lines defines a positive sampled zone for this approach. A typical diffuse bilateral congestion pattern has at least two positive zones on each side. A few dependent artifacts can occur in healthy lungs; confluent artifacts indicate marked loss of aeration, not a specific cause. [EACVI consensus](https://academic.oup.com/ehjcimaging/article/24/12/1569/7224431).
 
-**Distribution is the key differentiator:**
+::: {.table-responsive tabindex="0" role="region" aria-label="Comparison table"}
 
-| Pattern | Likely Diagnosis |
+| Pattern | Interpretation to investigate |
 |---|---|
-| Bilateral anterior, homogeneous | Cardiogenic pulmonary edema |
-| Bilateral anterior, heterogeneous | ARDS |
-| Focal, unilateral | Pneumonia, contusion, atelectasis |
-| Posterior only | Early interstitial edema, passive atelectasis |
+| Bilateral, relatively homogeneous, smoother pleura | Supports cardiogenic congestion in the appropriate clinical setting |
+| Patchy bilateral distribution, spared areas, irregular pleura/consolidation | Raises concern for inflammatory injury; mixed causes remain possible |
+| Focal B-lines beside an abnormal pleural surface | Consider local pneumonia, contusion, or another peripheral lesion |
+| Chronic basal artifacts with irregular pleura | Consider fibrosis and compare prior studies |
 
-**Teaching points:**
+:::
 
-- B-lines are dynamic — they decrease with diuresis in cardiogenic edema and can be tracked serially to assess treatment response.
-- Homogeneous bilateral anterior B-lines in a patient with reduced LV EF = flash pulmonary edema. Give diuretics and afterload reduction, not antibiotics.
-- Heterogeneous or unilateral B-lines should not be attributed to cardiogenic edema without additional context.
-
----
+Reduced EF does not establish the cause of B-lines; cardiogenic edema can also occur with preserved EF. Treatment depends on congestion, blood pressure, respiratory status, and likely cause. Infection can coexist. Serial reduction supports improvement in congestion when acquisition is comparable, but does not prove a single etiology. Document changes in position and ventilator settings that may affect the comparison.
 
 ### Pleural effusion
 
 ::: {.callout-tip}
-- Anechoic effusion at the PLAPS point — "quad sign"
-- Sinusoid sign on M-mode
-- Echogenic effusion (exudate, hemothorax)
-- Atelectatic lung floating within an effusion
-
-<img src="gifs/pleural effusion.gif" style="width:100%; border-radius:4px;" alt="Pleural effusion — quad sign and sinusoid sign"/>
+<img src="gifs/pleural effusion.gif" style="width:100%; border-radius:4px;" alt="Pleural fluid with adjacent lung"/>
 :::
 
-Pleural effusion appears as an anechoic (or hypoechoic) space between the visceral and parietal pleura, typically in the dependent (posterior) zones in a supine patient.
+Identify fluid above the diaphragm between the chest wall and lung. It may be anechoic, echogenic, septated, or loculated. A quad-shaped fluid window and sinusoidal motion of adjacent lung can support identification; these signs need not appear in every effusion. Adjacent compressed lung may look tissue-like.
 
-**Key findings:**
+**Appearance is not chemistry:** Anechoic fluid can be an exudate or infected; complex fluid may reflect infection, malignancy, blood, or chronic inflammation. Consolidation beside fluid may be compressive atelectasis rather than pneumonia.
 
-- **Quad sign:** Four sides of an anechoic quadrilateral — rib shadows on either side, parietal pleura above, visceral pleura below. Pathognomonic of effusion.
-- **Sinusoid sign:** On M-mode at the PLAPS point, the lung moves toward the pleural line with inspiration (like a sinusoid wave) — confirms fluid between the pleural layers.
-- **Floating atelectatic lung:** The collapsed lung may be seen floating within the effusion — confirms it is fluid and identifies atelectatic lung vs consolidation.
+**Size and volume:** Document extent, accessible depth, loculation, and adjacent anatomy. Numeric estimation is optional. The Balik model estimates **volume (mL) ≈ 20 × maximal interpleural separation (mm)**, equivalent to **200 × separation (cm)**. It was developed in selected mechanically ventilated patients, supine with mild torso elevation, using a transverse basal measurement at end expiration. Thus 50 mm corresponds to about 1,000 mL under that model. Do not apply this conversion to an arbitrary pocket, a loculated collection, or a different acquisition. It does not identify a safe insertion site. [Balik et al.](https://pubmed.ncbi.nlm.nih.gov/16432674/).
 
-**Effusion characterization:**
-- Anechoic: transudates, early exudates
-- Echogenic or septated: exudates, empyema, hemothorax
-- "Swirling" particles: empyema, chylothorax
+**From fluid to treatment:** Separate diagnostic sampling from therapeutic drainage. For suspected pleural infection, combine clinical course, accessible volume, pus/microbiology, and pleural-fluid chemistry. Pus or appropriately sampled pH ≤7.2 generally supports drainage when safely accessible; intermediate results require additional assessment, with septation contributing to the decision. Complexity alone does not mandate a chest tube. [BTS pleural disease guideline](https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/).
 
-**Volume estimation:** Effusion depth (cm) × 20 = approximate volume (mL) for a moderate free-flowing effusion — rough approximation only.
-
-**Teaching points:**
-
-- Posterior effusions are missed on supine chest X-ray until they exceed ~500 mL. Ultrasound detects effusions as small as 20 mL.
-- Loculated effusions do not layer dependently — the fluid does not shift when the patient is repositioned.
-- Echogenic or complex fluid requires drainage with a chest tube, not a simple needle.
-- Always mark the site for thoracentesis under ultrasound guidance (see Module 11).
-
----
+Before any pleural procedure, confirm indication and a safe ultrasound window with the patient in the procedure position, identify diaphragm/abdominal organs throughout respiration, and follow the supervised local procedure pathway. Recheck after any repositioning.
 
 ### Pneumothorax
 
-::: {.callout-tip}
-- Absent lung sliding — the "stratosphere" or "barcode" sign on M-mode
-- Lung point — the transition from absent to present sliding
-- Normal sliding for comparison
-:::
+Air separating the pleural layers eliminates sliding at the affected site. **Absent sliding**, with or without an M-mode barcode pattern, is nonspecific: apnea, mainstem intubation, adhesions/pleurodesis, and severe lung disease can produce it.
 
-Pneumothorax separates the pleural layers with air, eliminating lung sliding.
+A **true lung point** is a reproducible transition between a pneumothorax pattern and apposed lung during respiration. It strongly supports pneumothorax when correctly identified, but no accessible point may be found with a large pneumothorax. Its position alone does not determine drainage. Sliding, true B-lines, or lung pulse excludes pneumothorax only where that sign is seen. [Original lung-point study](https://www.ultrasoundleadershipacademy.com/wp-content/uploads/2014/01/Intensive_Care_Med_2000_Lichtenstein.pdf).
 
-**Key findings:**
+In a deteriorating patient with suspected tension physiology, arrange immediate decompression according to the emergency pathway; do not wait for a lung point, CXR, or CT. After intubation, rapidly assess tube depth/position, capnography, patency, equipment, and bilateral ventilation while considering pneumothorax. Reposition a tube when indicated by the assessment, not by an automatic fixed-distance rule. [WSES-AAST guidance](https://link.springer.com/article/10.1186/s13017-025-00651-1).
 
-- **Absent lung sliding:** The pleural line is still visible, but there is no dynamic motion beneath it. A-lines may be present. The seashore sign is replaced by the **barcode (stratosphere) sign** on M-mode — horizontal lines throughout (no sandy beach).
-- **Lung point:** The transition zone between pneumothorax (no sliding) and normal lung (sliding present). The lung point is specific (nearly 100%) for pneumothorax — if you find it, the diagnosis is confirmed. Its lateral position correlates with pneumothorax size.
-- **Absent B-lines:** B-lines require pleural apposition to form. Their presence at a given location rules out pneumothorax at that location.
-
-**Conditions that abolish lung sliding without pneumothorax:**
-- Mainstem intubation (sliding absent on the unventilated side)
-- Apnea (no respiratory motion — lung pulse may substitute)
-- Severe ARDS (severely reduced lung compliance)
-- Pleural adhesions, prior pleurodesis
-
-**Teaching points:**
-
-- Lung sliding present = no pneumothorax at that probe position. A normal anterior exam does not rule out a small posterior pneumothorax.
-- In tension pneumothorax with hemodynamic collapse, ultrasound is too slow — decompress first, image later.
-- In a ventilated patient, absent sliding on one side after intubation = mainstem intubation until proven otherwise. Pull the ETT back, reassess.
-
----
-
-### Consolidation
+### Consolidation and bronchograms
 
 ::: {.callout-tip}
-- Hepatization — tissue-like echogenicity replacing aerated lung
-- Dynamic air bronchograms — moving bright foci within consolidation
-- Static air bronchograms — fixed bright foci
-- Fluid bronchograms — anechoic branching structures within consolidation
-
-<img src="gifs/air bronchograms pneumonia.gif" style="width:100%; border-radius:4px;" alt="Consolidation with air bronchograms in pneumonia"/>
+<img src="gifs/air bronchograms pneumonia.gif" style="width:100%; border-radius:4px;" alt="Peripheral consolidation containing bright air bronchograms"/>
 :::
 
-When lung loses air, it becomes echogenic and tissue-like ("hepatization" — looks like liver). Consolidation is visible when it extends to the pleural surface.
+Consolidation becomes visible when loss of aeration reaches an accessible pleural surface. Lung appears tissue-like, sometimes with bright air bronchograms or branching fluid-filled airways. Deep lesions surrounded by aerated lung may be invisible.
 
-**Key findings:**
+- **Dynamic air bronchograms:** branching air moves within the consolidation relative to its surrounding tissue during respiration. This supports pneumonia over resorptive atelectasis; it is not simply movement of the whole consolidated lobe.
+- **Static air bronchograms:** leave both pneumonia and atelectasis possible. They do not prove airway obstruction or exclude infection. In the original study, 20 of 52 pneumonias had static bronchograms. [Primary bronchogram study](https://pubmed.ncbi.nlm.nih.gov/19225063/).
 
-- **Hepatization:** Echogenic, tissue-density structure where aerated lung should be. Loss of A-lines.
-- **Air bronchograms:** Bright echogenic foci within consolidation representing air in the bronchi.
-  - **Dynamic** (moving with respiration): Indicates active ventilation — pneumonia with patent airways. Rules out complete obstruction.
-  - **Static** (fixed): Suggests obstructive atelectasis or complete airspace consolidation (lobar pneumonia, ARDS).
-- **Fluid bronchograms:** Anechoic branching structures within consolidation — fluid-filled airways. Seen in severe pneumonia, lobar consolidation.
+Assess secretions, tube position, lobar volume loss, infection evidence, and the clinical trajectory. Use airway clearance or bronchoscopy for a supported obstruction/diagnostic indication. Assess and treat suspected pneumonia on clinical grounds; do not wait for dynamic bronchograms. Routine bronchoscopic BAL is not required for every suspected VAP. A negative scan does not exclude pneumonia. [ATS/IDSA HAP/VAP guidance](https://www.idsociety.org/practice-guideline/hap_vap/), [prospective pneumonia study](https://pubmed.ncbi.nlm.nih.gov/22700780/).
 
-**Distribution:**
+## 5. The BLUE framework
 
-- Posterior basal: passive atelectasis (common in ICU patients, position-dependent)
-- Any lobe: pneumonia
-- Entire lobe: lobar pneumonia or obstructive collapse (check for a mucus plug)
+Apply the profile definitions together; **B-lines and absent sliding must not enter conflicting branches**. The following profiles suggest diagnoses within the BLUE approach, which should then be checked against the patient. [Author's BLUE/FALLS account](https://journal.chestnet.org/article/S0012-3692%2815%2937223-8/fulltext).
 
-**Teaching points:**
+::: {.table-responsive tabindex="0" role="region" aria-label="Comparison table"}
 
-- Dynamic air bronchograms distinguish pneumonia (patent airways, active ventilation) from obstructive atelectasis (no bronchogram movement). This changes management — atelectasis needs suctioning or bronchoscopy, not antibiotics.
-- Consolidation + effusion = parapneumonic effusion until proven otherwise. Drain if complex.
-- Atelectasis from a displaced ETT resolves immediately upon ETT repositioning.
+| Anterior profile | Definition | Next assessment / suggested diagnosis |
+|---|---|---|
+| A | Bilateral predominant A-lines with sliding | Assess for DVT; if negative, assess PLAPS |
+| B | Bilateral predominant B-lines **with sliding** | Supports pulmonary edema |
+| B′ | Bilateral B-lines **without sliding** | Pneumonia/inflammatory disease pattern; integrate other causes |
+| A/B | A-lines on one side, predominant B-lines on the other | Pneumonia pattern |
+| C | Anterior consolidation | Pneumonia pattern, with other consolidation causes considered |
+| A′ | Predominant A-lines without sliding | Look for lung pulse, B-lines elsewhere, and a lung point when stable; pneumothorax remains possible without a point |
 
----
-
-## 5. The BLUE protocol
-
-*A structured diagnostic algorithm for acute respiratory failure.*
-
-::: {.callout-tip}
-BLUE protocol in action — anterior upper and lower zones, PLAPS point, systematic assessment.
 :::
 
-The BLUE protocol (Lichtenstein & Mezière, 2008) uses lung ultrasound findings to identify the cause of acute respiratory failure with >90% accuracy.
+For an **A-profile**, DVT increases suspicion for PE. If DVT is not found, PLAPS supports pneumonia in the original pathway; absent PLAPS favors COPD/asthma after clinical assessment. **Negative DVT does not exclude PE**, and absent PLAPS does not exclude all pneumonia. Continue definitive evaluation when suspicion persists.
 
-**Step 1 — Anterior zones (upper and lower BLUE points, bilateral):**
+The original selected acute-respiratory-failure cohort reported 90.5% overall diagnostic accuracy; uncertain, mixed, and rare diagnoses were excluded. B-profile sensitivity for edema was 97%, and A-profile plus DVT sensitivity for PE was 81%—these are **sensitivities, not positive predictive values**. Do not translate them into fixed patient probabilities. Mechanical ventilation and complex ICU/mixed disease require particular caution. [Original BLUE study](https://pubmed.ncbi.nlm.nih.gov/18403664/).
 
-| Finding | Proceed to |
-|---|---|
-| Bilateral A-lines + lung sliding | Step 2 (DVT screen) |
-| Bilateral anterior B-lines | → Pulmonary edema (97% PPV) |
-| Unilateral anterior B-lines | → Pneumonia |
-| Absent lung sliding | → Step 3 (lung point) |
-
-**Step 2 — DVT screen (if bilateral A-lines):**
-
-| Finding | Diagnosis |
-|---|---|
-| DVT present | → PE (81% PPV) |
-| No DVT | → Step 3 (PLAPS point) |
-
-**Step 3 — PLAPS point:**
-
-| Finding | Diagnosis |
-|---|---|
-| PLAPS (effusion or consolidation) | → Pneumonia |
-| No PLAPS | → COPD exacerbation or asthma |
-
-**Step 3 (from absent sliding) — Lung point:**
-
-| Finding | Diagnosis |
-|---|---|
-| Lung point present | → Pneumothorax |
-| No lung point | → Severe COPD, prior pleurodesis, ARDS |
-
-**Teaching points:**
-
-- The BLUE protocol was validated in spontaneously breathing patients; apply with caution in mechanically ventilated patients.
-- The protocol identifies the predominant pathology — mixed presentations exist.
-- Integration with cardiac echo (Module 6) dramatically improves diagnostic accuracy.
-
----
+Combine with [LV assessment](02-lv.qmd), [RV assessment](03-rv.qmd), [IVC/congestion assessment](05-ivc.qmd), and the [shock integration module](06-integration.qmd) when appropriate.
 
 ## 6. Integration cases
 
-*Cases where the finding changes management.*
+*Clips illustrate a finding at one site. Bilateral distribution, other-organ findings, and clinical details below are supplied case data, not all demonstrated by a single clip.*
 
----
+### Case 1: Hypertensive pulmonary edema with an open infection assessment
 
-### Case 1: Flash pulmonary edema vs pneumonia
+**Scenario:** A 72-year-old man with HTN and known HFrEF develops acute dyspnea, saturation 82% on room air, diaphoresis, and BP 198/110. CXR has bilateral opacities.
 
-**Clinical scenario:** A 72-year-old man with HTN and a history of HFrEF presents at 3 AM with acute dyspnea, O2 sat 82% on room air. He is diaphoretic and hypertensive (BP 198/110). CXR shows bilateral opacities. The admitting team is debating antibiotics vs diuretics.
-
-**What exam would you perform?**
-Lung ultrasound — anterior and lateral zones bilaterally, plus cardiac echo.
+**Exam:** Bilateral anterolateral and accessible posterior lung survey, plus focused cardiac ultrasound.
 
 ::: {.callout-tip}
-<img src="gifs/M6 Case 1 Bilateral confluent B-lines — pulmonary edema.gif" style="width:100%; border-radius:4px;" alt="Anterior chest: bilateral confluent B-lines — cardiogenic pulmonary edema"/>
+<img src="gifs/M6 Case 1 Bilateral confluent B-lines — pulmonary edema.gif" style="width:100%; border-radius:4px;" alt="Example of confluent B-lines; bilateral findings are supplied case data"/>
 :::
 
-**What you see:**
-Bilateral anterior B-lines, homogeneous distribution, no sparing. No consolidation. Cardiac echo: severely reduced EF (known), small bilateral pleural effusions.
+**Supplied findings:** Homogeneous bilateral B-lines with sliding, small bilateral effusions, known low EF, and no consolidation in the regions obtained.
 
-**How does this change management?**
-Bilateral homogeneous anterior B-lines + reduced EF + hypertension = hypertensive flash pulmonary edema. Give IV furosemide and IV nitroglycerin (afterload and preload reduction). Apply CPAP/BiPAP. Do not start antibiotics — there is no consolidation. Reassess B-lines after 1–2 hours of diuresis; clearing confirms cardiogenic etiology.
+**Decision:** Hypertensive cardiogenic pulmonary edema is the leading working diagnosis. Support oxygenation, use NIV when appropriate, and treat blood pressure/congestion with appropriately selected vasodilator and diuretic therapy. Assess infection from history, examination, laboratory/imaging data, and trajectory; absence of visible consolidation is not a reason by itself to withhold antibiotics. Repeat a comparable survey after treatment. Improvement supports decongestion but does not exclude concurrent pneumonia.
 
----
+### Case 2: Sudden deterioration after intubation
 
-### Case 2: Post-intubation hypoxia
+**Scenario:** A 45-year-old man desaturates from 94% to 78% after intubation, with absent left breath sounds.
 
-**Clinical scenario:** A 45-year-old man is intubated for respiratory failure. After intubation, O2 saturation drops from 94% to 78%. Breath sounds are absent on the left. The RT is about to get a CXR.
-
-**What exam would you perform?**
-Immediate lung ultrasound — bilateral anterior chest.
+**Exam:** Immediate airway/equipment assessment and bilateral anterior lung ultrasound during resuscitation.
 
 ::: {.callout-tip}
-<img src="gifs/M6 Case 2 Absent lung sliding — barcode sign M-mode.gif" style="width:100%; border-radius:4px;" alt="M-mode: barcode sign with absent lung sliding on the left"/>
+<img src="gifs/M6 Case 2 Absent lung sliding — barcode sign M-mode.gif" style="width:100%; border-radius:4px;" alt="M-mode barcode pattern, which is not specific for pneumothorax"/>
 :::
 
-**What you see:**
-Right: lung sliding present, A-lines. Left: absent lung sliding, barcode sign, no B-lines.
+**Supplied findings:** Right sliding and A-lines; left absent sliding, barcode pattern, and no B-lines.
 
-**How does this change management?**
-Mainstem intubation vs left pneumothorax. The clinical context (just intubated, sudden desaturation) makes mainstem intubation far more likely. Pull the ETT back 2 cm and reassess — if left sliding returns, this was a right mainstem intubation. If sliding remains absent and the patient is deteriorating, look for a lung point to confirm pneumothorax. Do not wait for CXR in a crashing patient.
+**Decision:** Consider right mainstem intubation, obstruction/equipment failure, and left pneumothorax. Verify capnography, tube depth/position and patency, and bilateral ventilation; correct an identified tube problem and reassess promptly. Lung pulse on the left would support apposition there. If shock or severe deterioration suggests tension pneumothorax, decompress without waiting for a lung point or radiograph. If stable enough, further ultrasound and imaging can clarify the diagnosis. Failure to find a point does not remove pneumothorax from the differential.
 
----
+### Case 3: Traumatic pneumothorax—what determines drainage?
 
-### Case 3: Trauma — FAST extension to lung
+**Scenario:** A hemodynamically stable 30-year-old man after a motorcycle collision has right chest contusions. FAST shows no abdominal free fluid or pericardial effusion.
 
-**Clinical scenario:** A 30-year-old man is brought in after a motorcycle collision. He is hemodynamically stable but has right chest wall contusions. CXR is being obtained. FAST exam shows no abdominal free fluid and no pericardial effusion.
-
-**What exam would you perform?**
-Extended FAST (eFAST) — bilateral anterior lung assessment.
+**Exam:** Extend to bilateral lung assessment as eFAST.
 
 ::: {.callout-tip}
-<img src="gifs/M6 Case 3 Lung point — pneumothorax.gif" style="width:100%; border-radius:4px;" alt="Lung point at the mid-axillary line — pathognomonic for pneumothorax"/>
+<img src="gifs/M6 Case 3 Lung point — pneumothorax.gif" style="width:100%; border-radius:4px;" alt="Lung-point example; chest location is supplied case data"/>
 :::
 
-**What you see:**
-Left: lung sliding, A-lines. Right: absent lung sliding anteriorly. Lung point identified at the mid-axillary line.
+**Supplied findings:** Left sliding; right absent anterior sliding and a lung point at the midaxillary line.
 
-**How does this change management?**
-Right pneumothorax confirmed by lung point. The hemodynamically stable patient with a moderate pneumothorax (lung point at mid-axillary line) can be managed with a chest tube rather than needle decompression. Place a chest tube in the right chest. If the patient deteriorates hemodynamically, needle decompression first while preparing for the chest tube.
+**Decision:** The findings support right pneumothorax. The lung-point position alone does not establish a size category or mandate a tube. Assess respiratory impairment, support/anticipated positive-pressure ventilation, extent on appropriate imaging, progression, associated injury, and ability to monitor. Involve the trauma team to select drainage or closely monitored observation under its pathway. Selected small stable pneumothoraces may be observed; do not assume this case qualifies without the missing information. Deterioration with tension physiology requires immediate decompression. [Trauma guidance](https://link.springer.com/article/10.1186/s13017-025-00651-1).
 
----
+### Case 4: Fever, hypoxemia, and static bronchograms
 
-### Case 4: ICU patient with new fever and hypoxia
+**Scenario:** An intubated 68-year-old man, postoperative day 3 after abdominal surgery, develops fever 38.8°C and a FiO2 increase from 0.40 to 0.70.
 
-**Clinical scenario:** An intubated 68-year-old man, post-op day 3 following major abdominal surgery, develops fever (38.8°C) and worsening hypoxia requiring FiO2 increase from 0.40 to 0.70.
+**Exam:** Broad bilateral lung survey, including posterior regions, with airway and infection assessment.
 
-**What exam would you perform?**
-Lung ultrasound — all zones bilaterally, PLAPS point.
-
-::: {.callout-tip}
-<img src="gifs/M6 Case 4 Consolidation with air bronchograms — PLAPS.gif" style="width:100%; border-radius:4px;" alt="Right PLAPS: consolidation with air bronchograms and a small adjacent effusion"/>
+::: {.callout-note}
+**Text-based interpretation case:** Use the supplied findings below. A verified matching static-bronchogram cine is not currently embedded.
 :::
 
-**What you see:**
-Left anterior zones: A-lines, lung sliding. Right anterior zones: A-lines, lung sliding. Right PLAPS: large area of consolidation with static air bronchograms. Small adjacent effusion.
+**Supplied findings:** Anterior A-lines and sliding bilaterally; right posterobasal consolidation with static air bronchograms and a small adjacent effusion.
 
-**How does this change management?**
-Right lower lobe consolidation with static air bronchograms — likely right lower lobe pneumonia or obstructive atelectasis. The static bronchograms (not moving with respiration) raise concern for mucus plugging. Order bedside bronchoscopy to evaluate for mucus plug and obtain BAL for culture. If dynamic bronchograms were present (moving with respiration), this would be more consistent with pneumonia — start antibiotics. The distinction between static and dynamic bronchograms directs the next intervention.
-
-::: {.callout-tip}
-**Case format reminder:** The case ends with a management decision, not just a diagnosis.
-:::
-
----
+**Decision:** Pneumonia, atelectasis, and coexisting obstruction remain possible. Obtain appropriate respiratory sampling and evaluate/treat suspected hospital-acquired or ventilator-associated infection according to the clinical assessment and local pathway. Check tube position, secretion burden, and evidence of lobar volume loss; provide airway clearance and consider bronchoscopy when obstruction or another specific indication is supported. Static bronchograms alone neither select bronchoscopy nor defer antibiotics. The effusion requires its own assessment; complexity or proximity to consolidation would not alone mandate drainage.
 
 ## Quiz
 
 ::: {.callout-note}
-**Q1.** What is a B-line, and how many are required per zone to indicate pathology?
+**Q1.** A patient has chronic basal B-lines and an irregular pleural surface. Does a positive B-line zone establish acute pulmonary edema?
 
 ::: {.callout-caution collapse="true"}
 **Answer**
-A B-line is a vertical, laser-like reverberation artifact arising from the pleural line, extending to the bottom of the screen without fading, moving with lung sliding, and erasing A-lines. Three or more B-lines per intercostal space is abnormal and indicates interstitial syndrome (thickened interlobular septa, subpleural edema from pulmonary edema, ARDS, or interstitial lung disease).
+No. Describe the count/burden in the specified sampled windows, distribution, pleural morphology, prior findings, and clinical change. A positive window is not diffuse bilateral disease, and fibrosis can produce B-lines. Use the overall congestion and cardiac assessment before selecting treatment.
 :::
 
-**Q2.** Lung sliding is absent on the left after intubation. How do you distinguish right mainstem intubation from left pneumothorax?
+**Q2.** After intubation a patient develops shock, absent left sliding/B-lines, and no accessible lung point. Can pneumothorax be excluded?
 
 ::: {.callout-caution collapse="true"}
 **Answer**
-Clinical context first: just intubated → mainstem intubation is far more likely. Withdraw the ETT and reassess — if left sliding returns, it was mainstem intubation. For pneumothorax: find a lung point (the transition from absent to present sliding) — if present, pneumothorax is confirmed. Also, lung pulse (cardiac pulsations transmitted through apneic lung) may be visible in mainstem intubation but absent in pneumothorax. B-lines anywhere on the left rule out pneumothorax at that location.
+No. A large pneumothorax may have no accessible point. Assess the airway, equipment, and tube position promptly while resuscitating. If the clinical picture suggests tension pneumothorax, do not delay decompression for a point, a fixed-distance tube withdrawal, or a radiograph. A true lung pulse or sliding excludes pneumothorax only at the sampled site.
 :::
 
-**Q3.** What is the PLAPS point, and why is it the highest-yield location in a supine patient?
+**Q3.** Posterior zones cannot be obtained, and the anterior scan is normal. How should the result be documented?
 
 ::: {.callout-caution collapse="true"}
 **Answer**
-The PLAPS (posterior lateral alveolar and/or pleural syndrome) point is at the lateral chest wall, at the level of the lower BLUE point, extended posteriorly. In a supine patient, both pleural fluid and consolidation accumulate in the most dependent (posterior) zones. The PLAPS point captures this dependent region without requiring the patient to sit up or roll over.
+Record the sampled sites and findings and state that posterior regions were not assessed. Do not report a globally negative lung study or exclude posterior/deep pneumonia. Seek additional views or imaging if the unanswered question changes care. For serial studies, document position, respiratory support, probe/settings, and the same sampled interspaces.
 :::
 
-**Q4.** You see consolidation with dynamic air bronchograms in the right lower lobe. What does this tell you, and how does it differ from static air bronchograms?
-
-::: {.callout-caution collapse="true"}
-**Answer**
-Dynamic air bronchograms (moving with respiration) indicate that the consolidated segment is still being ventilated — the airways are patent and air is moving in and out. This pattern is highly consistent with pneumonia. Static (fixed) air bronchograms suggest the airways are not patent — either the lobe is completely consolidated (massive pneumonia) or there is an obstructive process (mucus plug, foreign body, endobronchial tumor) causing collapse. Static bronchograms should prompt bronchoscopy consideration.
-:::
-
-**Q5.** A patient with acute dyspnea has bilateral anterior A-lines and lung sliding. The BLUE protocol sends you to check for DVT. Why?
+**Q4.** A febrile ventilated patient has consolidation with static bronchograms. Should bronchoscopy replace an infection evaluation?
 
 ::: {.callout-caution collapse="true"}
 **Answer**
-Bilateral anterior A-lines with lung sliding means the anterior lung fields are normally aerated — ruling out cardiogenic pulmonary edema (which would show B-lines) and pneumothorax (which would show absent sliding). In the BLUE protocol, this pattern combined with DVT on compression ultrasound has an 81% positive predictive value for pulmonary embolism as the cause of respiratory failure — the lung fields are clear because the problem is vascular, not alveolar.
+No. Pneumonia can have static bronchograms. Assess and treat infection when clinically indicated while investigating atelectasis or obstruction. Bronchoscopy needs a supported indication. Dynamic motion within the bronchograms relative to the surrounding tissue supports pneumonia over resorptive atelectasis, but static motion does not establish the converse.
+:::
+
+**Q5.** An A-profile is present but compression ultrasound finds no DVT. Can PE be dismissed?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+No. A negative DVT examination does not exclude PE. Continue evaluation according to probability and stability; PLAPS findings and other tests may identify competing causes. Sliding excludes pneumothorax locally, and an A-profile does not categorically exclude edema. The original BLUE 81% value for A-profile plus DVT was sensitivity, not a fixed PPV.
+:::
+
+**Q6.** A stable patient has a septated effusion of uncertain cause. Is that enough to prescribe a chest tube, and can any 5-cm fluid pocket be called 1 L?
+
+::: {.callout-caution collapse="true"}
+**Answer**
+Neither conclusion follows. Integrate symptoms, cause, diagnostic sampling/chemistry when indicated, and safe access before selecting drainage. A complex appearance is nonspecific. The Balik estimate uses 20 × separation in millimeters under its defined acquisition and population; 50 mm gives about 1,000 mL only within that model. Arbitrary or loculated pocket depth is not a reliable volume or safe-site measurement.
 :::
 :::
+
+## References and further reading
+
+- [International LUS consensus, 2023](https://onlinelibrary.wiley.com/doi/10.1002/jum.16088): acquisition and interpretation standards.
+- [Lichtenstein and Mezière, original BLUE study](https://pubmed.ncbi.nlm.nih.gov/18403664/) and [BLUE-point landmarks](https://d-nb.info/1199925225/34).
+- [EACVI consensus, 2023](https://academic.oup.com/ehjcimaging/article/24/12/1569/7224431): B-lines and congestion.
+- [Lung-point study](https://www.ultrasoundleadershipacademy.com/wp-content/uploads/2014/01/Intensive_Care_Med_2000_Lichtenstein.pdf): diagnostic value and sensitivity limitations.
+- [Balik et al., 2006](https://pubmed.ncbi.nlm.nih.gov/16432674/): method-specific effusion-volume estimation.
+- [Reissig et al., 2012](https://pubmed.ncbi.nlm.nih.gov/22700780/) and [Lichtenstein et al., 2009](https://pubmed.ncbi.nlm.nih.gov/19225063/): pneumonia detection and bronchograms.
+- [BTS pleural disease guideline, 2023](https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/): sampling and drainage decisions.
+- [ATS/IDSA HAP/VAP guidance](https://www.idsociety.org/practice-guideline/hap_vap/): infection assessment and sampling.
+- [WSES-AAST thoracic trauma guidance, 2025](https://link.springer.com/article/10.1186/s13017-025-00651-1): pneumothorax assessment and treatment.
 
 ---
 

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -39,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -201,6 +204,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#quiz" id="toc-quiz" class="nav-link" data-scroll-target="#quiz">Quiz</a></li>
   <li><a href="#video-lectures" id="toc-video-lectures" class="nav-link" data-scroll-target="#video-lectures">Video lectures</a></li>
+  <li><a href="#references-and-further-reading" id="toc-references-and-further-reading" class="nav-link" data-scroll-target="#references-and-further-reading">References and further reading</a></li>
   </ul>
 </nav>
     </div>
@@ -276,7 +280,7 @@ Tip
 <li><strong>Standard A4C</strong> — LV is centered in the sector. Useful for an initial RV:LV size comparison only if the LV is not foreshortened. The RV sits at the edge of the sector and is often clipped, which makes RV size and TAPSE alignment unreliable.</li>
 <li><strong>RV-focused A4C</strong> — from the standard A4C, slide laterally and rotate slightly so the <strong>RV is centered</strong> in the sector and the full RV free wall from base to apex is in view. ASE guidelines specify the RV-focused view for measuring RV linear dimensions, RV area, and TAPSE. Acquire this view explicitly whenever you intend to quantify RV size or function.</li>
 </ul>
-<p><strong>What you are looking for:</strong> RV size relative to the LV. The RV free wall should move briskly inward in systole. TAPSE (tricuspid annular plane systolic excursion) is measured by M-mode on the <strong>RV-focused view</strong>, with the cursor aligned along the RV free wall as perpendicular to (and through) the lateral tricuspid annulus as possible — normal is greater than 17 mm. Reduced TAPSE indicates RV systolic dysfunction regardless of the cause.</p>
+<p><strong>What you are looking for:</strong> RV size, free-wall motion, septal shape, and longitudinal function. Measure TAPSE on the RV-focused A4C with M-mode aligned with the motion of the lateral tricuspid annulus. A value below 17 mm supports reduced longitudinal function; interpret it with acquisition quality, loading, other RV measures, and the clinical state.</p>
 <p><strong>Avoid the pitfall:</strong> The standard (LV-centered) apical view can foreshorten the LV and artificially make the RV appear larger; conversely, a non-RV-focused acquisition clips the RV and underestimates its size. If RV size or TAPSE matters to the decision, acquire the RV-focused view and confirm in a second window.</p>
 <hr>
 </section>
@@ -380,8 +384,8 @@ Tip
 </div>
 <p>RV:LV ratio approaching 1:1 or greater. The RV free wall is hypokinetic. On diastole, the septum may be pushed toward the LV indicating volume overload; on both systole and diastole indicates combined pressure and volume overload. The RA may be enlarged.</p>
 <ul>
-<li>Acute dilation without free wall hypertrophy = acute process (PE, acute cor pulmonale from ARDS, RV infarct).</li>
-<li>Dilation with free wall hypertrophy = chronic process (pulmonary hypertension, COPD).</li>
+<li>Dilation without hypertrophy may support an acute process, but does not date its onset. Compare prior studies and consider PE, ARDS-related acute cor pulmonale, and RV infarction.</li>
+<li>Hypertrophy supports chronic pressure loading; it does not exclude a new PE or acute decompensation. Measure free-wall thickness at end diastole, preferably subcostally, excluding trabeculations and epicardial tissue.</li>
 </ul>
 <hr>
 </section>
@@ -420,7 +424,7 @@ Tip
 <p><img src="gifs/A4C - M3 Case 1 Massive PE — McConnell sign and clot in transit.gif" style="width:100%; border-radius:4px;" alt="McConnell's sign with clot in transit — massive PE"></p>
 </div>
 </div>
-<p>RV free wall akinesis with preserved or hyperdynamic apical motion. Highly specific for acute PE (specificity ~94%). The mechanism involves tethering of the RV apex to the contracting LV. In the right clinical context (tachycardia, hypoxia, plethoric IVC), McConnell’s sign is enough to initiate PE workup and consider empiric thrombolytics in an unstable patient.</p>
+<p>RV mid-free-wall akinesis with relative apical sparing is McConnell’s sign. It raises suspicion for PE, but RV ischemia/infarction and other RV disorders can mimic it. Published specificity depends on the comparator population: one PE-versus-RV-infarction study found the sign in 70% and 67%, respectively. The sign alone does not select thrombolysis. Integrate PE probability, ECG, hemodynamics, other RV findings, and alternative explanations. <a href="https://pubmed.ncbi.nlm.nih.gov/15664548/">Casazza et al.</a>.</p>
 <hr>
 </section>
 <section id="tapse" class="level3">
@@ -438,7 +442,7 @@ Tip
 <p><img src="gifs/TAPSE cursor alignment A4C.gif" style="width:100%; border-radius:4px;" alt="TAPSE cursor alignment — M-mode cursor along the lateral tricuspid annulus on RV-focused A4C"></p>
 </div>
 </div>
-<p>TAPSE (tricuspid annular plane systolic excursion) below 17 mm indicates RV systolic dysfunction. Measured by M-mode on the RV-focused A4C with the cursor aligned through the lateral tricuspid annulus. It reflects longitudinal RV function and correlates with prognosis across PE, pulmonary hypertension, and right heart failure. TAPSE is load-dependent — serial measurements track RV recovery in response to treatment.</p>
+<p>TAPSE below 17 mm supports reduced RV longitudinal systolic function when properly acquired. It is angle- and load-dependent and can be affected by cardiac surgery and regional motion. Integrate it with RV size, free-wall motion and other measures; a single value does not establish low output, cause, or urgency. Serial changes may reflect loading or acquisition as well as recovery. <a href="https://www.asecho.org/wp-content/uploads/2025/03/PIIS0894731725000379.pdf">ASE 2025</a>.</p>
 <hr>
 </section>
 </section>
@@ -449,7 +453,7 @@ Tip
 <section id="case-1-massive-pe-hemodynamic-collapse" class="level3">
 <h3 class="anchored" data-anchor-id="case-1-massive-pe-hemodynamic-collapse">Case 1: Massive PE — hemodynamic collapse</h3>
 <p><strong>Clinical scenario:</strong> A 55-year-old man on a long-haul flight arrives at a connecting airport and collapses in the terminal. He is brought to the ED with BP 70/40, HR 130, O2 saturation 84% on non-rebreather. ECG shows sinus tachycardia with right heart strain pattern (S1Q3T3).</p>
-<p><strong>What exam would you perform?</strong> FAST exam.</p>
+<p><strong>What exam would you perform?</strong> Immediate focused cardiac ultrasound as part of a shock examination. Add lung and proximal venous ultrasound when useful without delaying resuscitation.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -465,7 +469,7 @@ Tip
 </div>
 </div>
 <p><strong>What you see:</strong> Massively dilated RV, RV:LV ratio &gt;1. McConnell’s sign present. D-sign on PSAX. Plethoric, non-collapsing IVC. No pericardial effusion.</p>
-<p><strong>How does this change management?</strong> This is massive PE with obstructive shock. The echo is sufficient to act — do not wait for CT. Administer systemic thrombolytics (tPA 100 mg over 2 hours or 50 mg bolus if arrest is imminent) unless there is a hard contraindication. If contraindicated, activate interventional radiology or cardiac surgery for catheter-directed therapy or surgical embolectomy. Avoid large fluid boluses — the dilated RV cannot accommodate more volume and fluids may worsen septal shift and LV underfilling.</p>
+<p><strong>How does this change management?</strong> This is a high-probability PE presentation with profound instability and convincing RV pressure overload. If CT cannot be obtained safely and no better explanation is found, activate the PE response team and proceed to urgent reperfusion rather than delaying for CT. Systemic alteplase 100 mg over two hours is an established PE regimen; accelerated peri-arrest dosing must follow the institutional PE/arrest pathway, because an optimal arrest dose is not established. Assess bleeding contraindications. If fibrinolysis is contraindicated, consider mechanical catheter treatment or surgical embolectomy with the specialist team; catheter-directed thrombolysis still exposes the patient to a fibrinolytic. Avoid large empiric fluid boluses and support perfusion while definitive treatment is arranged. <a href="https://academic.oup.com/eurheartj/article/41/4/543/5556136">ESC PE pathway</a>, <a href="https://www.erc.edu/media/wwufbysp/gl2025-06-spec-circ-e.pdf">ERC 2025</a>.</p>
 <hr>
 </section>
 <section id="case-2-submassive-pe-how-sick-is-this-rv" class="level3">
@@ -487,7 +491,7 @@ Tip
 </div>
 </div>
 <p><strong>What you see:</strong> Moderately to severely dilated RV. RV free wall hypokinesis present. No McConnell’s sign. TAPSE 12 mm. D-sign on PSAX. LV filling appears reduced.</p>
-<p><strong>How does this change management?</strong> This is submassive (intermediate-high risk) PE with echo evidence of RV dysfunction and myocardial injury (elevated troponin). Anticoagulate immediately. The RV dysfunction on echo upgrades risk and supports consideration of early catheter-directed therapy rather than anticoagulation alone. Admit to a monitored setting. Serial echo is appropriate to track RV recovery.</p>
+<p><strong>How does this change management?</strong> This normotensive PE has RV dysfunction and myocardial injury and warrants immediate anticoagulation if appropriate, monitored admission, and formal clinical risk assessment. Escalate for deteriorating perfusion or respiratory status. Selected patients with additional distress criteria may be considered for catheter intervention after PE-team assessment of expected benefit and bleeding/procedural risk; RV dysfunction alone is not an automatic indication. The 2026 HI-PEITHO trial used RV/LV ≥1, elevated troponin, and at least two specified BP/HR/respiratory-rate criteria. Measure the RV/LV ratio and assess whether the patient matches a supported treatment pathway. <a href="https://pubmed.ncbi.nlm.nih.gov/41910345/">HI-PEITHO</a>.</p>
 <hr>
 </section>
 <section id="case-3-ards-and-rv-failure" class="level3">
@@ -510,7 +514,7 @@ Tip
 </div>
 </div>
 <p><strong>What you see:</strong> RV dilated, RV:LV ratio 0.9. D-sign present throughout the cardiac cycle. TAPSE 13 mm. No McConnell’s sign. Plethoric IVC.</p>
-<p><strong>How does this change management?</strong> Acute cor pulmonale from ARDS. High PEEP increases RV afterload; hypercapnia causes pulmonary vasoconstriction and worsens it further. Interventions: reduce PEEP if oxygenation allows, target normocapnia, consider prone positioning (reduces RV afterload and improves V/Q matching), inhaled pulmonary vasodilators (inhaled NO or epoprostenol) to reduce RV afterload. Avoid further fluid loading.</p>
+<p><strong>How does this change management?</strong> The supplied findings suggest acute cor pulmonale in severe ARDS; assess other causes of worsening shock as well. Individualize PEEP using recruitability, respiratory mechanics, oxygenation, and hemodynamic response: recruitment and overdistension can have different effects on RV afterload. Limit harmful hypercapnia/acidemia while preserving lung-protective tidal volumes and pressures. With P:F 90, prioritize prolonged prone positioning unless contraindicated. Consider inhaled pulmonary vasodilators as selected rescue therapy, reassessing their effect. Avoid empiric fluid loading in a congested RV and support perfusion. <a href="https://academic.oup.com/ajrccm/article/210/7/900/8491230">PEEP/recruitability study</a>, <a href="https://pmc.ncbi.nlm.nih.gov/articles/10870893/">ATS ARDS guideline</a>.</p>
 <hr>
 </section>
 <section id="case-4-rv-infarct" class="level3">
@@ -530,11 +534,11 @@ Tip
 <p><img src="gifs/A4C McConnell sign RV infarct.gif" style="width:100%; border-radius:4px;" alt="Apical four-chamber: McConnell's sign — RV free wall hypokinesis with apical sparing in RV infarct"></p>
 </div>
 </div>
-<p><strong>What you see:</strong> Inferior and posterior wall hypokinesis (LV). RV free wall hypokinesis. RV mildly dilated. LV function otherwise preserved.</p>
+<p><strong>What you see:</strong> Hypokinetic RV with apical sparing. LV function otherwise preserved.</p>
 <p><strong>How does this change management?</strong> RV infarct complicating inferior STEMI. RV dysfunction in STEMI carries independent prognostic weight beyond LV function alone — it correlates with higher rates of heart failure, arrhythmias (especially from RCA involvement of the AV nodal artery), cardiogenic shock, and mechanical complications including severe mitral regurgitation.</p>
 <ul>
-<li><strong>Cautious fluid loading</strong> to maintain RV preload — unlike LV infarction, where fluid restriction may be necessary.</li>
-<li><strong>Avoid nitrates and diuretics</strong> — both reduce preload and can precipitate hemodynamic collapse in isolated RV infarction.</li>
+<li><strong>Assess preload and congestion before fluids.</strong> Consider a small challenge only when underfilling may be contributing; stop if perfusion/flow fails to improve or congestion worsens. RV infarction does not require volume loading in every patient.</li>
+<li><strong>Avoid preload reduction in hypotension or preload dependence.</strong> Concomitant LV failure or congestion changes the assessment; tailor therapy to the whole hemodynamic picture.</li>
 <li><strong>Inotropic support</strong> may be required if severe RV dysfunction produces low cardiac output.</li>
 <li><strong>Maintain AV synchrony</strong> — loss of atrial kick is poorly tolerated by the failing RV; arrhythmias are common due to RCA territory involvement.</li>
 <li><strong>Expedite PCI</strong> — reperfusion of the RCA is the definitive treatment. Early identification of RV dysfunction guides monitoring intensity, mechanical support decisions, and post-discharge care.</li>
@@ -614,7 +618,7 @@ Caution
 </div>
 <div id="callout-18" class="callout-18-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Answer</strong> McConnell’s sign is akinesis of the RV mid-free wall with preserved or hyperdynamic motion at the RV apex. It is most associated with acute pulmonary embolism (specificity ~94%). The mechanism involves tethering of the RV apex to the contracting LV apex through shared myocardial fibers.</p>
+<p><strong>Answer</strong> McConnell’s sign is RV mid-free-wall akinesis with relative apical sparing. It is associated with acute PE, but can also occur in RV infarction and other RV disorders. Do not apply a fixed specificity to every population or choose thrombolysis from the sign alone; the module’s RV-infarction case illustrates the competing diagnosis.</p>
 </div>
 </div>
 </div>
@@ -631,7 +635,7 @@ Caution
 </div>
 <div id="callout-19" class="callout-19-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Answer</strong> The RV is already severely distended. Additional volume causes further RV dilation, worsens D-sign and septal shift, reduces LV diastolic filling, and drops cardiac output further. A small bolus (250–500 mL) may be given as a bridge, but the primary intervention is restoring RV afterload reduction through thrombolysis or mechanical reperfusion.</p>
+<p><strong>Answer</strong> The RV is already severely distended, so additional volume can worsen RV dilation, septal shift, LV filling, and output. Avoid a routine large bolus. A cautious, measured fluid challenge is reasonable only if underfilling is plausible and a response can be assessed; stop if flow or perfusion fails to improve or congestion worsens. The definitive priority is appropriate reperfusion and support of pressure and oxygenation.</p>
 </div>
 </div>
 </div>
@@ -648,7 +652,7 @@ Caution
 </div>
 <div id="callout-20" class="callout-20-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Answer</strong> In chronic PHT, a TAPSE of 10 mm may represent stable (if severely impaired) chronic RV dysfunction. In a previously normal patient, TAPSE of 10 mm represents acute, severe RV failure — the RV has not had time to compensate and the patient is at immediate risk of hemodynamic collapse. Acute RV failure is a medical emergency; chronic RV dysfunction requires optimization but is not immediately life-threatening in the same way.</p>
+<p><strong>Answer</strong> A newly reduced TAPSE warrants prompt assessment of acquisition, loading conditions, other RV findings, and perfusion. It does not alone prove severe acute RV failure or impending collapse. Chronic PH can be stable or can develop life-threatening acute-on-chronic RV failure. Hypotension, impaired perfusion, and the overall clinical trajectory determine urgency in either patient.</p>
 </div>
 </div>
 </div>
@@ -662,6 +666,19 @@ Caution
 <div class="lecture-list">
 <p><a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/focus-for-the-rv/" target="_blank" rel="noopener"><span class="lecture-play">▶</span><span><span class="lecture-title">FoCUS for the RV</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a></p>
 </div>
+<hr>
+</section>
+<section id="references-and-further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="references-and-further-reading">References and further reading</h2>
+<ul>
+<li><a href="https://www.asecho.org/wp-content/uploads/2025/03/PIIS0894731725000379.pdf">ASE right-heart guideline, 2025</a>: acquisition and multiparameter interpretation.</li>
+<li><a href="https://publications.ersnet.org/content/erj/61/1/2200879">ESC/ERS pulmonary hypertension guideline</a>: decompensated right heart failure.</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/15664548/">Casazza et al.</a>: McConnell’s sign in PE and RV infarction.</li>
+<li><a href="https://www.pocus.org/wp-content/uploads/pdf/Via-JASE-2014-International-FoCUS-Recommendations-2.pdf">International FoCUS recommendations</a>: focused cardiac examination versus FAST.</li>
+<li><a href="https://www.jacc.org/doi/10.1016/j.jacc.2025.11.005">Multisociety acute PE guideline, 2026</a> and <a href="https://pubmed.ncbi.nlm.nih.gov/41910345/">HI-PEITHO trial</a>: risk-based treatment selection.</li>
+<li><a href="https://www.erc.edu/media/wwufbysp/gl2025-06-spec-circ-e.pdf">ERC special-circumstances guideline, 2025</a>: PE in cardiac arrest and dosing uncertainty.</li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/10870893/">ATS ARDS guideline, 2024</a> and <a href="https://academic.oup.com/ajrccm/article/210/7/900/8491230">PEEP/recruitability study</a>: lung protection and hemodynamics.</li>
+</ul>
 
 
 </section>
@@ -1119,7 +1136,7 @@ Caution
     var formDiv = document.createElement('div');
     formDiv.className = 'quiz-answer-form';
     formDiv.innerHTML =
-      '<textarea class="quiz-textarea" placeholder="Type your answerâ€¦" rows="3"></textarea>' +
+      '<textarea class="quiz-textarea" placeholder="Type your answer…" rows="3"></textarea>' +
       '<div class="quiz-form-row">' +
         '<button class="quiz-submit-btn" type="button">Get Feedback</button>' +
         '<span class="quiz-typing-slot"></span>' +

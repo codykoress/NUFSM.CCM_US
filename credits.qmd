@@ -35,6 +35,8 @@ Items marked with an asterisk (\*) are embedded in the curriculum but do not yet
 
 ### Module 1 — Windows & Acquisition
 
+The PLAX landmark schematic (`plax-landmarks.svg`) is original curriculum artwork created with Codex (2026-09-14), based on anatomical descriptions in the [ASE comprehensive TTE guideline](https://www.asecho.org/wp-content/uploads/2019/01/2019_Comprehensive-TTE.pdf). It is not reproduced from the guideline.
+
 | Clip | Contributor(s) | Source |
 |---|---|---|
 | Normal apical four-chamber | Hannah Kopinski MS4; Dr. Lindsay Davis, NYU/Bellevue Emergency Ultrasound; Dr. Matthew Riscinti, Kings County Emergency Medicine | [POCUS Atlas](https://www.thepocusatlas.com/echocardiography-2) |
@@ -123,6 +125,8 @@ Items marked with an asterisk (\*) are embedded in the curriculum but do not yet
 
 ### Module 6 — Lung Ultrasound
 
+The lung survey map (`lung-survey.svg`) is original curriculum artwork created with Codex (2026-09-14). Its landmarks are described in the [original BLUE-point paper](https://d-nb.info/1199925225/34); the map illustrates expanded coverage and is not a reproduction of that paper. Case 4 is now a text-based case: the former PLAPS loop was withdrawn because it was not a verified static-bronchogram example.
+
 | Clip | Contributor(s) | Source |
 |---|---|---|
 | A-lines — normal lung | Hannah Kopinski MS4; Dr. Lindsay Davis, NYU Emergency Medicine; Dr. Matthew Riscinti, Kings County Emergency Medicine | [POCUS Atlas](https://www.thepocusatlas.com/pulmonary) |
@@ -133,7 +137,6 @@ Items marked with an asterisk (\*) are embedded in the curriculum but do not yet
 | Bilateral confluent B-lines — pulmonary edema — Case 1 | \* | [POCUS Atlas](https://www.thepocusatlas.com/lung) |
 | Absent lung sliding — barcode sign (M-mode) — Case 2 | \* | [POCUS Atlas](https://www.thepocusatlas.com/lung) |
 | Lung point — pneumothorax — Case 3 | \* | [POCUS Atlas](https://www.thepocusatlas.com/lung) |
-| Consolidation with air bronchograms (PLAPS) — Case 4 | \* | [POCUS Atlas](https://www.thepocusatlas.com/lung) |
 
 ### Module 7 — Abdominal Ultrasound
 

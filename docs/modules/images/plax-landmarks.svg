@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="610" viewBox="0 0 960 610" role="img" aria-labelledby="title desc">
+<title id="title">PLAX landmarks with cardiac display orientation</title>
+<desc id="desc">Schematic long-axis section: RV anterior, LV to screen left, aortic root to screen right, LA behind the aortic root, and descending aorta posterior to the LA. Two aortic cusps are shown; the true LV apex is outside this plane.</desc>
+<defs><style>text{font-family:Arial,sans-serif;fill:#193447}.title{font-size:25px;font-weight:700}.label{font-size:23px;font-weight:700}.small{font-size:18px}.leader{stroke:#284a61;stroke-width:2;fill:none}.wall{fill:#dfaaa0;stroke:#9c6965;stroke-width:3}.blood{fill:#823f47;stroke:#613038;stroke-width:2}</style></defs>
+<rect width="960" height="610" rx="18" fill="#f2f6fa"/>
+<text x="36" y="42" class="title">Parasternal long axis · anatomical landmarks</text>
+<path d="M470 76 L76 438 Q480 550 876 438Z" fill="#dce8f2"/>
+<circle cx="502" cy="86" r="7" fill="#2877a2"/>
+<text x="534" y="92" class="small">Screen indicator</text>
+<!-- RV sits anterior to the interventricular septum. -->
+<path class="wall" d="M230 204 Q338 127 506 153 Q533 169 507 199 Q351 230 230 229Z"/>
+<path class="blood" d="M269 205 Q370 158 492 167 Q502 177 490 187 Q357 212 269 214Z"/>
+<!-- Long-axis LV section has an open lateral edge; no true apex is depicted. -->
+<path class="wall" d="M145 242 Q300 224 437 232 L622 143 L686 172 L496 270 Q596 280 621 333 Q595 393 462 386 Q313 388 145 345Z"/>
+<path class="blood" d="M145 263 Q300 245 431 253 L624 162 L659 176 L466 277 L413 341 Q283 357 145 326Z"/>
+<!-- LA behind the root and mitral valve. -->
+<path class="blood" d="M489 291 Q565 284 594 326 Q578 366 477 368 L444 346Z"/>
+<!-- Mitral leaflets and two aortic cusps are schematic. -->
+<path d="M430 252 Q436 286 407 324 M469 348 Q454 326 439 316" stroke="#fff6ee" stroke-width="9" fill="none" stroke-linecap="round"/>
+<path d="M555 200 Q538 221 561 231 M577 190 Q598 197 579 221" stroke="#fff6ee" stroke-width="6" fill="none" stroke-linecap="round"/>
+<circle cx="572" cy="426" r="27" class="wall"/><circle cx="572" cy="426" r="17" class="blood"/>
+<text x="365" y="190" fill="#ffffff" class="label" style="fill:#fff">RV</text>
+<text x="247" y="304" class="label" style="fill:#fff">LV</text>
+<text x="524" y="339" class="label" style="fill:#fff">LA</text>
+<path class="leader" d="M375 229 L301 157 L183 157"/><text x="90" y="151" class="small">Septum</text>
+<path class="leader" d="M422 301 L353 415 L256 415"/><text x="155" y="422" class="small">Mitral valve</text>
+<path class="leader" d="M568 208 L732 213"/><text x="744" y="208" class="small">Aortic valve</text><text x="744" y="231" class="small">Two cusps in plane</text>
+<path class="leader" d="M621 178 L716 135"/><text x="724" y="140" class="small">Aortic root</text>
+<path class="leader" d="M507 238 L693 280"/><text x="706" y="286" class="small">LV outflow tract</text>
+<path class="leader" d="M593 431 L692 455"/><text x="702" y="454" class="small">Descending aorta</text><text x="702" y="477" class="small">Posterior to LA</text>
+<path d="M137 242 l-7 14 14 14 -14 14 14 14 -14 14 14 14 -7 19" fill="none" stroke="#31546d" stroke-width="3"/>
+<text x="37" y="504" class="small">True LV apex is usually outside standard PLAX; do not chase an apparent apex.</text>
+<text x="37" y="538" class="small">Near field = anterior (top). Increase depth to include the aorta behind the LA.</text>
+<text x="37" y="573" class="small" style="fill:#60788a">Schematic, not a measurement image · ASE comprehensive TTE acquisition guidance</text>
+</svg>

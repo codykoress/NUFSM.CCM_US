@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -39,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -210,6 +213,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#quiz" id="toc-quiz" class="nav-link" data-scroll-target="#quiz">Quiz</a></li>
   <li><a href="#video-lectures" id="toc-video-lectures" class="nav-link" data-scroll-target="#video-lectures">Video lectures</a></li>
+  <li><a href="#references-and-further-reading" id="toc-references-and-further-reading" class="nav-link" data-scroll-target="#references-and-further-reading">References and further reading</a></li>
   </ul>
 </nav>
     </div>
@@ -256,7 +260,7 @@ Note
 </ol>
 </div>
 </div>
-<p>Bedside LV assessment answers the most fundamental question in hemodynamic resuscitation: <strong>is the pump failing?</strong> A hypotensive patient with a hyperdynamic LV does not need inotropes — they need volume, vasopressors, or treatment of the underlying distributive state. A hypotensive patient with a severely reduced EF and dilated LV is in cardiogenic shock and needs a fundamentally different approach. Getting this wrong early leads to fluid overload in cardiogenic shock or undertreated distributive shock.</p>
+<p>Bedside LV assessment asks whether systolic dysfunction may be contributing to impaired perfusion. <strong>EF is not cardiac output or a shock diagnosis.</strong> A low EF may coexist with adequate output and vasodilatory shock; a small hyperdynamic LV may still eject a low stroke volume. Integrate perfusion, forward flow when measurable, RV findings, congestion, and a dynamic assessment of fluid responsiveness. Treatment follows the physiological problem, not the EF category alone.</p>
 <hr>
 </section>
 <section id="image-acquisition" class="level2">
@@ -370,7 +374,7 @@ Tip
 <p><img src="gifs/apical+4+normal.gif" style="width:100%; border-radius:4px;" alt="Normal LV function on apical four-chamber"></p>
 </div>
 </div>
-<p>This is your reference. The endocardial walls move briskly inward in systole and the LV cavity nearly obliterates at peak contraction. The posterior wall and septum thicken visibly. A normal study looks vigorous — if you are unsure whether the function is normal, it probably is.</p>
+<p>Assess inward endocardial motion and systolic myocardial thickening across adequate views. Normal contraction reduces cavity size without requiring near-obliteration. If image quality or interpretation is uncertain, obtain additional views or expert/comprehensive assessment and document the limitation; uncertainty does not establish normal function.</p>
 <hr>
 </section>
 <section id="hyperdynamic-lv-ef-70" class="level3">
@@ -427,7 +431,7 @@ Tip
 <p><img src="gifs/Severe Depressed LV A4c.gif" style="width:100%; border-radius:4px;" alt="Severely depressed LV on apical four-chamber"></p>
 </div>
 </div>
-<p>Wall motion is globally reduced with minimal inward thickening. The LV is often dilated. The mitral valve opens sluggishly and EPSS is markedly increased. This is cardiogenic shock physiology until proven otherwise in a hypotensive patient. Causes include ischemic cardiomyopathy, dilated cardiomyopathy, myocarditis, Takotsubo, and sepsis-mediated depression. Avoid aggressive fluid loading. An inotrope and early consideration of mechanical circulatory support are the interventions.</p>
+<p>Wall motion and systolic thickening are globally reduced. The LV may be dilated, and EPSS may be increased. Severe dysfunction in a hypotensive patient warrants urgent assessment of perfusion and forward flow, but does not prove that cardiogenic shock is the dominant mechanism. Causes include ischemic or dilated cardiomyopathy, myocarditis, Takotsubo, and sepsis-associated dysfunction. Avoid empiric large fluid loads when congestion is present. Use vasoactive support or mechanical support according to the hemodynamic syndrome and specialist assessment, not EF alone.</p>
 <hr>
 </section>
 </section>
@@ -522,7 +526,7 @@ Tip
 <p><img src="gifs/Inferior and Lateral wall kypokinesis Psx - Case 1 Hypotension after STEMI.gif" style="width:100%; border-radius:4px;" alt="Inferior and lateral wall hypokinesis on parasternal short axis — RCA territory"></p>
 </div>
 </div>
-<p>Inferior and inferoseptal hypokinesis on PSAX. Always assess the RV when inferior RWMA is present — the RCA supplies the RV free wall, and an RCA occlusion can cause concomitant RV infarct. RV infarct requires volume loading and avoidance of nitrates, making it a distinct management scenario.</p>
+<p>Inferior and inferoseptal dysfunction often involves the RCA territory, with variation by coronary anatomy. Assess the RV when inferior RWMA is present. In hypotensive RV infarction, assess preload and congestion before a cautious fluid challenge; reassess immediately and stop if flow or perfusion fails to improve or congestion worsens. Avoid preload-reducing drugs when hypotension or preload dependence is present. Urgent reperfusion remains central.</p>
 <hr>
 </section>
 <section id="lateral-wall-lcx-territory" class="level3">
@@ -576,7 +580,7 @@ Tip
 <p><img src="gifs/Takotsubo Cardiomyopathy on Apical Two Chamber View.gif" style="width:100%; border-radius:4px;" alt="Takotsubo cardiomyopathy — apical ballooning on two-chamber view"></p>
 </div>
 </div>
-<p>Apical and mid-ventricular akinesis or hypokinesis with preserved or hyperdynamic basal segments. Does not follow a single coronary territory — this is the key distinguishing feature from LAD occlusion, which also causes apical dysfunction but includes basal anterior involvement along the LAD distribution. History of emotional or physiologic stressor. Can present with cardiogenic shock; usually recovers within days to weeks.</p>
+<p>Apical and mid-ventricular dysfunction with preserved basal contraction can suggest Takotsubo, especially when the distribution extends beyond a single coronary territory. Basal sparing alone does not distinguish it from distal LAD ischemia, and other Takotsubo patterns exist. Evaluate ACS appropriately rather than excluding it from the echo pattern. Stress history is supportive, not diagnostic. Recovery is common, but acute complications, including shock, require assessment. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5991205/">International consensus</a>.</p>
 <hr>
 </section>
 </section>
@@ -602,7 +606,7 @@ Tip
 </div>
 </div>
 <p><strong>What you see:</strong> Severely reduced EF. Anterior and apical wall akinesis. LV not markedly dilated (acute presentation). No pericardial effusion.</p>
-<p><strong>How does this change management?</strong> This is cardiogenic shock from a large anterior MI. Start an inotrope as a bridge. Avoid aggressive fluid boluses. Notify the cath lab of cardiogenic shock — they may want an IABP or Impella placed at the time of PCI. Do not delay transfer for a prolonged echo.</p>
+<p><strong>How does this change management?</strong> The supplied STEMI and hypoperfusion make MI-related cardiogenic shock a major concern. Expedite coronary reperfusion and activate the shock team. Support arterial pressure and, if low output persists, consider inotropic support according to hemodynamics. Avoid large empiric fluid boluses. Mechanical support is selected case by case; it is not an automatic consequence of low EF. Do not delay transfer for a prolonged echo.</p>
 <hr>
 </section>
 <section id="case-2-undifferentiated-hypotension-in-the-icu" class="level3">
@@ -625,7 +629,7 @@ Tip
 </div>
 </div>
 <p><strong>What you see:</strong> Severely reduced EF. Global hypokinesis. LV not dilated. IVC is plethoric.</p>
-<p><strong>How does this change management?</strong> This is sepsis-mediated cardiomyopathy with cardiogenic component to the shock. Add an inotrope. Stop or slow fluid administration. Consider PA catheter or advanced hemodynamic monitoring. Avoid further escalation of vasopressors alone — you are vasoconstricting a failing heart. Reassess in 4–6 hours; sepsis-mediated depression often recovers with treatment of the underlying infection.</p>
+<p><strong>How does this change management?</strong> Sepsis-associated myocardial dysfunction may be contributing, but low EF and a plethoric IVC do not establish the dominant shock mechanism. BP 72/40 gives an approximate MAP of 51 mm Hg: continue resuscitation and titrate necessary vasopressor support. Pause further empiric fluid loading while assessing responsiveness and tolerance. Assess forward flow, perfusion, and congestion; obtain comprehensive echo and consider advanced hemodynamic monitoring if uncertainty persists. Inotropes may be appropriate for cardiac dysfunction with persistent hypoperfusion despite adequate volume and arterial pressure, in addition to required vasopressors. Reassess the response promptly after each intervention; a later repeat echo can follow myocardial recovery. <a href="https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines">SSC 2026</a>.</p>
 <hr>
 </section>
 <section id="case-3-chest-pain-and-new-ecg-changes" class="level3">
@@ -646,7 +650,7 @@ Tip
 </div>
 </div>
 <p><strong>What you see:</strong> Lateral wall hypokinesis. Preserved global function. No effusion.</p>
-<p><strong>How does this change management?</strong> Lateral RWMA in the context of ST depression and chest pain is an NSTEMI with high-risk features. Activate the cath lab urgently. Anticoagulate. The echo finding corroborates the clinical diagnosis and raises urgency — do not wait for troponin results.</p>
+<p><strong>How does this change management?</strong> This is suspected high-risk NSTE-ACS. A lateral RWMA supports the concern but may be old and does not alone establish acute infarction. Obtain serial ECGs and high-sensitivity troponin, begin appropriate ACS care, and involve cardiology urgently for risk-based invasive evaluation. Immediate angiography is indicated for qualifying very-high-risk features such as refractory/recurrent ischemia despite treatment, hemodynamic instability, or life-threatening arrhythmia; if present, do not wait for troponin. The stable scenario as written does not establish those features. <a href="https://doi.org/10.1093/eurheartj/ehad191">ESC ACS guideline</a>.</p>
 <hr>
 </section>
 <section id="case-4-young-patient-with-viral-prodrome-and-shock" class="level3">
@@ -667,7 +671,7 @@ Tip
 </div>
 </div>
 <p><strong>What you see:</strong> Severely reduced EF. Globally hypokinetic but not dilated LV. No RWMA pattern. Small pericardial effusion.</p>
-<p><strong>How does this change management?</strong> Myocarditis with cardiogenic shock. This is not ischemic cardiomyopathy — no regional pattern, young patient, viral prodrome. Start an inotrope. Urgent cardiology consultation for consideration of mechanical circulatory support — myocarditis-related shock can be rapidly fatal and some patients benefit from short-term MCS as a bridge to recovery. MRI is the gold standard for diagnosis but should not delay resuscitation.</p>
+<p><strong>How does this change management?</strong> Suspected fulminant myocarditis with shock. The viral prodrome, global dysfunction, and small effusion support this working diagnosis but do not exclude ACS or other causes. Urgently involve cardiology/the shock team, stabilize pressure and perfusion, and consider mechanical support if needed. CMR can characterize inflammation when feasible; endomyocardial biopsy may be indicated in high-risk or unstable disease when the histological diagnosis changes treatment. Neither diagnostic test should delay resuscitation. <a href="https://academic.oup.com/eurheartj/article/46/40/3952/8234483">ESC 2025</a>.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -709,7 +713,7 @@ Caution
 </div>
 <div id="callout-21" class="callout-21-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Answer</strong> Hyperdynamic LV function argues against cardiogenic shock as the primary etiology. Consider distributive shock (sepsis, anaphylaxis), hypovolemia, or obstructive shock. Mixed shock states are possible — a hyperdynamic LV does not guarantee adequate cardiac output if heart rate is severely elevated.</p>
+<p><strong>Answer</strong> A hyperdynamic appearance makes severe global systolic depression unlikely, but does not establish adequate cardiac output or select a treatment. Consider distributive, hypovolemic, obstructive, and mixed mechanisms; assess stroke volume/forward flow, perfusion, and the rest of the examination. A small LV can eject a high fraction of a small end-diastolic volume.</p>
 </div>
 </div>
 </div>
@@ -743,7 +747,7 @@ Caution
 </div>
 <div id="callout-23" class="callout-23-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Answer</strong> Right coronary artery (RCA) territory. Always assess the RV when inferior RWMA is present — the RCA supplies the RV free wall and an RCA occlusion can cause concomitant RV infarct. RV infarct requires volume loading and avoidance of nitrates, making it a distinct management scenario.</p>
+<p><strong>Answer</strong> Inferior and inferoseptal dysfunction often involves the RCA territory, with variation by coronary anatomy. Assess the RV when inferior RWMA is present. In hypotensive RV infarction, assess preload and congestion before a cautious fluid challenge; reassess immediately and stop if flow or perfusion fails to improve or congestion worsens. Avoid preload-reducing drugs when hypotension or preload dependence is present. Urgent reperfusion remains central.</p>
 </div>
 </div>
 </div>
@@ -760,7 +764,7 @@ Caution
 </div>
 <div id="callout-24" class="callout-24-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Answer</strong> Dilation suggests a chronic process — the heart has had time to remodel (dilated cardiomyopathy, longstanding ischemic disease). A non-dilated LV with severely reduced EF suggests an acute process: myocarditis, Takotsubo, acute large MI, or acute decompensation of previously compensated disease.</p>
+<p><strong>Answer</strong> LV dilation supports chronic remodeling such as dilated cardiomyopathy or longstanding ischemic disease, but it does not exclude a new acute insult. A nondilated LV with severe dysfunction raises concern for an acute process such as myocarditis, Takotsubo, or acute MI, but size alone cannot date the dysfunction. Compare prior imaging and integrate the presentation, ECG, biomarkers, perfusion, and a comprehensive examination.</p>
 </div>
 </div>
 </div>
@@ -777,7 +781,7 @@ Caution
 </div>
 <div id="callout-25" class="callout-25-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Answer</strong> Takotsubo (apical ballooning syndrome) shows apical and mid-ventricular hypokinesis or akinesis with preserved or hyperdynamic basal segments. An LAD occlusion causes anterior and apical dysfunction but typically includes some basal anterior involvement and follows the LAD distribution more closely. Takotsubo does not respect a single coronary territory — the basal sparing is the key distinguishing feature.</p>
+<p><strong>Answer</strong> A circumferential mid/apical pattern extending beyond one coronary territory raises suspicion for Takotsubo. Basal sparing alone is insufficient: distal LAD occlusion can spare basal myocardium. Integrate the acute presentation, ECG and biomarkers, and appropriate coronary evaluation to exclude ACS; do not diagnose Takotsubo from this pattern alone.</p>
 </div>
 </div>
 </div>
@@ -791,6 +795,19 @@ Caution
 <div class="lecture-list">
 <p><a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/focus-on-the-left/" target="_blank" rel="noopener"><span class="lecture-play">▶</span><span><span class="lecture-title">FoCUS on the Left</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a> <a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/focus-for-lv-ischemia/" target="_blank" rel="noopener"><span class="lecture-play">▶</span><span><span class="lecture-title">FoCUS for LV Ischemia</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a></p>
 </div>
+<hr>
+</section>
+<section id="references-and-further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="references-and-further-reading">References and further reading</h2>
+<ul>
+<li><a href="https://www.asecho.org/wp-content/uploads/2014/01/FCU.pdf">ASE FoCUS recommendations</a>: image limitations and nondiagnostic examinations.</li>
+<li><a href="https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines">SSC adult guidelines, 2026</a>: pressure support and inotrope indications.</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/6703540/">Parker et al., 1984</a>: depressed EF can coexist with normal/elevated cardiac index in septic shock.</li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/0002914994903980">RV infarction volume-loading study</a>: response depends on hemodynamics.</li>
+<li><a href="https://doi.org/10.1093/eurheartj/ehad191">ESC ACS guideline, 2023</a>: risk-based invasive timing.</li>
+<li><a href="https://academic.oup.com/eurheartj/article/46/40/3952/8234483">ESC myocarditis/pericarditis guideline, 2025</a>: CMR and biopsy pathways.</li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5991205/">International Takotsubo consensus, Part II</a>: differential diagnosis and coronary assessment.</li>
+</ul>
 
 
 </section>
@@ -1248,7 +1265,7 @@ Caution
     var formDiv = document.createElement('div');
     formDiv.className = 'quiz-answer-form';
     formDiv.innerHTML =
-      '<textarea class="quiz-textarea" placeholder="Type your answerâ€¦" rows="3"></textarea>' +
+      '<textarea class="quiz-textarea" placeholder="Type your answer…" rows="3"></textarea>' +
       '<div class="quiz-form-row">' +
         '<button class="quiz-submit-btn" type="button">Get Feedback</button>' +
         '<span class="quiz-typing-slot"></span>' +

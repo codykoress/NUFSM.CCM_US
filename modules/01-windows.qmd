@@ -19,11 +19,11 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 
 ## 1. Machine setup
 
-**Probe:** Phased array (cardiac) probe. The small footprint fits between ribs; the sector beam provides the wide near-field needed to visualize the full heart.
+**Probe:** Phased array (cardiac) probe. Its small footprint fits between ribs; the sector widens with depth to include deeper cardiac structures.
 
 **Preset:** Select the **cardiac preset**. This does two important things:
 
-1. Inverts the depth convention so the apex appears at the top of the screen in apical views (cardiac orientation).
+1. Uses cardiac imaging settings and usually places the display indicator on screen right; confirm the actual indicator position on your machine. This is a horizontal display convention, not a reversal of depth.
 2. Optimizes gain, frequency, and frame rate for cardiac imaging.
 
 **Depth:** Adjust so the far wall of the structure of interest is visible with a small margin beyond it. Too little depth clips posterior structures; too much depth makes cardiac structures appear small and reduces resolution.
@@ -70,7 +70,7 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 | Mitral valve | Between LA and LV |
 | Pericardium | Bright echogenic line surrounding the heart |
 
-**Why this window first:** In undifferentiated shock or cardiac arrest, the subcostal view is the fastest to obtain and does not require repositioning the patient. It is the window most likely to be achievable in a supine, ventilated patient.
+**Choosing the first window:** Subcostal imaging is often accessible in a supine patient. Use the best available window rather than persisting with a poor one. During cardiac arrest, prepare the probe before a scheduled rhythm check and do not prolong interruptions in chest compressions to obtain an image.
 
 #### Subcostal IVC
 
@@ -98,7 +98,7 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 | Hepatic vein | Drains into the IVC near the RA junction |
 | Liver | Surrounds the IVC — acoustic window |
 
-**Why this view matters:** The subcostal IVC view is the basis for assessing volume status and fluid responsiveness — IVC diameter and its respiratory variation (collapsibility/distensibility). These measurements and their interpretation are developed in Module 5.
+**Why this view matters:** IVC imaging contributes to right atrial pressure and venous congestion assessment. Diameter and respiratory variation do not independently measure circulating volume or predict benefit from fluid. [Module 5](05-ivc.qmd) explains the limitations and dynamic assessment of fluid responsiveness.
 
 ---
 
@@ -110,16 +110,18 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 
 ![](images/probe-plax.svg){fig-align="center" width="380"}
 
+![Parasternal long-axis view — cardiac anatomy.](images/PLAX.svg){fig-align="center" width="500"}
+
 **How to optimize:**
 
-- Move up or down one rib space if the LV appears foreshortened or the apex is cut off.
+- Move up or down one interspace to maximize true LV long-axis alignment. The true apex is usually outside standard PLAX; do not rotate into an oblique plane simply to display an apparent apex.
 - Tilt the probe slightly medially or laterally to bring the aortic root and LV into the same plane.
 - The aortic valve should appear central and open symmetrically in systole.
 - The LV walls should appear equal in thickness and the chamber should not appear foreshortened.
 
 **Normal anatomy visible:**
 
-![Parasternal long axis view — normal cardiac anatomy.](images/PLAX.svg){fig-align="center" width="500"}
+![PLAX schematic — two aortic cusps, the LA and posterior descending aorta; the true apex is outside the plane.](images/plax-landmarks.svg){fig-align="center" width="500"}
 
 | Structure | Location in image |
 |---|---|
@@ -129,11 +131,11 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 | Anterior mitral leaflet | Long, swings widely open in diastole |
 | Posterior mitral leaflet | Short, moves in opposite direction |
 | Left atrium | Posterior, deep |
-| Aortic valve | Right side of image — three thin leaflets |
+| Aortic valve | Screen right — usually two cusps in this long-axis plane |
 | Aortic root / LVOT | Connects LV to aortic valve |
-| Descending thoracic aorta | Far left — round cross-section |
+| Descending thoracic aorta | Round cross-section posterior to the LA when included at sufficient depth |
 
-**Key landmark:** The descending thoracic aorta appears in cross-section at the far left of the PLAX image. This is an important orientation landmark used in pathology assessment (covered in Module 4).
+**Key landmark:** Identify the descending thoracic aorta posterior to the LA. This anatomical relationship helps distinguish pleural from pericardial fluid in [Module 4](04-pericardium.qmd). The aorta may require additional depth to include.
 
 #### PLAX RV inflow
 
@@ -155,7 +157,7 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 | Coronary sinus | May be seen entering the RA |
 | Eustachian valve / IVC inlet | At the inferior aspect of the RA |
 
-**Why this view matters:** The RV inflow view gives a dedicated look at the tricuspid valve and is the preferred window for aligning continuous-wave Doppler with a tricuspid regurgitation jet to estimate right ventricular systolic pressure (RVSP). Tricuspid pathology and RVSP estimation are developed in later modules.
+**Why this view matters:** The RV inflow view gives a dedicated look at the tricuspid valve and may align well with a tricuspid regurgitation jet. For velocity measurement, compare available windows and use the best parallel alignment and complete Doppler envelope; no single window is preferred in every patient.
 
 ---
 
@@ -190,9 +192,9 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 |---|---|
 | Aortic valve | Center — three cusps forming a Y on closure ("Mercedes-Benz sign") |
 | Right ventricular outflow tract | Anterior, wrapping around the aorta |
-| Pulmonary valve | Anterior left |
-| Tricuspid valve | Right |
-| Right atrium | Right |
+| Pulmonary valve | Anterior, toward screen right |
+| Tricuspid valve | Toward screen left |
+| Right atrium | Screen left |
 | Left atrium | Posterior |
 
 *Mitral valve level:*
@@ -233,7 +235,7 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 **How to optimize:**
 
 - Left lateral decubitus positioning brings the heart toward the chest wall and significantly improves image quality — use it whenever possible.
-- In the cardiac preset, the apex should appear at the **top** of the screen. Reduce depth so the apex sits at the top with a small margin.
+- The apex is in the near field, near the top of the image. Set depth to include both atria with a small margin; changing depth does not correct apical foreshortening.
 - In obese patients or those with COPD, the PMI may be displaced — palpate rather than assuming position.
 - If the view is suboptimal, try moving one interspace lateral or inferior.
 
@@ -244,12 +246,12 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 | Structure | Location in image |
 |---|---|
 | LV apex | Top center |
-| Left ventricle | Left side of image |
-| Right ventricle | Right side of image (smaller than LV) |
-| Mitral valve | Left AV valve — opens widely in diastole |
-| Tricuspid valve | Right AV valve — inserts slightly more apically than mitral |
-| Left atrium | Bottom left |
-| Right atrium | Bottom right |
+| Left ventricle | Screen right |
+| Right ventricle | Screen left (normally smaller than LV) |
+| Mitral valve | Screen-right AV valve — opens widely in diastole |
+| Tricuspid valve | Screen-left AV valve — inserts slightly more apically than mitral |
+| Left atrium | Bottom right |
+| Right atrium | Bottom left |
 | Interventricular septum | Vertical, separates LV and RV |
 | Interatrial septum | Thin membrane between LA and RA |
 
@@ -274,16 +276,16 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 
 | Structure | Location in image |
 |---|---|
-| Left ventricle | Left side of image |
-| Right ventricle | Right side of image |
+| Left ventricle | Screen right |
+| Right ventricle | Screen left |
 | LV outflow tract (LVOT) | Center, between the ventricles — the "fifth chamber" |
 | Aortic valve | Center, at the base of the LVOT |
 | Aortic root | Central, directed up toward the apex |
 | Interventricular septum | Between LV and RV |
-| Mitral valve | Left AV valve |
-| Tricuspid valve | Right AV valve |
-| Left atrium | Bottom left (may be partially out of plane) |
-| Right atrium | Bottom right |
+| Mitral valve | Screen-right AV valve |
+| Tricuspid valve | Screen-left AV valve |
+| Left atrium | Bottom right (may be partially out of plane) |
+| Right atrium | Bottom left |
 
 **Why this view matters:** The apical five-chamber view aligns the ultrasound beam nearly parallel to blood flow through the LVOT and aortic valve. This makes it the standard view for spectral Doppler quantification — the LVOT velocity-time integral (for stroke volume and cardiac output) and aortic valve gradients. These quantitative applications are developed in later modules.
 
@@ -296,7 +298,7 @@ Pathology is introduced in later modules. The goal here is to recognize a normal
 
 ::: {.callout-caution collapse="true"}
 **Answer**
-Parasternal long axis (PLAX). Expected structures include: right ventricle (near-field), interventricular septum, left ventricle, anterior and posterior mitral valve leaflets, left atrium, aortic valve, aortic root/LVOT, and the descending thoracic aorta in cross-section at the far left.
+Parasternal long axis (PLAX). Expected structures include: right ventricle (near-field), interventricular septum, left ventricle, anterior and posterior mitral valve leaflets, left atrium, aortic valve, aortic root/LVOT, and the descending thoracic aorta in cross-section posterior to the LA when included at sufficient depth.
 :::
 
 **Q2.** You are in PLAX and want to move to PSAX. What do you do with the probe?
@@ -324,7 +326,7 @@ The Mercedes-Benz sign. It confirms a normal tricuspid aortic valve with three c
 
 ::: {.callout-caution collapse="true"}
 **Answer**
-The tricuspid valve inserts slightly more apically on the interventricular septum than the mitral valve — this apical offset is the key distinguishing feature. The tricuspid is on the right side of the image (associated with the RV and RA); the mitral is on the left (associated with the LV and LA).
+The tricuspid valve inserts slightly more apically on the septum than the mitral valve. With the cardiac display convention taught here, the tricuspid valve/RV/RA are on screen left and the mitral valve/LV/LA are on screen right. Confirm the display indicator and use anatomy rather than screen side alone.
 :::
 
 **Q6.** At the papillary muscle level on PSAX, you see two echogenic nodular structures on the LV wall. What are they?
@@ -347,3 +349,11 @@ Full-length teaching lectures from the University of Utah's [Echocardiography & 
 <a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/basic-ultrasound-concepts/" target="_blank" rel="noopener"><span class="lecture-play">&#9654;</span><span><span class="lecture-title">Basic Ultrasound Concepts</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a>
 <a class="lecture-card" href="https://echo.anesthesia.med.utah.edu/focus-how-to/" target="_blank" rel="noopener"><span class="lecture-play">&#9654;</span><span><span class="lecture-title">How to Perform the FoCUS Exam (Studio &amp; Live)</span><span class="lecture-src">University of Utah · Echo &amp; Periop Ultrasound</span></span></a>
 </div>
+
+---
+
+## References and further reading
+
+- [ASE comprehensive transthoracic echocardiography guideline, 2019](https://www.asecho.org/wp-content/uploads/2019/01/2019_Comprehensive-TTE.pdf): acquisition, orientation, PLAX and apical anatomy.
+- [ASE right-heart guideline, 2025](https://www.asecho.org/wp-content/uploads/2025/03/PIIS0894731725000379.pdf): RV views, Doppler alignment, and IVC interpretation.
+- [ASE focused cardiac ultrasound recommendations](https://www.asecho.org/wp-content/uploads/2014/01/FCU.pdf): scope, limitations, and documentation.

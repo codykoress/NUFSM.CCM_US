@@ -35,11 +35,15 @@ For RA pressure estimation, measure at end-expiration, approximately 0.5–3 cm 
 
 Use a curvilinear or phased array probe, color Doppler, and pulsed-wave Doppler with the patient supine when tolerated.
 
+::: {.table-responsive tabindex="0" role="region" aria-label="Comparison table"}
+
 | Vessel | Acquisition target |
 |---|---|
 | Hepatic | Identify a hepatic vein joining the IVC; sample within the vein before the junction. |
 | Portal | Use a right lateral liver window; identify the portal vein and sample its lumen. |
 | Intrarenal | Find renal interlobar vessels; optimize low-flow color and PW settings and isolate the venous signal. |
+
+:::
 
 Use ECG timing when available to distinguish systole from diastole. Color and spectral display direction depend on probe orientation and settings; interpret anatomy and timing rather than color alone.
 
@@ -51,21 +55,29 @@ Use ECG timing when available to distinguish systole from diastole. Color and sp
 
 In spontaneously breathing adults:
 
+::: {.table-responsive tabindex="0" role="region" aria-label="Comparison table"}
+
 | IVC diameter and sniff response | Estimated RA pressure |
 |---|---|
 | ≤2.1 cm and ≥50% collapse | 3 mmHg (range 0–5) |
 | >2.1 cm and <50% collapse | 15 mmHg (range 10–20) |
 | Discordant findings | 8 mmHg (range 5–10); integrate additional signs |
 
+:::
+
 Athletes can have a large IVC without pathologic pressure elevation. Positive-pressure ventilation limits this algorithm's reliability. Diameter alone does not define an intermediate pressure. [ASE, 2025](https://www.asecho.org/wp-content/uploads/2025/03/PIIS0894731725000379.pdf).
 
 ### Venous waveform reference
+
+::: {.table-responsive tabindex="0" role="region" aria-label="Comparison table"}
 
 | Doppler | Normal | Mild abnormality | Severe abnormality |
 |---|---|---|---|
 | Hepatic | Forward S > D | Forward S < D | Systolic reversal |
 | Portal | Pulsatility <30% | 30 to <50% | ≥50% |
 | Intrarenal | Continuous | Interrupted S and D phases | Interrupted, diastolic-only flow |
+
+:::
 
 **Portal pulsatility fraction (%) = (Vmax − Vmin) / Vmax × 100.**
 
@@ -101,12 +113,16 @@ Consider RV dysfunction, pulmonary hypertension, tricuspid regurgitation, tampon
 
 ### Assigning VExUS C grade
 
+::: {.table-responsive tabindex="0" role="region" aria-label="Comparison table"}
+
 | Maximum IVC diameter | Number of severely abnormal venous Doppler patterns | Grade |
 |---|---|---|
 | <2.0 cm | Not required by the algorithm | 0 |
 | ≥2.0 cm | None | 1 — mild |
 | ≥2.0 cm | One | 2 — moderate |
 | ≥2.0 cm | Two or three | 3 — severe |
+
+:::
 
 Count severe patterns across the hepatic, portal, and intrarenal veins; do not add waveform scores. Grade 0 does not exclude all congestion or establish a need for fluid. The original single-center study involved 145 cardiac-surgery patients; its association with AKI does not prove that treating a score improves outcomes. [Beaubien-Souligny et al., 2020](https://doi.org/10.1186/s13089-020-00163-w).
 
@@ -119,6 +135,15 @@ Tricuspid regurgitation can alter hepatic flow; portal abnormalities may be conf
 ### From findings to a decision
 
 Use a passive leg raise with real-time stroke-volume/cardiac-output measurement when appropriate. Blood pressure alone is not an equivalent readout. IVC distensibility—(maximum − minimum) / minimum × 100—is affected by ventilator settings and patient effort; a universal 18% threshold should not drive ICU fluid decisions.
+
+### Performing and interpreting a passive leg raise
+
+1. Record baseline stroke volume or cardiac output with the patient semirecumbent. Keep the measurement method and settings consistent.
+2. Use the bed to lower the trunk to supine while raising the legs to about 45°. Avoid active effort, pain, or coughing; use another dynamic test if positioning is unsuitable.
+3. Capture the transient peak change promptly, usually within the first minute. For LVOT Doppler, keep the same sample position and alignment and average comparable beats; account for rhythm and measurement variability.
+4. Return to the original position and confirm that the measurement moves back toward baseline. Record the percentage change, not just “positive.”
+
+A CO/SV rise around 10% is a commonly used criterion, but use a threshold validated for the measurement method and a change greater than its measurement error. A borderline VTI change is inconclusive; repeat or use a more precise method. For example, 15.0 to 15.5 cm is only about 3.3%, whereas 15 to 18 cm is 20%. A positive test indicates potential responsiveness, not that fluid is required or safe. [Original PLR study](https://pubmed.ncbi.nlm.nih.gov/16540963/), [practical PLR rules](https://pmc.ncbi.nlm.nih.gov/articles/PMC4293822/).
 
 Congestion increases concern about fluid harm but does not select a drug or mandate fluid removal during unstable shock. Reassess perfusion, cardiac function, respiratory status, and response to treatment. [ESICM, 2025](https://www.esicm.org/wp-content/uploads/2025/10/Visual-abstract-final.pdf).
 
@@ -188,7 +213,7 @@ A 68-year-old man presents with fever, altered mental status, and BP 76/44.
 **Answer**
 The images are compatible with low right-sided filling pressure, but vigorous inspiration can exaggerate IVC collapse. A hyperdynamic EF does not establish adequate cardiac output. The missing information is whether additional preload improves stroke volume and whether the patient can tolerate fluid.
 
-If feasible, perform PLR with a real-time stroke-volume or cardiac-output measurement and assess lung findings and perfusion. A reproducible increase supports responsiveness; absent improvement or worsening respiratory congestion argues against further empiric fluid. Explain how you would reassess after any intervention rather than treating the IVC appearance as the endpoint.
+If feasible, perform PLR with a real-time stroke-volume or cardiac-output measurement and assess lung findings and perfusion. A reproducible increase exceeding the method's validated threshold and measurement error supports responsiveness; absent improvement or worsening respiratory congestion argues against further empiric fluid. Explain how you would reassess after any intervention rather than treating the IVC appearance as the endpoint.
 :::
 
 **Q2.** A patient with heart failure and infection has persistent hypotension, rising creatinine, a dilated IVC, markedly pulsatile portal flow, and interrupted intrarenal venous flow. A colleague proposes fluid “to improve renal perfusion.” Explain how congestion could contribute to the kidney injury. What else must you assess before choosing between further fluid, circulatory support, and decongestion?
